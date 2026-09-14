@@ -1,0 +1,20 @@
+# dados coletados: fonte de verdade local, não versionada (grandes, reproduzíveis por coleta)
+data/raw/blobs/
+data/raw/7514886/
+data/raw/robots_*.txt
+data/*.sqlite
+data/*.sqlite-journal
+data/*.sqlite-wal
+data/*.sqlite-shm
+# reconhecimento: resultados brutos por execução
+recon/fase0-*resultado_*.json
+recon/certs/served-chain.txt
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+# editores
+.vscode/
+.idea/

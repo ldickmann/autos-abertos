@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# snapshots do portal e certificados: bytes exatos, nunca converter fim de linha
+tests/fixtures/** -text
+recon/certs/** -text
+*.pem -text
+*.crt binary
+*.pdf binary
+*.sqlite binary
