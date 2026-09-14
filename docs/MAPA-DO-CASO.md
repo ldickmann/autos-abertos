@@ -1,6 +1,6 @@
 # Mapa do caso (gerado)
 
-Gerado em 2026-09-14T13:18+00:00 por `python -m stf mapa`. Listagem determinística da base; sem interpretação. Use para achar lacunas: o que ainda não foi coletado, extraído ou ligado.
+Gerado em 2026-09-14T13:20+00:00 por `python -m stf mapa`. Listagem determinística da base; sem interpretação. Use para achar lacunas: o que ainda não foi coletado, extraído ou ligado.
 
 ## Processos
 
@@ -216,5 +216,5 @@ Dispositivos legais mais citados: art. 270 CPC (72 docs), art. 5 Lei 11.419/2006
 
 - 5 processo(s) sigiloso(s): o portal só devolve cabeçalho e andamentos genéricos
 - 77 processo(s) citados em documentos e não coletados (a maioria são precedentes; os que importam ao caso aparecem no topo da lista acima)
-- 26 proposta(s) de alias de entidade aguardando decisão humana (data/curadoria/aliases-propostos.json)
+- 53 proposta(s) de alias de entidade aguardando decisão humana (data/curadoria/aliases-propostos.json)
 

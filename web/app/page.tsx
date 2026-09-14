@@ -105,7 +105,7 @@ export default function Home() {
             <span className="mt-1 block text-sm text-neutral-700">Pedido por pedido: quem pediu, o que pediu e o que o ministro ou a Turma decidiu, com o trecho do documento.</span>
           </Link>
         </div>
-        <p className="mt-2 text-sm text-neutral-700">Termos difíceis aparecem sublinhados; clique para ver o significado, ou consulte o <Link className="underline" href="/glossario">glossário</Link>.</p>
+        <p className="mt-2 text-sm text-neutral-700">Termos difíceis aparecem sublinhados; clique para ver o significado, ou consulte o <Link className="underline" href="/glossario">glossário</Link>. Para conferir qualquer documento com o próprio STF, veja <Link className="underline" href="/verificar">como verificar</Link>.</p>
       </section>
 
       <section aria-labelledby="titulo-relacionados">
