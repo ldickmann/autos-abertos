@@ -1,0 +1,98 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Conselho de Controle de Atividades Financeiras (COAF) requer decisão acerca de como deve proceder com relação ao encaminhamento de Relatórios de Inteligência Financeira (RIFs) produzidos em decorrência dos fatos investigados no âmbito do caso \"Banco Master\".",
+      "pagina": 2,
+      "trecho_fonte": "O Conselho de Controle de Atividades Financeiras (COAF) requer decisão acerca de como deve proceder com relação ao encaminhamento de Relatórios de Inteligência Financeira (RIFs) produzidos em decorrência dos fatos investigados no âmbito do caso “Banco Master”.",
+      "atribuida_a": "Conselho de Controle de Atividades Financeiras (COAF)",
+      "entidades": [
+        {"nome": "Conselho de Controle de Atividades Financeiras (COAF)", "tipo": "orgao_publico"},
+        {"nome": "Banco Master", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O COAF aduz que, em cumprimento à decisão proferida na Reclamação nº 88.121/DF, compartilhou dois Relatórios de Inteligência Financeira por meio de pasta disponível no Sistema SEI-C.",
+      "pagina": 2,
+      "trecho_fonte": "Em seu requerimento, aduz que, em cumprimento à decisão proferida na Reclamação nº 88.121/DF, compartilhou dois Relatórios de Inteligência Financeira por meio de pasta disponível no Sistema SEI-C.",
+      "atribuida_a": "Conselho de Controle de Atividades Financeiras (COAF)",
+      "entidades": [
+        {"nome": "Conselho de Controle de Atividades Financeiras (COAF)", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O COAF aduz que um dos relatórios foi produzido de forma espontânea e o outro a partir de requerimento da CPMI-INSS.",
+      "pagina": 2,
+      "trecho_fonte": "Um deles foi produzido de forma espontânea e outro a partir de requerimento da CPMI-INSS.",
+      "atribuida_a": "Conselho de Controle de Atividades Financeiras (COAF)",
+      "entidades": [
+        {"nome": "Conselho de Controle de Atividades Financeiras (COAF)", "tipo": "orgao_publico"},
+        {"nome": "CPMI-INSS", "tipo": "desconhecido"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que as investigações e as diligências delas decorrentes, tais como a produção de prova oral, documental e pericial, devem seguir o fluxo ordinário legalmente previsto para toda e qualquer investigação penal sob a supervisão do Supremo Tribunal Federal.",
+      "pagina": 2,
+      "trecho_fonte": "As investigações e diligências dela decorrentes, tais como a produção de prova oral, documental e pericial, devem seguir o fluxo ordinário legalmente previsto para toda e qualquer investigação penal",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator decidiu que o procedimento a ser adotado quanto à difusão de relatórios de inteligência financeira, requeridos ou produzidos espontaneamente, deve ser o mesmo ordinariamente já adotado pela Unidade de Inteligência Financeira para casos semelhantes.",
+      "pagina": 3,
+      "trecho_fonte": "o procedimento a ser adotado, no que pertine à difusão de relatórios de inteligência financeira, independentemente de serem requeridos ou produzidos espontaneamente, deve ser o mesmo ordinariamente já adotado por esta Unidade de Inteligência Financeira para casos semelhantes.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca o art. 15 da Lei nº 9.613/1998 para estender a conclusão tanto aos RIFs já compartilhados quanto aos futuros.",
+      "pagina": 3,
+      "trecho_fonte": "Essa conclusão deve ser adotada tantos para os RIFs já compartilhados quanto para os futuros, em observância ao quanto estabelecido pelo art. 15 da Lei nº 9.613/1998.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou ciência ao COAF da decisão e sua publicação.",
+      "pagina": 3,
+      "trecho_fonte": "7. Dê-se ciência ao COAF da presente decisão. 8. Publique-se.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Conselho de Controle de Atividades Financeiras (COAF)", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 26 de fevereiro de 2026, e assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 26 de fevereiro de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; o item 4 do despacho está dividido entre as páginas 2 e 3."
+}

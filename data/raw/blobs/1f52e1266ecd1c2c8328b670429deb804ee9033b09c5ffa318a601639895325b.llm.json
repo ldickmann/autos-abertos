@@ -1,0 +1,50 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator determina, com efeitos imediatos, que ninguém tenha acesso ao material armazenado na Sala-cofre da CPMI-INSS referente aos equipamentos e documentos apreendidos do investigado Daniel Bueno Vorcaro, considerando a necessidade de preservação do sigilo em relação a aspectos da vida privada de investigados na Operação Compliance Zero.",
+      "pagina": 1,
+      "trecho_fonte": "Considerando a necessidade de preservação do sigilo em relação a aspectos da vida privada de investigados na “Operação Compliance Zero”, DETERMINO, com efeitos imediatos, que ninguém tenha acesso ao material armazenado na Sala-cofre da CPMI-INSS referente aos",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"},
+        {"nome": "CPMI-INSS", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que a Polícia Federal, em colaboração interinstitucional com a Presidência da CPMI-INSS, retire os equipamentos armazenados no local para realizar nova separação dos dados, de modo que conteúdo relativo exclusivamente à vida privada do investigado não seja compartilhado com a comissão.",
+      "pagina": 1,
+      "trecho_fonte": "A Polícia Federal deverá, em colaboração interinstitucional com a Presidência da CPMI-INSS, retirar todos os equipamentos que estão armazenados no referido local para realizar uma nova e detida separação dos dados existentes",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "CPMI-INSS", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou, com extrema urgência, a intimação da Polícia Federal, da Presidência da CPMI-INSS e da defesa do investigado Daniel Bueno Vorcaro.",
+      "pagina": 1,
+      "trecho_fonte": "Intimem-se, COM EXTREMA URGÊNCIA, a Polícia Federal, a Presidência da CPMI-INSS e a defesa do investigado DANIEL BUENO VORCARO.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "CPMI-INSS", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em 16 de março de 2026 pelo Ministro André Mendonça, relator.",
+      "pagina": 1,
+      "trecho_fonte": "Brasília, 16 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

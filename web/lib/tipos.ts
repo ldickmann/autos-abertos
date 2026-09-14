@@ -52,6 +52,13 @@ export type Integridade = {
     codigo_autenticacao: string | null; senha_autenticacao: string | null; processo: string | null }[];
 };
 
+export type Mudanca = { o_que: string; mudanca: "sumiu" | "apareceu" | "mudou"; item: string };
+export type RodadaMudancas = {
+  em: string;
+  processos: { incidente: number; processo: string; antes: string | null; depois: string; abas_identicas: string[]; mudancas: Mudanca[];
+    resumo: { sumiu: number; apareceu: number; mudou: number } }[];
+};
+
 export type Referencias = {
   dispositivos: { dispositivo: string; artigo: string; diploma: string; ocorrencias: number;
     documentos: { documento_id: number; incidente: number; titulo: string | null; pagina: number; ocorrencias: number }[] }[];

@@ -13,6 +13,7 @@ const NAV = [
   { href: "/referencias", rotulo: "Referências" },
   { href: "/glossario", rotulo: "Glossário" },
   { href: "/verificar", rotulo: "Verificar" },
+  { href: "/mudancas", rotulo: "O que mudou" },
   { href: "/sobre", rotulo: "Método" },
 ];
 

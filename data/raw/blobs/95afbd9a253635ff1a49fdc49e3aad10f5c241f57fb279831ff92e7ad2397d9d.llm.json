@@ -1,0 +1,30 @@
+{
+  "itens": [
+    {
+      "pedido": "transferência do investigado preso Daniel Bueno Vorcaro para a Penitenciária Federal em Brasília (PFBRA)",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "acolheu o pedido e determinou a imediata transferência do investigado preso Daniel Bueno Vorcaro para a penitenciária federal indicada pela Polícia Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-05",
+      "pagina": 4,
+      "trecho_fonte": "acolho o pedido formulado e determino a imediata transferência do investigado preso DANIEL BUENO VORCARO para a penitenciária federal indicada pela Policia Federal.",
+      "condicoes": [
+        "adoção, pela Polícia Federal em diálogo com a direção da penitenciária, das medidas necessárias para viabilizar a transferência",
+        "adoção de todas as medidas de segurança necessárias para a preservação da integridade física do preso durante toda a transferência"
+      ]
+    },
+    {
+      "pedido": "intimação da Polícia Federal, das direções das penitenciárias envolvidas, da SENAPPEN e da defesa do investigado, e ciência à Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da Polícia Federal, da Direção da Penitenciária em que o investigado se encontra, da Direção da Penitenciária Federal em Brasília, da SENAPPEN e da defesa do investigado preso, e a ciência da Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-05",
+      "pagina": 5,
+      "trecho_fonte": "8. Intime-se a Secretaria Nacional de Políticas Penais - SENAPPEN. 9. Intime-se a defesa do investigado preso. 10. Cientifique-se a Procuradoria-Geral da República.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

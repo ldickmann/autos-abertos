@@ -1,0 +1,60 @@
+{
+  "itens": [
+    {
+      "pedido": "remessa do feito (inquérito em curso na 8ª Vara Criminal Federal de São Paulo) ao Supremo Tribunal Federal",
+      "quem_pediu": "Procurador-Geral da República",
+      "resultado": "outro",
+      "decisao": "consignou que o requerimento de remessa do feito ao Supremo Tribunal Federal mostra-se pertinente e necessário",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-06",
+      "pagina": 4,
+      "trecho_fonte": "verifico, inicialmente, que o requerimento de remessa do feito ao Supremo Tribunal Federal formulado pelo Procurador-Geral da República mostra-se pertinente e necessário",
+      "condicoes": []
+    },
+    {
+      "pedido": "encampação parcial da manifestação da Procuradoria da República em São Paulo de 27.10.2025, com as retificações posteriores, e deferimento dos pedidos formulados pela autoridade policial, à exceção da prisão preventiva de Daniel Bueno Vorcaro",
+      "quem_pediu": "Procurador-Geral da República",
+      "resultado": "deferido",
+      "decisao": "deferiu o pedido formulado pelo Procurador-Geral da República, nos exatos limites em que formulado",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-06",
+      "pagina": 19,
+      "trecho_fonte": "mostra-se urgente e necessário o deferimento dos pedidos formulados pelo Procurador-Geral da República nestes autos, nos exatos limites em que formulados.",
+      "condicoes": []
+    },
+    {
+      "pedido": "quebra de sigilo bancário e fiscal dos investigados, no período de 20.10.2020 a 21.10.2025",
+      "quem_pediu": "Procurador-Geral da República, encampando a representação da autoridade policial",
+      "resultado": "deferido",
+      "decisao": "deferiu os pedidos de quebra de sigilo bancário e fiscal dos investigados indicados nas manifestações transcritas, nos períodos indicados",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-06",
+      "pagina": 19,
+      "trecho_fonte": "defiro os pedidos de quebras de sigilo bancário e fiscal dos investigados nas manifestações transcritas acima, nos períodos indicados",
+      "condicoes": []
+    },
+    {
+      "pedido": "sequestro e bloqueio de bens e valores dos investigados, conforme individualização apresentada pela autoridade policial",
+      "quem_pediu": "Procurador-Geral da República, encampando a representação da autoridade policial",
+      "resultado": "deferido",
+      "decisao": "deferiu os pedidos de sequestro e bloqueio de bens, tal como requeridos pelo Procurador-Geral da República em sua manifestação",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-06",
+      "pagina": 19,
+      "trecho_fonte": "bem como os pedidos de sequestro e bloqueio de bens, tal como requeridos pelo Procurador-Geral da República em sua manifestação.",
+      "condicoes": []
+    },
+    {
+      "pedido": "expedição do necessário ao cumprimento, com preservação do sigilo dos autos",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a expedição do necessário, preservando-se o sigilo dos autos",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-06",
+      "pagina": 20,
+      "trecho_fonte": "Expeça-se o necessário, preservando-se o sigilo dos autos. Cumpra-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "A prisão preventiva de Daniel Bueno Vorcaro, representada pela autoridade policial, não foi requerida pelo PGR e não é decidida no documento. O dispositivo final nomeia apenas quebras de sigilo e sequestro/bloqueio; a busca e apreensão não é mencionada nominalmente."
+}

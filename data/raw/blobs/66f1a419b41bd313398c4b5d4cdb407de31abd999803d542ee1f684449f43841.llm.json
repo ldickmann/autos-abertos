@@ -1,0 +1,45 @@
+{
+  "itens": [
+    {
+      "pedido": "autorização para apresentação do investigado DANIEL BUENO VORCARO para prestar depoimento perante a Comissão de Assuntos Econômicos do Senado Federal em 10/03/2026, às 11h00 (Petição nº 20235/2026)",
+      "quem_pediu": "Comissão de Assuntos Econômicos do Senado Federal, na pessoa do seu Presidente, Senador Renan Calheiros",
+      "resultado": "outro",
+      "decisao": "determinou a extensão de todos os efeitos do provimento judicial de 19 de fevereiro de 2026 (e-Doc 323) à convocação do investigado para a sessão da CAE de 10/03/2026, ficando qualquer transferência condicionada à prévia manifestação expressa do investigado quanto à opção positiva pelo comparecimento",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 3,
+      "trecho_fonte": "DETERMINO a extensão de todos os efeitos do provimento judicial de 19 de fevereiro de 2026 (e-Doc 323) a fim de que a citada decisão também produza efeitos em relação à convocação do investigado DANIEL BUENO VORCARO para a sessão da CAE designada para o dia 10/03/2026 às 11h00.",
+      "condicoes": [
+        "qualquer transferência condicionada à prévia manifestação expressa do investigado, formal e inequívoca, quanto à sua opção positiva pelo comparecimento",
+        "garantia de se fazer acompanhar por advogado devidamente constituído durante o translado e por ocasião da oitiva na CAE"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão à Presidência da CAE do Senado Federal, às defesas constituídas e à Polícia Federal",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com urgência e remessa de cópia integral desta decisão e da contida no e-Doc. 323, à Presidência da CAE, às defesas constituídas e à Polícia Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 3,
+      "trecho_fonte": "4. Assim, comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão e daquela contida no e-Doc. 323, a Presidência da Comissão de Assuntos Econômicos do Senado Federal",
+      "condicoes": []
+    },
+    {
+      "pedido": "fixação pela Polícia Federal das condições logísticas do transporte e do retorno do investigado ao local de custódia",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "reiterou a determinação para que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com escolta, vedado o deslocamento em aeronave particular",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 3,
+      "trecho_fonte": "5. Reitera-se expressamente a determinação para que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira",
+      "condicoes": [
+        "aeronave da própria instituição ou comercial de carreira",
+        "segurança e vigilância contínua policial por meio de escolta apropriada",
+        "vedado o deslocamento em qualquer aeronave particular"
+      ]
+    }
+  ],
+  "observacoes": null
+}

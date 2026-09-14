@@ -1,0 +1,46 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 28 de agosto de 2026, o relator determinou à Secretaria, com urgência, a intimação da autoridade policial atuante no feito para ciência das informações prestadas por DIOGO ILÁRIO DE ARAÚJO OLIVEIRA e dos documentos relativos ao estado de saúde do investigado (e-Doc. 1021-1024).",
+      "pagina": 3,
+      "trecho_fonte": "À Secretaria, com urgência, para que proceda à intimação da autoridade policial atuante no feito, a fim de que tome ciência das informações prestadas por DIOGO ILÁRIO DE ARAÚJO OLIVEIRA, bem como dos documentos acostados relativos ao estado de saúde do investigado (e-Doc. 1021-1024).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DIOGO ILÁRIO DE ARAÚJO OLIVEIRA", "tipo": "pessoa"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "DIOGO ILÁRIO DE ARAÚJO OLIVEIRA prestou informações e acostou documentos relativos ao estado de saúde do investigado, registrados como e-Doc. 1021-1024.",
+      "pagina": 3,
+      "trecho_fonte": "informações prestadas por DIOGO ILÁRIO DE ARAÚJO OLIVEIRA, bem como dos documentos acostados relativos ao estado de saúde do investigado (e-Doc. 1021-1024).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DIOGO ILÁRIO DE ARAÚJO OLIVEIRA", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 28 de agosto de 2026, e assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 28 de agosto de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; a página 2 traz apenas o título \"DESPACHO:\" e o texto está na página 3."
+}

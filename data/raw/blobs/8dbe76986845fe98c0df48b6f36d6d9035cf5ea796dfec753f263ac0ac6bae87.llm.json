@@ -1,0 +1,29 @@
+{
+  "itens": [
+    {
+      "pedido": "decisão sobre como proceder com relação ao encaminhamento de Relatórios de Inteligência Financeira (RIFs) produzidos em decorrência dos fatos investigados no caso Banco Master",
+      "quem_pediu": "Conselho de Controle de Atividades Financeiras (COAF)",
+      "resultado": "outro",
+      "decisao": "decidiu que o procedimento para difusão de relatórios de inteligência financeira, requeridos ou produzidos espontaneamente, deve ser o mesmo ordinariamente adotado pela Unidade de Inteligência Financeira para casos semelhantes, tanto para os RIFs já compartilhados quanto para os futuros",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 3,
+      "trecho_fonte": "o procedimento a ser adotado, no que pertine à difusão de relatórios de inteligência financeira, independentemente de serem requeridos ou produzidos espontaneamente, deve ser o mesmo ordinariamente já adotado por esta Unidade de Inteligência Financeira para casos semelhantes.",
+      "condicoes": [
+        "conclusão aplicável tanto aos RIFs já compartilhados quanto aos futuros, em observância ao art. 15 da Lei nº 9.613/1998"
+      ]
+    },
+    {
+      "pedido": "ciência ao COAF da decisão e publicação",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou ciência ao COAF da decisão e sua publicação",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 3,
+      "trecho_fonte": "Dê-se ciência ao COAF da presente decisão. 8. Publique-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O despacho responde a uma consulta do COAF com orientação de procedimento, sem usar defiro/indefiro; registrado como outro."
+}

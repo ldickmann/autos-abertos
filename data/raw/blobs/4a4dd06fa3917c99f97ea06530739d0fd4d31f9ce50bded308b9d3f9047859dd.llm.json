@@ -1,0 +1,34 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Secretaria Judiciária intimou o Procurador-Geral da República do inteiro teor da decisão monocrática constante dos autos (peça ID df3f3ead), publicada no DJe, em 1º de junho de 2026.",
+      "pagina": 1,
+      "trecho_fonte": "De ordem, a Secretaria Judiciária do Supremo Tribunal Federal INTIMA a parte abaixo identificada, ou quem as suas vezes fizer, do inteiro teor do(a) despacho/decisão constante dos autos (ID da peça: df3f3ead), publicado no DJe",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"},
+        {"nome": "PROCURADOR-GERAL DA REPÚBLICA", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A intimação foi recebida automaticamente pelo sistema, em 01/06/2026, nos termos do art. 5º, §3 da Lei 11.419/2006.",
+      "pagina": 1,
+      "trecho_fonte": "A intimação foi recebida automaticamente pelo sistema, em 01/06/2026, nos termos do art. 5º, §3 da Lei 11.419/2006.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Consta como andamento a vista à PGR para fins de intimação, em 21/05/2026.",
+      "pagina": 1,
+      "trecho_fonte": "- Vista à PGR para fins de intimação - 21/05/2026",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "PGR", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

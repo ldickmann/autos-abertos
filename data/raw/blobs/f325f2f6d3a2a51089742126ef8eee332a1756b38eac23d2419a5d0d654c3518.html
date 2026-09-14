@@ -1,0 +1,149 @@
+
+<input type="hidden" id="env" value="p">
+<div class="col-12">
+    <div class="col-12">
+        <!-- TEMA -->
+        <script>                     
+            $.ajax({
+                type    : "GET",
+                dataType: 'json',                         
+                url     : "https://sistemas.stf.jus.br/repgeral/votacao?tema=N",               
+                cache   :  true,
+                crossDomain: true,
+                success : function(data){                
+                    let processos = data?.package?.repercussaoGeral?.processoLeadingCase;
+                    
+                    if (!Array.isArray(processos)) {
+                        processos = [processos];
+                    }
+
+                    let html2 = "";
+
+                    processos.forEach((dados, index) => {
+                        const ministros = dados?.placar?.ministro || [];
+                        const textoCompleto = `Tema ${dados.numeroTema}${dados.dataFimPrevistaJulgamento ? ' - Data prevista para o fim do Julgamento: ' + dados.dataFimPrevistaJulgamento : ''}${dados.tituloTema ? ' - ' + dados.tituloTema : ''}`;
+                        const textoLimitado = textoCompleto.length > 150 ? textoCompleto.substring(0, 150) + '...' : textoCompleto;
+
+                        html2 += `
+                            <div id="1020-${index}" class="julgamento-item">
+                                <button type="button" name="btnmaismenos${index}" class="btn btn-lista"
+                                    data-bs-toggle="collapse" data-bs-target="#listasJulgamentoTema${index}"
+                                    aria-expanded="false" aria-controls="listasJulgamentoTema${index}">
+                                    <span class="tooltip-lista font-grey-dark m-r-8"><i class="fas fa-gavel"></i></span>
+                                    <span class="processo-detalhes-bold" id="cabecalhoVotacao'99'">
+                                        ${textoLimitado}
+                                    </span>
+                                </button>
+                            </div>
+                        `;
+
+                        html2 += `
+                            <div style="width: 100%;" id="listasJulgamentoTema${index}" class="collapse">
+                                <div style="background-color: #f2f2f2; padding: 12px;">
+                                    <strong>Tema ${dados.numeroTema}</strong>${dados.tituloTema ? ' - ' + dados.tituloTema : ''}<br>
+                                    <strong>Classe:</strong> ${dados.siglaClasse || '-'}<br>
+                                    <strong>Número:</strong> ${dados.numeroProcesso || '-'}<br>
+                                    <strong>Data de início:</strong> ${dados.dataInicioJulgamento || '-'}<br>
+                                    <strong>Data prevista de fim:</strong> ${dados.dataFimPrevistaJulgamento || '-'}<br>
+                                    <strong>Relator(a):</strong> ${dados.relator || '-'}<br>
+                                    ${dados.seqArquivoEletronico 
+                                        ? `<a href="https://portal.stf.jus.br/jurisprudenciaRepercussao/verPronunciamento.asp?pronunciamento=${dados.seqArquivoEletronico}" target="_blank">Manifestação/Voto</a>` 
+                                        : ''
+                                    }
+                                </div>
+                        `;
+
+                        if (Array.isArray(ministros) && ministros.length > 0) {
+                            html2 += `
+                                <div class="legenda__tabela d-lg-none">
+                                    <span class="legenda">QC - Questão constitucional</span>
+                                    <span class="legenda">RG - Repercussão Geral</span>
+                                    <span class="legenda">RJ - Reafirmação de Jurisprudência</span>
+                                    <span class="legenda">M/V - Manifestação/Voto</span>
+                                </div>
+                                <table style="width:100%; border-collapse: collapse; text-align: center;">
+                                    <thead>
+                                        <tr style="background-color: #333; color: white;">
+                                            <th style="border: 1px solid #999; padding: 8px;">Ministro</th>
+                                            <th style="border: 1px solid #999; padding: 8px;">Questão constitucional</th>
+                                            <th style="border: 1px solid #999; padding: 8px;">Repercussão Geral</th>
+                                            <th style="border: 1px solid #999; padding: 8px;">Reafirmação de Jurisprudência</th>
+                                            <th style="border: 1px solid #999; padding: 8px;">Manifestação/Voto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                            `;
+
+                            ministros.forEach((ministro, i) => {
+                                const fundo = i % 2 === 0 ? '#f2f2f2' : '#ffffff';
+                                html2 += `
+                                    <tr style="background-color: ${fundo};">
+                                        <td style="border: 1px solid #999; padding: 8px;">${ministro.nomeMinistro}</td>
+                                        <td style="border: 1px solid #999; padding: 8px;">${ministro.votoQC || '-'}</td>
+                                        <td style="border: 1px solid #999; padding: 8px;">${ministro.votoRG || '-'}</td>
+                                        <td style="border: 1px solid #999; padding: 8px;">${ministro.votoRJ || '-'}</td>
+                                        <td style="border: 1px solid #999; padding: 8px;">
+                                            ${ministro.seq_arquivo_manifestacao 
+                                                ? `<a href="https://portal.stf.jus.br/jurisprudenciaRepercussao/verPronunciamento.asp?pronunciamento=${ministro.seq_arquivo_manifestacao}" target="_blank">Ver</a>` 
+                                                : '-'}
+                                        </td>
+                                    </tr>
+                                `;
+                            });
+
+                            html2 += `
+                                    </tbody>
+                                </table>
+                            `;
+                        }
+
+                        html2 += `</div>`;
+                    });
+                    document.getElementById("votacoesTema").innerHTML += html2;
+                }
+            });
+
+        </script>
+        <!-- FIM TEMA -->
+        <!-- SESSOES VIRTUAIS -->
+
+        <script>                     
+            $.ajax({
+                type    : "GET",
+                dataType: 'json',                
+                url     : "https://sistemas.stf.jus.br/repgeral/votacao?oi=7509527",
+                cache   :  true,
+                crossDomain: true,
+                success : function(data){                  
+                    var html = "";                        
+                    if (data.length == 0){
+                        html += '<div id="semJulgamento" class="julgamento-item">' +
+                                '   <div class="btn btn-lista position-relative">' +
+                                '       <span class="listasSemJulgamento" id="listasSemJulgamento"></span>' +
+                                '       <span class="processo-detalhes-bold" id="cabecalhoVotacaolistasSemJulgamento">Sem sessão virtual</span><br>' +
+                                '   </div>' +
+                                '</div>';
+                    } else {
+                        for (i in data){
+                            html += '<div id="1020-'+ i +'" class="julgamento-item">' +
+                                    '   <button onclick="carregaSessaoVirtual('+ data[i].objetoIncidente.id +')" type="button" name="btnmaismenos'+ i +'" class="btn btn-lista" data-bs-toggle="collapse" data-bs-target="#listasJulgamento'+data[i].objetoIncidente.id+'" aria-expanded="false" aria-controls="listasJulgamento'+data[i].objetoIncidente.id+' semvoto spanmais'+ i +' spanmenos'+ i +'" >' +
+                                    '       <span class="tooltip-lista font-grey-dark m-r-8" ><i class="fas fa-gavel"></i></span>' +
+                                    '       <span class="processo-detalhes-bold" id="cabecalhoVotacao'+ i +'">' +           
+                                                data[i].objetoIncidente.identificacaoCompleta +
+                                    '       </span>'+                                    
+                                    '   </button>'+
+                                    '   <div id="listasJulgamento'+data[i].objetoIncidente.id+'"></div>'+
+                                    '</div>';
+                        }
+                        
+                    }
+                    document.getElementById("votacoes").innerHTML += html;
+                }
+            })
+        </script>
+        <!-- FIM SESSOES VIRTUAIS -->          
+        <div id="votacoesTema"></div>
+        <div id="votacoes"></div>
+        <script src="listasJulgamento.js"></script>        
+    </div>
+</div>

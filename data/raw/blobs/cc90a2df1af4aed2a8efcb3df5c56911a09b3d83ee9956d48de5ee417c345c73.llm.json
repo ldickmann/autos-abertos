@@ -1,0 +1,91 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA formulou pleito de imediata restituição de equipamentos eletrônicos (um celular e um notebook), registrado como e-Doc. 472.",
+      "pagina": 2,
+      "trecho_fonte": "pleito de imediata restituição dos equipamentos eletrônicos (um celular e um notebook) formulado por ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA (e-Doc. 472)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O MPF lançou parecer nos autos, registrado como e-Doc. 685.",
+      "pagina": 2,
+      "trecho_fonte": "Em parecer lançado nos autos (e-Doc. 685), o MPF opinou",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MPF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O MPF, em parecer (e-Doc. 685), opinou contrariamente ao pleito de imediata restituição dos equipamentos eletrônicos formulado por ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA, sob o fundamento de que não há nos autos notícia sobre a conclusão dos exames periciais dos aparelhos apreendidos.",
+      "pagina": 2,
+      "trecho_fonte": "o MPF opinou contrariamente ao pleito de imediata restituição dos equipamentos eletrônicos (um celular e um notebook) formulado por ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA (e-Doc. 472), sob o fundamento de que não há nos autos notícia sobre a conclusão dos exames periciais dos aparelhos apreendidos.",
+      "atribuida_a": "MPF",
+      "entidades": [
+        {"nome": "MPF", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação da autoridade da Polícia Federal que oficia no feito para que, no prazo de 10 dias, informe se os dados necessários para a investigação já foram extraídos dos equipamentos eletrônicos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA.",
+      "pagina": 3,
+      "trecho_fonte": "intime-se a autoridade da Polícia Federal que oficia neste feito para que, no prazo de 10 dias, informe se os dados necessários para a investigação já foram extraídos dos equipamentos eletrônicos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA", "tipo": "pessoa"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, com a vinda das informações, se dê vista ao MPF para parecer sobre a restituição dos aparelhos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA.",
+      "pagina": 3,
+      "trecho_fonte": "Com a vinda das informações, dê-se vista ao MPF para que possa lançar seu parecer sobre este tema específico: restituição dos aparelhos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MPF", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA", "tipo": "pessoa"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, com a chegada do parecer da PGR, os autos voltem conclusos para decisão sobre o pleito de restituição de equipamentos eletrônicos.",
+      "pagina": 3,
+      "trecho_fonte": "Com a chegada do parecer da PGR, voltem-me conclusos para decidir sobre citado pleito de restituição de equipamentos eletrônicos.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "PGR", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 24 de abril de 2026, e assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Intime-se. Cumpra-se. Brasília, 24 de abril de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2."
+}

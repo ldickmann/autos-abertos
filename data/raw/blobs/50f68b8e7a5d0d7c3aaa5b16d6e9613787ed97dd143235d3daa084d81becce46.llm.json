@@ -1,0 +1,27 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 25/08/2026, o relator, Ministro André Mendonça, determinou a abertura de vista à Procuradoria-Geral da República para manifestação sobre o pedido formulado por Leonardo Augusto Furtado Palhares (e-doc. 522).",
+      "pagina": 2,
+      "trecho_fonte": "Abra-se vista à Procuradoria-Geral da República, para manifestação sobre o pedido formulado por LEONARDO AUGUSTO FURTADO PALHARES (e-doc. 522). Brasília, 25 de agosto de 2026.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "LEONARDO AUGUSTO FURTADO PALHARES", "tipo": "pessoa"},
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Consta dos autos pedido formulado por Leonardo Augusto Furtado Palhares, registrado como e-doc. 522.",
+      "pagina": 2,
+      "trecho_fonte": "pedido formulado por LEONARDO AUGUSTO FURTADO PALHARES (e-doc. 522)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "LEONARDO AUGUSTO FURTADO PALHARES", "tipo": "pessoa"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes inteiramente sob sigilo nas duas páginas; nomes das partes não constam do documento."
+}

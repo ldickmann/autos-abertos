@@ -1,0 +1,133 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Alberto Felix de Oliveira Neto apresentou as Petições nº 65982/2026 (e-Doc. 817) e 76574/2026 (e-Doc. 871).",
+      "pagina": 3,
+      "trecho_fonte": "Por meio das Petições nº 65982/2026 (e-Doc. 817) e 76574/2026 (e-Doc. 871), ALBERTO FELIX DE OLIVEIRA NETO requer",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Alberto Felix de Oliveira Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Alberto Felix de Oliveira Neto requer autorização para deslocar-se à Capital Federal para atendimento de intimação para prestar declarações nos autos do inquérito policial nº 2025.0087917-SR/PF/DF, em que figura como investigado (e-docs. 818 e 872).",
+      "pagina": 3,
+      "trecho_fonte": "requer autorização para deslocar-se à Capital Federal para atendimento de intimação para prestar declarações nos autos do inquérito policial nº 2025.0087917-SR/PF/DF, em que figura como investigado (e-docs. 818 e 872).",
+      "atribuida_a": "Alberto Felix de Oliveira Neto",
+      "entidades": [
+        {"nome": "Alberto Felix de Oliveira Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pedido formulado por Alberto Felix de Oliveira Neto, em caráter excepcional e temporário, para autorizar seu deslocamento.",
+      "pagina": 3,
+      "trecho_fonte": "Defiro o pedido formulado por Alberto Felix de Oliveira Neto, em caráter excepcional e temporário, para autorizar seu deslocamento nas seguintes condições:",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Alberto Felix de Oliveira Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O requerente ficou autorizado a deslocar-se, estritamente, no dia e ao local constantes do mandado judicial (e-doc. 872), à Delegacia de Inquéritos Especiais - DELEINQUE/DRPJ/SR/PF/DF, SAIS Quadra 7 - Lote 23 - Setor Policial Sul, Brasília-DF, em 16/06/2026, sendo-lhe vedado permanecer em qualquer outro endereço.",
+      "pagina": 3,
+      "trecho_fonte": "o requerente fica autorizado a deslocar-se, estritamente, no dia e ao local constantes do mandado judicial (e-doc. 872), in casu, à DELEGACIA DE INQUÉRITOS ESPECIAIS - DELEINQUE/DRPJ/SR/PF/DF. SAIS Quadra 7 - Lote 23 - Setor Policial Sul Brasília-DF, em 16/06/2026",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Alberto Felix de Oliveira Neto", "tipo": "pessoa"},
+        {"nome": "DELEGACIA DE INQUÉRITOS ESPECIAIS - DELEINQUE/DRPJ/SR/PF/DF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou que, encerrados os esclarecimentos, o requerente retorne imediatamente ao local de cumprimento de seu monitoramento, ficando sua permanência no local previsto na requisição policial limitada ao exclusivamente necessário para a realização do ato, a critério da Autoridade Policial requisitante.",
+      "pagina": 3,
+      "trecho_fonte": "encerrados os esclarecimentos, o requerente deverá retornar imediatamente ao local de cumprimento de seu monitoramento, ficando sua permanência no local previsto na requisição policial limitada ao exclusivamente necessário para a realização do ato",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Alberto Felix de Oliveira Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou que o retorno do requerente ao local de origem seja comunicado nos autos no prazo máximo de 24 (vinte e quatro) horas.",
+      "pagina": 3,
+      "trecho_fonte": "o seu retorno ao local de origem deverá ser comunicado nos autos no prazo máximo de 24 (vinte e quatro) horas",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Alberto Felix de Oliveira Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão manteve em vigor as demais vedações estabelecidas ao requerente, em especial a de manter contato com eventuais investigados ou terceiros que guardem relação com os fatos objeto do inquérito.",
+      "pagina": 3,
+      "trecho_fonte": "permanecem em vigor as demais vedações estabelecidas, em especial, a de manter contato com eventuais investigados ou terceiros que guardem relação com os fatos objeto do presenteinquérito.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Alberto Felix de Oliveira Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os demais investigados com medidas pessoais restritivas de liberdade ficaram autorizados a realizar o mesmo deslocamento à unidade policial, para serem inquiridos.",
+      "pagina": 4,
+      "trecho_fonte": "Os demais investigados com medidas pessoais restritivas de liberdade ficam, desde já, autorizados a realizar o mesmo deslocamento à unidade policial, para serem inquiridos.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a remessa urgente dos autos à Secretaria Judiciária para a confecção e expedição imediata dos documentos necessários à ciência da autoridade policial e da central de monitoração do investigado Alberto Felix de Oliveira Neto, para a flexibilização do seu monitoramento na data agendada para a oitiva.",
+      "pagina": 4,
+      "trecho_fonte": "Remetam-se, com urgência, os autos à Secretaria Judiciária para a confecção e expedição imediata de todos os documentos que forem necessários à operacionalização de ciência à autoridade policial que atua no presente feito e à central de monitoração do investigado ALBERTO FELIX DE OLIVEIRA NETO",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"},
+        {"nome": "Alberto Felix de Oliveira Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação da defesa, com urgência.",
+      "pagina": 4,
+      "trecho_fonte": "Intime-se a defesa, com urgência.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que se dê ciência ao Ministério Público Federal.",
+      "pagina": 4,
+      "trecho_fonte": "Dê-se ciência ao Ministério Público Federal.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 12 de junho de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 4,
+      "trecho_fonte": "Brasília, 12 de junho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "A numeração dos itens da decisão salta do item 2 (página 3) para o item 7 (página 4); não há itens 3 a 6 no texto disponível."
+}

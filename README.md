@@ -63,3 +63,14 @@ Fluxo: `git switch -c feat/x develop` → commits → `git switch develop && git
 → quando `develop` estiver pronta para publicar, `git switch main && git merge --no-ff develop && git push`.
 Mensagens de commit no imperativo, em português, com o escopo no início quando ajudar
 (`Fase 4: …`, `Interface: …`).
+
+## Preservação e verificação
+
+O propósito é que os autos públicos continuem acessíveis, íntegros e verificáveis por qualquer pessoa, sem depender de um único provedor.
+
+- **Originais versionados**: os blobs de `data/raw/blobs/` (páginas do portal e PDFs, nomeados pelo próprio sha256) e os registros de coleta estão no repositório. Clonar é espelhar.
+- **Manifesto de integridade**: `web/public/data/integridade.json` lista URL de origem, data e sha256 de cada cópia; o hash do manifesto fica em `INTEGRIDADE.sha256`. `python -m stf verificar` confere os blobs locais. A página `/verificar` do site explica como qualquer pessoa confere um documento com o próprio STF.
+- **O que mudou no portal**: `python -m stf vigiar` recoleta cada processo e registra em `CHANGELOG-PORTAL.md` (append-only) o que sumiu, apareceu ou mudou; a página `/mudancas` mostra o mesmo.
+- **Reproduzir do zero**: [docs/REPRODUZIR.md](docs/REPRODUZIR.md). **Réplica do site**: `web/out/` é estático; sirva a pasta de onde quiser.
+- **Neutralidade**: `tests/test_neutralidade.py` falha se algum texto gerado ou editorial contiver juízo sobre pessoas. O site registra o que consta nos autos; não conclui nada sobre ninguém.
+

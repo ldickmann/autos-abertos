@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "prorrogação de prazo para a realização de diligências complementares nas investigações (e-Doc. 91)",
+      "quem_pediu": "autoridade policial",
+      "resultado": "deferido",
+      "decisao": "deferiu a prorrogação de prazo por mais 60 (sessenta) dias, com fulcro no artigo 230-C, § 1º, do RISTF",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-09-04",
+      "pagina": 2,
+      "trecho_fonte": "2. Com fulcro no artigo 230-C, § 1º, do RISTF defiro a prorrogação de prazo, por mais 60 (sessenta) dias.",
+      "condicoes": []
+    },
+    {
+      "pedido": "remessa dos autos à Polícia Federal para continuidade das investigações",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a remessa dos autos à Polícia Federal para a continuidade das investigações",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-09-04",
+      "pagina": 2,
+      "trecho_fonte": "3. Remetam-se os autos à Polícia Federal para a continuidade das investigações.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

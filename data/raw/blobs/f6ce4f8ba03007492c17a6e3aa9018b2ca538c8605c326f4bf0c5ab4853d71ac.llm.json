@@ -1,0 +1,29 @@
+{
+  "itens": [
+    {
+      "pedido": "autorização para que, após a conclusão dos atos cartorários, os custodiados presos preventivamente sejam conduzidos diretamente ao sistema penitenciário estadual, à disposição do Supremo Tribunal Federal",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "deferiu o pedido e autorizou que, após a conclusão dos atos cartorários, os custodiados sejam conduzidos ao sistema penitenciário estadual, onde permanecerão à disposição do Supremo Tribunal Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-04",
+      "pagina": 3,
+      "trecho_fonte": "9. DEFIRO o pedido formulado pela Polícia Federal para autorizar que, após a conclusão dos atos cartorários relativos ao cumprimento das prisões, os custodiados sejam, como ordinariamente se tem feito, conduzidos ao sistema penitenciário estadual",
+      "condicoes": [
+        "cabendo ao respectivo sistema prisional prover a estrutura necessária à custódia e às escoltas para audiências (presenciais ou por videoconferência), atendimentos médicos e demais deslocamentos necessários"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão à autoridade policial responsável pelo cumprimento e às autoridades administrativas competentes",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação urgente à autoridade policial responsável pelo cumprimento e às autoridades administrativas competentes para a execução",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-04",
+      "pagina": 3,
+      "trecho_fonte": "10. Comunique-se, com urgência, à autoridade policial responsável pelo cumprimento e às autoridades administrativas competentes para a execução.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

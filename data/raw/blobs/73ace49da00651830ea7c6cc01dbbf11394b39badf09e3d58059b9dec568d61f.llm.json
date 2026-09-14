@@ -1,0 +1,55 @@
+{
+  "itens": [
+    {
+      "pedido": "custódia dos documentos e informações encartados aos autos por diversos órgãos estatais e pelo Poder Judiciário",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que os documentos e informações encartados aos autos sejam devidamente custodiados, com a estrita observância do devido processo legal",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-15",
+      "pagina": 1,
+      "trecho_fonte": "determino sejam devidamente custodiados, não apenas para afastar eventuais nulidades, mas também para que sejam alcançados resultados efetivos, com a estrita observância do devido processo legal.",
+      "condicoes": []
+    },
+    {
+      "pedido": "realização imediata de diligências preliminares, com prazo inicial de 30 dias",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a realização imediata de diligências preliminares, com prazo inicial de 30 (trinta) dias, conforme enumeradas nos itens i a iv",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-15",
+      "pagina": 1,
+      "trecho_fonte": "Dessa maneira, DETERMINO a realização imediata das seguintes diligências preliminares, com prazo inicial de 30 (trinta) dias:",
+      "condicoes": [
+        "oitiva dos investigados pelo Delegado de Polícia Federal designado pelo Diretor-Geral da Polícia Federal, a fim de que possam esclarecer, em detalhes e com apresentação dos respectivos documentos, as denúncias em apuração nestes autos",
+        "oitiva dos dirigentes do Banco Central do Brasil sobre questões de sua atribuição envolvendo as atividades do Banco Master e de possíveis desdobramentos envolvendo outras instituições financeiras",
+        "possibilidade de apresentação imediata de pedidos de requisição, pelo delegado acima designado, de informações necessárias de órgãos públicos ou de empresas sobre as denúncias em apuração nos autos",
+        "possibilidade de apresentação imediata, pelo delegado acima referido, de requerimentos individualizados de afastamento dos sigilos telefônicos-telemáticos, de correspondência ou fiscais em desfavor dos investigados ou de terceiros, desde que formulados com a devida justificativa para apreciação específica, nos termos da lei",
+        "as oitivas poderão ocorrer por videoconferência ou presencialmente em uma das salas de audiência localizadas nesta Suprema Corte, devendo ser gravadas e acompanhadas pelos magistrados auxiliares do Gabinete"
+      ]
+    },
+    {
+      "pedido": "ofício ao Procurador-Geral da República para que, querendo, indique um Subprocurador-Geral da República para atuação nas oitivas preliminares",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a expedição de ofício ao Procurador-Geral da República para que, querendo, já indique um Subprocurador-Geral da República para atuação nas oitivas preliminares",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-15",
+      "pagina": 2,
+      "trecho_fonte": "Oficie-se ao Procurador Geral da República para que, querendo, já indique um Sub Procurador-Geral da República, para atuação nas oitivas preliminares.",
+      "condicoes": []
+    },
+    {
+      "pedido": "adoção, pela Secretaria Judiciária, das medidas necessárias à realização das oitivas",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou à Secretaria Judiciária que, após o recebimento das informações detalhadas sobre aqueles que serão ouvidos, adote as medidas necessárias à realização dos atos",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-15",
+      "pagina": 2,
+      "trecho_fonte": "Determino à Secretaria Judiciária que, após o recebimento das informações detalhadas sobre aqueles que serão ouvidos, adote as medidas necessárias à realização dos atos.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "Na página 2 o relator determinou ainda comunicação à Polícia Federal, na pessoa do Diretor-Geral, ciência ao Procurador-Geral da República e publicação; a decisão serve de mandado."
+}

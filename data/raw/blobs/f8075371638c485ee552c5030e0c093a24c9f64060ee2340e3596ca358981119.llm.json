@@ -1,0 +1,133 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro Dias Toffoli.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. DIAS TOFFOLI",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator observa que todos os investigados no inquérito se encontram representados por defensores constituídos (e-docs. 12-fls. 667, 19, 22, 67, 77, 86, 108, 127, 151 e 160), tendo obtido acesso aos autos com antecedência às oitivas agendadas pela autoridade policial.",
+      "pagina": 2,
+      "trecho_fonte": "Observo que todos investigados neste inquérito encontram-se devidamente representados por defensores constituídos (e-docs. 12-fls. 667, 19, 22, 67, 77, 86, 108, 127, 151 e 160), tendo obtido acesso a estes autos com a devida antecedência à oitivas agendadas pela autoridade policial.",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que o material apreendido com autorização judicial se encontra sob custódia e responsabilidade da Polícia Federal.",
+      "pagina": 2,
+      "trecho_fonte": "O material apreendido com autorização judicial, todavia, se encontra sob custódia e responsabilidade da Polícia Federal",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que os laudos e demais documentos relativos ao material apreendido sejam encartados aos autos à medida que ultimada sua catalogação e análise.",
+      "pagina": 2,
+      "trecho_fonte": "cujos laudos e demais documentos deverão ser encartados aos autos, na medida em que ultimada sua catalogação e análise.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A autoridade policial formulou o pedido constante do e-doc. 113.",
+      "pagina": 2,
+      "trecho_fonte": "O pedido constante do e-doc. 113, formulado pela autoridade policial",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que o pedido do e-doc. 113 já fora referido por ocasião do deferimento de medidas nos autos da Pet. 15.198, com a qual se relaciona mais proximamente e onde os fatos serão regularmente apurados, não havendo necessidade de investigação em duplicidade pela autoridade policial representante.",
+      "pagina": 2,
+      "trecho_fonte": "já fora referido por ocasião do deferimento de medidas nos autos da Pet. 15.198, com o qual se relaciona mais proximamente, e onde serão regularmente apurados os fatos, não havendo necessidade de investigação em duplicidade pela autoridade policial representante.",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "As defesas apresentaram pedidos de adiamento de depoimentos (e-docs. 139, 151 e 155).",
+      "pagina": 2,
+      "trecho_fonte": "os pedidos de adiamento de depoimentos encetados pelas defesas (v.g. edocs. 139, 151 e 155)",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que os pedidos de adiamento de depoimentos apresentados pelas defesas sejam dirigidos à autoridade policial responsável pelas inquirições, a quem caberá analisá-los.",
+      "pagina": 2,
+      "trecho_fonte": "Ressalto, ainda, que os pedidos de adiamento de depoimentos encetados pelas defesas (v.g. edocs. 139, 151 e 155), devem ser dirigidos à autoridade policial responsável pelas inquirições",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator ressalta que as defesas podem valer-se da interação pelo sistema de videoconferência disponibilizado para os atos.",
+      "pagina": 2,
+      "trecho_fonte": "podendo, inclusive, valer-se as defesas da devida interação pelo sistema de videoconferência disponibilizados para os atos.",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que as providências solicitadas no e-doc. 164 não se relacionam diretamente com os fatos em investigação nos autos.",
+      "pagina": 2,
+      "trecho_fonte": "Finalmente, as providências solicitadas no e-doc. 164, não relacionam diretamente com os fatos em investigação nos presentes",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que as providências solicitadas no e-doc. 164 sejam objeto de eventuais providências perante a autoridade policial competente, para investigação autônoma.",
+      "pagina": 3,
+      "trecho_fonte": "devendo ser objeto de eventuais providências perante a autoridade policial competente, para investigação autônoma.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou ciência à Procuradoria-Geral da República e a intimação das partes.",
+      "pagina": 3,
+      "trecho_fonte": "Ciência à Procuradoria-Geral da República. Intimem-se.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 26 de janeiro de 2026, e assinado pelo Ministro Dias Toffoli, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 26 de janeiro de 2026. Ministro DIASTOFFOLI Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; a frase final do despacho está dividida entre as páginas 2 e 3."
+}

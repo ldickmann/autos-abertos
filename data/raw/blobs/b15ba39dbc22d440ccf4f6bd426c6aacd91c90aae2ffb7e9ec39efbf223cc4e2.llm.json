@@ -1,0 +1,42 @@
+{
+  "itens": [
+    {
+      "pedido": "complementação da determinação de lacração e acautelamento dos bens e materiais apreendidos (decisão de 13.01, e-doc nº 85), com regras de destinação por tipo de bem",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "ressaltou que numerários em espécie devem ser depositados em instituição financeira oficial; veículos, joias e outros petrechos mantidos em depósito pela Polícia Federal ou instituição por ela habilitada; documentos e equipamentos telemáticos e informáticos lacrados, acautelados e enviados ao Supremo Tribunal Federal",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-14",
+      "pagina": 1,
+      "trecho_fonte": "ressalto que numerários em espécie, em moeda corrente ou estrangeira, devem ser levados a depósito e guarda em instituição financeira oficial; outros bens materiais, tais como veículos, joias e outros petrechos, devem ser mantidos em depósito pela própria Polícia Federal ou instituição por ela habilitada;",
+      "condicoes": [
+        "numerários em espécie, em moeda corrente ou estrangeira, levados a depósito e guarda em instituição financeira oficial",
+        "veículos, joias e outros petrechos mantidos em depósito pela própria Polícia Federal ou instituição por ela habilitada",
+        "documentos, equipamentos telemáticos e informáticos regularmente lacrados, acautelados e enviados à Suprema Corte"
+      ]
+    },
+    {
+      "pedido": "levantamento do sigilo das manifestações constantes dos documentos nºs 4, 15, 56, 68, 71 e 85",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou o levantamento do sigilo das manifestações constantes dos documentos nºs 4, 15, 56, 68, 71 e 85, por já cumpridas as formalidades e diligências neles determinadas",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-14",
+      "pagina": 1,
+      "trecho_fonte": "determino o levantamento do sigilo dessas manifestações.",
+      "condicoes": []
+    },
+    {
+      "pedido": "comunicação ao Diretor Geral da Polícia Federal, ciência ao Ministério Público Federal e publicação",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação ao Diretor Geral da Polícia Federal, a ciência ao Ministério Público Federal e a publicação",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-14",
+      "pagina": 1,
+      "trecho_fonte": "Comunique-se ao Diretor Geral da Polícia Federal. Dê-se ciência ao Ministério Público Federal Publique-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

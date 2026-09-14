@@ -1,0 +1,54 @@
+{
+  "itens": [
+    {
+      "pedido": "autorização para que a Procuradoria-Geral da República realize a extração e análise de todo o acervo probatório colhido nos autos, com posterior disponibilização",
+      "quem_pediu": "Procurador-Geral da República",
+      "resultado": "deferido",
+      "decisao": "deferiu o pedido formulado pelo Procurador-Geral da República",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-14",
+      "pagina": 2,
+      "trecho_fonte": "Posto isso, defiro o pedido formulado pelo Procurador-Geral da",
+      "condicoes": [
+        "o Procurador-Geral da República deve adotar as cautelas necessárias à correta e cuidadosa custódia do material",
+        "aparelhos mantidos eletricamente carregados e em modo desacoplado de redes telefônicas e de wi-fi, para preservação de seu conteúdo e oportuna extração e periciamento pela autoridade encarregada"
+      ]
+    },
+    {
+      "pedido": "expedição de ofício ao Diretor-Geral da Polícia Federal para as providências necessárias e encaminhamento direto do material à PGR",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se oficie ao Diretor-Geral da Polícia Federal para as providências necessárias, autorizando desde logo o encaminhamento direto do material à PGR",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-14",
+      "pagina": 3,
+      "trecho_fonte": "República e determino que se oficie ao Diretor-Geral da Polícia Federal para as providências necessárias, autorizando, desde logo, o encaminhamento direto à PGR do referido material.",
+      "condicoes": []
+    },
+    {
+      "pedido": "adoção, pelo Procurador-Geral da República, das cautelas necessárias à custódia do material",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que o Procurador-Geral da República adote as cautelas necessárias à correta e cuidadosa custódia do material",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-14",
+      "pagina": 3,
+      "trecho_fonte": "Determino, outrossim, que o Procurador-Geral da República adote as cautelas necessárias à correta e cuidadosa custódia do referido material, bastando para tanto que os aparelhos sejam mantidos eletricamente carregados e em modo desacoplado de redes telefônicas e de wi-fi",
+      "condicoes": [
+        "aparelhos mantidos eletricamente carregados e em modo desacoplado de redes telefônicas e de wi-fi"
+      ]
+    },
+    {
+      "pedido": "cumprimento e publicação da decisão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou o cumprimento e a publicação da decisão",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-14",
+      "pagina": 3,
+      "trecho_fonte": "Cumpra-se. Publique-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O despacho relata pedidos anteriores de reconsideração da lacração e acautelamento do material (autoridade policial e PGR), sem dispositivo específico sobre eles."
+}

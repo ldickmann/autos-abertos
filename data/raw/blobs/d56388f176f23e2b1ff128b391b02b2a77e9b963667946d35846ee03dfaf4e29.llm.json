@@ -1,0 +1,72 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Foi juntada aos autos documentação a partir do Ofício nº 188/2026 (e-Doc. 720).",
+      "pagina": 4,
+      "trecho_fonte": "A documentação juntada a partir do Ofício nº 188/2026 (e- Doc. 720)",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a documentação juntada a partir do Ofício nº 188/2026 (e-Doc. 720) é relativa a procedimentos oriundos do Juízo da 6ª Vara Criminal Federal da Seção Judiciária de São Paulo/SP, distintos daqueles reportados pela autoridade policial no e-Doc. 612 e objeto do despacho anterior (e-doc. 703).",
+      "pagina": 4,
+      "trecho_fonte": "é relativa a procedimentos oriundos do Juízo da 6ª Vara Criminal Federal da Seção Judiciária de São Paulo/SP, logo, distintos daqueles outrora reportados pela autoridade policial (e-Doc. 612), objeto de despacho anterior (e-doc. 703).",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Juízo da 6ª Vara Criminal Federal da Seção Judiciária de São Paulo/SP", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica que, ainda que provenientes de um núcleo investigativo comum atinente à Operação Compliance Zero, as apurações não guardam relação específica com a Segunda Fase da mesma operação, objeto do feito.",
+      "pagina": 4,
+      "trecho_fonte": "Ainda que provenientes de um núcleo investigativo comum, atinente à Operação Compliance Zero, verifico que tais apurações não guardam relação específica com a Segunda Fase da mesma operação, o objeto do presente feito.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a instauração de procedimento investigatório apartado, autuado como Inquérito (INQ) autônomo, para o qual deverá ser trasladada toda a apuração oriunda da 8ª Vara Criminal Federal de São Paulo (e-Docs. 720 a 964).",
+      "pagina": 4,
+      "trecho_fonte": "determino a instauração de procedimento investigatório apartado, autuado como INQUÉRITO (INQ) autônomo, para o qual deverá ser trasladado toda a apuração oriunda da 8ª Vara Criminal Federal de São Paulo (e-Docs. 720 a 964).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "8ª Vara Criminal Federal de São Paulo", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumprida a instauração do inquérito apartado, os autos tornem conclusos para apreciação.",
+      "pagina": 4,
+      "trecho_fonte": "Cumprido o item anterior, tornem conclusos para apreciação.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 19 de junho de 2026, pelo Ministro André Mendonça.",
+      "pagina": 4,
+      "trecho_fonte": "Brasília, 19 de junho de 2026. Ministro ANDRÉMENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

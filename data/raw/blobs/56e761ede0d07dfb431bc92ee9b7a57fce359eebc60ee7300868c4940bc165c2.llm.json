@@ -1,0 +1,66 @@
+{
+  "itens": [
+    {
+      "pedido": "pedido complementar de busca e apreensão em relação às 39 pessoas físicas e jurídicas elencadas na manifestação, nos endereços indicados pela autoridade policial (e-doc. 16)",
+      "quem_pediu": "Procurador-Geral da República",
+      "resultado": "parcialmente_deferido",
+      "decisao": "deferiu parcialmente os pedidos complementares de busca e apreensão das pessoas elencadas, nos respectivos endereços indicados, exceto em relação aos alvos sob n. 2 (endereço 1), 12 e 33",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-08",
+      "pagina": 5,
+      "trecho_fonte": "Por todo o exposto, defiro parcialmente os pedidos complementares de busca e apreensão das pessoas acima elencadas, nos respectivos endereços indicados, exceto em relação aos indivíduos sob n. 2 (endereço 1), 12 e 33, tal como requerido pelo Procurador-Geral da República em sua manifestação",
+      "condicoes": [
+        "lavratura de autos circunstanciados individualizados",
+        "diligências realizadas de modo o mais discreto possível",
+        "vedado o acompanhamento por meios de imprensa ou terceiros",
+        "preservada a intimidade das pessoas sujeitas à medida",
+        "preservação do sigilo dos autos"
+      ]
+    },
+    {
+      "pedido": "busca e apreensão no endereço 1 do alvo n. 2 (Daniel Bueno Vorcaro, R. Dr. Ibsen da Costa Manso, 141, São Paulo/SP)",
+      "quem_pediu": "Procurador-Geral da República",
+      "resultado": "indeferido",
+      "decisao": "excluiu do deferimento o endereço 1 do alvo n. 2, por já terem sido realizadas diligências de igual jaez, sem que se verifique e justifique neste momento a realização de novas diligências",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-08",
+      "pagina": 5,
+      "trecho_fonte": "exceto em relação aos indivíduos sob n. 2 (endereço 1), 12 e 33, tal como requerido pelo Procurador-Geral da República em sua manifestação",
+      "condicoes": []
+    },
+    {
+      "pedido": "busca e apreensão em relação ao alvo n. 12 (André Felipe de Oliveira Seixas Maia)",
+      "quem_pediu": "Procurador-Geral da República",
+      "resultado": "indeferido",
+      "decisao": "excluiu do deferimento o alvo n. 12, por já terem sido realizadas diligências de igual jaez, sem que se verifique e justifique neste momento a realização de novas diligências",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-08",
+      "pagina": 5,
+      "trecho_fonte": "exceto em relação aos indivíduos sob n. 2 (endereço 1), 12 e 33, tal como requerido pelo Procurador-Geral da República em sua manifestação",
+      "condicoes": []
+    },
+    {
+      "pedido": "busca e apreensão em relação ao alvo n. 33 (Banco Master)",
+      "quem_pediu": "Procurador-Geral da República",
+      "resultado": "indeferido",
+      "decisao": "excluiu do deferimento o alvo n. 33, por já terem sido realizadas diligências de igual jaez e por estar a instituição em liquidação extrajudicial, com arquivos e documentos em poder do interventor nomeado pelo Banco Central do Brasil",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-08",
+      "pagina": 5,
+      "trecho_fonte": "exceto em relação aos indivíduos sob n. 2 (endereço 1), 12 e 33, tal como requerido pelo Procurador-Geral da República em sua manifestação",
+      "condicoes": []
+    },
+    {
+      "pedido": "expedição do necessário, cumprimento e intimação da Procuradoria-Geral da República e da Polícia Federal",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a expedição do necessário, preservado o sigilo dos autos, o cumprimento e a intimação da Procuradoria-Geral da República e da Polícia Federal para cumprimento da decisão",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-08",
+      "pagina": 6,
+      "trecho_fonte": "Expeça-se o necessário, preservando-se o sigilo dos autos. Cumpra-se. Intimem-se a Procuradoria-Geral de República e a Polícia Federal para cumprimento de preente decisão.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "A lista da PGR registra o alvo n. 8 como prejudicado por não residir em território nacional; isso consta da manifestação, não do dispositivo. Alvos deferidos não foram desdobrados em itens individuais."
+}

@@ -1,0 +1,661 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Roberto de Oliveira Campos Neto formulou a Petição nº 22049/2026 (e-Doc. 414), noticiando a aprovação do Requerimento n. 185/2026 no âmbito da “CPI do Crime Organizado”.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se da Petição nº 22049/2026 (e-Doc. 414), formulada por Roberto de Oliveira Campos Neto, noticiando a aprovação do Requerimento n. 185/2026, no âmbito da “CPI do Crime Organizado”.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"},
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Requerimento n. 185/2026 tem por objeto a convocação do requerente para prestar depoimento perante a Comissão Parlamentar de Inquérito, agendado para o dia 03/03, às 9h.",
+      "pagina": 2,
+      "trecho_fonte": "Tal requerimento têm por objeto a convocação do requerente para prestar depoimento, posteriormente agendado para o dia 03/03, às 9h, perante a referida Comissão Parlamentar de Inquérito.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"},
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente assevera que sua convocação foi integralmente justificada na suposta necessidade de esclarecimento dos fatos apurados no âmbito da Operação Compliance Zero.",
+      "pagina": 2,
+      "trecho_fonte": "Assevera, com base no teor do requerimento aprovado, que a sua convocação “foi integralmente justificada na suposta necessidade de esclarecimento dos fatos apurados no âmbito da denominada Operação",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente argumenta que a leitura do requerimento, somada à análise do objeto da Comissão Parlamentar de Inquérito, deixa evidente a ilegalidade de sua convocação.",
+      "pagina": 3,
+      "trecho_fonte": "Argumenta que, “a leitura do requerimento”, “somada à análise do objeto da aludida Comissão Parlamentar de Inquérito, deixam evidente a flagrante ilegalidade da convocação do ora requerente” (e-doc. 414, p. 2-3).",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente defende haver desvio de finalidade, pela ausência de relação entre os fatos investigados na Operação Compliance Zero e o objeto investigatório da Comissão Parlamentar de Inquérito.",
+      "pagina": 3,
+      "trecho_fonte": "Defende que a apontada ilegalidade estaria caracterizada em razão (i) da existência de “um flagrante desvio de finalidade”, considerando a ausência de qualquer relação entre os fatos investigados no âmbito da Operação Compliance Zero, empregada como justificativa para a convocação do peticionário",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente sustenta que a iniciativa é uma tentativa política de associá-lo artificialmente ao escopo das investigações da Operação Compliance Zero, em hipótese de Fishing Expedition.",
+      "pagina": 3,
+      "trecho_fonte": "“uma tentativa política de, artificialmente, associar o requerente ao escopo das investigações levadas a efeito no âmbito da Operação Compliance Zero, em uma típica hipótese de Fishing Expedition”",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente sustenta não haver justificativa plausível para que compareça à CPI na qualidade de convocado e não de convidado.",
+      "pagina": 3,
+      "trecho_fonte": "da inexistência de “qualquer justificativa plausível para que o requerente compareça à CPI na qualidade de convocado e não de convidado” (e-Doc. 414, p. 5).",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente pede que lhe seja garantido o direito de não comparecer à sessão da Comissão Parlamentar de Inquérito do Crime Organizado designada para sua oitiva.",
+      "pagina": 3,
+      "trecho_fonte": "o deferimento do presente pleito para garantir ao Requerente o direito de não comparecer à sessão da Comissão Parlamentar de Inquérito do Crime Organizado para a qual foi designada a sua oitiva",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"},
+        {"nome": "Comissão Parlamentar de Inquérito do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Subsidiariamente, o requerente pede a convolação do requerimento de convocação em convite, nos termos realizados em relação ao atual presidente do Banco Central do Brasil, Gabriel Galípolo.",
+      "pagina": 3,
+      "trecho_fonte": "Subsidiariamente, requer-se a convolação do requerimento de convocação em convite, nos exatos termos realizados em relação ao atual presidente do Banco Central do Brasil,GabrielGalípolo.",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"},
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "Gabriel Galípolo", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente pede que, caso compareça à audiência, lhe seja assegurado o direito ao silêncio, inclusive quanto a perguntas que os parlamentares entendam como não incriminadoras.",
+      "pagina": 4,
+      "trecho_fonte": "1. O seu direito fundamental ao silêncio, ou seja, o direito de não responder, querendo, quaisquer perguntas a ele direcionadas, inclusive aquelas que os próprios parlamentares entendam como não incriminadoras;",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente pede que lhe seja assegurado o direito de não produzir prova contra si, inclusive de não ser compelido a fornecer documentos, dados, arquivos ou senhas de acesso a dispositivos eletrônicos.",
+      "pagina": 4,
+      "trecho_fonte": "2. O direito fundamental de não produzir prova contra si por qualquer outro ato, incluindo, mas não limitado, a ser compelido ao fornecimento de documentos, dados, arquivos físicos ou eletrônicos, ou senha de acesso a dispositivos eletrônicos",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente pede que lhe sejam assegurados o direito à assistência por seus advogados durante o ato e o direito de não ser submetido ao compromisso de dizer a verdade.",
+      "pagina": 4,
+      "trecho_fonte": "3. O seu direito fundamental à assistência por seus advogados duranteo ato; 4. O seu direito fundamental de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esseconteúdo;",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente pede o direito de não sofrer constrangimentos físicos ou morais pelo exercício dos direitos anteriores e o direito de ausentar-se da sessão se conveniente ao exercício de sua defesa.",
+      "pagina": 4,
+      "trecho_fonte": "5. O seu direito fundamental de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores, ou qualquer outra forma de tratamento indigno duranteaoitiva; 6. O direito de ausentar-se da sessão se conveniente ao exercício do seu direito dedefesa;",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente pede o direito de não ser submetido a ato sob reserva de jurisdição ou sem justa causa, em especial busca pessoal, apreensão ou quebra de sigilo de seu aparelho celular ou outros dispositivos e documentos.",
+      "pagina": 4,
+      "trecho_fonte": "7. O direito de não ser submetido a qualquer ato sob reserva de jurisdição ou despido de justa causa, em especial a busca pessoal e/ou a apreensão ou quebra de sigilo de seu aparelho celular ou quaisquer outros dispositivos eletrônicos ou documentos que carregue consigo na sessão.",
+      "atribuida_a": "Roberto de Oliveira Campos Neto",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator rememora que o art. 58, § 3º, da Constituição da República confere às Comissões Parlamentares de Inquérito poderes de investigação próprios das autoridades judiciais.",
+      "pagina": 5,
+      "trecho_fonte": "a Constituição da República, em seu art. 58, § 3º, confere às Comissões Parlamentares de Inquérito poderes de investigação próprios das autoridades judiciais, sem prejuízo do reconhecimento de outras faculdades previstas nos regimentos das respectivas Casas legislativas.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a jurisprudência do STF reconhece que os poderes das CPIs compreendem a requisição e produção de provas, a determinação de quebras de sigilo bancário, fiscal e telemático, a custódia e análise do material probatório e a condução de atos instrutórios.",
+      "pagina": 5,
+      "trecho_fonte": "a jurisprudência consolidada desta Suprema Corte reconhece que tais poderes compreendem: (i) a requisição e produção de provas; (ii) a determinação de quebras de sigilo bancário, fiscal e telemático, observadas as garantias constitucionais; (iii) a custódia e análise do material probatório obtido",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o precedente MS nº 37.970-MC-AgR, Segunda Turma, relator Min. Ricardo Lewandowski, julgado em 09/10/2021.",
+      "pagina": 5,
+      "trecho_fonte": "Nesse sentido, menciona-se, dentre outros, o precedente firmado no MS nº 37.970-MC-AgR, Segunda Turma. Rel. Min. Ricardo Lewandowski, j. 09/10/2021, p. 08/02/2022.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ricardo Lewandowski", "tipo": "ministro"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que as decisões e determinações das Comissões Parlamentares de Inquérito se sujeitam ao escrutínio da jurisdição constitucional exercida pelo STF.",
+      "pagina": 5,
+      "trecho_fonte": "exsurge como decorrência inafastável a sujeição das decisões e determinações exaradas por tais colegiados parlamentares ao escrutínio da jurisdição constitucional exercida por esse Tribunal.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o controle jurisdicional exercido pelo STF sobre as Comissões Parlamentares de Inquérito não vulnera o princípio da separação de poderes.",
+      "pagina": 5,
+      "trecho_fonte": "o controle jurisdicional exercido por esta Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito, não vulnera o princípio da separação de poderes",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o MS nº 25.668/DF, relator Min. Celso de Mello, Tribunal Pleno, julgado em 23/03/2006, segundo o qual o controle jurisdicional de abusos praticados por CPI não ofende o princípio da separação de poderes.",
+      "pagina": 6,
+      "trecho_fonte": "(MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno,j.23/03/2006,p.04/08/2006).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Celso de Mello", "tipo": "ministro"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator identifica três ordens de razões alegadas pelo peticionário: desvio de finalidade, hipótese de Fishing Expedition e ofensa à isonomia pela aprovação de convocação em vez de convite.",
+      "pagina": 6,
+      "trecho_fonte": "o exercício do controle jurisdicional por parte dessa Suprema Corte é embasado na ofensa a direitos e garantias fundamentais do peticionário por três ordens de razões alegadas",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a instalação das CPIs depende do requerimento de um terço dos membros das casas legislativas, da indicação de fato determinado e da definição de prazo certo, citando o MS nº 3.776-MC-Ref/DF, relator Min. Luís Roberto Barroso.",
+      "pagina": 7,
+      "trecho_fonte": "depende exclusivamente (i) do requerimento de um terço dos membros das casas legislativas; (ii) da indicação de fato determinado a ser apurado; e (iii) da definição de prazo certo para sua duração (MS nº 3.776 -MC-Ref/DF, Rel. Min. Luís Roberto Barroso, Tribunal Pleno, j. 14/04/2021).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Luís Roberto Barroso", "tipo": "ministro"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca doutrina segundo a qual a exigência de fato determinado é um dos limites constitucionais formais à atuação das CPIs.",
+      "pagina": 7,
+      "trecho_fonte": "a doutrina aponta que a exigência de identificação objetiva do “fato determinado” a apurar se consubstancia em um dos “limites constitucionais formais” (“porque vêm regulamentados na própria letra do dispositivo que os positivou”) à atuação das CPIs.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita Uadi Lammêgo Bulos no sentido de que o poder de investigação parlamentar não pode inverter, subverter ou deturpar o fato determinado, seu objeto formal.",
+      "pagina": 7,
+      "trecho_fonte": "“é certo que o poder de investigação parlamentar não possui o condão de inverter, subverter ou deturpar o fato determinado, seu objeto formal” (BULOS, Uadi Lammêgo. Curso de Direito Constitucional, 5ª ed. São Paulo: Saraiva, 2010).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Uadi Lammêgo Bulos", "tipo": "pessoa"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita advertência do Ministro Cezar Peluso no MS nº 25.885-MC/DF de que, se a CPI se perde na investigação de fatos outros que não o determinado como seu objeto formal, configuram-se desvio e esvaziamento de finalidade.",
+      "pagina": 7,
+      "trecho_fonte": "ao apreciar medida liminar pleiteada no MS nº 25.885-MC/DF, o Ministro Cezar Peluso ter aludido à necessidade de: “[...] advertir que, se se perde CPI na investigação de fatos outros que não o determinado como seu objeto formal, configuram-se-lhe desvio e esvaziamento de finalidade",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Cezar Peluso", "tipo": "ministro"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o fato determinado impõe limites ao poder investigatório da CPI, não sendo legítima a investigação de circunstâncias desconexas do objeto delimitado, citando o MS 23.652/DF, relator Min. Celso de Mello.",
+      "pagina": 8,
+      "trecho_fonte": "impõe limites ao seu poder investigatório, de modo que não se revela legítima a investigação de circunstâncias desconexas e alheias ao objeto previamente delimitado (v.g. MS 23.652/DF, Rel. Min. Celso de Mello, Tribunal Pleno, j. 22.11.2000, DJ 16.2.2001).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Celso de Mello", "tipo": "ministro"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator constata, a partir de fragmentos do Requerimento nº 470, de 2025, que a “CPI do Crime Organizado” foi criada com base na justificação que transcreve.",
+      "pagina": 8,
+      "trecho_fonte": "verifica-se a partir de fragmentos do Requerimento nº 470, de 2025, que a denominada “CPI do Crime Organizado” foi criada a partir da apresentação da seguinte “justificação”",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 afirma que, segundo o Anuário Brasileiro de Segurança Pública de 2023 do Fórum Brasileiro de Segurança Pública, houve 47,3 mil mortes violentas intencionais no ano de 2022.",
+      "pagina": 8,
+      "trecho_fonte": "De acordo com pesquisas realizadas pelo Fórum Brasileiro de Segurança Pública (FBSP), através do aludido Anuário Brasileiro de Segurança Pública de 2023, cuja fonte são os boletins de ocorrência produzidos pelas Polícias Civis, houve 47,3 mil mortes violentas intencionais no ano de 2022",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": [
+        {"nome": "Fórum Brasileiro de Segurança Pública (FBSP)", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 afirma que há 72 facções no Brasil, de acordo com a Secretaria Nacional de Políticas Penais.",
+      "pagina": 9,
+      "trecho_fonte": "as organizações criminosas, entre as quais as referidas facções (há 72 no Brasil, de acordo com a Secretaria Nacional de Políticas Penais)",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": [
+        {"nome": "Secretaria Nacional de Políticas Penais", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 afirma que, segundo o jornal ‘El País’, houve rompimento entre o Primeiro Comando da Capital (PCC) e o Comando Vermelho (CV) no ano de 2016.",
+      "pagina": 9,
+      "trecho_fonte": "Um marco dessa evolução se deu, segundo o jornal ‘El País’, pelo rompimento entre o Primeiro Comando da Capital (PCC) e o Comando Vermelho (CV) no ano de 2016",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": [
+        {"nome": "Primeiro Comando da Capital (PCC)", "tipo": "organizacao"},
+        {"nome": "Comando Vermelho (CV)", "tipo": "organizacao"},
+        {"nome": "El País", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 afirma que a rebelião no Complexo Penitenciário Anísio Jobim (Compaj), em Manaus, em 2017, deixou 60 mortos.",
+      "pagina": 9,
+      "trecho_fonte": "a exemplo do emblemático caso da rebelião no presídio de Manaus - Complexo Penitenciário Anísio Jobim (Compaj) - em 2017. Oriunda do confronto entre o PCC e o Comando Vermelho pela disputa de controle do presídio, o confronto deixou 60mortos.",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": [
+        {"nome": "Complexo Penitenciário Anísio Jobim (Compaj)", "tipo": "orgao_publico"},
+        {"nome": "PCC", "tipo": "organizacao"},
+        {"nome": "Comando Vermelho", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 estima faturamento potencial de R$ 335,1 bilhões em caso de venda para a Europa de toda a cocaína que passa pelo território brasileiro anualmente.",
+      "pagina": 10,
+      "trecho_fonte": "faturamento de R$ 335,1 bilhões em caso de venda, para a Europa, de toda a substância que passa pelo território brasileiro anualmente.",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 afirma que o PCC e o CV conseguiram dominar dezenas de presídios do país e se instalar nos diferentes estados brasileiros.",
+      "pagina": 10,
+      "trecho_fonte": "Ambos, atualmente entre as principais e mais poderosas facções do Brasil, conseguiram dominar dezenas de presídios do país e se instalar nos diferentes estados brasileiros.",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": [
+        {"nome": "Primeiro Comando da Capital (PCC)", "tipo": "organizacao"},
+        {"nome": "Comando Vermelho (CV)", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 afirma que a rebelião de fevereiro de 2001 atingiu 29 unidades prisionais ao mesmo tempo, com 14 detentos mortos e 19 agentes penitenciários feridos.",
+      "pagina": 11,
+      "trecho_fonte": "Essa rebelião ocorreu em fevereiro de 2001 e atingiu 29 unidades prisionais ao mesmo tempo, havendo 14 detentos mortos e19agentes penitenciários feridos.",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 descreve o ‘novo cangaço’ como modalidade criminosa cujo objetivo é atacar sobretudo agências bancárias em cidades pequenas.",
+      "pagina": 11,
+      "trecho_fonte": "uma nova modalidade criminosa que vem se expandindo fortemente em muitas regiões do país é a que se convencionou chamar de ‘novo cangaço’. Trata-se de uma espécie de atuação cujo objetivo é o de atacar sobretudo agências bancárias em cidades pequenas",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 descreve as milícias como grupos que atuam de maneira ilícita sob a alegação de combater o tráfico ilegal de drogas, pagos por cidadãos intimidados pela violência do tráfico.",
+      "pagina": 12,
+      "trecho_fonte": "que atuam de maneira ilícita sob a alegação de combater o tráfico ilegal de drogas. Ou seja, as milícias seriam espécies de grupos de proteção privados, pagos pelos cidadãos intimidados pela violência do tráfico.",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 afirma que a milícia de maior relevância, influência e dimensão é a milícia Bonde do Zinho.",
+      "pagina": 12,
+      "trecho_fonte": "Aquela que possui maior relevância, influência e dimensão éamilíciaBondedo Zinho.",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": [
+        {"nome": "Bonde do Zinho", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A justificação do Requerimento nº 470/2025 afirma ser necessário que o Senado da República constitua comissão parlamentar de inquérito para apurar a atuação, a expansão e o funcionamento de organizações criminosas no território brasileiro.",
+      "pagina": 12,
+      "trecho_fonte": "é absolutamente necessário que o Senado da República, em legítimo exercício da prerrogativa do art. 58, § 3º, da Constituição Federal, constitua comissão parlamentar de inquérito com o objetivo de apurar a atuação, a expansão e o funcionamento de organizações criminosas no território brasileiro",
+      "atribuida_a": "Requerimento nº 470, de 2025 (justificação da CPI do Crime Organizado)",
+      "entidades": [
+        {"nome": "Senado da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Requerimento nº 470/2025 requer a criação de Comissão Parlamentar de Inquérito composta de 11 membros titulares, pelo prazo de 120 dias, com limite de despesas de R$ 30.000,00.",
+      "pagina": 13,
+      "trecho_fonte": "Requer criação de Comissão Parlamentar de Inquérito, composta de 11 (onze) membros titulares e número de membros suplentes igual à metade dos titulares mais um, para, no prazo de 120 (cento e vinte) dias, com limite de despesas de R$ 30.000,00 (trinta mil reais),",
+      "atribuida_a": "Requerimento nº 470, de 2025",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Requerimento nº 470/2025 delimita como objeto da CPI apurar a atuação, a expansão e o funcionamento de organizações criminosas no território brasileiro, em especial de facções e milícias, investigando-se o modus operandi de cada qual.",
+      "pagina": 13,
+      "trecho_fonte": "apurar a atuação, a expansão e o funcionamento de organizações criminosas no território brasileiro, em especial de facções e milícias, investigando-se o modus operandi de cada qual, as condições de instalação e desenvolvimento em cada região, bem como as respectivas estruturas de tomada de decisão",
+      "atribuida_a": "Requerimento nº 470, de 2025",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator constata que a “CPI do Crime Organizado” foi instalada para investigar o funcionamento de organizações criminosas no território brasileiro, em especial de facções e milícias.",
+      "pagina": 13,
+      "trecho_fonte": "Portanto, constata-se que a “CPI do Crime Organizado” foi instalada para investigar o “funcionamento de organizações criminosas no território brasileiro, em especial de facções e milícias”.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que o requerimento de convocação do peticionante faz alusão à sua ex-condição de Presidente do Banco Central, no período entre 2019 e 2024.",
+      "pagina": 13,
+      "trecho_fonte": "o Requerimento para convocação do peticionante faz alusão a sua ex-condição de Presidente do Banco Central, no período compreendido entre 2019 e 20024.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Banco Central", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CPI entendeu que a convocação do ex-presidente da autarquia fiscalizatória seria crucial para esclarecer se eventuais falhas ou omissões na regulação e fiscalização bancária permitiram a infiltração e a expansão de organizações criminosas.",
+      "pagina": 13,
+      "trecho_fonte": "a CPI entendeu que a convocação do ex-presidente da autarquia fiscalizatória seria “crucial para esclarecer se eventuais falhas ou omissões na regulação e fiscalização bancária permitiram a infiltração e a expansão de",
+      "atribuida_a": "CPI do Crime Organizado",
+      "entidades": [
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerimento de convocação afirma que a convocação do ex-presidente do Banco Central, Roberto Campos Neto, é medida indispensável para o avanço das investigações da CPI sobre o Crime Organizado.",
+      "pagina": 14,
+      "trecho_fonte": "A convocação do ex-presidente do Banco Central, Roberto Campos Neto, é uma medida indispensável para o avanço das investigações desta Comissão Parlamentar de Inquérito sobre o Crime Organizado.",
+      "atribuida_a": "CPI do Crime Organizado (Requerimento n. 185/2026, e-doc. 416)",
+      "entidades": [
+        {"nome": "Roberto Campos Neto", "tipo": "pessoa"},
+        {"nome": "Banco Central", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerimento de convocação afirma que a oitiva do responsável pela autoridade monetária entre 2019 e 2024 é crucial para esclarecer se falhas ou omissões na regulação e fiscalização bancária permitiram a infiltração e expansão de organizações criminosas.",
+      "pagina": 14,
+      "trecho_fonte": "a oitiva do responsável pela autoridade monetária do país durante o período de 2019 a 2024 é crucial para esclarecer se eventuais falhas ou omissões na regulação e fiscalização bancária permitiram a infiltração e a expansão de organizações criminosas.",
+      "atribuida_a": "CPI do Crime Organizado (Requerimento n. 185/2026, e-doc. 416)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerimento de convocação aponta o colapso do Banco Master, instituição que afirma envolvida em esquema de fraudes que pode alcançar R$ 17 bilhões conforme apurado pela Operação Compliance Zero da Polícia Federal, como principal nexo causal da convocação.",
+      "pagina": 14,
+      "trecho_fonte": "O recente colapso do Banco Master, instituição envolvida em um esquema de fraudes que pode alcançar R$ 17 bilhões, conforme apurado pela Operação Compliance Zero da Polícia Federal, serve como o principal nexo causal para esta convocação.",
+      "atribuida_a": "CPI do Crime Organizado (Requerimento n. 185/2026, e-doc. 416)",
+      "entidades": [
+        {"nome": "Banco Master", "tipo": "organizacao"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerimento de convocação afirma que investigações revelaram que o Banco Master teria movimentado cerca de R$ 2,8 bilhões em operações de câmbio para uma empresa suspeita de lavar dinheiro para o Primeiro Comando da Capital (PCC).",
+      "pagina": 14,
+      "trecho_fonte": "Investigações revelaram que o Banco Master teria movimentado cerca de R$ 2,8 bilhões em operações de câmbio para uma empresa suspeita de lavar dinheiro para o Primeiro Comando da Capital (PCC).",
+      "atribuida_a": "CPI do Crime Organizado (Requerimento n. 185/2026, e-doc. 416)",
+      "entidades": [
+        {"nome": "Banco Master", "tipo": "organizacao"},
+        {"nome": "Primeiro Comando da Capital (PCC)", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerimento de convocação afirma que, durante a gestão de Roberto Campos Neto, foram editadas a Resolução nº 4.656/2018, que flexibilizou a criação de fintechs de crédito, e a Resolução nº 4.966/2021, que alterou as regras de provisionamento, as quais teriam promovido desregulação do sistema.",
+      "pagina": 14,
+      "trecho_fonte": "Durante a gestão do Sr. Roberto Campos Neto, foram editadas resoluções que, na prática, promoveram uma desregulação do sistema, como a Resolução nº 4.656/2018, que flexibilizou a criação de fintechs de crédito, e a Resolução nº 4.966/2021, que alterou as regras de provisionamento.",
+      "atribuida_a": "CPI do Crime Organizado (Requerimento n. 185/2026, e-doc. 416)",
+      "entidades": [
+        {"nome": "Roberto Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerimento de convocação afirma que a aparente falha na supervisão consolidada entre o Banco Central e a Comissão de Valores Mobiliários (CVM) precisa ser examinada.",
+      "pagina": 15,
+      "trecho_fonte": "A aparente falha na supervisão consolidada entre o Banco Central e a Comissão de Valores Mobiliários (CVM), que permitiu a atuação de estruturas financeiras opacas, também precisa ser minuciosamenteexaminada.",
+      "atribuida_a": "CPI do Crime Organizado (Requerimento n. 185/2026, e-doc. 416)",
+      "entidades": [
+        {"nome": "Banco Central", "tipo": "orgao_publico"},
+        {"nome": "Comissão de Valores Mobiliários (CVM)", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerimento de convocação afirma que a oitiva de Roberto Campos Neto não visa antecipar juízo de valor, mas coletar informações técnicas e estratégicas para o cumprimento da missão constitucional da CPI.",
+      "pagina": 15,
+      "trecho_fonte": "a oitiva do Sr. Roberto Campos Neto não visa antecipar juízo de valor, mas sim coletar informações técnicas e estratégicas que são vitais para o cumprimento da missão constitucional desta CPI.",
+      "atribuida_a": "CPI do Crime Organizado (Requerimento n. 185/2026, e-doc. 416)",
+      "entidades": [
+        {"nome": "Roberto Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator extrai do próprio requerimento que o principal nexo causal da convocação seria o recente colapso do Banco Master, conforme apurado pela Operação Compliance Zero da Polícia Federal.",
+      "pagina": 15,
+      "trecho_fonte": "Do teor próprio requerimento extrai-se que “o principal nexo causal para esta convocação” seria “[o] recente colapso do Banco Master, instituição envolvida em um esquema de fraudes que pode alcançar R$ 17 bilhões, conforme apurado pela Operação Compliance Zero da Polícia Federal”.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Banco Master", "tipo": "organizacao"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, pelas informações disponíveis até o momento, não há qualquer indício de envolvimento do convocado com os fatos investigados na Operação Compliance Zero.",
+      "pagina": 15,
+      "trecho_fonte": "pelas informações de que se dispõe até o presente momento, não há qualquer indício de envolvimento do indivíduo convocado com os fatos investigados no âmbito da denominada Operação Compliance Zero.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o único liame entre o convocado e a investigação foi sua condição de ex-presidente da autarquia responsável pela fiscalização do sistema financeiro nacional.",
+      "pagina": 16,
+      "trecho_fonte": "como objeto os mesmos fatos determinados que delimitam os trabalhos da comissão — foi a sua condição de ex-presidente da autarquia responsável pela fiscalização do sistema financeiro nacional.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator conclui que houve extrapolação do escopo da Comissão Parlamentar de Inquérito, configurando desvio e esvaziamento de finalidade, na esteira da advertência do Ministro Cezar Peluso no MS nº 25.885-MC/DF.",
+      "pagina": 16,
+      "trecho_fonte": "caracterizando-se, de maneira inequívoca, a configuração do “desvio e esvaziamento de finalidade”, os quais ensejam a inutilização do trabalho desenvolvido, por afrontar a destinação constitucional desse relevante colegiado parlamentar, na esteira da advertência registrada pelo Ministro Cezar Peluso",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Cezar Peluso", "tipo": "ministro"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma não ser possível placitar o ato impugnado, ante a ofensa a direitos e garantias fundamentais que o vício identificado configura.",
+      "pagina": 16,
+      "trecho_fonte": "não há como placitar o ato impugnado, ante a ofensa aos direitos e garantias fundamentais que a constatação do vício identificado configura.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator, com esteio na diretriz de mínima intervenção em seara reservada a outros Poderes e no princípio da isonomia, entende ser o caso de acolher o pedido subsidiário para convolar o requerimento de convocação em convite, como realizado em relação ao atual presidente do Banco Central do Brasil.",
+      "pagina": 16,
+      "trecho_fonte": "entendo ser o caso de acolher o pedido subsidiário formulado, para convolar o requerimento de convocação em convite, nos exatos termos realizados em relação ao atual presidente do Banco Central do Brasil.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a solução adotada faculta ao peticionante a opção de não comparecer, preservando seus direitos fundamentais sem anular por completo a deliberação congressual questionada.",
+      "pagina": 16,
+      "trecho_fonte": "Por meio dessa solução, pela qual se faculta ao peticionante a legítima opção por não comparecer, promove-se a preservação dos seus direitos fundamentais sem, contudo, anular-se por completo a deliberação congressual questionada",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator acolhe parcialmente o pedido para convolar o requerimento de convocação em convite.",
+      "pagina": 17,
+      "trecho_fonte": "Ante o exposto, acolho parcialmente o pedido, para convolar o requerimento de convocação em convite.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"},
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator acolhe o pedido subsidiário para garantir ao requerente, caso compareça à audiência como convidado, o direito de permanecer em silêncio quanto a perguntas cujas respostas possam implicar risco de autoincriminação.",
+      "pagina": 17,
+      "trecho_fonte": "Acolho, outrossim, o pedido subsidiário para garantir ao requerente, caso venha a comparecer à audiência designada, na qualidade de convidado, os seguintes direitos e garantias: (i) o direito de permanecer em silêncio relativamente às perguntas,",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"},
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator garante ao requerente a assistência de advogado durante o ato e a vedação de qualquer medida coercitiva e constrangimento físico ou moral pelo exercício da garantia da não autoincriminação.",
+      "pagina": 17,
+      "trecho_fonte": "(ii) à assistência de advogado durante o ato; (iii) a vedação de qualquer medida coercitiva e constrangimento físico ou moral pelo exercício da garantia da não autoincriminação.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"},
+        {"nome": "Roberto de Oliveira Campos Neto", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determina a comunicação, com a máxima urgência e com cópia integral da decisão, à Presidência da CPI do Crime Organizado e às defesas constituídas.",
+      "pagina": 17,
+      "trecho_fonte": "Comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI do Crime Organizado e as defesas constituídas.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determina à Secretaria as comunicações e providências em regime de urgência e ordena a publicação da decisão.",
+      "pagina": 17,
+      "trecho_fonte": "Proceda a Secretaria as comunicações e providências determinadas, em regime de urgência. Publique-se.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi assinada em Brasília, em 2 de março de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 17,
+      "trecho_fonte": "Brasília, 2 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Partes, procuradores, autoridade policial e advogados constam como \"SOB SIGILO\" no cabeçalho (páginas 1 e 2). A transcrição da justificação do Requerimento nº 470/2025 (páginas 8 a 13) contém omissões marcadas com \"(...)\" no próprio documento."
+}

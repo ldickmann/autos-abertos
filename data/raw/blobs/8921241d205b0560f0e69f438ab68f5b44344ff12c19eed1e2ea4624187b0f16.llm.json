@@ -1,0 +1,16 @@
+{
+  "itens": [
+    {
+      "pedido": "acesso, pela defesa, aos dados telemáticos referidos na informação da autoridade policial (e-Doc. 444)",
+      "quem_pediu": null,
+      "resultado": "deferido",
+      "decisao": "autorizou o acesso, pela defesa, aos dados telemáticos referidos na informação da autoridade policial do e-Doc. 444",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-05",
+      "pagina": 2,
+      "trecho_fonte": "Considerando o teor da informação veiculada pela autoridade policial no e-Doc. 444, autorizo o acesso, pela defesa, aos dados telemáticos lá referidos.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O documento não identifica quem formulou o pedido de acesso nem qual defesa é beneficiada."
+}
