@@ -26,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR" data-tema="escuro" className={`${newsreader.variable} ${plex.variable} ${plexMono.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
+        <link rel="alternate" type="application/atom+xml" title="Autos Abertos: avisos e mudanças" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/feed.xml`} />
       </head>
       <body className="min-h-screen bg-neutral-50 text-neutral-900">
         <a href="#conteudo" className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2">

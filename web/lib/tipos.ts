@@ -65,6 +65,20 @@ export type Aviso = {
   fontes: { rotulo: string; url: string }[]; processos_relacionados: number[];
 };
 
+export type EventoCronologia = {
+  data: string; fonte: "portal" | "documento"; tipo: "andamento" | "assercao" | "decisao"; processo: string; incidente: number; texto: string;
+  contexto: "caso" | "referencia"; categoria?: string; andamento_id?: number; tipo_epistemico?: TipoEpistemico; atribuida_a?: string | null;
+  trecho_fonte?: string; literal?: string; documento_id?: number; titulo_documento?: string | null; pagina?: number; assercao_id?: number;
+  resultado?: string; quem_pediu?: string | null; quem_decidiu?: string; decisao_id?: number;
+};
+export type CronologiaDados = { inicio_do_caso: string; total: number; por_fonte: { portal: number; documento: number }; eventos: EventoCronologia[] };
+
+export type FonteExterna = {
+  id: string; orgao: string; rotulo: string; url: string; tipo: string; capturar: boolean; por_que: string;
+  ultima: { id: number; fetched_at: string; http_status: number | null; sha256: string | null; bytes: number | null; content_type: string | null } | null;
+  historico: { id: number; fetched_at: string; http_status: number | null; sha256: string | null }[]; mudou: boolean; versoes_distintas: number;
+};
+
 export type Referencias = {
   dispositivos: { dispositivo: string; artigo: string; diploma: string; ocorrencias: number;
     documentos: { documento_id: number; incidente: number; titulo: string | null; pagina: number; ocorrencias: number }[] }[];

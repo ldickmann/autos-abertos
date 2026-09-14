@@ -55,17 +55,41 @@ export default async function PaginaEntidade({ params }: { params: Promise<{ id:
       )}
 
       <section aria-labelledby="as">
-        <h2 id="as" className="text-lg font-bold">Asserções que citam esta entidade ({assercoes.length})</h2>
-        {assercoes.length === 0 ? <p className="text-sm text-neutral-700">Nenhuma ainda. A camada semântica ainda não foi executada sobre os documentos, ou nenhuma asserção validada cita este nome.</p> : (
-          <ul className="mt-2 space-y-2 text-sm">
-            {assercoes.map((a) => (
-              <li key={a.id} className="rounded border border-neutral-300 bg-white p-3">
-                <div className="flex flex-wrap items-center gap-2"><BadgeEpistemico tipo={a.tipo_epistemico} />{a.data_andamento && <span className="font-mono text-xs">{formatarData(a.data_andamento)}</span>}</div>
-                <p className="mt-1">{a.texto}{a.atribuida_a ? <span className="text-neutral-700"> — atribuída a {a.atribuida_a}</span> : null}</p>
-                <p className="text-xs text-neutral-700">fonte: <Link className="underline" href={`/documento/${a.documento?.id}#p-${a.pagina}`}>{a.documento?.titulo}, p. {a.pagina}</Link> — “{a.trecho_fonte}”</p>
-              </li>
-            ))}
-          </ul>
+        <h2 id="as" className="text-lg font-bold">Quem diz o quê sobre esta entidade <span className="text-sm font-normal text-neutral-700">({assercoes.length} asserções)</span></h2>
+        <p className="mt-1 text-sm text-neutral-700">
+          Separado por natureza: o que o juízo registrou como fato, o que cada parte alegou e o que cada julgador adotou como fundamento. Cada item aponta o documento, a página e o trecho literal.
+          Alegação não é fato, e fundamento é a razão declarada pelo julgador; nada aqui é conclusão do site.
+        </p>
+        {assercoes.length === 0 ? <p className="mt-2 text-sm text-neutral-700">Nenhuma asserção validada cita este nome.</p> : (
+          <div className="mt-3 grid gap-4 lg:grid-cols-3">
+            {(["fato_processual", "alegacao_parte", "fundamento_decisorio"] as const).map((tipo) => {
+              const lista = assercoes.filter((a) => a.tipo_epistemico === tipo);
+              const grupos = new Map<string, typeof lista>();
+              for (const a of lista) { const k = tipo === "fato_processual" ? "registro nos autos" : (a.atribuida_a ?? "sem atribuição"); grupos.set(k, [...(grupos.get(k) ?? []), a]); }
+              return (
+                <div key={tipo} className="min-w-0">
+                  <h3 className="flex items-center gap-2 text-sm font-semibold"><BadgeEpistemico tipo={tipo} /> {lista.length}</h3>
+                  {lista.length === 0 && <p className="mt-1 text-xs text-neutral-600">nenhuma</p>}
+                  <div className="mt-2 space-y-2">
+                    {[...grupos.entries()].sort((a, b) => b[1].length - a[1].length).map(([quem, itens]) => (
+                      <details key={quem} className="folha border border-neutral-300 bg-white p-2 text-sm" open={grupos.size === 1 && itens.length <= 6}>
+                        <summary className="cursor-pointer font-medium">{quem} <span className="font-normal text-neutral-600">({itens.length})</span></summary>
+                        <ul className="mt-2 space-y-2">
+                          {itens.map((a) => (
+                            <li key={a.id}>
+                              <p className="leitura">{a.texto}</p>
+                              <p className="text-xs text-neutral-700">{a.data_andamento ? <span className="font-mono">{formatarData(a.data_andamento)} · </span> : null}<Link className="toque underline" href={`/documento/${a.documento?.id}#p-${a.pagina}`}>{a.documento?.titulo}, p. {a.pagina}</Link></p>
+                              <details className="text-xs text-neutral-700"><summary className="cursor-pointer">trecho literal</summary><blockquote className="leitura mt-1 border-l-2 border-neutral-400 pl-2">“{a.trecho_fonte}”</blockquote></details>
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         )}
       </section>
     </div>

@@ -68,3 +68,14 @@ Não pode, e o schema impede: resumos narrativos, conexões "prováveis" entre p
 - **4.4 (pedidos e resultados por decisão):** feito em 14/09. Prompt `stf/prompts/decisao_v1.md`, módulo `stf/decisoes.py`, tabela `decisao_item`, mesma validação literal da Fase 4 (página existe, trecho ≤300 caracteres presente na página). 81 documentos decisórios (41 decisões monocráticas, 36 despachos marcados como decisão pelo portal, acórdão, decisão de julgamento, voto e voto vogal) → **251 itens** pedido → resultado: 120 determinado de ofício, 61 deferidos, 27 outro, 19 indeferidos, 12 referendados, 8 prejudicados, 3 deferidos em parte, 1 não conhecido; 8 itens descartados pela conferência literal. 7 subagentes Opus em uma leva; cada resposta bruta guardada como blob. Interface: página **Decisões** (filtros por processo, resultado, quem pediu e busca), seção "O que foi decidido" em cada processo.
 - **Camada para leigos (pedido do usuário em 14/09):** glossário editorial de 32 verbetes (`stf/curadoria/glossario.json`, só termos gerais, nada sobre o caso) com componente `Termo` (nota ao clicar, funciona por toque); "Por onde começar" na capa com as três perguntas que a base responde sem interpretar (do que trata, quem participa e em que papel, o que foi decidido). Limite mantido: nenhum resumo narrativo; o que se lê são transcrições neutras com fonte.
 
+## 7. Análise com e sem modelo: o que foi acrescentado em 14/09 (segunda rodada)
+
+Critério: onde uma regra determinística dá o mesmo resultado que um modelo daria, a regra ganha (reproduzível, testável, sem custo). O modelo fica para o que exige leitura (asserções, pedidos → resultados).
+
+- **Cronologia dos fatos segundo os documentos** (`stf/datas.py`): 354 das 2430 asserções trazem data no trecho literal; 334 com uma data só entram na cronologia com o tipo epistêmico e a atribuição. É o "o que aconteceu e quando" que faltava, sem narrativa: cada ponto é uma frase do documento com página.
+- **Fontes oficiais externas** (`stf/externas.py`): o caso passa por Banco Central e Senado; as páginas oficiais são copiadas com hash e histórico, no mesmo regime de vigilância do portal do STF.
+- **Saídas abertas** (`stf/saidas.py`): CSV e feed Atom para quem quer analisar em planilha ou acompanhar sem visitar o site.
+- **Quem diz o quê**: a página de cada entidade separa fato, alegação (por quem alega) e fundamento (por julgador). É a apresentação mais honesta do material extraído: mostra a disputa sem arbitrá-la.
+
+Ideias avaliadas e não feitas, com motivo: busca semântica por embeddings (exige modelo em tempo de consulta; a busca por texto já cobre); detecção de "contradições" entre documentos (viraria juízo do site; o que se faz é justapor, com fonte); resumo por processo (proibido pelo escopo: narrativa).
+
