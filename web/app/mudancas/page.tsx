@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PontosChave } from "@/components/PontosChave";
 import { getMudancas } from "@/lib/data";
 import { formatarDataHora } from "@/lib/tipos";
 
@@ -6,6 +7,15 @@ import { formatarDataHora } from "@/lib/tipos";
 export default function PaginaMudancas() {
   const historico = [...getMudancas()].reverse();
   const totalRodadas = historico.length;
+  const somaMud = (r: (typeof historico)[number]) => r.processos.reduce((n, p) => n + p.resumo.sumiu + p.resumo.apareceu + p.resumo.mudou, 0);
+  const ultima = historico[0];
+  const totalMudancas = historico.reduce((n, r) => n + somaMud(r), 0);
+  const sumiram = historico.reduce((n, r) => n + r.processos.reduce((m, p) => m + p.resumo.sumiu, 0), 0);
+  const pontos = [
+    { texto: <><strong>{totalRodadas} rodadas</strong> de recoleta{ultima ? `; a última em ${formatarDataHora(ultima.em)}, com ${ultima.processos.length} processos e ${somaMud(ultima) === 0 ? "nenhuma mudança" : `${somaMud(ultima)} mudança(s)`}` : ""}.</> },
+    { texto: <>No total, {totalMudancas} mudanças detectadas; <strong>{sumiram === 0 ? "nada sumiu do portal" : `${sumiram} item(ns) sumiram do portal`}</strong> entre uma cópia e outra.</> },
+    { texto: <>O que isso vigia: se um andamento, uma parte ou uma petição desaparecer, ou se um processo virar sigiloso, fica registrado aqui com as duas cópias nomeadas.</> },
+  ];
   return (
     <div className="space-y-6">
       <header className="max-w-3xl">
@@ -20,6 +30,7 @@ export default function PaginaMudancas() {
           Para conferir uma cópia com o próprio STF, veja <Link className="underline" href="/verificar">Verificar</Link>.
         </p>
       </header>
+      <PontosChave itens={pontos} />
 
       {historico.length === 0 && <p className="text-sm">Ainda não houve recoleta depois da primeira cópia.</p>}
 

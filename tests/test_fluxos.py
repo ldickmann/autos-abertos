@@ -355,3 +355,12 @@ def test_exportar_trajetos_recusa_prova_inexistente(tmp_path):
     sem_prova = {"trajetos": [{"id": "t", "titulo": "x", "resumo": "", "passos": [{"de": "a", "para": "b", "provas": []}]}]}
     with pytest.raises(ValueError):
         exportar_trajetos(con, sem_prova)
+
+
+def test_exportar_pontos_chave_resolve_provas_e_recusa_ponto_sem_prova(tmp_path):
+    from stf.fluxos_export import exportar_pontos_chave
+    con = _banco_com_assercao(tmp_path)
+    out = exportar_pontos_chave(con, {"inicio": [{"texto": "Fulano opera para Beltrano, diz a PF.", "provas": [{"assercao": 637}]}]})
+    assert out["inicio"][0]["provas"][0]["atribuida_a"] == "Polícia Federal" and out["inicio"][0]["texto"].startswith("Fulano")
+    with pytest.raises(ValueError):
+        exportar_pontos_chave(con, {"inicio": [{"texto": "sem prova", "provas": []}]})

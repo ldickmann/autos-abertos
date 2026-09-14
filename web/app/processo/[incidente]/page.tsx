@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BadgeEpistemico, Carimbo, Publicidade, StatusProcessual } from "@/components/Badges";
 import { LinhaDoTempo } from "@/components/LinhaDoTempo";
 import { ListaDecisoes } from "@/components/ListaDecisoes";
+import { PontosChave } from "@/components/PontosChave";
 import { Termo } from "@/components/Termo";
 import { formatarData, getDecisoes, getGlossario, getMeta, getProcesso, listarIncidentesColetados, verbeteDe, verbetesParaTipos } from "@/lib/data";
 
@@ -18,6 +19,25 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
   const decisoes = getDecisoes();
   const verbetesTipos = verbetesParaTipos(new Set(p.andamentos.map((a) => a.tipo)), p.explicacoes_portal);
   const verbetesResultado = Object.fromEntries(Object.entries(decisoes.rotulos_resultado).map(([k, r]) => [k, verbeteDe(r.split(" (")[0]) ?? verbeteDe(k)]));
+
+  // "Em resumo": o que este processo é, quem está nele, o que foi decidido e o que aconteceu por último
+  const ordenados = [...p.andamentos].filter((a) => a.data).sort((a, b) => b.data.localeCompare(a.data));
+  const ultimo = ordenados[0];
+  const ultimaDecisao = ordenados.find((a) => a.e_decisao);
+  const nDecisoes = p.andamentos.filter((a) => a.e_decisao).length;
+  const porStatus = (s: string) => p.partes.filter((x) => !x.e_placeholder && x.status_processual === s).map((x) => x.nome);
+  const investigados = porStatus("investigado"), requeridos = porStatus("requerido"), requerentes = porStatus("requerente");
+  const nomes = (xs: string[], n = 4) => xs.slice(0, n).join(", ") + (xs.length > n ? ` e mais ${xs.length - n}` : "");
+  const itensDec = p.decisoes ?? [];
+  const contaRes = (k: string) => itensDec.filter((i) => i.resultado === k).length;
+  const relacionados = p.relacoes.map((r) => `${r.classe} ${r.numero}`);
+  const resumo = [
+    { texto: <><strong>{cab.classe} {cab.numero}</strong>{cab.natureza ? `, ${cab.natureza.toLowerCase()}` : ""}, relator {cab.relator ?? "—"}, protocolado em {formatarData(cab.data_protocolo)}; {cab.publicidade === "Sigiloso" ? "tramita sob sigilo: o portal devolve só o cabeçalho" : "público"}. Assunto cadastrado: {cab.assuntos.join("; ") || "—"}.</> },
+    ...(requerentes.length || investigados.length || requeridos.length ? [{ texto: <>{requerentes.length ? <>Pede: <strong>{nomes(requerentes, 2)}</strong>. </> : null}{investigados.length ? <>Investigados: <strong>{nomes(investigados)}</strong>. </> : null}{requeridos.length ? <>Requeridos: {nomes(requeridos)}. </> : null}<a className="underline" href="#partes">Todas as partes</a>, com o status literal do portal.</> }] : []),
+    { texto: <><strong>{p.andamentos.length} andamentos</strong>, {nDecisoes} deles decisões{itensDec.length ? <>; em {itensDec.length} pedidos analisados, {contaRes("deferido")} aceitos, {contaRes("indeferido")} negados e {contaRes("referendado")} referendados</> : null}. {relacionados.length ? `Relacionado nos autos a ${nomes(relacionados, 5)}.` : ""}</> },
+    ...(ultimaDecisao ? [{ texto: <>Última decisão: <strong>{formatarData(ultimaDecisao.data)}</strong> — {ultimaDecisao.tipo}{ultimaDecisao.descricao ? `: ${ultimaDecisao.descricao.replace(/\s+/g, " ").slice(0, 200)}${ultimaDecisao.descricao.length > 200 ? "…" : ""}` : ""}</>, fonte: ultimaDecisao.documentos[0] ? { href: `/documento/${ultimaDecisao.documentos[0].id}`, rotulo: "abrir a peça" } : { href: `#andamento-${ultimaDecisao.id}`, rotulo: "ver na linha do tempo" } }] : []),
+    ...(ultimo && ultimo.id !== ultimaDecisao?.id ? [{ texto: <>Último andamento: <strong>{formatarData(ultimo.data)}</strong> — {ultimo.tipo}{ultimo.descricao ? `: ${ultimo.descricao.replace(/\s+/g, " ").slice(0, 160)}` : ""}.</>, fonte: { href: `#andamento-${ultimo.id}`, rotulo: "ver" } }] : []),
+  ];
 
   return (
     <div className="space-y-8">
@@ -52,6 +72,8 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
           <a className="text-sm underline" href={`https://portal.stf.jus.br/processos/detalhe.asp?incidente=${cab.incidente}`} rel="noreferrer">Ver no portal do STF</a>
         </div>
       </header>
+
+      <PontosChave titulo="Em resumo" itens={resumo} nota="Síntese calculada dos registros do portal e das decisões extraídas; nada é interpretação." />
 
       {(p.decisoes?.length ?? 0) > 0 && (
         <section aria-labelledby="dec">

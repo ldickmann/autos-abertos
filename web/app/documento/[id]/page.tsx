@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BadgeEpistemico, Carimbo } from "@/components/Badges";
+import { PontosChave } from "@/components/PontosChave";
 import { formatarData, formatarDataHora, getDocumento, getMeta, listarDocumentos } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -13,6 +14,19 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
   const meta = getMeta();
   const porPagina = new Map<number, typeof d.assercoes>();
   for (const a of d.assercoes) porPagina.set(a.pagina, [...(porPagina.get(a.pagina) ?? []), a]);
+
+  // "Em resumo": que peça é, quem fala nela, e uma afirmação de cada tipo para dar o tom
+  const porTipo = (t: string) => d.assercoes.filter((a) => a.tipo_epistemico === t);
+  const vozes = (t: string) => { const m = new Map<string, number>(); for (const a of porTipo(t)) if (a.atribuida_a) { const k = a.atribuida_a.replace(/\s*\(.*$/, ""); m.set(k, (m.get(k) ?? 0) + 1); } return [...m.entries()].sort((x, y) => y[1] - x[1]).slice(0, 3).map(([q, n]) => `${q} (${n})`); };
+  const exemplo = (t: string) => porTipo(t).sort((a, b) => b.texto.length - a.texto.length)[Math.floor(porTipo(t).length / 2)];
+  const andamento = m.andamentos[0];
+  const nProc = d.referencias?.processos?.length ?? 0, nDisp = d.referencias?.dispositivos?.length ?? 0;
+  const resumo = [
+    { texto: <><strong>{m.titulo ?? "Documento"}</strong>{m.funcao && meta.funcoes_documento?.[m.funcao] && m.funcao !== "outro" ? ` (${meta.funcoes_documento[m.funcao]})` : ""}, {m.paginas ?? d.paginas.length} páginas{andamento ? <>, juntado em {formatarData(andamento.data)} no andamento &quot;{andamento.tipo}&quot; do <Link className="underline" href={`/processo/${m.incidente}`}>processo {m.incidente}</Link></> : null}.{m.codigo_autenticacao ? " Tem código de autenticação do STF." : ""}</> },
+    ...(d.assercoes.length ? [{ texto: <><strong>{d.assercoes.length} afirmações</strong> extraídas: {porTipo("fato_processual").length} fatos, {porTipo("alegacao_parte").length} alegações{vozes("alegacao_parte").length ? ` (${vozes("alegacao_parte").join(", ")})` : ""} e {porTipo("fundamento_decisorio").length} fundamentos{vozes("fundamento_decisorio").length ? ` (${vozes("fundamento_decisorio").join(", ")})` : ""}.</> }] : [{ texto: <>Nenhuma afirmação foi extraída desta peça ainda; o texto por página está abaixo e é pesquisável.</> }]),
+    ...(["alegacao_parte", "fundamento_decisorio", "fato_processual"].map(exemplo).filter(Boolean).slice(0, 2).map((a) => ({ texto: <><BadgeEpistemico tipo={a!.tipo_epistemico} /> {a!.atribuida_a ? <strong>{a!.atribuida_a}: </strong> : null}{a!.texto}</>, fonte: { href: `#p-${a!.pagina}`, rotulo: `p. ${a!.pagina}` } }))),
+    ...(nProc || nDisp ? [{ texto: <>Cita {nDisp} dispositivos legais e {nProc} processos.</>, fonte: { href: "#refs", rotulo: "ver referências" } }] : []),
+  ];
 
   return (
     <div className="space-y-6">
@@ -46,6 +60,8 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
           {!m.tem_texto && <span className="alerta rounded px-2 py-0.5 text-xs font-semibold">sem camada de texto (OCR pendente)</span>}
         </div>
       </header>
+
+      <PontosChave titulo="Em resumo" itens={resumo} nota="Os exemplos são afirmações extraídas do próprio documento, com página; a lista completa vem abaixo." />
 
       {d.referencias && (d.referencias.processos.length > 0 || d.referencias.dispositivos.length > 0 || d.referencias.andamentos_citados.length > 0) && (
         <section aria-labelledby="refs" className="folha border border-neutral-300 bg-white p-4 text-sm">

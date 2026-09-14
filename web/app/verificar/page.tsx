@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PontosChave } from "@/components/PontosChave";
 import { getIntegridade, getMeta } from "@/lib/data";
 import { formatarDataHora } from "@/lib/tipos";
 
@@ -17,6 +18,12 @@ export default function PaginaVerificar() {
           sozinho, com o que o STF publica.
         </p>
       </header>
+
+      <PontosChave titulo="O que você encontra aqui" itens={[
+        { texto: <><strong>{integ.documentos.length} documentos</strong> com hash SHA-256 registrado{exemplo?.codigo_autenticacao ? "; a maioria tem código de autenticação do próprio STF" : ""}.</> },
+        { texto: <>Três jeitos de conferir, do mais simples ao mais completo: pelo código do STF (um minuto), comparando o arquivo com o que o portal entrega hoje, ou refazendo a base inteira.</> },
+        { texto: <>Todos os dados podem ser baixados (CSV, JSON, feed) e o repositório guarda os originais versionados com carimbo de tempo.</> },
+      ]} />
 
       <section className="folha border border-neutral-300 bg-white p-4">
         <h2 className="text-lg">1. Pelo código de autenticação do STF (o jeito mais simples)</h2>

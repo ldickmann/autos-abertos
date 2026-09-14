@@ -1,125 +1,87 @@
 import Link from "next/link";
 import { Aviso } from "@/components/Aviso";
-import { BadgeEpistemico, Carimbo, LegendaEpistemica, Publicidade } from "@/components/Badges";
-import { formatarData, getAvisos, getMeta, getProcesso, getProcessos } from "@/lib/data";
-import type { TipoEpistemico } from "@/lib/tipos";
+import { LegendaEpistemica, Publicidade } from "@/components/Badges";
+import { PontosChave } from "@/components/PontosChave";
+import { formatarData, formatarDataHora, getAvisos, getFluxos, getLinhaTempo, getMeta, getPontosChave, getProcesso, getProcessos } from "@/lib/data";
 
-/* A página inicial é a capa dos autos: o processo principal como folha de rosto, com o índice do que a base
-   contém sobre ele. Cada linha do índice leva ao lugar certo. O que está fora da capa é o apenso (processos
-   relacionados) e a legenda de leitura. */
+/* A capa é a primeira página de um jornal do caso: o que se sabe (pontos-chave, cada um com prova), por onde
+   começar, o que aconteceu por último nos autos, e só então a lista dos processos. Nada aqui é conclusão do site. */
 export default function Home() {
   const meta = getMeta();
   const processos = getProcessos();
   const semente = getProcesso(meta.semente);
   const cab = semente.cabecalho;
-  const decisoes = semente.andamentos.filter((a) => a.e_decisao).length;
-  const documentos = semente.andamentos.reduce((n, a) => n + a.documentos.filter((d) => d.baixado).length, 0);
-  const relacionados = processos.filter((p) => p.incidente !== meta.semente);
-  const cont = semente.contagem_assercoes ?? { fato_processual: 0, alegacao_parte: 0, fundamento_decisorio: 0 };
-  const totalAssercoes = Object.values(cont).reduce((a, b) => a + b, 0);
   const avisos = getAvisos();
+  const pontos = getPontosChave().inicio ?? [];
+  const fluxos = getFluxos();
+  const totalAssercoes = meta.contagens.assercoes ?? 0;
+  const totalDocs = processos.reduce((n, p) => n + (p.contagens?.documentos ?? 0), 0);
 
-  const indice: { rotulo: string; valor: string | number; href: string; nota?: string }[] = [
-    { rotulo: "Andamentos", valor: semente.andamentos.length, href: `/processo/${cab.incidente}#lt`, nota: `${decisoes} decisões` },
-    { rotulo: "Documentos com texto", valor: documentos, href: `/processo/${cab.incidente}#lt` },
-    { rotulo: "Partes", valor: semente.partes.length, href: `/processo/${cab.incidente}#partes` },
-    { rotulo: "Petições", valor: semente.peticoes.length, href: `/processo/${cab.incidente}` },
-    { rotulo: "Sessões virtuais", valor: semente.sessoes.length, href: `/processo/${cab.incidente}#sessoes` },
-    { rotulo: "Asserções extraídas", valor: totalAssercoes, href: "/assercoes" },
+  // últimos acontecimentos: decisões e despachos mais recentes em qualquer processo, pela linha do tempo unificada
+  const lt = getLinhaTempo().eventos;
+  const ultimos = lt.filter((e) => e.e_decisao || /despacho|decis/i.test(e.tipo)).sort((a, b) => (b.data ?? "").localeCompare(a.data ?? "")).slice(0, 6);
+  const ultimaColeta = Object.values(meta.coletado_em).filter(Boolean).sort().at(-1);
+
+  const perguntas = [
+    { href: "/rede-de-pagamentos/trajetos", titulo: "Por onde o dinheiro passou?", texto: "Do caixa do Master à Super, à igreja e aos fornecedores: passo a passo, com quem afirma cada passo." },
+    { href: "/rede-de-pagamentos", titulo: "Quem recebeu, quanto, de quem?", texto: `${fluxos.resumo.atores} pessoas e empresas e ${fluxos.resumo.transacoes} fluxos do relatório do COAF, em tabelas com busca e filtros.` },
+    { href: "/decisoes", titulo: "O que o STF já decidiu?", texto: "Pedido por pedido: quem pediu, o que pediu, o que o ministro ou a Turma decidiu, com o trecho." },
+    { href: "/entidades", titulo: "Quem é quem no caso?", texto: "Investigados, requeridos, interessados, advogados e órgãos, com o status literal do portal." },
+    { href: "/cronologia", titulo: "O que aconteceu, e quando?", texto: "Registros do portal, datas escritas nos documentos e decisões, numa só linha." },
+    { href: "/verificar", titulo: "Como conferir tudo isso?", texto: "Cada documento tem código de autenticação do STF e hash; qualquer pessoa refaz a base." },
   ];
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
       {avisos.map((a) => <Aviso key={a.id} aviso={a} />)}
-      <section aria-labelledby="titulo-semente" className="capa">
-        <div className="capa-verso" aria-hidden />
-        <div className="capa-folha folha border border-neutral-300 bg-white">
-          <header className="border-b border-neutral-300 px-5 pt-5 pb-4 sm:px-8">
-            <p className="text-sm text-neutral-700">Supremo Tribunal Federal — autos públicos</p>
-            <div className="mt-1 flex flex-wrap items-end gap-x-4 gap-y-2">
-              <h1 id="titulo-semente" className="text-4xl leading-none sm:text-5xl">
-                {cab.classe} {cab.numero}
-              </h1>
-              <div className="flex flex-wrap items-center gap-2 pb-1">
-                <Publicidade valor={cab.publicidade} />
-                {cab.natureza && <span className="rounded-sm border border-neutral-400 px-1.5 py-px text-xs">{cab.natureza}</span>}
-                {cab.reu_preso ? <span className="alerta rounded-sm px-1.5 py-px text-xs font-semibold">réu preso</span> : null}
-              </div>
-            </div>
-            <dl className="mt-3 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
-              <div><dt className="inline text-neutral-700">Relator </dt><dd className="inline">{cab.relator ?? "—"}</dd></div>
-              <div><dt className="inline text-neutral-700">Protocolo </dt><dd className="inline">{formatarData(cab.data_protocolo)}</dd></div>
-              <div><dt className="inline text-neutral-700">Número único </dt><dd className="inline">{cab.numero_unico ?? "—"}</dd></div>
-              <div><dt className="inline text-neutral-700">Último incidente </dt><dd className="inline">{cab.ultimo_incidente ?? "—"}</dd></div>
-              <div className="sm:col-span-2"><dt className="inline text-neutral-700">Assunto </dt><dd className="inline leitura text-base">{cab.assuntos.join("; ") || "—"}</dd></div>
-            </dl>
-          </header>
 
-          <div className="grid gap-6 px-5 py-5 sm:px-8 lg:grid-cols-[minmax(0,1fr)_280px]">
-            <div>
-              <h2 className="text-sm text-neutral-700">Índice do que a base tem sobre este processo</h2>
-              <ol className="indice mt-2">
-                {indice.map((i) => (
-                  <li key={i.rotulo}>
-                    <Link href={i.href} className="indice-linha">
-                      <span className="indice-rotulo">{i.rotulo}{i.nota ? <span className="text-neutral-700"> ({i.nota})</span> : null}</span>
-                      <span className="indice-pontos" aria-hidden />
-                      <span className="indice-valor">{i.valor}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ol>
-              {totalAssercoes > 0 && (
-                <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-                  {(["fato_processual", "alegacao_parte", "fundamento_decisorio"] as TipoEpistemico[]).map((t) => (
-                    <span key={t} className="flex items-center gap-1"><BadgeEpistemico tipo={t} /> {cont[t]}</span>
-                  ))}
-                </p>
-              )}
-            </div>
-            <div className="flex flex-col gap-2 text-sm">
-              <Link href={`/processo/${cab.incidente}`} className="botao-primario toque rounded px-4 py-2 text-center font-semibold">Abrir os autos</Link>
-              <Link href="/linha-do-tempo" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Linha do tempo do caso</Link>
-              <Link href="/glossario" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Glossário</Link>
-              <Link href="/busca" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Buscar nos autos</Link>
-              <p className="mt-2 text-xs text-neutral-700">
-                <Carimbo snapshot={cab.snapshot} />{" "}
-                <a className="underline" href={`https://portal.stf.jus.br/processos/detalhe.asp?incidente=${cab.incidente}`} rel="noreferrer">ver no portal do STF</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <header className="max-w-3xl">
+        <p className="text-sm text-neutral-700">Supremo Tribunal Federal · autos públicos · {ultimaColeta ? `dados coletados em ${formatarDataHora(ultimaColeta)}` : ""}</p>
+        <h1 className="mt-1 text-3xl leading-tight sm:text-4xl">O caso Banco Master no STF</h1>
+        <p className="mt-2 leitura text-base">
+          {processos.length} processos, {totalDocs} documentos e {totalAssercoes} afirmações extraídas dos textos — cada uma com quem afirma, documento e página.
+          O site não conclui nada: mostra o que os autos dizem, quem diz e onde está escrito, para qualquer pessoa conferir.
+        </p>
+      </header>
+
+      <PontosChave titulo="O que os autos dizem, em oito pontos" itens={pontos.map((p) => ({ texto: p.texto, provas: p.provas }))}
+        nota="Cada frase é uma síntese do que está escrito nas peças; os selos levam ao documento e à página, e dizem quem afirma. Alegação não é condenação: ninguém foi julgado." />
 
       <section aria-labelledby="titulo-comecar">
-        <h2 id="titulo-comecar" className="text-lg">Por onde começar</h2>
-        <p className="text-sm text-neutral-700">Três perguntas que a base responde sem interpretar nada: cada resposta aponta para o documento ou o registro do portal de onde saiu.</p>
-        <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-          <Link href="/cronologia" className="folha block border border-neutral-300 bg-white p-4 no-underline">
-            <span className="leitura block text-lg">O que aconteceu, e quando?</span>
-            <span className="mt-1 block text-sm text-neutral-700">Uma cronologia que junta o registro do portal, o que os documentos dizem (com data no próprio trecho) e as decisões.</span>
-          </Link>
-          <Link href={`/processo/${cab.incidente}`} className="folha block border border-neutral-300 bg-white p-4 no-underline">
-            <span className="leitura block text-lg">Do que trata o processo?</span>
-            <span className="mt-1 block text-sm text-neutral-700">O assunto cadastrado pelo STF, quem é o relator e a linha do tempo de tudo o que aconteceu nos autos.</span>
-          </Link>
-          <Link href={`/processo/${cab.incidente}#partes`} className="folha block border border-neutral-300 bg-white p-4 no-underline">
-            <span className="leitura block text-lg">Quem participa, e em que papel?</span>
-            <span className="mt-1 block text-sm text-neutral-700">As partes com o status literal do portal (investigado, requerido, interessado…) e seus advogados. Nenhum papel significa culpa.</span>
-          </Link>
-          <Link href="/decisoes" className="folha block border border-neutral-300 bg-white p-4 no-underline">
-            <span className="leitura block text-lg">O que já foi decidido?</span>
-            <span className="mt-1 block text-sm text-neutral-700">Pedido por pedido: quem pediu, o que pediu e o que o ministro ou a Turma decidiu, com o trecho do documento.</span>
-          </Link>
+        <h2 id="titulo-comecar" className="text-lg">Comece por uma pergunta</h2>
+        <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+          {perguntas.map((q) => (
+            <Link key={q.href} href={q.href} className="folha block border border-neutral-300 bg-white p-4 no-underline">
+              <span className="leitura block text-lg">{q.titulo}</span>
+              <span className="mt-1 block text-sm text-neutral-700">{q.texto}</span>
+            </Link>
+          ))}
         </div>
-        <p className="mt-2 text-sm text-neutral-700">Termos difíceis aparecem sublinhados; clique para ver o significado, ou consulte o <Link className="underline" href="/glossario">glossário</Link>. Para conferir qualquer documento com o próprio STF, veja <Link className="underline" href="/verificar">como verificar</Link>.</p>
+        <p className="mt-2 text-sm text-neutral-700">Termos difíceis aparecem sublinhados; clique para ver o significado, ou consulte o <Link className="underline" href="/glossario">glossário</Link>.</p>
       </section>
 
-      <section aria-labelledby="titulo-relacionados">
-        <h2 id="titulo-relacionados" className="text-lg">Apensos: processos relacionados, declarados nos próprios autos</h2>
+      <section aria-labelledby="titulo-ultimos">
+        <h2 id="titulo-ultimos" className="text-lg">Últimas decisões e despachos nos autos</h2>
+        <ol className="mt-2 divide-y divide-neutral-200 border-y border-neutral-300">
+          {ultimos.map((e) => (
+            <li key={e.andamento_id} className="grid gap-x-4 py-2 text-sm sm:grid-cols-[7rem_8rem_1fr]">
+              <span className="tabular-nums text-neutral-600">{e.data ? formatarData(e.data) : "—"}</span>
+              <Link className="underline" href={`/processo/${e.incidente}#lt`}>{e.processo}</Link>
+              <span>
+                <span className="font-medium">{e.tipo}</span>{e.descricao ? <span className="text-neutral-700"> — {e.descricao.replace(/\s+/g, " ").slice(0, 220)}{e.descricao.length > 220 ? "…" : ""}</span> : null}
+                {e.documentos?.length ? <span> · <Link className="underline" href={`/documento/${e.documentos[0].id}`}>peça</Link></span> : null}
+              </span>
+            </li>
+          ))}
+        </ol>
+        <p className="mt-2 text-sm"><Link className="underline" href="/linha-do-tempo">Linha do tempo completa</Link> · <Link className="underline" href="/mudancas">o que mudou no portal</Link></p>
+      </section>
+
+      <section aria-labelledby="titulo-processos">
+        <h2 id="titulo-processos" className="text-lg">Os processos</h2>
         <p className="text-sm text-neutral-700">
-          Extraídos dos andamentos de distribuição por prevenção e certidões de autuação. Cada um foi coletado por completo.
-          Processos sigilosos mostram só o que o portal público devolve.
+          O principal é a <Link className="underline" href={`/processo/${cab.incidente}`}>{cab.classe} {cab.numero}</Link> (relator {cab.relator ?? "—"}; protocolo {formatarData(cab.data_protocolo)}). Os demais são
+          declarados como relacionados nos próprios autos (distribuição por prevenção, certidões de autuação) ou entraram pelo levantamento de sigilo. Processos sigilosos mostram só o que o portal devolve.
         </p>
         <div className="mt-3 overflow-x-auto">
           <table className="tabela-responsiva w-full min-w-[640px] border-collapse text-sm">
@@ -130,19 +92,22 @@ export default function Home() {
                 <th scope="col" className="py-2 pr-3">Relator</th>
                 <th scope="col" className="py-2 pr-3">Assunto</th>
                 <th scope="col" className="py-2 pr-3">Andamentos</th>
+                <th scope="col" className="py-2 pr-3">Documentos</th>
                 <th scope="col" className="py-2 pr-3">Coletado em</th>
               </tr>
             </thead>
             <tbody>
-              {relacionados.map((p) => (
-                <tr key={`${p.classe}${p.numero}`} className="border-b border-neutral-200">
-                  <td data-rotulo="Processo" className="py-2 pr-3 font-medium">
+              {[...processos].sort((a, b) => (b.contagens?.andamentos ?? 0) - (a.contagens?.andamentos ?? 0)).map((p) => (
+                <tr key={`${p.classe}${p.numero}`} className={`border-b border-neutral-200 ${p.incidente === meta.semente ? "font-medium" : ""}`}>
+                  <td data-rotulo="Processo" className="py-2 pr-3">
                     {p.coletado && p.incidente ? <Link className="underline" href={`/processo/${p.incidente}`}>{p.classe} {p.numero}</Link> : `${p.classe} ${p.numero}`}
+                    {p.incidente === meta.semente ? <span className="ml-1 text-xs text-neutral-600">(principal)</span> : null}
                   </td>
                   <td data-rotulo="Publicidade" className="py-2 pr-3"><Publicidade valor={p.publicidade} /></td>
                   <td data-rotulo="Relator" className="py-2 pr-3">{p.relator ?? "—"}</td>
                   <td data-rotulo="Assunto" className="py-2 pr-3">{(p.assuntos ?? []).join("; ") || "—"}</td>
-                  <td data-rotulo="Andamentos" className="py-2 pr-3">{p.contagens?.andamentos ?? "—"}</td>
+                  <td data-rotulo="Andamentos" className="py-2 pr-3 tabular-nums">{p.contagens?.andamentos ?? "—"}</td>
+                  <td data-rotulo="Documentos" className="py-2 pr-3 tabular-nums">{p.contagens?.documentos ?? "—"}</td>
                   <td data-rotulo="Coletado em" className="py-2 pr-3">{p.coletado_em ? formatarData(p.coletado_em) : "não coletado"}</td>
                 </tr>
               ))}

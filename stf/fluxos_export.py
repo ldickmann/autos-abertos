@@ -251,3 +251,19 @@ def exportar_trajetos(con: sqlite3.Connection, curado: dict) -> dict:
             eventos.append({**{k: v for k, v in ev.items() if k not in ref}, "prova": prova})
         out["cruzamentos"].append({**{k: v for k, v in cz.items() if k != "eventos"}, "eventos": eventos})
     return out
+
+
+def exportar_pontos_chave(con: sqlite3.Connection, curado: dict) -> dict:
+    """Pontos-chave por página (capa etc.): cada frase resolve suas provas; frase sem prova derruba a exportação."""
+    resolver = _resolvedor_de_provas(con)
+    out = {}
+    for pagina, pontos in curado.items():
+        if pagina.startswith("_"):
+            continue
+        out[pagina] = []
+        for i, p in enumerate(pontos):
+            provas = [resolver(pr, f"pontos-chave {pagina}, item {i}") for pr in p.get("provas") or []]
+            if not provas:
+                raise ValueError(f"pontos-chave {pagina}, item {i}: ponto sem prova")
+            out[pagina].append({"texto": p["texto"], "provas": provas})
+    return out
