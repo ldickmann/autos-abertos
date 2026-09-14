@@ -1,0 +1,153 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Reclamação 88.121, do Distrito Federal, tem como relator o Ministro Dias Toffoli.",
+      "pagina": 1,
+      "trecho_fonte": "RECLAMAÇÃO 88.121 DISTRITO FEDERAL RELATOR :MIN. DIAS TOFFOLI",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que os documentos e informações encartados aos autos por diversos órgãos estatais e pelo Poder Judiciário sejam devidamente custodiados.",
+      "pagina": 1,
+      "trecho_fonte": "Tendo sido encartados aos autos documentos e informações de diversos órgãos estatais e também pelo Poder Judiciário ao Supremo Tribunal Federal, determino sejam devidamente custodiados",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator fundamenta a custódia dos documentos na necessidade de afastar eventuais nulidades e de alcançar resultados efetivos, com estrita observância do devido processo legal.",
+      "pagina": 1,
+      "trecho_fonte": "não apenas para afastar eventuais nulidades, mas também para que sejam alcançados resultados efetivos, com a estrita observância do devido processo legal.",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica, da análise preliminar dos documentos, a absoluta necessidade da realização de diligências urgentes, para o sucesso das investigações e como medida de proteção ao Sistema Financeiro Nacional e às pessoas que dele se utilizam.",
+      "pagina": 1,
+      "trecho_fonte": "Da análise preliminar dos documentos referidos verifica-se a absoluta necessidade da realização de diligências urgentes, não só para o sucesso das investigações, mas também como medida de proteção ao Sistema Financeiro Nacional e às pessoas que dele se utilizam.",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a realização imediata de diligências preliminares, com prazo inicial de 30 (trinta) dias.",
+      "pagina": 1,
+      "trecho_fonte": "Dessa maneira, DETERMINO a realização imediata das seguintes diligências preliminares, com prazo inicial de 30 (trinta) dias:",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a oitiva dos investigados pelo Delegado de Polícia Federal designado pelo Diretor-Geral da Polícia Federal, para que esclareçam, em detalhes e com apresentação dos respectivos documentos, as denúncias em apuração nos autos.",
+      "pagina": 1,
+      "trecho_fonte": "i) oitiva dos investigados pelo Delegado de Polícia Federal designado pelo Diretor-Geral da Polícia Federal, a fim de que possam esclarecer, em detalhes e com apresentação dos respectivos documentos, as denúncias em apuração nestes autos;",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a oitiva dos dirigentes do Banco Central do Brasil sobre questões de sua atribuição envolvendo as atividades do Banco Master e possíveis desdobramentos envolvendo outras instituições financeiras.",
+      "pagina": 1,
+      "trecho_fonte": "ii) oitiva dos dirigentes do Banco Central do Brasil sobre questões de sua atribuição envolvendo as atividades do Banco Master e de possíveis desdobramentos envolvendo outras",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "Banco Master", "tipo": "organizacao"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a possibilidade de apresentação imediata, pelo delegado designado, de pedidos de requisição de informações necessárias de órgãos públicos ou de empresas sobre as denúncias em apuração nos autos.",
+      "pagina": 2,
+      "trecho_fonte": "iii) possibilidade de apresentação imediata de pedidos de requisição, pelo delegado acima designado, de informações necessárias de órgãos públicos ou de empresas sobre as denúncias em apuração nos autos;e",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a possibilidade de apresentação imediata, pelo delegado designado, de requerimentos individualizados de afastamento dos sigilos telefônicos-telemáticos, de correspondência ou fiscais em desfavor dos investigados ou de terceiros, desde que formulados com a devida justificativa para apreciação específica.",
+      "pagina": 2,
+      "trecho_fonte": "iv) possibilidade de apresentação imediata, pelo delegado acima referido, de requerimentos individualizados de afastamento dos sigilos telefônicos-telemáticos, de correspondência ou fiscais em desfavor dos investigados ou de terceiros, desde que formulados com a devida justificativa",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que as oitivas poderão ocorrer por videoconferência ou presencialmente em uma das salas de audiência do Supremo Tribunal Federal, devendo ser gravadas e acompanhadas pelos magistrados auxiliares de seu Gabinete.",
+      "pagina": 2,
+      "trecho_fonte": "As oitivas poderão ocorrer por videoconferência ou presencialmente em uma das salas de audiência localizadas nesta Suprema Corte, devendo ser gravadas e acompanhadas pelos magistrados auxiliares do meu Gabinete.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que se oficie ao Procurador-Geral da República para que, querendo, indique um Subprocurador-Geral da República para atuação nas oitivas preliminares.",
+      "pagina": 2,
+      "trecho_fonte": "Oficie-se ao Procurador Geral da República para que, querendo, já indique um Sub Procurador-Geral da República, para atuação nas oitivas preliminares.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação à Polícia Federal, na pessoa do Diretor-Geral, e a ciência ao Procurador-Geral da República.",
+      "pagina": 2,
+      "trecho_fonte": "Comunique-se à Polícia Federal, na pessoa do Diretor-Geral, e dê-se ciência ao Procurador-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou à Secretaria Judiciária que, após o recebimento das informações detalhadas sobre aqueles que serão ouvidos, adote as medidas necessárias à realização dos atos.",
+      "pagina": 2,
+      "trecho_fonte": "Determino à Secretaria Judiciária que, após o recebimento das informações detalhadas sobre aqueles que serão ouvidos, adote as medidas necessárias à realização dos atos.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão serve de mandado e foi proferida em Brasília, em 15 de dezembro de 2025, pelo Ministro Dias Toffoli, relator, com determinação de cumprimento e publicação.",
+      "pagina": 2,
+      "trecho_fonte": "Serve a presente de mandado. Cumpra-se. Publique-se. Brasília, 15 de dezembro de 2025. Ministro DIASTOFFOLI Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo na página 1; o item ii) está dividido entre as páginas 1 e 2; o texto extraído traz palavras coladas no fim do item iv) (\"específica,nos termos dalei\")."
+}

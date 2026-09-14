@@ -1,0 +1,171 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026 do Distrito Federal tem como relator o Ministro Dias Toffoli.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. DIAS TOFFOLI",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Procuradoria-Geral da República, instada a manifestar-se sobre o pedido formulado pela autoridade policial (e-doc. 142), pronunciou-se nos autos.",
+      "pagina": 2,
+      "trecho_fonte": "Instada a manifestar-se sobre o pedido formulado pela autoridade policial (e-doc. 142), pronunciou-se a Procuradoria-Geral da República",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "autoridade policial", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a manifestação do Procurador-Geral da República, em 22.1.2026 a autoridade policial formulou pedido de ratificação das medidas deferidas pelo juízo do primeiro grau e de autorização judicial expressa para continuidade das diligências relativas à extração e análise do material apreendido.",
+      "pagina": 2,
+      "trecho_fonte": "Em 22.1.2026, a autoridade policial formulou pedido de ratificação das medidas deferidas pelo juízo do primeiro grau e de autorização judicial expressa para continuidade das diligências relativas à extração e análise do material apreendido.",
+      "atribuida_a": "Autoridade policial (conforme relatado pelo Procurador-Geral da República)",
+      "entidades": [
+        {"nome": "autoridade policial", "tipo": "orgao_publico"},
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a manifestação do Procurador-Geral da República, a autoridade policial pontuou o agendamento de oitivas para 26.1.2026 e 27.1.2026, quando ainda pendente a análise da possibilidade de utilização dos dados telemáticos colhidos para questionamento dos investigados.",
+      "pagina": 2,
+      "trecho_fonte": "Pontuou o agendamento de oitivas para 26.1.2026 e 27.1.2026, quando ainda pendente a análise da possibilidade de utilização dos dados telemáticos colhidos para questionamento dos investigados.",
+      "atribuida_a": "Autoridade policial (conforme relatado pelo Procurador-Geral da República)",
+      "entidades": [
+        {"nome": "autoridade policial", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República relata que, em 22.1.2026, o Ministro relator determinou a manifestação da Procuradoria-Geral da República.",
+      "pagina": 2,
+      "trecho_fonte": "Em 22.1.2026, o eminente Ministro relator determinou a manifestação da Procuradoria-Geral da República.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República sustenta que o pedido da autoridade policial pela ratificação das medidas deferidas pelo juízo do primeiro grau e pela autorização judicial expressa para continuidade das diligências de extração e análise do material apreendido mostra-se necessário.",
+      "pagina": 2,
+      "trecho_fonte": "O pedido da autoridade policial pela ratificação das medidas deferidas pelo juízo do primeiro grau e pela autorização judicial expressa para continuidade das diligências relativas à extração e análise do material apreendido mostra-se necessário",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "autoridade policial", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República sustenta que a necessidade do pedido decorre da proximidade das oitivas agendadas e da possibilidade de utilização dos elementos encontrados para questionamento dos investigados.",
+      "pagina": 3,
+      "trecho_fonte": "dada a proximidade das oitivas agendadas e a possibilidade de utilização dos elementos encontrados para questionamento dos investigados.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República sustenta que a autorização vai ao encontro das decisões proferidas em oportunidades anteriores pelo Ministro relator, que, considerando a validade de todas as provas, franqueou acesso a seu conteúdo.",
+      "pagina": 3,
+      "trecho_fonte": "Referida autorização vai ao encontro das decisões proferidas em oportunidades anteriores pelo eminente Ministro relator, que, considerando a validade de todas as provas, franqueou acesso a seu conteúdo.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República relata que, nos autos da Reclamação n. 88121/DF, em 9.12.2025, o Ministro relator pontuou que ficam mantidas, por ora, todas as decisões administrativas, cíveis e criminais até então proferidas em relação a todos os investigados, inclusive as constrições sobre bens e valores.",
+      "pagina": 3,
+      "trecho_fonte": "nos autos da Reclamação n. 88121/DF, em 9.12.2025, o eminente Ministro pontuou que “ficam mantidas, por ora, todas as decisões administrativas, cíveis e criminais até então proferidas em relação a todos os investigados, inclusive as constrições sobre bens e valores”",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República relata que o Ministro relator determinou, na Reclamação n. 88121/DF, a continuidade das investigações sob a supervisão imediata do Supremo Tribunal Federal, até o julgamento definitivo da reclamação.",
+      "pagina": 3,
+      "trecho_fonte": "além de determinar a “continuidade das investigações sob a supervisão imediata deste Supremo Tribunal Federal,até o julgamento definitivo da presente reclamação”.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal manifesta-se pelo deferimento do pedido da autoridade policial pela ratificação das medidas deferidas pelo juízo do primeiro grau e pela autorização judicial expressa para continuidade das diligências relativas à extração e análise do material apreendido.",
+      "pagina": 3,
+      "trecho_fonte": "O Ministério Público Federal manifesta-se pelo deferimento do pedido da autoridade policial pela ratificação das medidas deferidas pelo juízo do primeiro grau e pela autorização judicial expressa para continuidade das diligências relativas à extração e análise do material apreendido.",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"},
+        {"nome": "autoridade policial", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A manifestação da Procuradoria-Geral da República consta do e-doc. 166.",
+      "pagina": 3,
+      "trecho_fonte": "(e-doc.166)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o requerido, nos exatos termos da manifestação do Procurador-Geral da República.",
+      "pagina": 3,
+      "trecho_fonte": "Defiro o requerido, nos exatos termos da manifestação do Procurador-Geral da República",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator fundamenta o deferimento em que, como destacado pelo Ministério Público Federal, a providência já fora objeto de expressa e minuciosa análise e ratificação por ele determinada na RCL 88.121/DF.",
+      "pagina": 3,
+      "trecho_fonte": "pois como destacado pelo Ministério Público Federal, dita providência, inclusive, já fora objeto de expressa e minuciosa análise e ratificação, por mim determinada no bojo da RCL 88.121/DF.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação, o cumprimento e a ciência à Procuradoria-Geral da República.",
+      "pagina": 3,
+      "trecho_fonte": "Intimem-se e cumpra-se. Ciência à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 24 de janeiro de 2026, pelo Ministro Dias Toffoli, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 24 de janeiro de 2026. Ministro DIASTOFFOLI Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

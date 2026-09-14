@@ -1,0 +1,72 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal representa pela instauração de petição sigilosa em apartado, vinculada ao Inq 5026, com a finalidade de apurar eventuais crimes de corrupção ativa e passiva, de formação de organização criminosa, de lavagem de capitais e de violação de sigilo funcional.",
+      "pagina": 1,
+      "trecho_fonte": "A Polícia Federal representa pela instauração de PET sigilosa em apartado, vinculada ao INQ 5026, com a finalidade de apurar eventuais crimes de corrupção ativa e passiva, de formação de organização criminosa, de lavagem de capitais, de violação de sigilo funcional",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal representa que os crimes investigados, além de outros contra o Sistema Financeiro Nacional, teriam sido praticados, em tese, por Daniel Bueno Vorcaro em coautoria com os servidores do Banco Central do Brasil Paulo Sérgio de Souza e Belline Santana.",
+      "pagina": 1,
+      "trecho_fonte": "além de outros contra o Sistema Financeiro Nacional, que teriam sido praticados, em tese, por DANIEL BUENO VORCARO em coautoria com os servidores do Banco Central do Brasil - PAULO SÉRGIO DE SOUZA e BELLINE SANTANA (e-doc. 1).",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "PAULO SÉRGIO DE SOUZA", "tipo": "pessoa"},
+        {"nome": "BELLINE SANTANA", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República, ouvida, manifesta-se pelo acolhimento do pedido de instauração formulado pela autoridade de polícia judiciária federal.",
+      "pagina": 1,
+      "trecho_fonte": "Ouvida, a Procuradoria-Geral da República manifesta-se pelo acolhimento do pedido de instauração formulado pela autoridade de polícia judiciária federal (e-doc. 16).",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Considerando os termos da representação da Polícia Federal e a aquiescência da Procuradoria-Geral da República, o relator autoriza, nos termos do artigo 21, inciso XV, do Regimento Interno do Supremo Tribunal Federal, a instauração de procedimento investigatório.",
+      "pagina": 1,
+      "trecho_fonte": "Nessa perspectiva, considerando os termos da representação da Polícia Federal e a aquiescência da Procuradoria-Geral da República, autorizo, nos termos do artigo 21, inciso XV, do Regimento Interno do Supremo Tribunal Federal, a instauração de procedimento",
+      "atribuida_a": "MIN. ANDRÉ MENDONÇA",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O procedimento investigatório autorizado está vinculado ao Inq 5026, para apuração da hipótese criminal delineada pela autoridade policial.",
+      "pagina": 2,
+      "trecho_fonte": "investigatório, vinculado ao INQ 5026, para apuração da hipótese criminal delineada pela autoridade policial.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "autoridade policial", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a remessa dos autos à Polícia Federal para a realização das diligências investigativas e a ciência à Procuradoria-Geral da República.",
+      "pagina": 2,
+      "trecho_fonte": "Remeta-se à Polícia Federal para a realização das diligências investigativas. 5. Cientifique-se a Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

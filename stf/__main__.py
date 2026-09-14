@@ -23,6 +23,8 @@
   ingerir-extracao             lê data/extracao/respostas/<id>.json, valida e persiste (mesma validação da API)
   preparar-decisoes            entradas para pedidos/resultados por decisão (data/extracao/decisoes/entradas)
   ingerir-decisoes             lê data/extracao/decisoes/respostas/<id>.json, valida e persiste em decisao_item
+  vigiar                       recoleta cada processo, compara com a cópia anterior e registra em CHANGELOG-PORTAL.md
+  verificar                    recalcula o sha256 de cada blob local e compara com o registrado
 """
 
 from __future__ import annotations
@@ -272,6 +274,14 @@ def cmd_ingerir_decisoes(args):
     print(json.dumps(ingerir_decisoes(con, cliente, documentos=docs, log=print), ensure_ascii=False))
 
 
+def cmd_vigiar(args):
+    from .vigiar import registrar, vigiar
+    incs = [int(x) for x in args.incidentes.split(",")] if args.incidentes else None
+    rel = vigiar(_con(), incidentes=incs)
+    registrar(rel)
+    print(json.dumps([{"processo": r["processo"], **r["resumo"]} for r in rel], ensure_ascii=False))
+
+
 def cmd_verificar(args):
     from .integridade import verificar_blobs
     r = verificar_blobs(_con())
@@ -340,6 +350,7 @@ def main(argv=None):
     p.add_argument("--dry-run", action="store_true"); p.add_argument("--modelo"); p.add_argument("--effort", default="high")
     p.set_defaults(f=cmd_extrair_assercoes)
     p = sub.add_parser("assercoes"); p.add_argument("--documento", type=int); p.set_defaults(f=cmd_assercoes)
+    p = sub.add_parser("vigiar"); p.add_argument("--incidentes"); p.set_defaults(f=cmd_vigiar)
     p = sub.add_parser("verificar"); p.set_defaults(f=cmd_verificar)
     p = sub.add_parser("mapa"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_mapa)
     p = sub.add_parser("exportar"); p.add_argument("--saida"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_exportar)

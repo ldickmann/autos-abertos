@@ -1,0 +1,66 @@
+{
+  "itens": [
+    {
+      "pedido": "afastamento da obrigatoriedade de comparecimento do peticionante à CPI do Crime Organizado para prestar depoimento, convocado pelo Requerimento n. 310/2026 (Petição nº 42142/2026, e-Doc. 297)",
+      "quem_pediu": "defesa de Ibaneis Rocha Barros Júnior",
+      "resultado": "deferido",
+      "decisao": "afastou a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer ou não à CPI do Crime Organizado",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-02",
+      "pagina": 5,
+      "trecho_fonte": "afasto a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "condicoes": [
+        "direito ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas",
+        "direito à assistência por advogado durante o ato",
+        "direito de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo",
+        "direito de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores",
+        "qualquer transferência condicionada à prévia manifestação expressa, formal e inequívoca quanto à sua opção positiva pelo comparecimento"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão, com remessa de cópia integral, à Presidência da CPI-CRIME e à defesa constituída",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com a máxima urgência e com remessa de cópia integral da decisão, à Presidência da CPI-CRIME e à defesa constituída, para as providências necessárias ao eventual deslocamento do investigado ao Senado Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-02",
+      "pagina": 5,
+      "trecho_fonte": "10. Assim, comuniquem-se, com a máxima urgência e com remessa",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência da decisão à Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-02",
+      "pagina": 6,
+      "trecho_fonte": "11. Cumpridas as determinações acima, dê-se ciência à Procuradoria- Geral da República.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimações e adoção das providências determinadas, em regime de urgência",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou as intimações e a adoção das providências determinadas, com a máxima brevidade, em regime de urgência",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-02",
+      "pagina": 6,
+      "trecho_fonte": "12. Intimem-se e adotem-se, com a máxima brevidade, as providências determinadas, em regime de urgência.",
+      "condicoes": []
+    },
+    {
+      "pedido": "publicidade da decisão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se dê publicidade à decisão",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-02",
+      "pagina": 6,
+      "trecho_fonte": "Dê-se publicidade à presente decisão.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

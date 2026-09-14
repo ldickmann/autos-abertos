@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "instauração de PET sigilosa em apartado, vinculada ao INQ 5026, para apurar eventuais crimes de corrupção ativa e passiva, organização criminosa, lavagem de capitais, violação de sigilo funcional e outros contra o Sistema Financeiro Nacional, que teriam sido praticados, em tese, por Daniel Bueno Vorcaro em coautoria com os servidores do Banco Central do Brasil Paulo Sérgio de Souza e Belline Santana",
+      "quem_pediu": "Polícia Federal (e-doc. 1), com manifestação favorável da Procuradoria-Geral da República (e-doc. 16)",
+      "resultado": "deferido",
+      "decisao": "autorizou, nos termos do art. 21, XV, do Regimento Interno do STF, a instauração de procedimento investigatório vinculado ao INQ 5026 para apuração da hipótese criminal delineada pela autoridade policial",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-30",
+      "pagina": 1,
+      "trecho_fonte": "considerando os termos da representação da Polícia Federal e a aquiescência da Procuradoria-Geral da República, autorizo, nos termos do artigo 21, inciso XV, do Regimento Interno do Supremo Tribunal Federal, a instauração de procedimento",
+      "condicoes": []
+    },
+    {
+      "pedido": "remessa dos autos à Polícia Federal para a realização das diligências investigativas",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a remessa à Polícia Federal para a realização das diligências investigativas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-30",
+      "pagina": 2,
+      "trecho_fonte": "Remeta-se à Polícia Federal para a realização das diligências investigativas.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "Na página 2 o relator determinou ainda ciência à Procuradoria-Geral da República."
+}

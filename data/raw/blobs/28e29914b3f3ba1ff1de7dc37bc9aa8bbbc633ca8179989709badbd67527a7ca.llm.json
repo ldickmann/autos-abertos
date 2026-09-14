@@ -1,0 +1,51 @@
+{
+  "itens": [
+    {
+      "pedido": "extensão dos efeitos da decisão de 26/02/2026 para afastar a obrigatoriedade de comparecimento do peticionário à CPI do Crime Organizado, transmudando-a em facultatividade",
+      "quem_pediu": "Paulo Humberto Barbosa (Petição nº 21112/2026)",
+      "resultado": "deferido",
+      "decisao": "deferiu o pleito para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer ou não à CPI do Crime Organizado",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pleito formulado na Petição nº 21112/2026 (e-Doc. 376), para afastar a obrigatoriedade de comparecimento, transmudando-a em",
+      "condicoes": [
+        "serve a decisão como salvo-conduto"
+      ]
+    },
+    {
+      "pedido": "garantia, caso o peticionário opte por comparecer ao ato, dos direitos ao silêncio, à assistência por advogado, de não ser submetido ao compromisso de dizer a verdade e de não sofrer constrangimentos físicos ou morais",
+      "quem_pediu": "Paulo Humberto Barbosa (Petição nº 21112/2026)",
+      "resultado": "deferido",
+      "decisao": "assegurou ao convocado, na hipótese de comparecimento, o direito ao silêncio, à assistência por advogado durante o ato, de não ser submetido ao compromisso de dizer a verdade ou subscrever termos com esse conteúdo e de não sofrer constrangimentos físicos ou morais",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 6,
+      "trecho_fonte": "asseguro-lhe, nos termos da jurisprudência consolidada desta Corte, o direito: a) ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas; b) à assistência por advogado durante o ato;",
+      "condicoes": []
+    },
+    {
+      "pedido": "comunicação da decisão, com cópia integral, à Presidência da CPI do Crime Organizado e às defesas constituídas",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com a máxima urgência e remessa de cópia integral da decisão, à Presidência da CPI do Crime Organizado e às defesas constituídas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 6,
+      "trecho_fonte": "Comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI do Crime Organizado e as defesas constituídas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência à Procuradoria-Geral da República e publicidade da decisão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República e publicidade à decisão",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 6,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria-Geral da República. 14. Dê-se publicidade à presente decisão.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

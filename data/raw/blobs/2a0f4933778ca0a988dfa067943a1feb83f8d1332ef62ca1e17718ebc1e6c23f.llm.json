@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "instauração de procedimento investigatório apartado, autuado como INQUÉRITO (INQ) autônomo, com traslado da apuração oriunda da 8ª Vara Criminal Federal de São Paulo (e-Docs. 720 a 964)",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a instauração de procedimento investigatório apartado, autuado como INQUÉRITO (INQ) autônomo, para o qual deverá ser trasladada toda a apuração oriunda da 8ª Vara Criminal Federal de São Paulo (e-Docs. 720 a 964)",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-06-19",
+      "pagina": 4,
+      "trecho_fonte": "3. Ante o exposto, determino a instauração de procedimento investigatório apartado, autuado como INQUÉRITO (INQ) autônomo, para o qual deverá ser trasladado toda a apuração oriunda da 8ª Vara Criminal Federal de São Paulo (e-Docs. 720 a 964).",
+      "condicoes": []
+    },
+    {
+      "pedido": "conclusão dos autos ao relator após o cumprimento da instauração do inquérito apartado",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumprida a instauração do procedimento apartado, os autos tornem conclusos para apreciação",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-06-19",
+      "pagina": 4,
+      "trecho_fonte": "4. Cumprido o item anterior, tornem conclusos para apreciação.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O despacho menciona a 6ª Vara Criminal Federal no item 1 e a 8ª Vara Criminal Federal no item 3; registrado como consta no dispositivo."
+}

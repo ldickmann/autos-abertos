@@ -1,0 +1,1423 @@
+{
+ "assercoes": [
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "Trata-se de referendo de decisão monocrática do relator, Ministro André Mendonça, que decretou medidas cautelares contra os investigados, em especial a prisão preventiva de Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+   "pagina": 2,
+   "trecho_fonte": "o eminente relator, Ministro André Mendonça, decretou um conjunto amplo de medidas cautelares contra os investigados, em especial a prisão preventiva de Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "André Mendonça",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Fabiano Campos Zettel",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Luiz Phillipi Machado de Moraes Mourão",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Marilson Roseno da Silva",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "As medidas cautelares foram decretadas com fundamento no art. 312 do Código de Processo Penal, para a conveniência da instrução criminal e para a garantia da ordem pública.",
+   "pagina": 2,
+   "trecho_fonte": "As medidas foram decretadas com fundamento no art. 312 do Código de Processo Penal, notadamente para a conveniência da instrução criminal e para a garantia da ordem pública",
+   "atribuida_a": null,
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator entendeu que a prisão se justificaria pela necessidade de pacificação social por meio da criação de um sentimento na sociedade de resposta célere do sistema de justiça a um delito de elevadíssima repercussão social.",
+   "pagina": 2,
+   "trecho_fonte": "o relator entendeu que a prisão se justificaria em função da “necessidade de pacificação social por meio da criação de um sentimento na sociedade de resposta célere do sistema de justiça a um delito de elevadíssima repercussão social, com dimensões bilionárias”",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "André Mendonça",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "A decisão do relator invocou o alcance subjetivo dos ilícitos, que impactaram milhões de brasileiros e a credibilidade de instituições financeiras (eDOC 16, p. 28), e o resgate da confiança social na Justiça penal (eDOC 16, p. 31).",
+   "pagina": 3,
+   "trecho_fonte": "“alcance subjetivo dos ilícitos cometidos, que impactaram a vida de milhões de brasileiros e a credibilidade de instituições financeiras públicas e privadas” (eDOC 16, p. 28). A cautela também se justificaria para se resgatar a “confiança social na Justiça penal” (eDOC 16, p. 31).",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "André Mendonça",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que o apelo a conceitos porosos e elásticos para a decretação de prisões preventivas recomenda um olhar crítico.",
+   "pagina": 3,
+   "trecho_fonte": "O apelo a conceitos porosos e elásticos para a decretação de prisões preventivas recomenda um olhar crítico.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes antecipa que existem razões para referendar a decisão do relator.",
+   "pagina": 4,
+   "trecho_fonte": "antecipo que, a meu ver, existem razões para referendar a decisão do eminente relator.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes guarda reservas quanto ao uso de conceitos elásticos como confiança social na Justiça, pacificação social e resposta célere do sistema de Justiça para fundamentar a prisão preventiva.",
+   "pagina": 4,
+   "trecho_fonte": "Mas guardo reservas em relação ao uso de conceitos elásticos e juízos morais, como “confiança social na Justiça”, “pacificação social” e “resposta célere do sistema de Justiça”, como atalhos argumentativos para fundamentar a prisão preventiva.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes invoca o art. 315, § 2º, do CPP, segundo o qual não se considera fundamentada decisão que emprega conceitos jurídicos indeterminados sem explicar o motivo concreto de sua incidência.",
+   "pagina": 4,
+   "trecho_fonte": "o Código de Processo Penal foi reformado em 2019 para dispor que “não se considera fundamentada qualquer decisão judicial que (...) empregar conceitos jurídicos indeterminados, sem explicar o motivo concreto de sua incidência no caso”",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que algumas expressões usadas na decisão submetida a referendo são um retrato do que o art. 315, § 2º, do CPP busca combater.",
+   "pagina": 4,
+   "trecho_fonte": "algumas das expressões usadas na decisão ora submetida a referendo são um retrato do que esses dispositivos buscam combater",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal, em sua representação, baseou seus pedidos, entre outros fundamentos, em indícios de que os investigados, por meios ilícitos, tiveram acesso a bancos de dados sigilosos do Ministério Público.",
+   "pagina": 4,
+   "trecho_fonte": "representação da Polícia Federal, que, entre outros fundamentos, baseou seus pedidos em indícios concretos de que os investigados, por meios ilícitos, tiveram acesso a bancos de dados sigilosos do Ministério Público",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Ministério Público",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende que os indícios da representação bastam para decretar a prisão cautelar dos investigados, sendo desnecessária a alusão a cláusulas porosas.",
+   "pagina": 5,
+   "trecho_fonte": "para decretar a prisão cautelar dos investigados, sendo desnecessária a alusão a cláusulas porosas que justificariam o encarceramento de qualquer pessoa.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que no caso concreto se verifica estigmatização de investigados por setores da imprensa, alimentados por vazamentos ilegais.",
+   "pagina": 5,
+   "trecho_fonte": "É precisamente o que tem se verificado no caso concreto, em que se verifica estigmatização de investigados por certos setores da imprensa, alimentados a partir de vazamentos ilegais.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes registra matéria veiculada em 13.3.2026 pelo jornal Estadão, poucas horas após o início da sessão de julgamento, sobre mensagens trocadas entre um dos acusados e seu advogado.",
+   "pagina": 7,
+   "trecho_fonte": "recente matéria veiculada em 13.3.2026 pelo jornal Estadão, poucas horas após o início da presente sessão de julgamento, intitulada “Advogado disse a Vorcaro que estava ‘infernizando juiz’ horas antes de sua prisão e mostrou prints”",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Estadão",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A sessão de julgamento do referendo teve início em 13.3.2026.",
+   "pagina": 7,
+   "trecho_fonte": "veiculada em 13.3.2026 pelo jornal Estadão, poucas horas após o início da presente sessão de julgamento",
+   "atribuida_a": null,
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que os dados veiculados pela imprensa foram obtidos com a quebra do sigilo telemático do celular do acusado, carreados aos autos sigilosos, e são comunicação acobertada pelo sigilo advogado-cliente.",
+   "pagina": 7,
+   "trecho_fonte": "os dados veiculados pela imprensa foram obtidos com a quebra do sigilo telemático do telefone celular do acusado e carreados a estes autos sigilosos. Além disso, trata-se de comunicação acobertada pelo sigilo advogado-cliente",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a reportagem aparentemente teve acesso a elementos não franqueados ao Colegiado, pois uma captura de tela é apresentada de forma mais detalhada do que sua reprodução nos autos.",
+   "pagina": 8,
+   "trecho_fonte": "aparentemente, a reportagem teve acesso a elementos que não foram franqueados nem mesmo a este Colegiado, na medida em que uma das capturas de tela veiculadas na matéria é apresentada de forma mais detalhada do que sua reprodução nestes autos.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes indica que a reportagem possivelmente teve acesso, mediante vazamento, a arquivos não oportunizados à Segunda Turma (eDOC 1, p. 132; eDOC 3, p. 104).",
+   "pagina": 9,
+   "trecho_fonte": "tudo indica que a reportagem possivelmente teve acesso, mediante vazamento, a arquivos que não foram oportunizados nem mesmo a esta Segunda Turma.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Segunda Turma",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O relator autorizou, por decisão proferida em 20.2.2026 nos autos do Inq 5.026/DF, a disponibilização à CPMI do INSS dos dados obtidos na quebra de sigilos de investigado.",
+   "pagina": 9,
+   "trecho_fonte": "disponibilização dos dados obtidos na quebra de sigilos de investigado à CPMI do INSS, autorizado por decisão proferida pelo relator em 20.2.2026, nos autos do Inq 5.026/DF.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "CPMI do INSS",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "Por força de decisão do Tribunal, o material objeto de requerimento aprovado pela CPMI estava acautelado na Presidência do Senado.",
+   "pagina": 9,
+   "trecho_fonte": "por força de decisão do Tribunal, o material, que havia sido objeto de requerimento aprovado pela CPMI, estava acautelado na Presidência do Senado.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "CPMI",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Presidência do Senado",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que, poucas horas após o compartilhamento dos dados com a CPMI do INSS, observou-se vazamento massivo de dados pessoais do investigado e de pessoas que com ele mantinham contato.",
+   "pagina": 9,
+   "trecho_fonte": "Poucas horas depois que esses dados foram compartilhados com a CPMI do INSS, entretanto, o que se observou foi o vazamento massivo de dados pessoais não apenas do investigado, como de diversas pessoas que com ele mantinham contato",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "CPMI do INSS",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O relator determinou a abertura de inquérito policial para averiguação dos vazamentos noticiados, por decisão proferida em 6.3.2026 nos autos da Pet 15.612/DF.",
+   "pagina": 10,
+   "trecho_fonte": "agiu bem o relator ao determinar a abertura de inquérito policial para averiguação dos vazamentos noticiados, o que se deu por meio de decisão proferida em 6.3.2026 nos autos da Pet 15.612/DF.",
+   "atribuida_a": null,
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes invoca a Lei 13.869/2019, art. 13, que impõe ao juiz o dever de zelar pela integridade do preso, detento, acusado ou investigado.",
+   "pagina": 10,
+   "trecho_fonte": "o ordenamento impõe ao juiz o dever de zelar pela integridade do preso, detento, acusado ou investigado, prevendo a sua responsabilização em caso de descumprimento dessa obrigação (Lei 13.869/2019, art. 13).",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que no caso concreto se verifica exploração política de investigações criminais e a chamada publicidade opressiva.",
+   "pagina": 10,
+   "trecho_fonte": "como no caso concreto, verifica-se a ocorrência de exploração política de investigações criminais e da chamada publicidade opressiva.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes cita dados de Jon Bruschke e William E. Loges segundo os quais a cobertura jornalística a favor do réu ocorre em menos de 6% dos casos, e em 0,1% nos processos criminais.",
+   "pagina": 11,
+   "trecho_fonte": "Jon Bruschke e William E. Loges indicam que a cobertura jornalística a favor do réu ocorre em menos de 6% dos casos, sendo tal percentual reduzido para 0,1% se forem considerados apenas os processos criminais",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Jon Bruschke",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "William E. Loges",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes cita o HC 80.717/SP (Rel. Min. Sepúlveda Pertence, Red. p/ Acórdão Min. Ellen Gracie, Tribunal Pleno, DJ de 5.3.2004) como caso de prisão fundada na credibilidade das instituições.",
+   "pagina": 13,
+   "trecho_fonte": "(HC 80.717/SP, Rel. Min. Sepúlveda Pertence, Red. p/ Acórdão Min. Ellen Gracie, Tribunal Pleno, DJ de 5.3.2004).",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Sepúlveda Pertence",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Ellen Gracie",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a atual jurisprudência da Corte sobre os rigores formais da prisão preventiva homenageia o voto do Ministro Sepúlveda Pertence no HC 80.717/SP.",
+   "pagina": 14,
+   "trecho_fonte": "A atual jurisprudência desta Corte em relação aos rigores formais da prisão preventiva presta uma justa homenagem ao voto proferido pelo Ministro Sepúlveda Pertence no HC 80.717/SP.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Sepúlveda Pertence",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que as investigações relativas ao caso do Banco Master vêm sofrendo os efeitos da publicidade opressiva.",
+   "pagina": 15,
+   "trecho_fonte": "as investigações relativas ao escândalo do caso do Banco Master vêm sofrendo os deletérios efeitos da publicidade opressiva",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma haver intensa cobertura midiática ancorada em esquema organizado de vazamento seletivo de informações.",
+   "pagina": 15,
+   "trecho_fonte": "Há uma intensa cobertura midiática em torno desse processo, ancorada em um esquema organizado de vazamento seletivo de informações",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes registra a divulgação de fotos de Daniel Bueno Vorcaro na penitenciária federal de Brasília e notícia de atos de automutilação após a formação da maioria neste julgamento.",
+   "pagina": 16,
+   "trecho_fonte": "tivemos o caso da divulgação de fotos do investigado Daniel Bueno Vorcaro na penitenciária federal de Brasília, com trajes típicos dos internos daquela unidade, e a notícia de um acesso de raiva que teria resultado em atos de automutilação após a formação da maioria neste julgamento",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal alegou, de forma genérica, trânsito político do investigado e proteção à sua integridade física para a transferência à penitenciária federal de Brasília.",
+   "pagina": 16,
+   "trecho_fonte": "a própria transferência do investigado para a penitenciária federal de Brasília, a partir de alegação genérica, pela Polícia Federal, de trânsito político do investigado e justificativas de proteção à própria integridade física do preso",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a transferência reforça processo de linchamento moral e etiquetamento social dos integrantes do caso do Banco Master como presos de alta periculosidade.",
+   "pagina": 16,
+   "trecho_fonte": "reforçam todo esse processo de linchamento moral e de etiquetamento social (labeling approach) dos integrantes do caso do Banco Master como presos da mais alta periculosidade",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O Procurador-Geral da República foi instado a se manifestar sobre os pedidos da Polícia Federal no prazo de 72 horas (eDOC 11).",
+   "pagina": 17,
+   "trecho_fonte": "Instado a se manifestar sobre os pedidos da Polícia Federal no prazo de 72 (setenta e duas) horas (eDOC 11)",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Procurador-Geral da República",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "O Procurador-Geral afirmou a inviabilidade de manifestação adequada no prazo assinalado, em virtude da complexidade do caso, e requereu que as providências aguardassem a manifestação do titular da ação penal (eDOC 13, p. 2).",
+   "pagina": 17,
+   "trecho_fonte": "o Procurador-Geral afirmou a inviabilidade, em sua visão, de manifestação adequada no exíguo prazo assinalado, em virtude da complexidade do caso. Por essa razão, requereu “que as providências [aguardassem] a manifestação do titular da ação penal a ser enviada no mais breve tempo possível”",
+   "atribuida_a": "Procurador-Geral da República",
+   "entidades": [
+    {
+     "nome": "Procurador-Geral",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes invoca o art. 52 do RISTF, que torna imperativa a participação do Procurador-Geral da República nos inquéritos de que possa resultar responsabilidade penal (inciso XII).",
+   "pagina": 17,
+   "trecho_fonte": "imperativa a participação do Procurador-Geral da República em uma série de feitos que tramitam na Corte, notadamente “nos inquéritos de que possa resultar responsabilidade penal” (RISTF, art. 52, XII)",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Procurador-Geral da República",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes registra que o parágrafo único do art. 52 do RISTF admite, excepcionalmente, a dispensa de vista ao órgão ministerial quando houver urgência ou jurisprudência firmada pelo Plenário.",
+   "pagina": 17,
+   "trecho_fonte": "o parágrafo único do referido dispositivo admite, em caráter excepcional, a dispensa de vista ao órgão ministerial “quando houver urgência, ou quando sobre a matéria versada no processo já houver o Plenário firmado jurisprudência” (RISTF, art. 52, parágrafo único).",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a dispensa de vista ao Ministério Público deve ser medida estritamente excepcional, condicionada à demonstração concreta e específica da urgência.",
+   "pagina": 18,
+   "trecho_fonte": "A dispensa de vista ao Ministério Público deve ser compreendida como medida estritamente excepcional, condicionada à demonstração concreta e específica da urgência",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Ministério Público",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes registra que o principal investigado já se encontrava em prisão domiciliar e considera não implausível a urgência quanto aos demais investigados ainda não custodiados.",
+   "pagina": 18,
+   "trecho_fonte": "o principal investigado já se encontrava sob a custódia do Estado em prisão domiciliar (o que justificaria aguardar a manifestação da PGR sobre o recrudescimento de sua prisão), não é de todo implausível considerar que havia urgência em relação aos demais investigados",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "PGR",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O Procurador-Geral protocolou cota ministerial logo após a prolação da decisão monocrática (eDOC 103).",
+   "pagina": 19,
+   "trecho_fonte": "com razão o Procurador-Geral ao salientar, em cota ministerial protocolada logo após a prolação da decisão monocrática",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Procurador-Geral",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "O Procurador-Geral sustentou, em cota ministerial, que a oitiva do titular exclusivo da ação penal não é formalidade vazia e que a representação deve ser lida, estudada e cotejada com peças do inquérito (eDOC 103, p. 5-6).",
+   "pagina": 19,
+   "trecho_fonte": "oitiva do titular exclusivo da ação penal não se resume nem pode ser considerada uma formalidade vazia de importância real.",
+   "atribuida_a": "Procurador-Geral da República",
+   "entidades": [
+    {
+     "nome": "Procurador-Geral",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende que a ocorrência não importa nulidade, pois o Procurador-Geral foi intimado (eDOC 11), mas considera imprescindível nova vista dos autos à PGR.",
+   "pagina": 19,
+   "trecho_fonte": "Por mais que a referida ocorrência não importe em nulidade, mesmo porque o Procurador-Geral foi efetivamente intimado a se manifestar sobre a representação da autoridade policial (eDOC 11), penso ser imprescindível que seja concedida nova vista dos autos à PGR",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "PGR",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "O Procurador-Geral salientou em sua cota que o impacto de certas providências cautelares sobre valores fundamentais pode ser exemplificado no evento fúnebre ocorrido durante a operação (eDOC 103, p. 4).",
+   "pagina": 20,
+   "trecho_fonte": "“impacto de certas providências cautelares de ordem penal sobre valores fundamentais pode ser exemplificado no evento fúnebre ocorrido durante a operação realizada” (eDOC 103, p. 4).",
+   "atribuida_a": "Procurador-Geral da República",
+   "entidades": [
+    {
+     "nome": "Procurador-Geral",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende imprescindível facultar ao Procurador-Geral da República manifestação em prazo adequado sobre as medidas cautelares, independentemente do referendo.",
+   "pagina": 20,
+   "trecho_fonte": "entendo ser imprescindível facultar ao Procurador-Geral da República a oportunidade de manifestação em prazo adequado sobre as medidas cautelares decretadas, independentemente do seu referendo.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Procurador-Geral da República",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão que determinou a transferência do investigado para estabelecimento penal federal (eDOC 80) foi proferida em momento ulterior à decisão submetida a referendo (eDOC 16).",
+   "pagina": 20,
+   "trecho_fonte": "a decisão que determinou a transferência do investigado para estabelecimento penal federal (eDOC 80) tenha sido proferida em momento ulterior à decisão submetida a referendo (eDOC 16)",
+   "atribuida_a": null,
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator consignou que o contexto narrado pela instituição requerente se amolda ao art. 3º da Lei nº 11.671/2008.",
+   "pagina": 20,
+   "trecho_fonte": "o eminente relator consignou que “o contexto narrado pela instituição requerente se amolda ao que previsto no art. 3º da Lei nº 11.671/2008",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "André Mendonça",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "Nova deliberação judicial obrigou a direção da Penitenciária Federal de Brasília a permitir visitas dos advogados constituídos nos autos, sem agendamento e sem monitoramento.",
+   "pagina": 20,
+   "trecho_fonte": "sobreveio nova deliberação judicial em que se obrigou a direção da Penitenciária Federal de Brasília a permitir “a realização de visitas dos advogados regularmente constituídos nos autos,",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Penitenciária Federal de Brasília",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende que a inclusão do investigado em estabelecimento penal federal não deveria ser cogitada sem fundamentação substancial e analítica quanto à necessidade.",
+   "pagina": 21,
+   "trecho_fonte": "a inclusão do investigado em estabelecimento penal federal não é medida que deveria ser cogitada sem que houvesse fundamentação substancial e analítica quanto à sua necessidade.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes invoca o art. 3º da Lei 11.671/2008, segundo o qual a inclusão em presídio federal só se justifica quando evidenciado o interesse da segurança pública ou a proteção do custodiado.",
+   "pagina": 21,
+   "trecho_fonte": "Nos termos do art. 3º da Lei 11.671/2008, a inclusão de presos em estabelecimentos penais federais de segurança máxima somente se justifica quando evidenciado, de forma concreta, o interesse da segurança pública ou a necessidade de proteção do próprio custodiado",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustentou que a transferência se justificaria por risco à segurança pública e à integridade do preso, decorrente de sua alegada capacidade de articulação e influência sobre agentes públicos e privados (eDOC 78).",
+   "pagina": 21,
+   "trecho_fonte": "A Polícia Federal, em síntese, sustentou que a transferência do investigado para o sistema penitenciário federal se justificaria por suposto risco à segurança pública e à própria integridade do preso, decorrente de sua alegada “capacidade de articulação e influência”",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirmou que o investigado possuiria aptidão para mobilizar redes de influência capazes de interferir nas investigações ou no cumprimento de decisões judiciais, aludindo a cautela redobrada.",
+   "pagina": 22,
+   "trecho_fonte": "de interferir na condução das investigações ou no cumprimento de decisões judiciais, razão pela qual seria necessária uma custódia em ambiente de maior rigor, com monitoramento intensificado. Aludiu à suposta “cautela redobrada” diante das peculiaridades do caso concreto.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a manifestação da Polícia Federal, subscrita em três laudas, não indica de forma analítica e individualizada os fundamentos concretos da imprescindibilidade da medida.",
+   "pagina": 22,
+   "trecho_fonte": "A manifestação, subscrita em três laudas, não indica, de forma analítica e individualizada, os fundamentos concretos que conduziriam à conclusão pela imprescindibilidade da medida.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes conclui não ter sido caracterizada nenhuma das hipóteses da Lei 11.671/2008 para manutenção de Daniel Bueno Vorcaro em Penitenciária Federal de Segurança Máxima, o que resulta na ilegalidade de sua manutenção nesse regime.",
+   "pagina": 22,
+   "trecho_fonte": "parece-me não ter sido devidamente caracterizada nenhuma das hipóteses da Lei 11.671/2008 para manutenção do investigado Daniel Bueno Vorcaro sob custódia em Penitenciária Federal de Segurança Máxima – o que, em minha visão, resulta na ilegalidade de sua manutenção em tal regime carcerário.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a ausência de intimação da Procuradoria-Geral da República e a inexistência de provocação do investigado evidenciam vício adicional no iter procedimental.",
+   "pagina": 23,
+   "trecho_fonte": "Geral da República, aliada à inexistência de provocação por parte do próprio investigado quanto à necessidade de resguardo de sua integridade física, evidencia vício adicional no iter procedimental",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende que a decisão que assegurou assistência de advogado sem monitoramento engendra regime intermediário não previsto em lei.",
+   "pagina": 23,
+   "trecho_fonte": "parece-me que tal providência acaba por engendrar uma espécie de regime intermediário não previsto em lei.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes menciona o óbito do outrora investigado Luiz Phillipi Machado de Moraes Mourão em estabelecimento da Polícia Federal.",
+   "pagina": 23,
+   "trecho_fonte": "o evento trágico e lamentável atinente ao óbito do outrora investigado Luiz Phillipi Machado de Moraes Mourão em estabelecimento da Polícia Federal",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Luiz Phillipi Machado de Moraes Mourão",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes registra que em 19.3.2026 a imprensa noticiou que o relator teria determinado a transferência de Daniel Bueno Vorcaro para outro estabelecimento carcerário.",
+   "pagina": 24,
+   "trecho_fonte": "no dia 19.3.2026, a imprensa noticiou que o relator teria determinado a transferência de Daniel Bueno Vorcaro para outro estabelecimento carcerário.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a sucessão dos fatos evidencia que o investigado não apresentava, desde o início, grave risco à ordem interna dos presídios.",
+   "pagina": 24,
+   "trecho_fonte": "desde o início, o investigado não apresentava grave risco à ordem interna dos presídios, a ponto de justificar sua transferência para uma penitenciária federal de segurança máxima.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes invoca o art. 312 do Código de Processo Penal como norma reguladora da prisão preventiva.",
+   "pagina": 24,
+   "trecho_fonte": "A matéria, como se sabe, é regulada pelo art. 312 do Código de Processo Penal",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes cita Gustavo Badaró quanto ao uso de conceitos indeterminados pelos Tribunais brasileiros para justificar prisões cautelares.",
+   "pagina": 25,
+   "trecho_fonte": "Gustavo Badaró aponta, de forma crítica, que essa dimensão não tem sido adequadamente observada pelos Tribunais brasileiros",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Gustavo Badaró",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes adota o entendimento de que fatos antigos não autorizam qualquer espécie de prisão provisória.",
+   "pagina": 27,
+   "trecho_fonte": "entende-se, como regra, que fatos antigos não autorizam qualquer espécie de prisão provisória, seja ela temporária ou preventiva",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes cita o RHC 79.200/BA, segundo o qual nem a gravidade abstrata do crime nem o clamor público constituem motivos idôneos à prisão preventiva.",
+   "pagina": 28,
+   "trecho_fonte": "“nem a gravidade abstrata do crime imputado, ainda que qualificado com hediondo, nem a reprovabilidade do fato, nem o consequente clamor público constituem motivos idôneos à prisão preventiva”",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Sepúlveda Pertence",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes cita o HC 80.379/SP, do Ministro Celso de Mello, segundo o qual o estado de comoção social não pode justificar, só por si, a prisão cautelar.",
+   "pagina": 29,
+   "trecho_fonte": "“[o] estado de comoção social e de eventual indignação popular, motivado pela repercussão da prática da infração penal, não pode justificar, só por si, a decretação da prisão cautelar do suposto autor do comportamento delituoso",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Celso de Mello",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes cita o HC 80.719/SP, em que a Segunda Turma afastou a credibilidade das instituições como fundamento da prisão preventiva.",
+   "pagina": 30,
+   "trecho_fonte": "a alegação de que o réu, por dispor de privilegiada condição econômico-financeira, deveria ser mantido na prisão, em nome da credibilidade das instituições e da preservação da ordem pública”.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Segunda Turma",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes reconhece que nos anos 2000 a jurisprudência sobre credibilidade das instituições não era pacificada, citando acórdão de sua relatoria (HC 86.522/DF).",
+   "pagina": 30,
+   "trecho_fonte": "É possível encontrar, inclusive, acórdãos de minha lavra que resultaram na manutenção de segregações cautelares fundadas em tal argumento (HC 86.522/DF, de minha relatoria, Segunda Turma, DJ 16.6.2006, v.g.).",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes cita o HC 97.466/RS como um dos mais expressivos precedentes do STF sobre privação cautelar da liberdade.",
+   "pagina": 31,
+   "trecho_fonte": "o HC 97.466/RS talvez seja um dos mais expressivos quanto à orientação deste Supremo Tribunal Federal em tema de privação cautelar da liberdade.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Supremo Tribunal Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a utilização da prisão preventiva como resposta a expectativas sociais ou como afirmação simbólica da credibilidade das instituições é incompatível com a Constituição Federal.",
+   "pagina": 33,
+   "trecho_fonte": "a utilização da prisão preventiva como resposta a expectativas sociais de repressão imediata, ou como instrumento de afirmação simbólica da credibilidade das instituições, representa ato incompatível com a natureza excepcional da medida e com a própria Constituição Federal",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes cita o caso López Álvares vs. Honduras e o art. 7º, item 3, da Convenção Americana de Direitos Humanos.",
+   "pagina": 35,
+   "trecho_fonte": "é sempre importante fazer referência ao caso López Álvares vs. Honduras. O precedente em questão envolve a aplicação do art. 7º, item 3, da Convenção Americana de Direitos Humanos",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes observa que a prisão preventiva dos investigados foi decretada com referência a conceitos indeterminados (eDOC 16, p. 28 e 31).",
+   "pagina": 36,
+   "trecho_fonte": "No caso concreto, observo que a prisão preventiva dos investigados foi decretada com a referência a conceitos indeterminados como aqueles acima descritos",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A autoridade policial parte da premissa de que Daniel Bueno Vorcaro e os demais investigados, por possuírem muitas conexões, as utilizariam para embaraçar ou obstruir as investigações.",
+   "pagina": 36,
+   "trecho_fonte": "parte da premissa de que, como Daniel Bueno Vorcaro e os demais investigados possuem muitas conexões, eles certamente as utilizariam para embaraçar ou obstruir as investigações.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que o raciocínio da autoridade policial, acolhido pela decisão monocrática, lança mão de presunções e realiza saltos argumentativos.",
+   "pagina": 36,
+   "trecho_fonte": "o raciocínio da autoridade policial – ao final acolhido pela decisão monocrática – igualmente lança mão de presunções e realiza verdadeiros saltos argumentativos",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que as medidas cautelares já impostas resultaram no afastamento de servidores públicos e agentes privados, no bloqueio de bens e em medidas cautelares diversas sobre investigados, familiares e empresas.",
+   "pagina": 37,
+   "trecho_fonte": "as quais já resultaram no afastamento de servidores públicos e agentes de instituições privadas envolvidos, no bloqueio de bens e na imposição de medidas cautelares diversas sobre os investigados, seus familiares e suas empresas.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que a autoridade policial não aponta o risco de fuga específico de investigados com bens bloqueados, passaportes apreendidos e monitoramento eletrônico.",
+   "pagina": 37,
+   "trecho_fonte": "qual seria o risco de fuga específico de investigados que se encontram com todos os bens bloqueados, os passaportes apreendidos e em regime de monitoramento eletrônico",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes registra que a decisão recorrida traz referências a alegados atos de coação, ameaça e ataques cibernéticos, como os episódios do ex-capitão do barco, de um funcionário de restaurante e do jornalista Lauro Jardim.",
+   "pagina": 37,
+   "trecho_fonte": "a decisão recorrida traz referências concretas a alegados atos de coação, de ameaça e de ataques cibernéticos destinados a intimidar críticos ou inimigos do investigado Daniel Bueno Vorcaro, tais como os episódios que envolvem o ex-capitão de seu barco e um funcionário de um restaurante",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Lauro Jardim",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma haver prova de que membros do grupo tinham acesso a armas de fogo, com divergências entre os artefatos apreendidos e os descritos na decisão recorrida.",
+   "pagina": 37,
+   "trecho_fonte": "Também há prova de que os membros do grupo que supostamente praticava tais delitos tinham acesso a armas de fogo, embora existam divergências relevantes entre os artefatos apreendidos e aqueles que são descritos na decisão recorrida.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende que esses elementos não são contemporâneos às prisões, pois inexiste prova da continuidade das atividades do grupo após as operações que levaram à primeira prisão de Daniel Bueno Vorcaro.",
+   "pagina": 37,
+   "trecho_fonte": "não podem ser considerados como contemporâneos às prisões ora decretadas, pois inexiste prova da continuidade das atividades desse grupo após a deflagração das operações que levaram à primeira prisão do investigado Daniel Bueno Vorcaro",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A primeira prisão de Daniel Bueno Vorcaro foi decretada em novembro do ano passado e posteriormente convertida em prisão domiciliar.",
+   "pagina": 38,
+   "trecho_fonte": "novembro do ano passado e posteriormente convertida em prisão domiciliar.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa dos investigados salientou a ausência de contemporaneidade dos fatos que embasaram as prisões.",
+   "pagina": 38,
+   "trecho_fonte": "Em contraposição a esse aspecto, salientado pela defesa dos investigados, o eminente relator sustenta",
+   "atribuida_a": "defesa dos investigados",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator sustenta que as comunicações anteriores a novembro de 2025, reveladas apenas agora, devem ser consideradas fatos novos para os fins do art. 312, § 2º, do CPP.",
+   "pagina": 38,
+   "trecho_fonte": "“consideradas como fatos novos para os fins do art. 312, § 2º, do CPP, porque descobertas posteriormente às decisões anteriormente proferidas”.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "André Mendonça",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende que a revelação posterior das comunicações não caracteriza fatos novos para fins de contemporaneidade, em especial quanto a Daniel Bueno Vorcaro, já preso em regime domiciliar.",
+   "pagina": 38,
+   "trecho_fonte": "não é capaz de caracterizar tais fatos como novos para fins de aferição da contemporaneidade necessária à decretação de nova prisão preventiva, em especial quanto ao investigado Daniel Bueno Vorcaro, que já se encontrava preso em regime domiciliar.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que, após a conversão da prisão preventiva em domiciliar, não se registram fatos novos idôneos a ensejar reavaliação da medida.",
+   "pagina": 38,
+   "trecho_fonte": "Após a conversão da prisão preventiva em domiciliar, não se registram fatos novos idôneos a ensejar a reavaliação da medida.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes identifica como elemento contemporâneo a continuidade de ações do chamado Projeto DV, voltado à contratação de influenciadores digitais para defender narrativas favoráveis ao Banco Master e desmoralizar a liquidação pelo Banco Central.",
+   "pagina": 38,
+   "trecho_fonte": "a continuidade de ações relacionadas ao chamado “Projeto DV”, por meio do qual se almejava a contratação de influenciadores digitais para promover, de forma coordenada, a defesa de narrativas favoráveis ao Banco Master e de desmoralização da liquidação da instituição pelo Banco Central",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes identifica como elemento contemporâneo os vultosos valores encontrados em conta vinculada ao pai de Daniel Bueno Vorcaro, possivelmente indicativos de alegada ocultação de proveitos ilícitos.",
+   "pagina": 39,
+   "trecho_fonte": "os vultosos valores encontrados em conta vinculada ao pai do investigado Daniel Bueno Vorcaro, possivelmente indicativos de alegada ocultação de proveitos ilícitos e suposta reiteração delitiva.",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende que a autoridade policial carreou elementos suficientes para a manutenção da prisão preventiva por conveniência da instrução criminal e para assegurar a aplicação da lei penal (CPP, art. 312, caput).",
+   "pagina": 39,
+   "trecho_fonte": "penso que a autoridade policial logrou carrear aos autos elementos suficientes para justificar a manutenção da prisão preventiva dos investigados, ao menos por ora, “por conveniência da instrução criminal”e “para assegurar a aplicação da lei penal” (CPP, art. 312, caput).",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que as mensagens extraídas dos celulares de Daniel Bueno Vorcaro indicam relações suspeitas com servidores do Banco Central (eDOC 2, p. 123-130).",
+   "pagina": 39,
+   "trecho_fonte": "as mensagens extraídas dos aparelhos celulares do investigado Daniel Bueno Vorcaro e agora trazidas aos autos indicam que o investigado mantinha relações suspeitas com servidores do Banco Central",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma haver indícios de que o investigado teve acesso a informações privilegiadas sobre reunião sigilosa entre a Polícia Federal e integrantes do Banco Central (eDOC 3, p. 100-103).",
+   "pagina": 39,
+   "trecho_fonte": "há indícios de que o investigado, valendo-se dessas relações ou não, teve acesso a informações privilegiadas sobre reunião sigilosa realizada entre a Polícia Federal e integrantes do Banco Central",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes registra notícia de que o grupo supostamente integrado por Fabiano Campos Zettel, Marilson Roseno da Silva e Luiz Phillipi Machado De Moraes Mourão obteve acesso ilegal a investigações sigilosas de interesse do Banco Master (eDOC 3, p. 6-35; 99-122).",
+   "pagina": 40,
+   "trecho_fonte": "há notícia de que o referido grupo obteve acesso ilegal a investigações e procedimentos sigilosos de interesse do Banco Master (eDOC 3, p. 6-35; 99-122).",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Fabiano Campos Zettel",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Marilson Roseno da Silva",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Luiz Phillipi Machado De Moraes Mourão",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma haver indícios de que Fabiano Campos Zettel, além de integrar o grupo, era o responsável por pagamentos destinados à sua manutenção (eDOC 3, p. 6; eDOC 4, p. 181-193).",
+   "pagina": 40,
+   "trecho_fonte": "Quanto ao investigado Fabiano Campos Zettel, há indícios que, além de integrar o grupo supracitado, era o responsável por pagamentos destinados à sua manutenção (eDOC 3, p. 6; eDOC 4, p. 181-193).",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Fabiano Campos Zettel",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes entende ser o caso de referendar a decisão monocrática, sem subscrever a prisão por garantia da ordem pública, por conveniência da instrução criminal e para assegurar a aplicação da lei penal.",
+   "pagina": 40,
+   "trecho_fonte": "sem subscrever à prisão com fundamento na garantia da ordem pública, entendo ser o caso de referendar a decisão monocrática, ao menos por ora, “por conveniência da instrução criminal” e “para assegurar a aplicação da lei penal” (CPP, art. 312, caput)",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A defesa de Fabiano Campos Zettel formulou pedido de conversão da prisão preventiva em prisão domiciliar por razões humanitárias.",
+   "pagina": 40,
+   "trecho_fonte": "pedido de conversão preventiva em prisão domiciliar por razões humanitárias formulado pela defesa do investigado Fabiano Campos Zettel.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Fabiano Campos Zettel",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa de Fabiano Campos Zettel sustenta que o investigado possui um filho de dois anos e aguarda o nascimento iminente de gêmeos em gravidez de risco (eDOC 115, p. 8-9).",
+   "pagina": 41,
+   "trecho_fonte": "“possui um filho de dois anos com a sua esposa” e “aguarda o nascimento iminente de mais dois filhos do casal, gêmeos, em gravidez de risco, cujo parto está previsto ainda para este mês” (eDOC 115, p. 8-9)",
+   "atribuida_a": "defesa de Fabiano Campos Zettel",
+   "entidades": [
+    {
+     "nome": "Fabiano Campos Zettel",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A alegação da defesa de Fabiano Campos Zettel veio acompanhada de comprovação (eDOCs 116 e 117).",
+   "pagina": 41,
+   "trecho_fonte": "A alegação veio acompanhada da devida comprovação (eDOCs 116 e 117).",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Fabiano Campos Zettel",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes considera a tese da defesa amparada, ao menos em tese, no precedente do HC 165.704/DF, de sua relatoria.",
+   "pagina": 41,
+   "trecho_fonte": "Encontra-se amparada, ao menos em tese, no precedente do HC 165.704/DF, de minha relatoria",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que o art. 227 da Constituição condiciona a interpretação do art. 318 do CPP, que regula a substituição da prisão preventiva por domiciliar.",
+   "pagina": 41,
+   "trecho_fonte": "condiciona a interpretação que deve ser feita da legislação processual penal, à exemplo do art. 318 do CPP (que regula a substituição da prisão preventiva por domiciliar)",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes considera que as particularidades do caso impõem, por ora, o referendo da medida cautelar quanto a Fabiano Campos Zettel.",
+   "pagina": 41,
+   "trecho_fonte": "considero que as particularidades do caso concreto impõem, por ora, o referendo da medida cautelar ante os indícios aludidos no tópico anterior",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Fabiano Campos Zettel",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O Ministro Gilmar Mendes afirma que, finalizadas as diligências quanto a Fabiano Campos Zettel, deve ser reavaliada a substituição da prisão preventiva por domiciliar, com incidência do art. 318, III, do CPP.",
+   "pagina": 42,
+   "trecho_fonte": "deve ser reavaliada a possibilidade de substituição de sua prisão preventiva por domiciliar, uma vez que a existência de filho menor de tenra idade sob os seus cuidados, bem como a iminência do nascimento de outros filhos, em contexto de gestação de risco, indicam a incidência do art. 318, III",
+   "atribuida_a": "Ministro Gilmar Mendes",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Fabiano Campos Zettel",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O Ministro Gilmar Mendes referenda, por ora, a decisão proferida, sem prejuízo de reavaliação das medidas após a manifestação da Procuradoria-Geral da República.",
+   "pagina": 42,
+   "trecho_fonte": "referendo, por ora, a decisão proferida, sem prejuízo de eventual reavaliação das medidas, após a devida manifestação da Procuradoria-Geral da República.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Procuradoria-Geral da República",
+     "tipo": "orgao_publico"
+    }
+   ]
+  }
+ ],
+ "observacoes": null
+}

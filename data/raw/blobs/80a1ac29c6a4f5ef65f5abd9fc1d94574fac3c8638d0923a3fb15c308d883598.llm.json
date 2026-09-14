@@ -1,0 +1,561 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida na Petição 15.198 Distrito Federal, de relatoria do Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A defesa de HENRIQUE MOURA VORCARO (e-Doc. 314 e 638) e a de THIAGO ASSUMPÇÃO HENRIQUES (e-Doc. 317, 640 e 990) requerem, cada qual, a devolução de veículos automotores apreendidos.",
+      "pagina": 4,
+      "trecho_fonte": "Trata-se de petições nas quais a defesa de HENRIQUE MOURA VORCARO (e-Doc. 314 e 638) e de THIAGO ASSUMPÇÃO HENRIQUES (e-Doc. 317, 640 e 990) requerem, cada qual, a devolução de veículos automotores apreendidos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os veículos foram apreendidos durante o cumprimento de mandado de busca e apreensão realizado nas residências dos requerentes em 14/01/2026; os pedidos têm fundamento nos arts. 118 e 120 do Código de Processo Penal.",
+      "pagina": 4,
+      "trecho_fonte": "apreendidos durante o cumprimento de mandado de busca e apreensão realizado nas respectivas residências em 14/01/2026, com fundamento nos arts. 118 e 120 do Código de Processo Penal",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Os requerentes sustentam que a busca e apreensão foi deferida no contexto de investigação sobre supostos ilícitos relacionados à gestão de instituição financeira e a operações estruturadas no mercado de capitais envolvendo o Banco Master e outros investigados.",
+      "pagina": 4,
+      "trecho_fonte": "sustentam que a medida de busca e apreensão foi deferida no contexto de investigação destinada à apuração de supostos ilícitos relacionados à gestão de instituição financeira e a operações estruturadas no mercado de capitais envolvendo o Banco Master e outros investigados",
+      "atribuida_a": "Defesas de HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"},
+        {"nome": "Banco Master", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Ambos os requerentes sustentam que não ocupam posição de direção ou administração nas instituições investigadas, tendo sido incluídos na investigação apenas em razão de vínculos pessoais e familiares com pessoas apontadas como centrais na apuração.",
+      "pagina": 4,
+      "trecho_fonte": "Ambos sustentam, de forma convergente, que não ocupam posição de direção ou administração nas instituições investigadas, tendo sido incluídos na investigação apenas em razão de vínculos pessoais e familiares com pessoas apontadas como centrais na apuração",
+      "atribuida_a": "Defesas de HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Os requerentes sustentam que não há imputação direta de prática criminosa contra eles, tampouco indicação de que seus bens constituam produto, proveito ou instrumento do crime.",
+      "pagina": 4,
+      "trecho_fonte": "não havendo, outrossim, imputação direta de prática criminosa contra eles, tampouco indicação de que seus bens constituam produto, proveito ou instrumento do crime",
+      "atribuida_a": "Defesas de HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "HENRIQUE alega que, durante a diligência policial, foram apreendidos equipamentos eletrônicos, documentos, objetos pessoais e seis veículos automotores, conforme auto circunstanciado lavrado pela Polícia Federal.",
+      "pagina": 5,
+      "trecho_fonte": "Alega HENRIQUE que, durante a diligência policial, foram apreendidos diversos bens, dentre eles equipamentos eletrônicos, documentos, objetos pessoais e seis veículos automotores, conforme auto circunstanciado lavrado pela Polícia Federal",
+      "atribuida_a": "Defesa de HENRIQUE MOURA VORCARO",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "HENRIQUE sustenta que a busca e apreensão possui natureza meramente instrumental e probatória, razão pela qual a manutenção da apreensão dos veículos não mais se justificaria, por inexistir utilidade investigativa atual ou futura dos bens.",
+      "pagina": 5,
+      "trecho_fonte": "Sustenta que a medida de busca e apreensão possui natureza meramente instrumental e probatória, razão pela qual a manutenção da apreensão dos veículos não mais se justificaria, por inexistir utilidade investigativa atual ou futura dos bens",
+      "atribuida_a": "Defesa de HENRIQUE MOURA VORCARO",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "HENRIQUE e THIAGO afirmam que, quanto aos veículos apreendidos, não há respaldo ou indício suficiente, por parte da Polícia Federal ou da Procuradoria-Geral da República, de que os bens possuam vinculação com os fatos investigados.",
+      "pagina": 5,
+      "trecho_fonte": "Afirmam, HENRIQUE e THIAGO, que, quanto aos veículos apreendidos, não há respaldo ou indício suficiente — por parte da Polícia Federal, tampouco da Procuradoria-Geral da República — de que os referidos bens possuam qualquer vinculação com os fatos investigados",
+      "atribuida_a": "Defesas de HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Os requerentes afirmam que a manutenção da apreensão decorreria exclusivamente de inércia procedimental e afrontaria o art. 118 do CPP, convertendo-se em restrição desproporcional ao direito de propriedade.",
+      "pagina": 5,
+      "trecho_fonte": "a manutenção da apreensão decorreria exclusivamente de inércia procedimental e afrontaria o disposto no art. 118 do CPP, convertendo-se em restrição desproporcional ao direito de propriedade",
+      "atribuida_a": "Defesas de HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Ambos os requerentes argumentam que a retenção prolongada dos automóveis de elevado valor acarreta depreciação econômica, deterioração física e prejuízos patrimoniais irreversíveis, e que utilizavam habitualmente os veículos para fins familiares.",
+      "pagina": 5,
+      "trecho_fonte": "Argumentam, ambos os requerentes também, que a retenção prolongada dos automóveis de elevado valor acarreta depreciação econômica, deterioração física e prejuízos patrimoniais irreversíveis",
+      "atribuida_a": "Defesas de HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "HENRIQUE trouxe aos autos cópia do auto de busca e apreensão (e-Doc. 314, p. 10 - 15) para demonstrar os bens e os seis veículos apreendidos.",
+      "pagina": 5,
+      "trecho_fonte": "HENRIQUE, a fim de fundamentar seu pedido, traz aos autos cópia do auto de busca e apreensão (e-Doc. 314, p. 10 - 15), a fim de demonstrar os bens e seis veículos apreendidos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O auto de busca e apreensão juntado por HENRIQUE lista, entre os bens móveis, 02 relógios Hublot Big Bang, 01 relógio Montblanc, 01 relógio HYT Trinity Five e 01 relógio Cartier Tank.",
+      "pagina": 6,
+      "trecho_fonte": "(viii) 02 relógios da marca Hublot, modelo Big Bang; (ix) 01 relógio da marca Montblanc; (x) 01 relógio da marca HYT, modelo Trinity Five; (xi) 01 relógio Cartier Tank",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O auto de busca e apreensão juntado por HENRIQUE lista os veículos Aston Martin DBX 707 (placa JOO4E77), Jeep Wrangler 4XE (placa OPG-5457) e Bentley Continental GT Speed (placa QXW9E84).",
+      "pagina": 6,
+      "trecho_fonte": "veículos: (i) 01 veículo Aston Martin DBX 707, cor preta, ano/modelo 2024/2025, placa JOO4E77; (ii) 01 veículo Jeep Wrangler 4XE, cor preta, ano/modelo 2012/2012, placa OPG-5457; (iii) 01 veículo Bentley Continental GT Speed, cor preta, ano/modelo 2024/2024, placa QXW9E84",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O auto de busca e apreensão juntado por HENRIQUE lista também os veículos Land Rover Range Rover Sport P575 SVR (placa QUO3D08), Toyota Hilux SW4 Diamond (placa SGF2J94) e BMW X5 M50i (placa RBE2E89).",
+      "pagina": 6,
+      "trecho_fonte": "(iv) 01 veículo Land Rover Range Rover Sport P575 SVR, cor preta, ano/modelo 2019/2019, placa QUO3D08; (v) 01 veículo Toyota Hilux SW4 Diamond, cor preta, ano/modelo 2023, placa SGF2J94; (vi) 01 veículo BMW X5 M50i, cor branca, ano/modelo 2020/2021, placa RBE2E89",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "THIAGO anexou à petição cópia dos CRLV de dois veículos: Porsche Macan, placa RTK9H99, ano/modelo 2022, registrado em nome de Thiago Assumpção Henriques, com anotação de alienação fiduciária.",
+      "pagina": 6,
+      "trecho_fonte": "O requerente THIAGO anexa à petição cópia dos certificados de registro e licenciamento de veículos — CRLV de dois veículos: (i) I/Porsche Macan, placa RTK9H99, ano/modelo 2022, registrada em nome de Thiago Assumpção Henriques, com anotação de alienação fiduciária",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O segundo CRLV juntado por THIAGO refere-se a Porsche Panamera 4SEHY, placa RTY1A00, ano/modelo 2022, registrado em nome do requerente, com anotação de alienação fiduciária (fls. 10-11 do e-Doc. 317).",
+      "pagina": 6,
+      "trecho_fonte": "(ii) I/Porsche Panamera 4SEHY, placa RTY1A00, ano/modelo 2022, também registrada em nome do requerente Thiago, com anotação de alienação fiduciária (fls. 10-11 do e-Doc. 317)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "HENRIQUE VORCARO pugna pelo deferimento integral da restituição dos seis veículos apreendidos em sua residência e, subsidiariamente, requer a devolução da posse dos bens mediante sua nomeação como fiel depositário (e-Doc. 314, p. 6).",
+      "pagina": 6,
+      "trecho_fonte": "HENRIQUE VORCARO pugna pela “deferimento integral da restituição dos seis (6) veículos apreendidos na residência do requerente” e, subsidiariamente, requer a devolução da posse dos bens mediante sua nomeação como fiel depositário (e-Doc. 314, p. 6)",
+      "atribuida_a": "Defesa de HENRIQUE MOURA VORCARO",
+      "entidades": [
+        {"nome": "HENRIQUE VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "THIAGO pleiteia o deferimento integral da restituição dos dois veículos apreendidos em sua residência, de sua propriedade (e-Doc. 317, p. 5).",
+      "pagina": 7,
+      "trecho_fonte": "pleiteia o “deferimento integral da restituição dos dois (2) veículos apreendidos na residência do requerente, de sua propriedade” (e-Doc. 317, p. 5)",
+      "atribuida_a": "Defesa de THIAGO ASSUMPÇÃO HENRIQUES",
+      "entidades": [
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "HENRIQUE apresentou nova petição (e-Doc. 638) repisando os argumentos anteriores, reiterando o pedido de restituição dos veículos e solicitando acesso aos autos.",
+      "pagina": 7,
+      "trecho_fonte": "Posteriormente, HENRIQUE apresenta nova petição (e-Doc. 638) repisando os argumentos anteriores e reiterando o pedido de restituição dos veículos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "HENRIQUE argumenta que o decurso do tempo intensificou a depreciação e os custos de conservação dos bens, agravando os prejuízos patrimoniais decorrentes da apreensão.",
+      "pagina": 7,
+      "trecho_fonte": "sob o argumento de que o decurso do tempo intensificou a depreciação e os custos de conservação dos bens, agravando os prejuízos patrimoniais decorrentes da apreensão",
+      "atribuida_a": "Defesa de HENRIQUE MOURA VORCARO",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "THIAGO suscitou a apreciação da restituição da posse dos dois veículos, reiterando o pedido na condição de fiel depositário, além da habilitação e acesso da defesa aos elementos documentados nos autos (e-Doc. 640).",
+      "pagina": 7,
+      "trecho_fonte": "THIAGO do mesmo modo, suscita a apreciação da restituição da posse dos dois veículos de sua propriedade apreendidos, ratificando e reiterando os termos pedido antes formulado, na condição de fiel depositário, além da habilitação e acesso da defesa aos elementos já documentados nos autos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em nova manifestação (e-Doc. 990), THIAGO voltou a reiterar o pedido de restituição dos veículos apreendidos.",
+      "pagina": 7,
+      "trecho_fonte": "Em nova manifestação, THIAGO voltou a reiterar o pedido de restituição dos veículos apreendidos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "THIAGO explorou o fato de os veículos apreendidos estarem gravados com cláusula de alienação fiduciária e de continuar arcando com despesas de manutenção dos bens (e-Doc. 990).",
+      "pagina": 7,
+      "trecho_fonte": "explorou o fato de os veículos apreendidos estarem gravados com cláusula de alienação fiduciária — aspecto este já trazido aos autos, ante a documentação encartada anteriormente pelo próprio requerente —, bem como de continuar arcando com despesas relacionadas à manutenção dos bens (e-Doc. 990)",
+      "atribuida_a": "Defesa de THIAGO ASSUMPÇÃO HENRIQUES",
+      "entidades": [
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em parecer nos autos (e-Doc. 676), o Ministério Público Federal manifestou-se pelo indeferimento dos pedidos de restituição.",
+      "pagina": 7,
+      "trecho_fonte": "Em seu parecer nos autos (e-Doc. 676), o Ministério Público Federal manifestou-se pelo indeferimento dos pedidos de restituição",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal sustenta que ainda não há alteração do quadro que justificou a apreensão dos veículos de alto luxo, sendo prematura qualquer conclusão sobre a origem lícita dos bens ou sobre a participação dos requerentes.",
+      "pagina": 8,
+      "trecho_fonte": "Para o órgão, ainda não há alteração do quadro que justificou a apreensão dos veículos de alto luxo, sendo prematura qualquer conclusão sobre a origem lícita dos bens ou sobre a participação dos requerentes",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O MPF rejeitou a nomeação dos investigados como depositários fiéis, por entender que isso poderia permitir o proveito de bens presumivelmente vinculados à infração penal.",
+      "pagina": 8,
+      "trecho_fonte": "O MPF também rejeitou a nomeação dos investigados como depositários fiéis, por entender que isso poderia permitir o proveito de bens presumivelmente vinculados à infração penal",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": [
+        {"nome": "MPF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Os pedidos não comportam acolhimento neste momento processual.",
+      "pagina": 8,
+      "trecho_fonte": "Os pedidos não comportam acolhimento neste momento processual",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "As medidas de sequestro e bloqueio de bens foram deferidas com fundamento nos arts. 125 e seguintes do Código de Processo Penal e no art. 4º da Lei n. 9.613/1998, para assegurar a eficácia da persecução penal, a reparação do dano e o perdimento de produtos e proveitos do crime.",
+      "pagina": 8,
+      "trecho_fonte": "As medidas de sequestro e bloqueio de bens foram deferidas com fundamento nos arts. 125 e seguintes do Código de Processo Penal e no art. 4º da Lei n. 9.613/1998, com a finalidade específica de assegurar a eficácia da persecução penal, a reparação do dano, o perdimento de produtos",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A liberação de bens apreendidos configura medida de exceção, admitida somente quando demonstrado, de forma inequívoca, que não guardam relação com os fatos investigados, o que não é a hipótese dos autos.",
+      "pagina": 8,
+      "trecho_fonte": "A liberação de bens apreendidos, ainda que para a satisfação de créditos, configura medida de exceção, que somente se admite quando demonstrado, de forma inequívoca, que não guardam qualquer relação com os fatos investigados",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Os bens cuja liberação se pretende integram o conjunto patrimonial objeto de constrição porque, em juízo de cognição sumária, há fortes indícios de que possam constituir produto, proveito ou instrumento de atividades ilícitas, ou bens adquiridos com recursos de origem ainda sob apuração.",
+      "pagina": 9,
+      "trecho_fonte": "há fortes indícios de que possam constituir produto, proveito ou instrumento de atividades ilícitas, ou, ao menos, bens adquiridos ou mantidos com recursos de origem ainda sob apuração",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Apesar da juntada da certificação de registro e licenciamento do veículo, remanescem dúvidas acerca da origem dos recursos e do lastro patrimonial dos requerentes para a aquisição dos bens.",
+      "pagina": 9,
+      "trecho_fonte": "Em que pese a juntada aos autos da certificação de registro e licenciamento do veículo, remanescem dúvidas acerca da origem dos recursos e do lastro patrimonial dos requerentes para a aquisição dos referidos bens",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A juntada do certificado de registro e licenciamento do veículo não é suficiente, por si só, para comprovar a licitude da origem dos recursos empregados em sua aquisição.",
+      "pagina": 9,
+      "trecho_fonte": "A juntada do certificado de registro e licenciamento do veículo não é suficiente, por si só, para comprovar a licitude da origem dos recursos empregados em sua aquisição",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A ausência de comprovação idônea e sólida da origem dos recursos constitui um dos pressupostos que justificam a manutenção da constrição patrimonial, nos termos do art. 126 do Código de Processo Penal.",
+      "pagina": 9,
+      "trecho_fonte": "A ausência de comprovação idônea e sólida da origem dos recursos constitui, precisamente, um dos pressupostos que justificam a manutenção da constrição patrimonial, nos termos do art. 126 do Código de Processo Penal",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O art. 120 do Código de Processo Penal autoriza a restituição de coisas apreendidas apenas quando não mais interessarem ao processo e desde que não exista dúvida quanto ao direito do solicitante; no caso, subsiste interesse processual direto na manutenção da constrição.",
+      "pagina": 9,
+      "trecho_fonte": "o art. 120 do Código de Processo Penal autoriza a restituição de coisas apreendidas apenas quando não mais interessarem ao processo e desde que não exista dúvida quanto ao direito do solicitante. No caso concreto, todavia, subsiste interesse processual direto na manutenção da constrição",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A liberação dos veículos na atual fase das investigações poderia comprometer a integralidade da garantia patrimonial destinada à recomposição dos prejuízos eventualmente causados às vítimas e ao erário, além de dificultar a futura execução de eventual decreto condenatório.",
+      "pagina": 10,
+      "trecho_fonte": "a liberação, na atual fase das investigações, dos veículos poderia comprometer a integralidade da garantia patrimonial destinada à recomposição dos prejuízos eventualmente causados às vítimas e ao erário, além de dificultar a futura execução de eventual decreto condenatório",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O ressarcimento ao erário ou a perda de bens não podem ser categorizados juridicamente como penas ou sanções, tratando-se de medidas destinadas à recomposição do patrimônio público desfalcado.",
+      "pagina": 10,
+      "trecho_fonte": "o ressarcimento ao erário ou a perda de bens sequer podem ser categorizados juridicamente como penas ou sanções. Cuidam-se de medidas destinadas à recomposição do patrimônio público desfalcado e que precede ao interesse de qualquer credor",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Havendo condenação, o possuidor desses bens não pode deles dispor, pois sequer devem ser considerados ativos integrantes do seu patrimônio.",
+      "pagina": 10,
+      "trecho_fonte": "havendo condenação, o possuidor desses bens não pode deles dispor, pois sequer devem ser considerados ativos integrantes do seu patrimônio",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parquet posicionou-se pela impossibilidade da restituição dos bens, posto que não houve o deslinde das investigações e inexiste prova inequívoca acerca da origem da titularidade dos bens.",
+      "pagina": 10,
+      "trecho_fonte": "o parquet se posicionou pela impossibilidade da restituição dos bens, posto que não houve o deslinde das investigações, bem como inexiste prova inequívoca acerca da origem da titularidade dos bens",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo o parecer do MPF, a investigação apura aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização.",
+      "pagina": 10,
+      "trecho_fonte": "A investigação em espécie apura aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização, notadamente",
+      "atribuida_a": "Ministério Público Federal (parecer, e-Doc. 676)",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo o parecer do MPF, a restituição de bem apreendido antes do trânsito em julgado somente tem cabimento quando preenchidos cumulativamente os requisitos de a constrição não mais interessar ao deslinde do processo e de ausência de dúvida sobre a titularidade/propriedade.",
+      "pagina": 11,
+      "trecho_fonte": "a restituição de bem apreendido em investigação criminal, antes do trânsito em julgado da sentença final, somente tem cabimento quando preenchidos cumulativamente os requisitos de a constrição não mais interessar ao deslinde do processo, ausência de dúvida sobre a titularidade/propriedade",
+      "atribuida_a": "Ministério Público Federal (parecer, e-Doc. 676)",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo o parecer do MPF, o então relator da Petição n. 15.198/DF, Ministro Dias Toffoli, deferiu medidas encampadas pela Procuradoria-Geral da República, referentes à manifestação da Procuradoria da República em São Paulo, favorável aos pedidos da autoridade policial de busca e apreensão de objetos de luxo e sequestro e bloqueio de bens e valores.",
+      "pagina": 11,
+      "trecho_fonte": "o então relator da Petição n. 15.198/DF, eminente Ministro Dias Toffoli, deferiu medidas encampadas pela Procuradoria-Geral da República referente à manifestação da Procuradoria da República em São Paulo, que se manifestara favoravelmente aos pedidos formulados pela autoridade policial",
+      "atribuida_a": "Ministério Público Federal (parecer, e-Doc. 676)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Procuradoria da República em São Paulo", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo o parecer do MPF, os veículos apreendidos vinculados aos requerentes, modelos de alto luxo das marcas Aston Martin, Bentley e Porsche, encaixam-se na definição de objetos de luxo, não havendo que se falar em ausência de determinação para a apreensão.",
+      "pagina": 11,
+      "trecho_fonte": "Os veículos apreendidos vinculados aos requerentes, consistentes em modelos de alto luxo, como da marca Aston Martin, Bentley e Porsche, encaixam-se na definição proposta, não havendo que se falar em ausência de determinação para tanto",
+      "atribuida_a": "Ministério Público Federal (parecer, e-Doc. 676)",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo o parecer do MPF, as teses de origem lícita dos bens e de participação periférica dos investigados referem-se ao mérito da investigação, ainda em curso, sendo prematura qualquer conclusão sobre o tema.",
+      "pagina": 11,
+      "trecho_fonte": "as teses de origem lícita dos bens e de participação periférica dos investigados nos fatos sob apuração fazem referência ao mérito da investigação, ainda sob investigação. Seria prematura, assim, qualquer conclusão sobre o tema",
+      "atribuida_a": "Ministério Público Federal (parecer, e-Doc. 676)",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo o parecer do MPF, a nomeação dos requerentes como depositários fiéis configuraria proveito de fato de presumível produto de infração penal.",
+      "pagina": 12,
+      "trecho_fonte": "a nomeação dos requerentes como depositários fiéis configuraria proveito de fato de presumível produto de infração penal",
+      "atribuida_a": "Ministério Público Federal (parecer, e-Doc. 676)",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A pretensão de devolução dos bens apreendidos ou de nomeação do próprio investigado como depositário judicial deve ser rechaçada por múltiplas razões de ordem jurídica e pragmática.",
+      "pagina": 12,
+      "trecho_fonte": "a pretensão de devolução dos bens apreendidos ou de nomeação do próprio investigado como depositário judicial, deve ser rechaçada por múltiplas razões de ordem jurídica e pragmática",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Os pressupostos da devolução, ausência de controvérsia sobre a propriedade e irrelevância dos bens para a instrução criminal, dificilmente se verificam no transcorrer das investigações quando presentes indícios de crimes de lavagem de capitais.",
+      "pagina": 12,
+      "trecho_fonte": "Quanto à devolução, cujo pressuposto é a ausência de controvérsia sobre a propriedade e a irrelevância dos bens para a instrução criminal, requisitos que, presentes indícios de crimes de lavagem de capitais, dificilmente se verificam no transcorrer das investigações",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A prematura restituição de bens e valores cuja origem pende de investigações gera grave risco de depreciação econômica e operacional dos bens, comprometendo a futura satisfação da obrigação de reparação do dano.",
+      "pagina": 12,
+      "trecho_fonte": "a prematura restituição de bens e valores, cuja origem pende de investigações em curso, gera grave risco de depreciação econômica e operacional dos bens, comprometendo de modo irreversível a futura satisfação da obrigação de reparação do dano",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Revela-se legítima, em juízo de cognição sumária, a manutenção das constrições patrimoniais impostas, como forma de resguardar a eficácia da persecução penal e eventual recomposição de danos.",
+      "pagina": 12,
+      "trecho_fonte": "revela-se legítima, em juízo de cognição sumária, a manutenção das constrições patrimoniais impostas, como forma de resguardar a eficácia da persecução penal e eventual recomposição de danos",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Ausente demonstração segura de que os bens estejam dissociados do objeto da investigação, impõe-se a manutenção integral da constrição patrimonial.",
+      "pagina": 12,
+      "trecho_fonte": "ausente demonstração segura de que os bens e valores pretendidos estejam dissociados do objeto da investigação e não se prestem à finalidade preventiva que motivou o bloqueio, impõe-se a manutenção integral da",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator acolheu o parecer da Procuradoria-Geral da República e indeferiu o pedido de liberação total de bens constritos em desfavor de HENRIQUE MOURA VORCARO e de THIAGO ASSUMPÇÃO HENRIQUES, mantendo íntegras as medidas assecuratórias anteriormente decretadas.",
+      "pagina": 13,
+      "trecho_fonte": "acolho o parecer da Procuradoria-Geral da República para o fim de INDEFERIR o pedido de liberação total de bens constritos em desfavor de HENRIQUE MOURA VORCARO e de THIAGO ASSUMPÇÃO HENRIQUES, mantendo-se, por ora, hígidas e integrais as medidas assecuratórias anteriormente decretadas",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Foi reiterada a concessão de acesso aos autos aos patronos de HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES.",
+      "pagina": 13,
+      "trecho_fonte": "Reitera-se a concessão de acesso aos autos aos patronos de HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Determinou-se a intimação da defesa dos investigados HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES para ciência da decisão, e a ciência à Procuradoria-Geral da República.",
+      "pagina": 13,
+      "trecho_fonte": "Intime-se a defesa dos proprietários dos veículos acima, os investigados HENRIQUE MOURA VORCARO e THIAGO ASSUMPÇÃO HENRIQUES, para ciência desta decisão. 33. Dê-se ciência a Procuradoria-Geral da República",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"},
+        {"nome": "THIAGO ASSUMPÇÃO HENRIQUES", "tipo": "pessoa"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão é datada de Brasília, 20 de julho de 2026, e assinada pelo Ministro André Mendonça, Relator.",
+      "pagina": 13,
+      "trecho_fonte": "Brasília, 20 de julho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Páginas 1 a 3 e o início da página 4 contêm apenas cabeçalho de partes sob sigilo."
+}

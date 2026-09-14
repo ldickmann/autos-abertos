@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "desentranhamento da Petição nº 79635/2026 (pedido de revogação da prisão preventiva de Henrique Moura Vorcaro) e documentos que a acompanham (e-Docs. 965 a 972) para juntada na PET 15.978",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou o desentranhamento do pedido e documentos (e-Docs. 965 a 972) para juntada na PET 15.978, com cópia da decisão, a fim de que o pedido seja apreciado naquele feito",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 4,
+      "trecho_fonte": "desentranhe-se o pedido com os documentos que o acompanham (e-Docs. 965 a 972), para sua juntada na PET 15.978, com cópia da presente decisão.",
+      "condicoes": []
+    },
+    {
+      "pedido": "abertura de vista à Procuradoria-Geral da República, na PET 15.978, para manifestação sobre o pedido de revogação da prisão preventiva",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumprida a juntada, seja aberta vista à Procuradoria-Geral da República naquele feito para manifestação sobre o pedido",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 4,
+      "trecho_fonte": "Cumprido o item anterior, naquele feito, abra-se vista à Procuradoria-Geral da República para manifestação sobre o pedido.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O pedido de revogação da prisão preventiva formulado por Henrique Moura Vorcaro não é decidido neste despacho; foi remetido para apreciação na PET 15.978."
+}

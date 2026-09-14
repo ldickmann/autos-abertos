@@ -1,0 +1,58 @@
+{
+  "itens": [
+    {
+      "pedido": "autorização para a apresentação do investigado Paulo Sérgio Neves de Souza a fim de prestar depoimento perante a Comissão Parlamentar de Inquérito do Crime Organizado no dia 18 de março de 2026 ou em outra data a ser designada",
+      "quem_pediu": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "resultado": "outro",
+      "decisao": "afastou a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer ou não à CPI; na hipótese de comparecimento, assegurou ao depoente os direitos ao silêncio, à assistência por advogado, de não ser submetido ao compromisso de dizer a verdade e de não sofrer constrangimentos",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-17",
+      "pagina": 5,
+      "trecho_fonte": "afasto a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "condicoes": [
+        "direito ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas",
+        "direito à assistência por advogado durante o ato",
+        "direito de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo",
+        "direito de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores",
+        "custódia do depoente, dentro das dependências do Congresso Nacional, a cargo da Polícia Legislativa do Senado Federal",
+        "qualquer transferência condicionada à prévia manifestação expressa, formal e inequívoca quanto à sua opção positiva pelo comparecimento"
+      ]
+    },
+    {
+      "pedido": "fixação, pela Polícia Federal, das condições logísticas do transporte do investigado à sede do Senado Federal e do retorno ao local de custódia",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, com segurança e vigilância contínua policial por meio de escolta apropriada",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-17",
+      "pagina": 6,
+      "trecho_fonte": "determino que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, com segurança e vigilância contínua policial por meio de escolta apropriada.",
+      "condicoes": [
+        "cumprido o ato, o investigado deverá retornar imediatamente ao seu local de origem, observando-se as mesmas regras de segurança e de deslocamento adotadas para o seu transporte rumo ao Senado"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão, com cópia integral, à Presidência da CPI-CRIME, às defesas constituídas e à Polícia Federal, e intimação",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com a máxima urgência e remessa de cópia integral da decisão, à Presidência da CPI-CRIME, às defesas constituídas e à Polícia Federal, e a intimação em regime de urgência",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-17",
+      "pagina": 6,
+      "trecho_fonte": "comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI-CRIME, as defesas constituídas, e a Polícia Federal para que sejam adotadas as providências necessárias ao eventual deslocamento do investigado ao Senado Federal",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência à Procuradoria-Geral da República após cumpridas as determinações",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-17",
+      "pagina": 6,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria-Geral da República.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O documento não usa os termos defiro/indefiro para o pedido da CPI; o resultado foi registrado como outro com as palavras do dispositivo."
+}

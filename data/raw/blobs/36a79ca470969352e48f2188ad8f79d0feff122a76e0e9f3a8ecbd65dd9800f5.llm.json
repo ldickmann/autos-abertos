@@ -1,0 +1,2720 @@
+{
+ "assercoes": [
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O voto é proferido no Referendo na Petição 15.556 (Distrito Federal), tendo como relator o Ministro André Mendonça.",
+   "pagina": 1,
+   "trecho_fonte": "REFERENDO NA PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "ANDRÉ MENDONÇA",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator declara que abordará sinteticamente as razões apontadas pela defesa de Daniel Bueno Vorcaro para pleitear a reconsideração da decisão submetida a referendo.",
+   "pagina": 1,
+   "trecho_fonte": "entendo pertinente abordar sinteticamente as razões apontadas pela defesa do investigado Daniel Bueno Vorcaro para pleitear a eventual reconsideração da decisão",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "André Mendonça",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O investigado Daniel Bueno Vorcaro interpôs Agravo Regimental contra a decisão que decretou sua prisão.",
+   "pagina": 2,
+   "trecho_fonte": "No Agravo Regimental interposto, referido investigado aponta que a decisão de decretação de sua prisão teria sido embasada em quatro elementos fáticos trazidos da investigação pela Polícia Federal.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa aponta que a decisão de decretação da prisão teria sido embasada em quatro elementos fáticos trazidos da investigação pela Polícia Federal.",
+   "pagina": 2,
+   "trecho_fonte": "referido investigado aponta que a decisão de decretação de sua prisão teria sido embasada em quatro elementos fáticos trazidos da investigação pela Polícia Federal",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa sumaria como primeiro elemento o teor das mensagens supostamente trocadas entre o peticionário e Paulo Sérgio Neves de Souza, Belline Santana, Fabiano Campos Zettel e Luiz Phillipi Machado de Moraes Mourão.",
+   "pagina": 2,
+   "trecho_fonte": "A. O teor das mensagens supostamente trocadas entre o Peticionário e as pessoas de PAULO SÉRGIO NEVES DE SOUZA, BELLINE SANTANA (ambos servidores do Banco Central), FABIANO CAMPOS ZETTEL (cunhado do Peticionário) e LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa sumaria como segundo elemento a suposta existência de um grupo denominado “A Turma” e a suposta invasão de sistemas restritos de órgãos públicos e remoção de conteúdos em plataformas digitais.",
+   "pagina": 2,
+   "trecho_fonte": "B. A suposta existência de um grupo denominado “A Turma”, bem como a suposta invasão de sistemas “restritos de órgãos públicos” e “remoção de conteúdos e perfis em plataformas digitais”",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": [
+    {
+     "nome": "A Turma",
+     "tipo": "desconhecido"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa sumaria como terceiro elemento os supostos fluxos financeiros e pagamentos com participação de Leonardo Augusto Furtado Palhares e Ana Cláudia Queiroz de Paiva.",
+   "pagina": 2,
+   "trecho_fonte": "C. Os supostos “fluxos financeiros” e “pagamentos” destinados às pessoas acima indicadas com participação de LEONARDO AUGUSTO FURTADO PALHARES e ANA CLÁUDIA QUEIROZ DE PAIVA;",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": [
+    {
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "ANA CLÁUDIA QUEIROZ DE PAIVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa sumaria como quarto elemento um suposto bloqueio de R$ 2.245.235.850,24 na segunda fase da Operação Compliance Zero, em conta de Henrique Vorcaro vinculada à REAG, que teria ocorrido em 14 de janeiro de 2026.",
+   "pagina": 2,
+   "trecho_fonte": "D. Um suposto bloqueio de R$ 2.245.235.850,24 na segunda fase da Operação Compliance Zero em uma conta do Sr. Henrique Vorcaro, pai do Peticionário, que teria ocorrido em 14 de janeiro de 2026, em conta vinculada à instituição financeira denominada REAG",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": [
+    {
+     "nome": "Henrique Vorcaro",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "REAG",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "O agravante busca afastar a existência concreta de fatos novos ou contemporâneos que justifiquem a medida, conforme exigido pelo art. 312, § 2º, do CPP.",
+   "pagina": 2,
+   "trecho_fonte": "Referida tentativa tem como objetivo central afastar a “existência concreta de fatos novos ou contemporâneos que justifiquem a aplicação da medida adotada”",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa afirma que não há referência a registro telefônico do peticionário posterior a novembro de 2025 com as pessoas citadas na decisão.",
+   "pagina": 3,
+   "trecho_fonte": "afirma que “não há referência a nenhum registro telefônico do Peticionário posterior a novembro de 2025 com qualquer das pessoas citadas na decisão ora combatida",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa afirma que o agravante desconhece por completo a existência de grupo de WhatsApp ou de outra plataforma com a denominação “A Turma”.",
+   "pagina": 3,
+   "trecho_fonte": "afirma que “desconhece por completo a existência de algum grupo de WhatsApp ou de qualquer outra plataforma/aplicativo eletrônico de mensagens com a denominação ‘A Turma’",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": [
+    {
+     "nome": "A Turma",
+     "tipo": "desconhecido"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa assevera que a existência de grupo armado seria mera ilação, pois não se verificou referência a armas de fogo.",
+   "pagina": 3,
+   "trecho_fonte": "o agravante assevera que se trataria de “mera ilação, destituída de credibilidade”. Isso porque “não se verificou a mínima referência a armas de fogo",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa afirma que todos os pagamentos e transferências bancárias seriam anteriores à deflagração da primeira fase da Operação Compliance Zero.",
+   "pagina": 3,
+   "trecho_fonte": "afirma que todos os pagamentos/transferências bancárias seriam anteriores à deflagração da primeira fase da Operação Compliance Zero.",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A defesa afirma que não há conta bancária em nome de Henrique Vorcaro com o numerário indicado.",
+   "pagina": 3,
+   "trecho_fonte": "quanto ao quarto elemento elencado, afirma que “não há nenhuma conta bancária em nome de seu pai, Sr. Henrique Vorcaro, com o",
+   "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+   "entidades": [
+    {
+     "nome": "Henrique Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A primeira fase da operação foi deflagrada em 18 de novembro de 2025, ocasião em que foi apreendido o primeiro celular de Daniel Bueno Vorcaro.",
+   "pagina": 4,
+   "trecho_fonte": "primeiro celular do investigado Daniel Bueno Vorcaro, apreendido durante a realização da primeira fase da operação, deflagrada precisamente em 18 de novembro de 2025.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator registra que as comunicações foram obtidas pela análise da autoridade policial no primeiro celular de Daniel Bueno Vorcaro, conforme as IPJs nº 144738439.2026, 1020625/2026 e 1070759/2026.",
+   "pagina": 4,
+   "trecho_fonte": "É o que se verifica a partir da análise das Informações de Polícia Judiciária (IPJs) nº 144738439.2026, 1020625/2026 e 1070759/2026.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as comunicações só foram analisadas nas IPJs assinadas entre 18 e 26 de fevereiro e devem ser consideradas fatos novos para os fins do art. 312, § 2º, do CPP.",
+   "pagina": 4,
+   "trecho_fonte": "tais comunicações somente foram objeto de análise por meio das IPJs acima indicadas, assinadas entre 18 e 26 de fevereiro do corrente ano. Nesse contexto, a toda evidência, devem ser consideradas como fatos novos para os fins do art. 312, § 2º, do CPP",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "Na segunda fase da Operação Compliance Zero, autorizada pelo Ministro Dias Toffoli, foram apreendidos mais 5 aparelhos celulares de Daniel Vorcaro.",
+   "pagina": 4,
+   "trecho_fonte": "na segunda fase da Operação Compliance Zero, autorizada pelo Ministro Dias Toffoli, foram apreendidos mais 5 aparelhos celulares do investigado Daniel Vorcaro.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Dias Toffoli",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Daniel Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "Na terceira fase, deflagrada a partir da decisão submetida a referendo, foram apreendidos mais 3 celulares do investigado, restando 8 celulares por examinar.",
+   "pagina": 5,
+   "trecho_fonte": "na terceira fase, deflagrada a partir da decisão ora submetida a referendo, foram apreendidos mais 3 celulares apenas desse único investigado. Portanto, além da conclusão das análises relativas ao primeiro celular apreendido, ainda há 8 celulares por examinar.",
+   "atribuida_a": null,
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que não há como aguardar o encerramento de todas as diligências pendentes para adoção das medidas cautelares.",
+   "pagina": 5,
+   "trecho_fonte": "não há como aguardar o encerramento de todas as diligências pendentes para adoção das medidas de natureza cautelar previstas pela legislação de regência",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que “A Turma” é organização composta por indivíduos coordenados por Phillipe Mourão e Marilson Roseno, sob a liderança de Daniel Bueno Vorcaro.",
+   "pagina": 5,
+   "trecho_fonte": "Trata-se, sim, de organização composta por conjunto de indivíduos coordenados pelos investigados Phillipe Mourão (agora falecido) e Marilson Roseno, sob a liderança e comando inequívoco de Daniel Bueno Vorcaro",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Phillipe Mourão",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Marilson Roseno",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a autoridade policial identificou atos de ameaças concretas, exemplificados pelo episódio envolvendo ex-funcionário que era capitão de embarcação de Daniel Bueno Vorcaro.",
+   "pagina": 5,
+   "trecho_fonte": "a autoridade policial identificou e comprovou a prática de atos de ameaças concretas, como se exemplifica a partir do episódio envolvendo ex-funcionário, que era capitão de embarcação pertencente a Daniel Bueno Vorcaro.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Daniel Bueno Vorcaro",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A autoridade policial afirma haver evidências de que a “Turma” procurou o ex-funcionário Luis Felipe Woyceichoski para coagi-lo, ameaçando de morte ele e sua família.",
+   "pagina": 5,
+   "trecho_fonte": "a autoridade policial identificou diálogos com “evidências que confirmam que a ‘Turma’ procurou o ex-funcionário LUIS FELIPE WOYCEICHOSKI para lhe coagir, ameaçando de morte não apenas ele, mas",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "LUIS FELIPE WOYCEICHOSKI",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator ressalta mensagens entre Daniel Vorcaro e Phillipi Mourão que registram a inclusão de policial federal no grupo dos “milicianos”.",
+   "pagina": 6,
+   "trecho_fonte": "ressalta-se a identificação de mensagens trocadas entre Daniel Vorcaro e Phillipi Mourão, que registram a inclusão até mesmo de policial federal no grupo dos “milicianos”, por provocação de Daniel",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Daniel Vorcaro",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Phillipi Mourão",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "No cumprimento da ordem de prisão de Phillipi Mourão, foi localizada em sua residência pistola calibre .380 sem registro, com lavratura de auto de prisão em flagrante pelo art. 12 da Lei nº 10.826/2003.",
+   "pagina": 6,
+   "trecho_fonte": "localizou-se em sua residência uma “pistola calibre .380, municiada, acompanhada de carregadores e munições, sem registro nos sistemas oficiais”, em situação que ensejou a lavratura de auto de prisão em flagrante em seu desfavor, pela suposta prática do delito previsto no art. 12 da Lei nº",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Phillipi Mourão",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "No cumprimento das ordens de prisão e busca contra Marilson Roseno, identificou-se que ele possuía pistola Taurus .40, pistola Glock 9mm, carabina Rossi 22 e espingarda Cbc 12, além de carregadores e munições.",
+   "pagina": 6,
+   "trecho_fonte": "identificou-se que o referido investigado possuía uma pistola Taurus calibre .40; uma pistola Glock calibre 9mm; uma carabina Rossi calibre 22 e uma espingarda Cbc calibre 12, além de carregadores e munições de diversos calibres.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Marilson Roseno",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a caracterização da “Turma” como organização criminosa armada foi demonstrada pelas apurações policiais.",
+   "pagina": 6,
+   "trecho_fonte": "a caracterização da “Turma” como verdadeira organização criminosa armada foi fartamente demonstrada pelas apurações policiais.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "Segundo as apurações policiais, a “Turma” pode ser composta por até seis membros ainda não identificados.",
+   "pagina": 6,
+   "trecho_fonte": "de acordo com as apurações policiais a “Turma” pode ser composta por até seis membros, ainda não",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma não identificar indício de que as atividades da organização teriam cessado até a decisão submetida a referendo.",
+   "pagina": 7,
+   "trecho_fonte": "Nesse cenário, não se identifica qualquer indício de que as atividades ilícitas praticadas pela organização criminosa teriam cessado até o momento em que prolatada a decisão ora submetida a referendo.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "Na deflagração da terceira fase, abordagem da Polícia Rodoviária Federal no km 871 da BR-381, em veículo de Phillipi Mourão conduzido por terceiro, identificou dois potenciais integrantes do núcleo “os meninos”.",
+   "pagina": 7,
+   "trecho_fonte": "através de abordagem realizada pela Polícia Rodoviária Federal, no quilômetro 871 da BR-381, em veículo de propriedade de Phillipi Mourão (o “Sicário”), que estava sendo conduzido por terceiro, identificaram-se dois potenciais integrantes do núcleo da organização criminosa conhecido como “os",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Polícia Rodoviária Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Phillipi Mourão",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator registra que no veículo foram encontrados quatro computadores, caixas e malas, e que um dos indivíduos estaria em processo de mudança.",
+   "pagina": 7,
+   "trecho_fonte": "No interior do veículo, foram encontrados quatro computadores além de caixas e malas. A partir de depoimentos colhidos posteriormente, verificou-se que pelo menos um dos indivíduos estaria em processo de mudança, tendo restituído o imóvel em que habitava à locadora.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o “Projeto DV”, posto em prática após a primeira fase e objeto do INQ nº 5.035, foi abordado pela autoridade policial para demonstrar a contemporaneidade.",
+   "pagina": 7,
+   "trecho_fonte": "“Projeto DV”, posto em prática após a deflagração da primeira fase da operação, e que, nada obstante seja objeto de investigação específica (INQ nº 5.035), foi devidamente abordado pela autoridade policial para demonstrar a contemporaneidade do contexto delitivo identificado.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o projeto visava arregimentar influenciadores para publicações favoráveis a Daniel Vorcaro e para questionar a atuação do Banco Central na liquidação da instituição financeira.",
+   "pagina": 8,
+   "trecho_fonte": "para que veiculassem publicações de conteúdos favoráveis a Daniel Vorcaro, bem como para questionar a atuação do Banco Central no contexto da liquidação da instituição financeira, prevendo-se, inclusive, cláusulas de confidencialidade e coordenação estratégica das postagens nas redes sociais.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Daniel Vorcaro",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o coordenador operacional do grupo foi apelidado pelo próprio agravante de “Sicário”.",
+   "pagina": 8,
+   "trecho_fonte": "cujo coordenador operacional foi apelidado pelo próprio agravante com a significativa alcunha de “Sicário”.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator recorda que o crime de organização criminosa possui natureza permanente, prolongando-se a consumação enquanto durar a associação estável.",
+   "pagina": 8,
+   "trecho_fonte": "recorda-se que o crime de organização criminosa possui natureza permanente, a significar que a sua consumação se prolonga enquanto durar a associação estável de quatro ou mais pessoas estruturalmente ordenadas",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta risco de dilapidação patrimonial a partir da noticiada tentativa de alienação de aeronave avaliada em R$ 538 milhões posta à venda por US$ 80 milhões.",
+   "pagina": 8,
+   "trecho_fonte": "a partir da noticiada tentativa de alienação repentina de aeronave avaliada em aproximadamente R$ 538 milhões de reais e que estaria sendo posta à venda por US$ 80 milhões, o equivalente a R$ 415 milhões (considerado o câmbio da época).",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A ordem constritiva sobre o montante de R$ 2.245.235.850,24 foi cumprida em 14 de janeiro, comprovada por extrato do SISBAJUD juntado na Petição nº 21692/2026, fl. 3.",
+   "pagina": 9,
+   "trecho_fonte": "o montante bilionário foi objeto de ordem constritiva cumprida em 14 de janeiro do corrente ano, devidamente comprovada a partir do extrato do sistema SISBAJUD encartado aos autos (Petição nº 21692/2026, fl. 3) como anexo da representação da autoridade policial.",
+   "atribuida_a": null,
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os valores estavam em conta do genitor do investigado junto à CBSF DTVM, conhecida como REAG.",
+   "pagina": 9,
+   "trecho_fonte": "Os valores estavam aportados em conta do genitor do investigado junto à empresa CBSF DTVM, mais conhecida como REAG.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "CBSF DTVM",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "REAG",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator conclui pelo integral referendo da decisão, com exceção do comando destinado a Luiz Phillipi Machado de Moraes Mourão, em razão de seu óbito.",
+   "pagina": 9,
+   "trecho_fonte": "concluindo pelo seu integral referendo, nos exatos termos em que prolatada. Há que se fazer exceção apenas ao comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, que veio a falecer, ante a superveniente perda de eficácia ocasionada pelo óbito.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Luiz Phillipi Machado de Moraes Mourão",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O investigado Luiz Phillipi Machado de Moraes Mourão veio a falecer.",
+   "pagina": 9,
+   "trecho_fonte": "investigado Luiz Phillipi Machado de Moraes Mourão, que veio a falecer, ante a superveniente perda de eficácia ocasionada pelo óbito.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Luiz Phillipi Machado de Moraes Mourão",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "A decisão reproduzida afirma que os elementos colhidos indicam crimes contra o sistema financeiro nacional previstos nos arts. 4º, 6º e 7º da Lei 7.492/1986.",
+   "pagina": 10,
+   "trecho_fonte": "a) Crimes contra o sistema financeiro nacional: art. 4º da Lei 7.492/1986 (gestão fraudulenta de instituição financeira), art. 6º da Lei 7.492/1986 (indução de investidor em erro mediante fraude), art. 7º da Lei 7.492/1986 (emissão ou negociação irregular de valores mobiliários);",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "A decisão reproduzida aponta indícios de crimes contra a administração pública previstos nos arts. 317, 333 e 325 do Código Penal.",
+   "pagina": 10,
+   "trecho_fonte": "b) Crimes contra a administração pública: art. 317 do Código Penal (corrupção passiva), art. 333 do Código Penal (corrupção ativa), art. 325 do Código Penal (violação de sigilo funcional);",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "A decisão reproduzida aponta indícios de organização criminosa (art. 2º da Lei 12.850/2013) e lavagem de dinheiro (art. 1º da Lei 9.613/1998).",
+   "pagina": 10,
+   "trecho_fonte": "c) Crimes de organização criminosa e lavagem de dinheiro: art. 2º da Lei 12.850/2013 (organização criminosa), art. 1º da Lei 9.613/1998 (lavagem de dinheiro);",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "A decisão reproduzida aponta indícios de crimes contra a administração da justiça previstos nos arts. 344, 347 e 339 do Código Penal.",
+   "pagina": 10,
+   "trecho_fonte": "d) Crimes contra a administração da justiça: art. 344 do Código Penal (coação no curso do processo), art. 347 do Código Penal (fraude processual), art. 339 do Código Penal (denunciação caluniosa).",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as provas analisadas pela autoridade policial indicam que os investigados atuavam de forma estruturada e com divisão de tarefas.",
+   "pagina": 10,
+   "trecho_fonte": "As provas documentais, registros de mensagens e fluxos financeiros analisados pela autoridade policial até o momento indicam que os investigados atuavam de forma estruturada e com divisão de tarefas",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A autoridade policial descreve o papel individual de cada investigado em relação aos quais há pedido de prisão preventiva e de medidas diversas da prisão.",
+   "pagina": 11,
+   "trecho_fonte": "A autoridade policial descreve, com detalhes, o papel individual de cada um dos investigados em relação aos quais há pedido de decretação de prisão preventiva e de medidas judiciais diversas da prisão",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Daniel Bueno Vorcaro, como principal gestor e controlador do Banco Master, manteve atuação direta na condução de estratégias financeiras e institucionais.",
+   "pagina": 11,
+   "trecho_fonte": "Na condição de principal gestor e controlador do Banco Master, DANIEL BUENO VORCARO manteve atuação direta na condução de estratégias financeiras e institucionais relacionadas à instituição",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os elementos indicam participação do investigado em modelo de captação por títulos bancários com remuneração superior à média de mercado.",
+   "pagina": 11,
+   "trecho_fonte": "Os elementos reunidos nas investigações indicam que o investigado participou da estruturação de modelo de captação de recursos mediante emissão de títulos bancários com remuneração significativamente superior à média de mercado",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as investigações apontam interlocução direta e frequente de Daniel Bueno Vorcaro com servidores do Banco Central responsáveis pela supervisão bancária.",
+   "pagina": 11,
+   "trecho_fonte": "As investigações também apontam que DANIEL BUENO VORCARO manteve interlocução direta e frequente com servidores do Banco Central do Brasil responsáveis pela supervisão bancária",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central do Brasil",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta mensagem (fl. 11 do e-Doc. 1) em que Daniel Vorcaro recebe de Paulo Sérgio imagem da portaria de nomeação para Chefe-Adjunto de Supervisão Bancária no BACEN e responde “Parabéns”.",
+   "pagina": 12,
+   "trecho_fonte": "DANIEL VORCARO recebe de PAULO SÉRGIO imagem contendo a Portaria de sua nomeação para o cargo de Chefe-Adjunto de Supervisão Bancária no BACEN. Em seguida, VORCARO congratula o servidor recém nomeado para a nova função com a seguinte mensagem: “Parabéns”.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "PAULO SÉRGIO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "BACEN",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta mensagem (fl. 13) em que Paulo Sérgio dá sugestões a Daniel Vorcaro sobre como se comportar em reunião com o Presidente do BACEN.",
+   "pagina": 12,
+   "trecho_fonte": "Na mensagem de fl. 13, PAULO SÉRGIO chega a dar sugestões a DANIEL VORCARO sobre como deve se comportar em reunião com o Presidente do BACEN.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta mensagem (fl. 21 do e-Doc. 1) em que Daniel Vorcaro pede a Paulo Sérgio que analise minuta de ofício do Banco Master ao Departamento do BACEN.",
+   "pagina": 12,
+   "trecho_fonte": "há reprodução de mensagem enviada por DANIEL VORCARO à PAULO SÉRGIO, pedindo ao servidor que analise uma minuta de ofício que seria enviada pelo Banco Master ao próprio Departamento do BACEN",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "PAULO SÉRGIO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Belline foi instado por Vorcaro a emitir opinião sobre ofício que o Banco Master enviaria ao Departamento que ele chefiava no BACEN (fl. 31 do e-Doc. 1).",
+   "pagina": 13,
+   "trecho_fonte": "BELLINE, por exemplo, também foi instado por VORCARO a emitir opinião sobre um ofício que o Banco Master enviaria ao Departamento que ele próprio chefiava no BACEN (fl. 31 do e-Doc. 1).",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "BELLINE",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma constar que Daniel Bueno Vorcaro coordenou mecanismos de formalização de contratos simulados de prestação de serviços para justificar transferências a servidores do Banco Central.",
+   "pagina": 13,
+   "trecho_fonte": "Consta ainda que DANIEL BUENO VORCARO coordenou a articulação de mecanismos destinados à formalização de contratos simulados de prestação de serviços, por intermédio de empresa de consultoria, utilizados para justificar transferências financeiras efetuadas em favor dos servidores públicos",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as investigações indicam relação contratual do investigado com Luiz Phillipi Machado de Moraes Mourão, responsável por obtenção de informações e monitoramento de pessoas.",
+   "pagina": 13,
+   "trecho_fonte": "as investigações indicam que o investigado manteve relação contratual com LUIZ PHILLIPI MACHADO DE MORAES MOURÃO, responsável pela coordenação de atividades voltadas à obtenção de informações, monitoramento de pessoas e levantamento de dados considerados relevantes para os interesses do grupo.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que registros indicam que Daniel Bueno Vorcaro teve acesso prévio a informações sobre diligências investigativas.",
+   "pagina": 14,
+   "trecho_fonte": "foram identificados registros indicando que DANIEL BUENO VORCARO teve acesso prévio a informações relacionadas à realização de diligências investigativas, tendo realizado anotações e comunicações relativas a autoridades e procedimentos associados às investigações em andamento.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Fabiano Zettel manteve atuação direta em apoio às atividades de Daniel Bueno Vorcaro, na estrutura de viabilização financeira do grupo.",
+   "pagina": 14,
+   "trecho_fonte": "FABIANO ZETTEL manteve atuação direta e reiterada em apoio às atividades desenvolvidas por DANIEL BUENO VORCARO, participando da estrutura operacional responsável pela execução e viabilização financeira de diversas iniciativas relacionadas aos interesses do grupo investigado.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FABIANO ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os elementos indicam que Fabiano Campos Zettel atuava na intermediação e operacionalização de pagamentos relacionados às atividades da organização.",
+   "pagina": 14,
+   "trecho_fonte": "Os elementos informativos reunidos indicam que FABIANO CAMPOS ZETTEL atuava na intermediação e operacionalização de pagamentos relacionados às atividades desenvolvidas por integrantes da organização",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Fabiano Campos Zettel participou da elaboração de proposta de contratação simulada por meio da VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA.",
+   "pagina": 15,
+   "trecho_fonte": "foi identificado que FABIANO CAMPOS ZETTEL participou da elaboração e encaminhamento de proposta de contratação simulada, estruturada para formalizar vínculo contratual fictício por meio da empresa VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que elementos indicam que Fabiano Campos Zettel operacionalizava pagamentos destinados ao grupo “A Turma”.",
+   "pagina": 15,
+   "trecho_fonte": "foram identificados elementos indicando que FABIANO CAMPOS ZETTEL atuava na operacionalização de pagamentos destinados ao grupo informal conhecido como “A Turma”, estrutura utilizada para realizar atividades de monitoramento e coleta de informações de interesse do grupo investigado",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "A Turma",
+     "tipo": "desconhecido"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Fabiano Campos Zettel participava da organização e acompanhamento de fluxos financeiros do grupo.",
+   "pagina": 16,
+   "trecho_fonte": "O conjunto de elementos reunidos também demonstra que FABIANO CAMPOS ZETTEL participava da organização e acompanhamento de fluxos financeiros associados às iniciativas do grupo",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que “FELIPE MOURÃO” mantinha relação de prestação de serviços com Daniel Bueno Vorcaro, executando atividades de obtenção de informações sigilosas e monitoramento de pessoas.",
+   "pagina": 16,
+   "trecho_fonte": "“FELIPE MOURÃO” mantinha relação direta de prestação de serviços com DANIEL BUENO VORCARO, atuando como responsável pela execução de atividades voltadas à obtenção de informações sigilosas, monitoramento de pessoas e neutralização de situações consideradas sensíveis aos interesses do grupo",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FELIPE MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os elementos indicam que Luiz Phillipi exercia papel central na coordenação operacional do grupo “A Turma”.",
+   "pagina": 16,
+   "trecho_fonte": "Os elementos reunidos indicam que LUIZ PHILLIPI exercia papel central na coordenação operacional de um grupo informal denominado “A Turma”, estrutura utilizada para realizar atividades de vigilância, coleta de informações e monitoramento de indivíduos considerados adversários do grupo.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "LUIZ PHILLIPI",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "A Turma",
+     "tipo": "desconhecido"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as investigações apontam que Luiz Phillipi Machado de Moraes Mourão realizava consultas e extrações de dados em sistemas restritos de órgãos públicos.",
+   "pagina": 17,
+   "trecho_fonte": "As investigações também apontam que LUIZ PHILLIPI MACHADO DE MORAES MOURÃO realizava consultas e extrações de dados em sistemas restritos de órgãos públicos, incluindo bases de dados utilizadas por instituições de segurança pública e investigação policial.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "Segundo a autoridade policial, o investigado teria obtido acesso indevido aos sistemas da Polícia Federal, do Ministério Público Federal, do FBI e da Interpol.",
+   "pagina": 17,
+   "trecho_fonte": "de acordo com a autoridade policial, o investigado teria obtido acesso indevido aos sistemas da própria Polícia Federal, do Ministério Público Federal, e até mesmo de organismos internacionais, tais como FBI e Interpol",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Ministério Público Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "FBI",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Interpol",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma constar que Luiz Phillipi Machado de Moraes Mourão atuava na remoção de conteúdos e perfis em plataformas digitais simulando solicitações oficiais de órgãos públicos.",
+   "pagina": 17,
+   "trecho_fonte": "Consta também que LUIZ PHILLIPI MACHADO DE MORAES MOURÃO atuava na articulação de medidas voltadas à remoção de conteúdos e perfis em plataformas digitais, utilizando expedientes que simulavam solicitações oficiais de órgãos públicos para acionar canais de atendimento destinados a autoridades.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os elementos indicam que Felipe Mourão coordenava equipes de monitoramento presencial e organizava ações para pressionar ou intimidar críticos do grupo.",
+   "pagina": 18,
+   "trecho_fonte": "os elementos investigativos indicam que FELIPE MOURÃO coordenava a mobilização de equipes responsáveis por atividades de monitoramento presencial e coleta de informações, bem como organizava ações destinadas a pressionar ou intimidar indivíduos que mantinham posicionamento crítico em relação ao",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FELIPE MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma haver fortes indícios de que Felipe Mourão recebia um milhão por mês de Vorcaro por intermédio de Fabiano Zettel.",
+   "pagina": 18,
+   "trecho_fonte": "Há, aliás, fortes indícios de que FELIPE MOURÃO recebia um milhão por mês de VORCARO por intermédio de FABIANO ZETTEL como forma de remuneração por serviços ilícitos.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FELIPE MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FABIANO ZETTEL",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve mensagem de Mourão a Vorcaro: “O Fabiano não mandou este mês e a turma está perguntando”.",
+   "pagina": 18,
+   "trecho_fonte": "“Bom dia. O Fabiano não mandou este mês e a turma está perguntando. Dá uma olhada com ele por favor. Obrigado.”",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve resposta de Mourão a Vorcaro de que “Ele manda o mensal e eu divido entre a turma”.",
+   "pagina": 18,
+   "trecho_fonte": "“Ele [ao que tudo indica, seria FABIANO ZETTEL] manda o mensal e eu divido entre a turma. Mando pra eles.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FABIANO ZETTEL",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve mensagem (fls. 58 do e-Doc. 1) em que Mourão detalha a divisão do mensal: “400 divido entre 6. Os meninos mando 75 pra cada”.",
+   "pagina": 19,
+   "trecho_fonte": "400 divido entre 6. Os meninos mando 75 pra cada, o meu. O DCM e mais dois editores. É este o mensal. Ele manda 1 e quando você manda bônus eu divido entre os meninos e a turma”. (fls. 58 do e-Doc. 1)",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta mensagem (fl. 59 do e-Doc. 1) em que Ana Claudia pergunta a Vorcaro “Vai ser 1 mm como normalmente?”, ele responde “Sim” e ela junta comprovante de pagamento de um milhão de reais.",
+   "pagina": 19,
+   "trecho_fonte": "ANA CLAUDIA, funcionária de VORCARO, pergunta: “Vai ser 1 mm como normalmente?”. E recebe a seguinte resposta de VORCARO: “Sim”. Em seguida, ela faz a transferência bancária e junta o comprovante de pagamento de um milhão de reais na conta indicada por MOURÃO.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "ANA CLAUDIA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a conta indicada por Mourão pertence à KING EMPREENDIMENTOS IMOBILIÁRIOS E PARTICIPAÇÕES LTDA.",
+   "pagina": 19,
+   "trecho_fonte": "Conta essa pertencente à empresa KING EMPREENDIMENTOS IMOBILIÁRIOS E PARTICIPAÇÕES LTDA.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "KING EMPREENDIMENTOS IMOBILIÁRIOS E PARTICIPAÇÕES LTDA",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta mensagem (fl. 77 do e-Doc. 1) em que Mourão informa monitorar ex-funcionário de Vorcaro e pergunta se há telefone para monitorar.",
+   "pagina": 19,
+   "trecho_fonte": "MOURÃO informa que está monitorando um ex-funcionário de VORCARO e pergunta a este último: “- Tem algum telefone alguma coisa assim para monitorar?” (fl. 77 do e-Doc. 1)",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta determinação de Vorcaro a Mourão (fl. 80) para “levantar tudo dos dois”, referindo-se a seu funcionário e a um chefe de cozinha.",
+   "pagina": 19,
+   "trecho_fonte": "VORCARO faz determinação expressa a MOURÃO para “levantar tudo dos dois”, que seriam o seu funcionário e um chefe de cozinha a ele associado (fl. 80).",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve mensagem de Daniel Vorcaro a Mourão (fl. 84): “O bom de dar sacode no chef de cozinha primeiro. O outro já vai assustar”.",
+   "pagina": 19,
+   "trecho_fonte": "“O bom de dar sacode no chef de cozinha primeiro. O outro já vai assustar”. (fl. 84)",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve mensagens (fl. 88) em que Vorcaro diz a Mourão que sua empregada Monique o estaria ameaçando e determina “Puxa endereço tudo”.",
+   "pagina": 20,
+   "trecho_fonte": "“DV: Empregada Monique me ameaçando. É mole? Tem que moer essa vagabunda.” MOURÃO responde: “O que é para fazer?” DV: “Puxa endereço tudo” (fl. 88)",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Monique",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator identifica, em mensagem entre Mourão e Daniel Vorcaro, animus de agressão a jornalista que havia divulgado notícia contrária aos interesses de Vorcaro.",
+   "pagina": 20,
+   "trecho_fonte": "em mensagem de whatsapp entre MOURÃO e DANIEL VORCARO, identifica-se o animus de agressão a determinado jornalista, diante da informação de que referido profissional havia divulgado na imprensa notícia contrária aos interesses de VORCARO.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve mensagem (fl. 89 do e-Doc. 1) em que Vorcaro diz “Tinha que colocar gente seguindo esse cara” e Mourão responde “Vou fazer isto”.",
+   "pagina": 20,
+   "trecho_fonte": "DV: Tinha que colocar gente seguindo esse cara. Pra pegar tudo dele. MOURÃO: Vou fazer isto.” (fl. 89 do e.Doc 1)",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Lauro Jardim",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve mensagem de Daniel Vorcaro (fl. 90 do e-Doc. 1): “Esse lauro quero mandar dar um pau nele. Quebrar todos os dentes. Num assalto”.",
+   "pagina": 21,
+   "trecho_fonte": "DANIEL VORCARO (DV): “Esse lauro quero mandar dar um pau nele. Quebrar todos os dentes. Num assalto”. (fl. 90 do e.Doc 1)",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve resposta de Mourão: “Estamos em cima de todos os links negativos vamos derrubar todos e vamos soltar positivas”.",
+   "pagina": 21,
+   "trecho_fonte": "MOURÃO responde: “Estamos em cima de todos os links negativos vamos derrubar todos e vamos soltar positivas”.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma haver fortes indícios de que Vorcaro determinou a Mourão que forjasse um assalto para prejudicar violentamente o jornalista.",
+   "pagina": 21,
+   "trecho_fonte": "A partir de todos esses diálogos verifica-se a presença de fortes indícios de que VORCARO determinou a MOURÃO que forjasse um assalto, ou simulasse cenário semelhante, para prejudicar violentamente o jornalista em questão",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MOURÃO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Marilson, policial federal aposentado, foi identificado como integrante da estrutura paralela de monitoramento e intimidação.",
+   "pagina": 21,
+   "trecho_fonte": "Policial federal aposentado, MARILSON foi identificado nas investigações como integrante relevante da estrutura paralela de monitoramento e intimidação",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MARILSON",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que, segundo os registros analisados, Marilson Roseno atuava como um dos principais operadores do núcleo de coerção.",
+   "pagina": 22,
+   "trecho_fonte": "De acordo com os registros analisados, MARILSON ROSENO atuava como um dos principais operadores desse núcleo de coerção, utilizando sua experiência e contatos decorrentes da carreira policial para auxiliar na obtenção de dados sensíveis",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MARILSON ROSENO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as investigações indicam que Marilson Roseno participava da estrutura logística de monitoramento e identificação de pessoas de interesse da organização.",
+   "pagina": 22,
+   "trecho_fonte": "As investigações também indicam que MARILSON ROSENO participava da estrutura logística destinada à execução dessas atividades de monitoramento, contribuindo para a identificação de pessoas de interesse da organização",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "MARILSON ROSENO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Paulo Sérgio Souza ocupava o cargo de Chefe-Adjunto do DESUP do Banco Central e manteve interlocução direta e frequente com Daniel Bueno Vorcaro.",
+   "pagina": 23,
+   "trecho_fonte": "À época dos fatos, PAULO SÉRGIO SOUZA ocupava o cargo de Chefe-Adjunto do Departamento de Supervisão Bancária (DESUP) do Banco Central do Brasil. Nessa condição, manteve interlocução direta e frequente com DANIEL BUENO VORCARO, controlador do Banco Master",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO SOUZA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central do Brasil",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os elementos indicam que Paulo Sérgio prestava consultoria informal e contínua ao investigado sobre a atuação do Banco Central em processos envolvendo o Banco Master.",
+   "pagina": 23,
+   "trecho_fonte": "Os elementos informativos reunidos indicam que PAULO SÉRGIO prestava consultoria informal e contínua ao referido investigado, fornecendo orientações estratégicas sobre a atuação do Banco Central em processos administrativos envolvendo o Banco Master",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Paulo Sérgio revisava minutas elaboradas pelo Banco Master destinadas ao Banco Central, sugerindo alterações antes da formalização.",
+   "pagina": 24,
+   "trecho_fonte": "elaboradas pelo Banco Master e destinadas ao próprio Banco Central, sugerindo alterações e ajustes antes da formalização dos documentos perante a autarquia supervisora. Tal atuação incluía análise de ofícios, relatórios e manifestações técnicas que seriam submetidos ao órgão regulador",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o investigado chegou a alertar previamente o controlador do Banco Master sobre movimentações identificadas pelos sistemas de monitoramento da autarquia.",
+   "pagina": 24,
+   "trecho_fonte": "Em algumas situações, o investigado chegou a alertar previamente o controlador do banco Master acerca de movimentações financeiras que haviam sido identificadas pelos sistemas de monitoramento da autarquia",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Paulo Sérgio participava de grupo de mensagens com Daniel Vorcaro e Belline Santana criado para discutir temas de interesse do Banco Master.",
+   "pagina": 24,
+   "trecho_fonte": "Também foi identificado que PAULO SÉRGIO participava de grupo de mensagens com DANIEL VORCARO e BELLINE SANTANA, criado para facilitar a comunicação direta entre os envolvidos e permitir a discussão de estratégias relativas a temas de interesse do Banco Master.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os elementos indicam que Paulo Sérgio auxiliava em tratativas de operações societárias, mencionando interessados na aquisição de instituição financeira do conglomerado.",
+   "pagina": 25,
+   "trecho_fonte": "os elementos investigativos indicam que PAULO SÉRGIO intermediava ou auxiliava em tratativas relacionadas a operações societárias e financeiras de interesse do grupo econômico, chegando a mencionar potenciais interessados na aquisição de instituição financeira vinculada ao conglomerado",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma haver indícios de que Paulo Sérgio recebeu vantagens indevidas operacionalizadas por mecanismos indiretos.",
+   "pagina": 25,
+   "trecho_fonte": "há indícios de que PAULO SÉRGIO tenha recebido vantagens indevidas associadas aos interesses defendidos junto à instituição financeira investigada, as quais teriam sido operacionalizadas por meio de mecanismos indiretos",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta mensagem (fl. 54) em que Vorcaro comenta que precisaria “arrumar guia pra essas pessoas” sobre viagem de Paulo Sérgio a Orlando e aciona pessoa para providenciar o serviço (fl. 55).",
+   "pagina": 25,
+   "trecho_fonte": "VORCARO chega a comentar em mensagem reproduzida na fl. 54 que precisaria “arrumar guia pra essas pessoas”. E em seguida, aciona pessoa específica para providenciar o serviço em questão (fl. 55).",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "PAULO SÉRGIO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Belline ocupava o cargo de Chefe do Departamento de Supervisão Bancária (DESUP) do Banco Central do Brasil.",
+   "pagina": 25,
+   "trecho_fonte": "À época dos fatos, BELLINE era ocupante do cargo de Chefe do Departamento de Supervisão Bancária (DESUP) do Banco Central do Brasil.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "BELLINE",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central do Brasil",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o investigado solicitava contato telefônico para assuntos sensíveis, indicando intenção de evitar registro escrito.",
+   "pagina": 26,
+   "trecho_fonte": "Em diversas ocasiões, o investigado solicitava contato telefônico para tratar de assuntos sensíveis, indicando a intenção de evitar o registro escrito das comunicações.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Belline Santana participou de reuniões privadas com Daniel Bueno Vorcaro, inclusive fora das dependências do Banco Central.",
+   "pagina": 26,
+   "trecho_fonte": "Também foi constatado que BELLINE SANTANA participou de reuniões privadas com DANIEL BUENO VORCARO, inclusive fora das dependências institucionais do Banco Central",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Belline Santana revisava documentos e comunicações do Banco Master destinados à própria autarquia supervisora.",
+   "pagina": 26,
+   "trecho_fonte": "As investigações revelam ainda que BELLINE SANTANA revisava documentos e comunicações institucionais elaboradas pelo Banco Master, destinados à própria autarquia supervisora.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Belline Santana integrou grupo de mensagens com Daniel Vorcaro e Paulo Sérgio Neves de Souza para tratar de processos de interesse do Banco Master.",
+   "pagina": 27,
+   "trecho_fonte": "BELLINE SANTANA integrou grupo de mensagens criado para facilitar a interlocução direta com DANIEL VORCARO e PAULO SÉRGIO NEVES DE SOUZA, no qual eram compartilhados documentos, informações e solicitações de apoio relacionadas a processos de interesse do Banco Master.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Master",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os elementos indicam que Belline Santana recebeu proposta de contratação simulada por meio da VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA.",
+   "pagina": 27,
+   "trecho_fonte": "os elementos colhidos indicam que BELLINE SANTANA recebeu proposta de contratação simulada por meio da empresa VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA, estruturada com a finalidade de justificar pagamentos relacionados aos serviços informais prestados ao controlador do Banco Master.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a proposta foi encaminhada por e-mail ao investigado e discutida com integrantes do grupo.",
+   "pagina": 27,
+   "trecho_fonte": "A proposta foi encaminhada por e-mail ao investigado e discutida em comunicações mantidas com integrantes do grupo",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta mensagem (fl. 42 do e-Doc. 1) em que Fabiano Zettel pergunta “Hoje tem que pagar a primeira do Belline, ok?” e Daniel Vorcaro responde “OK”.",
+   "pagina": 28,
+   "trecho_fonte": "“- Hoje tem que pagar a primeira do Belline, ok?”. Em seguida, DANIEL VORCARO responde: “OK” (fl. 42 do e-Doc. 1).",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FABIANO ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Belline",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator transcreve mensagem (fl. 42 do e-Doc. 1) em que Vorcaro diz “Mas veja se Leo pode pagar. E reembolsamos dia seguinte” e Fabiano Zettel responde que pediria a Léo para pagar primeiro.",
+   "pagina": 28,
+   "trecho_fonte": "“DV: Mas veja se Leo pode pagar. E reembolsamos dia seguinte. Bem importante isso. Fabiano Zettel: Na verdade ia pagar Léo e Léo pagar ele. Mas peço ele pra pagar primeiro” (fl. 42 do e-Doc. 1)",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Fabiano Zettel",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta mensagem (fl. 46) em que Fabiano Zettel diz a Vorcaro “Belline cobrando. Paga?” e Daniel Vorcaro responde “Claro”.",
+   "pagina": 28,
+   "trecho_fonte": "FABIANO ZETTEL diz a VORCARO: “Belline cobrando. Paga? A resposta de DANIEL VORCARO foi: “Claro” (fl. 46).",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "FABIANO ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator aponta troca de mensagens (fl. 45) em que Ana Cláudia explica a Daniel Vorcaro como fazem para que o pagamento não saia direto de Vorcaro para Belline.",
+   "pagina": 28,
+   "trecho_fonte": "na troca de mensagens reproduzida na fl. 45, ocasião em que há uma explicação de como fazem para que o pagamento não saia direto de VORCARO para BELLINE.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "ANA CLÁUDIA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "BELLINE",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Leonardo Palhares, como administrador da VARAJO, assinou proposta de prestação de serviços para contratação de Belline Santana em suposto projeto de estudo técnico sobre inserção de jovens no mercado financeiro.",
+   "pagina": 29,
+   "trecho_fonte": "Na condição de administrador da empresa VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA, o investigado assinou proposta de prestação de serviços destinada à contratação de BELLINE SANTANA para participação em suposto projeto de elaboração de estudo técnico relacionado à inserção de jovens",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LEONARDO PALHARES",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a atuação de Leonardo Augusto Furtado Palhares consistiu na assinatura e formalização do documento contratual em nome da VARAJO CONSULTORIA.",
+   "pagina": 29,
+   "trecho_fonte": "a atuação de LEONARDO AUGUSTO FURTADO PALHARES consistiu na assinatura e formalização do documento contratual emitido em nome da empresa VARAJO CONSULTORIA, conferindo aparência de legitimidade à contratação",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VARAJO CONSULTORIA",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Ana Claudia atuou na operacionalização de movimentações financeiras relacionadas às atividades do grupo investigado.",
+   "pagina": 29,
+   "trecho_fonte": "ANA CLAUDIA atuou na operacionalização de movimentações financeiras relacionadas às atividades desenvolvidas por integrantes do grupo investigado, participando da estrutura responsável pela execução de",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "ANA CLAUDIA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que os elementos indicam que Ana Claudia Queiroz de Paiva participava de transferências destinadas a custear atividades da estrutura “A Turma”.",
+   "pagina": 30,
+   "trecho_fonte": "Os elementos reunidos nas investigações indicam que ANA CLAUDIA QUEIROZ DE PAIVA participava da realização e gestão de transferências financeiras destinadas a custear atividades desempenhadas por integrantes da estrutura informal conhecida como “A Turma”",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "A Turma",
+     "tipo": "desconhecido"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que Ana Claudia Queiroz de Paiva participava da estrutura na condição de sócia da SUPER EMPREENDIMENTOS E PARTICIPACOES S.A.",
+   "pagina": 30,
+   "trecho_fonte": "na condição de sócia da empresa SUPER EMPREENDIMENTOS E PARTICIPACOES S.A, contribuindo para a execução das movimentações financeiras necessárias à manutenção das atividades desempenhadas pelos integrantes responsáveis pelas ações",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as investigações apontam que diversas empresas foram utilizadas como instrumento para crimes financeiros e lavagem de dinheiro.",
+   "pagina": 31,
+   "trecho_fonte": "as investigações apontam que diversas empresas foram utilizadas como instrumento para a prática de crimes financeiros e lavagem de dinheiro.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator lista como empresas administradas pelos integrantes da estrutura: VARAJO CONSULTORIA, MORIAH ASSET, SUPER EMPREENDIMENTOS, KING PARTICIPAÇÕES IMOBILIÁRIAS e KING MOTORS.",
+   "pagina": 31,
+   "trecho_fonte": "(i) VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA; (ii) MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.; (iii) SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.; (iv) KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.; (v) KING MOTORS LOCAÇÃO DE VEÍCULOS E PARTICIPAÇÕES LTDA.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "KING MOTORS LOCAÇÃO DE VEÍCULOS E PARTICIPAÇÕES LTDA.",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O requerimento de prisão preventiva foi formulado pela PF.",
+   "pagina": 31,
+   "trecho_fonte": "O requerimento de prisão preventiva foi formulado pela PF em face dos investigados (i) DANIEL",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "PF",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O requerimento de prisão preventiva da PF dirige-se a Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+   "pagina": 32,
+   "trecho_fonte": "BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; e (iv) MARILSON ROSENO DA SILVA; nos seguintes termos:",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MARILSON ROSENO DA SILVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustenta que as novas evidências comprovam que Felipe Mourão faz a ponte entre Daniel Vorcaro e influenciadores contratados para influenciar a opinião pública.",
+   "pagina": 32,
+   "trecho_fonte": "As novas evidências apresentadas agora a esta Suprema Corte comprovam que FELIPE MOURAO faz a ponte entre os desejos de DANIEL VORCARO em influenciar a opinião pública e influenciadores contratados pela organização criminosa.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "FELIPE MOURAO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que a prisão foi revogada pelo TRF1 em 28 de novembro de 2025 e que a contratação de influencers para o “Projeto DV” foi colocada em prática em dezembro de 2025.",
+   "pagina": 32,
+   "trecho_fonte": "cujas ações prosseguiram mesmo após sua prisão e posterior revogação pelo TRF1, no dia 28 de novembro de 2025, uma vez que a contratação de influencers para a execução do “Projeto DV” foi colocada em prática logo depois, isto é, no mês de dezembro de 2025",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "TRF1",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustenta que os investigados atuam de forma coordenada, com captação ilícita de servidores públicos dos mais altos escalões.",
+   "pagina": 32,
+   "trecho_fonte": "Pelo contrário, são profissionais do crime, que atuam de forma coordenada, com a captação ilícita de servidores públicos dos mais altos escalões da república",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustenta que a investigação estará em risco, inclusive quanto à integridade física dos servidores da PF, MPF, STF e BCB, enquanto não houver neutralização do braço armado da organização.",
+   "pagina": 33,
+   "trecho_fonte": "a presente investigação criminal sobre organização criminosa estará em risco, reprise-se, risco concreto, inclusive quanto a integridade física dos servidores públicos responsáveis pela apuração (PF, MPF, STF, BCB), enquanto não houver a completa neutralização do braço armado da organização",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "PF",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "MPF",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "STF",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "BCB",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que o Tribunal Regional Federal da 1ª Região incluiu advertência na decisão revogadora da prisão preventiva sobre o descumprimento das condições impostas.",
+   "pagina": 33,
+   "trecho_fonte": "o Tribunal Regional Federal da 1ª Região fez com que fosse incluída a seguinte advertência na decisão revogadora da prisão preventiva: “o descumprimento de quaisquer dessas condições, a prestação de informações falsas, ou a prática de qualquer ato que coloque em risco a ordem pública",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Tribunal Regional Federal da 1ª Região",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustenta que os atos de embaraço à investigação estão em pleno desenvolvimento, conforme apuração no Inq. 5035.",
+   "pagina": 33,
+   "trecho_fonte": "os atos de embaraço a esta investigação criminal não apenas estavam em curso, como estão em pleno desenvolvimento, conforme se observa da apuração em andamento no Inq. 5035",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustenta que o risco de evasão do principal investigado segue presente, pois ele ainda possui jatos privados e extenso patrimônio no exterior.",
+   "pagina": 33,
+   "trecho_fonte": "o risco de evasão do principal investigado segue presente, na medida em que ainda possui jatos privados, bem como extenso patrimônio no exterior, inclusive em paraísos fiscais.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que Daniel Vorcaro foi posto em liberdade em 28/11/2025 e que a organização continuou a ocultar recursos em nome de terceiros.",
+   "pagina": 34,
+   "trecho_fonte": "mesmo após ser posto em liberdade, o que ocorreu no dia 28/11/2025, a organização criminosa continuou a ocultar recursos bilionários em nome de terceiros",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que na Segunda Fase da Operação Compliance Zero, deflagrada em 14/01/2026, foi bloqueada a quantia de R$ 2.245.235.850,24.",
+   "pagina": 34,
+   "trecho_fonte": "Segunda Fase da Operação Compliance Zero, deflagrada no dia 14/01/2026, oportunidade em que foi bloqueada a impressionante quantia de R$ 2.245.235.850,24 (dois bilhões, duzentos e quarenta e cinco milhões, duzentos e trinta e cinco mil, oitocentos e cinquenta reais e vinte e quatro centavos)",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que o valor bloqueado estava na conta do genitor de Daniel Vorcaro, Henrique Moura Vorcaro, junto à CBSF DTVM, conhecida como REAG.",
+   "pagina": 34,
+   "trecho_fonte": "valor que estava na conta do genitor de DANIEL VORCARO, HENRIQUE MOURA VORCARO, junto à empresaCBSF DTVM,mais conhecidacomo REAG.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "HENRIQUE MOURA VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "CBSF DTVM",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "REAG",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que o Fundo Garantidor de Crédito cobria rombo deixado pelo Banco Master que alcança quase 40 bilhões de reais.",
+   "pagina": 34,
+   "trecho_fonte": "enquanto o Fundo Garantidor de Crédito sangrava para cobrir o rombo bilionário deixado pelo Banco MASTER no mercado financeiro, montante que alcança quase 40 bilhões de reais",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Fundo Garantidor de Crédito",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "Banco MASTER",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que os integrantes conhecidos da “Turma” até o momento são Luiz Phillipe Machado de Moraes Mourão (Felipe Mourão) e Marilson Roseno da Silva.",
+   "pagina": 35,
+   "trecho_fonte": "até presente momento são: LUIZ PHILLIPE MACHADO DE MORAES MOURÃO (FELIPE MOURÃO) e MARILSON ROSENO DA SILVA.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "LUIZ PHILLIPE MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MARILSON ROSENO DA SILVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal considera que a decretação da prisão preventiva de Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipe Machado de Moraes Mourão e Marilson Roseno da Silva é medida que se impõe.",
+   "pagina": 35,
+   "trecho_fonte": "a Polícia Federal considera que a decretação da prisão preventiva de DANIEL BUENO VORCARO, líder da organização criminosa, FABIANO CAMPOS ZETTEL, operador financeiro do grupo, do “Sicário” LUIZ PHILLIPE MACHADO DE MORAES MOURÃO (FELIPE MOURÃO), e do policial federal aposentado MARILSON ROSENO DA",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LUIZ PHILLIPE MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MARILSON ROSENO DA SILVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator reputa presentes os pressupostos e requisitos da medida cautelar em relação a Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+   "pagina": 35,
+   "trecho_fonte": "reputo presentes, neste caso, os pressupostos e requisitos legais e constitucionais permissivos da medida cautelar pleiteada em relação aos representados (i) DANIEL BUENO VORCARO, (ii) FABIANO CAMPOS ZETTEL, (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO e (iv) MARILSON ROSENO DA SILVA.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MARILSON ROSENO DA SILVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o decreto de prisão preventiva se baseia em avaliação de probabilidade, em cognição não exauriente, citando Gustavo Badaró.",
+   "pagina": 36,
+   "trecho_fonte": "o decreto de prisão preventiva, como medida cautelar que é, não é marcado por um juízo de certeza absoluta, mas por uma avaliação de probabilidade, tomada em cognição não exauriente.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Gustavo Badaró",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma haver fortes indícios de que os investigados organizaram complexa estrutura para a prática de crimes com profunda repercussão negativa na sociedade.",
+   "pagina": 36,
+   "trecho_fonte": "há fortes indícios de que os indivíduos acima apontados organizaram uma complexa estrutura para a prática de crimes com uma profunda repercussão negativa na sociedade.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a prisão preventiva exige a verificação de ao menos uma das hipóteses do periculum libertatis previstas no art. 312 do CPP.",
+   "pagina": 36,
+   "trecho_fonte": "o decreto de prisão preventiva exige também a verificação de ao menos uma das quatro hipóteses do periculum libertatis, previstas no art. 312 do Código de Processo Penal",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator fundamenta a conveniência da instrução criminal na ampla rede de conexões dos investigados, nos indícios de ameaças e na contínua utilização de mecanismos para ocultar rastros dos crimes.",
+   "pagina": 37,
+   "trecho_fonte": "conveniência da instrução criminal, tendo em vista [a] a ampla rede de conexões dos investigados, [b] os indícios de ameaças a pessoas que contrariem os interesses do grupo criminoso, [c] a contínua utilização de mecanismos para ocultar os rastros dos crimes",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator fundamenta a garantia da ordem pública na necessidade de pacificação social, no risco de reiteração delitiva e no alcance dos ilícitos.",
+   "pagina": 37,
+   "trecho_fonte": "garantia da ordem pública, haja vista [a] a necessidade de pacificação social por meio da criação de um sentimento na sociedade de resposta célere do sistema de justiça a um delito de elevadíssima repercussão social, com dimensões bilionárias, [b] o risco de reiteração delitiva",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator fundamenta a futura aplicação da lei penal nos indícios de continuidade de práticas delitivas, lavagem de capitais e ocultação e dilapidação do patrimônio.",
+   "pagina": 37,
+   "trecho_fonte": "futura aplicação da lei penal, uma vez considerados os indícios de continuidade de práticas delitivas [a] com enorme impacto social e econômico, [b] lavagem de capitais e [c] ocultação e dilapidação do patrimônio obtido ilicitamente.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a verificação de apenas um dos três requisitos do periculum libertatis bastaria, embora os três se verifiquem cumulativamente.",
+   "pagina": 37,
+   "trecho_fonte": "A verificação de apenas um dos três requisitos do periculum libertatis, apontados supra, bastaria, em tese, para justificar a medida extrema de segregação cautelar dos investigados, não obstante os três se verifiquem",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator cita os precedentes HC nº 152.725-AgR (Rel. Min. Gilmar Mendes) e HC nº 162.041-AgR (Rel. Min. Edson Fachin) sobre os requisitos da prisão preventiva.",
+   "pagina": 38,
+   "trecho_fonte": "citando, exemplificativamente o que decidido no HC nº 152.725-AgR, Segunda Turma, Rel. Min. Gilmar Mendes, j. 23/03/2018, p. 09/04/2018; e no HC nº 162.041-AgR, Segunda Turma, Rel. Min. Edson Fachin, j. 28/06/2019, p. 01/08/2019.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Gilmar Mendes",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Edson Fachin",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator rememora voto do Ministro Nunes Marques no HC nº 206.987-AgR, no qual figurou como redator para o acórdão.",
+   "pagina": 38,
+   "trecho_fonte": "Rememoro, ainda, as ponderações feitas pelo Ministro Nunes Marques em voto proferido no HC nº 206.987-AgR, Segunda Turma, j. 19/12/2022, p. 20/03/2023, no qual figurei como redator para o acórdão.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Nunes Marques",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator cita o HC nº 260.221, de 20/08/2025, sobre precedentes que legitimam a tutela cautelar para interromper a atuação de integrantes de organização criminosa.",
+   "pagina": 38,
+   "trecho_fonte": "E na linha do quanto recentemente pontuado pelo HC nº 260.221, de 20/08/2025, esta Corte registra diversos “precedentes no sentido de ser legítima a tutela cautelar que tenha por fim resguardar a ordem pública quando evidenciada a necessidade de se interromper ou diminuir a atuação de integrantes",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator cita os precedentes HC nº 124.911-AgR, RHC nº 122.462 e HC nº 112.250-MC.",
+   "pagina": 39,
+   "trecho_fonte": "HC nº 124.911-AgR, Primeira Turma, Rel. Min. Luiz Fux, j. 10/02/2015, p. 04/03/2015; RHC nº 122.462, Segunda Turma, Rel. Min. Teori Zavascki, j. 26/08/2014, p. 09/09/2014; HC nº 112.250-MC, Segunda Turma, Rel. Min. Celso de Mello, j. 28/02/2012, p. 21/03/2012.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Luiz Fux",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Teori Zavascki",
+     "tipo": "ministro"
+    },
+    {
+     "nome": "Celso de Mello",
+     "tipo": "ministro"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator conclui pela presença de todos os requisitos do art. 312 do CPP para a prisão cautelar de Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+   "pagina": 39,
+   "trecho_fonte": "o quadro fático em exame aponta para a presença de todos os requisitos exigidos pelo art. 312 do Código de Processo Penal para autorização, neste estágio, do deferimento da prisão cautelar dos investigados (i) DANIEL BUENO VORCARO, (ii) FABIANO CAMPOS ZETTEL, (iii) LUIZ PHILLIPI MACHADO DE MORAES",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MARILSON ROSENO DA SILVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a representação da Polícia Federal traz sérias evidências da continuada prática de crimes de gravíssima repercussão.",
+   "pagina": 39,
+   "trecho_fonte": "a representação formulada pela Polícia Federal traz sérias evidências da continuada prática de crimes de gravíssima repercussão.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A PGR afirma não entrever no pedido nem no encaminhamento dos autos a indicação de perigo iminente que induza a necessidade de análise tão rápida e sucinta do pleito.",
+   "pagina": 39,
+   "trecho_fonte": "a PGR diga que “não se entrevê no pedido, nem no encaminhamento dos autos [...] a indicação de perigo iminente, imediato, que induza a extraordinária necessidade de tão rápida e necessariamente sucinta análise do pleito”",
+   "atribuida_a": "Procuradoria-Geral da República",
+   "entidades": [
+    {
+     "nome": "PGR",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A PGR conclui que não pode ser favorável aos pedidos cautelares antes que sua manifestação seja apresentada no mais breve tempo possível.",
+   "pagina": 40,
+   "trecho_fonte": "conclui que “não pode ser favorável aos pedidos cautelares, não podendo aboná-los” antes que sua manifestação seja apresentada “no mais breve tempo possível”.",
+   "atribuida_a": "Procuradoria-Geral da República",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma haver indicativos de acesso indevido aos sistemas sigilosos da Polícia Federal, do Ministério Público Federal e da Interpol.",
+   "pagina": 40,
+   "trecho_fonte": "porque há indicativos de ter havido acesso indevido dos sistemas sigilosos da Polícia Federal, do próprio Ministério Público Federal e até mesmo de organismos internacionais como a Interpol.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Ministério Público Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Interpol",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que a demora no caso se revela extremamente perigosa para a sociedade e pode dificultar a recuperação de ativos bilionários.",
+   "pagina": 40,
+   "trecho_fonte": "bem como dificultar, sobremaneira, a recuperação de ativos bilionários que foram desviados dos cofres públicos e de particulares atingidos pelos variados crimes contra o sistema financeiro nacional apurados nestes autos.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator destaca que os crimes investigados envolvem valores bilionários e têm impacto potencial no sistema financeiro nacional.",
+   "pagina": 40,
+   "trecho_fonte": "destaco que os crimes investigados envolvem valores bilionários e têm impacto potencial no sistema financeiro nacional.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as medidas menos gravosas não têm o condão de obstar o cenário de risco às investigações apresentado pela Polícia Federal.",
+   "pagina": 41,
+   "trecho_fonte": "as medidas menos gravosas previstas em nosso ordenamento jurídico não ostentam, em relação a tais investigados, o condão de obstar o cenário de risco às investigações, à apuração dos produtos ilícitos e à sua futura recuperação, apresentado pela Polícia Federal.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma haver risco concreto de destruição de provas, pois os investigados demonstraram possuir acesso a documentos sensíveis e a sistemas estatais.",
+   "pagina": 41,
+   "trecho_fonte": "há risco concreto de destruição de provas, pois os investigados demonstraram possuir meios de acesso a documentos sensíveis e a sistemas estatais, além do domínio de empresas instrumentalizadas para a prática de ilícitos de seus interesses.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que, quanto à contemporaneidade, as atividades criminosas continuaram após o início do inquérito, conforme demonstrado pela Polícia Federal.",
+   "pagina": 41,
+   "trecho_fonte": "no que diz respeito ao elemento da contemporaneidade, as atividades criminosas, tal como demonstrado pela Polícia Federal em sua representação, continuaram a ocorrer mesmo após o início do inquérito e as operações dele decorrentes.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator entende ser o caso de deferimento do pedido de prisão preventiva de Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+   "pagina": 42,
+   "trecho_fonte": "entendo ser o caso de deferimento do pedido de prisão preventiva formulado pela Polícia Federal em relação a (i) DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; e (iv) MARILSON ROSENO DA SILVA.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MARILSON ROSENO DA SILVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A Polícia Federal formulou pedido de medidas diversas da prisão em relação a alguns dos demais investigados.",
+   "pagina": 42,
+   "trecho_fonte": "a Polícia Federal formula pedido para adoção de medidas diversas da prisão em relação a alguns dos demais investigados nestes autos.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que Paulo Sérgio Neves de Souza ocupava a função de Chefe adjunto do DESUP e Belline Santana o cargo de Chefe do DESUP no Banco Central do Brasil.",
+   "pagina": 42,
+   "trecho_fonte": "Trata-se dos servidores do Banco Central do Brasil PAULO SÉRGIO NEVES DE SOUZA, que ocupava a função de Chefe adjunto do Departamento de Supervisão Bancária – Desup, e BELLINE SANTANA, que ocupava o cargo de",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central do Brasil",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que Leonardo Augusto Furtado Palhares é responsável pela VARAJO CONSULTORIA, cujas contas bancárias serviram como “conta de passagem” para os recebimentos ilícitos.",
+   "pagina": 43,
+   "trecho_fonte": "LEONARDO AUGUSTO FURTADO PALHARES, responsável pela empresa VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA, pessoa jurídica cujas contas bancárias serviram como “contadepassagem”paraos recebimentos ilícitos.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustenta que os pagamentos ilícitos eram efetuados por Fabiano Campos Zettel e Ana Claudia Queiroz de Paiva, a mando de Daniel Vorcaro, principalmente pela SUPER PARTICIPAÇÕES E EMPREENDIMENTOS S.A.",
+   "pagina": 43,
+   "trecho_fonte": "os pagamentos ilícitos ora descobertos eram efetuados por FABIANO CAMPOS ZETTEL e ANA CLAUDIA QUEIROZ DE PAIVA, a mando de DANIEL VORCARO, principalmente, mas não de forma exclusiva, pela empresa SUPER PARTICIPAÇÕES E EMPREENDIMENTOS S.A.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "DANIEL VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "SUPER PARTICIPAÇÕES E EMPREENDIMENTOS S.A.",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que a mesma estrutura é usada para os pagamentos mensais à “Turma”, com valores seguindo da SUPER PARTICIPAÇÕES para empresas de Felipe Mourão, como a KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.",
+   "pagina": 43,
+   "trecho_fonte": "esta é a mesma estrutura utilizada para os pagamentos ilícitos mensais para a “Turma”, com a diferença de que, nesse caso, os valores seguem da empresa SUPER PARTICIPAÇÕES, para as empresas de FELIPE MOURÃO, como é o caso da KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "SUPER PARTICIPAÇÕES",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "FELIPE MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustenta que os servidores ocupam funções relacionadas à fiscalização de instituições financeiras e possuem acesso a informações estratégicas e sigilosas.",
+   "pagina": 43,
+   "trecho_fonte": "os investigados ocupam funções diretamente relacionadas à fiscalização de instituições financeiras, à aplicação de sanções administrativas e possuem acesso a informações estratégicas e sigilosas.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal afirma que o Banco Central afastou administrativamente os servidores das funções de confiança que exerciam.",
+   "pagina": 44,
+   "trecho_fonte": "Conforme noticiado na imprensa e comunicado a este órgão, o Banco Central afastou administrativamente tais servidores das funções de confiança que exerciam na Autarquia Federal.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal requer a suspensão do exercício da função pública dos servidores, na forma do art. 319, VI, do CPP.",
+   "pagina": 44,
+   "trecho_fonte": "a imposição de medidas cautelares de natureza processual penal, na forma prevista no art. 319, VI do Código de Processo Penal, ou seja, a suspensão do exercício da função pública, medida menos gravosa que a prisão cautelar",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal requer a proibição de ingresso nas dependências do Banco Central do Brasil e o bloqueio de acessos físicos e digitais aos sistemas corporativos.",
+   "pagina": 44,
+   "trecho_fonte": "é imperiosa a determinação de proibição de ingresso nas dependências do Banco Central do Brasil, bloqueio de acessos físicos e digitais aos sistemas corporativos.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "Banco Central do Brasil",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal requer medidas que impossibilitem novas ações conjuntas entre Paulo Sérgio Neves de Souza, Belline Santana, Leonardo Augusto Furtado Palhares e Ana Claudia Queiroz de Paiva.",
+   "pagina": 45,
+   "trecho_fonte": "inclusive com a impossibilidade de novas ações conjuntas entre os investigados PAULO SÉRGIO NEVES DE SOUZA, BELLINE SANTANA, LEONARDO AUGUSTO FURTADO PALHARES e ANA CLAUDIA QUEIROZ DE PAIVA.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal requer a proibição de contato entre os investigados por qualquer meio, nos termos do art. 319, III, do CPP.",
+   "pagina": 45,
+   "trecho_fonte": "é necessária a imposição de proibição de contato entre os investigados, por qualquer meio (presencial, telefônico, eletrônico ou por interposta pessoa), nos termos do art. 319, III, do CPP.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal requer a proibição de ausentar-se da comarca, nos termos do art. 319, IV, do CPP.",
+   "pagina": 45,
+   "trecho_fonte": "nos termos do art. 319, IV, do CPP, pode o Juízo determinar a proibição de ausentar-se da comarca quando a permanência seja conveniente ou necessária à investigação.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal requer a aplicação de monitoração eletrônica, nos termos do art. 319, IX, do CPP.",
+   "pagina": 45,
+   "trecho_fonte": "revela-se proporcional a aplicação da monitoração eletrônica, nos termos do art. 319, IX, do CPP.",
+   "atribuida_a": "Polícia Federal",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o art. 282 do CPP exige, para medidas cautelares, o fumus comissi delicti e o periculum libertatis.",
+   "pagina": 46,
+   "trecho_fonte": "o art. 282 do CPP exige, para a imposição de medidas cautelares, a presença de: (i) fumus comissi delicti – prova da materialidade e indícios suficientes de autoria; e (ii) periculum libertatis – risco concreto decorrente da manutenção da liberdade plena de alguns dos investigados.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as medidas cautelares diversas da prisão são disciplinadas pelos arts. 319 e 320 do CPP.",
+   "pagina": 46,
+   "trecho_fonte": "a matéria das medidas cautelares diversas da prisão é disciplinada pelos arts. 319 e 320 do CPP.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o perigo da liberdade irrestrita dos investigados é concreto, havendo risco à instrução criminal diante da rede de influência que possuem.",
+   "pagina": 47,
+   "trecho_fonte": "o perigo gerado pela manutenção da liberdade irrestrita dos investigados elencados pela autoridade policial revela-se concreto sob múltiplos aspectos. Há, nesse sentido, risco à instrução criminal, diante da rede de influência que os investigados possuem",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma existir possibilidade de reiteração delitiva ou ocultação patrimonial, considerando o poder econômico e a estrutura organizacional apontada.",
+   "pagina": 47,
+   "trecho_fonte": "Existe, ademais, a possibilidade de reiteração delitiva ou ocultação patrimonial, considerando o poder econômico demonstrado e a estrutura organizacional apontada.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma verificar-se capacidade de influência institucional em razão da condição pessoal dos alvos das medidas.",
+   "pagina": 48,
+   "trecho_fonte": "Verifica-se, ainda, a capacidade de influência institucional, em razão da condição pessoal ostentada pelos alvos das medidas, as quais recaem sobre particulares e agentes públicos com trânsito em órgãos e entidades públicas relacionadas aos fatos.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que as medidas dos arts. 319 e 320 do CPP são necessárias e suficientes em relação a Paulo Sérgio Neves de Souza, Belline Santana, Leonardo Augusto Furtado Palhares e Ana Claudia Queiroz de Paiva.",
+   "pagina": 48,
+   "trecho_fonte": "impedir a intimidação de testemunhas ou de autoridades, em relação a (i) PAULO SÉRGIO NEVES DE SOUZA; (ii) BELLINE SANTANA; (iii) LEONARDO AUGUSTO FURTADO PALHARES; e (iv) ANA CLAUDIA QUEIROZ DE PAIVA.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que, para esses investigados, a prisão preventiva é substituível por medidas menos gravosas, sem prejuízo de reavaliação em caso de descumprimento.",
+   "pagina": 48,
+   "trecho_fonte": "Especificamente em relação a tais investigados, a prisão preventiva, neste momento, revela-se substituível por medidas menos gravosas, tais como as requeridas pela Polícia Federal em sua representação (e-Doc. 1), sem prejuízo de reavaliação futura diante de eventual descumprimento.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A Polícia Federal formulou requerimento de suspensão das atividades de empresas envolvidas no esquema apurado na “Operação Compliance Zero”.",
+   "pagina": 48,
+   "trecho_fonte": "Em sua representação, a Polícia Federal formulou, ainda, requerimento de suspensão das atividades de empresas diretamente envolvidas no esquema fraudulento instalado no âmbito da “Operação Compliance Zero”.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "alegacao_parte",
+   "texto": "A Polícia Federal sustenta ser necessária a suspensão do funcionamento das pessoas jurídicas de Fabiano Zettel, Ana Claudia, Felipe Mourão e Leonardo Palhares.",
+   "pagina": 49,
+   "trecho_fonte": "se faz necessária a adoção de medidas cautelares visando a completa suspensão do funcionamento das pessoas jurídicas envolvidas na estrutura de lavagem de dinheiro, notadamente, as empresas de FABIANO ZETTEL, ANA CLAUDIA, FELIPE MOURÃO eLEONARDO PALHARES",
+   "atribuida_a": "Polícia Federal",
+   "entidades": [
+    {
+     "nome": "FABIANO ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "ANA CLAUDIA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FELIPE MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LEONARDO PALHARES",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator invoca o princípio da livre iniciativa, previsto no artigo inaugural da Constituição de 1988, e a função social da propriedade do art. 170, IV.",
+   "pagina": 49,
+   "trecho_fonte": "o princípio da livre iniciativa encontra previsão logo no artigo inaugural da Carta de 1988, figurando como um dos fundamentos da nossa República. Por sua vez, o art. 170, IV, do mesmo diploma predica que um dos princípios gerais da atividade econômica é o da função social da propriedade.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma que o raciocínio de evitar a interdição não se aplica quando a pessoa jurídica é criada para agir exclusivamente na prática de ilícitos.",
+   "pagina": 50,
+   "trecho_fonte": "o mesmo raciocínio não deve ser utilizado quando uma pessoa jurídica é criada, não para produzir riqueza e gerar empregos, mas para agir exclusivamente na prática de ilícitos.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator afirma haver robustos indícios de que as pessoas jurídicas listadas na representação foram criadas com intento delitivo, sem indicação de atividades econômicas lícitas.",
+   "pagina": 50,
+   "trecho_fonte": "há robustos indícios de que as pessoas jurídicas listadas na representação policial foram criadas exatamente com esse intento delitivo, não havendo indicação de qualquer elemento que aponte para o real desempenho de atividades econômicas lícitas.",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator, atento ao princípio da proporcionalidade, acolhe o pedido da Polícia Federal de suspensão por tempo indeterminado das atividades das pessoas jurídicas.",
+   "pagina": 50,
+   "trecho_fonte": "atento ao princípio da proporcionalidade, acolho o pedido formulado pela Polícia Federal de suspensão, por tempo indeterminado,",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "A decisão reproduzida fundamenta-se nos artigos 282, 311 e 312 do CPP, para garantia da ordem pública, conveniência da instrução e aplicação da lei penal.",
+   "pagina": 51,
+   "trecho_fonte": "com fundamento nos artigos 282, 311 e 312 do Código de Processo Penal e com alicerce em toda fundamentação acima, para garantia da ordem pública, por conveniência da instrução e para assegurar a futura aplicação da lei penal",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida decretou a prisão preventiva de Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+   "pagina": 51,
+   "trecho_fonte": "acolhendo o pedido da Polícia Federal, DECRETO A PRISÃO PREVENTIVA DOS INVESTIGADOS: (i) DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; (iv) MARILSON ROSENO DA SILVA.",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "MARILSON ROSENO DA SILVA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida determinou a Paulo Sérgio Neves de Souza proibição de contato com testemunhas ou demais investigados e proibição de frequentar ou acessar as dependências do Banco Central.",
+   "pagina": 51,
+   "trecho_fonte": "Em relação ao investigado PAULO SÉRGIO NEVES DE SOUZA, DETERMINO a: (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP); (ii) Proibição de frequentar ou mesmo de acessar",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida determinou a Paulo Sérgio Neves de Souza proibição de ausentar-se do município e do País, com entrega do passaporte em 48 horas, e suspensão do exercício de função pública junto ao Banco Central.",
+   "pagina": 51,
+   "trecho_fonte": "(iii) Proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP); (iv) suspensão do exercício de função pública exercida junto ao Banco Central (art. 319, VI",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida determinou a Belline Santana proibição de contato com testemunhas ou demais investigados e proibição de frequentar ou acessar as dependências do Banco Central.",
+   "pagina": 52,
+   "trecho_fonte": "Em relação ao investigado BELLINE SANTANA, DETERMINO a (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP); (ii) Proibição de frequentar ou mesmo de acessar as",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida determinou a Belline Santana suspensão do exercício de função pública junto ao Banco Central e monitoração eletrônica por tornozeleira.",
+   "pagina": 52,
+   "trecho_fonte": "(iv) suspensão do exercício de função pública exercida junto ao Banco Central (art. 319, VI, do CPP); (vi) monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP). 107.3",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "BELLINE SANTANA",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "Banco Central",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida determinou a Leonardo Augusto Furtado Palhares proibição de contato com testemunhas ou demais investigados e proibição de ausentar-se do município e do País.",
+   "pagina": 52,
+   "trecho_fonte": "Em relação ao investigado LEONARDO AUGUSTO FURTADO PALHARES, DETERMINO a: (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP); (ii) Proibição de ausentar-se do município",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida determinou a Leonardo Augusto Furtado Palhares monitoração eletrônica por tornozeleira (art. 319, IX, do CPP).",
+   "pagina": 52,
+   "trecho_fonte": "(iii) monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP). 107.4 Em relação à investigada ANA CLAUDIA QUEIROZ DE PAIVA, DETERMINO a: (i) Proibição",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+     "tipo": "pessoa"
+    },
+    {
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida determinou a Ana Claudia Queiroz de Paiva proibição de contato com testemunhas ou demais investigados e proibição de ausentar-se do município e do País, com entrega do passaporte em 48 horas.",
+   "pagina": 53,
+   "trecho_fonte": "de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP); (ii) Proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida determinou a Ana Claudia Queiroz de Paiva monitoração eletrônica por tornozeleira (art. 319, IX, do CPP).",
+   "pagina": 53,
+   "trecho_fonte": "(iii) monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP).",
+   "atribuida_a": null,
+   "entidades": []
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A decisão reproduzida deferiu, com base no art. 319, VI, do CPP, a suspensão por tempo indeterminado das atividades das sociedades listadas nas fls. 159-160 e 163 do e-Doc. 1, iniciando pela VARAJO CONSULTORIA.",
+   "pagina": 53,
+   "trecho_fonte": "DEFIRO, outrossim, com alicerce no art. 319, VI, do CPP, o pedido formulado pela Polícia Federal para suspensão, por tempo indeterminado, das atividades das seguintes sociedades empresárias listadas nas fls. 159-160 e 163 do e-Doc. 1: (i) VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "Polícia Federal",
+     "tipo": "orgao_publico"
+    },
+    {
+     "nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "A suspensão de atividades alcança também a MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., a SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A., a KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA. e a KING MOTORS LOCAÇÃO DE VEÍCULOS E PARTICIPAÇÕES LTDA.",
+   "pagina": 53,
+   "trecho_fonte": "(ii) MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., (iii) SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.; (iv) KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.; e (v) KING MOTORS LOCAÇÃO DE VEÍCULOS E PARTICIPAÇÕES LTDA.”",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.",
+     "tipo": "organizacao"
+    },
+    {
+     "nome": "KING MOTORS LOCAÇÃO DE VEÍCULOS E PARTICIPAÇÕES LTDA.",
+     "tipo": "organizacao"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fundamento_decisorio",
+   "texto": "O relator vota pelo referendo à medida cautelar, excetuado o comando destinado a Luiz Phillipi Machado de Moraes Mourão, em razão de seu falecimento.",
+   "pagina": 53,
+   "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, porque veio a falecer, ocasionando a superveniente perda da eficácia da decisão",
+   "atribuida_a": "Ministro André Mendonça",
+   "entidades": [
+    {
+     "nome": "Luiz Phillipi Machado de Moraes Mourão",
+     "tipo": "pessoa"
+    }
+   ]
+  },
+  {
+   "tipo_epistemico": "fato_processual",
+   "texto": "O voto é subscrito pelo Ministro André Mendonça.",
+   "pagina": 53,
+   "trecho_fonte": "É como voto. Ministro ANDRÉ MENDOÇA",
+   "atribuida_a": null,
+   "entidades": [
+    {
+     "nome": "ANDRÉ MENDOÇA",
+     "tipo": "ministro"
+    }
+   ]
+  }
+ ],
+ "observacoes": null
+}

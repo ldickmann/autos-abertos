@@ -1,0 +1,26 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Gerência de Processos Originários Criminais certificou a retificação da autuação para incluir os novos advogados do Requerido, nos termos da Petição n. 107087/2026, em 8 de setembro de 2026.",
+      "pagina": 1,
+      "trecho_fonte": "Certifico que retifiquei a autuação para incluir os novos advogados do Requerido, nos termos da Petição n. 107087/2026 (e-doc 85 a 88, ID ebc87a2c, 127b6b67, 2e881777, 7f265061).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Gerência de Processos Originários Criminais", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Gerência de Processos Originários Criminais certificou que não foi possível incluir o advogado Luiz Rennó Netto, por inconsistência do número da OAB/MG fornecido.",
+      "pagina": 1,
+      "trecho_fonte": "Certifico que não foi possível incluir o advogado Luiz Rennó Netto, por inconsistência do número da OAB/MG fornecido.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Gerência de Processos Originários Criminais", "tipo": "orgao_publico"},
+        {"nome": "Luiz Rennó Netto", "tipo": "advogado"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

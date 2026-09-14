@@ -1,0 +1,23 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Rcl 88121 foi autuada em 28/11/2025 às 13:34:17, com assunto Direito Processual Penal, Medidas Assecuratórias, Busca e Apreensão de Bens, e Investigação Penal.",
+      "pagina": 1,
+      "trecho_fonte": "Data de autuação: 28/11/2025 às 13:34:17 Outros Dados: Folhas: Não informado. Volumes: Não informado. Apensos: Não informado. Assunto: DIREITO PROCESSUAL PENAL | Medidas Assecuratórias | Busca e Apreensão de Bens, DIREITO PROCESSUAL PENAL | Investigação Penal",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os autos foram distribuídos ao Ministro Dias Toffoli, com característica de distribuição Comum, em 28/11/2025.",
+      "pagina": 1,
+      "trecho_fonte": "Certifico, para os devidos fins, que estes autos foram distribuídos ao Senhor MIN. DIAS TOFFOLI, com a adoção dos seguintes parâmetros: Característica da distribuição: Comum",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. DIAS TOFFOLI", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

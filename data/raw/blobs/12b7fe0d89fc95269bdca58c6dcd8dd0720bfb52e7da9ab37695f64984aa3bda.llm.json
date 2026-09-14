@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "nova prorrogação do prazo para conclusão das investigações por mais 60 (sessenta) dias",
+      "quem_pediu": "autoridade policial",
+      "resultado": "deferido",
+      "decisao": "deferiu a prorrogação do prazo por mais 60 (sessenta) dias",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-16",
+      "pagina": 1,
+      "trecho_fonte": "considero que as razões apontadas para prorrogação, por mais 60 (sessenta) dias, devem ser deferidas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimação da Procuradoria-Geral da República e publicação",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da Procuradoria-Geral da República e a publicação",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-16",
+      "pagina": 1,
+      "trecho_fonte": "Intime-se a Procuradoria-Geral da República. Publique-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

@@ -1,0 +1,183 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Polícia Federal formulou requerimento por meio do Ofício nº 29V/2026 – CINQ/CGRC/DICOR/PF (e.Doc. 33).",
+      "pagina": 1,
+      "trecho_fonte": "Trata-se de requerimento formulado pela Polícia Federal (Ofício nº 29V/2026 – CINQ/CGRC/DICOR/PF)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal noticia o cumprimento de mandados de prisão preventiva com recolhimento inicial nas dependências da PF.",
+      "pagina": 1,
+      "trecho_fonte": "noticia o cumprimento de mandados de prisão preventiva com recolhimento inicial nas dependências da PF",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal expõe que as Superintendências Regionais dispõem, em regra, de Unidades de Trânsito de Presos (UTP), destinadas à custódia transitória e de curtíssima duração, voltadas à formalização dos atos cartorários decorrentes do cumprimento das ordens judiciais.",
+      "pagina": 1,
+      "trecho_fonte": "expõe que as Superintendências Regionais dispõem, em regra, de Unidades de Trânsito de Presos (UTP), destinadas à custódia transitória e de curtíssima duração, voltadas à formalização dos atos cartorários decorrentes do cumprimento das ordens judiciais",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal alega que as Unidades de Trânsito de Presos não possuem estrutura compatível para manutenção prolongada, inclusive por ausência de aparato funcional especializado e de rotinas próprias de estabelecimento prisional.",
+      "pagina": 1,
+      "trecho_fonte": "Alega, em síntese, que tais instalações não possuem estrutura compatível para manutenção prolongada, inclusive por ausência de aparato funcional especializado e de rotinas próprias de estabelecimento",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal alega que a permanência prolongada de presos na PF impacta as atividades de polícia judiciária e incrementa riscos de segurança institucional.",
+      "pagina": 2,
+      "trecho_fonte": "bem como que a permanência prolongada de presos na PF impacta as atividades de polícia judiciária e incrementa riscos de segurança institucional.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer autorização para que, após a conclusão dos atos cartorários, os custodiados sejam conduzidos diretamente ao sistema penitenciário estadual, onde permanecerão à disposição do Supremo Tribunal Federal, cabendo ao sistema prisional prover estrutura de custódia e escoltas.",
+      "pagina": 2,
+      "trecho_fonte": "requer autorização para que, após a conclusão dos atos cartorários, os custodiados sejam conduzidos diretamente ao sistema penitenciário estadual, onde permanecerão à disposição deste Supremo Tribunal Federal, cabendo ao sistema prisional prover estrutura de custódia e escoltas",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que as UTPs descritas nos autos são estruturas de trânsito, concebidas para custódia breve, não se prestando, conforme narrado, à manutenção prolongada, por limitações estruturais e operacionais.",
+      "pagina": 2,
+      "trecho_fonte": "As UTPs descritas nos autos são estruturas de trânsito, concebidas para custódia breve, compatível com a execução dos atos administrativos e cartorários do cumprimento do mandado, não se prestando — conforme narrado — à manutenção prolongada, por limitações estruturais e operacionais.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a permanência prolongada de custodiados em unidades da Polícia Federal, além de desviar efetivo para guarda e vigilância, pode comprometer a atividade-fim de polícia judiciária e elevar riscos de segurança.",
+      "pagina": 2,
+      "trecho_fonte": "A permanência prolongada de custodiados em unidades da Polícia Federal, além de desviar efetivo para guarda e vigilância, pode comprometer a atividade-fim de polícia judiciária e elevar riscos de segurança, especialmente em unidades com grande circulação de público.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que há arranjos de cooperação/convênios para absorção de presos à disposição da Justiça Federal no sistema penitenciário estadual, à luz do art. 85 da Lei nº 5.010/1966, dos arts. 82 e 102 da Lei nº 7.210/1984 e de resoluções do CNJ.",
+      "pagina": 2,
+      "trecho_fonte": "Consta, ainda, que há arranjos de cooperação/convênios para absorção de presos à disposição da Justiça Federal no sistema penitenciário estadual, à luz do art. 85 da Lei nº 5.010/1966, dos arts. 82 e 102 da Lei nº 7.210/1984 e de resoluções do CNJ.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "CNJ", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que a decisão que decretou as prisões preventivas não teria imposto, de modo expresso, custódia contínua nas dependências da PF, limitando-se à segregação cautelar e à apresentação em audiência de custódia.",
+      "pagina": 2,
+      "trecho_fonte": "a decisão que decretou as prisões preventivas não teria imposto, de modo expresso, custódia contínua nas dependências da PF, limitando-se à segregação cautelar e à apresentação em audiência de custódia",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a indicação de recolhimento na PF constante dos mandados não impede a gestão operacional após a formalização.",
+      "pagina": 3,
+      "trecho_fonte": "constando dos mandados, sem impedir gestão operacional após a formalização.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende ser operacional e institucionalmente mais adequado que a custódia seja realizada em estabelecimento prisional com infraestrutura e pessoal especializado, sendo cabível o acolhimento do pleito.",
+      "pagina": 3,
+      "trecho_fonte": "revelando-se operacional e institucionalmente mais adequado que a custódia seja realizada em estabelecimento prisional com infraestrutura e pessoal especializado, é cabível o acolhimento do pleito.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pedido da Polícia Federal para autorizar que, após a conclusão dos atos cartorários relativos ao cumprimento das prisões, os custodiados sejam conduzidos ao sistema penitenciário estadual, onde permanecerão à disposição do Supremo Tribunal Federal.",
+      "pagina": 3,
+      "trecho_fonte": "DEFIRO o pedido formulado pela Polícia Federal para autorizar que, após a conclusão dos atos cartorários relativos ao cumprimento das prisões, os custodiados sejam, como ordinariamente se tem feito, conduzidos ao sistema penitenciário estadual",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão atribuiu ao respectivo sistema prisional prover a estrutura necessária à custódia e às escoltas para audiências (presenciais ou por videoconferência), atendimentos médicos e demais deslocamentos necessários.",
+      "pagina": 3,
+      "trecho_fonte": "cabendo ao respectivo sistema prisional prover a estrutura necessária à custódia e às escoltas para audiências (presenciais ou por videoconferência), atendimentos médicos e demais deslocamentos necessários.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação, com urgência, à autoridade policial responsável pelo cumprimento e às autoridades administrativas competentes para a execução.",
+      "pagina": 3,
+      "trecho_fonte": "Comunique-se, com urgência, à autoridade policial responsável pelo cumprimento e às autoridades administrativas competentes para a execução.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a publicação da decisão.",
+      "pagina": 3,
+      "trecho_fonte": "Publique-se.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 4 de março de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 4 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

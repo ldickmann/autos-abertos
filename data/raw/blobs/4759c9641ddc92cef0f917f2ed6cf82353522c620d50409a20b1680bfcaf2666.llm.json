@@ -1,0 +1,146 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal, na pessoa de seu Presidente, Senador Renan Calheiros, apresentou a Petição nº 20235/2026 (e-Doc. 353).",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se da Petição nº 20235/2026 (e-Doc. 353) por meio da qual a Comissão de Assuntos Econômicos do Senado Federal, na pessoa do seu Presidente, Senador Renan Calheiros, requer",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Senador Renan Calheiros", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal requer autorização para a apresentação do investigado Daniel Bueno Vorcaro, a fim de prestar depoimento perante a Comissão no dia 10/03/2026 às 11h00, na sala da CAE, no Senado Federal, em Brasília/DF.",
+      "pagina": 2,
+      "trecho_fonte": "requer autorização para a apresentação do investigado DANIEL BUENO VORCARO, a fim de prestar depoimento perante a Comissão no dia 10/03/2026 às 11h00, na sala da CAE, junto ao Senado Federal, em Brasília/DF.",
+      "atribuida_a": "Comissão de Assuntos Econômicos do Senado Federal",
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Semelhante requerimento havia sido formulado em 13 de fevereiro de 2026 para o comparecimento de Daniel Bueno Vorcaro na Comissão de Assuntos Econômicos em 24 de fevereiro de 2026 (e-Doc. 310).",
+      "pagina": 2,
+      "trecho_fonte": "Semelhante requerimento havia sido formulado em 13 de fevereiro de 2026 para o comparecimento do mesmo investigado na acima referida Comissão em 24 de fevereiro de 2026 (e-Doc. 310).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O pedido anterior fora apreciado nos autos por decisão de 19 de fevereiro de 2026 (e.Doc. 323).",
+      "pagina": 2,
+      "trecho_fonte": "O pedido anterior fora apreciado nestes autos por decisão de 19 de fevereiro do corrente ano (e.Doc. 323).",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator fundamenta a decisão na similitude dos requerimentos formulados pela Comissão de Assuntos Econômicos do Senado Federal nos e-Docs. 310 e 353.",
+      "pagina": 3,
+      "trecho_fonte": "Comissão de Assuntos Econômicos do Senado Federal nos e-Docs. 310 e 353, DETERMINO a extensão de todos os efeitos do provimento judicial de 19 de fevereiro de 2026 (e-Doc 323)",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a extensão de todos os efeitos do provimento judicial de 19 de fevereiro de 2026 (e-Doc 323) à convocação do investigado Daniel Bueno Vorcaro para a sessão da CAE designada para o dia 10/03/2026 às 11h00.",
+      "pagina": 3,
+      "trecho_fonte": "DETERMINO a extensão de todos os efeitos do provimento judicial de 19 de fevereiro de 2026 (e-Doc 323) a fim de que a citada decisão também produza efeitos em relação à convocação do investigado DANIEL BUENO VORCARO para a sessão da CAE designada para o dia 10/03/2026 às 11h00.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "CAE", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação, com a máxima urgência e com remessa de cópia integral da decisão e daquela do e-Doc. 323, à Presidência da Comissão de Assuntos Econômicos do Senado Federal, às defesas constituídas e à Polícia Federal, para as providências necessárias ao eventual deslocamento do investigado ao Senado Federal.",
+      "pagina": 3,
+      "trecho_fonte": "comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão e daquela contida no e-Doc. 323, a Presidência da Comissão de Assuntos Econômicos do Senado Federal, as defesas constituídas e a Polícia Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão condicionou qualquer transferência do investigado à sua prévia manifestação expressa, formal e inequívoca, quanto à opção positiva pelo comparecimento.",
+      "pagina": 3,
+      "trecho_fonte": "ficando, todavia, qualquer transferência condicionada à prévia manifestação expressa do investigado, formal e inequívoca quanto à sua opção positiva pelo comparecimento.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator reiterou a determinação para que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com escolta policial, vedado o deslocamento em aeronave particular.",
+      "pagina": 3,
+      "trecho_fonte": "Reitera-se expressamente a determinação para que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com segurança e vigilância contínua policial por meio de escolta apropriada",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão esclareceu a garantia, em favor do investigado, de se fazer acompanhar por advogado devidamente constituído durante o translado e por ocasião da oitiva na CAE.",
+      "pagina": 3,
+      "trecho_fonte": "Esclarece-se, por oportuno, a garantia, em favor do investigado, de se fazer acompanhar por advogado devidamente constituído durante o translado em questão, bem como por ocasião da realização da sua oitiva na CAE.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CAE", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o encaminhamento à Secretaria Judiciária para as diligências necessárias, com intimação e publicação.",
+      "pagina": 3,
+      "trecho_fonte": "À Secretaria Judiciária para as diligências necessárias. Intimem-se. Publique-se.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 26 de fevereiro de 2026.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 26 de fevereiro de 2026.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi assinada pelo Ministro André Mendonça, relator.",
+      "pagina": 4,
+      "trecho_fonte": "Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

@@ -1,0 +1,51 @@
+{
+  "itens": [
+    {
+      "pedido": "recebimento da petição como tutela incidental de urgência ou habeas corpus preventivo, com expedição de salvo-conduto para que os requerentes não sejam obrigados a comparecer à oitiva designada pela CPI do Crime Organizado, sem que o não comparecimento enseje responsabilização ou presunção desfavorável",
+      "quem_pediu": "José Eugênio Dias Toffoli e José Carlos Dias Toffoli (Petição nº 20501/2026)",
+      "resultado": "deferido",
+      "decisao": "deferiu o pleito para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo dos requerentes a decisão de comparecer ou não à CPI do Crime Organizado; a decisão serve como salvo-conduto",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pleito formulado na Petição nº 20501/2026 (e-Doc. 355), para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo dos requerentes a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "condicoes": [
+        "serve a decisão como salvo-conduto"
+      ]
+    },
+    {
+      "pedido": "garantia, caso os requerentes optem por comparecer ao ato, dos direitos ao silêncio, à assistência por advogado, de não serem submetidos ao compromisso de dizer a verdade e de não sofrerem constrangimentos físicos ou morais",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "deferido",
+      "decisao": "assegurou aos convocados, na hipótese de comparecimento, o direito ao silêncio, à assistência por advogado durante o ato, de não serem submetidos ao compromisso de dizer a verdade ou subscrever termos com esse conteúdo e de não sofrerem constrangimentos físicos ou morais",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 5,
+      "trecho_fonte": "asseguro-lhes, nos termos da jurisprudência consolidada desta Corte, o direito: a) ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas; b) à assistência por advogado durante o ato;",
+      "condicoes": []
+    },
+    {
+      "pedido": "comunicação da decisão, com cópia integral, à Presidência da CPI do Crime Organizado e às defesas constituídas",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com a máxima urgência e remessa de cópia integral da decisão, à Presidência da CPI do Crime Organizado e às defesas constituídas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 6,
+      "trecho_fonte": "Comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI do Crime Organizado e as defesas constituídas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência à Procuradoria-Geral da República e publicidade da decisão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República e publicidade à decisão",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-26",
+      "pagina": 6,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria-Geral da República. 14. Dê-se publicidade à presente decisão.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "A petição pedia também que o não comparecimento não gerasse responsabilização ou presunção desfavorável; o dispositivo não se pronuncia expressamente sobre esse ponto."
+}

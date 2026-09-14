@@ -1,0 +1,33 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os autos da Pet 15556 foram autuados em 27/02/2026 às 16:32:19, com assunto Direito Processual Penal, Prisão Preventiva.",
+      "pagina": 1,
+      "trecho_fonte": "Data de autuação: 27/02/2026 às 16:32:19 Outros Dados: Folhas: Não informado. Volumes: Não informado. Apensos: Não informado. Assunto: DIREITO PROCESSUAL PENAL | Prisão Preventiva",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "SUPREMO TRIBUNAL FEDERAL", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os autos foram distribuídos ao Ministro André Mendonça, com característica de distribuição Prevenção Relator/Sucessor, tendo como processo justificador o Inq 5026, em 27/02/2026.",
+      "pagina": 2,
+      "trecho_fonte": "Certifico, para os devidos fins, que estes autos foram distribuídos ao Senhor MIN. ANDRÉ MENDONÇA, com a adoção dos seguintes parâmetros: Característica da distribuição: Prevenção Relator/Sucessor Processo Justificador: Inq 5026",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Constam como processos relacionados à distribuição o Inq 5035, a Pet 15504, a Pet 15499 e a Pet 15198.",
+      "pagina": 2,
+      "trecho_fonte": "Processo(s) Relacionado(s): Inq 5035, Pet 15504, Pet 15499, Pet 15198",
+      "atribuida_a": null,
+      "entidades": []
+    }
+  ],
+  "observacoes": null
+}

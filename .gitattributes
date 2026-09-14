@@ -6,3 +6,7 @@ recon/certs/** -text
 *.crt binary
 *.pdf binary
 *.sqlite binary
+# originais coletados e registros de coleta: bytes exatos (o sha256 depende disso), sem conversão de fim de linha
+data/raw/** -text
+data/raw/blobs/*.pdf binary
+data/raw/blobs/*.rtf binary

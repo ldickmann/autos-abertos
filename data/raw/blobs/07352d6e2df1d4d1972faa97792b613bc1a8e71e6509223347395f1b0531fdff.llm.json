@@ -1,0 +1,259 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Controladoria-Geral da União encaminhou ao relator, via correspondência eletrônica, o Ofício nº 3848/2026/SIPRI/CGU, vinculado ao processo SEI nº 40096330.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de ofício encaminhado pela Controladoria-Geral da União – CGU (nº 3848/2026/SIPRI/CGU, vinculado ao processo SEI nº 40096330) a este relator, via correspondência eletrônica, que acompanha esta decisão",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Controladoria-Geral da União – CGU", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CGU busca o compartilhamento de elementos informativos de processos judiciais relacionados à “Operação Compliance Zero”, com vistas à instrução de investigações preliminares, sindicâncias patrimoniais e eventual instauração de PAR e PAD.",
+      "pagina": 2,
+      "trecho_fonte": "se busca o compartilhamento de elementos informativos constantes de processos judiciais relacionados à denominada “Operação Compliance Zero”, com vistas à instrução de investigações preliminares, sindicâncias patrimoniais e eventual instauração de Processo Administrativo de Responsabilização (PAR)",
+      "atribuida_a": "Controladoria-Geral da União (CGU)",
+      "entidades": [
+        {"nome": "Controladoria-Geral da União – CGU", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O pedido da CGU refere-se aos agentes públicos PAULO SÉRGIO NEVES DE SOUZA e BELLINE SANTANA e a pessoas jurídicas, entre elas VARAJO CONSULTORIA EMPRESARIAL.",
+      "pagina": 2,
+      "trecho_fonte": "referente aos agentes públicos PAULO SÉRGIO NEVES DE SOUZA e BELLINE SANTANA e das pessoas jurídicas VARAJO CONSULTORIA EMPRESARIAL",
+      "atribuida_a": "Controladoria-Geral da União (CGU)",
+      "entidades": [
+        {"nome": "PAULO SÉRGIO NEVES DE SOUZA", "tipo": "pessoa"},
+        {"nome": "BELLINE SANTANA", "tipo": "pessoa"},
+        {"nome": "Controladoria-Geral da União – CGU", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O pedido da CGU refere-se também às pessoas jurídicas MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A., KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA. e KING MOTORS LOCAÇÃO DE VEÍCULOS e PARTICIPAÇÕES LTDA.",
+      "pagina": 3,
+      "trecho_fonte": "SOCIEDADE UNIPESSOAL LTDA, MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.; KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA., KING MOTORS LOCAÇÃO DE VEÍCULOS e PARTICIPAÇÕES LTDA.",
+      "atribuida_a": "Controladoria-Geral da União (CGU)",
+      "entidades": [
+        {"nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.", "tipo": "organizacao"},
+        {"nome": "SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.", "tipo": "organizacao"},
+        {"nome": "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.", "tipo": "organizacao"},
+        {"nome": "KING MOTORS LOCAÇÃO DE VEÍCULOS e PARTICIPAÇÕES LTDA.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A requerente sustenta que os dados postulados são imprescindíveis à apuração de indícios de autoria e materialidade de ilícitos administrativos atribuídos a agentes públicos e pessoas jurídicas, ressaltando sua competência legal para atuação correcional.",
+      "pagina": 3,
+      "trecho_fonte": "A requerente sustenta que os dados postulados são imprescindíveis à adequada apuração de indícios de autoria e materialidade de ilícitos administrativos atribuídos a agentes públicos e pessoas jurídicas, ressaltando sua competência legal para atuação correcional.",
+      "atribuida_a": "Controladoria-Geral da União (CGU)",
+      "entidades": [
+        {"nome": "Controladoria-Geral da União – CGU", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a jurisprudência do STF admite o compartilhamento de elementos informativos entre as esferas penal e administrativa, desde que presentes pertinência temática, finalidade legítima e preservação do regime de sigilo.",
+      "pagina": 3,
+      "trecho_fonte": "A jurisprudência desta Suprema Corte consolidou entendimento no sentido da admissibilidade do compartilhamento de elementos informativos entre as esferas penal e administrativa, desde que presentes (i) pertinência temática, (ii) finalidade legítima e (iii) preservação do regime de sigilo",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca precedente segundo o qual o compartilhamento de elementos de informação é amplamente admitido pela jurisprudência do STF quando presente motivação razoável.",
+      "pagina": 4,
+      "trecho_fonte": "2. O compartilhamento de elementos de informação é amplamente admitido pela jurisprudência desta Corte quando presente motivação razoável para autorizar a pretensão. Precedentes.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o precedente Pet 6138 AgR-terceiro-AgR, Segunda Turma, relator Edson Fachin, julgado em 26/06/2023.",
+      "pagina": 4,
+      "trecho_fonte": "(Pet 6138 AgR-terceiro-AgR, Segunda Turma, Rel. Edson Fachin,j.26/06/2023,p.04/09/2023)",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Edson Fachin", "tipo": "ministro"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita precedente segundo o qual dados obtidos em interceptação telefônica e escutas ambientais judicialmente autorizadas para investigação criminal podem ser usados em procedimento administrativo disciplinar.",
+      "pagina": 4,
+      "trecho_fonte": "Dados obtidos em interceptação de comunicações telefônicas e em escutas ambientais, judicialmente autorizadas para produção de prova em investigação criminal ou em instrução processual penal, podem ser usados em procedimento",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o precedente Inq 2424 QO, Tribunal Pleno, relator Cezar Peluso, julgado em 25/04/2007.",
+      "pagina": 5,
+      "trecho_fonte": "(Inq 2424 QO, TribunalPleno,Rel.CezarPeluso,j.25/04/2007,p.24/08/2007)",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Cezar Peluso", "tipo": "ministro"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera o pleito da CGU juridicamente adequado e compatível com a orientação do Tribunal e com precedentes que admitem prova emprestada em procedimentos administrativos, inclusive oriunda de investigação criminal.",
+      "pagina": 5,
+      "trecho_fonte": "No caso concreto, o pleito formulado pela CGU revela-se juridicamente adequado e compatível com a orientação firmada por este Tribunal, bem como com precedentes que admitem a utilização de prova emprestada em procedimentos administrativos",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "CGU", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que a Controladoria-Geral da União se comprometeu expressamente a resguardar o regime de confidencialidade dos dados compartilhados, o que reforça a adequação e a proporcionalidade da medida.",
+      "pagina": 5,
+      "trecho_fonte": "verifica-se que a Controladoria-Geral da União expressamente se comprometeu a resguardar o regime de confidencialidade dos dados eventualmente compartilhados, circunstância que reforça a adequação e a proporcionalidade da medida ora analisada.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Controladoria-Geral da União", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende legítimo o deferimento do compartilhamento requerido, desde que observados os limites subjetivos e objetivos pertinentes.",
+      "pagina": 5,
+      "trecho_fonte": "mostra-se legítimo o deferimento do compartilhamento requerido, desde que observados os limites subjetivos e objetivos pertinentes.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator determina que o compartilhamento autorizado observe rigorosamente a Lei nº 13.709/2018, especialmente os princípios da finalidade, adequação, necessidade e segurança.",
+      "pagina": 5,
+      "trecho_fonte": "Destaco que o compartilhamento ora autorizado deverá observar, de forma rigorosa, as disposições da Lei nº 13.709/2018, especialmente os princípios da finalidade, adequação, necessidade e segurança",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator defere o pedido formulado no ofício da CGU.",
+      "pagina": 5,
+      "trecho_fonte": "8. Ante o exposto, DEFIRO o pedido formulado no Ofício nº",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determina o compartilhamento dos elementos informativos que guardem pertinência com os fatos e pessoas dos processos judiciais relacionados à Operação Compliance Zero, em atenção ao Ofício nº 3848/2026/SIPRI/CGU (SEI nº 4009633).",
+      "pagina": 6,
+      "trecho_fonte": "3848/2026/SIPRI/CGU (SEI nº 4009633), para determinar o compartilhamento dos elementos informativos, que guardem pertinência com os fatos e pessoas constantes dos processos judiciais relacionados à Operação Compliance Zero",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O compartilhamento determinado refere-se em especial aos agentes públicos PAULO SÉRGIO NEVES DE SOUZA e BELLINE SANTANA e às pessoas jurídicas VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA, MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA. e SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.",
+      "pagina": 6,
+      "trecho_fonte": "em especial no tocante aos agentes públicos PAULO SÉRGIO NEVES DE SOUZA e BELLINE SANTANA e às pessoas jurídicas VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA, MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.;",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "PAULO SÉRGIO NEVES DE SOUZA", "tipo": "pessoa"},
+        {"nome": "BELLINE SANTANA", "tipo": "pessoa"},
+        {"nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA", "tipo": "organizacao"},
+        {"nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.", "tipo": "organizacao"},
+        {"nome": "SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O compartilhamento determinado refere-se também às pessoas jurídicas KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA. e KING MOTORS LOCAÇÃO DE VEÍCULOS e PARTICIPAÇÕES LTDA.",
+      "pagina": 6,
+      "trecho_fonte": "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.,KING MOTORS LOCAÇÃO DE VEÍCULOS e PARTICIPAÇÕES LTDA, devendo a utilização de tal compartilhamento observar delimitação estrita quanto ao seu objeto e finalidade",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.", "tipo": "organizacao"},
+        {"nome": "KING MOTORS LOCAÇÃO DE VEÍCULOS e PARTICIPAÇÕES LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determina que a utilização do compartilhamento observe delimitação estrita quanto ao seu objeto e finalidade, vedada qualquer utilização diversa da autorizada.",
+      "pagina": 6,
+      "trecho_fonte": "devendo a utilização de tal compartilhamento observar delimitação estrita quanto ao seu objeto e finalidade, vedada qualquer utilização diversa da ora autorizada.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determina que o compartilhamento observe delimitação estrita quanto às pessoas físicas, jurídicas e aos fatos investigados, vedada utilização diversa da finalidade autorizada.",
+      "pagina": 6,
+      "trecho_fonte": "9. O compartilhamento deverá observar delimitação estrita quanto às pessoas físicas, jurídicas e aos fatos investigados, vedada qualquer utilização diversa da finalidade ora autorizada.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determina à Secretaria Judiciária a juntada do ofício referido na decisão e a adoção das providências cabíveis, inclusive quanto à forma segura de disponibilização dos dados.",
+      "pagina": 6,
+      "trecho_fonte": "10. À Secretaria Judiciária para proceder a juntada do Ofício referido na presente decisão; e adotar as providências cabíveis, inclusive quanto à forma segura de disponibilização dos dados.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determina que se dê ciência à Procuradoria-Geral da República.",
+      "pagina": 6,
+      "trecho_fonte": "11. Dê-se ciência à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi assinada em Brasília, em 24 de julho de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 6,
+      "trecho_fonte": "Brasília, 24 de julho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Partes, advogados e autoridade policial constam como \"SOB SIGILO\" no cabeçalho (páginas 1 e 2)."
+}

@@ -1,0 +1,49 @@
+{
+  "itens": [
+    {
+      "pedido": "revogação integral das medidas cautelares assecuratórias patrimoniais impostas a Felipe Cançado Vorcaro",
+      "quem_pediu": "defesa de Felipe Cançado Vorcaro (e-Doc. 500)",
+      "resultado": "indeferido",
+      "decisao": "acolheu o parecer da Procuradoria-Geral da República e indeferiu o pedido de revogação das medidas assecuratórias, mantendo íntegras as medidas anteriormente decretadas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-19",
+      "pagina": 10,
+      "trecho_fonte": "acolho o parecer da Procuradoria-Geral da República para INDEFERIR o pedido de revogação das medidas assecuratórias e a restituição dos bens e valores constritos em desfavor de FELIPE CANÇADO VORCARO, mantendo-se, por ora, hígidas e integrais as medidas assecuratórias anteriormente decretadas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "restituição dos bens de titularidade de Felipe Cançado Vorcaro apreendidos em cumprimento de mandado de busca e apreensão em sua residência",
+      "quem_pediu": "defesa de Felipe Cançado Vorcaro (e-Doc. 500)",
+      "resultado": "indeferido",
+      "decisao": "indeferiu o pedido de restituição dos bens e valores constritos",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-19",
+      "pagina": 10,
+      "trecho_fonte": "INDEFERIR o pedido de revogação das medidas assecuratórias e a restituição dos bens e valores constritos em desfavor de FELIPE CANÇADO VORCARO",
+      "condicoes": []
+    },
+    {
+      "pedido": "subsidiariamente, limitação das constrições patrimoniais ao montante de R$ 1.604.420,41",
+      "quem_pediu": "defesa de Felipe Cançado Vorcaro (e-Doc. 500)",
+      "resultado": "indeferido",
+      "decisao": "manteve íntegras as medidas assecuratórias anteriormente decretadas, sem limitação do montante",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-19",
+      "pagina": 10,
+      "trecho_fonte": "mantendo-se, por ora, hígidas e integrais as medidas assecuratórias anteriormente decretadas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimação da defesa e ciência à Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da defesa e ciência à Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-19",
+      "pagina": 10,
+      "trecho_fonte": "Intime-se a defesa. 22. Dê-se ciência à Procuradoria-Geral da República.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O pedido subsidiário de limitação do montante não é mencionado nominalmente no dispositivo; o resultado decorre da manutenção integral das medidas declarada no item 20."
+}

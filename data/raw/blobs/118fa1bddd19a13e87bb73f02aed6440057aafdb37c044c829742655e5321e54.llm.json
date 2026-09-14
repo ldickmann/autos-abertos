@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "nova prorrogação do prazo do inquérito para a realização de diligências",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "deferiu o pedido e prorrogou o inquérito por mais 60 (sessenta) dias",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-18",
+      "pagina": 2,
+      "trecho_fonte": "2. Considerando-se as razões apresentadas pela autoridade de polícia judiciária federal no e-Doc. 524, defiro o pedido, prorrogando o inquérito por mais 60 (sessenta) dias.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimação da Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-18",
+      "pagina": 2,
+      "trecho_fonte": "Intime-se a Procuradoria-Geral da República. Publique-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

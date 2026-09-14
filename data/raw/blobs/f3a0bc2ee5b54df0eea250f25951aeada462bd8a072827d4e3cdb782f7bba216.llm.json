@@ -1,0 +1,15 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Gerência de Processos Originários Criminais certificou a retificação da autuação dos autos em observância à petição nº 99642/2026, em 13 de agosto de 2026.",
+      "pagina": 1,
+      "trecho_fonte": "Certifico que retifiquei a autuação destes autos em observância à petição nº 99642/2026 (ID 9d655f54).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Gerência de Processos Originários Criminais", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

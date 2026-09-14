@@ -1,0 +1,53 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A autoridade policial veiculou informação nos autos, registrada como e-Doc. 444.",
+      "pagina": 2,
+      "trecho_fonte": "informação veiculada pela autoridade policial no e-Doc. 444",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator fundamenta a autorização de acesso no teor da informação veiculada pela autoridade policial no e-Doc. 444.",
+      "pagina": 2,
+      "trecho_fonte": "Considerando o teor da informação veiculada pela autoridade policial no e-Doc. 444, autorizo o acesso",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 5 de março de 2026, o relator autorizou o acesso, pela defesa, aos dados telemáticos referidos no e-Doc. 444.",
+      "pagina": 2,
+      "trecho_fonte": "autorizo o acesso, pela defesa, aos dados telemáticos lá referidos.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 5 de março de 2026, pelo Ministro André Mendonça.",
+      "pagina": 2,
+      "trecho_fonte": "Int. Brasília, 5 de março de 2026. Ministro ANDRÉMENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; a página 3 contém apenas o fecho da assinatura (\"Relator\")."
+}

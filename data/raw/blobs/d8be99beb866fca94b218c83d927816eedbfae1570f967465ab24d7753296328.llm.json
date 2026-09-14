@@ -1,0 +1,53 @@
+{
+  "itens": [
+    {
+      "pedido": "vedação de acesso ao material armazenado na Sala-cofre da CPMI-INSS referente aos equipamentos e documentos apreendidos do investigado DANIEL BUENO VORCARO",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou, com efeitos imediatos, que ninguém tenha acesso ao material armazenado na Sala-cofre da CPMI-INSS referente aos equipamentos e documentos apreendidos do investigado DANIEL BUENO VORCARO",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-16",
+      "pagina": 1,
+      "trecho_fonte": "DETERMINO, com efeitos imediatos, que ninguém tenha acesso ao material armazenado na Sala-cofre da CPMI-INSS referente aos equipamentos e documentos apreendidos do investigado DANIEL BUENO VORCARO.",
+      "condicoes": [
+        "com efeitos imediatos"
+      ]
+    },
+    {
+      "pedido": "retirada, pela Polícia Federal em colaboração com a Presidência da CPMI-INSS, dos equipamentos armazenados na Sala-cofre para nova separação dos dados",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que a Polícia Federal, em colaboração interinstitucional com a Presidência da CPMI-INSS, retire todos os equipamentos armazenados no local para realizar nova separação dos dados, de modo que conteúdo relativo exclusivamente à vida privada do investigado não seja compartilhado com a Comissão Parlamentar",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-16",
+      "pagina": 1,
+      "trecho_fonte": "2. A Polícia Federal deverá, em colaboração interinstitucional com a Presidência da CPMI-INSS, retirar todos os equipamentos que estão armazenados no referido local para realizar uma nova e detida separação dos dados existentes",
+      "condicoes": [
+        "eventual conteúdo que diga respeito exclusivamente à vida privada do citado investigado não seja compartilhado com a referida Comissão Parlamentar"
+      ]
+    },
+    {
+      "pedido": "intimação, com urgência, da Polícia Federal, da Presidência da CPMI-INSS e da defesa do investigado DANIEL BUENO VORCARO",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação, com extrema urgência, da Polícia Federal, da Presidência da CPMI-INSS e da defesa do investigado DANIEL BUENO VORCARO",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-16",
+      "pagina": 1,
+      "trecho_fonte": "3. Intimem-se, COM EXTREMA URGÊNCIA, a Polícia Federal, a Presidência da CPMI-INSS e a defesa do investigado DANIEL BUENO VORCARO.",
+      "condicoes": []
+    },
+    {
+      "pedido": "publicidade da decisão",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se dê publicidade à decisão",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-16",
+      "pagina": 1,
+      "trecho_fonte": "4. Dê-se publicidade à presente decisão.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

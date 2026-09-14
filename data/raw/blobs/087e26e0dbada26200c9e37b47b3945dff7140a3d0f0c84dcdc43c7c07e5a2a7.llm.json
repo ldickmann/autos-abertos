@@ -1,0 +1,311 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal, na pessoa do seu Presidente, Senador Renan Calheiros, apresentou a Petição nº 16015/2026 (e-Doc. 310) nos autos do Inq 5026.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se da Petição nº 16015/2026 (e-Doc. 310) por meio da qual a Comissão de Assuntos Econômicos do Senado Federal, na pessoa do seu Presidente, Senador Renan Calheiros, requer autorização para a apresentação do investigado DANIEL BUENO VORCARO",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Senador Renan Calheiros", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal requer autorização para a apresentação do investigado DANIEL BUENO VORCARO, a fim de prestar depoimento perante a Comissão no dia 24/02/2026, às 10h00, na sala da CAE, no Senado Federal, em Brasília/DF.",
+      "pagina": 2,
+      "trecho_fonte": "requer autorização para a apresentação do investigado DANIEL BUENO VORCARO, a fim de prestar depoimento perante à Comissão no dia 24/02/2026 às 10h00, na sala da CAE, junto ao Senado Federal, em Brasília/DF.",
+      "atribuida_a": "Comissão de Assuntos Econômicos do Senado Federal",
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal sustenta a relevância institucional do depoimento do investigado, diante da gravidade e da repercussão nacional dos fatos relacionados à liquidação do Banco Master.",
+      "pagina": 2,
+      "trecho_fonte": "No expediente, sustenta-se a relevância institucional do depoimento do investigado, porquanto diante da gravidade e da repercussão nacional dos fatos relacionados à liquidação do Banco Master",
+      "atribuida_a": "Comissão de Assuntos Econômicos do Senado Federal",
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Banco Master", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal informa que instituiu, por meio da Instrução Normativa nº 1/2026, Comissão de Senadores destinada ao acompanhamento parlamentar das investigações.",
+      "pagina": 2,
+      "trecho_fonte": "a Comissão de Assuntos Econômicos do Senado Federal instituiu, por meio da Instrução Normativa nº 1/2026, Comissão de Senadores destinada ao acompanhamento parlamentar das investigações",
+      "atribuida_a": "Comissão de Assuntos Econômicos do Senado Federal",
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Comissão de Senadores", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal aduz que foi apresentado o Requerimento nº 22/2026 – CAE, com fundamento no art. 58, § 2º, V, da Constituição da República.",
+      "pagina": 2,
+      "trecho_fonte": "aduz que foi apresentado o Requerimento nº 22/2026 – CAE, com fundamento no art. 58, § 2º, V, da Constituição da",
+      "atribuida_a": "Comissão de Assuntos Econômicos do Senado Federal",
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a Comissão de Assuntos Econômicos do Senado Federal, o Requerimento nº 22/2026 – CAE visa à convocação do investigado Daniel Bueno Vorcaro, acionista majoritário e Presidente do Banco Master, e de Augusto Lima, ex-sócio da instituição, para prestarem esclarecimentos sobre os fatos investigados.",
+      "pagina": 3,
+      "trecho_fonte": "para convocação do investigado, Daniel Bueno Vorcaro, acionista majoritário e Presidente do Banco Master, e do Sr. Augusto Lima, ex-sócio da instituição, a fim de prestarem esclarecimentos sobre os fatos investigados.",
+      "atribuida_a": "Comissão de Assuntos Econômicos do Senado Federal",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Banco Master", "tipo": "organizacao"},
+        {"nome": "Augusto Lima", "tipo": "pessoa"},
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal requer que seja consignado que a custódia do depoente, durante sua permanência nas dependências do Congresso Nacional, ficará sob a responsabilidade da Polícia Legislativa do Senado Federal.",
+      "pagina": 3,
+      "trecho_fonte": "Requer-se que seja consignado que a custódia do depoente, durante sua permanência nas dependências do Congresso Nacional, ficará sob a responsabilidade da Polícia Legislativa do Senado Federal.",
+      "atribuida_a": "Comissão de Assuntos Econômicos do Senado Federal",
+      "entidades": [
+        {"nome": "Congresso Nacional", "tipo": "orgao_publico"},
+        {"nome": "Polícia Legislativa do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão de Assuntos Econômicos do Senado Federal postula a definição das condições logísticas para o deslocamento até Brasília/DF e o retorno ao local de custódia, inclusive quanto ao meio de transporte, admitindo que as despesas sejam suportadas pelo próprio convidado.",
+      "pagina": 3,
+      "trecho_fonte": "a definição das condições logísticas para o deslocamento até Brasília/DF e o subsequente retorno ao local de custódia, inclusive quanto à escolha do meio de transporte reputado adequado, admitindo-se, se assim autorizado, que as despesas correspondentes sejam suportadas pelo próprio convidado",
+      "atribuida_a": "Comissão de Assuntos Econômicos do Senado Federal",
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator refere a atuação independente e colaborativa da Comissão de Assuntos Econômicos do Senado Federal na apuração dos ilícitos revelados pela denominada “Operação Compliance Zero”, notadamente realização de operações irregulares e suposta fraude na venda de carteiras de crédito ao Banco de Brasília (BRB), além da decretação de liquidação extrajudicial pelo Banco Central do Brasil.",
+      "pagina": 3,
+      "trecho_fonte": "na apuração dos graves ilícitos revelados pela denominada “Operação Compliance Zero”, notadamente realização de operações irregulares e suposta fraude na venda de carteiras de crédito ao Banco de Brasília (BRB), além da decretação de liquidação extrajudicial pelo Banco Central do Brasil",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Banco de Brasília (BRB)", "tipo": "organizacao"},
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, consagrada no art. 5º, LXIII, da Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental expressamente consagrado no art. 5º, LXIII, da Constituição da República",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca os julgamentos das ADPFs 395 e 444, de junho de 2018, nos quais o Pleno do Supremo Tribunal Federal declarou a incompatibilidade da condução coercitiva de investigados para interrogatórios com a Constituição da República.",
+      "pagina": 4,
+      "trecho_fonte": "Nos paradigmáticos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno desta Corte declarou a incompatibilidade da condução coercitiva de investigados, para interrogatórios, com a Constituição da República",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca a jurisprudência do Supremo Tribunal Federal segundo a qual o direito do investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, inexistindo obrigatoriedade ou sanção pelo não comparecimento.",
+      "pagina": 4,
+      "trecho_fonte": "há jurisprudência do Supremo Tribunal Federal, no sentido de que o direito de um investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, entendendo, como corolário do brocardo nemo tenetur se detegere, que inexiste obrigatoriedade ou sanção pelo não comparecimento",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita como precedente o HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma, julgado em 28/05/2019 e publicado em 17/08/2020.",
+      "pagina": 4,
+      "trecho_fonte": "(HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma,j.28/05/2019,p.17/08/2020).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Min. Gilmar Mendes", "tipo": "ministro"},
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ter decidido sistematicamente conforme esse entendimento em casos análogos, destacando os julgados no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "pagina": 5,
+      "trecho_fonte": "Tenho sistematicamente decidido conforme esse entendimento em casos análogos, pelo que destaco os julgados recentes no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca a legitimidade do controle jurisdicional exercido pelo Supremo Tribunal Federal mesmo diante dos poderes investigatórios das Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes.",
+      "pagina": 5,
+      "trecho_fonte": "Cumpre destacar, ainda, a legitimidade do controle jurisdicional exercido por esta Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita como precedente o MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno, julgado em 23/03/2006 e publicado em 04/08/2006.",
+      "pagina": 5,
+      "trecho_fonte": "(MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno,j.23/03/2006,p.04/08/2006).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Min. Celso de Mello", "tipo": "ministro"},
+        {"nome": "Tribunal Pleno", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator salienta que não se trata de requisição de Comissão Parlamentar de Inquérito, mas de solicitação dirigida pela Comissão de Assuntos Econômicos do Senado ao investigado em forma de convite, nos termos do art. 58, §2º, V, da Constituição da República, o que reforça o caráter voluntário do comparecimento.",
+      "pagina": 5,
+      "trecho_fonte": "não se está diante de uma requisição de Comissão Parlamentar de Inquérito, mas de solicitação dirigida pela Comissão de Assuntos Econômicos do Senado ao investigado em forma de convite, nos termos do que decorre do art. 58, §2º, V, da Constituição da República",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que, até o momento da decisão, inexistia oposição da defesa do investigado DANIEL BUENO VORCARO à solicitação.",
+      "pagina": 6,
+      "trecho_fonte": "inexistindo, até o presente momento, oposição da defesa do investigado DANIEL BUENO VORCARO",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator autorizou a solicitação formulada pela Comissão de Assuntos Econômicos do Senado Federal, nos termos do pedido, condicionando o comparecimento do investigado à prévia manifestação expressa, formal e inequívoca quanto à sua opção por comparecer à Comissão para prestar depoimento.",
+      "pagina": 6,
+      "trecho_fonte": "autorizo a solicitação formulada pela Comissão de Assuntos Econômicos do Senado Federal, nos termos do pedido, ficando, contudo, o comparecimento do investigado condicionado à prévia manifestação expressa, formal e inequívoca quanto à sua opção por comparecer à Comissão para prestar depoimento",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator consignou que o comparecimento do investigado é de caráter estritamente facultativo e dependerá de sua anuência explícita.",
+      "pagina": 6,
+      "trecho_fonte": "Consigno que o comparecimento é de caráter estritamente facultativo e dependerá de sua anuência explícita.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator autorizou a ida do investigado ao depoimento, caso opte por comparecer, com todos os seus direitos constitucionais resguardados, garantindo-se o direito ao silêncio e à não autoincriminação.",
+      "pagina": 6,
+      "trecho_fonte": "fica autorizada a sua ida, tendo o investigado todos os seus direitos constitucionais resguardados, notadamente aqueles relativos ao princípio do nemo tenetur se detegere, garantindo-se o direito ao silêncio e à não autoincriminação.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, em caso de comparecimento, a custódia do depoente dentro das dependências do Congresso Nacional fique a cargo da Polícia Legislativa do Senado Federal, conforme requerido.",
+      "pagina": 6,
+      "trecho_fonte": "a custódia do depoente, dentro das dependências do Congresso Nacional, deverá ficar, conforme requerido, a cargo da Polícia Legislativa do Senado Federal.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Congresso Nacional", "tipo": "orgao_publico"},
+        {"nome": "Polícia Legislativa do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que a Polícia Federal fixe as condições logísticas do transporte do custodiado à sede do Senado Federal em Brasília/DF e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com escolta policial contínua, vedado o deslocamento em aeronave particular.",
+      "pagina": 6,
+      "trecho_fonte": "a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com segurança e vigilância contínua policial por meio de escolta apropriada, sendo vedado o deslocamento em qualquer aeronave particular",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumprido o ato, o investigado retorne imediatamente ao seu local de origem, observadas as mesmas regras de segurança e de deslocamento adotadas para o transporte ao Senado.",
+      "pagina": 6,
+      "trecho_fonte": "Cumprido o ato, o investigado deverá retornar imediatamente ao seu local de origem, observando-se as mesmas regras de segurança e de deslocamento adotadas para o seu transporte rumo ao Senado.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação da decisão, com a máxima urgência e com remessa de cópia integral, à Presidência da Comissão de Assuntos Econômicos do Senado Federal.",
+      "pagina": 6,
+      "trecho_fonte": "comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da Comissão de Assuntos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Comissão de Assuntos Econômicos do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação da decisão às defesas constituídas e à Polícia Federal para as providências necessárias ao eventual deslocamento do investigado ao Senado Federal, ficando qualquer transferência condicionada à prévia manifestação expressa, formal e inequívoca do investigado quanto à sua opção positiva pelo comparecimento.",
+      "pagina": 7,
+      "trecho_fonte": "as defesas constituídas, a Polícia Federal e para que sejam adotadas as providências necessárias ao eventual deslocamento do investigado ao Senado Federal, ficando, todavia, qualquer transferência condicionada à prévia manifestação expressa do investigado",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República.",
+      "pagina": 7,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria- Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação e a adoção das providências determinadas com a máxima brevidade, em regime de absoluta urgência.",
+      "pagina": 7,
+      "trecho_fonte": "Intimem-se e adotem-se, com a máxima brevidade, as providências determinadas, em regime de absoluta urgência.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 19 de fevereiro de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 7,
+      "trecho_fonte": "Brasília, 19 de fevereiro de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

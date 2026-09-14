@@ -1,0 +1,516 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator da Petição 15.556 (Distrito Federal) é o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Comissão Parlamentar de Inquérito do Crime Organizado apresentou a Petição nº 32389/2026 (e-Doc. 202) nos autos da Pet 15556.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se da Petição nº 32389/2026 (e-Doc. 202), apresentada pela Comissão Parlamentar de Inquérito do Crime Organizado",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão Parlamentar de Inquérito do Crime Organizado requer autorização para a apresentação do investigado PAULO SÉRGIO NEVES DE SOUZA, a fim de prestar depoimento perante a Comissão no dia 18 de março de 2026, conforme a pauta da CPI, ou em outra data a ser designada.",
+      "pagina": 2,
+      "trecho_fonte": "por meio da qual se requer autorização para a apresentação do investigado PAULO SÉRGIO NEVES DE SOUZA, a fim de prestar depoimento perante à Comissão no dia 18 de março de 2026, conforme previsto na pauta da CPI, ou, se houver necessidade, em outra data a ser ulteriormente designada.",
+      "atribuida_a": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "entidades": [
+        {
+          "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão Parlamentar de Inquérito do Crime Organizado informa que a convocação decorre da aprovação dos Requerimentos nº 231 e 238, ambos de 2026, deliberados em sessão do colegiado realizada em 11/03/2026.",
+      "pagina": 2,
+      "trecho_fonte": "No expediente, informa-se que a convocação decorre da aprovação dos Requerimentos nº 231 e 238, ambos de 2026, deliberados em sessão do colegiado realizada em 11/03/2026.",
+      "atribuida_a": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "entidades": [
+        {
+          "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão Parlamentar de Inquérito do Crime Organizado relata que o convocado PAULO SÉRGIO NEVES DE SOUZA suporta atualmente medidas constritivas processuais penais, em especial o monitoramento eletrônico.",
+      "pagina": 2,
+      "trecho_fonte": "Relata que o convocado suporta, atualmente, medidas constritivas processuais penais, em especial, o monitoramento eletrônico.",
+      "atribuida_a": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "entidades": [
+        {
+          "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão Parlamentar de Inquérito do Crime Organizado afirma, com base em notícias de imprensa, que o potencial depoente cumpre as medidas constritivas em residência fora da Capital Federal, no município de Guaxupé/MG.",
+      "pagina": 3,
+      "trecho_fonte": "com base em notícias de imprensa, que o potencial depoente cumpre as aludidas medidas constritivas em residência fora desta Capital Federal, no município da Guaxupé/MG.",
+      "atribuida_a": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "entidades": [
+        {
+          "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão Parlamentar de Inquérito do Crime Organizado argumenta ser indispensável a cooperação institucional a fim de que o depoimento possa transcorrer normalmente.",
+      "pagina": 3,
+      "trecho_fonte": "argumenta ser “indispensável a cooperação institucional a fim de que o depoimento possa transcorrer normalmente”.",
+      "atribuida_a": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "entidades": [
+        {
+          "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "PAULO SÉRGIO NEVES DE SOUZA apresentou a Petição nº 33108/2026 (e-Doc. 215) acerca da convocação pela CPI.",
+      "pagina": 3,
+      "trecho_fonte": "Acerca da referida convocação, no bojo da Petição nº 33108/2026 (e-Doc. 215), PAULO SÉRGIO NEVES DE SOUZA informa",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "PAULO SÉRGIO NEVES DE SOUZA informa que já peticionou à Comissão Parlamentar de Inquérito comunicando a impossibilidade, por motivos alheios à sua vontade, de atender à intimação para depor no dia seguinte.",
+      "pagina": 3,
+      "trecho_fonte": "PAULO SÉRGIO NEVES DE SOUZA informa que “já peticionou à r. Comissão Parlamentar de Inquérito, informando a impossibilidade do peticionário, por motivos alheios à sua vontade, de atender à intimação para depor no dia de amanhã”.",
+      "atribuida_a": "PAULO SÉRGIO NEVES DE SOUZA",
+      "entidades": [
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator reconhece a importância da CPMI do Crime Organizado e de sua atuação independente na apuração dos fatos que ensejaram sua instauração, quais sejam, examinar as formas contemporâneas de atuação das organizações criminosas.",
+      "pagina": 3,
+      "trecho_fonte": "Não obstante a importância superlativa da “CPMI do Crime Organizado” e de sua atuação independente na apuração dos fatos certos e determinados que ensejaram a sua instauração, quais sejam, “examinar as formas contemporâneas de atuação das organizações criminosas",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "CPMI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental consagrado no art. 5º, LXIII, da Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental expressamente consagrado no art. 5º, LXIII, da Constituição da República.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que, nos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno do Supremo Tribunal Federal declarou a incompatibilidade da condução coercitiva de investigados para interrogatórios com a Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "Nos paradigmáticos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno desta Corte declarou a incompatibilidade da condução coercitiva de investigados, para interrogatórios, com a Constituição da República",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca a jurisprudência do Supremo Tribunal Federal segundo a qual o direito do investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, inexistindo obrigatoriedade ou sanção pelo não comparecimento.",
+      "pagina": 4,
+      "trecho_fonte": "há jurisprudência do Supremo Tribunal Federal, no sentido de que o direito de um investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, entendendo, como corolário do brocardo nemo tenetur se detegere, que inexiste obrigatoriedade ou sanção pelo não comparecimento.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita como precedente o HC nº 171.438/DF, relator Ministro Gilmar Mendes, Segunda Turma, julgado em 28/05/2019, no qual a ordem foi concedida para convolar a compulsoriedade de comparecimento em facultatividade.",
+      "pagina": 4,
+      "trecho_fonte": "6. Ordem concedida para convolar a compulsoriedade de comparecimento em facultatividade.” (HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma,j.28/05/2019,p.17/08/2020).",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Min. Gilmar Mendes",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Segunda Turma",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ter decidido sistematicamente conforme esse entendimento em casos análogos, destacando os julgados no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "pagina": 4,
+      "trecho_fonte": "Tenho sistematicamente decidido conforme esse entendimento em casos análogos, pelo que destaco os julgados recentes no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca a legitimidade do controle jurisdicional exercido pelo Supremo Tribunal Federal mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito.",
+      "pagina": 4,
+      "trecho_fonte": "Cumpre destacar, ainda, a legitimidade do controle jurisdicional exercido por esta Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o controle jurisdicional sobre as Comissões Parlamentares de Inquérito não vulnera o princípio da separação de poderes, mas consubstancia exigência inerente à ordem político-jurídica essencial ao regime democrático.",
+      "pagina": 5,
+      "trecho_fonte": "que não vulnera o princípio da separação de poderes, mas, ao revés, consubstancia exigência inerente à ordem político-jurídica essencial ao regime democrático.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o MS nº 25.668/DF, relator Ministro Celso de Mello, Tribunal Pleno, julgado em 23/03/2006, segundo o qual o controle jurisdicional de abusos praticados por Comissão Parlamentar de Inquérito não ofende o princípio da separação de poderes.",
+      "pagina": 5,
+      "trecho_fonte": "(MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno,j.23/03/2006,p.04/08/2006).",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Min. Celso de Mello",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Tribunal Pleno",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A defesa de PAULO SÉRGIO NEVES DE SOUZA manifestou objeção ao comparecimento por meio da Petição nº 33108/2026.",
+      "pagina": 5,
+      "trecho_fonte": "já tendo sido manifestada a objeção da defesa de PAULO SÉRGIO NEVES DE SOUZA, através da Petição nº 33108/2026",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator afastou a obrigatoriedade de comparecimento de PAULO SÉRGIO NEVES DE SOUZA à CPI do Crime Organizado, transmudando-a em facultatividade e deixando a cargo do peticionário a decisão de comparecer ou não.",
+      "pagina": 5,
+      "trecho_fonte": "afasto a obrigatoriedade de comparecimento, transmudando- a em facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator assegurou ao convocado, na hipótese de optar por comparecer ao ato, o direito ao silêncio, à assistência por advogado durante o ato e de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo.",
+      "pagina": 5,
+      "trecho_fonte": "o direito: i) ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas; ii) à assistência por advogado durante o ato; iii) de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esse",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator assegurou ao convocado o direito de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "pagina": 6,
+      "trecho_fonte": "e iv) de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, em caso de comparecimento, a custódia do depoente dentro das dependências do Congresso Nacional ficará a cargo da Polícia Legislativa do Senado Federal.",
+      "pagina": 6,
+      "trecho_fonte": "a custódia do depoente, dentro das dependências do Congresso Nacional, deverá ficar a cargo da Polícia Legislativa do Senado Federal.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Congresso Nacional",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Polícia Legislativa do Senado Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Considerando que o requerente se encontra com monitoramento eletrônico, o relator determinou que a Polícia Federal fixe as condições logísticas do transporte à sede do Senado Federal em Brasília/DF e do retorno ao local de custódia, com escolta policial e vigilância contínua.",
+      "pagina": 6,
+      "trecho_fonte": "determino que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, com segurança e vigilância contínua policial por meio de escolta apropriada.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Senado Federal",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumprido o ato, o investigado retorne imediatamente ao seu local de origem, observadas as mesmas regras de segurança e de deslocamento adotadas no transporte ao Senado.",
+      "pagina": 6,
+      "trecho_fonte": "Cumprido o ato, o investigado deverá retornar imediatamente ao seu local de origem, observando-se as mesmas regras de segurança e de deslocamento adotadas para o seu transporte rumo ao Senado.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação da decisão, com remessa de cópia integral e máxima urgência, à Presidência da CPI-CRIME, às defesas constituídas e à Polícia Federal, para as providências necessárias ao eventual deslocamento do investigado ao Senado Federal.",
+      "pagina": 6,
+      "trecho_fonte": "comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI-CRIME, as defesas constituídas, e a Polícia Federal para que sejam adotadas as providências necessárias ao eventual deslocamento do investigado ao Senado Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "CPI-CRIME",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Senado Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator condicionou qualquer transferência do investigado à prévia manifestação expressa, formal e inequívoca quanto à sua opção positiva pelo comparecimento.",
+      "pagina": 6,
+      "trecho_fonte": "ficando, todavia, qualquer transferência condicionada à prévia manifestação expressa, formal e inequívoca quanto à sua opção positiva pelo comparecimento.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "PAULO SÉRGIO NEVES DE SOUZA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República.",
+      "pagina": 6,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria- Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação e a adoção das providências com a máxima brevidade, em regime de absoluta urgência, e a publicação da decisão.",
+      "pagina": 6,
+      "trecho_fonte": "Intimem-se e adotem-se, com a máxima brevidade, as providências determinadas, em regime de absoluta urgência. Publique-se.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 17 de março de 2026.",
+      "pagina": 6,
+      "trecho_fonte": "Brasília, 17 de março de 2026.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão é subscrita pelo Ministro André Mendonça, na condição de relator.",
+      "pagina": 7,
+      "trecho_fonte": "Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes inteiramente sob sigilo (páginas 1 e 2). O nome do relator aparece na assinatura sem espaço (\"ANDRÉMENDONÇA\"), aparente falha de extração do texto."
+}

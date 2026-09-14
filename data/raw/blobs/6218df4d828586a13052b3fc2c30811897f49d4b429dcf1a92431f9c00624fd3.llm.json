@@ -1,0 +1,235 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Comissão Parlamentar de Inquérito do Crime Organizado apresentou a Petição nº 23955/2026 (e-Doc. 446), requerendo autorização para a apresentação do investigado DANIEL BUENO VORCARO para prestar depoimento perante a Comissão no dia 4 de março de 2026, às 9h00.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se da Petição nº 23955/2026 (e-Doc. 446), apresentada pela Comissão Parlamentar de Inquérito do Crime Organizado, por meio da qual se requer autorização para a apresentação do investigado DANIEL BUENO VORCARO, a fim de prestar depoimento perante à Comissão no dia 4 de março de 2026, às 9h00",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Comissão Parlamentar de Inquérito do Crime Organizado", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O depoimento requerido pela Comissão seria prestado no Plenário 19 da Ala Alexandre Costa, situada no Anexo II do Senado Federal.",
+      "pagina": 2,
+      "trecho_fonte": "no dia 4 de março de 2026, às 9h00, no Plenário 19 da Ala Alexandre Costa, situada no Anexo II do Senado Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão informa que a convocação decorre da aprovação do Requerimento nº 163/2026, deliberado na 10ª reunião da Comissão, realizada em 25/02/2026.",
+      "pagina": 2,
+      "trecho_fonte": "informa-se que a convocação decorre da aprovação do Requerimento nº 163/2026, deliberado na 10ª reunião da Comissão, realizada em 25/02/2026",
+      "atribuida_a": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Comissão solicita ao Relator que determine a compulsoriedade do comparecimento do depoente na data designada, com a garantia de seus direitos constitucionais, e que consigne a atribuição da custódia do convocado à Polícia Legislativa do Senado Federal.",
+      "pagina": 3,
+      "trecho_fonte": "que determine a compulsoriedade do comparecimento do depoente na data designada, com a garantia de seus direitos constitucionais, bem como que consigne a atribuição da custódia do convocado à Polícia Legislativa do Senado Federal",
+      "atribuida_a": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "entidades": [
+        {"nome": "Polícia Legislativa do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "DANIEL BUENO VORCARO apresentou manifestação por meio da Petição nº 23612/2026 (e-Docs. 434).",
+      "pagina": 3,
+      "trecho_fonte": "DANIEL BUENO VORCARO apresentou manifestação por meio da Petição nº 23612/2026 (e-Docs. 434)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "DANIEL BUENO VORCARO pleiteia que se lhe garanta o direito de não comparecer às sessões da CPI do Crime Organizado, inclusive a designada para 04 de março, em razão do seu desejo de invocar, por orientação de seus advogados, o direito ao silêncio.",
+      "pagina": 3,
+      "trecho_fonte": "garanta o direito de não comparecer as sessões da CPI do Crime Organizado, inclusive a designada para o próximo dia 04 de março, em razão do seu desejo de invocar, por orientação de seus advogados, o direito ao silêncio, nos termos dos precedentes dessa eg. Corte Suprema",
+      "atribuida_a": "DANIEL BUENO VORCARO",
+      "entidades": [
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator passa à análise dos Ofícios 127/2026, nº 128/2026 e nº 129/2026 – CPICRIME, que resultam de requerimentos aprovados durante a 10ª reunião da Comissão, realizada em 25/02/2026, no Senado Federal.",
+      "pagina": 3,
+      "trecho_fonte": "passo à análise dos Ofícios 127/2026, nº 128/2026 e nº 129/2026 – CPICRIME que resultam de requerimentos aprovados durante a 10ª reunião da citada Comissão, realizada em 25/02/2026, no Senado Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CPICRIME", "tipo": "orgao_publico"},
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, não obstante a importância da “CPMI do Crime Organizado”, revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, consagrada no art. 5º, LXIII, da Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental expressamente consagrado no art. 5º, LXIII, da Constituição da República",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, nos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno da Corte declarou a incompatibilidade da condução coercitiva de investigados, para interrogatórios, com a Constituição da República, tendo em vista a não obrigatoriedade de participar do ato.",
+      "pagina": 4,
+      "trecho_fonte": "Nos paradigmáticos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno desta Corte declarou a incompatibilidade da condução coercitiva de investigados, para interrogatórios, com a Constituição da República, tendo em vista a não obrigatoriedade de participar do ato",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que há jurisprudência do Supremo Tribunal Federal no sentido de que o direito do investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, inexistindo obrigatoriedade ou sanção pelo não comparecimento.",
+      "pagina": 4,
+      "trecho_fonte": "há jurisprudência do Supremo Tribunal Federal, no sentido de que o direito de um investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, entendendo, como corolário do brocardo nemo tenetur se detegere, que inexiste obrigatoriedade ou sanção pelo não comparecimento",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca o precedente HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma, julgado em 28/05/2019, no qual a ordem foi concedida para convolar a compulsoriedade de comparecimento em facultatividade.",
+      "pagina": 4,
+      "trecho_fonte": "Ordem concedida para convolar a compulsoriedade de comparecimento em facultatividade.” (HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma,j.28/05/2019,p.17/08/2020)",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Gilmar Mendes", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ter sistematicamente decidido conforme esse entendimento em casos análogos, destacando os julgados HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "pagina": 5,
+      "trecho_fonte": "Tenho sistematicamente decidido conforme esse entendimento em casos análogos, pelo que destaco os julgados recentes no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca a legitimidade do controle jurisdicional exercido pela Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes.",
+      "pagina": 5,
+      "trecho_fonte": "a legitimidade do controle jurisdicional exercido por esta Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca o precedente MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno, julgado em 23/03/2006, segundo o qual o controle jurisdicional de abusos praticados por Comissão Parlamentar de Inquérito não ofende o princípio da separação de poderes.",
+      "pagina": 5,
+      "trecho_fonte": "(MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno,j.23/03/2006,p.04/08/2006)",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Celso de Mello", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pleito formulado na Petição nº 23612/2026 (e-Docs. 434) para afastar a obrigatoriedade de comparecimento de DANIEL BUENO VORCARO à “CPI do Crime Organizado”, transmudando-a em facultatividade.",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pleito formulado na Petição nº 23612/2026 (e-Docs. 434), para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à “CPI do Crime Organizado”",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão autoriza a ida do investigado ao depoimento, caso opte por comparecer, com todos os seus direitos constitucionais resguardados, notadamente o direito ao silêncio e à não autoincriminação.",
+      "pagina": 6,
+      "trecho_fonte": "fica autorizada a sua ida, tendo o investigado todos os seus direitos constitucionais resguardados, notadamente aqueles relativos ao princípio do nemo tenetur se detegere, garantindo-se o direito ao silêncio e à não autoincriminação",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina que, no caso de comparecimento, a custódia do depoente dentro das dependências do Congresso Nacional fique a cargo da Polícia Legislativa do Senado Federal.",
+      "pagina": 6,
+      "trecho_fonte": "a custódia do depoente, dentro das dependências do Congresso Nacional, deverá ficar, conforme requerido, a cargo da Polícia Legislativa do Senado Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Congresso Nacional", "tipo": "orgao_publico"},
+        {"nome": "Polícia Legislativa do Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com escolta policial, sendo vedado o deslocamento em qualquer aeronave particular.",
+      "pagina": 6,
+      "trecho_fonte": "a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com segurança e vigilância contínua policial por meio de escolta apropriada, sendo vedado o deslocamento em qualquer aeronave particular",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina que, cumprido o ato, o investigado retorne imediatamente ao seu local de origem, observadas as mesmas regras de segurança e de deslocamento.",
+      "pagina": 6,
+      "trecho_fonte": "Cumprido o ato, o investigado deverá retornar imediatamente ao seu local de origem, observando-se as mesmas regras de segurança e de deslocamento adotadas para o seu transporte rumo ao Senado.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação, com remessa de cópia integral da decisão, à Presidência da CPICRIME, às defesas constituídas e à Polícia Federal, para as providências necessárias ao eventual deslocamento do investigado ao Senado Federal.",
+      "pagina": 6,
+      "trecho_fonte": "comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPICRIME, as defesas constituídas, e a Polícia Federal para que sejam adotadas as providências necessárias ao eventual deslocamento do investigado ao Senado Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CPICRIME", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão condiciona qualquer transferência à prévia manifestação expressa do investigado, formal e inequívoca, quanto à sua opção positiva pelo comparecimento.",
+      "pagina": 6,
+      "trecho_fonte": "ficando, todavia, qualquer transferência condicionada à prévia manifestação expressa do investigado, formal e inequívoca quanto à sua opção positiva pelo comparecimento",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República.",
+      "pagina": 6,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 3 de março de 2026, pelo Ministro André Mendonça, com determinação de publicação.",
+      "pagina": 7,
+      "trecho_fonte": "Publique-se. Brasília, 3 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

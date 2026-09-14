@@ -1,0 +1,244 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Trata-se de duas notícias-crimes apresentadas pelos Deputados Federais Luciene Cavalcante (e-doc. 392) e Henrique dos Santos Vieira Lima (e-doc. 402), em face do Senador da República Flávio Nantes Bolsonaro.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de duas notícias-crimes apresentadas pelos Deputados Federais Luciene Cavalcante (e-doc. 392) e Henrique dos Santos Vieira Lima (e-doc. 402), em face do Senador da República Flávio Nantes Bolsonaro.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"},
+        {"nome": "Henrique dos Santos Vieira Lima", "tipo": "pessoa"},
+        {"nome": "Flávio Nantes Bolsonaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Deputada Federal Luciene Cavalcante baseia sua notícia-crime em reportagem investigativa publicada pelo portal Intercept Brasil em 13 de maio de 2026.",
+      "pagina": 2,
+      "trecho_fonte": "De acordo com a Deputada Federal Luciene Cavalcante, conforme noticiado em reportagem investigativa publicada pelo portal Intercept Brasil em 13 de maio de 2026",
+      "atribuida_a": "Deputada Federal Luciene Cavalcante",
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"},
+        {"nome": "Intercept Brasil", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a Deputada Federal Luciene Cavalcante, o Senador da República Flávio Bolsonaro teria negociado diretamente com o empresário Daniel Vorcaro, dono do Banco Master, o repasse de US$ 24 milhões (aproximadamente R$134 milhões) para financiar a produção de filme biográfico.",
+      "pagina": 2,
+      "trecho_fonte": "o Senador da República Flávio Bolsonaro teria negociado diretamente com o empresário Daniel Vorcaro, dono do Banco Master, o repasse de US$ 24 milhões (aproximadamente R$134 milhões) para financiar a produção do filme biográfico",
+      "atribuida_a": "Deputada Federal Luciene Cavalcante",
+      "entidades": [
+        {"nome": "Flávio Bolsonaro", "tipo": "pessoa"},
+        {"nome": "Daniel Vorcaro", "tipo": "pessoa"},
+        {"nome": "Banco Master", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a Deputada Federal Luciene Cavalcante, o filme biográfico referido é sobre o ex-presidente Jair Bolsonaro.",
+      "pagina": 3,
+      "trecho_fonte": "Horse\", sobre o ex-presidente Jair Bolsonaro.",
+      "atribuida_a": "Deputada Federal Luciene Cavalcante",
+      "entidades": [
+        {"nome": "Jair Bolsonaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A parlamentar Luciene Cavalcante afirma que as mensagens reveladas pelo portal Intercept demonstram cobranças incisivas por parte do Senador para a liberação dos recursos, bem como promessas de apoio irrestrito ao banqueiro.",
+      "pagina": 3,
+      "trecho_fonte": "A parlamentar afirma que as mensagens reveladas pelo portal Intercept demonstram cobranças incisivas por parte do Senador para a liberação dos recursos, bem como promessas de apoio irrestrito ao banqueiro.",
+      "atribuida_a": "Deputada Federal Luciene Cavalcante",
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"},
+        {"nome": "Intercept", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Deputada Federal Luciene Cavalcante aduz que as condutas narradas amoldam-se, em tese, a diversos tipos penais contra a Administração Pública e a ordem financeira.",
+      "pagina": 3,
+      "trecho_fonte": "Aduz, ainda, que as condutas narradas amoldam-se, em tese, a diversos tipos penais contra a Administração Pública e a ordem financeira.",
+      "atribuida_a": "Deputada Federal Luciene Cavalcante",
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Deputada Federal Luciene Cavalcante requer a remessa dos autos à Procuradoria-Geral da República para a adoção das providências cabíveis, notadamente a instauração de inquérito policial para apuração dos fatos narrados.",
+      "pagina": 3,
+      "trecho_fonte": "requer a remessa dos autos à Procuradoria-Geral da República para a adoção das providências cabíveis, notadamente a instauração de inquérito policial para apuração dos fatos narrados.",
+      "atribuida_a": "Deputada Federal Luciene Cavalcante",
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parlamentar Henrique dos Santos Vieira Lima baseia sua notícia-crime em notícia do colunista Igor Gadelha (Metrópoles, 19/05/2026), que afirma ter sido posteriormente confirmada pelo próprio Senador ao jornal O Globo (19/05/2026).",
+      "pagina": 3,
+      "trecho_fonte": "conforme noticiado pelo colunista Igor Gadelha (Metrópoles, 19/05/2026) e posteriormente confirmado pelo próprio Senador ao jornal O Globo (19/05/2026)",
+      "atribuida_a": "Deputado Federal Henrique dos Santos Vieira Lima",
+      "entidades": [
+        {"nome": "Henrique dos Santos Vieira Lima", "tipo": "pessoa"},
+        {"nome": "Igor Gadelha", "tipo": "pessoa"},
+        {"nome": "Metrópoles", "tipo": "organizacao"},
+        {"nome": "O Globo", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parlamentar Henrique dos Santos Vieira Lima alega que Flávio Bolsonaro visitou Daniel Vorcaro em sua residência particular em São Paulo ainda no final de 2025, durante o período em que o banqueiro cumpria restrições cautelares impostas pelo Poder Judiciário.",
+      "pagina": 3,
+      "trecho_fonte": "Flávio Bolsonaro visitou Daniel Vorcaro em sua residência particular em São Paulo ainda no final de 2025, durante o período em que o banqueiro cumpria restrições cautelares impostas pelo Poder Judiciário",
+      "atribuida_a": "Deputado Federal Henrique dos Santos Vieira Lima",
+      "entidades": [
+        {"nome": "Flávio Bolsonaro", "tipo": "pessoa"},
+        {"nome": "Daniel Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parlamentar Henrique dos Santos Vieira Lima sustenta que o Senador visitou presencialmente o investigado acautelado durante o período de restrição.",
+      "pagina": 3,
+      "trecho_fonte": "Sustenta, em síntese, que (i) o Senador visitou presencialmente o investigado acautelado durante o período de restrição",
+      "atribuida_a": "Deputado Federal Henrique dos Santos Vieira Lima",
+      "entidades": [
+        {"nome": "Henrique dos Santos Vieira Lima", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parlamentar Henrique dos Santos Vieira Lima sustenta que o Senador manteve com o investigado troca de mensagens versando sobre vantagem financeira de interesse direto do parlamentar, enviadas às vésperas de eventos processuais e regulatórios determinantes.",
+      "pagina": 3,
+      "trecho_fonte": "(ii) manteve com ele troca de mensagens versando sobre vantagem financeira de interesse direto do parlamentar, enviadas às vésperas de eventos processuais e regulatórios determinantes",
+      "atribuida_a": "Deputado Federal Henrique dos Santos Vieira Lima",
+      "entidades": [
+        {"nome": "Henrique dos Santos Vieira Lima", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parlamentar Henrique dos Santos Vieira Lima sustenta que o Senador cultivou vínculo com indivíduo que mantinha aparato voltado à obstrução das investigações da Polícia Federal.",
+      "pagina": 3,
+      "trecho_fonte": "(iii) cultivou vínculo com indivíduo que, como hoje se sabe, mantinha aparato voltado à obstrução das investigações da Polícia Federal",
+      "atribuida_a": "Deputado Federal Henrique dos Santos Vieira Lima",
+      "entidades": [
+        {"nome": "Henrique dos Santos Vieira Lima", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parlamentar Henrique dos Santos Vieira Lima afirma que esse conjunto de fatos exige investigação formal por parte do Supremo Tribunal Federal.",
+      "pagina": 3,
+      "trecho_fonte": "Afirma que esse conjunto de fatos exige investigação formal por parte do Supremo Tribunal Federal.",
+      "atribuida_a": "Deputado Federal Henrique dos Santos Vieira Lima",
+      "entidades": [
+        {"nome": "Henrique dos Santos Vieira Lima", "tipo": "pessoa"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que, embora as duas petições versem sobre questões com plena correlação com os fatos investigados no presente procedimento, os pedidos formulados e as informações prestadas guardam manifesta autonomia temática.",
+      "pagina": 4,
+      "trecho_fonte": "possuam plena correlação com os fatos objeto de investigação no bojo do presente procedimento, os pedidos formulados e as informações prestadas guardam manifesta autonomia temática.",
+      "atribuida_a": "Ministro André Mendonça (Relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Pedidos semelhantes, solicitando a apuração dos mesmos fatos em desfavor da mesma pessoa, foram distribuídos à relatoria em expedientes autônomos (Pets nº 16.292, 16.078, 16.063, 16.059).",
+      "pagina": 4,
+      "trecho_fonte": "recorda-se que pedidos semelhantes, solicitando a apuração dos mesmos fatos, em desfavor da mesma pessoa denunciada, foram distribuídos a essa relatoria, em expedientes autônomos (v.g. Pets nº 16.292, 16.078, 16.063, 16.059).",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator determina o desentranhamento das petições buscando preservar o bom andamento do procedimento, bem como dos pedidos especificamente formulados em cada uma das petições indicadas.",
+      "pagina": 4,
+      "trecho_fonte": "Por isso, buscando preservar o bom andamento deste procedimento, bem como dos pedidos especificamente formulados no bojo de cada uma das petições indicadas, determino o seu desentranhamento",
+      "atribuida_a": "Ministro André Mendonça (Relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o desentranhamento das petições e dos documentos a elas acostados, para autuação em procedimento autônomo na classe processual PET, a serem processados em conexão com as Pets nº 16.292, 16.078, 16.063 e 16.059.",
+      "pagina": 4,
+      "trecho_fonte": "determino o seu desentranhamento, bem como dos documentos a elas acostados, para autuação em procedimento autônomo (na classe processual PET), a serem processados em conexão com os demais feitos que versam sobre os mesmos fatos específicos (Pets nº 16.292, 16.078, 16.063, 16.059).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou à Secretaria Judiciária o desentranhamento da Petição do e-Doc. 392, com os anexos e-Docs. 393 a 397, para autuação em procedimento autônomo na classe PET, vinculada à Pet. 16.292 em razão da conexão temática.",
+      "pagina": 4,
+      "trecho_fonte": "O desentranhamento da Petição encartada ao e-Doc. 392, com os respectivos anexos (e-Docs. 393 a 397), para autuação em procedimento autônomo, com a adoção da classe PET, vinculada à Pet. 16.292 em razão da conexão temática",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou à Secretaria Judiciária o desentranhamento da Petição do e-Doc. 402, com o anexo e-Docs. 403, para autuação em procedimento autônomo na classe PET, vinculada à Pet. 16.292 em razão da conexão temática.",
+      "pagina": 4,
+      "trecho_fonte": "O desentranhamento da Petição encartada ao e-Doc. 402, com os respectivos anexos (e-Docs. 403), para autuação em procedimento autônomo, com a adoção da classe PET, vinculada à Pet. 16.292 em razão da conexão temática.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o traslado de cópia da decisão a cada uma das novas PETs criadas.",
+      "pagina": 4,
+      "trecho_fonte": "Translade-se cópia da presente decisão a cada uma das novas PETs criadas.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, procedida a nova autuação separada de cada pedido, seja aberta vista ao Ministério Público Federal para manifestação específica e fundamentada acerca do pedido objeto das petições.",
+      "pagina": 5,
+      "trecho_fonte": "se vista ao Ministério Público Federal, para que se manifeste, de forma específica e fundamentada, acerca do pedido objeto das referidas da Petições.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi assinado em Brasília, em 12 de julho de 2026, pelo Ministro André Mendonça, Relator.",
+      "pagina": 5,
+      "trecho_fonte": "Brasília, 12 de julho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉMENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Partes e advogados constam como SOB SIGILO no cabeçalho (páginas 1-2)."
+}

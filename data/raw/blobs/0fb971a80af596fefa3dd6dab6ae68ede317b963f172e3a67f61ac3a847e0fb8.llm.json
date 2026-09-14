@@ -1,0 +1,553 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198 (Distrito Federal) tem como relator o Ministro Dias Toffoli.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. DIAS TOFFOLI",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DIAS TOFFOLI", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão trata de pedido de busca pessoal e prisão temporária de FABIANO CAMPOS ZETTEL e de busca pessoal em NELSON SEQUEIROS TANURE.",
+      "pagina": 1,
+      "trecho_fonte": "Cuida-se de pedido de busca pessoal e prisão temporária de FABIANO CAMPOS ZETTEL e de busca pessoal em NELSON SEQUEIROS TANURE",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"},
+        {"nome": "NELSON SEQUEIROS TANURE", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "FABIANO CAMPOS ZETTEL e NELSON SEQUEIROS TANURE eram alvos de pedidos anteriores de medidas cautelares ainda não cumpridas pela autoridade policial.",
+      "pagina": 1,
+      "trecho_fonte": "ambos alvos de pedidos anteriores de medidas cautelares ainda não cumpridas pela autoridade policial.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"},
+        {"nome": "NELSON SEQUEIROS TANURE", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "As medidas cautelares anteriores foram requeridas, com envio da documentação pertinente, em 06.01.2026, e deferidas em 07.01.2026.",
+      "pagina": 1,
+      "trecho_fonte": "essas medidas cautelares foram requeridas, com envio da documentação pertinente, no dia 06.01.2026, e deferidas na data de 07.01.2026",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Houve ordem subsequente para cumprimento das medidas cautelares no prazo de 24 horas a partir de 12.01.2026.",
+      "pagina": 1,
+      "trecho_fonte": "com ordem subsequente para cumprimento no prazo de 24 horas a partir de 12.01.2026",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que as medidas cautelares foram deferidas diante da gravidade dos fatos e da necessidade de aprofundamento da investigação, com fartos indícios de práticas criminosas de todos os envolvidos.",
+      "pagina": 1,
+      "trecho_fonte": "diante da gravidade dos fatos e necessidade de aprofundamento da investigação, com fartos indícios de práticas criminosas de todos os envolvidos.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que lhe causa espécie o descumprimento do prazo por ele estabelecido para cumprimento das medidas cautelares ordenadas, posto que outros envolvidos podem estar descaracterizando as provas essenciais ao deslinde da causa.",
+      "pagina": 1,
+      "trecho_fonte": "Causa espécie a esse Relator não só o descumprimento do prazo por mim estabelecido para cumprimento das medidas cautelares ordenadas, posto que resta claro que outros envolvidos podem estar descaraterizando as provas essenciais ao deslinde da causa",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que lhe causa espécie a falta de empenho no cumprimento da ordem judicial, para a qual a Polícia Federal teve vários dias para planejamento e preparação, o que poderá resultar em prejuízo e ineficácia das providências ordenadas.",
+      "pagina": 1,
+      "trecho_fonte": "como a falta de empenho no cumprimento da ordem judicial para a qual a Polícia Federal teve vários dias para planejamento e preparação, o que poderá resultar em prejuízo e ineficácia das providências ordenadas.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A autoridade policial representou por novas providências urgentes por meio da Pet. 2475/2026, protocolada em 13.01.2026 às 19:13 horas.",
+      "pagina": 1,
+      "trecho_fonte": "a autoridade policial apenas representou por novas providências urgentes por meio da Pet. 2475/2026 - protocolada nesta data (13.01.2026) às 19:13 horas",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A representação foi apresentada pela POLÍCIA FEDERAL, por meio do Delegado de Polícia Federal subscritor, com base no art. 144, §1º, IV, da CRFB/1988 e na Lei n. 12.830/2013.",
+      "pagina": 1,
+      "trecho_fonte": "A POLÍCIA FEDERAL, por meio do Delegado de Polícia Federal subscritor, no uso de suas atribuições constitucionais e legais, previstas no art. 144, §1º, IV, da CRFB/1988 e na Lei n. 12.830/2013",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "POLÍCIA FEDERAL", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal afirma que, em monitoramento aos investigados formalizado na Informação de Polícia Judiciária nº 14/2026-UADIP/DELECOR/DRPJ/SR/PF/SP, verificou-se que FABIANO CAMPOS ZETTEL possui passagem aérea internacional com destino a Dubai, nos Emirados Árabes Unidos, marcada para a madrugada de 14.1.2026 (00:50hrs).",
+      "pagina": 2,
+      "trecho_fonte": "verificou-se que FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86) possui passagem aérea internacional com destino a Dubai, nos Emirados Árabes Unidos, marcada para a madrugada do dia 14.1.2026",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal afirma que o voo de FABIANO CAMPOS ZETTEL está marcado para poucas horas antes do cumprimento das medidas judiciais determinadas na cautelar, o que poderia inviabilizar o cumprimento da medida e frustrar a finalidade da cautelar probatória.",
+      "pagina": 2,
+      "trecho_fonte": "poucas horas antes do cumprimento das medidas judiciais determinadas na presente cautelar (00:50hrs). Com efeito, tal fato poderia inviabilizar o cumprimento da medida determinada por V. Exa., além de frustrar a finalidade da cautelar probatória.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que o embarque do investigado constitui oportunidade única para a obtenção de elementos que corroborem sua participação nos delitos investigados, além da materialidade de outros delitos sobre os quais já recaem suspeitas de autoria.",
+      "pagina": 2,
+      "trecho_fonte": "o embarque do investigado constitui oportunidade única a propiciar a obtenção de elementos que corroborem, ainda mais, sua participação nos delitos investigados, além da materialidade de outros delitos sobre os quais sobre ele já recaem suspeitas de autoria.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer a expedição de mandado judicial que autorize a busca pessoal sobre FABIANO CAMPOS ZETTEL e seus pertences, no local em que ele seja encontrado, provavelmente quando do seu embarque no aeroporto internacional de Guarulhos/SP.",
+      "pagina": 2,
+      "trecho_fonte": "requer-se seja expedido mandado judicial que autorize a realização de busca pessoal sobre FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86) e seus pertences, no local em que ele seja encontrado (o que provavelmente se dará quando do seu embarque no aeroporto internacional de Guarulhos/SP)",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer, nos termos do art. 240, §§1º e 2º, do CPP, mandado de busca pessoal em FABIANO CAMPOS ZETTEL e em seus pertences, inclusive bagagens despachadas, para apreensão de objetos de interesse da investigação, especialmente seu aparelho de telefone celular e demais dispositivos eletrônicos.",
+      "pagina": 2,
+      "trecho_fonte": "em seus pertences (inclusive bagagens despachadas), de forma a possibilitar a apreensão de objetos de interesse da investigação, especialmente seu aparelho de telefone celular e demais dispositivos eletrônicos.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que a antecipação do cumprimento de um dos mandados judiciais determinados poderá causar prejuízo à eficiência das demais diligências.",
+      "pagina": 2,
+      "trecho_fonte": "a antecipação do cumprimento de um dos mandados judiciais determinados poderá causar prejuízo à eficiência das demais diligências",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal aponta o risco de FABIANO CAMPOS ZETTEL entrar em contato com os demais investigados, sustentando que o núcleo criminoso é composto por familiares próximos a ele.",
+      "pagina": 3,
+      "trecho_fonte": "entrar em contato com os demais investigados, principalmente ao se ter em vista que o núcleo criminoso é composto por familiares próximos a ele.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que a prática criminosa do investigado envolve diversos crimes contra o Sistema Financeiro Nacional e que, nos termos da alínea o do inciso III do art. 1º da Lei nº 7.960/1989, é cabível a prisão temporária em relação a tais delitos.",
+      "pagina": 3,
+      "trecho_fonte": "a prática criminosa do investigado envolve diversos crimes contra o Sistema Financeiro Nacional, sendo certo que nos termos da alínea o do inciso III do art. 1º da Lei nº 7.960/1989 é cabível a prisão temporária em relação a tais delitos.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal pugna pela decretação da prisão temporária de FABIANO CAMPOS ZETTEL, por se tratar de medida imprescindível para as investigações, tendo em vista que a liberdade do investigado poderá prejudicar a coleta da prova.",
+      "pagina": 3,
+      "trecho_fonte": "pugna-se pela decretação da prisão temporária em desfavor do FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86), por se tratar de medida imprescindível para as investigações desenvolvidas, tendo em vista que a liberdade do investigado poderá prejudicar a coleta da prova",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer a prisão temporária pelo prazo mínimo de um dia, porquanto, tão logo efetivadas as demais medidas ostensivas, poderá ser determinada a liberdade do investigado a partir das 6 horas do dia 14.1.2026.",
+      "pagina": 3,
+      "trecho_fonte": "se requer a prisão temporária pelo prazo mínimo de um dia, porquanto tão logo efetivadas as demais medidas ostensivas de cumprimento dos mandados judiciais poderá ser determinada a liberdade do investigado (a partir das 6 horas do dia 14.1.2026).",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta ser imperioso o estabelecimento da medida cautelar de proibição de sair do país, para que o investigado permaneça no Brasil até o fim das investigações, sob pena de frustração da aplicação da lei penal.",
+      "pagina": 3,
+      "trecho_fonte": "também é imperioso o estabelecimento da medida cautelar de proibição de sair do país, de forma a possibilitar que o investigado permaneça no Brasil até o fim das investigações",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal afirma que consta da Informação de Polícia Judiciária nº 14/2026-UADIP/DELECOR/DRPJ/SR/PF/SP que NELSON SEQUEIROS RODRIGUEZ TANURE possui passagem aérea agendada para a manhã do dia 14.1.2026, às 7:30 hrs, com destino a Curitiba/PR.",
+      "pagina": 3,
+      "trecho_fonte": "NELSON SEQUEIROS RODRIGUEZ TANURE (CPF: 041.747.715-53) possui passagem aérea agendada para a manhã do dia 14.1.2026 (dia do cumprimento das medidas), às 7:30 hrs, com destino a Curitiba/PR.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "NELSON SEQUEIROS RODRIGUEZ TANURE", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que, dada a proximidade do horário do voo com o do cumprimento das medidas, é possível que NELSON SEQUEIROS RODRIGUEZ TANURE deixe sua residência antes do horário permitido de ingresso na residência pela equipe policial.",
+      "pagina": 4,
+      "trecho_fonte": "é possível que o investigado deixe sua residência antes do horário permitido de ingresso na residência pela equipe policial.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "NELSON SEQUEIROS RODRIGUEZ TANURE", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer mandado de busca pessoal sobre NELSON SEQUEIROS RODRIGUEZ TANURE e seus pertences, no local em que ele seja encontrado, provavelmente quando do seu embarque no aeroporto internacional do Rio de Janeiro/RJ.",
+      "pagina": 4,
+      "trecho_fonte": "e seus pertences, no local em que ele seja encontrado (o que provavelmente se dará quando do seu embarque no aeroporto internacional do Rio de Janeiro/RJ), a fim de descobrir objetos necessários à prova de infração penal",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "NELSON SEQUEIROS RODRIGUEZ TANURE", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer, com fulcro no art. 240, §§1º e 2º, do CPP, a expedição de mandados judiciais de busca pessoal em desfavor de FABIANO CAMPOS ZETTEL e NELSON SEQUEIROS RODRIGUEZ TANURE.",
+      "pagina": 4,
+      "trecho_fonte": "requer-se, com fulcro no art. 240, §§1º e 2º, do CPP, a expedição de mandados judiciais que autorizem a realização de busca pessoal em desfavor de FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86) e NELSON SEQUEIROS RODRIGUEZ TANURE (CPF:041.747.715-53),nos moldes acima requeridos.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"},
+        {"nome": "NELSON SEQUEIROS RODRIGUEZ TANURE", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer a decretação da prisão temporária de FABIANO CAMPOS ZETTEL pelo prazo mínimo de um dia, com possibilidade de liberdade a partir das 6 horas do dia 14.1.2026, tão logo efetivadas as demais medidas ostensivas.",
+      "pagina": 4,
+      "trecho_fonte": "Requer-se, ainda, a decretação da prisão temporária de FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86), por se tratar de medida imprescindível para as investigações desenvolvidas",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer a decretação da proibição de deixar o país do investigado FABIANO CAMPOS ZETTEL.",
+      "pagina": 4,
+      "trecho_fonte": "Por fim, requer-se a decretação da proibição de deixar o país do investigado FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86).",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A representação da Polícia Federal consta dos autos como e-doc nº 74.",
+      "pagina": 4,
+      "trecho_fonte": "(e-doc nº74).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Procurador-Geral da República, cientificado do pedido, apresentou manifestação por meio da Pet. 2495/2026, protocolada às 20:49 horas (e-doc nº 83).",
+      "pagina": 5,
+      "trecho_fonte": "O Procurador-Geral da República, devidamente cientificado do presente pedido, manifestou-se favoravelmente às pretensões por meio da Pet. 2495/2026, protocolada às 20:49 horas (e-doc nº 83).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República manifestou-se favoravelmente às pretensões da Polícia Federal.",
+      "pagina": 5,
+      "trecho_fonte": "manifestou-se favoravelmente às pretensões por meio da Pet. 2495/2026",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca que a prisão neste momento, diante da descrição realizada pela autoridade policial, é imprescindível para as investigações, observados os elementos concretos trazidos e a urgência descrita na representação policial endossada pelo Procurador-Geral da República.",
+      "pagina": 5,
+      "trecho_fonte": "a prisão neste momento e diante da descrição realizada pela autoridade policial é imprescindível para as investigações, observados os elementos concretos trazidos e a urgência descrita na representação policial endossada pelo",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca as ADI’s 3.360/DF e 4.109/DF, nas quais o Supremo Tribunal Federal deu interpretação conforme à Constituição Federal ao art. 1º da Lei 7.960/1989, estabelecendo premissas cumulativas para a decretação de prisão temporária.",
+      "pagina": 5,
+      "trecho_fonte": "ao examinar as ADI’s 3.360/DF e 4.109/DF, esta Suprema Corte, deu interpretação conforme à Constituição Federal ao art. 1º da Lei 7.960/1989, estabelecendo as seguintes premissas, cumulativas, quanto possibilidade de decretação de prisão temporária",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator enuncia como premissa que a prisão temporária deve ser, com base em fatos concretos, indispensável para as investigações inquisitoriais (art. 1º, I, Lei 7.960/1989), vedada sua utilização como prisão para averiguações e quando fundada no mero fato de o representado não possuir residência fixa.",
+      "pagina": 5,
+      "trecho_fonte": "deve ser, com base em fatos concretos, indispensável para as investigações inquisitoriais (art. 1º, I, Lei 7.960/1989), vedada (i) a sua utilização como prisão para averiguações e (ii) quando fundada no mero fato de o representado não possuir residência fixa",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator enuncia como premissa que a prisão temporária deve estar fundamentada em razões concretas que indiquem a autoria ou a participação do investigado nos crimes a que se refere o art. 1º, III, da Lei 7.960/1989, vedada a analogia ou a interpretação extensiva do rol.",
+      "pagina": 5,
+      "trecho_fonte": "deve estar fundamentada em razões concretas que indiquem a autoria ou a participação do investigado nos crimes a que se refere o art. 1º, III, da Lei 7.960/1989, vedada a analogia ou a interpretação extensiva do rol previsto no dispositivo",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator enuncia como premissa que a prisão temporária deve estar justificada em fatos novos ou contemporâneos, nos termos do art. 312, § 2º, do Código de Processo Penal.",
+      "pagina": 5,
+      "trecho_fonte": "deve estar justificadas em fatos novos ou contemporâneos nos termos do art. 312, § 2º, do Código de Processo Penal",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator enuncia como premissa que a prisão temporária deve ser adequada à gravidade do delito (art. 282, II, CPP) e cabível quando forem insuficientes as medidas cautelares diversas da prisão (art. 282, § 6º, CPP).",
+      "pagina": 5,
+      "trecho_fonte": "deve ser adequada à gravidade do delito (art. 282, II, CPP) e quando forem insuficientes as medidas cautelares diversas daprisão (art.282,§6º,CPP).",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial e o Procurador-Geral da República afirmam, com fundamento nos elementos concretos, a imprescindibilidade da prisão temporária para as investigações no inquérito policial e a presença de fundadas razões de autoria de delito previsto no art. 1º, III, da Lei 7.960/1989.",
+      "pagina": 5,
+      "trecho_fonte": "afirmam, com fundamento nos elementos concretos, (i) a imprescindibilidade da prisão temporária para as investigações no inquérito policial, (ii) a presença de fundadas razões de autoria de delito previsto no art. 1º, III, da Lei 7.960/1989",
+      "atribuida_a": "Polícia Federal e Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial e o Procurador-Geral da República afirmam a presença de contemporaneidade da medida e a insuficiência momentânea das medidas cautelares diversas da prisão previstas nos arts. 319 e 320 do CPP.",
+      "pagina": 6,
+      "trecho_fonte": "contemporaneidade da medida; e (iv) a insuficiência momentânea das medidas cautelares diversas da prisão previstas nos arts. 319 e 320 do CPP.",
+      "atribuida_a": "Polícia Federal e Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende atendidos os requisitos para a decretação da prisão temporária do investigado FABIANO CAMPOS ZETTEL, porquanto assentadas nas premissas dos paradigmas estabelecidos pelo Supremo Tribunal Federal.",
+      "pagina": 6,
+      "trecho_fonte": "estão atendidos os requisitos para a decretação da prisão temporária do investigado FABIANO CAMPOS ZETTEL, porquanto assentadas nas premissas dos paradigmas estabelecidos por esta Suprema Corte.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator ressalta que a prisão temporária está justificada em fatos contemporâneos e mostra-se adequada à gravidade concreta dos crimes investigados, às circunstâncias do fato e às condições pessoais referidas nos autos, sendo suficiente a brevidade da medida e subsequente imposição de medidas cautelares diversas, previstas nos artigos 319 e 320 do Código de Processo Penal.",
+      "pagina": 6,
+      "trecho_fonte": "está justificada em fatos contemporâneos e mostra-se adequada à gravidade concreta dos crimes investigados, às circunstâncias do fato e às condições pessoais referidas nos autos, sendo suficiente a brevidade da medida e subsequente imposição de medidas cautelares diversas",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator observa que eventual frustração do cumprimento das medidas requeridas decorre de inércia exclusiva da POLÍCIA FEDERAL, inclusive diante de inobservância expressa e deliberada de decisão por ele proferida em 12.01.2026.",
+      "pagina": 6,
+      "trecho_fonte": "eventual frustração do cumprimento das medidas requeridas decorre de inércia exclusiva da POLÍCIA FEDERAL, inclusive diante de INOBSERVÂNCIA EXPRESSA E DELIBERADA DE DECISÃO POR MIM PROFERIDA NA DATA DE 12.01.2026",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "POLÍCIA FEDERAL", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Decisão proferida pelo relator em 12.01.2026 determinou a deflagração da presente fase no prazo de 24 horas (e-doc. nº 56, assinado às 14:52 horas e juntado aos autos às 15:15 horas).",
+      "pagina": 6,
+      "trecho_fonte": "DECISÃO POR MIM PROFERIDA NA DATA DE 12.01.2026, QUE DETERMINOU A DEFLAGRAÇÃO DA PRESENTE FASE NO PRAZO DE 24 HORAS (e-doc. nº 56, assinado às 14:52 horas e juntado aos autos às 15:15 horas)",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que eventual prejuízo às demais medidas em decorrência do presente pedido é de inteira responsabilidade da autoridade policial.",
+      "pagina": 6,
+      "trecho_fonte": "eventual prejuízo às demais medidas em decorrência do presente pedido são de inteira responsabilidade da autoridade policial.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator defere as providências cautelares visando assegurar a eficácia no cumprimento das medidas por ele anteriormente deferidas.",
+      "pagina": 6,
+      "trecho_fonte": "visando assegurar a eficácia no cumprimento das medidas por mim anteriormente deferidas, DEFIRO as seguintes providências cautelares",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu a realização de busca pessoal sobre FABIANO CAMPOS ZETTEL e seus pertences, no local em que ele seja encontrado, provavelmente quando do seu embarque no aeroporto internacional de Guarulhos/SP na noite de 13.01.2026.",
+      "pagina": 6,
+      "trecho_fonte": "1. A realização de BUSCA PESSOAL sobre FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86) e seus pertences, no local em que ele seja encontrado (o que provavelmente se dará quando do seu embarque no aeroporto internacional de Guarulhos/SP na noite de 13.01.2026)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A busca pessoal sobre FABIANO CAMPOS ZETTEL foi deferida a fim de descobrir objetos necessários à prova de infração penal, colher elementos de informação e demais objetos mencionados nas letras b a f e letra h do §1º do art. 240 do CPP, com eventual apreensão de material relacionado e útil à investigação.",
+      "pagina": 7,
+      "trecho_fonte": "letras b a f e letra h do §1º do art. 240 do CPP, com eventual APREENSÃO de material relacionado e útil à investigação;",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu a realização de busca pessoal em FABIANO CAMPOS ZETTEL e em seus pertences, inclusive bagagens despachadas, para apreensão de objetos de interesse da investigação, especialmente seu aparelho de telefone celular, demais dispositivos eletrônicos e valores monetários eventualmente portados.",
+      "pagina": 7,
+      "trecho_fonte": "2. A realização de BUSCA PESSOAL em FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86) e em seus pertences (inclusive bagagens despachadas), de forma a possibilitar a APREENSÃO de objetos de interesse da investigação, especialmente seu aparelho de telefone celular e demais dispositivos eletrônicos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator decretou a prisão temporária de FABIANO CAMPOS ZETTEL até às 07:00 horas de 14.01.2026.",
+      "pagina": 7,
+      "trecho_fonte": "3. A decretação da PRISÃO TEMPORÁRIA em desfavor do FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86), até às 07:00 horas de 14.01.2026",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator fundamenta a prisão temporária de FABIANO CAMPOS ZETTEL por se tratar de medida imprescindível para as investigações desenvolvidas, tendo em vista que a liberdade do investigado poderá prejudicar a coleta da prova, especialmente as demais diligências determinadas.",
+      "pagina": 7,
+      "trecho_fonte": "por se tratar de medida imprescindível para as investigações desenvolvidas, tendo em vista que a liberdade do investigado poderá prejudicar a coleta da prova, especialmente as demais diligências determinadas",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator impôs a FABIANO CAMPOS ZETTEL medida cautelar diversa da prisão, consistente na apreensão de seu(s) passaporte(s) e na proibição de sair do país, para que o investigado permaneça no Brasil até o fim das investigações.",
+      "pagina": 7,
+      "trecho_fonte": "bem como a imposição de MEDIDA CAUTELAR DIVERSA DA PRISÃO, consistente na apreensão de seu(s) passaporte(s) e na proibição em sair do país, de forma a possibilitar que o investigado permaneça no Brasil até o fim das investigações",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu a realização de busca pessoal sobre NELSON SEQUEIROS RODRIGUEZ TANURE e seus pertences, no local em que ele seja encontrado, provavelmente quando do seu embarque no aeroporto internacional do Rio de Janeiro/RJ na manhã de 14.01.2026.",
+      "pagina": 7,
+      "trecho_fonte": "4. A realização de BUSCA PESSOAL sobre NELSON SEQUEIROS RODRIGUEZ TANURE (CPF: 041.747.715-53) e seus pertences, no local em que ele seja encontrado (o que provavelmente se dará quando do seu embarque no aeroporto internacional do Rio de Janeiro/RJ na manhã de 14.01.2026)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "NELSON SEQUEIROS RODRIGUEZ TANURE", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que todos os bens e materiais apreendidos por força do cumprimento da decisão anterior e da presente decisão sejam lacrados e acautelados diretamente na sede do SUPREMO TRIBUNAL FEDERAL, até ulterior determinação.",
+      "pagina": 8,
+      "trecho_fonte": "DETERMINO que todos os bens e materiais APREENDIDOS por força do cumprimento da decisão por mim anteriormente proferidas e aqueles resultantes do cumprimento da presente, deverão ser LACRADOS e ACAUTELADOS diretamente na sede do SUPREMO TRIBUNAL FEDERAL, até ulterior determinação.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "SUPREMO TRIBUNAL FEDERAL", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que o DIRETOR-GERAL do DEPARTAMENTO DE POLÍCIA FEDERAL, no prazo subsequente de 24 horas, informe à Corte a razão do descumprimento da ordem anteriormente exarada para cumprimento das medidas no prazo estabelecido.",
+      "pagina": 8,
+      "trecho_fonte": "DETERMINO, ainda, que o DIRETOR-GERAL do DEPARTAMENTO DE POLÍCIA FEDERAL, no prazo subsequente de 24 horas, informe a esta Corte a razão do descumprimento da ordem por mim anteriormente exarada para cumprimento das medidas em prazo legal estabelecido.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DEPARTAMENTO DE POLÍCIA FEDERAL", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o cumprimento da decisão, servindo a presente de mandado, com oportuna expedição dos documentos correspondentes.",
+      "pagina": 8,
+      "trecho_fonte": "Cumpra-se, servindo a presente de mandado, com oportuna expedição dos documentos correspondentes.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a publicação da decisão a partir das 12:00 horas do dia 14.01.2026.",
+      "pagina": 8,
+      "trecho_fonte": "Determino a publicação desta decisão a partir das 12:00 horas do dia 14.01.2026.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 13 de janeiro de 2026, e é assinada pelo Ministro Dias Toffoli, relator.",
+      "pagina": 8,
+      "trecho_fonte": "Brasília, 13 de janeiro de 2026. Ministro DIASTOFFOLI Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DIAS TOFFOLI", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

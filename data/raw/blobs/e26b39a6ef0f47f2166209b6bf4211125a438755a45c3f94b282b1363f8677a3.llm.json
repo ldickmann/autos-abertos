@@ -1,0 +1,49 @@
+{
+  "itens": [
+    {
+      "pedido": "remessa dos autos à Procuradoria-Geral da República para adoção das providências cabíveis, notadamente a instauração de inquérito policial para apuração dos fatos narrados na notícia-crime em face do Senador Flávio Nantes Bolsonaro (e-doc. 392)",
+      "quem_pediu": "Deputada Federal Luciene Cavalcante",
+      "resultado": "outro",
+      "decisao": "não decidiu o pedido; determinou o desentranhamento da petição (e-Doc. 392) e anexos (e-Docs. 393 a 397) para autuação em procedimento autônomo na classe PET, vinculada à Pet. 16.292, a ser processado em conexão com as Pets nº 16.292, 16.078, 16.063 e 16.059",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-12",
+      "pagina": 4,
+      "trecho_fonte": "determino o seu desentranhamento, bem como dos documentos a elas acostados, para autuação em procedimento autônomo (na classe processual PET), a serem processados em conexão com os demais feitos que versam sobre os mesmos fatos específicos (Pets nº 16.292, 16.078, 16.063, 16.059).",
+      "condicoes": []
+    },
+    {
+      "pedido": "investigação formal pelo Supremo Tribunal Federal dos fatos narrados na notícia-crime em face do Senador Flávio Nantes Bolsonaro (e-doc. 402)",
+      "quem_pediu": "Deputado Federal Henrique dos Santos Vieira Lima",
+      "resultado": "outro",
+      "decisao": "não decidiu o pedido; determinou o desentranhamento da petição (e-Doc. 402) e anexos (e-Docs. 403) para autuação em procedimento autônomo na classe PET, vinculada à Pet. 16.292, a ser processado em conexão com as Pets nº 16.292, 16.078, 16.063 e 16.059",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-12",
+      "pagina": 4,
+      "trecho_fonte": "determino o seu desentranhamento, bem como dos documentos a elas acostados, para autuação em procedimento autônomo (na classe processual PET), a serem processados em conexão com os demais feitos que versam sobre os mesmos fatos específicos (Pets nº 16.292, 16.078, 16.063, 16.059).",
+      "condicoes": []
+    },
+    {
+      "pedido": "translado de cópia da decisão a cada uma das novas PETs criadas",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou o translado de cópia da decisão a cada uma das novas PETs criadas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-12",
+      "pagina": 4,
+      "trecho_fonte": "8. Translade-se cópia da presente decisão a cada uma das novas PETs criadas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "vista ao Ministério Público Federal, após a nova autuação separada de cada pedido, para manifestação sobre o pedido objeto das petições",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a abertura de vista ao Ministério Público Federal, após a nova autuação separada, para manifestação específica e fundamentada sobre o pedido objeto das petições",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-12",
+      "pagina": 5,
+      "trecho_fonte": "se vista ao Ministério Público Federal, para que se manifeste, de forma específica e fundamentada, acerca do pedido objeto das referidas da Petições.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "A expressão \"abra-se vista\" está dividida entre as páginas 4 e 5; o trecho_fonte do item 4 traz a parte da página 5."
+}

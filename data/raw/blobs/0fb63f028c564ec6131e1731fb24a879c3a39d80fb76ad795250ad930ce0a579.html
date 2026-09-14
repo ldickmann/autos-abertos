@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supremo Tribunal Federal</title>
+    <link href="/assets/styles/custom.css" rel="stylesheet">
+    <link href="/assets/styles/bootstrap.css" rel="stylesheet">
+    <link href="/assets/styles/bundle.css" rel="stylesheet">
+    <link href="/assets/styles/processo/processo.css" rel="stylesheet">
+    <link href="/assets/styles/processo/processo-impressao.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+</head>
+<body>
+	<div id="main" class="container-fluid p-0">
+        <section id="conteudo" class="container-fluid m-0 p-0 m-r-8 m-l-8">
+            <div class="container center-block p-0" id="dados-processo">
+                
+<div id="texto-pagina-interna-wrapper" class="col-12 m-0 p-xs-0 p-sm-8">
+    <div id="texto-pagina-interna" class="p-l-xs-0 p-r-xs-0">
+        <div class="texto m-0">
+            <div class="col-md-12 p-0 p-l-xs-16 p-r-xs-16 m-t-16">
+                <div class="card m-b-48 card-lista-processo">
+                    
+                    <div class="titulo-processo--impressao m-0">
+                    
+                        <div class="col-md-4">
+                            <div class="processo-titulo m-b-8">
+                                &nbsp;
+                                <div>
+                                    <span class="badge bg-primary">Processo Eletrônico</span>
+                                    <span class="badge bg-success">Público</span>
+                                    
+                                </div>
+                                <input type="hidden" id="incidente" value="7519395">
+                                <input type="hidden" id="classe-numero-processo" value=" ">
+                                <input type="hidden" id="peca" value="">
+                                <input type="hidden" id="meio" value="">
+                            </div>
+                            <div class="processo-rotulo">Número Único: Sem número único</div>
+                        </div>
+                        <div class="col-md-8 btn-group__wrapper">
+                            <div class="btn-group">
+                                
+                                    <button type="button" class="btn btn-primary-spacing" aria-label="Imprimir" id="btn-imprimir" onclick="print()" style="background: #337ab7;">
+                                        <span class="fas fa-print" aria-hidden="true"></span>
+                                    </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-conteudo m-0 p-0">
+                        <div class="card-processo">
+                            <div class="col-xs-12 col-md-12 m-b-8 p-l-0">
+                                <div class="processo-classe p-t-8 p-l-16"></div>
+                                
+                                <div class="processo-dados p-l-16"><a href="#" data-toggle="tooltip" title="Corresponde ao Estado da federação de onde provém o processo.">Origem:</a>&nbsp;<span id="descricao-procedencia"></span></div>
+                                <div class="processo-dados p-l-16">Relator(a): </div>
+                                
+                                <hr style="margin-left: 16px;">
+                                <div id="resumo-partes" class="resumo-partes">
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- TEMPORÁRIO  -->
+                                <!-- A TABELA DE PREFERÊNCIAS NÃO DEVE SER UTILIZADA PARA A AGENDA DA ONU
+                                     FUTURAMENTE SERÁ CRIADA UMA TABELA COM UM CODIGO PARA DEFINIR OS ITENS DA AGENDA
+                                -->
+                                
+                                <!-- TEMPORÁRIO  -->
+                            </div>
+                        </div>
+
+                        
+                            <div class="menu-abas--impressao">
+                                <ul id="abas_processo" class="nav nav-tabs col-md-12">
+                                    <li class="li-info">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="check_all">
+                                            <div class="p-t-0">
+                                                <i class="fas fa-check"></i> Todos
+                                        </div>
+                                    </li>
+                                    <li class="li-info">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_informacoes" data-aba="#aba-informacoes">
+                                        <div class="p-t-0">
+                                            <i class="fas fa-info-circle"></i> Informações
+                                        </div>    
+                                    </li>
+                                    <li class="li-partes-aba">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_partes" data-aba="#aba-partes">
+                                        <div class="p-t-0">
+                                            <i class="fas fa-users"></i> Partes
+                                        </div>
+                                    </li>
+                                    <li class="li-andamentos">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_andamentos" data-aba="#aba-andamentos">
+                                        <div class="p-t-0">
+                                            <i class="fas fa-history"></i> Andamentos
+                                        </div>
+                                    </li>
+                                    <li class="li-decisoes">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_decisoes" data-aba="#aba-decisoes">
+                                        <div class="p-t-0">
+                                            <i class="fas fa-gavel"></i> Decisões
+                                        </div>
+                                    </li>
+                                    <li class="li-Sessão Virtual">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_decisoes" data-aba="#aba-sessao-virtual">
+                                        <div class="p-t-0">
+                                            <i class="fas fa-gavel"></i> Sessão Virtual
+                                        </div>
+                                    </li>
+                                    <li class="li-deslocamento">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_deslocamentos" data-aba="#aba-deslocamentos">
+                                        <div class="p-t-0">
+                                            <i class="fas fa-map-marker-alt"></i> Deslocamentos
+                                        </div>
+                                    </li>
+                                    <li class="li-peticoes">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_peticoes" data-aba="#aba-peticoes">
+                                        <div class="p-t-0">
+                                            <i class="fas fa-file-pdf"></i> Petições
+                                        </div>
+                                    </li>
+                                    <li class="li-recursos">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_recursos" data-aba="#aba-recursos">
+                                        <div class="p-t-0">
+                                            <i class="far fa-file-alt"></i> Recursos
+                                        </div>
+                                    </li>
+                                    <li class="li-recursos">
+                                        <input type="checkbox" class="form-check-input m-0 check-print" id="imprime_pautas" data-aba="#aba-pautas">
+                                        <div class="p-t-0">
+                                            <i class="far fa-calendar-alt"></i> Pautas
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="col-md-12">
+                                <div id="aba-informacoes" style="display: none;">
+                                    <p class="abas-titulo">Informações</p>
+                                    <div id="informacoes" class=""></div>
+                                </div>
+                                <div id="aba-partes"  style="display: none;">
+                                    <p class="abas-titulo">Partes</p>
+                                    <div id="partes" class=""></div>
+                                </div>
+                                <div id="aba-andamentos"  style="display: none;">
+                                    <p class="abas-titulo">Andamentos</p>
+                                    <div id="andamentos" class=""></div>
+                                </div>
+                                <div id="aba-decisoes"  style="display: none;">
+                                    <p class="abas-titulo">Decisões</p>
+                                    <div id="decisoes" class=""></div>
+                                </div>
+                                <div id="aba-sessao-virtual"  style="display: none;">
+                                    <p class="abas-titulo">Sessão virtual</p>
+                                    <div id="sessao-virtual" class=""></div>
+                                </div>
+                                <div id="aba-deslocamentos"  style="display: none;">
+                                    <p class="abas-titulo">Deslocamentos</p>
+                                    <div id="deslocamentos" class=""></div>
+                                </div>
+                                <div id="aba-peticoes"  style="display: none;">
+                                    <p class="abas-titulo">Petições</p>
+                                    <div id="peticoes" class=""></div>
+                                </div>
+                                <div id="aba-recursos"  style="display: none;">
+                                    <p class="abas-titulo">Recursos</p>
+                                    <div id="recursos" class=""></div>
+                                </div>
+                                <div id="aba-pautas"  style="display: none;">
+                                    <p class="abas-titulo">Pautas</p>
+                                    <div id="pautas" class=""></div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/scripts/jquery-3.2.1.min.js"></script>
+<script>
+  $("#btn-leading-case").click(function(){
+    num_tema = '';
+    incidente_leading_case =  '';
+    window.location.href = '/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente='+ incidente_leading_case +'&numeroTema='+num_tema;
+  });
+  </script>
+
+<script>
+    $.get('abaPartes.asp?incidente=7519395', function(resposta) {
+        $('#partes').html($(resposta)[0]);
+        $('#resumo-partes').prepend($(resposta)[2]);
+    });
+    $('#andamentos').load('abaAndamentos.asp?incidente=7519395&imprimir=true');
+
+    $.get('abaInformacoes.asp?incidente=7519395', function(resposta) {
+       $('#informacoes').html($(resposta)[0]);       
+       $('#orgao-procedencia').html($(resposta)[2]); 
+       $('#descricao-procedencia').html($(resposta)[4]);       
+    });
+
+    num_tema = '';
+    $('#decisoes').load('abaDecisoes.asp?incidente=7519395');
+    $('#sessao-virtual').load('abaSessao.asp?incidente=7519395&tema=' + num_tema);
+    $('#deslocamentos').load('abaDeslocamentos.asp?incidente=7519395');
+    $('#peticoes').load('abaPeticoes.asp?incidente=7519395');
+    $('#recursos').load('abaRecursos.asp?incidente=7519395');
+    $('#pautas').load('abaPautas.asp?incidente=7519395');
+
+	$('#btn-dje').click(function(){
+        if ('Público' == "Sigiloso") {
+            var url = 'https://digital.stf.jus.br/publico/publicacoes'
+            window.open(url, '_blank');
+        }
+		var url = '/servicos/dje/listarDiarioJustica.asp?tipoPesquisaDJ=AP&classe='+ '' + '&numero=' + 
+		window.open(url, '_blank');
+	});
+</script>
+
+            </div>
+        </section>
+    </div>
+  
+    <script type="text/javascript" src="/scripts/processo-0084b2a7f379994ea50d.js"></script>
+    <!-- <script type="text/javascript" src="/scripts/jquery-3.2.1.min.js"></script> -->
+    <script type="text/javascript" src="/scripts/mensagens.js"></script>
+    <script src="processo.js"></script>
+      
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FEYXNRM48W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FEYXNRM48W');
+    </script>
+</body>
+</html>

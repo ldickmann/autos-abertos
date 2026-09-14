@@ -1,0 +1,54 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 6 de março de 2026, o relator determinou à Secretaria Judiciária o desentranhamento dos petitórios, decisões e documentos contidos nos e-Docs. 293 a 295; 329 a 330 (duplicado); 338 a 339; 421 e 422; 429 e 431; 459 a 461 e 463 a 466.",
+      "pagina": 2,
+      "trecho_fonte": "À Secretaria Judiciária para que proceda ao desentranhamento dos petitórios, decisões e documentos contidos nos e-Docs. 293 a 295; 329 a 330 (duplicado); 338 a 339; 421 e 422; 429 e 431; 459 a 461 e 463 a 466",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a autuação dos documentos desentranhados como Pet autônoma vinculada ao feito, com os novos autos conclusos ao Gabinete.",
+      "pagina": 2,
+      "trecho_fonte": "promovendo a sua atuação como Pet autônoma vinculada a este feito, fazendo os novos autos conclusos a este Gabinete.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 6 de março de 2026.",
+      "pagina": 2,
+      "trecho_fonte": "Cumpra-se. Brasília, 6 de março de 2026.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; a página 3 contém apenas a assinatura do relator."
+}

@@ -1,0 +1,64 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial requer a prorrogação de prazo para a realização de diligências complementares que reputa imprescindíveis para a ultimação das investigações (e-Doc. 1031).",
+      "pagina": 3,
+      "trecho_fonte": "A autoridade policial requer a prorrogação de prazo para a realização de diligências complementares que reputa imprescindíveis para a ultimação das investigações (e-Doc. 1031).",
+      "atribuida_a": "autoridade policial",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator defere a prorrogação de prazo com fulcro no artigo 230-C, § 1º, do RISTF.",
+      "pagina": 3,
+      "trecho_fonte": "Com fulcro no artigo 230-C, § 1º, do RISTF defiro a prorrogação de prazo",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 25 de agosto de 2026, o relator deferiu a prorrogação de prazo por mais 60 (sessenta) dias.",
+      "pagina": 3,
+      "trecho_fonte": "defiro a prorrogação de prazo, por mais 60 (sessenta) dias.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a remessa dos autos à Polícia Federal para a continuidade das investigações.",
+      "pagina": 3,
+      "trecho_fonte": "Remetam-se os autos à Polícia Federal para a continuidade das investigações.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 25 de agosto de 2026, e assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 25 de agosto de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; a página 2 traz apenas o título \"DESPACHO:\", repetido na página 3, onde está o texto."
+}

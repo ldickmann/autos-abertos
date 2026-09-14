@@ -1,0 +1,71 @@
+{
+  "itens": [
+    {
+      "pedido": "objeção à obrigatoriedade de comparecimento de BELLINE SANTANA para prestar depoimento perante a CPI do Crime Organizado em 24/03/2026 (Petição nº 35467/2026)",
+      "quem_pediu": "defesa de BELLINE SANTANA",
+      "resultado": "outro",
+      "decisao": "afastou a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à CPI do Crime Organizado",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-23",
+      "pagina": 5,
+      "trecho_fonte": "afasto a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "condicoes": [
+        "direito ao silêncio, de não responder a perguntas a ele direcionadas",
+        "direito à assistência por advogado durante o ato",
+        "direito de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo",
+        "direito de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores",
+        "custódia do depoente, dentro das dependências do Congresso Nacional, a cargo da Polícia Legislativa do Senado Federal"
+      ]
+    },
+    {
+      "pedido": "autorização judicial para o comparecimento de BELLINE SANTANA para prestar depoimento perante a CPI em 24/03/2026, às 9h, em Brasília, ou em outra data a ser designada (Petição nº 35882/2026)",
+      "quem_pediu": "Comissão Mista Parlamentar de Inquérito (CPMI do Crime Organizado)",
+      "resultado": "outro",
+      "decisao": "condicionou qualquer transferência do investigado ao Senado Federal à prévia manifestação expressa, formal e inequívoca quanto à sua opção positiva pelo comparecimento",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-23",
+      "pagina": 6,
+      "trecho_fonte": "ficando, todavia, qualquer transferência condicionada à prévia manifestação expressa, formal e inequívoca quanto à sua opção positiva pelo comparecimento.",
+      "condicoes": [
+        "prévia manifestação expressa, formal e inequívoca do investigado quanto à opção positiva pelo comparecimento"
+      ]
+    },
+    {
+      "pedido": "fixação das condições logísticas do transporte do investigado à sede do Senado Federal e do retorno ao local de custódia",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, com escolta, devendo o investigado retornar imediatamente ao local de origem após o ato",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-23",
+      "pagina": 6,
+      "trecho_fonte": "determino que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, com segurança e vigilância contínua policial por meio de escolta apropriada.",
+      "condicoes": [
+        "segurança e vigilância contínua policial por meio de escolta apropriada",
+        "retorno imediato ao local de origem após cumprido o ato, com as mesmas regras de segurança e de deslocamento"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão à Presidência da CPI-CRIME, às defesas constituídas e à Polícia Federal",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com urgência e remessa de cópia integral da decisão, à Presidência da CPI-CRIME, às defesas constituídas e à Polícia Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-23",
+      "pagina": 6,
+      "trecho_fonte": "13. Assim, comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI-CRIME, as defesas constituídas, e a Polícia Federal",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência à Procuradoria-Geral da República após o cumprimento das determinações",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se dê ciência à Procuradoria-Geral da República após cumpridas as determinações",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-23",
+      "pagina": 6,
+      "trecho_fonte": "14. Cumpridas as determinações acima, dê-se ciência à Procuradoria-",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}
