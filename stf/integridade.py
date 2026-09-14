@@ -37,13 +37,16 @@ def gerar_manifesto(con: sqlite3.Connection, *, coletas: Path = config.COLETAS) 
         "SELECT d.id, d.incidente, d.titulo, d.url, d.formato, d.sha256, d.paginas, d.baixado_em, d.codigo_autenticacao, d.senha_autenticacao, "
         "p.classe || ' ' || p.numero AS processo FROM documento d LEFT JOIN processo p ON p.incidente_principal=d.incidente "
         "WHERE d.sha256 IS NOT NULL ORDER BY d.id")]
+    externas = [dict(r) for r in con.execute(
+        "SELECT id, fonte_id, url, fetched_at, http_status, sha256, bytes, content_type FROM fonte_externa_snapshot ORDER BY id")]
     corpo = {
         "gerado_em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "como_conferir": "Baixe o arquivo pela URL de origem, calcule o SHA-256 e compare com o valor listado. Para documentos, o código e a senha de autenticação também podem ser conferidos em http://www.stf.jus.br/portal/autenticacao/autenticarDocumento.asp.",
-        "totais": {"registros_de_coleta": len(registros), "snapshots": len(snapshots), "documentos": len(documentos)},
+        "totais": {"registros_de_coleta": len(registros), "snapshots": len(snapshots), "documentos": len(documentos), "fontes_externas": len(externas)},
         "registros_de_coleta": registros,
         "snapshots": snapshots,
         "documentos": documentos,
+        "fontes_externas": externas,
     }
     canonico = json.dumps(corpo, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
     corpo["raiz_sha256"] = hashlib.sha256(canonico).hexdigest()
@@ -55,7 +58,7 @@ def verificar_blobs(con: sqlite3.Connection, *, blobs: Path = config.BLOBS, raiz
     ok = faltando = divergentes = 0
     problemas: list[dict] = []
     vistos: set[str] = set()
-    for tabela, col_path in (("snapshot", "raw_path"), ("documento", "blob_path")):
+    for tabela, col_path in (("snapshot", "raw_path"), ("documento", "blob_path"), ("fonte_externa_snapshot", "raw_path")):
         for r in con.execute(f"SELECT id, sha256, {col_path} AS caminho FROM {tabela} WHERE sha256 IS NOT NULL AND {col_path} IS NOT NULL"):
             if r["caminho"] in vistos:
                 continue

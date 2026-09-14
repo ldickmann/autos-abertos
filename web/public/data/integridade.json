@@ -1,10 +1,11 @@
 {
- "gerado_em": "2026-09-14T15:09:37+00:00",
+ "gerado_em": "2026-09-14T15:12:05+00:00",
  "como_conferir": "Baixe o arquivo pela URL de origem, calcule o SHA-256 e compare com o valor listado. Para documentos, o código e a senha de autenticação também podem ser conferidos em http://www.stf.jus.br/portal/autenticacao/autenticarDocumento.asp.",
  "totais": {
   "registros_de_coleta": 41,
   "snapshots": 563,
-  "documentos": 226
+  "documentos": 226,
+  "fontes_externas": 26
  },
  "registros_de_coleta": [
   {
@@ -9389,5 +9390,267 @@
    "processo": "Pet 15556"
   }
  ],
- "raiz_sha256": "550ae4b517e870194c12db9e25104b3f63418886f3d4ed0b3059e4a7a39060b9"
+ "fontes_externas": [
+  {
+   "id": 1,
+   "fonte_id": "bcb-regime-master",
+   "url": "https://www4.bcb.gov.br/Lid/Liquidacao/empresa.asp?pessoaId=6461&frame=1",
+   "fetched_at": "2026-09-14T14:33:59+00:00",
+   "http_status": 500,
+   "sha256": null,
+   "bytes": null,
+   "content_type": null
+  },
+  {
+   "id": 2,
+   "fonte_id": "bcb-dados-abertos-master",
+   "url": "https://dadosabertos.bcb.gov.br/dataset/ir-33923798000100",
+   "fetched_at": "2026-09-14T14:35:03+00:00",
+   "http_status": 200,
+   "sha256": "0c0f976c9fa19d0c5bdc5e9951d651fa647022d603e2eb2a70c5cc300e9dfd25",
+   "bytes": 26873,
+   "content_type": "text/html; charset=utf-8"
+  },
+  {
+   "id": 3,
+   "fonte_id": "bcb-comef-63",
+   "url": "https://www.bcb.gov.br/content/publicacoes/atascomef/202511/Ata_63_Comef_pt.pdf",
+   "fetched_at": "2026-09-14T14:35:08+00:00",
+   "http_status": 200,
+   "sha256": "5c428ad461456b3c122867a30da2ff3bccd11e1efd38245dd21eff8117b38d86",
+   "bytes": 393204,
+   "content_type": "application/pdf"
+  },
+  {
+   "id": 4,
+   "fonte_id": "senado-radio-cpi-master",
+   "url": "https://www12.senado.leg.br/radio/1/noticia/2026/01/30/cpi-do-crime-organizado-investigara-relacoes-entre-banco-master-e-judiciario",
+   "fetched_at": "2026-09-14T14:35:13+00:00",
+   "http_status": 200,
+   "sha256": "ef3a82cad201de31d35b55fd98dcbb62bed4b295846705c3133f337235b3c0be",
+   "bytes": 40096,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 5,
+   "fonte_id": "senado-td363",
+   "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/textos-para-discussao/td363",
+   "fetched_at": "2026-09-14T14:35:16+00:00",
+   "http_status": 200,
+   "sha256": "e6ee32514182a0bb2bba2aae330fe4c9bee481d145044d0f54117d256910885f",
+   "bytes": 722256,
+   "content_type": "application/pdf"
+  },
+  {
+   "id": 6,
+   "fonte_id": "senado-cae-galipolo",
+   "url": "https://www12.senado.leg.br/radio/1/noticia/2025/11/26/liquidacao-do-banco-master-foi-tema-no-debate-com-galipolo-na-cae",
+   "fetched_at": "2026-09-14T14:35:19+00:00",
+   "http_status": 200,
+   "sha256": "2c7897be2fc5a1bb1825f464b35baaa082696b6a7a5257af7f8501417f6a086f",
+   "bytes": 40317,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 7,
+   "fonte_id": "bcb-regime-master",
+   "url": "https://www4.bcb.gov.br/Lid/Liquidacao/empresa.asp?pessoaId=6461&frame=1",
+   "fetched_at": "2026-09-14T15:02:57+00:00",
+   "http_status": 500,
+   "sha256": null,
+   "bytes": null,
+   "content_type": null
+  },
+  {
+   "id": 8,
+   "fonte_id": "bcb-dados-abertos-master",
+   "url": "https://dadosabertos.bcb.gov.br/dataset/ir-33923798000100",
+   "fetched_at": "2026-09-14T15:04:16+00:00",
+   "http_status": 200,
+   "sha256": "49a1b6bc5b68509954286f12316437114b5dd0513047cc5eb9442b3c9cdfaf2f",
+   "bytes": 26873,
+   "content_type": "text/html; charset=utf-8"
+  },
+  {
+   "id": 9,
+   "fonte_id": "bcb-comef-63",
+   "url": "https://www.bcb.gov.br/content/publicacoes/atascomef/202511/Ata_63_Comef_pt.pdf",
+   "fetched_at": "2026-09-14T15:04:20+00:00",
+   "http_status": 200,
+   "sha256": "5c428ad461456b3c122867a30da2ff3bccd11e1efd38245dd21eff8117b38d86",
+   "bytes": 393204,
+   "content_type": "application/pdf"
+  },
+  {
+   "id": 10,
+   "fonte_id": "senado-radio-cpi-master",
+   "url": "https://www12.senado.leg.br/radio/1/noticia/2026/01/30/cpi-do-crime-organizado-investigara-relacoes-entre-banco-master-e-judiciario",
+   "fetched_at": "2026-09-14T15:04:23+00:00",
+   "http_status": 200,
+   "sha256": "d60c929874e5836ae4ea30bbf1df1c92aacc6e68f0a7981264f03f6652e6bba4",
+   "bytes": 40262,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 11,
+   "fonte_id": "senado-td363",
+   "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/textos-para-discussao/td363",
+   "fetched_at": "2026-09-14T15:04:26+00:00",
+   "http_status": 200,
+   "sha256": "e6ee32514182a0bb2bba2aae330fe4c9bee481d145044d0f54117d256910885f",
+   "bytes": 722256,
+   "content_type": "application/pdf"
+  },
+  {
+   "id": 12,
+   "fonte_id": "senado-cae-galipolo",
+   "url": "https://www12.senado.leg.br/radio/1/noticia/2025/11/26/liquidacao-do-banco-master-foi-tema-no-debate-com-galipolo-na-cae",
+   "fetched_at": "2026-09-14T15:04:30+00:00",
+   "http_status": 200,
+   "sha256": "2c7897be2fc5a1bb1825f464b35baaa082696b6a7a5257af7f8501417f6a086f",
+   "bytes": 40317,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 13,
+   "fonte_id": "pf-fase1-2025-11",
+   "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2025/11/policia-federal-combate-crimes-praticados-contra-o-sistema-financeiro-nacional",
+   "fetched_at": "2026-09-14T15:04:33+00:00",
+   "http_status": 200,
+   "sha256": "f7386d4c172f755fd958b5745a99a83f11bd71a8ad835c845d37404e7d5110af",
+   "bytes": 52733,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 14,
+   "fonte_id": "pf-fase2-2026-01",
+   "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/01/policia-federal-deflagra-segunda-fase-da-operacao-compliance-zero",
+   "fetched_at": "2026-09-14T15:04:36+00:00",
+   "http_status": 200,
+   "sha256": "c555f459f8b4d1e50b7c8f2a7d50f2bc90d990414b35efe859cab53d5f03d377",
+   "bytes": 52739,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 15,
+   "fonte_id": "pf-fase3-2026-03",
+   "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/03/policia-federal-deflagra-3a-fase-da-operacao-compliance-zero",
+   "fetched_at": "2026-09-14T15:04:39+00:00",
+   "http_status": null,
+   "sha256": null,
+   "bytes": null,
+   "content_type": null
+  },
+  {
+   "id": 16,
+   "fonte_id": "mj-fase4-2026-04",
+   "url": "https://www.gov.br/mj/pt-br/assuntos/noticias/operacao-compliance-zero-avanca-e-mira-corrupcao-no-alto-escalao-do-sistema-financeiro",
+   "fetched_at": "2026-09-14T15:05:42+00:00",
+   "http_status": 200,
+   "sha256": "4eca38bb19558f7c03db05856db45868eeed48a579feff175ad9cec3d536d2ad",
+   "bytes": 54742,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 17,
+   "fonte_id": "pf-fase5-2026-05",
+   "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/05/pf-deflagra-5a-fase-da-operacao-compliance-zero",
+   "fetched_at": "2026-09-14T15:05:46+00:00",
+   "http_status": 200,
+   "sha256": "f7386d4c172f755fd958b5745a99a83f11bd71a8ad835c845d37404e7d5110af",
+   "bytes": 52733,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 18,
+   "fonte_id": "pf-fase6-2026-05",
+   "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/05/pf-deflagra-6a-fase-da-operacao-compliance-zero",
+   "fetched_at": "2026-09-14T15:05:49+00:00",
+   "http_status": 200,
+   "sha256": "c555f459f8b4d1e50b7c8f2a7d50f2bc90d990414b35efe859cab53d5f03d377",
+   "bytes": 52739,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 19,
+   "fonte_id": "pf-fase8-2026-05",
+   "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/05/policia-federal-deflagra-8a-fase-da-operacao-compliance-zero",
+   "fetched_at": "2026-09-14T15:05:52+00:00",
+   "http_status": 200,
+   "sha256": "c555f459f8b4d1e50b7c8f2a7d50f2bc90d990414b35efe859cab53d5f03d377",
+   "bytes": 52739,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 20,
+   "fonte_id": "pf-fase10-2026-07",
+   "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/07/policia-federal-deflagra-10a-fase-da-operacao-compliance-zero",
+   "fetched_at": "2026-09-14T15:05:56+00:00",
+   "http_status": 200,
+   "sha256": "548525ea38de32f787bddbfb11f80588897842f2d6616bee13d618a668e69cd4",
+   "bytes": 106932,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 21,
+   "fonte_id": "camara-rcp1-2026",
+   "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2600034",
+   "fetched_at": "2026-09-14T15:05:59+00:00",
+   "http_status": 200,
+   "sha256": "d55fe193608f8ca4ae09da938f79d3132fdbba43f85a8670af263cd6155657e7",
+   "bytes": 73090,
+   "content_type": "text/html;charset=utf-8"
+  },
+  {
+   "id": 22,
+   "fonte_id": "camara-noticia-alcolumbre",
+   "url": "https://www.camara.leg.br/noticias/1275008-alcolumbre-nega-pedidos-de-leitura-de-requerimentos-para-criacao-de-cpi-do-banco-master/",
+   "fetched_at": "2026-09-14T15:06:02+00:00",
+   "http_status": 200,
+   "sha256": "c9cb062420c106afe5e21d9250daa6538f21bd879ceffbc5ee03a12e74b5717c",
+   "bytes": 58518,
+   "content_type": "text/html; charset=utf-8"
+  },
+  {
+   "id": 23,
+   "fonte_id": "camara-noticia-motta",
+   "url": "https://www.camara.leg.br/noticias/1248059-motta-diz-que-pedido-de-cpi-sobre-banco-master-precisa-respeitar-ordem-cronologica/",
+   "fetched_at": "2026-09-14T15:06:05+00:00",
+   "http_status": 200,
+   "sha256": "a18b7c6ffeb79c2672154194d4562d9b204fb67d566645ec90623f16c2eec857",
+   "bytes": 60833,
+   "content_type": "text/html; charset=utf-8"
+  },
+  {
+   "id": 24,
+   "fonte_id": "camara-noticia-cpmi-inss",
+   "url": "https://www.camara.leg.br/noticias/1242576-cpmi-do-inss-pode-votar-quebras-de-sigilos-relacionados-ao-banco-master/",
+   "fetched_at": "2026-09-14T15:06:08+00:00",
+   "http_status": 200,
+   "sha256": "b06ff748293da06d74a07ad202c6754900a2060edb5e953f262cabb6d31202ea",
+   "bytes": 60430,
+   "content_type": "text/html; charset=utf-8"
+  },
+  {
+   "id": 25,
+   "fonte_id": "tcdf-denuncia-brb",
+   "url": "https://www2.tc.df.gov.br/tcdf-recebe-nova-denuncia-sobre-operacoes-do-brb-relacionadas-ao-banco-master/",
+   "fetched_at": "2026-09-14T15:06:12+00:00",
+   "http_status": null,
+   "sha256": null,
+   "bytes": null,
+   "content_type": null
+  },
+  {
+   "id": 26,
+   "fonte_id": "cldf-compliance-zero",
+   "url": "https://www.cl.df.gov.br/-/operacao-compliance-zero-da-policia-federal-contra-brb-e-banco-master-repercute-na-cldf",
+   "fetched_at": "2026-09-14T15:06:15+00:00",
+   "http_status": 200,
+   "sha256": "f7320441fc63265365d460b48c25a309c41cfa313fc8d2e4fef0a96588d208da",
+   "bytes": 198285,
+   "content_type": "text/html;charset=UTF-8"
+  }
+ ],
+ "raiz_sha256": "e6a0ee52e9229a5dd0fa80ea7274b0e583d93ba78e13534200dedec9d995b9be"
 }
