@@ -57,8 +57,8 @@ class ClienteEducado:
             return falta
         return 0.0
 
-    def get(self, url: str, *, aba: str, referer: str | None = None) -> httpx.Response | None:
-        headers = {"Referer": referer} if referer else {}
+    def get(self, url: str, *, aba: str, referer: str | None = None, headers: dict | None = None) -> httpx.Response | None:
+        headers = {**({"Referer": referer} if referer else {}), **(headers or {})}
         for tentativa in range(1, config.BACKOFF_TENTATIVAS + 1):
             if self.count >= self.teto:
                 raise TetoAtingido(f"teto de {self.teto} requisições atingido antes de {aba} ({url})")

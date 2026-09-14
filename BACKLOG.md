@@ -24,6 +24,9 @@ Ordem de execução decidida em 14/09/2026. Cada item vira commit próprio; o si
 | 23 | Saídas abertas | **feito (14/09)**: `decisoes.csv`, `assercoes.csv`, `cronologia.csv` (UTF-8 com BOM, `;`) e `feed.xml` (Atom com avisos e rodadas de vigilância), links em `/verificar` | — |
 | 24 | Entidade: quem diz o quê | **feito (14/09)**: página da entidade agrupa as asserções por natureza (fato / alegação por quem alega / fundamento por julgador), com trecho | — |
 
+| 25 | Dados públicos de todos os Poderes | **feito (14/09), 1ª rodada**: 22 fontes oficiais curadas (PF: fases 1, 2, 3, 5, 6, 8 e 10 da Compliance Zero; MJSP: 4ª fase; BC: regime, dados abertos, Comef; Senado: CPI, TD 363, CAE; Câmara: RCP 1/2026 e notícias; TCDF; CLDF) com cópia e hash; `stf/legislativo.py` consulta as APIs de dados abertos do Senado e da Câmara (47 matérias: 40 REQ, 3 RQS, PFS, PL, PFC 24/2026, RCP 1/2026) → página `/congresso` | ampliar: MPF/PGR (notas e pareceres), TCU (BRB), CVM, DOU (atos de liquidação), STJ; PF fases 7 e 9 (URLs não confirmadas); a nota da 3ª fase da PF passou a exigir login (registrado) |
+| 26 | Cruzar os dados dos Poderes com os autos (LLM) | a fazer, depois do 25 | com fonte em cada ponta: (a) datas das fases da PF ↔ decisões/asserções datadas na cronologia (regra); (b) nomes nas ementas do Congresso ↔ entidades da base (chave forte, sem fundir pessoas); (c) extração por modelo, no regime da Fase 4 (trecho literal validado), das notas oficiais da PF e do BC como asserções `alegacao_parte` atribuídas ao órgão; (d) painel "o que cada Poder fez, e quando" |
+
 ## Restrições que valem para todos os itens
 
 - Proveniência obrigatória; tipagem epistêmica; append-only; coleta educada; sem inferência sobre pessoas (ver `README.md`).

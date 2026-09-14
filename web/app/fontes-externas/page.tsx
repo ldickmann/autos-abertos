@@ -6,13 +6,15 @@ import { formatarDataHora } from "@/lib/tipos";
 export default function PaginaFontesExternas() {
   const fontes = getFontesExternas();
   const porOrgao = new Map<string, typeof fontes>();
-  for (const f of fontes) porOrgao.set(f.orgao, [...(porOrgao.get(f.orgao) ?? []), f]);
+  const ordem = ["Judiciário", "Executivo (Polícia Federal)", "Executivo (Ministério da Justiça)", "Executivo (autarquia)", "Legislativo", "Legislativo (DF)", "Controle externo (DF)", "Terceiros"];
+  for (const f of [...fontes].sort((a, b) => ordem.indexOf(a.poder ?? "Outros") - ordem.indexOf(b.poder ?? "Outros"))) porOrgao.set(f.poder ?? "Outros", [...(porOrgao.get(f.poder ?? "Outros") ?? []), f]);
   return (
     <div className="space-y-6">
       <header className="max-w-3xl">
         <h1 className="text-2xl">Fontes oficiais fora do STF</h1>
         <p className="leitura mt-1">
-          O caso não vive só no portal do STF: o Banco Central decretou a liquidação, o Senado investiga em comissão, o próprio regulador publica atas.
+          O caso não vive só no portal do STF: a Polícia Federal publica cada fase da operação, o Banco Central decretou a liquidação e publica atas, o Congresso e a Câmara Legislativa do DF debatem, o Tribunal de Contas do DF recebe denúncias sobre o BRB.
+          Aqui estão as fontes oficiais de cada Poder, agrupadas.
           Esta página lista as fontes oficiais que importam, guarda uma cópia com impressão digital de cada uma e avisa se a página mudou ou sumiu
           entre uma cópia e outra. Páginas de terceiros aparecem só como referência, sem cópia.
         </p>
@@ -23,8 +25,9 @@ export default function PaginaFontesExternas() {
           <ul className="mt-2 space-y-2">
             {lista.map((f) => (
               <li key={f.id} className="folha border border-neutral-300 bg-white p-3 text-sm">
-                <p className="font-semibold"><a className="underline" href={f.url} rel="noreferrer">{f.rotulo}</a> <span className="font-normal text-neutral-600">({f.tipo})</span></p>
+                <p className="font-semibold"><a className="underline" href={f.url} rel="noreferrer">{f.rotulo}</a> <span className="font-normal text-neutral-600">({f.orgao}, {f.tipo})</span></p>
                 <p className="leitura mt-1">{f.por_que}</p>
+                {f.observacao && <p className="mt-1 text-xs text-amber-900"><span className="rounded-sm border border-amber-700 bg-amber-100 px-1">observação</span> {f.observacao}</p>}
                 {f.capturar ? (
                   f.ultima ? (
                     f.ultima.sha256 ? (

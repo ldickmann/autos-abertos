@@ -421,6 +421,26 @@ CREATE TABLE IF NOT EXISTS fonte_externa_snapshot (
 );
 CREATE INDEX IF NOT EXISTS ix_fonte_externa_fonte ON fonte_externa_snapshot(fonte_id, id);
 
+-- matérias do Congresso que mencionam o caso (stf/legislativo.py): projeção do registro data/raw/legislativo.jsonl + blobs
+CREATE TABLE IF NOT EXISTS materia_legislativa (
+    casa             TEXT NOT NULL,     -- senado | camara
+    codigo           TEXT NOT NULL,     -- código da matéria na casa
+    sigla            TEXT,
+    numero           INTEGER,
+    ano              INTEGER,
+    comissao         TEXT,
+    identificacao    TEXT,
+    ementa           TEXT NOT NULL,
+    autor            TEXT,
+    data             TEXT,
+    url              TEXT NOT NULL,     -- página pública de tramitação
+    url_api          TEXT,
+    consultas_json   TEXT NOT NULL,     -- quais consultas (casa:palavra) devolveram a matéria
+    primeiro_visto_em TEXT NOT NULL,
+    ultimo_visto_em  TEXT NOT NULL,
+    PRIMARY KEY (casa, codigo)
+);
+
 CREATE VIRTUAL TABLE IF NOT EXISTS andamento_fts USING fts5(
     descricao, tipo,
     content='andamento', content_rowid='id',

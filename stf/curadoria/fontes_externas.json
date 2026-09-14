@@ -1,21 +1,226 @@
 {
-  "_nota": "Fontes OFICIAIS externas ao portal do STF ligadas ao caso, curadas à mão. 'capturar: true' = o site guarda uma cópia com hash a cada rodada (`python -m stf capturar-externas`) e mostra se mudou; 'capturar: false' = só referência (páginas de terceiros, como enciclopédias, não são copiadas). Cada entrada diz por que importa, sem interpretar o conteúdo.",
+  "_nota": "Fontes OFICIAIS externas ao portal do STF ligadas ao caso, curadas à mão. 'capturar: true' = o site guarda uma cópia com hash a cada rodada (`python -m stf capturar-externas`) e mostra se mudou; 'capturar: false' = só referência (páginas de terceiros, como enciclopédias, não são copiadas). Cada entrada diz por que importa, sem interpretar o conteúdo. 'poder' agrupa por Poder/órgão da República.",
   "fontes": [
-    {"id": "bcb-regime-master", "orgao": "Banco Central do Brasil", "rotulo": "Registro do regime de resolução (liquidação extrajudicial) do Banco Master", "url": "https://www4.bcb.gov.br/Lid/Liquidacao/empresa.asp?pessoaId=6461&frame=1", "tipo": "pagina", "capturar": true,
-     "por_que": "É o registro oficial do Banco Central sobre a liquidação extrajudicial, ato que aparece citado nos documentos do STF (art. 4º da Lei 6.024/1974 e correlatos)."},
-    {"id": "bcb-dados-abertos-master", "orgao": "Banco Central do Brasil (Dados Abertos)", "rotulo": "Conjunto de dados: SFN — BANCO MASTER — EM LIQUIDAÇÃO EXTRAJUDICIAL (CNPJ 33.923.798/0001-00)", "url": "https://dadosabertos.bcb.gov.br/dataset/ir-33923798000100", "tipo": "dados", "capturar": true,
-     "por_que": "Dados públicos e estruturados da instituição no Sistema Financeiro Nacional, com histórico; permite conferir datas e situação cadastral sem intermediários."},
-    {"id": "bcb-comef-63", "orgao": "Banco Central do Brasil (Comef)", "rotulo": "63ª Ata do Comitê de Estabilidade Financeira (novembro de 2025)", "url": "https://www.bcb.gov.br/content/publicacoes/atascomef/202511/Ata_63_Comef_pt.pdf", "tipo": "pdf", "capturar": true,
-     "por_que": "Ata oficial do comitê que avalia a estabilidade do sistema financeiro no mês da liquidação; documento primário do próprio regulador."},
-    {"id": "senado-radio-cpi-master", "orgao": "Senado Federal (Rádio Senado)", "rotulo": "CPI do Crime Organizado investigará relações entre Banco Master e Judiciário (30/01/2026)", "url": "https://www12.senado.leg.br/radio/1/noticia/2026/01/30/cpi-do-crime-organizado-investigara-relacoes-entre-banco-master-e-judiciario", "tipo": "pagina", "capturar": true,
-     "por_que": "Registro oficial do Senado sobre a ampliação do objeto da CPI, órgão que aparece nas decisões do STF (requisições, convocações)."},
-    {"id": "senado-td363", "orgao": "Senado Federal (Consultoria Legislativa)", "rotulo": "Texto para Discussão 363: o que o regulador pode aprender com o caso", "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/textos-para-discussao/td363", "tipo": "pagina", "capturar": true,
-     "por_que": "Estudo técnico oficial da Consultoria do Senado sobre a supervisão bancária no caso; fonte primária de análise institucional."},
-    {"id": "senado-cae-galipolo", "orgao": "Senado Federal (Rádio Senado)", "rotulo": "Liquidação do Banco Master foi tema no debate com o presidente do Banco Central na CAE (26/11/2025)", "url": "https://www12.senado.leg.br/radio/1/noticia/2025/11/26/liquidacao-do-banco-master-foi-tema-no-debate-com-galipolo-na-cae", "tipo": "pagina", "capturar": true,
-     "por_que": "Registro oficial de audiência pública em que o regulador foi questionado sobre a liquidação."},
-    {"id": "stf-youtube", "orgao": "Supremo Tribunal Federal", "rotulo": "Canal oficial do STF no YouTube (sessões ao vivo)", "url": "https://www.youtube.com/@STF_oficial/streams", "tipo": "video", "capturar": false,
-     "por_que": "Transmissão ao vivo das sessões plenárias, inclusive as ligadas a este caso."},
-    {"id": "wikipedia-escandalo", "orgao": "Wikipédia (terceiros)", "rotulo": "Verbete \"Escândalo do Banco Master\"", "url": "https://pt.wikipedia.org/wiki/Esc%C3%A2ndalo_do_Banco_Master", "tipo": "pagina", "capturar": false,
-     "por_que": "Referência secundária, editada por voluntários, útil como porta de entrada e lista de fontes; não é fonte oficial e por isso não é copiada nem citada como fato."}
+    {
+      "id": "bcb-regime-master",
+      "orgao": "Banco Central do Brasil",
+      "rotulo": "Registro do regime de resolução (liquidação extrajudicial) do Banco Master",
+      "url": "https://www4.bcb.gov.br/Lid/Liquidacao/empresa.asp?pessoaId=6461&frame=1",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "É o registro oficial do Banco Central sobre a liquidação extrajudicial, ato que aparece citado nos documentos do STF (art. 4º da Lei 6.024/1974 e correlatos).",
+      "poder": "Executivo (autarquia)"
+    },
+    {
+      "id": "bcb-dados-abertos-master",
+      "orgao": "Banco Central do Brasil (Dados Abertos)",
+      "rotulo": "Conjunto de dados: SFN — BANCO MASTER — EM LIQUIDAÇÃO EXTRAJUDICIAL (CNPJ 33.923.798/0001-00)",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/ir-33923798000100",
+      "tipo": "dados",
+      "capturar": true,
+      "por_que": "Dados públicos e estruturados da instituição no Sistema Financeiro Nacional, com histórico; permite conferir datas e situação cadastral sem intermediários.",
+      "poder": "Executivo (autarquia)"
+    },
+    {
+      "id": "bcb-comef-63",
+      "orgao": "Banco Central do Brasil (Comef)",
+      "rotulo": "63ª Ata do Comitê de Estabilidade Financeira (novembro de 2025)",
+      "url": "https://www.bcb.gov.br/content/publicacoes/atascomef/202511/Ata_63_Comef_pt.pdf",
+      "tipo": "pdf",
+      "capturar": true,
+      "por_que": "Ata oficial do comitê que avalia a estabilidade do sistema financeiro no mês da liquidação; documento primário do próprio regulador.",
+      "poder": "Executivo (autarquia)"
+    },
+    {
+      "id": "senado-radio-cpi-master",
+      "orgao": "Senado Federal (Rádio Senado)",
+      "rotulo": "CPI do Crime Organizado investigará relações entre Banco Master e Judiciário (30/01/2026)",
+      "url": "https://www12.senado.leg.br/radio/1/noticia/2026/01/30/cpi-do-crime-organizado-investigara-relacoes-entre-banco-master-e-judiciario",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Registro oficial do Senado sobre a ampliação do objeto da CPI, órgão que aparece nas decisões do STF (requisições, convocações).",
+      "poder": "Legislativo"
+    },
+    {
+      "id": "senado-td363",
+      "orgao": "Senado Federal (Consultoria Legislativa)",
+      "rotulo": "Texto para Discussão 363: o que o regulador pode aprender com o caso",
+      "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/textos-para-discussao/td363",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Estudo técnico oficial da Consultoria do Senado sobre a supervisão bancária no caso; fonte primária de análise institucional.",
+      "poder": "Legislativo"
+    },
+    {
+      "id": "senado-cae-galipolo",
+      "orgao": "Senado Federal (Rádio Senado)",
+      "rotulo": "Liquidação do Banco Master foi tema no debate com o presidente do Banco Central na CAE (26/11/2025)",
+      "url": "https://www12.senado.leg.br/radio/1/noticia/2025/11/26/liquidacao-do-banco-master-foi-tema-no-debate-com-galipolo-na-cae",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Registro oficial de audiência pública em que o regulador foi questionado sobre a liquidação.",
+      "poder": "Legislativo"
+    },
+    {
+      "id": "stf-youtube",
+      "orgao": "Supremo Tribunal Federal",
+      "rotulo": "Canal oficial do STF no YouTube (sessões ao vivo)",
+      "url": "https://www.youtube.com/@STF_oficial/streams",
+      "tipo": "video",
+      "capturar": false,
+      "por_que": "Transmissão ao vivo das sessões plenárias, inclusive as ligadas a este caso.",
+      "poder": "Judiciário"
+    },
+    {
+      "id": "wikipedia-escandalo",
+      "orgao": "Wikipédia (terceiros)",
+      "rotulo": "Verbete \"Escândalo do Banco Master\"",
+      "url": "https://pt.wikipedia.org/wiki/Esc%C3%A2ndalo_do_Banco_Master",
+      "tipo": "pagina",
+      "capturar": false,
+      "por_que": "Referência secundária, editada por voluntários, útil como porta de entrada e lista de fontes; não é fonte oficial e por isso não é copiada nem citada como fato.",
+      "poder": "Terceiros"
+    },
+    {
+      "id": "pf-fase1-2025-11",
+      "poder": "Executivo (Polícia Federal)",
+      "orgao": "Polícia Federal",
+      "rotulo": "Polícia Federal combate crimes praticados contra o Sistema Financeiro Nacional (1ª fase, novembro de 2025)",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2025/11/policia-federal-combate-crimes-praticados-contra-o-sistema-financeiro-nacional",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Nota oficial da PF sobre a operação que dá origem às representações examinadas nos processos desta base."
+    },
+    {
+      "id": "pf-fase2-2026-01",
+      "poder": "Executivo (Polícia Federal)",
+      "orgao": "Polícia Federal",
+      "rotulo": "PF deflagra 2ª fase da Operação Compliance Zero (janeiro de 2026)",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/01/policia-federal-deflagra-segunda-fase-da-operacao-compliance-zero",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Nota oficial da PF; cada fase corresponde a medidas autorizadas pelo STF nos autos."
+    },
+    {
+      "id": "pf-fase3-2026-03",
+      "poder": "Executivo (Polícia Federal)",
+      "orgao": "Polícia Federal",
+      "rotulo": "PF deflagra 3ª fase da Operação Compliance Zero (março de 2026)",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/03/policia-federal-deflagra-3a-fase-da-operacao-compliance-zero",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Nota oficial da PF.",
+      "observacao": "Em 14/09/2026 a URL passou a redirecionar para uma página de login do gov.br; a nota pode ter sido despublicada. Mantida na lista para registrar a indisponibilidade."
+    },
+    {
+      "id": "mj-fase4-2026-04",
+      "poder": "Executivo (Ministério da Justiça)",
+      "orgao": "Ministério da Justiça e Segurança Pública",
+      "rotulo": "Operação Compliance Zero avança e mira corrupção no alto escalão do sistema financeiro (4ª fase, abril de 2026)",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/noticias/operacao-compliance-zero-avanca-e-mira-corrupcao-no-alto-escalao-do-sistema-financeiro",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Nota oficial do MJSP sobre a 4ª fase."
+    },
+    {
+      "id": "pf-fase5-2026-05",
+      "poder": "Executivo (Polícia Federal)",
+      "orgao": "Polícia Federal",
+      "rotulo": "PF deflagra 5ª fase da Operação Compliance Zero (maio de 2026)",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/05/pf-deflagra-5a-fase-da-operacao-compliance-zero",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Nota oficial da PF."
+    },
+    {
+      "id": "pf-fase6-2026-05",
+      "poder": "Executivo (Polícia Federal)",
+      "orgao": "Polícia Federal",
+      "rotulo": "PF deflagra 6ª fase da Operação Compliance Zero (maio de 2026)",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/05/pf-deflagra-6a-fase-da-operacao-compliance-zero",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Nota oficial da PF."
+    },
+    {
+      "id": "pf-fase8-2026-05",
+      "poder": "Executivo (Polícia Federal)",
+      "orgao": "Polícia Federal",
+      "rotulo": "PF deflagra 8ª fase da Operação Compliance Zero (maio de 2026)",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/05/policia-federal-deflagra-8a-fase-da-operacao-compliance-zero",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Nota oficial da PF."
+    },
+    {
+      "id": "pf-fase10-2026-07",
+      "poder": "Executivo (Polícia Federal)",
+      "orgao": "Polícia Federal",
+      "rotulo": "PF deflagra 10ª fase da Operação Compliance Zero (julho de 2026)",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/07/policia-federal-deflagra-10a-fase-da-operacao-compliance-zero",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Nota oficial da PF."
+    },
+    {
+      "id": "camara-rcp1-2026",
+      "poder": "Legislativo",
+      "orgao": "Câmara dos Deputados",
+      "rotulo": "RCP 1/2026: requerimento de criação de CPI sobre Banco Master e BRB (ficha de tramitação)",
+      "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2600034",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Tramitação oficial do pedido de CPI na Câmara; a matéria também entra pela API de dados abertos."
+    },
+    {
+      "id": "camara-noticia-alcolumbre",
+      "poder": "Legislativo",
+      "orgao": "Câmara dos Deputados (Agência Câmara)",
+      "rotulo": "Alcolumbre nega pedidos de leitura de requerimentos para criação de CPI do Banco Master",
+      "url": "https://www.camara.leg.br/noticias/1275008-alcolumbre-nega-pedidos-de-leitura-de-requerimentos-para-criacao-de-cpi-do-banco-master/",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Registro oficial da Agência Câmara sobre a tramitação política dos pedidos de CPI/CPMI."
+    },
+    {
+      "id": "camara-noticia-motta",
+      "poder": "Legislativo",
+      "orgao": "Câmara dos Deputados (Agência Câmara)",
+      "rotulo": "Motta diz que pedido de CPI sobre banco Master precisa respeitar ordem cronológica",
+      "url": "https://www.camara.leg.br/noticias/1248059-motta-diz-que-pedido-de-cpi-sobre-banco-master-precisa-respeitar-ordem-cronologica/",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Registro oficial da Agência Câmara."
+    },
+    {
+      "id": "camara-noticia-cpmi-inss",
+      "poder": "Legislativo",
+      "orgao": "Câmara dos Deputados (Agência Câmara)",
+      "rotulo": "CPMI do INSS pode votar quebras de sigilos relacionados ao Banco Master",
+      "url": "https://www.camara.leg.br/noticias/1242576-cpmi-do-inss-pode-votar-quebras-de-sigilos-relacionados-ao-banco-master/",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Registro oficial sobre a atuação de uma CPMI já instalada em relação ao caso."
+    },
+    {
+      "id": "tcdf-denuncia-brb",
+      "poder": "Controle externo (DF)",
+      "orgao": "Tribunal de Contas do Distrito Federal",
+      "rotulo": "TCDF recebe nova denúncia sobre operações do BRB relacionadas ao Banco Master",
+      "url": "https://www2.tc.df.gov.br/tcdf-recebe-nova-denuncia-sobre-operacoes-do-brb-relacionadas-ao-banco-master/",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "O BRB é banco público do DF; o TCDF é o órgão de controle externo competente."
+    },
+    {
+      "id": "cldf-compliance-zero",
+      "poder": "Legislativo (DF)",
+      "orgao": "Câmara Legislativa do Distrito Federal",
+      "rotulo": "Operação da Polícia Federal contra BRB e Banco Master repercute em plenário",
+      "url": "https://www.cl.df.gov.br/-/operacao-compliance-zero-da-policia-federal-contra-brb-e-banco-master-repercute-na-cldf",
+      "tipo": "pagina",
+      "capturar": true,
+      "por_que": "Registro oficial do Legislativo distrital, dono político do BRB."
+    }
   ]
 }
