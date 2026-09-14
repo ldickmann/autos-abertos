@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-14T13:33:36+00:00",
+ "gerado_em": "2026-09-14T14:02:01+00:00",
  "como_conferir": "Baixe o arquivo pela URL de origem, calcule o SHA-256 e compare com o valor listado. Para documentos, o código e a senha de autenticação também podem ser conferidos em http://www.stf.jus.br/portal/autenticacao/autenticarDocumento.asp.",
  "totais": {
   "registros_de_coleta": 41,
@@ -9389,5 +9389,5 @@
    "processo": "Pet 15556"
   }
  ],
- "raiz_sha256": "21ad5dbd8f489074abfbb12ba34e6f48d8942e3f9963d2d9638d73b54b66f498"
+ "raiz_sha256": "975f70575b06a9076b01c235698c7632b27017270dc1e01e2a6f652c8145c680"
 }

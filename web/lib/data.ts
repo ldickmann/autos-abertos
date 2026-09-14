@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import type { Assercao, Decisoes, DocumentoCompleto, Entidade, Grafo, Integridade, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, RodadaMudancas, Verbete } from "@/lib/tipos";
+import type { Assercao, Aviso, Decisoes, DocumentoCompleto, Entidade, Grafo, Integridade, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, RodadaMudancas, Verbete } from "@/lib/tipos";
 
 export * from "@/lib/tipos";
 
@@ -23,6 +23,7 @@ export const getReferencias = () => ler<Referencias>("referencias.json");
 export const getDecisoes = () => ler<Decisoes>("decisoes.json");
 export const getGlossario = () => ler<Verbete[]>("glossario.json");
 export const getIntegridade = () => ler<Integridade>("integridade.json");
+export const getAvisos = (): Aviso[] => (fs.existsSync(path.join(DATA_DIR, "avisos.json")) ? ler<Aviso[]>("avisos.json") : []);
 export const getMudancas = (): RodadaMudancas[] => (fs.existsSync(path.join(DATA_DIR, "mudancas.json")) ? ler<RodadaMudancas[]>("mudancas.json") : []);
 
 let _indiceGlossario: Map<string, Verbete> | null = null;

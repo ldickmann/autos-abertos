@@ -132,6 +132,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 /* Alerta (réu preso, documento sem texto): vermelho fixo com branco de verdade, nos dois temas (5,4:1). */
 .alerta { background: #b91c1c; color: #ffffff; }
 
+/* Campos de formulário nunca alargam o layout: um <select> com opção longa herda a largura do contêiner. */
+select, input, textarea { max-width: 100%; min-width: 0; }
+
 mark { background: var(--alegacao-fundo); color: inherit; box-shadow: 0 0 0 2px var(--alegacao-fundo); }
 
 ::selection { background: var(--fundamento-fundo); }
@@ -237,6 +240,14 @@ details[open] > summary::before { transform: rotate(45deg) translateY(-0.15em); 
   animation: carimbar 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
 }
 
+/* Aviso de acontecimento público: faixa no topo de todas as páginas e cartão na capa. Âmbar (a cor de "atenção" do sistema);
+   ao vivo, a borda pulsa devagar. */
+.aviso-faixa { border-bottom: 1px solid var(--alegacao); background: var(--alegacao-fundo); color: var(--tinta); }
+.aviso-cartao { border-color: var(--alegacao); background: var(--folha); border-left-width: 6px; }
+.aviso-selo { display: inline-block; padding: 1px 8px; border-radius: 2px; background: var(--alegacao); color: var(--fundo); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em; }
+.aviso-vivo .aviso-selo { background: #b91c1c; color: #fff; animation: pulsar 1.6s ease-in-out infinite; }
+@keyframes pulsar { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
   .folha:hover { transform: none; }
@@ -248,6 +259,9 @@ details[open] > summary::before { transform: rotate(45deg) translateY(-0.15em); 
 /* Alvos de toque: em tela de toque, links e controles ganham altura mínima de 44px. */
 @media (pointer: coarse) {
   .nav-trilho a, .toque { min-height: 44px; display: inline-flex; align-items: center; }
+  /* resumos de <details> e links em listas densas: alvo de toque de 44 px sem mudar o desenho */
+  details > summary { min-height: 44px; display: flex; align-items: center; }
+  .alvo-toque { padding-top: 0.55rem; padding-bottom: 0.55rem; }
 }
 
 /* Nav: abaixo de md vira um trilho horizontal de uma linha, rolável, com sombras nas bordas. */

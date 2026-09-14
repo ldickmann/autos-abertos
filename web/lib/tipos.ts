@@ -59,6 +59,12 @@ export type RodadaMudancas = {
     resumo: { sumiu: number; apareceu: number; mudou: number } }[];
 };
 
+export type Aviso = {
+  id: string; titulo: string; inicio: string; ate: string; resumo: string; por_que_importa?: string;
+  acao: { rotulo: string; url: string }; acoes_secundarias: { rotulo: string; url: string }[];
+  fontes: { rotulo: string; url: string }[]; processos_relacionados: number[];
+};
+
 export type Referencias = {
   dispositivos: { dispositivo: string; artigo: string; diploma: string; ocorrencias: number;
     documentos: { documento_id: number; incidente: number; titulo: string | null; pagina: number; ocorrencias: number }[] }[];

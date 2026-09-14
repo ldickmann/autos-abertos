@@ -36,13 +36,11 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
             </div>
           )}
           <div className="sm:col-span-2"><dt className="inline font-semibold">sha256: </dt><dd className="inline break-all font-mono text-xs">{m.sha256}</dd></div>
-          <div className="sm:col-span-2">
-            <details className="text-xs">
-              <summary className="cursor-pointer text-neutral-700">Como verificar este documento</summary>
-              <p className="mt-1">Baixe o arquivo pela URL de origem acima e calcule o hash: <code>Get-FileHash .\arquivo.{m.formato} -Algorithm SHA256</code> (Windows), <code>shasum -a 256 arquivo.{m.formato}</code> (macOS) ou <code>sha256sum arquivo.{m.formato}</code> (Linux). O resultado deve ser igual ao sha256 acima.{m.codigo_autenticacao ? " Ou use o código de autenticação no portal do STF." : ""} <Link className="underline" href="/verificar">Mais formas de conferir.</Link></p>
-            </details>
-          </div>
         </dl>
+        <details className="text-xs">
+          <summary className="cursor-pointer text-neutral-700">Como verificar este documento</summary>
+          <p className="mt-1">Baixe o arquivo pela URL de origem acima e calcule o hash: <code>Get-FileHash .\arquivo.{m.formato} -Algorithm SHA256</code> (Windows), <code>shasum -a 256 arquivo.{m.formato}</code> (macOS) ou <code>sha256sum arquivo.{m.formato}</code> (Linux). O resultado deve ser igual ao sha256 acima.{m.codigo_autenticacao ? " Ou use o código de autenticação no portal do STF." : ""} <Link className="underline" href="/verificar">Mais formas de conferir.</Link></p>
+        </details>
         <div className="mt-3 flex flex-wrap gap-4">
           <Carimbo snapshot={m.snapshot} prefixo="documento baixado em" />
           {!m.tem_texto && <span className="alerta rounded px-2 py-0.5 text-xs font-semibold">sem camada de texto (OCR pendente)</span>}
@@ -114,7 +112,7 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
                       <p>{a.texto}{a.atribuida_a ? <span className="text-neutral-700"> — atribuída a {a.atribuida_a}</span> : null}</p>
                       <p className="text-xs text-neutral-700">trecho-fonte: “{a.trecho_fonte}”</p>
                       {a.entidades.length > 0 && (
-                        <p className="text-xs">{a.entidades.map((e) => <Link key={e.entidade_id} className="mr-2 underline" href={`/entidade/${e.entidade_id}`}>{e.nome}</Link>)}</p>
+                        <p className="flex flex-wrap gap-x-3 gap-y-1 text-xs">{a.entidades.map((e) => <Link key={e.entidade_id} className="toque underline" href={`/entidade/${e.entidade_id}`}>{e.nome}</Link>)}</p>
                       )}
                     </div>
                   </li>
