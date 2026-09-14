@@ -4,7 +4,8 @@ Chave de identidade:
 - advogado com OAB: `oab:<primeiro número/UF>` (a OAB identifica a pessoa; o nome pode variar)
 - ministro: `ministro:<nome normalizado sem prefixo MIN./Ministro(a) e sem sufixo "(relator)">`.
   O portal escreve "MIN. ANDRÉ MENDONÇA", os documentos "Ministro André Mendonça (relator)": é a mesma entidade.
-- qualquer outro: `nome:<nome normalizado>` (maiúsculas, sem acentos, espaços colapsados)
+- qualquer outro: `nome:<nome normalizado>` (maiúsculas, sem acentos nem pontuação; ver stf/aliases.py), depois
+  passado pela lista curada `stf/curadoria/aliases.json` (grafias e artefatos de extração, com motivo)
 
 Limitação declarada: duas pessoas com o mesmo nome exato e sem OAB viram uma entidade.
 A tabela `entidade_mencao` preserva cada ocorrência (parte, incidente, papel), então a
@@ -26,6 +27,8 @@ import unicodedata
 from collections import Counter
 from pathlib import Path
 
+from .aliases import canonizar, normalizar_chave
+
 _SUFIXOS_PJ = re.compile(r"\b(LTDA\.?|S\.?A\.?|S/A|EIRELI|EPP|ME|SOCIEDADE|PARTICIPACOES|PARTICIPAÇÕES|EMPREENDIMENTOS|CONSULTORIA|HOLDING)\b", re.I)
 _PREFIXO_MINISTRO = re.compile(r"^\s*(?:MIN\.?|MINISTR[OA])\s+", re.I)
 _SUFIXO_MINISTRO = re.compile(r"\s*\((?:relator[a]?|revisor[a]?|presidente)\)\s*$", re.I)
@@ -44,13 +47,18 @@ def nome_ministro(nome: str) -> str:
 
 
 def chave_ministro(nome: str) -> str:
-    return f"ministro:{normalizar(nome_ministro(nome))}"
+    return canonizar(f"ministro:{normalizar_chave(nome_ministro(nome))}")
+
+
+def chave_nome(nome: str) -> str:
+    """Chave por nome: normalização forte (sem pontuação/acentos) e aliases curados."""
+    return canonizar(f"nome:{normalizar_chave(nome)}")
 
 
 def chave_de(papel: str, nome: str, oab: list[str]) -> tuple[str, str]:
     if papel == "advogado" and oab:
         return "advogado", f"oab:{oab[0]}"
-    return ("advogado" if papel == "advogado" else "parte"), f"nome:{normalizar(nome)}"
+    return ("advogado" if papel == "advogado" else "parte"), chave_nome(nome)
 
 
 def natureza_provavel(nome: str) -> str | None:

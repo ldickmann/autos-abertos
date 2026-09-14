@@ -1,0 +1,28 @@
+{
+  "_nota": "Função de cada documento, derivada do título literal do portal por padrão (regex sobre o título normalizado). Curadoria versionada; o título literal fica sempre visível. Sem modelo de linguagem: os títulos do portal já são específicos; a única ambiguidade real (Despacho que decide) é resolvida pela marcação e_decisao do próprio portal.",
+  "rotulos": {
+    "decisao": "decisão",
+    "acordao": "acórdão",
+    "voto": "voto",
+    "relatorio": "relatório",
+    "despacho": "despacho",
+    "intimacao": "intimação ou comunicação",
+    "vista": "vista à PGR",
+    "certidao": "certidão",
+    "termo": "termo",
+    "peticao": "petição ou manifestação",
+    "outro": "outro"
+  },
+  "padroes": [
+    {"funcao": "acordao", "padroes": ["ACORDAO"]},
+    {"funcao": "voto", "padroes": ["^VOTO"]},
+    {"funcao": "relatorio", "padroes": ["^RELATORIO"]},
+    {"funcao": "decisao", "padroes": ["^DECISAO"]},
+    {"funcao": "despacho", "padroes": ["^DESPACHO"]},
+    {"funcao": "intimacao", "padroes": ["INTIMACAO", "COMUNICACAO", "OFICIO", "MANDADO"]},
+    {"funcao": "vista", "padroes": ["VISTA A PGR", "VISTA AO"]},
+    {"funcao": "certidao", "padroes": ["^CERTIDAO"]},
+    {"funcao": "termo", "padroes": ["^TERMO"]},
+    {"funcao": "peticao", "padroes": ["PETICAO", "MANIFESTACAO", "PARECER", "REPRESENTACAO"]}
+  ]
+}

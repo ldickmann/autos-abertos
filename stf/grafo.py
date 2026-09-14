@@ -26,7 +26,7 @@ import json
 import sqlite3
 from collections import Counter, defaultdict
 
-from .entidades import chave_ministro, normalizar
+from .entidades import chave_ministro, chave_nome
 
 
 def _no_processo(row) -> dict:
@@ -167,7 +167,7 @@ def construir_grafo(con: sqlite3.Connection) -> dict:
     for a in con.execute("SELECT a.id, a.documento_id, a.pagina, a.tipo_epistemico, a.atribuida_a, d.incidente "
                          "FROM assercao a JOIN documento d ON d.id=a.documento_id WHERE a.atribuida_a IS NOT NULL"):
         nome = a["atribuida_a"].strip()
-        eid = chave_para_id.get(chave_ministro(nome)) or chave_para_id.get(f"nome:{normalizar(nome)}")
+        eid = chave_para_id.get(chave_ministro(nome)) or chave_para_id.get(chave_nome(nome))
         if eid is None:
             continue
         afirma[(eid, a["incidente"], a["tipo_epistemico"])].append({"assercao_id": a["id"], "documento_id": a["documento_id"], "pagina": a["pagina"]})

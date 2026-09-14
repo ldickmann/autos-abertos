@@ -1,0 +1,60 @@
+{
+  "_nota": "Aliases CURADOS de entidades: a chave 'de' passa a resolver para a chave 'para'. Só entram casos em que a diferença é grafia, pontuação ou artefato de extração do PDF, com o motivo escrito. Nunca fundir duas pessoas por parecerem a mesma: isso fica em data/curadoria/aliases-propostos.json (gerado por `python -m stf aliases-propor`) para decisão humana. Chaves usam a normalização de stf/entidades.py (maiúsculas, sem acentos nem pontuação).",
+  "aliases": [
+    {
+      "de": "nome:ANDREMENDONCA",
+      "para": "ministro:ANDRE MENDONCA",
+      "motivo": "assinatura eletrônica extraída do PDF sem o espaço entre nome e sobrenome"
+    },
+    {
+      "de": "nome:ANDRE MENDOCA",
+      "para": "ministro:ANDRE MENDONCA",
+      "motivo": "erro de digitação no documento (falta o N)"
+    },
+    {
+      "de": "ministro:ANDRE MENDOCA",
+      "para": "ministro:ANDRE MENDONCA",
+      "motivo": "erro de digitação no documento (falta o N)"
+    },
+    {
+      "de": "nome:PROCURADORIA GERAL DE REPUBLICA",
+      "para": "nome:PROCURADORIA GERAL DA REPUBLICA",
+      "motivo": "erro de digitação no documento (de/da); mesmo órgão"
+    },
+    {
+      "de": "nome:FUNDO GARANTIDOR DE CREDITO",
+      "para": "nome:FUNDO GARANTIDOR DE CREDITOS",
+      "motivo": "nome oficial no plural; variante no singular em documento"
+    },
+    {
+      "de": "nome:PENITENCIARIA FEDERAL EM BRASILIA",
+      "para": "nome:PENITENCIARIA FEDERAL DE BRASILIA",
+      "motivo": "mesma unidade prisional, preposição diferente"
+    },
+    {
+      "de": "nome:COMISSAO DE VALORES MOBILIARIOS (CVM)",
+      "para": "nome:COMISSAO DE VALORES MOBILIARIOS CVM",
+      "motivo": "parênteses em torno da sigla"
+    },
+    {
+      "de": "nome:FIDIC ALVARINHO",
+      "para": "nome:FIDC ALVARINHO",
+      "motivo": "sigla FIDC grafada FIDIC no documento; mesmo fundo"
+    },
+    {
+      "de": "ministro:ANDREMENDONCA",
+      "para": "ministro:ANDRE MENDONCA",
+      "motivo": "assinatura eletrônica extraída do PDF sem o espaço entre nome e sobrenome"
+    },
+    {
+      "de": "ministro:DIASTOFFOLI",
+      "para": "ministro:DIAS TOFFOLI",
+      "motivo": "assinatura eletrônica extraída do PDF sem o espaço entre nome e sobrenome"
+    },
+    {
+      "de": "nome:DIASTOFFOLI",
+      "para": "ministro:DIAS TOFFOLI",
+      "motivo": "assinatura eletrônica extraída do PDF sem o espaço entre nome e sobrenome"
+    }
+  ]
+}
