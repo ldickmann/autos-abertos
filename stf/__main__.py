@@ -13,6 +13,9 @@
   cruzamentos                  o que se repete entre processos (entidades, relações, números de origem)
   sessao <incidente>|--todos   coleta só os JSONs de sessão virtual (objetos incidente, listas, votos)
   baixar-docs [--incidente N]  baixa documentos ainda não baixados (cache por sha256) e extrai o texto
+  acervo <pacote.7z|.zip> --url U --incidente N --pasta P   registra peças do acervo público do STF como documentos
+  ingerir-fluxos <dataset.json>   valida o dataset curado de fluxos financeiros (trechos por página) e carrega em fluxo_*
+  fluxos                        resumo dos fluxos carregados (fontes, atores, totais por par)
   extrair-texto                texto por página, chunks e código de autenticação dos documentos baixados
   buscar-docs "<termos>"       busca FTS5 no texto dos documentos, com página
   sessoes                      listas de julgamento virtual e votos por ministro
@@ -306,6 +309,36 @@ def cmd_vigiar(args):
     print(json.dumps([{"processo": r["processo"], **r["resumo"]} for r in rel], ensure_ascii=False))
 
 
+def cmd_acervo(args):
+    from .acervo import registrar_acervo
+    from .documentos import extrair_texto
+    con = _con()
+    r = registrar_acervo(con, arquivo=Path(args.pacote), url=args.url, incidente=args.incidente, pasta=args.pasta,
+                         fetched_at=args.fetched_at, user_agent=args.user_agent)
+    print(json.dumps(r, ensure_ascii=False))
+    print(json.dumps(extrair_texto(con), ensure_ascii=False))
+
+
+def cmd_ingerir_fluxos(args):
+    from .fluxos_carga import ingerir_fluxos
+    print(json.dumps(ingerir_fluxos(_con(), Path(args.arquivo)), ensure_ascii=False))
+
+
+def cmd_fluxos(args):
+    con = _con()
+    for r in con.execute("SELECT tipo, identificador, orgao, documento_id, carregado_em FROM fluxo_fonte"):
+        print("fonte:", dict(r))
+    print("atores:", con.execute("SELECT COUNT(*) FROM fluxo_ator").fetchone()[0],
+          "comunicações:", con.execute("SELECT COUNT(*) FROM fluxo_comunicacao").fetchone()[0],
+          "transações:", con.execute("SELECT COUNT(*) FROM fluxo_transacao").fetchone()[0])
+    print("maiores pares (origem → destino, soma em R$, natureza individual/agregado):")
+    for r in con.execute(
+            "SELECT o.nome, d.nome, SUM(t.valor_centavos), COUNT(*) FROM fluxo_transacao t "
+            "LEFT JOIN fluxo_ator o ON o.id=t.origem_ator_id LEFT JOIN fluxo_ator d ON d.id=t.destino_ator_id "
+            "WHERE t.natureza != 'resumo_tipo' GROUP BY 1,2 ORDER BY 3 DESC LIMIT 15"):
+        print(f"  {r[0] or '(não informado)'} → {r[1] or '(não informado)'}: R$ {r[2]/100:,.2f} ({r[3]})")
+
+
 def cmd_verificar(args):
     from .integridade import verificar_blobs
     r = verificar_blobs(_con())
@@ -377,6 +410,11 @@ def main(argv=None):
     p = sub.add_parser("legislativo"); p.set_defaults(f=cmd_legislativo)
     p = sub.add_parser("capturar-externas"); p.set_defaults(f=cmd_capturar_externas)
     p = sub.add_parser("vigiar"); p.add_argument("--incidentes"); p.set_defaults(f=cmd_vigiar)
+    p = sub.add_parser("acervo"); p.add_argument("pacote"); p.add_argument("--url", required=True)
+    p.add_argument("--incidente", type=int, required=True); p.add_argument("--pasta", required=True)
+    p.add_argument("--fetched-at", dest="fetched_at"); p.add_argument("--user-agent", dest="user_agent"); p.set_defaults(f=cmd_acervo)
+    p = sub.add_parser("ingerir-fluxos"); p.add_argument("arquivo"); p.set_defaults(f=cmd_ingerir_fluxos)
+    p = sub.add_parser("fluxos"); p.set_defaults(f=cmd_fluxos)
     p = sub.add_parser("verificar"); p.set_defaults(f=cmd_verificar)
     p = sub.add_parser("mapa"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_mapa)
     p = sub.add_parser("exportar"); p.add_argument("--saida"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_exportar)

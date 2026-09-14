@@ -441,6 +441,104 @@ CREATE TABLE IF NOT EXISTS materia_legislativa (
     PRIMARY KEY (casa, codigo)
 );
 
+
+-- fluxos financeiros (stf/fluxos.py): o que uma peça (ex.: RIF do COAF) diz sobre quem pagou quanto a quem.
+-- Dinheiro em centavos inteiros; datas ISO; toda linha de fato tem página e trecho literal verificado.
+CREATE TABLE IF NOT EXISTS fluxo_fonte (
+    id               INTEGER PRIMARY KEY,
+    tipo             TEXT NOT NULL CHECK (tipo IN ('rif','relatorio_pf','decisao','outro')),
+    identificador    TEXT NOT NULL,      -- ex.: 140515.2.9294.11521
+    orgao            TEXT NOT NULL,      -- ex.: COAF
+    destinatario     TEXT,               -- ex.: PF/SP
+    emitido_em       TEXT,
+    documento_id     INTEGER NOT NULL REFERENCES documento(id),
+    incidente        INTEGER NOT NULL,
+    curadoria_path   TEXT NOT NULL,      -- dataset curado de onde a carga saiu
+    curadoria_sha256 TEXT NOT NULL,
+    carregado_em     TEXT NOT NULL,
+    UNIQUE (tipo, identificador)
+);
+
+CREATE TABLE IF NOT EXISTS fluxo_ator (
+    id                  INTEGER PRIMARY KEY,
+    chave               TEXT NOT NULL UNIQUE,   -- cnpj:<14 dígitos> | cpf:<6 dígitos do meio> | nome:<normalizado>
+    nome                TEXT NOT NULL,
+    tipo                TEXT NOT NULL CHECK (tipo IN ('pessoa_fisica','pessoa_juridica','desconhecido')),
+    documento_mascarado TEXT,               -- CNPJ completo; CPF como ***.###.###-**
+    atividade           TEXT,
+    entidade_id         INTEGER REFERENCES entidade(id)
+);
+
+CREATE TABLE IF NOT EXISTS fluxo_comunicacao (
+    id                INTEGER PRIMARY KEY,
+    fonte_id          INTEGER NOT NULL REFERENCES fluxo_fonte(id),
+    secao             TEXT NOT NULL CHECK (secao IN ('suspeita','automatica','especie')),
+    numero            TEXT NOT NULL,          -- numeração no relatório: 1, 2.1, 3.4...
+    titular_ator_id   INTEGER REFERENCES fluxo_ator(id),
+    segmento          TEXT,                   -- Banco Central - Atípicas | Bens de luxo ou de alto valor | Notários e Registradores
+    comunicante       TEXT,                   -- quem comunicou (banco, cooperativa, cartório, concessionária)
+    local             TEXT,
+    periodo_inicio    TEXT,
+    periodo_fim       TEXT,
+    valor_centavos    INTEGER,
+    creditos_centavos INTEGER,
+    debitos_centavos  INTEGER,
+    informacoes       TEXT,                   -- "Informações Adicionais", literal
+    consideracoes     TEXT,                   -- "Considerações", literal
+    pagina_inicio     INTEGER NOT NULL,
+    pagina_fim        INTEGER NOT NULL,
+    UNIQUE (fonte_id, secao, numero)
+);
+
+CREATE TABLE IF NOT EXISTS fluxo_participacao (
+    comunicacao_id INTEGER NOT NULL REFERENCES fluxo_comunicacao(id),
+    ator_id        INTEGER NOT NULL REFERENCES fluxo_ator(id),
+    papel          TEXT NOT NULL CHECK (papel IN ('titular','remetente','beneficiario','responsavel','procurador','vendedor','outros')),
+    PRIMARY KEY (comunicacao_id, ator_id, papel)
+);
+CREATE INDEX IF NOT EXISTS ix_fluxo_participacao_ator ON fluxo_participacao(ator_id);
+
+CREATE TABLE IF NOT EXISTS fluxo_transacao (
+    id              INTEGER PRIMARY KEY,
+    comunicacao_id  INTEGER NOT NULL REFERENCES fluxo_comunicacao(id),
+    origem_ator_id  INTEGER REFERENCES fluxo_ator(id),
+    destino_ator_id INTEGER REFERENCES fluxo_ator(id),
+    valor_centavos  INTEGER NOT NULL,
+    data            TEXT,
+    periodo_inicio  TEXT,
+    periodo_fim     TEXT,
+    tipo            TEXT NOT NULL CHECK (tipo IN ('transferencia','pix','ted','boleto','cdb_rdb','cartao','cheque','tributo','escritura_compra',
+                                                 'escritura_doacao','alienacao_fiduciaria','compra_veiculo','pagamento_titulo','outros')),
+    natureza        TEXT NOT NULL CHECK (natureza IN ('individual','agregado','resumo_tipo')),
+    quantidade      INTEGER,                  -- lançamentos somados, quando agregado
+    bem_id          INTEGER REFERENCES fluxo_bem(id),
+    descricao       TEXT,
+    pagina          INTEGER NOT NULL,
+    trecho_fonte    TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_fluxo_transacao_origem ON fluxo_transacao(origem_ator_id);
+CREATE INDEX IF NOT EXISTS ix_fluxo_transacao_destino ON fluxo_transacao(destino_ator_id);
+CREATE INDEX IF NOT EXISTS ix_fluxo_transacao_com ON fluxo_transacao(comunicacao_id);
+
+CREATE TABLE IF NOT EXISTS fluxo_bem (
+    id                        INTEGER PRIMARY KEY,
+    comunicacao_id            INTEGER NOT NULL REFERENCES fluxo_comunicacao(id),
+    tipo                      TEXT NOT NULL CHECK (tipo IN ('veiculo','imovel')),
+    descricao                 TEXT NOT NULL,
+    valor_centavos            INTEGER,
+    valor_referencia_centavos INTEGER,        -- avaliação fiscal / valor venal, quando o cartório informa
+    data_negocio              TEXT,
+    identificacao             TEXT             -- JSON (placa, chassi, NF, tabelião); fica no banco, não vai para o site
+);
+
+CREATE TABLE IF NOT EXISTS fluxo_ocorrencia (
+    id             INTEGER PRIMARY KEY,
+    comunicacao_id INTEGER NOT NULL REFERENCES fluxo_comunicacao(id),
+    norma          TEXT NOT NULL,
+    codigo         TEXT,
+    descricao      TEXT
+);
+
 CREATE VIRTUAL TABLE IF NOT EXISTS andamento_fts USING fts5(
     descricao, tipo,
     content='andamento', content_rowid='id',
@@ -452,6 +550,7 @@ END;
 """
 
 TABELAS_DERIVADAS = [
+    "fluxo_ocorrencia", "fluxo_transacao", "fluxo_bem", "fluxo_participacao", "fluxo_comunicacao", "fluxo_ator", "fluxo_fonte",
     "assercao_data", "decisao_item", "documento_ref_processo", "documento_ref_dispositivo", "andamento_peticao", "documento_ref_andamento",
     "assercao_entidade", "assercao", "extracao",
     "entidade_mencao", "entidade", "processo", "documento_fts", "documento_chunk", "documento_pagina",

@@ -1,0 +1,2605 @@
+{
+ "fonte": {
+  "tipo": "rif",
+  "identificador": "140515.2.9294.11521",
+  "orgao": "COAF",
+  "destinatario": "PF/SP",
+  "emitido_em": "2026-02-25",
+  "documento": {
+   "endpoint": "docspublicos",
+   "id_portal": "Pet15645/00002_b19a2bb7"
+  },
+  "incidente": 7526458,
+  "observacoes": "RIF gerado no Procedimento 2025.0049253 (SEI-C 191995), 823 relacionados (303 PF, 520 PJ); o PDF só detalha as comunicações em que alguém do pedido é titular; as planilhas .csv anexas não estão nos autos públicos; comunicações com pessoa de possível foro por prerrogativa de função foram retidas pelo COAF (p. 1–2)."
+ },
+ "gerado_por": "scripts/gerar_fluxos_rif_140515.py",
+ "comunicacoes": [
+  {
+   "secao": "suspeita",
+   "numero": "relato-3",
+   "titular": "nome:Dubem Business Marketing Eventos e Produções Artísticas Ltda",
+   "segmento": "Banco Central - Atípicas",
+   "comunicante": "Banco Safra (Natal) — comunicação retida pelo COAF",
+   "local": "Natal-RN",
+   "periodo_inicio": "2024-07-15",
+   "periodo_fim": "2024-09-03",
+   "valor": "1.000.000,00",
+   "informacoes": "Cabe também pontuar que Super Empreendimentos e Participações S.A constou em comunicação\nde operação suspeita, referente ao período de 15/07/2024 a 03/09/2024, sobre movimentação na\nconta 36635, agência/CNPJ 0010, do Banco Safra, em Natal, de titularidade de Dubem Business\nMarketing Eventos e Produções Artísticas Ltda. Super Empreendimentos e Participações S.A teria\nenviado R$1.000.000,00 à titular. Entretanto, também constou nessa comunicação menção a\npessoa, nela referida como relacionada, sobre a qual há indicativo, em base disponibilizada ao",
+   "pagina_inicio": 1,
+   "pagina_fim": 2,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "remetente"
+    },
+    {
+     "nome": "Dubem Business Marketing Eventos e Produções Artísticas Ltda",
+     "documento": "nome:Dubem Business Marketing Eventos e Produções Artísticas Ltda",
+     "papel": "titular"
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "nome:Dubem Business Marketing Eventos e Produções Artísticas Ltda",
+     "valor": "1.000.000,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "periodo_inicio": "2024-07-15",
+     "periodo_fim": "2024-09-03",
+     "descricao": "comunicação não entregue à PF: o COAF a reteve por mencionar pessoa com possível foro por prerrogativa de função (STJ/STF)",
+     "pagina": 1,
+     "trecho": "Super Empreendimentos e Participações S.A teria enviado R$1.000.000,00 à titular"
+    }
+   ],
+   "bens": [],
+   "ocorrencias": [
+    {
+     "norma": "Lei 9.613/1998, art. 11, II",
+     "codigo": null,
+     "descricao": "comunicação de operação suspeita retida pelo COAF (possível foro por prerrogativa de função)"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "1",
+   "titular": "57.391.420/0001-63",
+   "segmento": "Banco Central - Atípicas",
+   "comunicante": "Banco do Brasil S.A.",
+   "local": "Belo Horizonte-MG",
+   "periodo_inicio": "2024-12-24",
+   "periodo_fim": "2025-12-08",
+   "valor": "57.110.313,00",
+   "creditos": "28.493.311,91",
+   "debitos": "28.617.002,01",
+   "informacoes": "Informações Adicionais: Período analisado: 24/12/2024 - 08/12/2025 Trata-se de cliente deste Banco desde 11/10/2024, explorando a\natividade de ATIVIDADES DE ORGANIZACOES RELIGIOSAS, com faturamento anual presumido de R$ 950.000,00, com sede na cidade de\nBELO HORIZONTE/MG. O titular conta com a(s) seguinte(s) participação( es): Outorgou poderes para : ANA PAULA PACIFICO FLORET -\n283.446.138-41 CARLOS MARTINS DE BARROS - 881.974.686-72 FABIANO CAMPOS ZETTEL - 027.818.816-86 GRAZIELLA NIKOLAS\nNIKOLAIDIS ABRAS - 938.616.996-72 Contas analisadas: 3610 / 777 Resumo de lançamentos a crédito no período de 24/12/2024 -\n08/12/2025 ! Total R$ 28.493.311,91: QUANTIDADE - TIPO DE TRANSAÇÃO - VALOR TOTAL 8.039 PIX - R$ 23.984.705,56 90 CDB/RDB - R$\n4.371.890,51 65 CREDITO(S) CARTOES - R$ 74.276,18 1 CHEQUE DEVOLVIDO - R$ 40.000,00 4 DOC/TED - R$ 21.966,98 1 PIX REJEITADO -\nR$ 198,00 1 ESTORNO(S) - R$ 108,00 1 ADIANTAMENTO - R$ 108,00 1 CREDITO(S) DIVERSO(S) - R$ 58,68 Principais\nremetentes/depositantes identificados: FABIANO CAMPOS ZETTEL - 027.818.816-86 ( ADVOGADO - ADVOGADO ) - MIDIA - 26 lançamento(s)\nno total de: R$19.205.000,00 LAGOINHA PARTICIPACOES LTDA. - 54.305.666/0001-87 ( HOLDINGS DE INSTITUICOES NAO-FINANCEIRAS ) -\n3 lançamento(s) no total de: R$1.100.000,00 LUCAS FERNANDEZ NOVAIS CABALEIRO - 067.012.906-20 ( VENDEDOR DE COMERCIO\nVAREJISTA E ATACADISTA ) - 18 lançamento(s) no total de: R$843.487,00 HV EMPREENDIMENTOS E PARTICIPACOES LTDA -\n34.370.281/0001-96 ( HOLDINGS DE INSTITUICOES NAO-FINANCEIRAS ) - 3 lançamento(s) no total de: R$700.000,00 IGREJA BATISTA DA\nLAGOINHA BELVEDERE - 57.391.420/0001-63 ( ATIVIDADES DE ORGANIZACOES RELIGIOSAS ) - MIDIA - 18 lançamento(s) no total de:\nR$154.970,36 HENRIQUE MOURA VORCARO - 427.654.986-87 ( EMPRESARIO ) - MIDIA - 4 lançamento(s) no total de: R$120.000,00 SAMIR\nKHOURY ABRAS JUNIOR - 862.799.476-53 ( ESTUDANTE ) - 57 lançamento(s) no total de: R$105.439,74 FABIOLA DE ALMEIDA MACEDO -\n029.061.616-67 ( ADVOGADA - SERVIDORA PUBLICO ESTADUAL ) - 7 lançamento(s) no total de: R$101.600,00 LUCIANA GOMES LEITE\nPASSOS - 641.454.506-63 ( EMPRESARIO - EMPRESARIO ) - 12 lançamento(s) no total de: R$84.300,00 NOBE SOFTWARE DE GESTAO\nINTEGRADA LTDA - 14.108.730/0001-15 ( DESENVOLVIMENTO E LICENCIAMENTO DE PROGRAMAS DE COMPUTADOR CUSTOMIZAVEIS ) -\n20 lançamento(s) no total de: R$70.550,00 LDR ADMINISTRADORA DE BENS LTDA - 09.016.707/0001-60 ( CORRETAGEM NO ALUGUEL DE\nIMóVEIS ) - 5 lançamento(s) no total de: R$58.710,00 GRAZIELLA NIKOLAS NIKOLAIDIS ABRAS - 938.616.996-72 ( PROCURADORA -\nADMINISTRADORA ) - 50 lançamento(s) no total de: R$52.808,12 GUSTAVO BARRETO CYRILLO - 062.070.326-16 ( A - PROFESSORA DE\nENSINO SUPERIOR ) - 9 lançamento(s) no total de: R$32.600,00 FERNANDA SOUTO CANCADO SANTANA - 054.387.296-38 ( A -\nBIBLIOTECARIA OU ARQUIVISTA ) - 27 lançamento(s) no total de: R$29.812,00 CLEBER JOSE JORGE DE MELLO SILVA - 175.212.542-87 ( A -\nBANCARIO E ECONOMIARIO ) - 12 lançamento(s) no total de: R$27.806,99 ELISANGELA MAIA ROCHA - 48.319.756/0001-24 ( LANCHONETES,\nCASAS DE CHA, DE SUCOS E SIMILARES ) - 42 lançamento(s) no total de: R$26.657,26 DANILO BARRETO CYRILLO - 082.995.426-00\n( GERENTE - EMPRESARIO ) - 4 lançamento(s) no total de: R$25.320,00 JONAS SOARES DE PAIVA - 064.187.046-90 ( VENDEDOR -\nVENDEDOR DE COMERCIO VAREJISTA E ATACADISTA ) - 52 lançamento(s) no total de: R$24.518,20 MAXIMO DA ROCHA OLIVEIRA JUNIOR -\n114.071.096-69 ( ) - 21 lançamento(s) no total de: R$22.815,64 LUIZ PHILLIPI MACHADO DE MORAES MOURAO - 046.166.396-12 ( DO LAR ) -\n11 lançamento(s) no total de: R$22.000,00 Resumo de lançamentos a débito no período de 24/12/2024 - 08/12/2025 ! Total R$ 28.617.002,01:\nQUANTIDADE - TIPO DE TRANSAÇÃO - VALOR TOTAL 709 PIX - R$ 14.466.317,38 1.277 PAGAMENTO TITULO - R$ 8.273.442,27 6 CDB/RDB -\nR$ 4.326.500,00 33 TRIBUTOS/IMPOSTOS - R$ 999.880,33 9 DOC/TED - R$ 248.534,62 5 CHEQUE(S) - R$ 200.000,00 10 PAGAMENTO AGUA\n- R$ 60.325,52 1 TRANSFERENCIA(S) - R$ 15.600,00 7 PAGAMENTO ENERGIA - R$ 14.346,79 12 PAGAMENTO TELEFONE - R$ 8.637,36 221\nTARIFAS PIX - R$ 2.438,52 22 TARIFAS - R$ 871,22 1 DEBITO(S) DIVERSO(S) - R$ 108,00 Principais destinatários de recursos identificados:\nJORLAN INCORPORADORA E CONSTRUTORA LTDA - 02.237.485/0001-67 ( INCORPORACAO DE EMPREENDIMENTOS IMOBILIARIOS ) - 8\nlançamento(s) no total de: R$2.566.200,00 MUZZI MISK CONSTRUTORA E ENGENHARIA LTDA - 46.715.172/0001-42 ( CONSTRUCAO DE\nEDIFICIOS ) - 26 lançamento(s) no total de: R$2.302.945,68 AFEB ESTRUTURAS METALICAS LTDA - 52.604.742/0001-20 ( FABRICACAO DE\nESTRUTURAS METALICAS ) - 7 lançamento(s) no total de: R$1.012.377,00 FDS CONSTRUCOES LTDA - 31.775.209/0001-50 ( OUTRAS\nOBRAS DE ACABAMENTO DA CONSTRUCAO ) - 20 lançamento(s) no total de: R$780.263,85 VW S L E EVENTOS LTDA - 34.846.944/0001-04\n( ALUGUEL DE PALCOS, COBERTURAS E OUTRAS ESTRUTURAS DE USO TEMPORARIO, EXCETO ANDAIMES ) - 20 lançamento(s) no total\nde: R$646.166,62 DS SOM E LUZ LTDA - 10.650.259/0001-31 ( ALUGUEL DE PALCOS, COBERTURAS E OUTRAS ESTRUTURAS DE USO\nTEMPORARIO, EXCETO ANDAIMES ) - 16 lançamento(s) no total de: R$579.333,33 SOLUCIONNE TERMO-ACUSTICO DO BRASIL LTDA -\n04.780.982/0001-32 ( TRATAMENTOS TERMICOS, ACUSTICOS OU DE VIBRACAO ) - 17 lançamento(s) no total de: R$451.845,49 FC -\nELETRICA INDUSTRIAL LTDA - 52.729.267/0001-18 ( INSTALACAO E MANUTENCAO ELETRICA ) - 17 lançamento(s) no total de: R$444.726,65\nVIP SERVICE ENGENHARIA LTDA - 41.300.850/0001-92 ( CONSTRUCAO DE EDIFICIOS ) - 26 lançamento(s) no total de: R$420.883,06 AGILIZ\nREGULARIZACAO DE IMOVEIS LTDA - 14.886.354/0001-90 ( OUTRAS ATIVIDADES DE SERVICOS PRESTADOS PRINCIPALMENTE AS\nEMPRESAS NAO ESPECIFICADAS ANTERIORMENTE ) - 21 lançamento(s) no total de: R$314.478,00 AGL DRYWALL E ESTRUTURAS LTDA -\n21.984.751/0001-60 ( OUTRAS OBRAS DE ACABAMENTO DA CONSTRUCAO ) - 11 lançamento(s) no total de: R$306.457,36 MANOS\nPINTURAS LTDA - 26.197.582/0001-31 ( SERVICOS DE PINTURA DE EDIFICIOS EM GERAL ) - 8 lançamento(s) no total de: R$300.308,23\nINSTALADORA ALIANCA LTDA - 13.475.054/0001-55 ( CONSTRUCAO DE REDES DE ABASTECIMENTO DE AGUA, COLETA DE ESGOTO E\nCONSTRUCOES CORRELATAS, EXCETO OBRAS DE IRRIGACAO ) - 9 lançamento(s) no total de: R$235.937,77 COMTRAFO INDUSTRIA DE\nTRANSFORMADORES ELETRICOS S.A. - 00.138.806/0001-40 ( FABRICACAO DE TRANSFORMADORES, INDUTORES, CONVERSORES,\nSINCRONIZADORES E SEMELHANTES, PECAS E ACESSóRIOS ) - 3 lançamento(s) no total de: R$200.946,89 MINAS CALHA LTDA -\n37.398.826/0001-60 ( SERVICOS DE USINAGEM, SOLDA, TRATAMENTO E REVESTIMENTO EM METAIS ) - 4 lançamento(s) no total de:\nR$188.550,00 MARCELO V MIZRAHY ARQUITETURA - 26.124.145/0001-98 ( SERVICOS DE ARQUITETURA ) - 7 lançamento(s) no total de:\nR$175.000,00 PANAIR INSTALACOES E SERVICOS LTDA - 39.848.922/0001-99 ( INSTALACAO E MANUTENCAO DE SISTEMAS CENTRAIS DE\nAR CONDICIONADO, DE VENTILACAO E REFRIGERACAO ) - 3 lançamento(s) no total de: R$163.026,93 PORT CONSTRUCOES E\nEMPREENDIMENTOS LTDA - 71.084.255/0001-28 ( ADMINISTRACAO DE OBRAS ) - 10 lançamento(s) no total de: R$153.040,00 C DE S OTONI\n- SERVICOS DE ENGENHARIA - 34.089.879/0001-01 ( SERVICOS DE ENGENHARIA ) - 12 lançamento(s) no total de: R$150.302,35 JUST IN\nTIME ESTRUTURAS METALICAS LTDA - 57.318.191/0001-51 ( FABRICACAO DE ESQUADRIAS DE METAL ) - 2 lançamento(s) no total de:\nR$145.792,44",
+   "consideracoes": "CONSIDERAÇÕES Outorgado da analisada ( FABIANO CAMPOS ZETTEL - 027.818.816-86) foi citado em notícia desabonadora:\nFOLHA DE S PAULO (08/12/2025) - Escândalo Master respinga em família de Vorcaro, e cunhado do banqueiro vira alvo de parlamentares\nEmpresa recebeu recursos principalmente do outorgado mencionado. Recebeu, também, via milhares de pix de baixo valor de terceiros\ndiversos, possivelmente doações de fieis. Valores são repassados principalmente a empresas relacionadas à construção civil. Também\nhouve grande volume de pagamento de títulos. Exemplos: CPF/CNPJ PAGADOR: 57.391.420/0001-63 NOME PAGADOR: Igreja Batista da\nLagoinha CPF/CNPJ BENEFICIÁRIO: 52.604.742/0001-20 NOME BENEFICIÁRIO: AFEB ESTRUTURAS METALICAS LTDA DATA: 31/10/2025\nVALOR PAGO: R$ 86.200,27 CPF/CNPJ PAGADOR: 19.936.735/0001-50 NOME PAGADOR: ROGUE PARTICIPACOES S.A CPF/CNPJ\nBENEFICIÁRIO: 53.537.680/0001-43 NOME BENEFICIÁRIO: BPO GESTAO DE DISPONIVEL LTDA DATA: 04/11/2025 VALOR PAGO: R$\n62.636,81 Considerando relação financeira íntima do outorgado mencionado em possíveis ilicitudes, optamos pela comunicação.",
+   "pagina_inicio": 3,
+   "pagina_fim": 5,
+   "participacoes": [
+    {
+     "nome": "ROGUE PARTICIPACOES S.A.",
+     "documento": "19.936.735/0001-50",
+     "papel": "outros"
+    },
+    {
+     "nome": "BPO GESTAO DE DISPONIVEL LTDA",
+     "documento": "53.537.680/0001-43",
+     "papel": "outros"
+    },
+    {
+     "nome": "ELISANGELA MAIA ROCHA 56979207687",
+     "documento": "48.319.756/0001-24",
+     "papel": "remetente",
+     "atividade": "LANCHONETES, CASAS DE CHA, DE SUCOS E SIMILARES"
+    },
+    {
+     "nome": "PISGAH SOFTWARE E GESTAO TRIBUTARIA LTDA ME",
+     "documento": "14.108.730/0001-15",
+     "papel": "remetente",
+     "atividade": "DESENVOLVIMENTO E LICENCIAMENTO DE PROGRAMAS DE COMPUTADOR CUSTOMIZAVEIS"
+    },
+    {
+     "nome": "LAGOINHA PARTICIPACOES LTDA.",
+     "documento": "54.305.666/0001-87",
+     "papel": "remetente",
+     "atividade": "HOLDINGS DE INSTITUICOES NAO-FINANCEIRAS"
+    },
+    {
+     "nome": "HV EMPREENDIMENTOS E PARTICIPACOES EIRELI",
+     "documento": "34.370.281/0001-96",
+     "papel": "remetente",
+     "atividade": "HOLDINGS DE INSTITUICOES NAO-FINANCEIRAS"
+    },
+    {
+     "nome": "LDR ADMINISTRADORA DE BENS LTDA - ME",
+     "documento": "09.016.707/0001-60",
+     "papel": "remetente",
+     "atividade": "CORRETAGEM NO ALUGUEL DE IMóVEIS"
+    },
+    {
+     "nome": "IGREJA BATISTA DA LAGOINHA BELVEDERE",
+     "documento": "57.391.420/0001-63",
+     "papel": "remetente",
+     "atividade": "ATIVIDADES DE ORGANIZACOES RELIGIOSAS"
+    },
+    {
+     "nome": "INSTALADORA ALIANCA LTDA",
+     "documento": "13.475.054/0001-55",
+     "papel": "beneficiario",
+     "atividade": "CONSTRUCAO DE REDES DE ABASTECIMENTO DE AGUA, COLETA DE ESGOTO E CONSTRUCOES CORRELATAS, EXCETO OBRAS DE IRRIGACAO"
+    },
+    {
+     "nome": "PANAIR INSTALACOES E SERVICOS LTDA",
+     "documento": "39.848.922/0001-99",
+     "papel": "beneficiario",
+     "atividade": "INSTALACAO E MANUTENCAO DE SISTEMAS CENTRAIS DE AR CONDICIONADO, DE VENTILACAO E REFRIGERACAO"
+    },
+    {
+     "nome": "MUZZI MISK CONSTRUTORA E ENGENHARIA LTDA",
+     "documento": "46.715.172/0001-42",
+     "papel": "beneficiario",
+     "atividade": "CONSTRUCAO DE EDIFICIOS"
+    },
+    {
+     "nome": "JUST IN TIME ESTRUTURAS METALICAS LTDA",
+     "documento": "57.318.191/0001-51",
+     "papel": "beneficiario",
+     "atividade": "FABRICACAO DE ESQUADRIAS DE METAL"
+    },
+    {
+     "nome": "VW SOM LOCACAO DE EQUIPAMENTOS E EVENTOS LTDA",
+     "documento": "34.846.944/0001-04",
+     "papel": "beneficiario",
+     "atividade": "ALUGUEL DE PALCOS, COBERTURAS E OUTRAS ESTRUTURAS DE USO TEMPORARIO, EXCETO ANDAIMES"
+    },
+    {
+     "nome": "DS SOM E LUZ LTDA",
+     "documento": "10.650.259/0001-31",
+     "papel": "beneficiario",
+     "atividade": "ALUGUEL DE PALCOS, COBERTURAS E OUTRAS ESTRUTURAS DE USO TEMPORARIO, EXCETO ANDAIMES"
+    },
+    {
+     "nome": "VIP PRESTADORA DE SERVICOS LTDA",
+     "documento": "41.300.850/0001-92",
+     "papel": "beneficiario",
+     "atividade": "CONSTRUCAO DE EDIFICIOS"
+    },
+    {
+     "nome": "OCP INCORP E CONSTRUTORA LTDA",
+     "documento": "02.237.485/0001-67",
+     "papel": "beneficiario",
+     "atividade": "INCORPORACAO DE EMPREENDIMENTOS IMOBILIARIOS"
+    },
+    {
+     "nome": "FDS CONSTRUCOES EIRELI ME",
+     "documento": "31.775.209/0001-50",
+     "papel": "beneficiario",
+     "atividade": "OUTRAS Este relatório de inteligência financeira é sigiloso. Constitui crime divulgar seu teor à margem das hipóteses legais. (LC 105, de 2001, art. 10 e Código Penal, arts. 153, § 1º-A, 154 e 325). COAF >>> PF/SP >>> 140515.2.9294.11521 >>> 3730 RIF 140515.2.9294.11521 em 25/02/2026 às 12:26:39 Página: 4/13 OBRAS DE ACABAMENTO DA CONSTRUCAO"
+    },
+    {
+     "nome": "37.398.826 JOAO MIGUEL DE OLIVEIRA RIBEIRO DA SILVA",
+     "documento": "37.398.826/0001-60",
+     "papel": "beneficiario",
+     "atividade": "SERVICOS DE USINAGEM, SOLDA, TRATAMENTO E REVESTIMENTO EM METAIS"
+    },
+    {
+     "nome": "AGILIZ REGULARIZACAO DE IMOVEI",
+     "documento": "14.886.354/0001-90",
+     "papel": "beneficiario",
+     "atividade": "OUTRAS ATIVIDADES DE SERVICOS PRESTADOS PRINCIPALMENTE AS EMPRESAS NAO ESPECIFICADAS ANTERIORMENTE"
+    },
+    {
+     "nome": "COMTRAFO IND TRANSFORMAD ELETRICO",
+     "documento": "00.138.806/0001-40",
+     "papel": "beneficiario",
+     "atividade": "FABRICACAO DE TRANSFORMADORES, INDUTORES, CONVERSORES, SINCRONIZADORES E SEMELHANTES, PECAS E ACESSóRIOS"
+    },
+    {
+     "nome": "SOLUCIONNE TERMOACUST",
+     "documento": "04.780.982/0001-32",
+     "papel": "beneficiario",
+     "atividade": "TRATAMENTOS TERMICOS, ACUSTICOS OU DE VIBRACAO"
+    },
+    {
+     "nome": "PORT CONSTRUCOES E EMPREENDIMENTOS LTDA",
+     "documento": "71.084.255/0001-28",
+     "papel": "beneficiario",
+     "atividade": "ADMINISTRACAO DE OBRAS"
+    },
+    {
+     "nome": "FC - ELETRICA INDUSTRIAL LTDA",
+     "documento": "52.729.267/0001-18",
+     "papel": "beneficiario",
+     "atividade": "INSTALACAO E MANUTENCAO ELETRICA"
+    },
+    {
+     "nome": "MARCELO MIZRAHY ARQUITETURA",
+     "documento": "26.124.145/0001-98",
+     "papel": "beneficiario",
+     "atividade": "SERVICOS DE ARQUITETURA"
+    },
+    {
+     "nome": "MANOS PINTURAS LTDA - ME",
+     "documento": "26.197.582/0001-31",
+     "papel": "beneficiario",
+     "atividade": "SERVICOS DE PINTURA DE EDIFICIOS EM GERAL"
+    },
+    {
+     "nome": "AGL DRYWALL E ESTRUTURAS LTDA - ME",
+     "documento": "21.984.751/0001-60",
+     "papel": "beneficiario",
+     "atividade": "OUTRAS OBRAS DE ACABAMENTO DA CONSTRUCAO"
+    },
+    {
+     "nome": "AFEB ESTRUTURAS METALICAS LTDA",
+     "documento": "52.604.742/0001-20",
+     "papel": "beneficiario",
+     "atividade": "FABRICACAO DE ESTRUTURAS METALICAS"
+    },
+    {
+     "nome": "C DE S OTONI - SERVICOS DE ENGENHARIA",
+     "documento": "34.089.879/0001-01",
+     "papel": "beneficiario",
+     "atividade": "SERVICOS DE ENGENHARIA"
+    },
+    {
+     "nome": "IGREJA BATISTA DA LAGOINHA BELVEDERE",
+     "documento": "57.391.420/0001-63",
+     "papel": "titular",
+     "atividade": "ATIVIDADES DE ORGANIZACOES RELIGIOSAS"
+    },
+    {
+     "nome": "ANA PAULA PACIFICO FLORET",
+     "documento": "283.446.138-41",
+     "papel": "procurador"
+    },
+    {
+     "nome": "GUSTAVO BARRETO CYRILLO",
+     "documento": "062.070.326-16",
+     "papel": "remetente",
+     "atividade": "A - PROFESSORA DE ENSINO SUPERIOR"
+    },
+    {
+     "nome": "JONAS SOARES DE PAIVA",
+     "documento": "064.187.046-90",
+     "papel": "remetente",
+     "atividade": "VENDEDOR - VENDEDOR DE COMERCIO VAREJISTA E ATACADISTA"
+    },
+    {
+     "nome": "SAMIR KHOURY ABRAS JUNIOR",
+     "documento": "862.799.476-53",
+     "papel": "remetente",
+     "atividade": "ESTUDANTE"
+    },
+    {
+     "nome": "CARLOS MARTINS DE BARROS",
+     "documento": "881.974.686-72",
+     "papel": "procurador"
+    },
+    {
+     "nome": "FERNANDA SOUTO CANCADO SANTANA",
+     "documento": "054.387.296-38",
+     "papel": "remetente",
+     "atividade": "A - BIBLIOTECARIA OU ARQUIVISTA"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "remetente",
+     "atividade": "ADVOGADO - ADVOGADO"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador",
+     "atividade": "ADVOGADO - ADVOGADO"
+    },
+    {
+     "nome": "CLEBER JOSÉ JORGE DE MELLO SILVA",
+     "documento": "175.212.542-87",
+     "papel": "remetente",
+     "atividade": "A - BANCARIO E ECONOMIARIO"
+    },
+    {
+     "nome": "LUCAS FERNANDEZ NOVAIS CABALEIRO",
+     "documento": "067.012.906-20",
+     "papel": "remetente",
+     "atividade": "VENDEDOR DE COMERCIO VAREJISTA E ATACADISTA"
+    },
+    {
+     "nome": "DANILO BARRETO CYRILLO",
+     "documento": "082.995.426-00",
+     "papel": "remetente",
+     "atividade": "GERENTE - EMPRESARIO"
+    },
+    {
+     "nome": "HENRIQUE MOURA VORCARO",
+     "documento": "427.654.986-87",
+     "papel": "remetente",
+     "atividade": "EMPRESARIO"
+    },
+    {
+     "nome": "GRAZIELLA NIKOLAS NIKOLAIDIS ABRAS",
+     "documento": "938.616.996-72",
+     "papel": "procurador",
+     "atividade": "PROCURADORA - ADMINISTRADORA"
+    },
+    {
+     "nome": "GRAZIELLA NIKOLAS NIKOLAIDIS ABRAS",
+     "documento": "938.616.996-72",
+     "papel": "remetente",
+     "atividade": "PROCURADORA - ADMINISTRADORA"
+    },
+    {
+     "nome": "MAXIMO DA ROCHA OLIVEIRA JR",
+     "documento": "114.071.096-69",
+     "papel": "remetente"
+    },
+    {
+     "nome": "FABIOLA DE ALMEIDA MACEDO VORCARO",
+     "documento": "029.061.616-67",
+     "papel": "remetente",
+     "atividade": "ADVOGADA - SERVIDORA PUBLICO ESTADUAL"
+    },
+    {
+     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO",
+     "documento": "046.166.396-12",
+     "papel": "remetente",
+     "atividade": "DO LAR"
+    },
+    {
+     "nome": "LUCIANA GOMES LEITE PASSOS",
+     "documento": "641.454.506-63",
+     "papel": "remetente",
+     "atividade": "EMPRESARIO - EMPRESARIO"
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "23.984.705,56",
+     "tipo": "pix",
+     "natureza": "resumo_tipo",
+     "quantidade": 8039,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de pix no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "8.039 PIX - R$ 23.984.705,56"
+    },
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "4.371.890,51",
+     "tipo": "cdb_rdb",
+     "natureza": "resumo_tipo",
+     "quantidade": 90,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de cdb/rdb no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "90 CDB/RDB - R$ 4.371.890,51"
+    },
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "74.276,18",
+     "tipo": "cartao",
+     "natureza": "resumo_tipo",
+     "quantidade": 65,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de credito(s) cartoes no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "65 CREDITO(S) CARTOES - R$ 74.276,18"
+    },
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "40.000,00",
+     "tipo": "cheque",
+     "natureza": "resumo_tipo",
+     "quantidade": 1,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de cheque devolvido no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "1 CHEQUE DEVOLVIDO - R$ 40.000,00"
+    },
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "21.966,98",
+     "tipo": "ted",
+     "natureza": "resumo_tipo",
+     "quantidade": 4,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de doc/ted no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "4 DOC/TED - R$ 21.966,98"
+    },
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "198,00",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 1,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de pix rejeitado no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "1 PIX REJEITADO - R$ 198,00"
+    },
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "108,00",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 1,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de estorno(s) no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "1 ESTORNO(S) - R$ 108,00"
+    },
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "108,00",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 1,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de adiantamento no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "1 ADIANTAMENTO - R$ 108,00"
+    },
+    {
+     "origem": null,
+     "destino": "57.391.420/0001-63",
+     "valor": "58,68",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 1,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de credito(s) diverso(s) no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "1 CREDITO(S) DIVERSO(S) - R$ 58,68"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "14.466.317,38",
+     "tipo": "pix",
+     "natureza": "resumo_tipo",
+     "quantidade": 709,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de pix no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "709 PIX - R$ 14.466.317,38"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "8.273.442,27",
+     "tipo": "pagamento_titulo",
+     "natureza": "resumo_tipo",
+     "quantidade": 1277,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de pagamento titulo no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "1.277 PAGAMENTO TITULO - R$ 8.273.442,27"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "4.326.500,00",
+     "tipo": "cdb_rdb",
+     "natureza": "resumo_tipo",
+     "quantidade": 6,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de cdb/rdb no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "6 CDB/RDB - R$ 4.326.500,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "999.880,33",
+     "tipo": "tributo",
+     "natureza": "resumo_tipo",
+     "quantidade": 33,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de tributos/impostos no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "33 TRIBUTOS/IMPOSTOS - R$ 999.880,33"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "248.534,62",
+     "tipo": "ted",
+     "natureza": "resumo_tipo",
+     "quantidade": 9,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de doc/ted no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "9 DOC/TED - R$ 248.534,62"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "200.000,00",
+     "tipo": "cheque",
+     "natureza": "resumo_tipo",
+     "quantidade": 5,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de cheque(s) no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "5 CHEQUE(S) - R$ 200.000,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "60.325,52",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 10,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de pagamento agua no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "10 PAGAMENTO AGUA - R$ 60.325,52"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "15.600,00",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 1,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de transferencia(s) no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "1 TRANSFERENCIA(S) - R$ 15.600,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "14.346,79",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 7,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de pagamento energia no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "7 PAGAMENTO ENERGIA - R$ 14.346,79"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "8.637,36",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 12,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de pagamento telefone no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "12 PAGAMENTO TELEFONE - R$ 8.637,36"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "2.438,52",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 221,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de tarifas pix no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "221 TARIFAS PIX - R$ 2.438,52"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "871,22",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 22,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de tarifas no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "22 TARIFAS - R$ 871,22"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": null,
+     "valor": "108,00",
+     "tipo": "outros",
+     "natureza": "resumo_tipo",
+     "quantidade": 1,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "total de debito(s) diverso(s) no período, segundo o banco",
+     "pagina": 4,
+     "trecho": "1 DEBITO(S) DIVERSO(S) - R$ 108,00"
+    },
+    {
+     "origem": "027.818.816-86",
+     "destino": "57.391.420/0001-63",
+     "valor": "19.205.000,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 26,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: FABIANO CAMPOS ZETTEL (ADVOGADO - ADVOGADO)",
+     "pagina": 4,
+     "trecho": "26 lançamento(s) no total de: R$19.205.000,00"
+    },
+    {
+     "origem": "54.305.666/0001-87",
+     "destino": "57.391.420/0001-63",
+     "valor": "1.100.000,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 3,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: LAGOINHA PARTICIPACOES LTDA. (HOLDINGS DE INSTITUICOES NAO-FINANCEIRAS)",
+     "pagina": 4,
+     "trecho": "3 lançamento(s) no total de: R$1.100.000,00"
+    },
+    {
+     "origem": "067.012.906-20",
+     "destino": "57.391.420/0001-63",
+     "valor": "843.487,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 18,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: LUCAS FERNANDEZ NOVAIS CABALEIRO (VENDEDOR DE COMERCIO VAREJISTA E ATACADISTA)",
+     "pagina": 4,
+     "trecho": "18 lançamento(s) no total de: R$843.487,00"
+    },
+    {
+     "origem": "34.370.281/0001-96",
+     "destino": "57.391.420/0001-63",
+     "valor": "700.000,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 3,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: HV EMPREENDIMENTOS E PARTICIPACOES LTDA (HOLDINGS DE INSTITUICOES NAO-FINANCEIRAS)",
+     "pagina": 4,
+     "trecho": "3 lançamento(s) no total de: R$700.000,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "57.391.420/0001-63",
+     "valor": "154.970,36",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 18,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: IGREJA BATISTA DA LAGOINHA BELVEDERE (ATIVIDADES DE ORGANIZACOES RELIGIOSAS)",
+     "pagina": 4,
+     "trecho": "18 lançamento(s) no total de: R$154.970,36"
+    },
+    {
+     "origem": "427.654.986-87",
+     "destino": "57.391.420/0001-63",
+     "valor": "120.000,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 4,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: HENRIQUE MOURA VORCARO (EMPRESARIO)",
+     "pagina": 4,
+     "trecho": "4 lançamento(s) no total de: R$120.000,00"
+    },
+    {
+     "origem": "862.799.476-53",
+     "destino": "57.391.420/0001-63",
+     "valor": "105.439,74",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 57,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: SAMIR KHOURY ABRAS JUNIOR (ESTUDANTE)",
+     "pagina": 4,
+     "trecho": "57 lançamento(s) no total de: R$105.439,74"
+    },
+    {
+     "origem": "029.061.616-67",
+     "destino": "57.391.420/0001-63",
+     "valor": "101.600,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 7,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: FABIOLA DE ALMEIDA MACEDO (ADVOGADA - SERVIDORA PUBLICO ESTADUAL)",
+     "pagina": 4,
+     "trecho": "7 lançamento(s) no total de: R$101.600,00"
+    },
+    {
+     "origem": "641.454.506-63",
+     "destino": "57.391.420/0001-63",
+     "valor": "84.300,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 12,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: LUCIANA GOMES LEITE PASSOS (EMPRESARIO - EMPRESARIO)",
+     "pagina": 4,
+     "trecho": "12 lançamento(s) no total de: R$84.300,00"
+    },
+    {
+     "origem": "14.108.730/0001-15",
+     "destino": "57.391.420/0001-63",
+     "valor": "70.550,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 20,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: NOBE SOFTWARE DE GESTAO INTEGRADA LTDA (DESENVOLVIMENTO E LICENCIAMENTO DE PROGRAMAS DE COMPUTADOR CUSTOMIZAVEIS)",
+     "pagina": 4,
+     "trecho": "20 lançamento(s) no total de: R$70.550,00"
+    },
+    {
+     "origem": "09.016.707/0001-60",
+     "destino": "57.391.420/0001-63",
+     "valor": "58.710,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 5,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: LDR ADMINISTRADORA DE BENS LTDA (CORRETAGEM NO ALUGUEL DE IMóVEIS)",
+     "pagina": 4,
+     "trecho": "5 lançamento(s) no total de: R$58.710,00"
+    },
+    {
+     "origem": "938.616.996-72",
+     "destino": "57.391.420/0001-63",
+     "valor": "52.808,12",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 50,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: GRAZIELLA NIKOLAS NIKOLAIDIS ABRAS (PROCURADORA - ADMINISTRADORA)",
+     "pagina": 4,
+     "trecho": "50 lançamento(s) no total de: R$52.808,12"
+    },
+    {
+     "origem": "062.070.326-16",
+     "destino": "57.391.420/0001-63",
+     "valor": "32.600,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 9,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: GUSTAVO BARRETO CYRILLO (A - PROFESSORA DE ENSINO SUPERIOR)",
+     "pagina": 4,
+     "trecho": "9 lançamento(s) no total de: R$32.600,00"
+    },
+    {
+     "origem": "054.387.296-38",
+     "destino": "57.391.420/0001-63",
+     "valor": "29.812,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 27,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: FERNANDA SOUTO CANCADO SANTANA (A - BIBLIOTECARIA OU ARQUIVISTA)",
+     "pagina": 4,
+     "trecho": "27 lançamento(s) no total de: R$29.812,00"
+    },
+    {
+     "origem": "175.212.542-87",
+     "destino": "57.391.420/0001-63",
+     "valor": "27.806,99",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 12,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: CLEBER JOSE JORGE DE MELLO SILVA (A - BANCARIO E ECONOMIARIO)",
+     "pagina": 4,
+     "trecho": "12 lançamento(s) no total de: R$27.806,99"
+    },
+    {
+     "origem": "48.319.756/0001-24",
+     "destino": "57.391.420/0001-63",
+     "valor": "26.657,26",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 42,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: ELISANGELA MAIA ROCHA (LANCHONETES, CASAS DE CHA, DE SUCOS E SIMILARES)",
+     "pagina": 4,
+     "trecho": "42 lançamento(s) no total de: R$26.657,26"
+    },
+    {
+     "origem": "082.995.426-00",
+     "destino": "57.391.420/0001-63",
+     "valor": "25.320,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 4,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: DANILO BARRETO CYRILLO (GERENTE - EMPRESARIO)",
+     "pagina": 4,
+     "trecho": "4 lançamento(s) no total de: R$25.320,00"
+    },
+    {
+     "origem": "064.187.046-90",
+     "destino": "57.391.420/0001-63",
+     "valor": "24.518,20",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 52,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: JONAS SOARES DE PAIVA (VENDEDOR - VENDEDOR DE COMERCIO VAREJISTA E ATACADISTA)",
+     "pagina": 4,
+     "trecho": "52 lançamento(s) no total de: R$24.518,20"
+    },
+    {
+     "origem": "114.071.096-69",
+     "destino": "57.391.420/0001-63",
+     "valor": "22.815,64",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 21,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: MAXIMO DA ROCHA OLIVEIRA JUNIOR (atividade não informada)",
+     "pagina": 4,
+     "trecho": "21 lançamento(s) no total de: R$22.815,64"
+    },
+    {
+     "origem": "046.166.396-12",
+     "destino": "57.391.420/0001-63",
+     "valor": "22.000,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 11,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "remetente identificado pelo banco: LUIZ PHILLIPI MACHADO DE MORAES MOURAO (DO LAR)",
+     "pagina": 4,
+     "trecho": "11 lançamento(s) no total de: R$22.000,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "02.237.485/0001-67",
+     "valor": "2.566.200,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 8,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: JORLAN INCORPORADORA E CONSTRUTORA LTDA (INCORPORACAO DE EMPREENDIMENTOS IMOBILIARIOS)",
+     "pagina": 4,
+     "trecho": "8 lançamento(s) no total de: R$2.566.200,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "46.715.172/0001-42",
+     "valor": "2.302.945,68",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 26,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: MUZZI MISK CONSTRUTORA E ENGENHARIA LTDA (CONSTRUCAO DE EDIFICIOS)",
+     "pagina": 4,
+     "trecho": "26 lançamento(s) no total de: R$2.302.945,68"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "52.604.742/0001-20",
+     "valor": "1.012.377,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 7,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: AFEB ESTRUTURAS METALICAS LTDA (FABRICACAO DE ESTRUTURAS METALICAS)",
+     "pagina": 4,
+     "trecho": "7 lançamento(s) no total de: R$1.012.377,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "31.775.209/0001-50",
+     "valor": "780.263,85",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 20,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: FDS CONSTRUCOES LTDA (OUTRAS Este relatório de inteligência financeira é sigiloso. Constitui crime divulgar seu teor à margem das hipóteses legais. (LC 105, de 2001, art. 10 e Código Penal, arts. 153, § 1º-A, 154 e 325). COAF >>> PF/SP >>> 140515.2.9294.11521 >>> 3730 RIF 140515.2.9294.11521 em 25/02/2026 às 12:26:39 Página: 4/13 OBRAS DE ACABAMENTO DA CONSTRUCAO)",
+     "pagina": 5,
+     "trecho": "20 lançamento(s) no total de: R$780.263,85"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "34.846.944/0001-04",
+     "valor": "646.166,62",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 20,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: VW S L E EVENTOS LTDA (ALUGUEL DE PALCOS, COBERTURAS E OUTRAS ESTRUTURAS DE USO TEMPORARIO, EXCETO ANDAIMES)",
+     "pagina": 5,
+     "trecho": "20 lançamento(s) no total de: R$646.166,62"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "10.650.259/0001-31",
+     "valor": "579.333,33",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 16,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: DS SOM E LUZ LTDA (ALUGUEL DE PALCOS, COBERTURAS E OUTRAS ESTRUTURAS DE USO TEMPORARIO, EXCETO ANDAIMES)",
+     "pagina": 5,
+     "trecho": "16 lançamento(s) no total de: R$579.333,33"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "04.780.982/0001-32",
+     "valor": "451.845,49",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 17,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: SOLUCIONNE TERMO-ACUSTICO DO BRASIL LTDA (TRATAMENTOS TERMICOS, ACUSTICOS OU DE VIBRACAO)",
+     "pagina": 5,
+     "trecho": "17 lançamento(s) no total de: R$451.845,49"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "52.729.267/0001-18",
+     "valor": "444.726,65",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 17,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: FC - ELETRICA INDUSTRIAL LTDA (INSTALACAO E MANUTENCAO ELETRICA)",
+     "pagina": 5,
+     "trecho": "17 lançamento(s) no total de: R$444.726,65"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "41.300.850/0001-92",
+     "valor": "420.883,06",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 26,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: VIP SERVICE ENGENHARIA LTDA (CONSTRUCAO DE EDIFICIOS)",
+     "pagina": 5,
+     "trecho": "26 lançamento(s) no total de: R$420.883,06"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "14.886.354/0001-90",
+     "valor": "314.478,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 21,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: AGILIZ REGULARIZACAO DE IMOVEIS LTDA (OUTRAS ATIVIDADES DE SERVICOS PRESTADOS PRINCIPALMENTE AS EMPRESAS NAO ESPECIFICADAS ANTERIORMENTE)",
+     "pagina": 5,
+     "trecho": "21 lançamento(s) no total de: R$314.478,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "21.984.751/0001-60",
+     "valor": "306.457,36",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 11,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: AGL DRYWALL E ESTRUTURAS LTDA (OUTRAS OBRAS DE ACABAMENTO DA CONSTRUCAO)",
+     "pagina": 5,
+     "trecho": "11 lançamento(s) no total de: R$306.457,36"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "26.197.582/0001-31",
+     "valor": "300.308,23",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 8,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: MANOS PINTURAS LTDA (SERVICOS DE PINTURA DE EDIFICIOS EM GERAL)",
+     "pagina": 5,
+     "trecho": "8 lançamento(s) no total de: R$300.308,23"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "13.475.054/0001-55",
+     "valor": "235.937,77",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 9,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: INSTALADORA ALIANCA LTDA (CONSTRUCAO DE REDES DE ABASTECIMENTO DE AGUA, COLETA DE ESGOTO E CONSTRUCOES CORRELATAS, EXCETO OBRAS DE IRRIGACAO)",
+     "pagina": 5,
+     "trecho": "9 lançamento(s) no total de: R$235.937,77"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "00.138.806/0001-40",
+     "valor": "200.946,89",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 3,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: COMTRAFO INDUSTRIA DE TRANSFORMADORES ELETRICOS S.A. (FABRICACAO DE TRANSFORMADORES, INDUTORES, CONVERSORES, SINCRONIZADORES E SEMELHANTES, PECAS E ACESSóRIOS)",
+     "pagina": 5,
+     "trecho": "3 lançamento(s) no total de: R$200.946,89"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "37.398.826/0001-60",
+     "valor": "188.550,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 4,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: MINAS CALHA LTDA (SERVICOS DE USINAGEM, SOLDA, TRATAMENTO E REVESTIMENTO EM METAIS)",
+     "pagina": 5,
+     "trecho": "4 lançamento(s) no total de: R$188.550,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "26.124.145/0001-98",
+     "valor": "175.000,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 7,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: MARCELO V MIZRAHY ARQUITETURA (SERVICOS DE ARQUITETURA)",
+     "pagina": 5,
+     "trecho": "7 lançamento(s) no total de: R$175.000,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "39.848.922/0001-99",
+     "valor": "163.026,93",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 3,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: PANAIR INSTALACOES E SERVICOS LTDA (INSTALACAO E MANUTENCAO DE SISTEMAS CENTRAIS DE AR CONDICIONADO, DE VENTILACAO E REFRIGERACAO)",
+     "pagina": 5,
+     "trecho": "3 lançamento(s) no total de: R$163.026,93"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "71.084.255/0001-28",
+     "valor": "153.040,00",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 10,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: PORT CONSTRUCOES E EMPREENDIMENTOS LTDA (ADMINISTRACAO DE OBRAS)",
+     "pagina": 5,
+     "trecho": "10 lançamento(s) no total de: R$153.040,00"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "34.089.879/0001-01",
+     "valor": "150.302,35",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 12,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: C DE S OTONI - SERVICOS DE ENGENHARIA (SERVICOS DE ENGENHARIA)",
+     "pagina": 5,
+     "trecho": "12 lançamento(s) no total de: R$150.302,35"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "57.318.191/0001-51",
+     "valor": "145.792,44",
+     "tipo": "transferencia",
+     "natureza": "agregado",
+     "quantidade": 2,
+     "periodo_inicio": "2024-12-24",
+     "periodo_fim": "2025-12-08",
+     "descricao": "destinatário identificado pelo banco: JUST IN TIME ESTRUTURAS METALICAS LTDA (FABRICACAO DE ESQUADRIAS DE METAL)",
+     "pagina": 5,
+     "trecho": "2 lançamento(s) no total de: R$145.792,44"
+    },
+    {
+     "origem": "57.391.420/0001-63",
+     "destino": "52.604.742/0001-20",
+     "valor": "86.200,27",
+     "tipo": "transferencia",
+     "natureza": "individual",
+     "data": "2025-10-31",
+     "descricao": "exemplo citado pelo banco",
+     "pagina": 5,
+     "trecho": "NOME BENEFICIÁRIO: AFEB ESTRUTURAS METALICAS LTDA DATA: 31/10/2025 VALOR PAGO: R$ 86.200,27"
+    },
+    {
+     "origem": "19.936.735/0001-50",
+     "destino": "53.537.680/0001-43",
+     "valor": "62.636,81",
+     "tipo": "transferencia",
+     "natureza": "individual",
+     "data": "2025-11-04",
+     "descricao": "exemplo citado pelo banco (pagador Rogue Participações, não a igreja)",
+     "pagina": 5,
+     "trecho": "NOME BENEFICIÁRIO: BPO GESTAO DE DISPONIVEL LTDA DATA: 04/11/2025 VALOR PAGO: R$ 62.636,81"
+    }
+   ],
+   "bens": [],
+   "ocorrencias": [
+    {
+     "norma": "Banco Central do Brasil - Carta-Circular nº 4.001/2020, art. 1º",
+     "codigo": "IV-a",
+     "descricao": "movimentação de recursos incompatível com o patrimônio, a atividade econômica ou a ocupação profissional e a capacidade financeira do cliente"
+    },
+    {
+     "norma": "Banco Central do Brasil - Carta-Circular nº 4.001/2020, art. 1º",
+     "codigo": "IV-ac",
+     "descricao": "movimentação de valores incompatíveis com o faturamento mensal das pessoas jurídicas"
+    },
+    {
+     "norma": "Banco Central do Brasil - Carta-Circular nº 4.001/2020, art. 1º",
+     "codigo": "IV-l",
+     "descricao": "operações que, por sua habitualidade, valor e forma, configurem artifício para burla da identificação da origem, do destino, dos responsáveis ou dos destinatários finais"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "2.1",
+   "titular": "02.425.349/0002-81",
+   "segmento": "Bens de luxo ou de alto valor",
+   "comunicante": "concessionária de veículos (não nomeada)",
+   "local": "SÃO PAULO-SP",
+   "periodo_inicio": "2025-04-28",
+   "periodo_fim": "2025-08-14",
+   "valor": "1.530.000,00",
+   "informacoes": "Informações Adicionais: POR OCASIÃO DAS ANÁLISES DA VENDA DE 01 RANGE ROVER 2024 2025 EM 28.04.2025 PELO VALOR DE R$\n1.530.000,00, SENDO PAGO COM A ENTREGA DE UM USADO POR R$ 1.230.000,00 e r$ 300.000,00 financiados.DEVIDO AS ATIVIDADES DO\nSOCIO QUE VAMOS ABORDAR NA SEQUENCIA, NÃO CONSEGUIMOS APURAR A ORIGEM DOS RECURSOS PARA A AQUISIÇÃO DO\nVEICULO DE 1.230.000,00 DADO COMO ENTRADA, COLOCANDO O CLIENTE EM MONITORAMENTO. DETECTAMOS EM 06.06.2025 UMA\nNOVA AQUISIÇÃO DE UMA RANGE ROVER 2024 2025 PELO VALOR DE R$ 1.170.000,00, COM UM USADO(O ANTERIOR) POR R$\n1.190.000,00, ENTRADA DE R$ 156.200,00, EXIGINDO TROCO DE R$ 176.200,00. TODAS ESSAS FORMAS DE NEGOCIAÇÃO NOS\nTROUXERAM PREOCUPAÇÕES QUE EXIGIRAM MONITORAMENTO REFORÇADO, CONSIDERANDO AS INFORMAÇÕES APURADAS DO\nSOCIO, TRATANDO DE PASTOR DA IGREJA BOLA DE NEVE DO BRAS SPAULO E EM BELO HORIZONTE, ALÉM SE SE TRATAR SEGUNDO\nPUBLICAÇÕES DO MAIOR DOADOR DA CAMPANHA POLITICA DO EX PRESIDENTE JAIR BOLSONARO E DO ATUAL GOVERNADOR DE SÃO\nPAULO . CONSOANTE TODOS ESSES FATOS SUBMETEMOS O PROCESSO DE ANALISE AO COMITE DE PLDFT E COAF EM 14.08.2025, QUE\nCOM REGISTRO EM ATA, RECOMENDOU COMUNICAR O COAF SISCOAF, POR PROVÁVEL ENQ2UADRAMENTO NA LEI N.9613 DE\n03.03.1998 E RESOLUÇÕES COAF NS. 025 E 036 (ATIVIDADE ATIPICA E DE ALTO RISCO E RELACIONAMENTO COM O MEIO POLITICO, QUE\nPODERIAM REFLETIR EM RISCOS DE IMAGEM.",
+   "pagina_inicio": 5,
+   "pagina_fim": 6,
+   "participacoes": [
+    {
+     "nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPACOES LTDA",
+     "documento": "02.425.349/0002-81",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "outros"
+    }
+   ],
+   "bens": [
+    {
+     "id": "rr1",
+     "tipo": "veiculo",
+     "descricao": "Range Rover 2024/2025",
+     "valor": "1.530.000,00",
+     "data_negocio": "2025-04-28"
+    },
+    {
+     "id": "rr2",
+     "tipo": "veiculo",
+     "descricao": "Range Rover 2024/2025 (segunda aquisição)",
+     "valor": "1.170.000,00",
+     "data_negocio": "2025-06-06"
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "02.425.349/0002-81",
+     "destino": null,
+     "valor": "1.530.000,00",
+     "tipo": "compra_veiculo",
+     "natureza": "individual",
+     "data": "2025-04-28",
+     "bem": "rr1",
+     "descricao": "pago com um usado avaliado em R$ 1.230.000,00 e R$ 300.000,00 financiados; o comunicante diz não ter apurado a origem do usado",
+     "pagina": 5,
+     "trecho": "VENDA DE 01 RANGE ROVER 2024 2025 EM 28.04.2025 PELO VALOR DE R$ 1.530.000,00"
+    },
+    {
+     "origem": "02.425.349/0002-81",
+     "destino": null,
+     "valor": "1.170.000,00",
+     "tipo": "compra_veiculo",
+     "natureza": "individual",
+     "data": "2025-06-06",
+     "bem": "rr2",
+     "descricao": "usado anterior avaliado em R$ 1.190.000,00, entrada de R$ 156.200,00 e troco de R$ 176.200,00",
+     "pagina": 5,
+     "trecho": "DETECTAMOS EM 06.06.2025 UMA NOVA AQUISIÇÃO DE UMA RANGE ROVER 2024 2025 PELO VALOR DE R$ 1.170.000,00"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "Resolução Coaf nº 25/2013 - art. 5º",
+     "codigo": null,
+     "descricao": "operações que possam configurar sérios indícios da ocorrência dos crimes previstos na Lei nº 9.613/1998"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "2.2",
+   "titular": "02.425.349/0002-81",
+   "segmento": "Bens de luxo ou de alto valor",
+   "comunicante": "concessionária de veículos (não nomeada)",
+   "local": "SÃO PAULO-SP",
+   "periodo_inicio": "2025-12-04",
+   "periodo_fim": "2025-12-05",
+   "valor": "1.600.000,00",
+   "informacoes": "Informações Adicionais: REFERENTE À NEGOCIAÇÃO DE COMPRA, NF 206 DE 04/12/2025, NO VALOR TOTAL DE R$ 1.600.000,00,\nVEÍCULO CADILLAC ESCALADE SPRT, PLACA TEE-7C16, RENAVAM 01436319177, CHASSI 1GYS9PRL7SR175472, ANO/MODELO\n2025/2025  A MORIAH ASSET É MENCIONADA EM RECENTES NOTÍCIAS POR SEU CONTROLADOR FABIANO CAMPOS ZETTEL SER\nCUNHADO DO DONO DO BANCO DO BANCO MASTER",
+   "pagina_inicio": 6,
+   "pagina_fim": 6,
+   "participacoes": [
+    {
+     "nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPACOES LTDA",
+     "documento": "02.425.349/0002-81",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "outros"
+    }
+   ],
+   "bens": [
+    {
+     "id": "cad",
+     "tipo": "veiculo",
+     "descricao": "Cadillac Escalade Sport 2025/2025",
+     "valor": "1.600.000,00",
+     "data_negocio": "2025-12-04",
+     "identificacao": {
+      "nf": "206 de 04/12/2025",
+      "placa": "TEE-7C16",
+      "renavam": "01436319177",
+      "chassi": "1GYS9PRL7SR175472"
+     }
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "02.425.349/0002-81",
+     "destino": null,
+     "valor": "1.600.000,00",
+     "tipo": "compra_veiculo",
+     "natureza": "individual",
+     "data": "2025-12-04",
+     "bem": "cad",
+     "descricao": "NF 206 de 04/12/2025",
+     "pagina": 6,
+     "trecho": "NF 206 DE 04/12/2025, NO VALOR TOTAL DE R$ 1.600.000,00"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "Resolução Coaf nº 25/2013 - art. 5º",
+     "codigo": null,
+     "descricao": "operações que possam configurar sérios indícios da ocorrência dos crimes previstos na Lei nº 9.613/1998"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "2.3",
+   "titular": "02.425.349/0002-81",
+   "segmento": "Bens de luxo ou de alto valor",
+   "comunicante": "concessionária de veículos (não nomeada)",
+   "local": "BELO HORIZONTE-MG",
+   "periodo_inicio": "2025-12-02",
+   "periodo_fim": "2025-12-05",
+   "valor": "650.000,00",
+   "informacoes": "Informações Adicionais: REFERENTE À NEGOCIAÇÃO DE COMPRA, NF 25491 DE 02/12/2025, NO VALOR TOTAL DE R$ 650.000,00,\nVEÍCULO AUDI RS6 AV 4.0TFSI, PLACA GCG0C22, RENAVAM 01253291648, CHASSI WUA82CF28MN903130, ANO/MODELO 2020/2021 - A\nMORIAH ASSET É MENCIONADA EM RECENTES NOTÍCIAS POR SEU CONTROLADOR FABIANO CAMPOS ZETTEL SER CUNHADO DO DONO\nDO BANCO DO BANCO MASTER",
+   "pagina_inicio": 6,
+   "pagina_fim": 6,
+   "participacoes": [
+    {
+     "nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPACOES LTDA",
+     "documento": "02.425.349/0002-81",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "outros"
+    }
+   ],
+   "bens": [
+    {
+     "id": "audi",
+     "tipo": "veiculo",
+     "descricao": "Audi RS6 Avant 4.0 TFSI 2020/2021",
+     "valor": "650.000,00",
+     "data_negocio": "2025-12-02",
+     "identificacao": {
+      "nf": "25491 de 02/12/2025",
+      "placa": "GCG0C22",
+      "renavam": "01253291648",
+      "chassi": "WUA82CF28MN903130"
+     }
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "02.425.349/0002-81",
+     "destino": null,
+     "valor": "650.000,00",
+     "tipo": "compra_veiculo",
+     "natureza": "individual",
+     "data": "2025-12-02",
+     "bem": "audi",
+     "descricao": "NF 25491 de 02/12/2025",
+     "pagina": 6,
+     "trecho": "NF 25491 DE 02/12/2025, NO VALOR TOTAL DE R$ 650.000,00"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "Resolução Coaf nº 25/2013 - art. 5º",
+     "codigo": null,
+     "descricao": "operações que possam configurar sérios indícios da ocorrência dos crimes previstos na Lei nº 9.613/1998"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "3.1",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Banco Central - Atípicas",
+   "comunicante": "Cooperativa de Crédito Credifor Ltda. – Sicoob Credifor",
+   "local": "Formiga-MG",
+   "periodo_inicio": "2022-06-01",
+   "periodo_fim": "2022-06-30",
+   "valor": "19.693.098,00",
+   "creditos": "9.900.020,00",
+   "debitos": "9.793.078,30",
+   "informacoes": "Informações Adicionais: Razão Social SUPER EMPREENDIMENTOS E PARTICIPACOES S.A, CNPJ: 31.446.245/0001-70, cadastrada desde\n07/06/2022, constituída há 3 anos, atividade exercida de Holdings de instituições não financeiras. MICRO-EMPRESA NÃO OPTANTE PELO\nSIMPLES, natureza jurídica: SOCIEDADE ANÔNIMA FECHADA com capital social de R$ 1.000.000,00. Não possui faturamento cadastrado\n(atualizado em 07/06/2022) e não possui patrimônio cadastrado (atualizado 07/06/2022). - Relacionamentos cedidos: ADMINISTRADOR:\nFABIANO CAMPOS ZETTEL, CPF: 02781881686. País de nascimento BRASIL, 45 anos, atividade exercida de ADMINISTRADOR. Possui renda\nvariável cadastrada no valor de R$ 7.000,00, e não possui patrimônio cadastrado. ADMINISTRADOR: ANA CLAUDIA QUEIROZ DE PAIVA, CPF:\n09047685628. País de nascimento BRASIL, 32 anos, atividade exercida de ADMINISTRADOR. Possui renda variável cadastrada no valor de R$\n7.000,00, e não possui patrimônio cadastrado. __________Conta 1009281 Análise de movimentações da CONTA CORRENTE DEPÓSITOS A\nVISTA ativa nº 1009281, individual, com data de abertura em 07/06/2022. Para o movimento de jun/2022, desconsiderando as concessões\ninternas, os créditos de forma consolidada totalizam cerca de R$ 9.900.020,00, destacamos: -> 5 CRÉDITOS TED-STR (históricos refere-se a\ncréditos de teds, podendo ser para diferentes titularidades e mesma titularidade em outra instituição financeira), totalizando: R$ 9.880.000,00,\nsendo: Consolidado R$ 9.180.000,00, advindos de FABIANO CAMPOS ZETTEL, 02781881686. Bc. 237, Ag. 3853, Cnt. 132861\n(ADMINISTRADOR), sendo: 15/06/2022 R$ 4.950.000,00 22/06/2022 R$ 50.000,00 10/06/2022 R$ 660.000,00 09/06/2022 R$ 3.520.000,00\n08/06/2022R$ 700.000,00 - origem: ISAAC SIDNEY M FERREIRA, 39911543153. Bc. 1, Ag. 5197, Cnt. 9652825 - > 2 CRÉDITOS\nTRANSFERENCIAS EXTERNA PIX-DIFERENTE TITULAR, totalizando: R$ 20.000,00, destacamos: 07/06/2022 R$ 20.000,00 - origem: FABIANO\nCAMPOS ZETTEL, 02781881686. Bc. 237, Ag. 3853, Cnt. 132861 (ADMINISTRADOR) (Consolidado) - As movimentações a débitos totalizam\ncerca de R$ 9.793.078,30, destacamos: - > 5 Pagamentos diversos de títulos/boletos, Totalizando: R$ 7.189.100,67. -> 6 DÉBITO EMISSÃO\nTED DIFERENTE TITULARIDADE, totalizando: R$ 2.525.000,00, sendo: 09/06/2022 R$ 1.600.000,00 - destino: N.Q.H.S.P.E Empreendimentos\ne Participaç, 36579177000131. Bc. 243, Ag. 1, Cnt. 1083190. 10/06/2022 R$ 330.000,00 - destino: VL Kawamura, 27338150000166. Bc. 260,\nAg. 1, Cnt. 368050234. 10/06/2022 R$ 165.000,00 - destino: Flavia M C Semini ME, 34101079000169. Bc. 33, Ag. 2175, Cnt. 1300034835.\n10/06/2022 R$ 165.000,00 - destino: Private Investimentos Imobiliários, 12076845000140. Bc. 33, Ag. 1576, Cnt. 130006634. 17/06/2022 R$\n165.000,00 - destino: Flavia M C Semini ME, 34101079000169. Bc. 33, Ag. 2175, Cnt. 23/06/2022 R$ 100.000,00 - destino: Antônio Augusto\nConte, 21695991850. Bc. 260, Ag. 1, Cnt. 861542975. Com base nas informações de relacionamento e análise realizada, destaca-se: Trata-se\nde empresa cooperada com atividade exercida de Holdings de instituições não financeiras, não possui faturamento cadastrado, o que\nimpossibilita que seja mensurada de forma prudente a sua capacidade de movimentação, assim, ao considerarmos o faturamento zerado\ntodo valor transitado em conta torna-se incompatível, onde o total movimentado a crédito no mês analisado foi cerca de R$ 9.900.020,00,\nficando evidenciada a incompatibilidade. A empresa é uma holding do qual aparentemente entradas e saídas e dos recursos são de forma\ntransitória a qual dificulta a rastreabilidade a origem primária/destino dos recursos movimentados, visto que se trata de recursos de terceiros,\nde acordo com sua atividade fim. Expressivos Recursos advindos do sócio advindos de outras instituições financeiras, tornando complexa a\nidentificação da origem primária do recurso, bem como a mensuração da real capacidade da empresa. Houve acolhimento de valor inusitado\nno mês, uma vez que no último mês (jun/2022 a jun/2022), desconsiderando as concessões internas, o associado movimentou cerca de R$\n9.900.020,00, correspondente à movimentação do mês analisado.",
+   "pagina_inicio": 6,
+   "pagina_fim": 7,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "VL KAWAMURA",
+     "documento": "27.338.150/0001-66",
+     "papel": "beneficiario"
+    },
+    {
+     "nome": "N.Q.H.S.P.E EMPREENDIMENTOS E PARTICIPAÇ",
+     "documento": "36.579.177/0001-31",
+     "papel": "beneficiario"
+    },
+    {
+     "nome": "FLAVIA M. C. SEMINI",
+     "documento": "34.101.079/0001-69",
+     "papel": "beneficiario"
+    },
+    {
+     "nome": "PRIVATE INVESTIMENTOS IMOBILIARIOS LTDA",
+     "documento": "12.076.845/0001-40",
+     "papel": "beneficiario"
+    },
+    {
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA",
+     "documento": "090.476.856-28",
+     "papel": "responsavel"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "responsavel"
+    },
+    {
+     "nome": "ANTONIO AUGUSTO CONTE",
+     "documento": "216.959.918-50",
+     "papel": "beneficiario"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "remetente"
+    },
+    {
+     "nome": "ISAAC SIDNEY MENEZES FERREIRA",
+     "documento": "399.115.431-53",
+     "papel": "remetente"
+    }
+   ],
+   "bens": [],
+   "transacoes": [
+    {
+     "origem": "027.818.816-86",
+     "destino": "31.446.245/0001-70",
+     "valor": "4.950.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-15",
+     "pagina": 7,
+     "trecho": "15/06/2022 R$ 4.950.000,00"
+    },
+    {
+     "origem": "027.818.816-86",
+     "destino": "31.446.245/0001-70",
+     "valor": "50.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-22",
+     "pagina": 7,
+     "trecho": "22/06/2022 R$ 50.000,00"
+    },
+    {
+     "origem": "027.818.816-86",
+     "destino": "31.446.245/0001-70",
+     "valor": "660.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-10",
+     "pagina": 7,
+     "trecho": "10/06/2022 R$ 660.000,00"
+    },
+    {
+     "origem": "027.818.816-86",
+     "destino": "31.446.245/0001-70",
+     "valor": "3.520.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-09",
+     "pagina": 7,
+     "trecho": "09/06/2022 R$ 3.520.000,00"
+    },
+    {
+     "origem": "399.115.431-53",
+     "destino": "31.446.245/0001-70",
+     "valor": "700.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-08",
+     "pagina": 7,
+     "trecho": "08/06/2022R$ 700.000,00 - origem: ISAAC SIDNEY M FERREIRA"
+    },
+    {
+     "origem": "027.818.816-86",
+     "destino": "31.446.245/0001-70",
+     "valor": "20.000,00",
+     "tipo": "pix",
+     "natureza": "individual",
+     "data": "2022-06-07",
+     "pagina": 7,
+     "trecho": "07/06/2022 R$ 20.000,00 - origem: FABIANO"
+    },
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": null,
+     "valor": "7.189.100,67",
+     "tipo": "boleto",
+     "natureza": "agregado",
+     "quantidade": 5,
+     "periodo_inicio": "2022-06-01",
+     "periodo_fim": "2022-06-30",
+     "descricao": "pagamentos de títulos/boletos, beneficiários não informados",
+     "pagina": 7,
+     "trecho": "5 Pagamentos diversos de títulos/boletos, Totalizando: R$ 7.189.100,67"
+    },
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "36.579.177/0001-31",
+     "valor": "1.600.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-09",
+     "pagina": 7,
+     "trecho": "09/06/2022 R$ 1.600.000,00 - destino: N.Q.H.S.P.E"
+    },
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "27.338.150/0001-66",
+     "valor": "330.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-10",
+     "pagina": 7,
+     "trecho": "10/06/2022 R$ 330.000,00 - destino: VL Kawamura"
+    },
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "34.101.079/0001-69",
+     "valor": "165.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-10",
+     "pagina": 7,
+     "trecho": "10/06/2022 R$ 165.000,00 - destino: Flavia M C Semini ME"
+    },
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "12.076.845/0001-40",
+     "valor": "165.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-10",
+     "pagina": 7,
+     "trecho": "10/06/2022 R$ 165.000,00 - destino: Private Investimentos"
+    },
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "34.101.079/0001-69",
+     "valor": "165.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-17",
+     "pagina": 7,
+     "trecho": "17/06/2022 R$\n165.000,00 - destino: Flavia M C Semini ME"
+    },
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "216.959.918-50",
+     "valor": "100.000,00",
+     "tipo": "ted",
+     "natureza": "individual",
+     "data": "2022-06-23",
+     "pagina": 7,
+     "trecho": "23/06/2022 R$ 100.000,00 - destino: Antônio Augusto"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "Banco Central do Brasil - Carta-Circular nº 4.001/2020, art. 1º",
+     "codigo": "IV-a",
+     "descricao": "movimentação de recursos incompatível com o patrimônio, a atividade econômica ou a ocupação profissional e a capacidade financeira do cliente"
+    },
+    {
+     "norma": "Banco Central do Brasil - Carta-Circular nº 4.001/2020, art. 1º",
+     "codigo": "IV-ac",
+     "descricao": "movimentação de valores incompatíveis com o faturamento mensal das pessoas jurídicas"
+    },
+    {
+     "norma": "Banco Central do Brasil - Carta-Circular nº 4.001/2020, art. 1º",
+     "codigo": "IV-e",
+     "descricao": "movimentação de quantia significativa por meio de conta até então pouco movimentada ou de conta que acolha depósito inusitado"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "3.2",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "23º Tabelião de Notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2024-05-21",
+   "periodo_fim": "2024-05-21",
+   "valor": "36.918.510,00",
+   "informacoes": "Informações Adicionais: Por escritura de 30 de abril de 2024, de notas do 23º Tabelião desta Capital, livro nº 5.006, fls. 357/368, sob a forma\nde documento eletrônico, LUZOM - SOCIEDADE DE PROPÓSITO ESPECÍFICO LTDA., já qualificada, transmitiu por venda a SUPER\nEMPREENDIMENTOS E PARTICIPAÇÕES S.A., CNPJ nº 31.446.245/0001-70, NIRE 35300521714, com sede nesta Capital, na Avenida Horácio\nLafer nº 160, 13°andar, Itaim Bibi, o imóvel desta matrícula pelo valor de R$23.118.509,79, em cumprimento ao instrumento particular de\npromessa de compra e venda de 29 janeiro de 2024, não registrado. A alienante declarou que o imóvel está lançado no seu ativo circulante,\nnunca tendo constado do ativo permanente, e, em razão de explorar exclusivamente atividade prevista na Legislação em vigor, deixou de\napresentar a Certidão Conjunta Negativa de Débitos Relativos a Tributos Federais e à Dívida Ativa da União. Valor Venal de Referência:\nR$3.743.479,00.Por escritura de 30 de abril de 2024, referida no R.06, SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A., já qualificada,\nalienou fiduciariamente a LUZOM - SOCIEDADE DE PROPÓSITO ESPECÍFICO LTDA., já qualificada, o imóvel desta matrícula, para garantia da\ndívida no valor de R$13.800.000,00, pagável através de 06 parcelas no valor de R$2.300.000,00, cada uma, a primeira com vencimento para 29\nde maio de 2024, e as demais no mesmo dia dos meses subsequentes, acrescidas individualmente, de juros corrigidos pela Selic. Prazo de\ncarência: 15 dias, conforme previsto no § 2º do artigo 26 da Lei nº 9.514/97; e demais cláusulas e condições constantes do título.",
+   "pagina_inicio": 8,
+   "pagina_fim": 8,
+   "participacoes": [
+    {
+     "nome": "LUZOM SOCIEDADE DE PROPOSITO ESPECIFICO LTDA",
+     "documento": "11.396.222/0001-91",
+     "papel": "titular"
+    },
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "LUIZ HENRIQUE MAKSOUD",
+     "documento": "129.362.368-78",
+     "papel": "procurador"
+    },
+    {
+     "nome": "FIRMINO MATIAS LUCIO JUNIOR",
+     "documento": "086.909.968-00",
+     "papel": "procurador"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im_luzom",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo comprado da Luzom SPE (escritura de 30/04/2024; promessa de 29/01/2024)",
+     "valor": "23.118.509,79",
+     "valor_referencia": "3.743.479,00",
+     "data_negocio": "2024-04-30",
+     "identificacao": {
+      "tabeliao": "23º Tabelião de Notas de São Paulo",
+      "livro": "5.006",
+      "folhas": "357/368"
+     }
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "11.396.222/0001-91",
+     "valor": "23.118.509,79",
+     "tipo": "escritura_compra",
+     "natureza": "individual",
+     "data": "2024-04-30",
+     "bem": "im_luzom",
+     "descricao": "compra do imóvel; valor venal de referência R$ 3.743.479,00",
+     "pagina": 8,
+     "trecho": "transmitiu por venda a SUPER\nEMPREENDIMENTOS E PARTICIPAÇÕES S.A., CNPJ nº 31.446.245/0001-70, NIRE 35300521714, com sede nesta Capital, na Avenida Horácio\nLafer nº 160, 13°andar, Itaim Bibi, o imóvel desta matrícula pelo valor de R$23.118.509,79"
+    },
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "11.396.222/0001-91",
+     "valor": "13.800.000,00",
+     "tipo": "alienacao_fiduciaria",
+     "natureza": "agregado",
+     "quantidade": 6,
+     "periodo_inicio": "2024-05-29",
+     "periodo_fim": "2024-10-29",
+     "bem": "im_luzom",
+     "descricao": "dívida garantida por alienação fiduciária do mesmo imóvel: 6 parcelas de R$ 2.300.000,00, a primeira em 29/05/2024, com juros pela Selic",
+     "pagina": 8,
+     "trecho": "para garantia da\ndívida no valor de R$13.800.000,00, pagável através de 06 parcelas no valor de R$2.300.000,00"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 162 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "VI",
+     "descricao": "registro de título no qual conste valor declarado de bem com diferença anormal em relação a outros valores a ele associados (avaliação fiscal, valor patrimonial)"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "3.3",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "cartório de notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2024-05-10",
+   "periodo_fim": "2024-05-10",
+   "valor": "50.000.000,00",
+   "informacoes": "Informações Adicionais: ESCRITURA DE VENDA E COMPRA COM VALOR DE TRANSAÇÃO SUPERIOR A 100% DO VALOR DE AVALIAÇÃO\nFISCAL",
+   "pagina_inicio": 8,
+   "pagina_fim": 8,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "ALEXANDRE CAFE BIRMAN",
+     "documento": "002.293.896-60",
+     "papel": "vendedor"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im_birman",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo comprado de Alexandre Café Birman",
+     "valor": "50.000.000,00",
+     "data_negocio": "2024-05-10"
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "002.293.896-60",
+     "valor": "50.000.000,00",
+     "tipo": "escritura_compra",
+     "natureza": "individual",
+     "data": "2024-05-10",
+     "bem": "im_birman",
+     "descricao": "escritura de venda e compra com valor superior a 100% da avaliação fiscal; data da comunicação (a da escritura não consta)",
+     "pagina": 8,
+     "trecho": "Notários e Registradores SAO PAULO-SP 10/5/2024 até 10/5/2024 50.000.000,00"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 162 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "VI",
+     "descricao": "registro de título no qual conste valor declarado de bem com diferença anormal em relação a outros valores a ele associados (avaliação fiscal, valor patrimonial)"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "3.4",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "9º Tabelião de Notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2025-01-30",
+   "periodo_fim": "2025-01-30",
+   "valor": "4.347.000,00",
+   "informacoes": "Informações Adicionais: Por escritura de 16 de dezembro de 2024, de notas do 9º Tabelião desta Capital, livro nº 11.733, fls. 031, sob a forma\nde documento eletrônico, SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S/A., já qualificada, transmitiu por doação a KAROLINA SANTOS\nTRAINOTTI, brasileira, solteira, maior, administradora, RG nº 5.169.947-SSP/SC, CPF nº 077.640.489-09, domiciliada nesta Capital, na Avenida\nPresidente Juscelino Kubitschek nº 1545, ap. 3708, Vila Nova Conceição, o imóvel desta matrícula pelo valor fiscal atribuído de\nEste relatório de inteligência financeira é sigiloso. Constitui crime divulgar seu teor à margem das hipóteses legais.\n(LC 105, de 2001, art. 10 e Código Penal, arts. 153, § 1º-A, 154 e 325).\nCOAF >>> PF/SP >>> 140515.2.9294.11521 >>> 3730\nRIF 140515.2.9294.11521 em 25/02/2026 às 12:26:39\nPágina: 8/13\nR$4.347.000,00. (Valor de referência: R$1.318.344,00). Doação de pessoa juridica para pessoa fisica, grnade diferença entre o valor fiscal e\ndeclarado. Tentativa de registro, titulo devolvido com exigências, prenotação venceu dia 30/01/2025.",
+   "pagina_inicio": 8,
+   "pagina_fim": 9,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "KAROLINA SANTOS TRAINOTTI",
+     "documento": "077.640.489-09",
+     "papel": "titular"
+    },
+    {
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA",
+     "documento": "090.476.856-28",
+     "papel": "procurador"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im_doacao",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo doado pela Super a Karolina Santos Trainotti (escritura de 16/12/2024)",
+     "valor": "4.347.000,00",
+     "valor_referencia": "1.318.344,00",
+     "data_negocio": "2024-12-16",
+     "identificacao": {
+      "tabeliao": "9º Tabelião de Notas de São Paulo",
+      "livro": "11.733",
+      "folhas": "031"
+     }
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "077.640.489-09",
+     "valor": "4.347.000,00",
+     "tipo": "escritura_doacao",
+     "natureza": "individual",
+     "data": "2024-12-16",
+     "bem": "im_doacao",
+     "descricao": "doação de pessoa jurídica a pessoa física pelo valor fiscal atribuído; título devolvido com exigências, prenotação vencida em 30/01/2025; comunicada de novo em 25/02/2025 (item 3.5)",
+     "pagina": 9,
+     "trecho": "R$4.347.000,00. (Valor de referência: R$1.318.344,00). Doação de pessoa juridica para pessoa fisica"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 162 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "I",
+     "descricao": "doação de bem imóvel a terceiro sem vínculo familiar aparente com o doador, com valor venal igual ou superior a R$ 100.000,00"
+    },
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 162 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "V",
+     "descricao": "registro de transmissões sucessivas do mesmo bem em período e com diferença de valor anormais"
+    },
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 162 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "VI",
+     "descricao": "registro de título no qual conste valor declarado de bem com diferença anormal em relação a outros valores a ele associados (avaliação fiscal, valor patrimonial)"
+    }
+   ]
+  },
+  {
+   "secao": "suspeita",
+   "numero": "3.5",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "9º Tabelião de Notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2025-02-25",
+   "periodo_fim": "2025-02-25",
+   "valor": "4.347.000,00",
+   "informacoes": "Informações Adicionais: Por escritura de 16 de dezembro de 2024, de notas do 9º Tabelião desta Capital, livro nº 11.733, fls. 031, sob a forma\nde documento eletrônico, SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S/A., já qualificada, transmitiu por doação a KAROLINA SANTOS\nTRAINOTTI, brasileira, solteira, maior, administradora, RG nº 5.169.947-SSP/SC, CPF nº 077.640.489-09, domiciliada nesta Capital, na Avenida\nPresidente Juscelino Kubitschek nº 1545, ap. 3708, Vila Nova Conceição, o imóvel desta matrícula pelo valor fiscal atribuído de\nR$4.347.000,00. (Valor de referência: R$1.350.268,00).Doação de pessoa juridica para pessoa fisica e grde diferença entre valor fiscal e\ndeclarado.",
+   "pagina_inicio": 9,
+   "pagina_fim": 9,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "ANA CLAUDIA QUEIROZ DE PAIVA",
+     "documento": "090.476.856-28",
+     "papel": "procurador"
+    },
+    {
+     "nome": "KAROLINA SANTOS TRAINOTTI",
+     "documento": "077.640.489-09",
+     "papel": "titular"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im_doacao2",
+     "tipo": "imovel",
+     "descricao": "Mesmo imóvel da comunicação 3.4 (segunda comunicação da doação; valor de referência atualizado)",
+     "valor": "4.347.000,00",
+     "valor_referencia": "1.350.268,00",
+     "data_negocio": "2024-12-16"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 162 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "I",
+     "descricao": "doação de bem imóvel a terceiro sem vínculo familiar aparente com o doador, com valor venal igual ou superior a R$ 100.000,00"
+    },
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 162 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "VI",
+     "descricao": "registro de título no qual conste valor declarado de bem com diferença anormal em relação a outros valores a ele associados (avaliação fiscal, valor patrimonial)"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.1",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "cartório de notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2022-03-14",
+   "periodo_fim": "2022-03-14",
+   "valor": "38.000.000,00",
+   "informacoes": "Diferença entre o valor fiscal e valor declarado",
+   "pagina_inicio": 9,
+   "pagina_fim": 10,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "IM2D PARTICIPACOES LTDA.",
+     "documento": "02.684.297/0001-87",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "ISAAC DUEK",
+     "documento": "481.617.728-00",
+     "papel": "procurador"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im11",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo (escritura entre Super e IM2D Participações; direção da venda não informada)",
+     "valor": "38.000.000,00",
+     "data_negocio": "2022-03-14"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.2",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "cartório de notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2022-05-10",
+   "periodo_fim": "2022-05-10",
+   "valor": "8.700.000,00",
+   "informacoes": "Diferença entre o valor fiscal e valor declarado",
+   "pagina_inicio": 10,
+   "pagina_fim": 10,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "CAROLINA GOMES DE OLIVEIRA ROSSI CUPPOLONI",
+     "documento": "342.414.888-11",
+     "papel": "titular"
+    },
+    {
+     "nome": "RAFAEL ROSSI CUPPOLONI",
+     "documento": "270.358.238-24",
+     "papel": "titular"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im12",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo (escritura entre Super e Carolina e Rafael Rossi Cuppoloni; direção não informada)",
+     "valor": "8.700.000,00",
+     "data_negocio": "2022-05-10"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.3",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "cartório de notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2022-08-11",
+   "periodo_fim": "2022-08-11",
+   "valor": "10.340.000,00",
+   "informacoes": "Diferença entre o valor fiscal e valor declarado",
+   "pagina_inicio": 10,
+   "pagina_fim": 10,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "RAFAEL FERNANDES ESTEVEZ",
+     "documento": "883.487.410-20",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "CRISTINA DE AZEVEDO BOHRER",
+     "documento": "022.337.790-29",
+     "papel": "titular"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im13",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo (escritura entre Super, Rafael Fernandes Estevez e Cristina de Azevedo Bohrer; direção não informada)",
+     "valor": "10.340.000,00",
+     "data_negocio": "2022-08-11"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.4",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "cartório de notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2022-08-22",
+   "periodo_fim": "2022-08-22",
+   "valor": "8.500.000,00",
+   "informacoes": "Diferença entre o valor fiscal e valor declarado",
+   "pagina_inicio": 10,
+   "pagina_fim": 10,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "MARCEL ZANIN MAURO",
+     "documento": "936.098.098-68",
+     "papel": "titular"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im14",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo (escritura entre Super e Marcel Zanin Mauro; direção não informada)",
+     "valor": "8.500.000,00",
+     "data_negocio": "2022-08-22"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.5",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "cartório de notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2023-05-10",
+   "periodo_fim": "2023-05-10",
+   "valor": "30.903.911,00",
+   "informacoes": "ESCRITURA DE VENDA E COMPRA COM VALOR DE TRANSAÇÃO SUPERIOR A 100% DO VALOR DE AVALIAÇÃO FISCAL.",
+   "pagina_inicio": 10,
+   "pagina_fim": 11,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "SINGULARE CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+     "documento": "62.285.390/0001-40",
+     "papel": "procurador"
+    },
+    {
+     "nome": "HIGH YIELD DISTRESSED FUNDO DE",
+     "documento": "25.295.530/0001-35",
+     "papel": "vendedor"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im15",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo comprado do High Yield Distressed Fundo de Investimento (Singulare CTVM como representante)",
+     "valor": "30.903.911,00",
+     "data_negocio": "2023-05-10"
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "25.295.530/0001-35",
+     "valor": "30.903.911,00",
+     "tipo": "escritura_compra",
+     "natureza": "individual",
+     "data": "2023-05-10",
+     "bem": "im15",
+     "descricao": "vendedor identificado na comunicação; data da comunicação",
+     "pagina": 11,
+     "trecho": "Notários e Registradores SAO PAULO-SP 10/5/2023 até 10/5/2023 30.903.911,00"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.6",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "cartório de notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2024-02-20",
+   "periodo_fim": "2024-02-20",
+   "valor": "7.000.000,00",
+   "informacoes": "Diferença entre o valor fiscal e valor declarado",
+   "pagina_inicio": 11,
+   "pagina_fim": 11,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "MARCELO ADRIANO DE ALMEIDA",
+     "documento": "132.102.798-29",
+     "papel": "titular"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im16",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo (escritura entre Super e Marcelo Adriano de Almeida; direção não informada)",
+     "valor": "7.000.000,00",
+     "data_negocio": "2024-02-20"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.7",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "cartório de notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2024-03-08",
+   "periodo_fim": "2024-03-08",
+   "valor": "43.710.000,00",
+   "informacoes": "Diferença entre o valor fiscal e valor declarado",
+   "pagina_inicio": 11,
+   "pagina_fim": 11,
+   "participacoes": [
+    {
+     "nome": "BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+     "documento": "13.486.793/0001-42",
+     "papel": "titular"
+    },
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "TERRA- FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+     "documento": "13.320.290/0001-00",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "DANIELA ASSARITO BONIFACIO",
+     "documento": "320.334.648-65",
+     "papel": "procurador"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im17",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo (escritura entre Super, BRL Trust DTVM e Terra – Fundo de Investimento Imobiliário; direção não informada)",
+     "valor": "43.710.000,00",
+     "data_negocio": "2024-03-08"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.8",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "9º Tabelião de Notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2024-04-09",
+   "periodo_fim": "2024-04-09",
+   "valor": "48.000.000,00",
+   "informacoes": "Informações Adicionais: Por escritura de 27 de março de 2024, de notas do 9º Tabelião desta Capital, livro nº 11.609, fls. 359, sob a forma de\ndocumento eletrônico, GRIP NEGÓCIOS IMOBILIÁRIOS LTDA., já qualificada, transmitiu por venda a SUPER EMPREENDIMENTOS E\nPARTICIPAÇÕES S/A., CNPJ nº 31.446.245/0001-70, NIRE 35300521714, com sede nesta Capital, na Avenida Horácio Lafer nº 160, 13° andar,\nItaim Bibi, o imóvel desta matrícula pelo valor de R$48.000.000,00, em cumprimento ao instrumento particular datado de 26 de fevereiro de\n2024, não registrado. (Valor de referência: R$6.990.176,00). Forma de pagamento de 5 milhões recebido anteriormente a escritura sem\nespecificar.",
+   "pagina_inicio": 11,
+   "pagina_fim": 12,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "GRIP NEGOCIOS IMOBILIARIOS LTDA",
+     "documento": "26.771.372/0001-05",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "RAFAEL DE MENEZES HAWILLA",
+     "documento": "352.248.698-62",
+     "papel": "procurador"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im18",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo comprado da Grip Negócios Imobiliários (escritura de 27/03/2024; instrumento particular de 26/02/2024)",
+     "valor": "48.000.000,00",
+     "valor_referencia": "6.990.176,00",
+     "data_negocio": "2024-03-27",
+     "identificacao": {
+      "tabeliao": "9º Tabelião de Notas de São Paulo",
+      "livro": "11.609",
+      "folhas": "359"
+     }
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "26.771.372/0001-05",
+     "valor": "48.000.000,00",
+     "tipo": "escritura_compra",
+     "natureza": "individual",
+     "data": "2024-03-27",
+     "bem": "im18",
+     "descricao": "R$ 5 milhões recebidos antes da escritura sem especificar a forma; valor de referência R$ 6.990.176,00",
+     "pagina": 12,
+     "trecho": "o imóvel desta matrícula pelo valor de R$48.000.000,00"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "automatica",
+   "numero": "1.9",
+   "titular": "31.446.245/0001-70",
+   "segmento": "Notários e Registradores",
+   "comunicante": "9º Tabelião de Notas de São Paulo",
+   "local": "São Paulo-SP",
+   "periodo_inicio": "2024-04-10",
+   "periodo_fim": "2024-04-10",
+   "valor": "16.990.000,00",
+   "informacoes": "Informações Adicionais: Diferença entre o valor fiscal e valor declarado e forma de pagamento de 11 milhões antes da escritura sem\nespecificar o meio. Por escritura de 28 de março de 2024, de notas do 9º Tabelião desta Capital, livro nº 11.610, fls. 011, sob a forma de\ndocumento eletrônico, VITOR SILVA LOURENÇO e sua mulher THAIS FABRILE BERLINGERI LOURENÇO, já qualificados, transmitiram por\nvenda a SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S/A., CNPJ nº 31.446.245/0001-70, NIRE 35300521714, com sede nesta Capital, na\nAvenida Horácio Lafer nº 160, 13° andar, Itaim Bibi, o imóvel desta matrícula pelo valor de R$16.990.000,00. (Valor de referência:\nR$3.749.247,00).",
+   "pagina_inicio": 12,
+   "pagina_fim": 12,
+   "participacoes": [
+    {
+     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+     "documento": "31.446.245/0001-70",
+     "papel": "titular"
+    },
+    {
+     "nome": "THAIS FABRILE BERLINGERI LOURENCO",
+     "documento": "363.453.478-84",
+     "papel": "titular"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "027.818.816-86",
+     "papel": "procurador"
+    },
+    {
+     "nome": "VITOR SILVA LOURENCO",
+     "documento": "348.259.538-08",
+     "papel": "titular"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im19",
+     "tipo": "imovel",
+     "descricao": "Imóvel em São Paulo comprado de Vitor Silva Lourenço e Thais Fabrile Berlingeri Lourenço (escritura de 28/03/2024)",
+     "valor": "16.990.000,00",
+     "valor_referencia": "3.749.247,00",
+     "data_negocio": "2024-03-28",
+     "identificacao": {
+      "tabeliao": "9º Tabelião de Notas de São Paulo",
+      "livro": "11.610",
+      "folhas": "011"
+     }
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "31.446.245/0001-70",
+     "destino": "348.259.538-08",
+     "valor": "16.990.000,00",
+     "tipo": "escritura_compra",
+     "natureza": "individual",
+     "data": "2024-03-28",
+     "bem": "im19",
+     "descricao": "vendedores: Vitor Silva Lourenço e Thais Fabrile Berlingeri Lourenço; R$ 11 milhões pagos antes da escritura sem especificar o meio",
+     "pagina": 12,
+     "trecho": "o imóvel desta matrícula pelo valor de R$16.990.000,00"
+    }
+   ],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento 88/2019, art. 25-II; Provimento 149/2023, art. 161-II",
+     "codigo": "25-II",
+     "descricao": "diferença superior a 100% entre o valor da avaliação fiscal (ou patrimonial) e o valor declarado"
+    }
+   ]
+  },
+  {
+   "secao": "especie",
+   "numero": "1.1",
+   "titular": "31.825.443/0001-45",
+   "segmento": "Notários e Registradores",
+   "comunicante": "tabelião de notas de Guaxupé-MG",
+   "local": "Guaxupé-MG",
+   "periodo_inicio": "2024-08-23",
+   "periodo_fim": "2024-08-23",
+   "valor": "240.000,00",
+   "informacoes": "Informações Adicionais: R$240.000,00 (duzentos e quarenta mil reais), a totalidade que possui(em) no(s) imóvel(is) retro caracterizado(s)\ncom suas benfeitorias, servidões e acessões, importância(s) esta(s) que do(a-s) comprador(a-es) confessa(m) e declara(m) haver(em)\nrecebido mediante transferência e depósito bancário, por ordem das partes, na(s) conta(s) n° 01001347-1, do(s) BANCO SANTANDER,\nagência n° 4638;\nEste relatório de inteligência financeira é sigiloso. Constitui crime divulgar seu teor à margem das hipóteses legais.\n(LC 105, de 2001, art. 10 e Código Penal, arts. 153, § 1º-A, 154 e 325).\nCOAF >>> PF/SP >>> 140515.2.9294.11521 >>> 3730\nRIF 140515.2.9294.11521 em 25/02/2026 às 12:26:39\nPágina: 12/13",
+   "pagina_inicio": 12,
+   "pagina_fim": 13,
+   "participacoes": [
+    {
+     "nome": "NOAH EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.",
+     "documento": "46.671.515/0001-14",
+     "papel": "titular"
+    },
+    {
+     "nome": "PIPE PARTICIPACOES LTDA.",
+     "documento": "31.825.443/0001-45",
+     "papel": "titular"
+    },
+    {
+     "nome": "LUIS ROBERTO NEVES DE SOUZA",
+     "documento": "429.758.246-53",
+     "papel": "titular"
+    },
+    {
+     "nome": "ALICIA BUFFONI ROQUE DA SILVA",
+     "documento": "074.732.296-13",
+     "papel": "outros"
+    },
+    {
+     "nome": "GUSTAVO CISTOLO RIBEIRO",
+     "documento": "014.027.866-46",
+     "papel": "titular"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im_pipe_11",
+     "tipo": "imovel",
+     "descricao": "Imóvel em Guaxupé-MG (escritura entre Noah, Pipe, Luis Roberto Neves de Souza e Gustavo Cistolo Ribeiro; direção não informada)",
+     "valor": "240.000,00",
+     "data_negocio": "2024-08-23"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 171 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "171",
+     "descricao": "pagamento ou recebimento em espécie, ou por título ao portador, de valor igual ou superior a R$ 100.000,00 em operação comunicada pelo tabelião"
+    }
+   ]
+  },
+  {
+   "secao": "especie",
+   "numero": "1.2",
+   "titular": "31.825.443/0001-45",
+   "segmento": "Notários e Registradores",
+   "comunicante": "tabelião de notas de Guaxupé-MG",
+   "local": "Guaxupé-MG",
+   "periodo_inicio": "2024-10-08",
+   "periodo_fim": "2024-10-08",
+   "valor": "205.000,00",
+   "informacoes": "Informações Adicionais: R$205.000,00 (duzentos e cinco mil reais), que possui(em), no(s) imóvel(is) retro caracterizado(s) com suas\nbenfeitorias, servidões e acessões, importância(s) esta(s) que do(a-s) comprador(a-es) confessa(m) e declara(m) haver(em) recebido\nmediante transferência e depósito bancário, na(s) conta(s) n° 28.232-4, do(s) Banco do Brasil S.A., agência n° 0064-7, da cidade de Guaxupé,\nMinas Gerais;",
+   "pagina_inicio": 13,
+   "pagina_fim": 13,
+   "participacoes": [
+    {
+     "nome": "NOAH EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.",
+     "documento": "46.671.515/0001-14",
+     "papel": "titular"
+    },
+    {
+     "nome": "PIPE PARTICIPACOES LTDA.",
+     "documento": "31.825.443/0001-45",
+     "papel": "titular"
+    },
+    {
+     "nome": "HELIO ANACLETO DE SOUZA",
+     "documento": "685.400.516-72",
+     "papel": "titular"
+    },
+    {
+     "nome": "LUIS ROBERTO NEVES DE SOUZA",
+     "documento": "429.758.246-53",
+     "papel": "titular"
+    },
+    {
+     "nome": "PATRICIA DE JESUS BUENO LEITE DE SOUZA",
+     "documento": "254.834.848-27",
+     "papel": "outros"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im_pipe_12",
+     "tipo": "imovel",
+     "descricao": "Imóvel em Guaxupé-MG (escritura entre Noah, Pipe, Hélio Anacleto de Souza e Luis Roberto Neves de Souza; direção não informada)",
+     "valor": "205.000,00",
+     "data_negocio": "2024-10-08"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 171 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "171",
+     "descricao": "pagamento ou recebimento em espécie, ou por título ao portador, de valor igual ou superior a R$ 100.000,00 em operação comunicada pelo tabelião"
+    }
+   ]
+  },
+  {
+   "secao": "especie",
+   "numero": "1.3",
+   "titular": "31.825.443/0001-45",
+   "segmento": "Notários e Registradores",
+   "comunicante": "tabelião de notas de Guaxupé-MG",
+   "local": "Guaxupé-MG",
+   "periodo_inicio": "2024-10-08",
+   "periodo_fim": "2024-10-08",
+   "valor": "199.864,00",
+   "informacoes": "Informações Adicionais: R$199.863,89 (cento e noventa e nove mil, oitocentos e sessenta e três reais e oitenta e nove centavos), a totalidade\nque possui(em), no(s) imóvel(is) retro caracterizado(s) com suas benfeitorias, servidões e acessões, importância(s) esta(s) que do(a-s)\ncomprador(a-es) confessa(m) e declara(m) haver(em) recebido em exercícios anteriores mediante depósito e transferência bancária;",
+   "pagina_inicio": 13,
+   "pagina_fim": 13,
+   "participacoes": [
+    {
+     "nome": "PIPE PARTICIPACOES LTDA.",
+     "documento": "31.825.443/0001-45",
+     "papel": "titular"
+    },
+    {
+     "nome": "JATAHI EMPREENDIMENTOS IMOBILIARIOS E COMERCIO LTDA",
+     "documento": "66.430.232/0001-98",
+     "papel": "titular"
+    },
+    {
+     "nome": "NOAH EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.",
+     "documento": "46.671.515/0001-14",
+     "papel": "titular"
+    },
+    {
+     "nome": "LUIS ROBERTO NEVES DE SOUZA",
+     "documento": "429.758.246-53",
+     "papel": "titular"
+    },
+    {
+     "nome": "MARIA LÚCIA DE SOUZA RODRIGUES",
+     "documento": "772.364.326-87",
+     "papel": "titular"
+    },
+    {
+     "nome": "ANA LUIZA DA SILVA GALETI NEHE",
+     "documento": "469.067.707-72",
+     "papel": "titular"
+    }
+   ],
+   "bens": [
+    {
+     "id": "im_pipe_13",
+     "tipo": "imovel",
+     "descricao": "Imóvel em Guaxupé-MG (escritura entre Pipe, Jatahi, Noah e pessoas físicas; direção não informada)",
+     "valor": "199.864,00",
+     "data_negocio": "2024-10-08"
+    }
+   ],
+   "transacoes": [],
+   "ocorrencias": [
+    {
+     "norma": "CNJ - Provimento CN n. 149/2023, art. 171 (incluído pelo Provimento CN n. 161, de 11.3.2024)",
+     "codigo": "171",
+     "descricao": "pagamento ou recebimento em espécie, ou por título ao portador, de valor igual ou superior a R$ 100.000,00 em operação comunicada pelo tabelião"
+    }
+   ]
+  }
+ ]
+}
