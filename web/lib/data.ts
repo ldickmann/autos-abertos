@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import type { Assercao, Aviso, CronologiaDados, Decisoes, DocumentoCompleto, Entidade, FonteExterna, Materia, Grafo, Integridade, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, RodadaMudancas, Verbete } from "@/lib/tipos";
+import type { Assercao, Aviso, CronologiaDados, Decisoes, DocumentoCompleto, Entidade, FonteExterna, FluxosDados, Materia, Grafo, Integridade, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, RodadaMudancas, Verbete } from "@/lib/tipos";
 
 export * from "@/lib/tipos";
 
@@ -18,6 +18,7 @@ export const getDocumento = (id: number | string) => ler<DocumentoCompleto>(`doc
 export const getEntidades = () => ler<Entidade[]>("entidades.json");
 export const getAssercoes = () => ler<Assercao[]>("assercoes.json");
 export const getGrafo = () => ler<Grafo>("grafo.json");
+export const getFluxos = () => ler<FluxosDados>("fluxos.json");
 export const getLinhaTempo = () => ler<LinhaTempo>("linha_tempo.json");
 export const getReferencias = () => ler<Referencias>("referencias.json");
 export const getDecisoes = () => ler<Decisoes>("decisoes.json");

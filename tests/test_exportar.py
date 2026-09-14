@@ -41,6 +41,9 @@ def test_exporta_arquivos_com_proveniencia(tmp_path):
     assert vorcaro["mencoes"][0]["papel_portal"] == "REQDO.(A/S)" and vorcaro["origem"] == "partes"
     assert (saida / "grafo.json").exists() and (saida / "cruzamentos.json").exists()
     assert json.loads((saida / "assercoes.json").read_text("utf-8")) == []
+    fluxos = json.loads((saida / "fluxos.json").read_text("utf-8"))            # sem fluxos carregados: estrutura vazia, nunca ausente
+    assert fluxos["fontes"] == [] and fluxos["grafo"] == {"nos": [], "arestas": []}
+    assert (saida / "fluxos.csv").read_text("utf-8").startswith("fonte,comunicacao,secao")
 
 
 def test_processo_exportado_traz_assercoes_dentro_de_cada_documento(tmp_path):

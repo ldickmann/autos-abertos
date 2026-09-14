@@ -318,6 +318,9 @@ def ingerir_coleta(con: sqlite3.Connection, registro_path: Path) -> dict:
             ok = r["http_status"] == 200 and fmt in ("pdf", "rtf")
             registrar_download(con, r["endpoint"], r["id_portal"], r["sha256"] if ok else None, r["raw_path"],
                                r["http_status"], r["fetched_at"], sid, fmt, incidente=r["incidente"], url=r["url"])
+            if r.get("titulo"):   # peças do acervo (stf/acervo.py) trazem o título no próprio registro
+                con.execute("UPDATE documento SET titulo=COALESCE(titulo, ?) WHERE endpoint=? AND id_portal=?",
+                            (r["titulo"], r["endpoint"], r["id_portal"]))
 
     return resumo(con, incidente)
 

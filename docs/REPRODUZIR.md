@@ -63,3 +63,17 @@ cd web && npm ci && npm run build
 ```
 
 O resultado em `web/out/` é estático: pode ser servido de qualquer lugar (`python -m http.server -d web/out`), sem servidor de aplicação nem banco. Para hospedar uma réplica pública, basta publicar essa pasta.
+
+## 7. Fluxos financeiros (RIF 140515, Pet 15.645)
+
+As peças da Pet 15.645 não vêm do portal: vêm do pacote de autos que o STF publicou em 14/09/2026 (`docspublicos.stf.jus.br`, cópia em `recon/stf-docspublicos/Pet16704-pt3.7z`, sha256 em `SHA256SUMS`).
+
+```bash
+python -m stf acervo recon/stf-docspublicos/Pet16704-pt3.7z --url "https://docspublicos.stf.jus.br/processos-publicos/Pet16704-pt3/Pet16704-pt3.7z" --incidente 7526458 --pasta Pet15645
+python scripts/gerar_fluxos_rif_140515.py          # lê o texto das páginas no banco, gera e valida data/curadoria/fluxos/rif-140515.json
+python -m stf ingerir-fluxos data/curadoria/fluxos/rif-140515.json
+python -m stf fluxos                                # resumo: fontes, atores, maiores pares
+python -m stf exportar                              # fluxos.json e fluxos.csv em web/public/data
+```
+
+`reconstruir` reingere o registro `*-documentos-acervo-7526458.jsonl` como qualquer coleta; depois basta repetir `ingerir-fluxos`. A carga falha se algum `trecho` do dataset não estiver na página indicada ou se um trecho de transação contiver CPF.

@@ -2,15 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Autos Abertos: avisos e mudanças</title>
   <id>https://ldickmann.github.io/autos-abertos/feed.xml</id>
-  <updated>2026-09-14T15:12:05+00:00</updated>
+  <updated>2026-09-14T22:42:06+00:00</updated>
   <link href="https://ldickmann.github.io/autos-abertos/"/>
   <link rel="self" href="https://ldickmann.github.io/autos-abertos/feed.xml"/>
   <entry>
-    <id>https://ldickmann.github.io/autos-abertos/#base-2026-09-14T15:12:05+00:00</id>
-    <title>Base atualizada em 2026-09-14 15:12 UTC</title>
-    <updated>2026-09-14T15:12:05+00:00</updated>
+    <id>https://ldickmann.github.io/autos-abertos/#base-2026-09-14T22:42:06+00:00</id>
+    <title>Base atualizada em 2026-09-14 22:42 UTC</title>
+    <updated>2026-09-14T22:42:06+00:00</updated>
     <link href="https://ldickmann.github.io/autos-abertos/"/>
     <summary>Nova publicação dos dados do site.</summary>
+  </entry>
+  <entry>
+    <id>https://ldickmann.github.io/autos-abertos/mudancas/#2026-09-14T21:46+00:00</id>
+    <title>Portal do STF recoletado em 2026-09-14 21:46: 5 mudança(s)</title>
+    <updated>2026-09-14T21:46+00:00</updated>
+    <link href="https://ldickmann.github.io/autos-abertos/mudancas/"/>
+    <summary>Inq 5026: andamento apareceu: 2026-09-14 Petição — Manifestação - Petição: 115866 Data: 14/09/2026, às 18:16:21, andamento apareceu: 2026-09-14 Conclusos ao(à) Relator(a), andamento apareceu: 2026-09-14 Petição — Manifestação - Petição: 115833 Data: 14/09/2026, às 17:45:35, petição apareceu: 115866/2026 (2026-09-14), petição apareceu: 115833/2026 (2026-09-14)</summary>
   </entry>
   <entry>
     <id>https://ldickmann.github.io/autos-abertos/mudancas/#2026-09-14T13:33+00:00</id>
