@@ -19,6 +19,7 @@ from .funcoes import ROTULOS as ROTULOS_FUNCAO, funcao_de
 from .decisoes import ROTULO_RESULTADO
 from .cronologia import cronologia
 from .externas import exportar_fontes, fontes_curadas
+from .legislativo import exportar_legislativo
 from .saidas import csv_assercoes, csv_cronologia, csv_decisoes, feed_atom
 
 STATUS_PROCESSUAL = {
@@ -238,6 +239,7 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
     cron = cronologia(con)
     _escrever(saida / "cronologia.json", cron)
     _escrever(saida / "fontes_externas.json", exportar_fontes(con, fontes_curadas()))
+    _escrever(saida / "legislativo.json", exportar_legislativo(con))
     # saídas abertas: CSV para planilha e feed Atom para acompanhar
     avisos = json.loads((config.RAIZ / "stf" / "curadoria" / "avisos.json").read_text("utf-8"))["avisos"]
     mud_path = saida / "mudancas.json"

@@ -23,6 +23,7 @@
   ingerir-extracao             lê data/extracao/respostas/<id>.json, valida e persiste (mesma validação da API)
   preparar-decisoes            entradas para pedidos/resultados por decisão (data/extracao/decisoes/entradas)
   ingerir-decisoes             lê data/extracao/decisoes/respostas/<id>.json, valida e persiste em decisao_item
+  legislativo                  consulta as APIs de dados abertos do Senado e da Câmara (stf/curadoria/legislativo.json)
   capturar-externas            copia (com hash) as fontes oficiais externas de stf/curadoria/fontes_externas.json
   vigiar                       recoleta cada processo, compara com a cópia anterior e registra em CHANGELOG-PORTAL.md
   verificar                    recalcula o sha256 de cada blob local e compara com o registrado
@@ -97,6 +98,8 @@ def cmd_reconstruir(args):
     print("profundidade:", atualizar_profundidade(con), "processos")
     from .externas import reingerir_externas
     print("fontes externas:", reingerir_externas(con), "capturas reingeridas do registro")
+    from .legislativo import reingerir_legislativo
+    print("legislativo:", reingerir_legislativo(con), "matérias reingeridas do registro")
 
 
 def cmd_diff(args):
@@ -281,6 +284,13 @@ def cmd_ingerir_decisoes(args):
     print(json.dumps(ingerir_decisoes(con, cliente, documentos=docs, log=print), ensure_ascii=False))
 
 
+def cmd_legislativo(args):
+    from .legislativo import CONSULTAS, REGISTRO, consultar
+    con = _con()
+    criar_schema(con)
+    print(json.dumps(consultar(con, CONSULTAS, registro=REGISTRO), ensure_ascii=False))
+
+
 def cmd_capturar_externas(args):
     from .externas import REGISTRO, capturar_fontes, fontes_curadas
     con = _con()
@@ -364,6 +374,7 @@ def main(argv=None):
     p.add_argument("--dry-run", action="store_true"); p.add_argument("--modelo"); p.add_argument("--effort", default="high")
     p.set_defaults(f=cmd_extrair_assercoes)
     p = sub.add_parser("assercoes"); p.add_argument("--documento", type=int); p.set_defaults(f=cmd_assercoes)
+    p = sub.add_parser("legislativo"); p.set_defaults(f=cmd_legislativo)
     p = sub.add_parser("capturar-externas"); p.set_defaults(f=cmd_capturar_externas)
     p = sub.add_parser("vigiar"); p.add_argument("--incidentes"); p.set_defaults(f=cmd_vigiar)
     p = sub.add_parser("verificar"); p.set_defaults(f=cmd_verificar)

@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import type { Assercao, Aviso, CronologiaDados, Decisoes, DocumentoCompleto, Entidade, FonteExterna, Grafo, Integridade, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, RodadaMudancas, Verbete } from "@/lib/tipos";
+import type { Assercao, Aviso, CronologiaDados, Decisoes, DocumentoCompleto, Entidade, FonteExterna, Materia, Grafo, Integridade, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, RodadaMudancas, Verbete } from "@/lib/tipos";
 
 export * from "@/lib/tipos";
 
@@ -24,6 +24,7 @@ export const getDecisoes = () => ler<Decisoes>("decisoes.json");
 export const getGlossario = () => ler<Verbete[]>("glossario.json");
 export const getCronologia = () => ler<CronologiaDados>("cronologia.json");
 export const getFontesExternas = () => ler<FonteExterna[]>("fontes_externas.json");
+export const getLegislativo = () => ler<Materia[]>("legislativo.json");
 export const getIntegridade = () => ler<Integridade>("integridade.json");
 export const getAvisos = (): Aviso[] => (fs.existsSync(path.join(DATA_DIR, "avisos.json")) ? ler<Aviso[]>("avisos.json") : []);
 export const getMudancas = (): RodadaMudancas[] => (fs.existsSync(path.join(DATA_DIR, "mudancas.json")) ? ler<RodadaMudancas[]>("mudancas.json") : []);

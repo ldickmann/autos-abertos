@@ -16,6 +16,7 @@ const NAV = [
   { href: "/verificar", rotulo: "Verificar" },
   { href: "/mudancas", rotulo: "O que mudou" },
   { href: "/fontes-externas", rotulo: "Fontes oficiais" },
+  { href: "/congresso", rotulo: "Congresso" },
   { href: "/sobre", rotulo: "Método" },
 ];
 
