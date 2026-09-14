@@ -10,3 +10,6 @@ recon/certs/** -text
 data/raw/** -text
 data/raw/blobs/*.pdf binary
 data/raw/blobs/*.rtf binary
+# carimbos de tempo cobrem os bytes exatos destes arquivos
+docs/carimbos/** -text
+INTEGRIDADE.sha256 -text
