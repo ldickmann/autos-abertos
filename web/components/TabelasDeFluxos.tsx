@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { formatarData, formatarReais, type FluxoAtor, type FluxoComunicacao, type FluxosDados, type FluxoTransacao } from "@/lib/tipos";
 
 /*
@@ -126,17 +126,23 @@ function ListaFluxos({ tx, atorPorId, comPorId, ponto }: { tx: FluxoTransacao[];
 
 // ---------------------------------------------------------------- pessoas e empresas
 
-type LinhaAtor = FluxoAtor & { recebeu: number; pagou: number; n: number; fluxos: FluxoTransacao[]; deQuem: string[]; paraQuem: string[]; situacao: SituacaoAutos | null; comunicacoes: number };
+type LinhaAtor = FluxoAtor & { recebeu: number; pagou: number; n: number; fluxos: FluxoTransacao[]; deQuem: { id: number; nome: string; valor: number }[]; paraQuem: { id: number; nome: string; valor: number }[]; situacao: SituacaoAutos | null; comunicacoes: number };
 
-export function TabelaAtores({ dados, situacoes, busca }: { dados: FluxosDados; situacoes: Record<number, SituacaoAutos>; busca: string }) {
-  const atorPorId = useMemo(() => new Map(dados.atores.map((a) => [a.id, a])), [dados]);
-  const comPorId = useMemo(() => new Map(dados.comunicacoes.map((c) => [c.id, c])), [dados]);
-  const linhas = useMemo<LinhaAtor[]>(() => dados.atores.map((a) => {
+export function filtrarAtores(linhas: LinhaAtor[], q: string): LinhaAtor[] {
+  const t = q.trim().toLowerCase();
+  if (!t) return linhas;
+  return linhas.filter((l) => l.nome.toLowerCase().includes(t) || (l.atividade ?? "").toLowerCase().includes(t) || (l.documento_mascarado ?? "").includes(t)
+    || (l.situacao?.status ?? "").toLowerCase().includes(t) || l.deQuem.some((x) => x.nome.toLowerCase().includes(t)) || l.paraQuem.some((x) => x.nome.toLowerCase().includes(t)));
+}
+
+export function montarLinhasAtores(dados: FluxosDados, situacoes: Record<number, SituacaoAutos>): LinhaAtor[] {
+  const atorPorId = new Map(dados.atores.map((a) => [a.id, a]));
+  return dados.atores.map((a) => {
     const fluxos = dados.transacoes.filter((t) => t.natureza !== "resumo_tipo" && (t.origem_ator_id === a.id || t.destino_ator_id === a.id)).sort((x, y) => y.valor_centavos - x.valor_centavos);
     const soma = (m: Map<number, number>, id: number | null, v: number) => { if (id != null && id !== a.id) m.set(id, (m.get(id) ?? 0) + v); };
     const de = new Map<number, number>(), para = new Map<number, number>();
     for (const t of fluxos) { if (t.destino_ator_id === a.id) soma(de, t.origem_ator_id, t.valor_centavos); if (t.origem_ator_id === a.id) soma(para, t.destino_ator_id, t.valor_centavos); }
-    const top = (m: Map<number, number>) => [...m.entries()].sort((x, y) => y[1] - x[1]).slice(0, 3).map(([id, v]) => `${atorPorId.get(id)?.nome ?? id} (${formatarReais(v, true)})`);
+    const top = (m: Map<number, number>) => [...m.entries()].sort((x, y) => y[1] - x[1]).slice(0, 3).map(([id, v]) => ({ id, nome: atorPorId.get(id)?.nome ?? String(id), valor: v }));
     return {
       ...a, fluxos,
       recebeu: fluxos.filter((t) => t.destino_ator_id === a.id).reduce((s, t) => s + t.valor_centavos, 0),
@@ -144,16 +150,29 @@ export function TabelaAtores({ dados, situacoes, busca }: { dados: FluxosDados; 
       n: fluxos.length, deQuem: top(de), paraQuem: top(para), situacao: situacoes[a.id] ?? null,
       comunicacoes: dados.comunicacoes.filter((c) => c.participacoes.some((p) => p.ator_id === a.id)).length,
     };
-  }), [dados, situacoes, atorPorId]);
+  });
+}
 
-  const [soRecebeu, setSoRecebeu] = useState(false);
-  const [soPartes, setSoPartes] = useState(false);
+export function TabelaAtores({ dados, situacoes, busca, onBuscar }: { dados: FluxosDados; situacoes: Record<number, SituacaoAutos>; busca: string; onBuscar: (q: string) => void }) {
+  const atorPorId = useMemo(() => new Map(dados.atores.map((a) => [a.id, a])), [dados]);
+  const comPorId = useMemo(() => new Map(dados.comunicacoes.map((c) => [c.id, c])), [dados]);
+  const linhas = useMemo(() => montarLinhasAtores(dados, situacoes), [dados, situacoes]);
+  const [movimento, setMovimento] = useState("todos");
+  const [situacao, setSituacao] = useState("todas");
   const [tipo, setTipo] = useState("todos");
-  const filtradas = useMemo(() => {
-    const q = busca.trim().toLowerCase();
-    return linhas.filter((l) => (!q || l.nome.toLowerCase().includes(q) || (l.atividade ?? "").toLowerCase().includes(q) || (l.documento_mascarado ?? "").includes(q))
-      && (!soRecebeu || l.recebeu > 0) && (!soPartes || !!l.situacao) && (tipo === "todos" || l.tipo === tipo));
-  }, [linhas, busca, soRecebeu, soPartes, tipo]);
+  const statusDisponiveis = useMemo(() => [...new Set(linhas.map((l) => l.situacao?.status).filter((x): x is string => !!x))].sort(), [linhas]);
+  const filtradas = useMemo(() => filtrarAtores(linhas, busca).filter((l) =>
+    (movimento === "todos" || (movimento === "recebeu" ? l.recebeu > 0 : movimento === "pagou" ? l.pagou > 0 : l.n === 0))
+    && (situacao === "todas" || (situacao === "partes" ? !!l.situacao : situacao === "nao_partes" ? !l.situacao : l.situacao?.status === situacao))
+    && (tipo === "todos" || l.tipo === tipo)), [linhas, busca, movimento, situacao, tipo]);
+  const totRecebeu = filtradas.reduce((s, l) => s + l.recebeu, 0);
+  const totPagou = filtradas.reduce((s, l) => s + l.pagou, 0);
+  const limpar = () => { setMovimento("todos"); setSituacao("todas"); setTipo("todos"); };
+  const filtrosAtivos = movimento !== "todos" || situacao !== "todas" || tipo !== "todos";
+
+  const contrapartes = (xs: LinhaAtor["deQuem"]) => xs.length ? xs.map((x, i) => (
+    <span key={x.id}>{i > 0 ? "; " : ""}<button type="button" className="underline" title={`Buscar ${x.nome}`} onClick={() => onBuscar(x.nome)}>{x.nome}</button> <span className="text-neutral-600">({formatarReais(x.valor, true)})</span></span>
+  )) : "—";
 
   const colunas: Coluna<LinhaAtor>[] = [
     { chave: "nome", rotulo: "Nome", valor: (r) => r.nome, celula: (r) => <><span className="font-medium">{r.nome}</span>{r.documento_mascarado && <span className="block text-xs text-neutral-600">{r.documento_mascarado}</span>}</> },
@@ -164,22 +183,30 @@ export function TabelaAtores({ dados, situacoes, busca }: { dados: FluxosDados; 
     { chave: "recebeu", rotulo: "Recebeu", valor: (r) => r.recebeu, numerica: true, celula: (r) => r.recebeu ? formatarReais(r.recebeu) : "—" },
     { chave: "pagou", rotulo: "Pagou", valor: (r) => r.pagou, numerica: true, celula: (r) => r.pagou ? formatarReais(r.pagou) : "—" },
     { chave: "n", rotulo: "Fluxos", valor: (r) => r.n, numerica: true },
-    { chave: "de", rotulo: "Recebeu de (principais)", valor: (r) => r.deQuem.join("; "), classe: "max-w-[240px] text-xs" },
-    { chave: "para", rotulo: "Pagou a (principais)", valor: (r) => r.paraQuem.join("; "), classe: "max-w-[240px] text-xs" },
+    { chave: "de", rotulo: "Recebeu de (principais)", valor: (r) => r.deQuem.map((x) => x.nome).join("; "), celula: (r) => contrapartes(r.deQuem), classe: "max-w-[260px] text-xs" },
+    { chave: "para", rotulo: "Pagou a (principais)", valor: (r) => r.paraQuem.map((x) => x.nome).join("; "), celula: (r) => contrapartes(r.paraQuem), classe: "max-w-[260px] text-xs" },
   ];
 
   return (
     <div>
       <form className="mt-2 flex flex-wrap items-end gap-3 text-sm" onSubmit={(ev) => ev.preventDefault()}>
+        <label className="block"><span className="block text-xs font-medium">Movimento</span>
+          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={movimento} onChange={(ev) => setMovimento(ev.target.value)}>
+            <option value="todos">todos</option><option value="recebeu">recebeu dinheiro</option><option value="pagou">pagou dinheiro</option><option value="sem">só relacionado (sem fluxo identificado)</option>
+          </select></label>
+        <label className="block"><span className="block text-xs font-medium">Situação nos autos</span>
+          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={situacao} onChange={(ev) => setSituacao(ev.target.value)}>
+            <option value="todas">todas</option><option value="partes">é parte em algum processo</option><option value="nao_partes">não é parte</option>
+            {statusDisponiveis.map((st) => <option key={st} value={st}>{st}</option>)}
+          </select></label>
         <label className="block"><span className="block text-xs font-medium">Tipo</span>
           <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={tipo} onChange={(ev) => setTipo(ev.target.value)}>
             <option value="todos">todos</option><option value="pessoa_fisica">pessoas físicas</option><option value="pessoa_juridica">pessoas jurídicas</option>
           </select></label>
-        <label className="flex items-center gap-2"><input type="checkbox" checked={soRecebeu} onChange={(ev) => setSoRecebeu(ev.target.checked)} /> só quem recebeu dinheiro</label>
-        <label className="flex items-center gap-2"><input type="checkbox" checked={soPartes} onChange={(ev) => setSoPartes(ev.target.checked)} /> só quem é parte nos autos</label>
-        <span role="status" className="text-xs text-neutral-600">{filtradas.length} de {linhas.length}</span>
+        {filtrosAtivos && <button type="button" className="toque rounded border border-neutral-400 px-2 py-1 text-xs hover:bg-neutral-100" onClick={limpar}>limpar filtros</button>}
+        <span role="status" className="text-xs text-neutral-600">{filtradas.length} de {linhas.length} · recebeu {formatarReais(totRecebeu, true)} · pagou {formatarReais(totPagou, true)}</span>
       </form>
-      <Tabela linhas={filtradas} colunas={colunas} chave={(r) => r.id} inicial="recebeu" rotuloVazio="Nenhuma pessoa ou empresa com esses filtros."
+      <Tabela linhas={filtradas} colunas={colunas} chave={(r) => r.id} inicial="recebeu" rotuloVazio="Nenhuma pessoa ou empresa com essa busca e esses filtros."
         expandir={(r) => (
           <div className="space-y-2">
             {r.entidade_id && <p className="text-xs"><Link className="underline" href={`/entidade/${r.entidade_id}`}>Página desta pessoa/empresa nos autos</Link> · aparece em {r.comunicacoes} comunicação(ões) do relatório</p>}
@@ -296,40 +323,74 @@ export function TabelaBens({ dados, busca }: { dados: FluxosDados; busca: string
   return <Tabela linhas={linhas} colunas={colunas} chave={(b) => b.id} inicial="valor" rotuloVazio="Nenhum bem com essa busca." />;
 }
 
-// ---------------------------------------------------------------- painel: uma busca, quatro abas
+// ---------------------------------------------------------------- painel: uma busca, quatro abas, estado na URL
 
 type Aba = "pessoas" | "fluxos" | "comunicacoes" | "bens";
+const ABAS: Aba[] = ["pessoas", "fluxos", "comunicacoes", "bens"];
+
+function lerUrl(): { aba: Aba; q: string } {
+  if (typeof window === "undefined") return { aba: "pessoas", q: "" };
+  const p = new URLSearchParams(window.location.search);
+  const aba = p.get("aba") as Aba | null;
+  return { aba: aba && ABAS.includes(aba) ? aba : "pessoas", q: p.get("q") ?? "" };
+}
 
 export function PainelFluxos({ dados, situacoes }: { dados: FluxosDados; situacoes: Record<number, SituacaoAutos> }) {
   const [aba, setAba] = useState<Aba>("pessoas");
   const [busca, setBusca] = useState("");
-  const nBens = dados.comunicacoes.reduce((s, c) => s + c.bens.length, 0);
-  const abas: { id: Aba; rotulo: string; n: number; dica: string }[] = [
-    { id: "pessoas", rotulo: "Pessoas e empresas", n: dados.atores.length, dica: "quem recebeu, quem pagou e a situação de cada um nos autos" },
-    { id: "fluxos", rotulo: "Fluxos", n: dados.transacoes.filter((t) => t.natureza !== "resumo_tipo").length, dica: "uma linha por transação, com a página do relatório e o trecho literal" },
-    { id: "comunicacoes", rotulo: "Comunicações", n: dados.comunicacoes.length, dica: "o que cada banco, cooperativa, cartório ou concessionária relatou ao COAF" },
-    { id: "bens", rotulo: "Bens", n: nBens, dica: "imóveis e veículos, com valor declarado e valor de referência" },
+  const [pronto, setPronto] = useState(false);
+  // estado inicial vem da URL (?aba=fluxos&q=zettel) só depois de montar, para o HTML estático bater com o primeiro render
+  useEffect(() => { const u = lerUrl(); setAba(u.aba); setBusca(u.q); setPronto(true); }, []);
+  useEffect(() => {
+    if (!pronto) return;
+    const p = new URLSearchParams();
+    if (aba !== "pessoas") p.set("aba", aba);
+    if (busca.trim()) p.set("q", busca.trim());
+    const qs = p.toString();
+    window.history.replaceState(null, "", `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`);
+  }, [aba, busca, pronto]);
+
+  const atorPorId = useMemo(() => new Map(dados.atores.map((a) => [a.id, a])), [dados]);
+  const linhasAtores = useMemo(() => montarLinhasAtores(dados, situacoes), [dados, situacoes]);
+  const q = busca.trim().toLowerCase();
+  const nome = (id: number | null) => (id == null ? "" : atorPorId.get(id)?.nome ?? "");
+  // contagens por aba para a busca atual: a pessoa vê onde o nome aparece antes de trocar de aba
+  const contagens = useMemo(() => ({
+    pessoas: filtrarAtores(linhasAtores, busca).length,
+    fluxos: dados.transacoes.filter((t) => t.natureza !== "resumo_tipo" && (!q || nome(t.origem_ator_id).toLowerCase().includes(q) || nome(t.destino_ator_id).toLowerCase().includes(q) || (t.descricao ?? "").toLowerCase().includes(q))).length,
+    comunicacoes: dados.comunicacoes.filter((c) => !q || [nome(c.titular_ator_id), c.comunicante, c.local, c.informacoes, c.numero, ...c.participacoes.map((p) => nome(p.ator_id))].some((x) => (x ?? "").toLowerCase().includes(q))).length,
+    bens: dados.comunicacoes.reduce((s, c) => s + c.bens.filter((b) => !q || b.descricao.toLowerCase().includes(q) || nome(c.titular_ator_id).toLowerCase().includes(q)).length, 0),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }), [dados, linhasAtores, busca, q]);
+  const abas: { id: Aba; rotulo: string; dica: string }[] = [
+    { id: "pessoas", rotulo: "Pessoas e empresas", dica: "quem recebeu, quem pagou e a situação de cada um nos autos" },
+    { id: "fluxos", rotulo: "Fluxos", dica: "uma linha por transação, com a página do relatório e o trecho literal" },
+    { id: "comunicacoes", rotulo: "Comunicações", dica: "o que cada banco, cooperativa, cartório ou concessionária relatou ao COAF" },
+    { id: "bens", rotulo: "Bens", dica: "imóveis e veículos, com valor declarado e valor de referência" },
   ];
-  const placeholder: Record<Aba, string> = { pessoas: "nome, atividade, CNPJ…", fluxos: "quem paga, quem recebe, descrição…", comunicacoes: "titular, comunicante, relacionado…", bens: "descrição, titular…" };
+  const placeholder: Record<Aba, string> = { pessoas: "nome, atividade, CNPJ, situação…", fluxos: "quem paga, quem recebe, descrição…", comunicacoes: "titular, comunicante, relacionado…", bens: "descrição, titular…" };
   return (
     <section aria-labelledby="painel" className="folha border border-neutral-300 bg-white p-4">
-      <h2 id="painel" className="sr-only">Dados</h2>
-      <label className="block">
-        <span className="block text-sm font-semibold">Buscar</span>
-        <input type="search" className="mt-1 w-full rounded border border-neutral-400 bg-neutral-50 px-3 py-2 text-base" value={busca} onChange={(ev) => setBusca(ev.target.value)} placeholder={placeholder[aba]} aria-label="Buscar na aba ativa" />
-      </label>
+      <h2 id="painel" className="sr-only">Painel de pagamentos</h2>
+      <div className="flex flex-wrap items-end gap-2">
+        <label className="block min-w-0 grow">
+          <span className="block text-sm font-semibold">Buscar em tudo</span>
+          <input type="search" className="mt-1 w-full rounded border border-neutral-400 bg-neutral-50 px-3 py-2 text-base" value={busca} onChange={(ev) => setBusca(ev.target.value)} placeholder={placeholder[aba]} aria-label="Buscar (vale para todas as abas)" />
+        </label>
+        {busca && <button type="button" className="toque rounded border border-neutral-400 px-3 py-2 text-sm hover:bg-neutral-100" onClick={() => setBusca("")}>limpar busca</button>}
+      </div>
       <div role="tablist" aria-label="Tabelas" className="mt-3 flex flex-wrap gap-1 border-b border-neutral-300">
         {abas.map((a) => (
           <button key={a.id} role="tab" type="button" aria-selected={aba === a.id} id={`aba-${a.id}`} aria-controls={`painel-${a.id}`} title={a.dica}
             className={`toque -mb-px rounded-t border border-b-0 px-3 py-1.5 text-sm ${aba === a.id ? "border-neutral-400 bg-white font-semibold" : "border-transparent text-neutral-700 hover:bg-neutral-100"}`}
             onClick={() => setAba(a.id)}>
-            {a.rotulo} <span className="text-xs text-neutral-600">({a.n})</span>
+            {a.rotulo} <span className={`text-xs ${q && contagens[a.id] === 0 ? "text-neutral-500" : "text-neutral-600"}`}>({contagens[a.id]})</span>
           </button>
         ))}
       </div>
-      <p className="mt-2 text-xs text-neutral-600">{abas.find((a) => a.id === aba)?.dica}. Clique no título de uma coluna para ordenar; ▸ abre os detalhes da linha.</p>
+      <p className="mt-2 text-xs text-neutral-600">{abas.find((a) => a.id === aba)?.dica}. Clique no título de uma coluna para ordenar; ▸ abre os detalhes da linha. O endereço da página guarda a aba e a busca, para compartilhar.</p>
       <div role="tabpanel" id={`painel-${aba}`} aria-labelledby={`aba-${aba}`}>
-        {aba === "pessoas" && <TabelaAtores dados={dados} situacoes={situacoes} busca={busca} />}
+        {aba === "pessoas" && <TabelaAtores dados={dados} situacoes={situacoes} busca={busca} onBuscar={setBusca} />}
         {aba === "fluxos" && <TabelaFluxos dados={dados} busca={busca} />}
         {aba === "comunicacoes" && <TabelaComunicacoes dados={dados} busca={busca} />}
         {aba === "bens" && <TabelaBens dados={dados} busca={busca} />}

@@ -43,19 +43,13 @@ export default function PaginaRede() {
           com busca, filtros e ordenação. É a peça 2 da <Link className="underline" href={`/processo/${fonte.incidente}`}>{fonte.processo}</Link>, cujo sigilo foi levantado em 14/09/2026
           (<Link className="underline" href={`/documento/${fonte.documento.id}`}>íntegra, {fonte.documento.paginas} páginas</Link>). Cada linha aponta a página e o trecho de onde saiu.
         </p>
-        <details className="aviso-cartao mt-3 rounded border p-3 text-sm">
-          <summary className="cursor-pointer font-semibold">O que estes dados são e não são</summary>
-          <ul className="mt-2 list-disc space-y-1 pl-5">
-            <li>Não são prova: um RIF reúne o que bancos, cooperativas, cartórios e concessionárias comunicaram ao COAF por considerarem atípico ou por cruzar um limite objetivo. O próprio relatório avisa que RIFs &quot;por si sós, não constituem prova&quot; (RE 1.055.941; Rcl 61.944).</li>
-            <li>Não registram pagamentos do Banco Master nem de Daniel Vorcaro. Os fluxos giram em torno de entidades ligadas a Fabiano Campos Zettel; pessoas da família Vorcaro aparecem como remetentes para a igreja. O modelo de dados é genérico e receberá as outras peças do acervo.</li>
-            <li>Aparecer aqui não significa ser investigado: vendedores de imóveis, prestadores de serviço e doadores constam porque o comunicante os citou. A coluna &quot;situação nos autos&quot; mostra o status literal do portal do STF só para quem é parte em algum processo do caso.</li>
-            <li>CPFs aparecem mascarados (***.###.###-**); RG, endereços e placas ficaram fora. Os nomes são os que constam no relatório.</li>
-          </ul>
-        </details>
       </header>
+
+      <PainelFluxos dados={dados} situacoes={situacoes} />
 
       <section aria-labelledby="resumo">
         <h2 id="resumo" className="text-lg">Em números</h2>
+        <p className="text-xs text-neutral-600">Somas de operações datadas e agregados informados pelo comunicante (sem os resumos por tipo). Uma escritura conta pelo valor declarado.</p>
         <dl className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <div className="folha border border-neutral-300 bg-white p-3"><dt className="text-xs text-neutral-700">Valor total das {dados.resumo.comunicacoes} comunicações</dt><dd className="mt-1 text-xl tabular-nums">{formatarReais(totalComunicado)}</dd><dd className="text-xs text-neutral-600">soma do que cada comunicante declarou (há sobreposição entre elas)</dd></div>
           <div className="folha border border-neutral-300 bg-white p-3"><dt className="text-xs text-neutral-700">Operações datadas</dt><dd className="mt-1 text-xl tabular-nums">{formatarReais(totalDatado)}</dd><dd className="text-xs text-neutral-600">{dados.resumo.individuais} transferências, escrituras e compras com data</dd></div>
@@ -72,10 +66,20 @@ export default function PaginaRede() {
             <ol className="mt-1 list-decimal space-y-0.5 pl-5">{maisPagaram.map((x) => <li key={x.nome}>{x.nome} <span className="tabular-nums text-neutral-700">{formatarReais(x.valor)}</span></li>)}</ol>
           </div>
         </div>
-        <p className="mt-2 text-xs text-neutral-600">Somas de operações datadas e agregados informados pelo comunicante (sem os resumos por tipo, que repetiriam os agregados). Uma escritura conta pelo valor declarado.</p>
       </section>
 
-      <PainelFluxos dados={dados} situacoes={situacoes} />
+      <section aria-labelledby="ressalvas" className="max-w-3xl text-sm">
+        <h2 id="ressalvas" className="text-lg">Leia antes de tirar conclusões</h2>
+        <details className="aviso-cartao mt-2 rounded border p-3 text-sm" open>
+          <summary className="cursor-pointer font-semibold">O que estes dados são e não são</summary>
+          <ul className="mt-2 list-disc space-y-1 pl-5">
+            <li>Não são prova: um RIF reúne o que bancos, cooperativas, cartórios e concessionárias comunicaram ao COAF por considerarem atípico ou por cruzar um limite objetivo. O próprio relatório avisa que RIFs &quot;por si sós, não constituem prova&quot; (RE 1.055.941; Rcl 61.944).</li>
+            <li>Não registram pagamentos do Banco Master nem de Daniel Vorcaro. Os fluxos giram em torno de entidades ligadas a Fabiano Campos Zettel; pessoas da família Vorcaro aparecem como remetentes para a igreja. O modelo de dados é genérico e receberá as outras peças do acervo.</li>
+            <li>Aparecer aqui não significa ser investigado: vendedores de imóveis, prestadores de serviço e doadores constam porque o comunicante os citou. A coluna &quot;situação nos autos&quot; mostra o status literal do portal do STF só para quem é parte em algum processo do caso.</li>
+            <li>CPFs aparecem mascarados (***.###.###-**); RG, endereços e placas ficaram fora. Os nomes são os que constam no relatório.</li>
+          </ul>
+        </details>
+      </section>
 
       <section aria-labelledby="dados" className="max-w-3xl text-sm">
         <h2 id="dados" className="text-lg">Baixar os dados</h2>
