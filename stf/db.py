@@ -323,6 +323,27 @@ CREATE TABLE IF NOT EXISTS assercao (
 );
 CREATE INDEX IF NOT EXISTS ix_assercao_doc ON assercao(documento_id, pagina);
 
+-- pedidos e resultados por decisão (stf/decisoes.py): extensão da Fase 4, mesmo regime de validação
+CREATE TABLE IF NOT EXISTS decisao_item (
+    id             INTEGER PRIMARY KEY,
+    documento_id   INTEGER NOT NULL REFERENCES documento(id),
+    extracao_id    INTEGER NOT NULL REFERENCES extracao(id),
+    pagina         INTEGER NOT NULL,
+    pedido         TEXT NOT NULL,
+    quem_pediu     TEXT,
+    resultado      TEXT NOT NULL CHECK (resultado IN ('deferido','indeferido','parcialmente_deferido','homologado','referendado',
+                                                      'negado_seguimento','nao_conhecido','prejudicado','determinado_de_oficio','outro')),
+    decisao        TEXT NOT NULL,
+    quem_decidiu   TEXT NOT NULL,
+    data           TEXT,
+    trecho_fonte   TEXT NOT NULL,   -- citação literal presente na página (verificada)
+    condicoes_json TEXT NOT NULL,
+    modelo         TEXT NOT NULL,
+    prompt_version TEXT NOT NULL,
+    criado_em      TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_decisao_item_doc ON decisao_item(documento_id, pagina);
+
 CREATE TABLE IF NOT EXISTS assercao_entidade (
     assercao_id  INTEGER NOT NULL REFERENCES assercao(id),
     entidade_id  INTEGER NOT NULL REFERENCES entidade(id),
@@ -387,7 +408,7 @@ END;
 """
 
 TABELAS_DERIVADAS = [
-    "documento_ref_processo", "documento_ref_dispositivo", "andamento_peticao", "documento_ref_andamento",
+    "decisao_item", "documento_ref_processo", "documento_ref_dispositivo", "andamento_peticao", "documento_ref_andamento",
     "assercao_entidade", "assercao", "extracao",
     "entidade_mencao", "entidade", "processo", "documento_fts", "documento_chunk", "documento_pagina",
     "voto", "lista_julgamento", "objeto_incidente",

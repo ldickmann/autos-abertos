@@ -33,6 +33,16 @@ export type ReferenciasDocumento = {
   andamentos_citados: { andamento_id: number; tipo_citado: string; data_citada: string; incidente: number }[];
 };
 
+export type Decisao = {
+  id: number; documento_id: number; incidente: number; titulo_documento: string | null; url_documento: string; codigo_autenticacao: string | null;
+  andamento_id: number | null; data: string | null; data_no_documento: string | null; pagina: number; pedido: string; quem_pediu: string | null;
+  resultado: string; decisao: string; quem_decidiu: string; trecho_fonte: string; condicoes: string[]; modelo: string; prompt_version: string;
+};
+
+export type Decisoes = { rotulos_resultado: Record<string, string>; itens: Decisao[] };
+
+export type Verbete = { termo: string; formas: string[]; explicacao: string; mais?: string };
+
 export type Referencias = {
   dispositivos: { dispositivo: string; artigo: string; diploma: string; ocorrencias: number;
     documentos: { documento_id: number; incidente: number; titulo: string | null; pagina: number; ocorrencias: number }[] }[];
@@ -66,7 +76,7 @@ export type Processo = {
   deslocamentos: { destino: string; enviado_por: string; data_envio: string; guia: string; recebido_em: string | null; snapshot: Snapshot }[];
   relacoes: { tipo: string; classe: string; numero: number; fonte_andamento_id: number; snapshot: Snapshot }[];
   sessoes: Sessao[]; explicacoes_portal: Record<string, string | null>;
-  contagem_assercoes?: Record<TipoEpistemico, number>;
+  contagem_assercoes?: Record<TipoEpistemico, number>; decisoes?: Decisao[];
 };
 
 export type ProcessoResumo = {
