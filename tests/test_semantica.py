@@ -131,3 +131,26 @@ def test_resposta_malformada_registra_rejeicao_e_nao_persiste_nada(banco):
     r = extrair_assercoes(con, ClienteFalso("{{{"), documentos=[doc], log=lambda s: None)
     assert r["rejeitadas"] == 1 and con.execute("select count(*) from assercao").fetchone()[0] == 0
     assert con.execute("select status from extracao").fetchone()[0] == "rejeitada:json_invalido"
+
+
+def test_preparar_entradas_e_cliente_arquivo(banco, tmp_path):
+    """Execução pelo Claude Code: entradas em arquivo, respostas em arquivo, mesma validação."""
+    from stf.semantica import ClienteArquivo, preparar_entradas
+    con, doc = banco
+    r = preparar_entradas(con, tmp_path / "entradas", documentos=[doc])
+    assert r["preparados"] == 1
+    entrada = (tmp_path / "entradas" / f"{doc}.entrada.md").read_text("utf-8")
+    assert "[página 2]" in entrada and "DECRETO A PRISÃO PREVENTIVA" in entrada and "fato_processual" in entrada
+    manifesto = json.loads((tmp_path / "entradas" / "MANIFEST.json").read_text("utf-8"))
+    assert manifesto["documentos"][0]["id"] == doc and manifesto["prompt_version"] == PROMPT_VERSION
+    (tmp_path / "respostas").mkdir()
+    (tmp_path / "respostas" / f"{doc}.json").write_text(resposta_boa(), "utf-8")
+    cliente = ClienteArquivo(tmp_path / "respostas", modelo="claude-code/teste")
+    res = extrair_assercoes(con, cliente, documentos=[doc], log=lambda s: None)
+    assert res["assercoes"] == 3 and res["descartadas"] == 2
+    assert con.execute("select modelo from assercao limit 1").fetchone()[0] == "claude-code/teste"
+    # sem resposta em arquivo: erro registrado, nada persistido, documento continua pendente
+    (tmp_path / "respostas" / f"{doc}.json").unlink()
+    con.execute("delete from assercao_entidade"); con.execute("delete from assercao"); con.execute("delete from extracao"); con.commit()
+    res2 = extrair_assercoes(con, cliente, documentos=[doc], log=lambda s: None)
+    assert res2["erros"] == 1 and res2["processados"] == 0

@@ -1,0 +1,46 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Segunda Turma, por unanimidade, referendou a liminar concedida, em sessão virtual realizada de 13/03/2026 a 20/03/2026, nos termos do voto do relator, Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "A Turma, por unanimidade, referendou a liminar concedida",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O referendo excetuou o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, registrando seu falecimento e a perda superveniente de eficácia da decisão na fração que recaía sobre ele.",
+      "pagina": 1,
+      "trecho_fonte": "excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, porque veio a falecer, ocasionando a superveniente perda da eficácia da decisão, especificamente em relação à fração que recaía sobre si",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Ministro Gilmar Mendes acompanhou o relator com ressalvas.",
+      "pagina": 1,
+      "trecho_fonte": "O Ministro Gilmar Mendes acompanhou o Relator com ressalvas.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Gilmar Mendes", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Ministro Dias Toffoli afirmou suspeição no julgamento do referendo.",
+      "pagina": 1,
+      "trecho_fonte": "Afirmou suspeição o Ministro Dias Toffoli.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

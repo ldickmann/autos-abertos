@@ -66,7 +66,7 @@ SCHEMA_SAIDA = Extracao.model_json_schema()
 class ClienteLLM(Protocol):
     modelo: str
 
-    def extrair(self, system: str, entrada: str) -> tuple[str, dict]:
+    def extrair(self, system: str, entrada: str, *, documento_id: int) -> tuple[str, dict]:
         """Devolve (texto_json, uso) onde uso = {"input_tokens", "output_tokens", "cache_read_input_tokens", ...}."""
 
 
@@ -79,7 +79,7 @@ class ClienteAnthropic:
         self.modelo = modelo
         self.effort = effort
 
-    def extrair(self, system: str, entrada: str) -> tuple[str, dict]:
+    def extrair(self, system: str, entrada: str, *, documento_id: int) -> tuple[str, dict]:
         with self.client.messages.stream(
             model=self.modelo,
             max_tokens=32000,
@@ -106,10 +106,65 @@ class ClienteFalso:
     def __init__(self, resposta: str, modelo: str = "falso-1"):
         self.resposta, self.modelo, self.chamadas = resposta, modelo, 0
 
-    def extrair(self, system: str, entrada: str) -> tuple[str, dict]:
+    def extrair(self, system: str, entrada: str, *, documento_id: int) -> tuple[str, dict]:
         self.chamadas += 1
         return self.resposta, {"input_tokens": len(entrada) // 4, "output_tokens": len(self.resposta) // 4,
                                "cache_read_input_tokens": 0, "cache_creation_input_tokens": 0}
+
+
+class ClienteArquivo:
+    """Execução pelo Claude Code (plano Max), sem API: a resposta de cada documento é lida de
+    `<dir>/<documento_id>.json`, escrita por quem leu a entrada correspondente. Sem arquivo → erro,
+    e o documento fica pendente. A validação e a persistência são as mesmas dos outros clientes."""
+
+    def __init__(self, dir_respostas: Path, modelo: str = "claude-code/claude-opus-5"):
+        self.dir = Path(dir_respostas)
+        self.modelo = modelo
+
+    def extrair(self, system: str, entrada: str, *, documento_id: int) -> tuple[str, dict]:
+        p = self.dir / f"{documento_id}.json"
+        if not p.exists():
+            raise FileNotFoundError(f"sem resposta para o documento {documento_id}: {p}")
+        texto = p.read_text("utf-8")
+        return texto, {"input_tokens": len(entrada) // 4, "output_tokens": len(texto) // 4,
+                       "cache_read_input_tokens": 0, "cache_creation_input_tokens": 0}
+
+
+def preparar_entradas(con: sqlite3.Connection, dir_entradas: Path, *, documentos: list[int] | None = None,
+                      limite: int | None = None, prompt_version: str = PROMPT_VERSION,
+                      modelo: str = "claude-code/claude-opus-5") -> dict:
+    """Grava `<id>.entrada.md` (instruções + texto por página) para cada documento ainda sem extração
+    válida, e um MANIFEST.json com id, título, tamanho e caminho de resposta esperado."""
+    dir_entradas = Path(dir_entradas)
+    dir_entradas.mkdir(parents=True, exist_ok=True)
+    sql = ("SELECT d.id, d.sha256, d.incidente, d.titulo, d.paginas FROM documento d WHERE d.sha256 IS NOT NULL AND d.tem_camada_texto=1 "
+           "AND EXISTS (SELECT 1 FROM documento_pagina p WHERE p.documento_id=d.id) "
+           "AND NOT EXISTS (SELECT 1 FROM extracao e WHERE e.documento_id=d.id AND e.sha256_documento=d.sha256 "
+           "AND e.prompt_version=? AND e.modelo=? AND e.status='ok')")
+    params: list = [prompt_version, modelo]
+    if documentos:
+        sql += f" AND d.id IN ({','.join('?' * len(documentos))})"
+        params += documentos
+    sql += " ORDER BY d.id"
+    if limite:
+        sql += f" LIMIT {int(limite)}"
+    manifesto = {"prompt_version": prompt_version, "modelo": modelo, "documentos": []}
+    for d in con.execute(sql, params).fetchall():
+        paginas = [r["texto"] for r in con.execute("SELECT texto FROM documento_pagina WHERE documento_id=? ORDER BY pagina", (d["id"],))]
+        entrada = montar_entrada(paginas)
+        proc = con.execute("SELECT classe, numero FROM processo WHERE incidente_principal=?", (d["incidente"],)).fetchone()
+        rotulo = f"{proc['classe']} {proc['numero']}" if proc else f"incidente {d['incidente']}"
+        texto = (f"# Documento {d['id']}: {d['titulo']} ({rotulo}, {len(paginas)} página(s))\n\n"
+                 f"Resposta esperada em `{d['id']}.json`, JSON estrito no schema abaixo.\n\n"
+                 f"## Instruções (prompt {prompt_version})\n\n{PROMPT_TEXTO}\n\n"
+                 f"## Schema JSON da resposta\n\n```json\n{json.dumps(SCHEMA_SAIDA, ensure_ascii=False)}\n```\n\n"
+                 f"## Documento\n\n{entrada}\n")
+        (dir_entradas / f"{d['id']}.entrada.md").write_text(texto, "utf-8")
+        manifesto["documentos"].append({"id": d["id"], "titulo": d["titulo"], "processo": rotulo, "paginas": len(paginas),
+                                        "chars": sum(len(p) for p in paginas), "entrada": f"{d['id']}.entrada.md",
+                                        "resposta": f"{d['id']}.json"})
+    (dir_entradas / "MANIFEST.json").write_text(json.dumps(manifesto, ensure_ascii=False, indent=1), "utf-8")
+    return {"preparados": len(manifesto["documentos"]), "chars": sum(x["chars"] for x in manifesto["documentos"])}
 
 
 # ---------------------------------------------------------------- entrada e validação
@@ -192,7 +247,7 @@ def extrair_assercoes(con: sqlite3.Connection, cliente: ClienteLLM, *, documento
         entrada = montar_entrada(paginas)
         inicio = datetime.now(timezone.utc).isoformat()
         try:
-            texto_json, uso = cliente.extrair(prompt_texto, entrada)
+            texto_json, uso = cliente.extrair(prompt_texto, entrada, documento_id=d["id"])
         except Exception as ex:  # noqa: BLE001 — registrar o erro e seguir para o próximo documento
             res["erros"] += 1
             con.execute("INSERT OR REPLACE INTO extracao (documento_id, sha256_documento, prompt_version, modelo, executada_em, status) "

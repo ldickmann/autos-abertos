@@ -19,6 +19,8 @@
   extrair-assercoes            Fase 4: LLM sobre documentos (--documentos 1,2,3 | --limite N | --dry-run | --modelo)
   assercoes [--documento N]    lista asserções com tipo epistêmico, página e trecho-fonte
   exportar [--saida DIR]       JSON estático para a interface (padrão: web/public/data), semente 7514886
+  preparar-extracao            Fase 4 pelo Claude Code: grava data/extracao/entradas/<id>.entrada.md + MANIFEST.json
+  ingerir-extracao             lê data/extracao/respostas/<id>.json, valida e persiste (mesma validação da API)
 """
 
 from __future__ import annotations
@@ -209,6 +211,20 @@ def cmd_assercoes(args):
         print(f"    fonte: \"{r['trecho_fonte'][:160]}\"")
 
 
+def cmd_preparar_extracao(args):
+    from .semantica import preparar_entradas
+    docs = [int(x) for x in args.documentos.split(",")] if args.documentos else None
+    saida = config.DATA / "extracao" / "entradas"
+    print(json.dumps(preparar_entradas(_con(), saida, documentos=docs, limite=args.limite, modelo=args.modelo), ensure_ascii=False), "→", saida)
+
+
+def cmd_ingerir_extracao(args):
+    from .semantica import ClienteArquivo, extrair_assercoes
+    docs = [int(x) for x in args.documentos.split(",")] if args.documentos else None
+    cliente = ClienteArquivo(config.DATA / "extracao" / "respostas", modelo=args.modelo)
+    print(json.dumps(extrair_assercoes(_con(), cliente, documentos=docs, log=print), ensure_ascii=False))
+
+
 def cmd_exportar(args):
     from .exportar import exportar
     saida = Path(args.saida) if args.saida else config.RAIZ / "web" / "public" / "data"
@@ -248,6 +264,10 @@ def main(argv=None):
     p.set_defaults(f=cmd_extrair_assercoes)
     p = sub.add_parser("assercoes"); p.add_argument("--documento", type=int); p.set_defaults(f=cmd_assercoes)
     p = sub.add_parser("exportar"); p.add_argument("--saida"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_exportar)
+    p = sub.add_parser("preparar-extracao"); p.add_argument("--documentos"); p.add_argument("--limite", type=int)
+    p.add_argument("--modelo", default="claude-code/claude-opus-5"); p.set_defaults(f=cmd_preparar_extracao)
+    p = sub.add_parser("ingerir-extracao"); p.add_argument("--documentos"); p.add_argument("--modelo", default="claude-code/claude-opus-5")
+    p.set_defaults(f=cmd_ingerir_extracao)
     args = ap.parse_args(argv)
     args.f(args)
 
