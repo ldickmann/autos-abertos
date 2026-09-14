@@ -1,0 +1,58 @@
+{
+ "PesquisaBasicaMateria": {
+  "noNamespaceSchemaLocation": "https://legis.senado.leg.br/dadosabertos/dados/PesquisaBasicaMateriav7.xsd",
+  "Metadados": {
+   "Versao": "14/09/2026 11:59:55",
+   "VersaoServico": "7",
+   "DataVersaoServico": "2021-08-18",
+   "DescricaoDataSet": "Retorna as matérias que satisfazem aos parâmetros informados",
+   "Descontinuacao": {
+    "DataDepreciacao": "2025-03-18",
+    "DataDesativacaoCompleta": "2026-02-01",
+    "UrlServicoSubstituto": "https://legis.senado.leg.br/dadosabertos/processo"
+   }
+  },
+  "Materias": {
+   "Materia": [
+    {
+     "Codigo": "172388",
+     "IdentificacaoProcesso": "8986876",
+     "DescricaoIdentificacao": "REQ 1/2026 - CTFC",
+     "Sigla": "REQ",
+     "Numero": "00001",
+     "Ano": "2026",
+     "SiglaComissao": "CTFC",
+     "Ementa": "Requer nos termos do art. 58, § 2º, II, da Constituição Federal e do art.93, II, do Regimento Interno do Senado Federal, a realização de audiência pública, com o objetivo de analisar possíveis interferências políticas no caso do banco Master.",
+     "Autor": "Senador Eduardo Girão (NOVO/CE)",
+     "Data": "2026-01-30",
+     "UrlDetalheMateria": "http://legis.senado.leg.br/dadosabertos/materia/172388"
+    },
+    {
+     "Codigo": "172408",
+     "IdentificacaoProcesso": "8987034",
+     "DescricaoIdentificacao": "REQ 1/2026 - CAE",
+     "Sigla": "REQ",
+     "Numero": "00001",
+     "Ano": "2026",
+     "SiglaComissao": "CAE",
+     "Ementa": "Requer que seja convidado o Presidente do Banco Central do Brasil a comparecer à CAE, a fim de prestar informações sobre a atuação da autoridade monetária na liquidação do banco Master.",
+     "Autor": "Senador Veneziano Vital do Rêgo (MDB/PB)",
+     "Data": "2026-02-02",
+     "UrlDetalheMateria": "http://legis.senado.leg.br/dadosabertos/materia/172408"
+    },
+    {
+     "Codigo": "172454",
+     "IdentificacaoProcesso": "8986647",
+     "DescricaoIdentificacao": "RQS 33/2026",
+     "Sigla": "RQS",
+     "Numero": "00033",
+     "Ano": "2026",
+     "Ementa": "Requer informações ao Senhor Rui Costa, Ministro de Estado da Casa Civil, sobre a reunião noticiada pela imprensa, envolvendo o Presidente da República e Daniel Vorcaro, dono do Banco Master, ocorrida no Palácio do Planalto, em dezembro de 2024.",
+     "Autor": "Senadora Damares Alves (REPUBLICANOS/DF)",
+     "Data": "2026-01-29",
+     "UrlDetalheMateria": "http://legis.senado.leg.br/dadosabertos/materia/172454"
+    }
+   ]
+  }
+ }
+}

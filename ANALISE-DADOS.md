@@ -79,3 +79,19 @@ Critério: onde uma regra determinística dá o mesmo resultado que um modelo da
 
 Ideias avaliadas e não feitas, com motivo: busca semântica por embeddings (exige modelo em tempo de consulta; a busca por texto já cobre); detecção de "contradições" entre documentos (viraria juízo do site; o que se faz é justapor, com fonte); resumo por processo (proibido pelo escopo: narrativa).
 
+## 8. Dados públicos de todos os Poderes (14/09, pedido do usuário)
+
+Levantamento feito na web, só em domínios oficiais, e incorporado com o mesmo regime de proveniência (cópia com hash, histórico append-only, nada interpretado):
+
+| Poder / órgão | o que entrou | como |
+|---|---|---|
+| Polícia Federal (Executivo) | notas oficiais de cada fase da Operação Compliance Zero (1ª, nov/2025; 2ª, jan/2026; 3ª, mar; 5ª, 6ª e 8ª, mai; 10ª, jul) | `fontes_externas.json` + `capturar-externas`; a 3ª fase passou a exigir login em 14/09 (registrado como indisponível) |
+| Ministério da Justiça (Executivo) | nota da 4ª fase (abr/2026) | idem |
+| Banco Central (autarquia) | registro do regime de liquidação (respondeu 500 duas vezes), dados abertos da instituição, ata 63 do Comef | idem |
+| Senado Federal (Legislativo) | 44 matérias via API de dados abertos (requerimentos de convocação, informação e audiência; PL; PFS), Rádio Senado (CPI, CAE), TD 363 | `stf/legislativo.py` (API) + fontes curadas |
+| Câmara dos Deputados (Legislativo) | 2 matérias via API (RCP 1/2026 pedido de CPI; PFC 24/2026), ficha da RCP, 3 notícias da Agência Câmara | idem |
+| Câmara Legislativa do DF e TCDF (BRB) | plenário da CLDF sobre a operação; denúncia ao TCDF sobre o BRB | fontes curadas (o TCDF exigiu acrescentar o intermediário Let's Encrypt ao bundle TLS) |
+| STF (Judiciário) | os autos (base principal) e o canal oficial no YouTube | coleta principal |
+
+Falta (item 25 da fila): MPF/PGR, TCU, CVM, DOU, STJ; fases 7 e 9 da PF. O cruzamento com os autos (item 26) vem em seguida, com fonte nas duas pontas: datas das fases ↔ cronologia, nomes das ementas ↔ entidades (por chave forte), e extração por modelo das notas oficiais como asserções atribuídas ao órgão.
+

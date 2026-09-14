@@ -1,0 +1,11 @@
+{
+  "_nota": "Consultas às APIs oficiais de dados abertos do Senado (legis.senado.leg.br/dadosabertos) e da Câmara (dadosabertos.camara.leg.br), por palavra-chave. Cada resposta é guardada como blob com sha256 e registrada em data/raw/legislativo.jsonl. As matérias são as do próprio Congresso; o site não interpreta ementas.",
+  "consultas": [
+    {"casa": "senado", "palavra": "Banco Master"},
+    {"casa": "senado", "palavra": "Vorcaro"},
+    {"casa": "senado", "palavra": "BRB Master"},
+    {"casa": "camara", "palavra": "Banco Master"},
+    {"casa": "camara", "palavra": "Vorcaro"},
+    {"casa": "camara", "palavra": "Master BRB"}
+  ]
+}

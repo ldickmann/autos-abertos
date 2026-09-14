@@ -73,8 +73,13 @@ export type EventoCronologia = {
 };
 export type CronologiaDados = { inicio_do_caso: string; total: number; por_fonte: { portal: number; documento: number }; eventos: EventoCronologia[] };
 
+export type Materia = {
+  casa: "senado" | "camara"; codigo: string; sigla: string | null; numero: number | null; ano: number | null; comissao: string | null; identificacao: string | null;
+  ementa: string; autor: string | null; data: string | null; url: string; url_api: string | null; consultas: string[]; primeiro_visto_em: string; ultimo_visto_em: string;
+};
+
 export type FonteExterna = {
-  id: string; orgao: string; rotulo: string; url: string; tipo: string; capturar: boolean; por_que: string;
+  id: string; poder?: string; observacao?: string; orgao: string; rotulo: string; url: string; tipo: string; capturar: boolean; por_que: string;
   ultima: { id: number; fetched_at: string; http_status: number | null; sha256: string | null; bytes: number | null; content_type: string | null } | null;
   historico: { id: number; fetched_at: string; http_status: number | null; sha256: string | null }[]; mudou: boolean; versoes_distintas: number;
 };
