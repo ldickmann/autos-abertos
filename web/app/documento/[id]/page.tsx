@@ -35,7 +35,7 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
         </dl>
         <div className="mt-3 flex flex-wrap gap-4">
           <Carimbo snapshot={m.snapshot} prefixo="documento baixado em" />
-          {!m.tem_texto && <span className="rounded bg-red-700 px-2 py-0.5 text-xs font-semibold text-white">sem camada de texto (OCR pendente)</span>}
+          {!m.tem_texto && <span className="alerta rounded px-2 py-0.5 text-xs font-semibold">sem camada de texto (OCR pendente)</span>}
         </div>
       </header>
 

@@ -1,6 +1,6 @@
-# FASE 4 — Relatório: camada semântica (construída; execução bloqueada por credencial)
+# FASE 4 — Relatório: camada semântica (executada pelo Claude Code, sem API)
 
-Construída em 14/09/2026, com 8 testes usando cliente simulado. **Não executada contra a API**: não há `ANTHROPIC_API_KEY`, `ANTHROPIC_AUTH_TOKEN` nem perfil do `ant auth login` nesta máquina. É a única coisa que depende de você nesta fase, porque envolve custo.
+Construída em 14/09/2026 com 8 testes usando cliente simulado; **executada no mesmo dia pelo Claude Code** (plano Max, sem `ANTHROPIC_API_KEY`), com subagentes lendo os documentos e gravando um JSON por documento, validado pela mesma rotina que serviria à API. Resultado: **226 de 226 documentos, 2430 asserções validadas**, 20 descartadas por trecho não rastreável, nenhuma resposta rejeitada.
 
 ## 1. O que está pronto
 
@@ -24,27 +24,56 @@ Fluxo por documento: texto por página com marcadores `[página N]` → uma cham
 | resolução canônica de entidades | nome normalizado → `entidade` existente (partes) ou nova com `origem='documento'` (status "terceiro mencionado") | `test_entidades_resolvem_para_canonicas_ou_viram_terceiro_mencionado` |
 | 5. Nada sobre conduta, caráter ou intenção | o prompt proíbe explicitamente; o schema não tem campo para conclusão; `atribuida_a` obriga a alegação a ter autor | (estrutural) |
 
-## 3. Calibração proposta (3 documentos), pendente de credencial
+## 3. Como foi executado (sem API)
 
-| id | documento | páginas | por que |
-|---|---|---|---|
-| 55 | Decisão monocrática de 04/03/2026 (prisão preventiva), Pet 15556 | 48 | o documento central; mistura alegações da PF, provas apontadas e dispositivo |
-| 4 | Despacho de 25/08/2026, Pet 15556 | 2 | caso mínimo: um fato processual, uma vista à PGR |
-| 39 | Decisão de Julgamento do referendo (RTF), Pet 15556 | 1 | texto colegiado curto; testa `fundamento_decisorio` atribuído à Turma |
+A rota original (`extrair-assercoes`, uma chamada à API por documento) ficou pronta mas não foi usada: não havia credencial e o custo estimado era de US$ 15 a 40. Em vez disso, dois comandos novos fazem o Claude Code cumprir o mesmo contrato:
 
-`python -m stf extrair-assercoes --documentos 55,4,39` roda a calibração e `python -m stf assercoes` lista o resultado para você avaliar o prompt. Estimativa (4 caracteres por token): 25 mil tokens de entrada; custo abaixo de US$ 2.
-
-Corpus inteiro (226 documentos, ~250 mil tokens de texto): entrada ~US$ 2 (prompt em cache), saída e raciocínio adaptativo entre US$ 10 e US$ 35. **Estimativa: US$ 15 a 40 no Opus 5.** Com Sonnet 5 cai para cerca de um terço; a escolha é sua.
-
-## 4. Para rodar
-
-```bash
-export ANTHROPIC_API_KEY=...        # ou `ant auth login`
-python -m stf extrair-assercoes --documentos 55,4,39
-python -m stf assercoes
-# depois de calibrar o prompt (nova versão = extracao_v2.md; a v1 fica no histórico):
-python -m stf extrair-assercoes
-python -m stf exportar && cd web && npm run build
+```
+preparar-extracao   grava data/extracao/entradas/<id>.entrada.md (instruções + schema + texto com [página N]) e MANIFEST.json,
+                    só para os documentos ainda sem extração; agrupa em lotes por tamanho e gera LEVA-*.md
+ingerir-extracao    lê data/extracao/respostas/<id>.json e passa pela MESMA validação da rota da API
+                    (página existente, trecho literal, tipo epistêmico, JSON estrito); persiste só o que passou
 ```
 
-Nada muda nas fases anteriores nem na interface: as páginas de asserções, entidades e documentos já leem `assercoes.json` e hoje mostram, com destaque, que a camada semântica ainda não foi executada.
+Cada leva foi um conjunto de subagentes (`.claude/agents/extrator.md`, Opus; no máximo 7 por vez, sequenciais), cada um responsável por uma `LEVA-*.md` e devolvendo só um resumo de poucas linhas. O modelo gravado em `extracao.modelo` é `claude-code/claude-opus-5` e o `prompt_version` é o mesmo da rota da API (`extracao_v1-30ce0b328385`): as instruções do arquivo de entrada são o prompt versionado.
+
+| leva | conteúdo | resultado |
+|---|---|---|
+| primeira tentativa | 17 subagentes de uma vez | 55 docs extraídos; estourou o limite de uso da sessão (429). Levou ao teto de 7 e ao plano em `data/extracao/PLANO.md` |
+| A | 155 documentos curtos (intimações, certidões, termos, vistas) | 210/226 acumulados, 1410 asserções |
+| B | 16 documentos longos (decisões, votos, acórdão) | 226/226, 2430 asserções |
+
+Um problema de dados apareceu na leva B: o acórdão (doc 25) tinha o texto duplicado caractere a caractere por causa de negrito simulado no PDF, e a resposta não passou na validação de trecho. `stf/documentos.py` ganhou `dedupe_chars`, o texto foi reextraído e o documento reprocessado; a resposta antiga está em `data/extracao/respostas/_invalidas/`. Foi o único documento afetado.
+
+## 4. Números
+
+| | |
+|---|---|
+| documentos / páginas | 226 / 712 (média 3,2; máximo 53) |
+| asserções válidas | **2430**: 1067 `fato_processual`, 646 `alegacao_parte`, 717 `fundamento_decisorio` |
+| `atribuida_a` preenchido | 100 % das alegações e dos fundamentos (obrigatório); 7 fatos |
+| descartadas | 20, todas por `trecho_nao_encontrado` (0,8 % do total produzido); nenhuma resposta rejeitada por schema ou JSON |
+| entidades citadas | 3280 vínculos asserção↔entidade, 374 entidades distintas; 324 entidades novas com `origem='documento'` ("terceiro mencionado") |
+| documento sem asserção | 1 (doc 60, "Comunicação assinada", 1 página sem conteúdo extraível) |
+| distribuição por documento | 147 docs com 1–3 asserções; 29 com 4–10; 38 com 11–50; 11 com mais de 50 |
+
+Por tipo de documento: decisões monocráticas (41 docs, 333 p.) concentram 1483 asserções; despachos (54) 305; intimações (72) 201; o voto do relator (53 p.) 189 e o voto vogal (42 p.) 95. Os cinco documentos mais densos: doc 55 (decisão de prisão preventiva, 209), doc 224 (voto, 189), doc 183 (132), doc 222 (96), doc 226 (95).
+
+Reprodutibilidade: `python -m stf reconstruir` apaga a projeção e reingere todas as coletas a partir dos blobs; `ingerir-extracao` em seguida reproduziu as mesmas 2430 asserções (`chore/fase4-leva-b-reconstruir`, 14/09/2026).
+
+## 5. Limitações conhecidas
+
+- A cobertura de documentos longos depende do subagente ler todas as páginas; a validação garante que cada asserção aponta para um trecho real, não que nada ficou de fora. Auditoria por amostragem ainda não foi feita (backlog).
+- Classificação de função do documento, propostas de alias entre entidades e pedidos/resultados por decisão (`ANALISE-DADOS.md`, itens 4.2–4.4) continuam pendentes.
+- Documentos que exigiriam OCR não existem neste corpus (`sem_camada_texto: 0`); se aparecerem em novos processos, ficam fora até haver OCR.
+
+## 6. Para repetir em novos documentos
+
+```bash
+python -m stf baixar-docs --incidente <N> && python -m stf extrair-texto
+python -m stf preparar-extracao          # gera entradas e LEVA-*.md só do que falta
+# lançar o subagente extrator para cada LEVA (≤7 por vez), esperar terminar
+python -m stf ingerir-extracao && python -m stf exportar
+```
+
+A rota pela API (`extrair-assercoes`) continua disponível e usa a mesma validação e o mesmo `prompt_version`; misturar as duas rotas no mesmo corpus é seguro porque o cache é por `(documento, sha256, prompt_version, modelo)`.

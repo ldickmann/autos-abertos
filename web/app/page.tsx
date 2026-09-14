@@ -19,7 +19,7 @@ export default function Home() {
           </h1>
           <Publicidade valor={cab.publicidade} />
           {cab.natureza && <span className="text-sm text-neutral-700">{cab.natureza}</span>}
-          {cab.reu_preso ? <span className="rounded bg-red-700 px-2 py-0.5 text-xs font-semibold text-white">Réu preso</span> : null}
+          {cab.reu_preso ? <span className="alerta rounded px-2 py-0.5 text-xs font-semibold">Réu preso</span> : null}
         </div>
         <dl className="mt-3 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
           <div><dt className="inline font-semibold">Número único: </dt><dd className="inline">{cab.numero_unico ?? "—"}</dd></div>
@@ -36,7 +36,7 @@ export default function Home() {
           <li><span className="font-semibold">{semente.sessoes.length}</span> sessões virtuais</li>
         </ul>
         <div className="mt-4 flex flex-wrap items-center gap-4">
-          <Link href={`/processo/${cab.incidente}`} className="rounded bg-blue-800 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-900">
+          <Link href={`/processo/${cab.incidente}`} className="botao-primario rounded px-4 py-2 text-sm font-semibold">
             Abrir linha do tempo
           </Link>
           <Carimbo snapshot={cab.snapshot} />

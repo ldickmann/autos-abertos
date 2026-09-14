@@ -149,7 +149,7 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
 
   const aplicarFoco = useCallback((cy: Core, id: string | null, cam: string[] | null) => {
     cy.batch(() => {
-      cy.elements().removeClass("apagado realce caminho");
+      cy.elements().removeClass("apagado realce caminho vizinho");
       if (cam && cam.length > 1) {
         cy.elements().addClass("apagado");
         for (let i = 0; i < cam.length; i++) {
@@ -164,6 +164,7 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
       const viz = no.closedNeighborhood();
       cy.elements().not(viz).addClass("apagado");
       viz.edges().addClass("realce");
+      viz.nodes().addClass("vizinho");
     });
   }, []);
 
@@ -191,7 +192,7 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
     const cy = cytoscape({
       container: ref.current,
       elements: elementos,
-      style: construirEstilo(t),
+      style: construirEstilo(t, !telaLarga),
       layout: { name: "preset" },
       wheelSensitivity: 0.2,
       minZoom: 0.15, maxZoom: 4,
@@ -220,12 +221,13 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visivel, disposicao, semente]);
 
-  // troca de tema: só as cores mudam, as posições ficam
+  // troca de tema ou de largura de tela: só cores e rótulos mudam, as posições ficam
   useEffect(() => {
-    const cy = cyRef.current; if (!cy || tema === 0) return;
-    cy.style().fromJson(construirEstilo(lerTokens())).update();
+    const cy = cyRef.current; if (!cy) return;
+    cy.style().fromJson(construirEstilo(lerTokens(), !telaLarga)).update();
+    if (tema === 0) return;
     cy.batch(() => { cy.nodes().forEach((n) => { const t = lerTokens(); if (n.data("tipo") === "processo") n.data("cor", n.data("externo") ? t.fio : t.tinta); }); });
-  }, [tema]);
+  }, [tema, telaLarga]);
 
   const centrarEm = (id: string) => {
     const cy = cyRef.current; if (!cy) return;
@@ -393,10 +395,14 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
   );
 }
 
-function construirEstilo(t: ReturnType<typeof lerTokens>): cytoscape.StylesheetJson {
+// `compacto` (tela estreita): rótulo de entidade só para nós com 5+ ligações e só quando o zoom o deixa legível;
+// os vizinhos do nó em foco sempre mostram o nome. No desktop o limiar é 2 ligações.
+function construirEstilo(t: ReturnType<typeof lerTokens>, compacto = false): cytoscape.StylesheetJson {
+  const limiarRotulo = compacto ? 5 : 2;
   return [
-        { selector: "node", style: { "background-color": "data(cor)", width: "data(tam)", height: "data(tam)", label: "data(label)", "font-family": "IBM Plex Sans, system-ui, sans-serif", "font-size": 10, color: t.tinta, "text-wrap": "ellipsis", "text-max-width": "120px", "text-valign": "bottom", "text-margin-y": 3, "text-background-color": t.fundo, "text-background-opacity": 0.75, "text-background-padding": "1px", "min-zoomed-font-size": 5, "border-width": 0, "overlay-opacity": 0 } },
-        { selector: "node[pesoRotulo < 2]", style: { "text-opacity": 0 } },
+        { selector: "node", style: { "background-color": "data(cor)", width: "data(tam)", height: "data(tam)", label: "data(label)", "font-family": "IBM Plex Sans, system-ui, sans-serif", "font-size": 10, color: t.tinta, "text-wrap": "ellipsis", "text-max-width": "120px", "text-valign": "bottom", "text-margin-y": 3, "text-background-color": t.fundo, "text-background-opacity": 0.75, "text-background-padding": "1px", "min-zoomed-font-size": compacto ? 7 : 5, "border-width": 0, "overlay-opacity": 0 } },
+        { selector: `node[pesoRotulo < ${limiarRotulo}]`, style: { "text-opacity": 0 } },
+        { selector: "node.vizinho", style: { "text-opacity": 1 } },
         { selector: "node[tipo = 'processo']", style: { shape: "round-rectangle", width: "data(tam)", height: 30, "z-index": 10, "background-color": "data(cor)", color: t.fundo, "font-size": 14, "font-weight": 600, "min-zoomed-font-size": 0, "text-valign": "center", "text-margin-y": 0, "text-opacity": 1, "text-background-opacity": 0, "text-max-width": "200px", "text-wrap": "none" } },
         { selector: "node[tipo = 'processo'][pub = 'Sigiloso']", style: { "background-color": t.tinta2 } },
         { selector: "node[tipo = 'processo'][?externo]", style: { "background-color": t.folha, color: t.tinta2, "border-width": 1, "border-color": t.fioForte, "border-style": "dashed", "font-weight": 400 } },

@@ -24,10 +24,10 @@
   --folha: #1d2127;
   --folha-alta: #262b33;
   --fio: #343a44;
-  --fio-forte: #4a5261;
+  --fio-forte: #626b7c;  /* 3,0:1 sobre a folha (WCAG 1.4.11, bordas de controles) */
   --tinta: #e9e4d8;
   --tinta-2: #a39f93;
-  --tinta-3: #7c786d;
+  --tinta-3: #8f8b7f;    /* 4,75:1 sobre a folha (AA para texto pequeno) */
   --fato: #8fcba4;
   --fato-fundo: #1f3a2c;
   --fato-texto: #cfeed9;
@@ -48,10 +48,10 @@
   --folha: #ffffff;
   --folha-alta: #f8f6f1;
   --fio: #d9d5cb;
-  --fio-forte: #a8a396;
+  --fio-forte: #8f8a7c;  /* 3,05:1 sobre o fundo */
   --tinta: #1c1b18;
   --tinta-2: #5b5850;
-  --tinta-3: #85806f;
+  --tinta-3: #716c5d;    /* 4,64:1 sobre o fundo */
   --fato: #1f7a4d;
   --fato-fundo: #dcf3e5;
   --fato-texto: #124a2f;
@@ -123,6 +123,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   outline-offset: 2px;
   border-radius: 3px;
 }
+
+/* Botão principal: fundo da mesa sobre o azul-aço (9,5:1 no escuro, 6,3:1 no claro). Declarado aqui porque
+   `a { color: inherit }` fora de camada vence as utilidades de cor do Tailwind. */
+.botao-primario { background: var(--fundamento); color: var(--fundo); }
+.botao-primario:hover { filter: brightness(1.08); }
+
+/* Alerta (réu preso, documento sem texto): vermelho fixo com branco de verdade, nos dois temas (5,4:1). */
+.alerta { background: #b91c1c; color: #ffffff; }
 
 mark { background: var(--alegacao-fundo); color: inherit; box-shadow: 0 0 0 2px var(--alegacao-fundo); }
 
