@@ -11,7 +11,6 @@ from __future__ import annotations
 import csv
 import io
 import sqlite3
-from collections import defaultdict
 
 
 def _rows(con: sqlite3.Connection, sql: str, args=()) -> list[dict]:
@@ -122,4 +121,57 @@ def fluxos_csv(con: sqlite3.Connection) -> str:
         w.writerow([r["identificador"], r["numero"], r["secao"], r["origem"], r["destino"], f"{r['valor_centavos'] / 100:.2f}", r["data"],
                     r["periodo_inicio"], r["periodo_fim"], r["tipo"], r["natureza"], r["quantidade"], r["pagina"], r["trecho_fonte"],
                     r["descricao"], r["od"], r["dd"], r["documento_id"]])
+    return out.getvalue()
+
+
+def _reais(c) -> str:
+    return "" if c is None else f"{c / 100:.2f}"
+
+
+def atores_csv(con: sqlite3.Connection) -> str:
+    """Uma linha por pessoa/empresa: quanto recebeu e pagou (sem os resumos por tipo, que repetiriam os agregados)."""
+    out = io.StringIO()
+    w = csv.writer(out, lineterminator="\n")
+    w.writerow(["id", "nome", "tipo", "documento_mascarado", "atividade", "papeis", "entidade_id", "recebeu_reais", "pagou_reais", "n_fluxos"])
+    for r in con.execute("""
+        SELECT a.id, a.nome, a.tipo, a.documento_mascarado, a.atividade, a.entidade_id,
+               (SELECT GROUP_CONCAT(DISTINCT papel) FROM fluxo_participacao p WHERE p.ator_id=a.id) AS papeis,
+               COALESCE((SELECT SUM(valor_centavos) FROM fluxo_transacao t WHERE t.destino_ator_id=a.id AND t.natureza!='resumo_tipo'), 0) AS recebeu,
+               COALESCE((SELECT SUM(valor_centavos) FROM fluxo_transacao t WHERE t.origem_ator_id=a.id AND t.natureza!='resumo_tipo'), 0) AS pagou,
+               (SELECT COUNT(*) FROM fluxo_transacao t WHERE (t.origem_ator_id=a.id OR t.destino_ator_id=a.id) AND t.natureza!='resumo_tipo') AS n
+        FROM fluxo_ator a ORDER BY recebeu DESC, pagou DESC, a.nome"""):
+        w.writerow([r["id"], r["nome"], r["tipo"], r["documento_mascarado"], r["atividade"], (r["papeis"] or "").replace(",", ";"),
+                    r["entidade_id"], _reais(r["recebeu"]), _reais(r["pagou"]), r["n"]])
+    return out.getvalue()
+
+
+def comunicacoes_csv(con: sqlite3.Connection) -> str:
+    out = io.StringIO()
+    w = csv.writer(out, lineterminator="\n")
+    w.writerow(["id", "fonte", "secao", "numero", "titular", "segmento", "comunicante", "local", "periodo_inicio", "periodo_fim", "valor_reais",
+                "creditos_reais", "debitos_reais", "pagina_inicio", "pagina_fim", "n_participacoes", "n_transacoes", "n_bens", "ocorrencias"])
+    for r in con.execute("""
+        SELECT c.*, f.identificador, a.nome AS titular,
+               (SELECT COUNT(*) FROM fluxo_participacao p WHERE p.comunicacao_id=c.id) AS np,
+               (SELECT COUNT(*) FROM fluxo_transacao t WHERE t.comunicacao_id=c.id) AS nt,
+               (SELECT COUNT(*) FROM fluxo_bem b WHERE b.comunicacao_id=c.id) AS nb,
+               (SELECT GROUP_CONCAT(norma || COALESCE(' ' || codigo, ''), '; ') FROM fluxo_ocorrencia o WHERE o.comunicacao_id=c.id) AS oc
+        FROM fluxo_comunicacao c JOIN fluxo_fonte f ON f.id=c.fonte_id LEFT JOIN fluxo_ator a ON a.id=c.titular_ator_id
+        ORDER BY c.secao, c.numero"""):
+        w.writerow([r["id"], r["identificador"], r["secao"], r["numero"], r["titular"], r["segmento"], r["comunicante"], r["local"], r["periodo_inicio"],
+                    r["periodo_fim"], _reais(r["valor_centavos"]), _reais(r["creditos_centavos"]), _reais(r["debitos_centavos"]), r["pagina_inicio"],
+                    r["pagina_fim"], r["np"], r["nt"], r["nb"], r["oc"]])
+    return out.getvalue()
+
+
+def bens_csv(con: sqlite3.Connection) -> str:
+    """Bens sem a coluna `identificacao` (placas, chassis, livros de cartório ficam só no banco)."""
+    out = io.StringIO()
+    w = csv.writer(out, lineterminator="\n")
+    w.writerow(["id", "comunicacao", "secao", "numero", "tipo", "descricao", "valor_reais", "valor_referencia_reais", "data_negocio"])
+    for r in con.execute("""
+        SELECT b.id, b.comunicacao_id, c.secao, c.numero, b.tipo, b.descricao, b.valor_centavos, b.valor_referencia_centavos, b.data_negocio
+        FROM fluxo_bem b JOIN fluxo_comunicacao c ON c.id=b.comunicacao_id ORDER BY c.secao, c.numero, b.id"""):
+        w.writerow([r["id"], r["comunicacao_id"], r["secao"], r["numero"], r["tipo"], r["descricao"], _reais(r["valor_centavos"]),
+                    _reais(r["valor_referencia_centavos"]), r["data_negocio"]])
     return out.getvalue()

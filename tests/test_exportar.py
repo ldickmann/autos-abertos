@@ -44,6 +44,7 @@ def test_exporta_arquivos_com_proveniencia(tmp_path):
     fluxos = json.loads((saida / "fluxos.json").read_text("utf-8"))            # sem fluxos carregados: estrutura vazia, nunca ausente
     assert fluxos["fontes"] == [] and fluxos["grafo"] == {"nos": [], "arestas": []}
     assert (saida / "fluxos.csv").read_text("utf-8").startswith("fonte,comunicacao,secao")
+    assert (saida / "fluxos_atores.csv").exists() and (saida / "fluxos_comunicacoes.csv").exists() and (saida / "fluxos_bens.csv").exists()
 
 
 def test_processo_exportado_traz_assercoes_dentro_de_cada_documento(tmp_path):

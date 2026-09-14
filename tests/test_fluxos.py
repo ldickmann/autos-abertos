@@ -294,3 +294,18 @@ def test_fluxos_csv_uma_linha_por_transacao_com_pagina_e_trecho(tmp_path):
     linhas = csv.strip().splitlines()
     assert linhas[0].startswith("fonte,comunicacao,secao,origem,destino,valor_reais,data,periodo_inicio,periodo_fim,tipo,natureza,quantidade,pagina,trecho")
     assert len(linhas) == 2 and "19205000.00" in linhas[1] and "FULANO DA SILVA" in linhas[1] and "IGREJA TESTE" in linhas[1]
+
+
+def test_csvs_por_tabela_atores_comunicacoes_e_bens(tmp_path):
+    from stf.fluxos_export import atores_csv, bens_csv, comunicacoes_csv
+    con = _banco_carregado(tmp_path, ESCRITURA_SEM_DIRECAO)
+    a = atores_csv(con).strip().splitlines()
+    assert a[0] == "id,nome,tipo,documento_mascarado,atividade,papeis,entidade_id,recebeu_reais,pagou_reais,n_fluxos"
+    linha = next(l for l in a if "FULANO DA SILVA" in l)
+    assert ",pessoa_fisica,***.818.816-**," in linha and linha.endswith(",9,0.00,19205000.00,1")
+    c = comunicacoes_csv(con).strip().splitlines()
+    assert c[0].startswith("id,fonte,secao,numero,titular,segmento,comunicante,local,periodo_inicio,periodo_fim,valor_reais,creditos_reais,debitos_reais,pagina_inicio,pagina_fim,n_participacoes,n_transacoes,n_bens")
+    assert len(c) == 3 and any("38000000.00" in l for l in c)
+    b = bens_csv(con).strip().splitlines()
+    assert b[0] == "id,comunicacao,secao,numero,tipo,descricao,valor_reais,valor_referencia_reais,data_negocio"
+    assert len(b) == 2 and "imovel" in b[1] and "livro" not in b[1]        # identificação nunca sai

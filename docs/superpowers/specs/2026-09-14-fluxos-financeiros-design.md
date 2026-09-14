@@ -42,7 +42,13 @@ Testes (`tests/test_fluxos.py`): esquema; validador rejeita registro ruim; carga
 
 `exportar` grava `fluxos.json` — `{fontes, atores, comunicacoes, transacoes, grafo: {nos, arestas}}`, arestas agregadas por par (origem, destino) com soma, contagem e ids das transações — e `saidas` grava `fluxos.csv` (uma linha por transação, com página e trecho) para quem quiser abrir em planilha ou pandas.
 
-## 5. Mapa interativo (site)
+## 5. Página de dados (site)
+
+**Revisão de 14/09 (noite), pedido do usuário:** o "mapa" é de tabelas, não de grafo. Nenhum grafo é renderizado para o usuário (a página `/grafo` e o Cytoscape saíram do site; `grafo.json` continua como ferramenta interna). A página `/rede-de-pagamentos` passa a ser: cabeçalho (o que é e não é) → "Em números" (fichas numéricas: total comunicado, operações datadas, pessoas, por ano, quem mais recebeu/pagou) → painel com **uma busca e quatro abas** (Pessoas e empresas · Fluxos · Comunicações · Bens), cada aba com filtros próprios, ordenação por coluna e linha expansível com página e trecho; coluna "situação nos autos" (status literal do portal) para quem é parte no caso → downloads (5 CSV + JSON), dicionário de dados, consultas SQL prontas e método. A navegação do site foi reagrupada em 6 seções (Início · Rede de pagamentos · Acontecimentos · Autos · Quem é quem · Ajuda) com segunda linha contextual.
+
+<details><summary>Desenho original (grafo), substituído</summary>
+
+
 
 Página `/rede-de-pagamentos` (nav: "Fluxos"), com:
 - cabeçalho que diz o que é (RIF 140515, Pet 15.645), o que não é (não é prova; Master/Vorcaro não aparecem como pagadores) e de onde veio (documento, páginas, hash);
@@ -51,6 +57,8 @@ Página `/rede-de-pagamentos` (nav: "Fluxos"), com:
 - as comunicações como fichas, com o texto literal do comunicante em bloco recolhível.
 
 Funciona em 375 px (grafo com altura limitada, tabela responsiva já existente).
+
+</details>
 
 ## 6. Fora do escopo
 

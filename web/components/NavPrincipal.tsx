@@ -3,49 +3,64 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NAV = [
-  { href: "/", rotulo: "Início" },
-  { href: "/decisoes", rotulo: "Decisões" },
-  { href: "/cronologia", rotulo: "Cronologia" },
-  { href: "/linha-do-tempo", rotulo: "Linha do tempo" },
-  { href: "/busca", rotulo: "Busca" },
-  { href: "/assercoes", rotulo: "Asserções" },
-  { href: "/entidades", rotulo: "Entidades" },
-  { href: "/rede-de-pagamentos", rotulo: "Fluxos" },
-  { href: "/referencias", rotulo: "Referências" },
-  { href: "/glossario", rotulo: "Glossário" },
-  { href: "/verificar", rotulo: "Verificar" },
-  { href: "/mudancas", rotulo: "O que mudou" },
-  { href: "/fontes-externas", rotulo: "Fontes oficiais" },
-  { href: "/congresso", rotulo: "Congresso" },
-  { href: "/sobre", rotulo: "Método" },
+/*
+  Duas linhas: em cima, seis seções; embaixo, as páginas da seção ativa. Nenhuma rota some — só muda de lugar.
+  Páginas de detalhe (processo, documento, entidade) acendem a seção mais próxima.
+*/
+type Secao = { id: string; rotulo: string; href: string; itens: { href: string; rotulo: string }[]; casa: (p: string) => boolean };
+
+const SECOES: Secao[] = [
+  { id: "inicio", rotulo: "Início", href: "/", itens: [], casa: (p) => p === "/" },
+  { id: "pagamentos", rotulo: "Rede de pagamentos", href: "/rede-de-pagamentos", itens: [], casa: (p) => p.startsWith("/rede-de-pagamentos") },
+  {
+    id: "acontecimentos", rotulo: "Acontecimentos", href: "/cronologia",
+    itens: [{ href: "/cronologia", rotulo: "Cronologia" }, { href: "/linha-do-tempo", rotulo: "Linha do tempo" }, { href: "/decisoes", rotulo: "Decisões" }, { href: "/mudancas", rotulo: "O que mudou" }],
+    casa: (p) => ["/cronologia", "/linha-do-tempo", "/decisoes", "/mudancas"].some((h) => p === h || p.startsWith(h + "/")),
+  },
+  {
+    id: "autos", rotulo: "Autos", href: "/busca",
+    itens: [{ href: "/busca", rotulo: "Buscar nos autos" }, { href: "/assercoes", rotulo: "Asserções" }, { href: "/referencias", rotulo: "Referências" }],
+    casa: (p) => ["/busca", "/assercoes", "/referencias", "/processo", "/documento"].some((h) => p === h || p.startsWith(h + "/")),
+  },
+  {
+    id: "quem", rotulo: "Quem é quem", href: "/entidades",
+    itens: [{ href: "/entidades", rotulo: "Pessoas e órgãos" }, { href: "/congresso", rotulo: "Congresso" }, { href: "/fontes-externas", rotulo: "Fontes oficiais" }],
+    casa: (p) => ["/entidades", "/entidade", "/congresso", "/fontes-externas"].some((h) => p === h || p.startsWith(h + "/")),
+  },
+  {
+    id: "ajuda", rotulo: "Ajuda", href: "/glossario",
+    itens: [{ href: "/glossario", rotulo: "Glossário" }, { href: "/verificar", rotulo: "Verificar" }, { href: "/sobre", rotulo: "Método" }],
+    casa: (p) => ["/glossario", "/verificar", "/sobre"].some((h) => p === h || p.startsWith(h + "/")),
+  },
 ];
 
-// Páginas de detalhe (processo, documento, entidade) marcam a seção mais próxima.
-function atual(pathname: string, href: string): boolean {
-  if (href === "/") return pathname === "/" || pathname.startsWith("/processo/") || pathname.startsWith("/documento/");
-  if (href === "/entidades") return pathname.startsWith("/entidade");
-  return pathname === href || pathname.startsWith(href + "/");
-}
-
-// Em telas estreitas vira um trilho horizontal de uma linha, rolável; no desktop, a fila de sempre.
 export function NavPrincipal() {
-  const pathname = usePathname() ?? "/";
+  const pathname = (usePathname() ?? "/").replace(/\/+$/, "") || "/";
+  const ativa = SECOES.find((s) => s.casa(pathname)) ?? SECOES[0];
   return (
-    <nav aria-label="Principal" className="nav-trilho -mx-4 overflow-x-auto px-4 lg:mx-0 lg:overflow-visible lg:px-0">
-      <ul className="flex w-max gap-0.5 lg:w-auto lg:flex-wrap">
-        {NAV.map((n) => (
-          <li key={n.href}>
-            <Link
-              href={n.href}
-              aria-current={atual(pathname, n.href) ? "page" : undefined}
-              className="block whitespace-nowrap rounded px-2.5 py-1.5 text-sm font-medium hover:bg-neutral-100"
-            >
-              {n.rotulo}
+    <nav aria-label="Principal" className="space-y-1">
+      <ul className="nav-trilho -mx-4 flex w-max gap-0.5 overflow-x-auto px-4 lg:mx-0 lg:w-auto lg:flex-wrap lg:overflow-visible lg:px-0">
+        {SECOES.map((s) => (
+          <li key={s.id}>
+            <Link href={s.href} aria-current={ativa.id === s.id ? "page" : undefined}
+              className={`block whitespace-nowrap rounded px-2.5 py-1.5 text-sm font-medium hover:bg-neutral-100 ${s.id === "pagamentos" ? "font-semibold" : ""}`}>
+              {s.rotulo}
             </Link>
           </li>
         ))}
       </ul>
+      {ativa.itens.length > 0 && (
+        <ul aria-label={`Páginas de ${ativa.rotulo}`} className="nav-trilho -mx-4 flex w-max gap-0.5 overflow-x-auto border-t border-neutral-200 px-4 pt-1 lg:mx-0 lg:w-auto lg:flex-wrap lg:overflow-visible lg:px-0">
+          {ativa.itens.map((i) => (
+            <li key={i.href}>
+              <Link href={i.href} aria-current={pathname === i.href || pathname.startsWith(i.href + "/") ? "page" : undefined}
+                className="block whitespace-nowrap rounded px-2.5 py-1 text-sm text-neutral-700 hover:bg-neutral-100">
+                {i.rotulo}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 }
