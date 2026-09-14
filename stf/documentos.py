@@ -45,7 +45,8 @@ def extrair_paginas_pdf(data: bytes) -> list[str]:
     paginas: list[str] = []
     with pdfplumber.open(io.BytesIO(data)) as pdf:
         for p in pdf.pages:
-            paginas.append(p.extract_text() or "")
+            # PDFs com negrito "simulado" trazem cada caractere duas vezes na mesma posição ("PPEETT"); dedupe_chars remove
+            paginas.append(p.dedupe_chars(tolerance=1).extract_text() or "")
     return paginas
 
 
