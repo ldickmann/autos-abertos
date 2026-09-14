@@ -1,9 +1,10 @@
 {
- "gerado_em": "2026-09-14T12:36:13.999573+00:00",
+ "gerado_em": "2026-09-14T13:19:26.634915+00:00",
  "limiar": 0.9,
  "propostas": [
   {
    "similaridade": 0.986,
+   "motivo": "parecido",
    "a": {
     "id": 417,
     "nome": "Três Vales Negócios Imobiliários Ltda.",
@@ -23,6 +24,7 @@
   },
   {
    "similaridade": 0.979,
+   "motivo": "parecido",
    "a": {
     "id": 293,
     "nome": "CPI do Crime Organizado",
@@ -42,6 +44,7 @@
   },
   {
    "similaridade": 0.974,
+   "motivo": "parecido",
    "a": {
     "id": 10,
     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO",
@@ -61,6 +64,7 @@
   },
   {
    "similaridade": 0.967,
+   "motivo": "parecido",
    "a": {
     "id": 56,
     "nome": "PROCURADOR-GERAL DA REPÚBLICA",
@@ -80,6 +84,7 @@
   },
   {
    "similaridade": 0.963,
+   "motivo": "parecido",
    "a": {
     "id": 405,
     "nome": "Juízo da 6ª Vara Criminal Federal da Seção Judiciária de São Paulo/SP",
@@ -99,6 +104,7 @@
   },
   {
    "similaridade": 0.952,
+   "motivo": "parecido",
    "a": {
     "id": 139,
     "nome": "MICAELA FERRAZ SEVERO",
@@ -118,6 +124,7 @@
   },
   {
    "similaridade": 0.951,
+   "motivo": "parecido",
    "a": {
     "id": 29,
     "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
@@ -137,6 +144,7 @@
   },
   {
    "similaridade": 0.939,
+   "motivo": "parecido",
    "a": {
     "id": 253,
     "nome": "Comissão de Valores Mobiliários — CVM",
@@ -156,6 +164,7 @@
   },
   {
    "similaridade": 0.933,
+   "motivo": "parecido",
    "a": {
     "id": 246,
     "nome": "Controladoria-Geral da União – CGU",
@@ -175,6 +184,7 @@
   },
   {
    "similaridade": 0.933,
+   "motivo": "parecido",
    "a": {
     "id": 529,
     "nome": "Phillipe Mourão",
@@ -194,6 +204,7 @@
   },
   {
    "similaridade": 0.932,
+   "motivo": "parecido",
    "a": {
     "id": 418,
     "nome": "Trancoso Eco Negócios Imobiliários Ltda.",
@@ -213,6 +224,7 @@
   },
   {
    "similaridade": 0.93,
+   "motivo": "parecido",
    "a": {
     "id": 10,
     "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO",
@@ -232,6 +244,7 @@
   },
   {
    "similaridade": 0.93,
+   "motivo": "parecido",
    "a": {
     "id": 434,
     "nome": "CLÍNICA MAIS MÉDICOS S.A.",
@@ -251,6 +264,7 @@
   },
   {
    "similaridade": 0.923,
+   "motivo": "parecido",
    "a": {
     "id": 331,
     "nome": "PAULO SÉRGIO SOUZA",
@@ -270,6 +284,7 @@
   },
   {
    "similaridade": 0.92,
+   "motivo": "parecido",
    "a": {
     "id": 314,
     "nome": "Banco Central do Brasil",
@@ -289,6 +304,7 @@
   },
   {
    "similaridade": 0.919,
+   "motivo": "parecido",
    "a": {
     "id": 535,
     "nome": "Superintendência Regional da Polícia Federal em Minas Gerais",
@@ -308,6 +324,7 @@
   },
   {
    "similaridade": 0.917,
+   "motivo": "parecido",
    "a": {
     "id": 294,
     "nome": "Comissão Parlamentar de Inquérito",
@@ -327,6 +344,7 @@
   },
   {
    "similaridade": 0.917,
+   "motivo": "parecido",
    "a": {
     "id": 294,
     "nome": "Comissão Parlamentar de Inquérito",
@@ -346,6 +364,7 @@
   },
   {
    "similaridade": 0.917,
+   "motivo": "parecido",
    "a": {
     "id": 300,
     "nome": "Penitenciária Federal em Brasília",
@@ -365,6 +384,7 @@
   },
   {
    "similaridade": 0.914,
+   "motivo": "parecido",
    "a": {
     "id": 375,
     "nome": "Comando Vermelho (CV)",
@@ -384,6 +404,7 @@
   },
   {
    "similaridade": 0.911,
+   "motivo": "parecido",
    "a": {
     "id": 386,
     "nome": "Comissão de Assuntos Econômicos do Senado Federal",
@@ -403,6 +424,7 @@
   },
   {
    "similaridade": 0.908,
+   "motivo": "parecido",
    "a": {
     "id": 515,
     "nome": "Juízo da 10ª Vara Federal da Seção Judiciária do Distrito Federal",
@@ -422,6 +444,7 @@
   },
   {
    "similaridade": 0.907,
+   "motivo": "parecido",
    "a": {
     "id": 428,
     "nome": "Comissão Parlamentar Mista de Inquérito",
@@ -441,6 +464,7 @@
   },
   {
    "similaridade": 0.906,
+   "motivo": "parecido",
    "a": {
     "id": 306,
     "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
@@ -460,6 +484,7 @@
   },
   {
    "similaridade": 0.902,
+   "motivo": "parecido",
    "a": {
     "id": 259,
     "nome": "Ambipar Participações e Empreendimentos S.A.",
@@ -479,6 +504,7 @@
   },
   {
    "similaridade": 0.901,
+   "motivo": "parecido",
    "a": {
     "id": 283,
     "nome": "PHILLIPI MACHADO DE MORAES MOURÃO",
@@ -490,6 +516,546 @@
     "id": 343,
     "nome": "LUIZ PHILLIPE MACHADO DE MORAES MOURÃO",
     "chave": "nome:LUIZ PHILLIPE MACHADO DE MORAES MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.882,
+   "motivo": "nome contido",
+   "a": {
+    "id": 340,
+    "nome": "Tribunal Regional Federal da 1ª Região",
+    "chave": "nome:TRIBUNAL REGIONAL FEDERAL DA 1A REGIAO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 528,
+    "nome": "Tribunal Regional da 1ª Região",
+    "chave": "nome:TRIBUNAL REGIONAL DA 1A REGIAO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.877,
+   "motivo": "nome contido",
+   "a": {
+    "id": 515,
+    "nome": "Juízo da 10ª Vara Federal da Seção Judiciária do Distrito Federal",
+    "chave": "nome:JUIZO DA 10A VARA FEDERAL DA SECAO JUDICIARIA DO DISTRITO FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 526,
+    "nome": "Juízo Federal da 10ª Vara da Seção Judiciária do Distrito Federal",
+    "chave": "nome:JUIZO FEDERAL DA 10A VARA DA SECAO JUDICIARIA DO DISTRITO FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.875,
+   "motivo": "nome contido",
+   "a": {
+    "id": 14,
+    "nome": "PAULO SERGIO NEVES DE SOUZA",
+    "chave": "nome:PAULO SERGIO NEVES DE SOUZA",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 506,
+    "nome": "PAULO SÉRGIO DE SOUZA",
+    "chave": "nome:PAULO SERGIO DE SOUZA",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.846,
+   "motivo": "nome contido",
+   "a": {
+    "id": 302,
+    "nome": "Comissão Mista Parlamentar de Inquérito",
+    "chave": "nome:COMISSAO MISTA PARLAMENTAR DE INQUERITO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 428,
+    "nome": "Comissão Parlamentar Mista de Inquérito",
+    "chave": "nome:COMISSAO PARLAMENTAR MISTA DE INQUERITO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.842,
+   "motivo": "nome contido",
+   "a": {
+    "id": 201,
+    "nome": "HENRIQUE MOURA VORCARO",
+    "chave": "nome:HENRIQUE MOURA VORCARO",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 403,
+    "nome": "HENRIQUE VORCARO",
+    "chave": "nome:HENRIQUE VORCARO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.833,
+   "motivo": "nome contido",
+   "a": {
+    "id": 148,
+    "nome": "FERNANDO ALVES VIEIRA",
+    "chave": "nome:FERNANDO ALVES VIEIRA",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 466,
+    "nome": "FERNANDO VIEIRA",
+    "chave": "nome:FERNANDO VIEIRA",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.824,
+   "motivo": "nome contido",
+   "a": {
+    "id": 2,
+    "nome": "DANIEL BUENO VORCARO",
+    "chave": "nome:DANIEL BUENO VORCARO",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 265,
+    "nome": "DANIEL VORCARO",
+    "chave": "nome:DANIEL VORCARO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.821,
+   "motivo": "nome contido",
+   "a": {
+    "id": 144,
+    "nome": "NELSON SEQUEIROS RODRIGUEZ TANURE",
+    "chave": "nome:NELSON SEQUEIROS RODRIGUEZ TANURE",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 499,
+    "nome": "NELSON SEQUEIROS TANURE",
+    "chave": "nome:NELSON SEQUEIROS TANURE",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.821,
+   "motivo": "nome contido",
+   "a": {
+    "id": 269,
+    "nome": "Flávio Nantes Bolsonaro",
+    "chave": "nome:FLAVIO NANTES BOLSONARO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 271,
+    "nome": "Flávio Bolsonaro",
+    "chave": "nome:FLAVIO BOLSONARO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.811,
+   "motivo": "nome contido",
+   "a": {
+    "id": 173,
+    "nome": "FLAVIO DANIEL AGUETONI",
+    "chave": "nome:FLAVIO DANIEL AGUETONI",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 411,
+    "nome": "FLÁVIO AGUETONI",
+    "chave": "nome:FLAVIO AGUETONI",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.81,
+   "motivo": "nome contido",
+   "a": {
+    "id": 126,
+    "nome": "MAURICIO ANTONIO QUADRADO",
+    "chave": "nome:MAURICIO ANTONIO QUADRADO",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 416,
+    "nome": "Maurício Quadrado",
+    "chave": "nome:MAURICIO QUADRADO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.8,
+   "motivo": "nome contido",
+   "a": {
+    "id": 6,
+    "nome": "FABIANO CAMPOS ZETTEL",
+    "chave": "nome:FABIANO CAMPOS ZETTEL",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 319,
+    "nome": "FABIANO ZETTEL",
+    "chave": "nome:FABIANO ZETTEL",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.8,
+   "motivo": "nome contido",
+   "a": {
+    "id": 14,
+    "nome": "PAULO SERGIO NEVES DE SOUZA",
+    "chave": "nome:PAULO SERGIO NEVES DE SOUZA",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 331,
+    "nome": "PAULO SÉRGIO SOUZA",
+    "chave": "nome:PAULO SERGIO SOUZA",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.784,
+   "motivo": "nome contido",
+   "a": {
+    "id": 406,
+    "nome": "8ª Vara Criminal Federal de São Paulo",
+    "chave": "nome:8A VARA CRIMINAL FEDERAL DE SAO PAULO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 493,
+    "nome": "8ª Vara Federal Criminal de São Paulo",
+    "chave": "nome:8A VARA FEDERAL CRIMINAL DE SAO PAULO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.778,
+   "motivo": "nome contido",
+   "a": {
+    "id": 185,
+    "nome": "FELIPE CANCADO VORCARO",
+    "chave": "nome:FELIPE CANCADO VORCARO",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 426,
+    "nome": "Felipe Vorcaro",
+    "chave": "nome:FELIPE VORCARO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.773,
+   "motivo": "nome contido",
+   "a": {
+    "id": 526,
+    "nome": "Juízo Federal da 10ª Vara da Seção Judiciária do Distrito Federal",
+    "chave": "nome:JUIZO FEDERAL DA 10A VARA DA SECAO JUDICIARIA DO DISTRITO FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 527,
+    "nome": "Juízo da 10ª Vara Federal da Seção do Distrito Federal",
+    "chave": "nome:JUIZO DA 10A VARA FEDERAL DA SECAO DO DISTRITO FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.765,
+   "motivo": "nome contido",
+   "a": {
+    "id": 479,
+    "nome": "ANTONIO CONTE",
+    "chave": "nome:ANTONIO CONTE",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 504,
+    "nome": "ANTONIO AUGUSTO CONTE",
+    "chave": "nome:ANTONIO AUGUSTO CONTE",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.76,
+   "motivo": "nome contido",
+   "a": {
+    "id": 367,
+    "nome": "Roberto de Oliveira Campos Neto",
+    "chave": "nome:ROBERTO DE OLIVEIRA CAMPOS NETO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 382,
+    "nome": "Roberto Campos Neto",
+    "chave": "nome:ROBERTO CAMPOS NETO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.743,
+   "motivo": "nome contido",
+   "a": {
+    "id": 211,
+    "nome": "CESAR REGINATO LIGEIRO",
+    "chave": "nome:CESAR REGINATO LIGEIRO",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 478,
+    "nome": "CESAR LIGEIRO",
+    "chave": "nome:CESAR LIGEIRO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.732,
+   "motivo": "nome contido",
+   "a": {
+    "id": 47,
+    "nome": "POLÍCIA FEDERAL",
+    "chave": "nome:POLICIA FEDERAL",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 532,
+    "nome": "Polícia Rodoviária Federal",
+    "chave": "nome:POLICIA RODOVIARIA FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.727,
+   "motivo": "nome contido",
+   "a": {
+    "id": 109,
+    "nome": "AUGUSTO FERREIRA LIMA",
+    "chave": "nome:AUGUSTO FERREIRA LIMA",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 392,
+    "nome": "Augusto Lima",
+    "chave": "nome:AUGUSTO LIMA",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.722,
+   "motivo": "nome contido",
+   "a": {
+    "id": 490,
+    "nome": "NELSON TANURE",
+    "chave": "nome:NELSON TANURE",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 499,
+    "nome": "NELSON SEQUEIROS TANURE",
+    "chave": "nome:NELSON SEQUEIROS TANURE",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.68,
+   "motivo": "nome contido",
+   "a": {
+    "id": 32,
+    "nome": "LEONARDO AUGUSTO FURTADO PALHARES",
+    "chave": "nome:LEONARDO AUGUSTO FURTADO PALHARES",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 333,
+    "nome": "LEONARDO PALHARES",
+    "chave": "nome:LEONARDO PALHARES",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.625,
+   "motivo": "nome contido",
+   "a": {
+    "id": 283,
+    "nome": "PHILLIPI MACHADO DE MORAES MOURÃO",
+    "chave": "nome:PHILLIPI MACHADO DE MORAES MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 531,
+    "nome": "Phillipi Mourão",
+    "chave": "nome:PHILLIPI MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.6,
+   "motivo": "nome contido",
+   "a": {
+    "id": 29,
+    "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+    "chave": "nome:SUPER EMPREENDIMENTOS E PARTICIPACOES SA",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 345,
+    "nome": "SUPER PARTICIPAÇÕES E EMPREENDIMENTOS S.A.",
+    "chave": "nome:SUPER PARTICIPACOES E EMPREENDIMENTOS SA",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.577,
+   "motivo": "nome contido",
+   "a": {
+    "id": 47,
+    "nome": "POLÍCIA FEDERAL",
+    "chave": "nome:POLICIA FEDERAL",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 305,
+    "nome": "Polícia Legislativa do Senado Federal",
+    "chave": "nome:POLICIA LEGISLATIVA DO SENADO FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.565,
+   "motivo": "nome contido",
+   "a": {
+    "id": 144,
+    "nome": "NELSON SEQUEIROS RODRIGUEZ TANURE",
+    "chave": "nome:NELSON SEQUEIROS RODRIGUEZ TANURE",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 490,
+    "nome": "NELSON TANURE",
+    "chave": "nome:NELSON TANURE",
     "tipo": "pessoa",
     "origem": "documento"
    },

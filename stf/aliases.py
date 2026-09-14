@@ -62,10 +62,13 @@ def propor_aliases(con: sqlite3.Connection, limiar: float = 0.9, minimo: int = 1
         if len(a["norm"]) < minimo or len(b["norm"]) < minimo or a["norm"] == b["norm"]:
             continue
         r = difflib.SequenceMatcher(None, a["norm"], b["norm"]).ratio()
-        if r < limiar:
+        ta, tb = a["norm"].split(), b["norm"].split()
+        # nome contido: mesmo primeiro e último nome, e um é subsequência do outro ("DANIEL VORCARO" ⊂ "DANIEL BUENO VORCARO")
+        contido = len(ta) >= 2 and len(tb) >= 2 and ta[0] == tb[0] and ta[-1] == tb[-1] and (set(ta) <= set(tb) or set(tb) <= set(ta))
+        if r < limiar and not contido:
             continue
         propostas.append({
-            "similaridade": round(r, 3),
+            "similaridade": round(r, 3), "motivo": "nome contido" if contido and r < limiar else "parecido",
             "a": {"id": a["id"], "nome": a["nome"], "chave": a["chave"], "tipo": a["tipo"], "origem": a["origem"]},
             "b": {"id": b["id"], "nome": b["nome"], "chave": b["chave"], "tipo": b["tipo"], "origem": b["origem"]},
             "pessoas": a["tipo"] in ("pessoa", "parte") and b["tipo"] in ("pessoa", "parte"),

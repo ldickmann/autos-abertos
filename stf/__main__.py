@@ -272,10 +272,24 @@ def cmd_ingerir_decisoes(args):
     print(json.dumps(ingerir_decisoes(con, cliente, documentos=docs, log=print), ensure_ascii=False))
 
 
+def cmd_mapa(args):
+    from .mapa import gerar_mapa
+    saida = config.RAIZ / "docs" / "MAPA-DO-CASO.md"
+    saida.parent.mkdir(exist_ok=True)
+    saida.write_text(gerar_mapa(_con(), semente=args.semente), "utf-8")
+    print("mapa →", saida)
+
+
 def cmd_exportar(args):
     from .exportar import exportar
+    from .mapa import gerar_mapa
     saida = Path(args.saida) if args.saida else config.RAIZ / "web" / "public" / "data"
-    print(json.dumps(exportar(_con(), saida, semente=args.semente), ensure_ascii=False), "→", saida)
+    con = _con()
+    print(json.dumps(exportar(con, saida, semente=args.semente), ensure_ascii=False), "→", saida)
+    mapa = config.RAIZ / "docs" / "MAPA-DO-CASO.md"
+    mapa.parent.mkdir(exist_ok=True)
+    mapa.write_text(gerar_mapa(con, semente=args.semente), "utf-8")
+    print("mapa →", mapa)
 
 
 def cmd_status(args):
@@ -312,6 +326,7 @@ def main(argv=None):
     p.add_argument("--dry-run", action="store_true"); p.add_argument("--modelo"); p.add_argument("--effort", default="high")
     p.set_defaults(f=cmd_extrair_assercoes)
     p = sub.add_parser("assercoes"); p.add_argument("--documento", type=int); p.set_defaults(f=cmd_assercoes)
+    p = sub.add_parser("mapa"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_mapa)
     p = sub.add_parser("exportar"); p.add_argument("--saida"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_exportar)
     p = sub.add_parser("preparar-extracao"); p.add_argument("--documentos"); p.add_argument("--limite", type=int)
     p.add_argument("--modelo", default="claude-code/claude-opus-5"); p.set_defaults(f=cmd_preparar_extracao)
