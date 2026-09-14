@@ -248,6 +248,9 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
     (saida / "decisoes.csv").write_text(csv_decisoes(todas_decisoes), "utf-8", newline="\n")
     (saida / "assercoes.csv").write_text(csv_assercoes(todas_assercoes), "utf-8", newline="\n")
     (saida / "cronologia.csv").write_text(csv_cronologia(cron["eventos"]), "utf-8", newline="\n")
+    from .fluxos_export import exportar_fluxos, fluxos_csv
+    _escrever(saida / "fluxos.json", exportar_fluxos(con))
+    (saida / "fluxos.csv").write_text(fluxos_csv(con), "utf-8", newline="\n")
     (saida.parent / "feed.xml").write_text(feed_atom(SITE, avisos=avisos, mudancas=mudancas, gerado_em=gerado_em), "utf-8", newline="\n")
     _escrever(saida / "glossario.json", json.loads((config.RAIZ / "stf" / "curadoria" / "glossario.json").read_text("utf-8"))["verbetes"])
     _escrever(saida / "avisos.json", json.loads((config.RAIZ / "stf" / "curadoria" / "avisos.json").read_text("utf-8"))["avisos"])

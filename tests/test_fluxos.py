@@ -230,3 +230,67 @@ def test_ingerir_fluxos_mascara_cpf_nos_campos_literais(tmp_path):
     for texto in (com[0], com[1], tx[0]):
         assert "027.818.816-86" not in texto and "02781881686" not in texto
     assert "***.818.816-**" in com[0]
+
+
+# ---------------------------------------------------------------- exportação
+
+def _banco_carregado(tmp_path, extra_com=None):
+    from stf.fluxos_export import exportar_fluxos  # noqa: F401  (garante que o módulo existe)
+    con = _banco_com_documento()
+    d = _dataset()
+    if extra_com:
+        d["comunicacoes"].append(extra_com)
+    arq = tmp_path / "rif.json"; arq.write_text(json.dumps(d, ensure_ascii=False), "utf-8")
+    ingerir_fluxos(con, arq)
+    return con
+
+
+ESCRITURA_SEM_DIRECAO = {
+    "secao": "automatica", "numero": "1.1", "titular": "57.391.420/0001-63", "segmento": "Notários e Registradores",
+    "comunicante": "cartório", "local": "SP", "periodo_inicio": "2022-03-14", "periodo_fim": "2022-03-14", "valor": "38.000.000,00",
+    "informacoes": "Diferença entre o valor fiscal e valor declarado", "pagina_inicio": 3, "pagina_fim": 3,
+    "participacoes": [{"nome": "IGREJA TESTE", "documento": "57.391.420/0001-63", "papel": "titular"},
+                      {"nome": "IM2D LTDA", "documento": "02.684.297/0001-87", "papel": "titular"},
+                      {"nome": "FULANO DA SILVA", "documento": "027.818.816-86", "papel": "procurador"}],
+    "bens": [{"id": "im", "tipo": "imovel", "descricao": "Imóvel", "valor": "38.000.000,00", "identificacao": {"livro": "1"}}],
+    "transacoes": [], "ocorrencias": [],
+}
+
+
+def test_exportar_fluxos_tem_fontes_atores_comunicacoes_transacoes_e_grafo(tmp_path):
+    from stf.fluxos_export import exportar_fluxos
+    con = _banco_carregado(tmp_path, ESCRITURA_SEM_DIRECAO)
+    out = exportar_fluxos(con)
+    assert set(out) >= {"fontes", "atores", "comunicacoes", "transacoes", "grafo"}
+    assert out["fontes"][0]["identificador"] == "140515.2.9294.11521" and out["fontes"][0]["documento"]["id"] == 274
+    ator = next(a for a in out["atores"] if a["chave"] == "cpf:818816")
+    assert ator["documento_mascarado"] == "***.818.816-**" and ator["entidade_id"] == 9
+    assert ator["totais"]["saidas_centavos"] == 1_920_500_000 and ator["totais"]["entradas_centavos"] == 0
+    igreja = next(a for a in out["atores"] if a["chave"] == "cnpj:57391420000163")
+    assert igreja["totais"]["entradas_centavos"] == 1_920_500_000
+    assert out["transacoes"][0]["trecho_fonte"] and out["transacoes"][0]["documento_id"] == 274
+    texto = json.dumps(out, ensure_ascii=False)
+    assert "identificacao" not in texto and "027.818.816-86" not in texto   # bens sem identificação; CPF só mascarado
+
+
+def test_grafo_agrega_por_par_e_liga_titulares_de_escritura_sem_direcao(tmp_path):
+    from stf.fluxos_export import exportar_fluxos
+    con = _banco_carregado(tmp_path, ESCRITURA_SEM_DIRECAO)
+    g = exportar_fluxos(con)["grafo"]
+    ids = {a["chave"]: a["id"] for a in exportar_fluxos(con)["atores"]}
+    dirigida = next(e for e in g["arestas"] if e["dirigida"])
+    assert dirigida["origem"] == ids["cpf:818816"] and dirigida["destino"] == ids["cnpj:57391420000163"]
+    assert dirigida["valor_centavos"] == 1_920_500_000 and dirigida["n"] == 1 and dirigida["transacoes"]
+    nao_dirigida = next(e for e in g["arestas"] if not e["dirigida"])
+    assert {nao_dirigida["origem"], nao_dirigida["destino"]} == {ids["cnpj:57391420000163"], ids["cnpj:02684297000187"]}
+    assert nao_dirigida["valor_centavos"] == 3_800_000_000 and nao_dirigida["comunicacao_id"]
+    assert {n["id"] for n in g["nos"]} >= {ids["cpf:818816"], ids["cnpj:57391420000163"], ids["cnpj:02684297000187"]}
+
+
+def test_fluxos_csv_uma_linha_por_transacao_com_pagina_e_trecho(tmp_path):
+    from stf.fluxos_export import fluxos_csv
+    con = _banco_carregado(tmp_path)
+    csv = fluxos_csv(con)
+    linhas = csv.strip().splitlines()
+    assert linhas[0].startswith("fonte,comunicacao,secao,origem,destino,valor_reais,data,periodo_inicio,periodo_fim,tipo,natureza,quantidade,pagina,trecho")
+    assert len(linhas) == 2 and "19205000.00" in linhas[1] and "FULANO DA SILVA" in linhas[1] and "IGREJA TESTE" in linhas[1]

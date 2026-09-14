@@ -4,8 +4,25 @@
     {
       "name": "site-estatico",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8765", "-d", "web/out"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765",
+        "-d",
+        "web/out"
+      ],
       "port": 8765
+    },
+    {
+      "name": "site-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "web"
+      ],
+      "port": 3000
     }
   ]
 }
