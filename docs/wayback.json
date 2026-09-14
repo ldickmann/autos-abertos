@@ -79,5 +79,167 @@
     "copia": "http://web.archive.org/web/20260914135702/https://raw.githubusercontent.com/ldickmann/autos-abertos/main/CHANGELOG-PORTAL.md"
    }
   ]
+ },
+ {
+  "em": "2026-09-14T14:10+00:00",
+  "modo": "salvar",
+  "urls": [
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/verificar/",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/decisoes/",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/linha-do-tempo/",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/mudancas/",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/glossario/",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/sobre/",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/processo/7514886/",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/data/integridade.json",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/data/decisoes.json",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/data/meta.json",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://github.com/ldickmann/autos-abertos",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://github.com/ldickmann/autos-abertos/releases/latest",
+    "status": 500,
+    "copia": null
+   },
+   {
+    "url": "https://raw.githubusercontent.com/ldickmann/autos-abertos/main/INTEGRIDADE.sha256",
+    "status": 429,
+    "copia": null
+   },
+   {
+    "url": "https://raw.githubusercontent.com/ldickmann/autos-abertos/main/CHANGELOG-PORTAL.md",
+    "status": 429,
+    "copia": null
+   }
+  ]
+ },
+ {
+  "em": "2026-09-14T14:14+00:00",
+  "modo": "checar",
+  "urls": [
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/verificar/",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/decisoes/",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/linha-do-tempo/",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/mudancas/",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/glossario/",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/sobre/",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/processo/7514886/",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/data/integridade.json",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/data/decisoes.json",
+    "status": 200,
+    "copia": "http://web.archive.org/web/20260914135613/https://ldickmann.github.io/autos-abertos/data/decisoes.json"
+   },
+   {
+    "url": "https://ldickmann.github.io/autos-abertos/data/meta.json",
+    "status": 200,
+    "copia": "http://web.archive.org/web/20260914141343/https://ldickmann.github.io/autos-abertos/data/meta.json"
+   },
+   {
+    "url": "https://github.com/ldickmann/autos-abertos",
+    "status": 200,
+    "copia": "http://web.archive.org/web/20260914141322/https://github.com/ldickmann/autos-abertos"
+   },
+   {
+    "url": "https://github.com/ldickmann/autos-abertos/releases/latest",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://raw.githubusercontent.com/ldickmann/autos-abertos/main/INTEGRIDADE.sha256",
+    "status": 404,
+    "copia": null
+   },
+   {
+    "url": "https://raw.githubusercontent.com/ldickmann/autos-abertos/main/CHANGELOG-PORTAL.md",
+    "status": 200,
+    "copia": "http://web.archive.org/web/20260914135702/https://raw.githubusercontent.com/ldickmann/autos-abertos/main/CHANGELOG-PORTAL.md"
+   }
+  ]
  }
 ]
