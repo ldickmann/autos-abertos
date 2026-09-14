@@ -312,7 +312,7 @@ def cmd_exportar(args):
     from .integridade import gerar_manifesto
     man = gerar_manifesto(con)
     (saida / "integridade.json").write_text(json.dumps(man, ensure_ascii=False, indent=1), "utf-8")
-    (config.RAIZ / "INTEGRIDADE.sha256").write_text(f"{man['raiz_sha256']}  integridade.json  gerado_em={man['gerado_em']}\n", "utf-8")
+    (config.RAIZ / "INTEGRIDADE.sha256").write_text(f"{man['raiz_sha256']}  integridade.json  gerado_em={man['gerado_em']}\n", "utf-8", newline="\n")
     print("integridade →", saida / "integridade.json", "| raiz", man["raiz_sha256"][:16] + "…")
 
 
