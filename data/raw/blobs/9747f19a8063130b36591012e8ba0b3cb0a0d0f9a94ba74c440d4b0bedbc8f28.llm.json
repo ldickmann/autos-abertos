@@ -1,0 +1,53 @@
+{
+  "itens": [
+    {
+      "pedido": "garantia do direito de não comparecer à sessão da CPI do Crime Organizado designada para sua oitiva (Petição nº 22049/2026)",
+      "quem_pediu": "Roberto de Oliveira Campos Neto",
+      "resultado": "parcialmente_deferido",
+      "decisao": "acolheu parcialmente o pedido, para convolar o requerimento de convocação em convite",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-02",
+      "pagina": 17,
+      "trecho_fonte": "24. Ante o exposto, acolho parcialmente o pedido, para convolar o requerimento de convocação em convite.",
+      "condicoes": []
+    },
+    {
+      "pedido": "subsidiariamente, convolação do requerimento de convocação em convite, nos termos realizados em relação ao atual presidente do Banco Central do Brasil",
+      "quem_pediu": "Roberto de Oliveira Campos Neto",
+      "resultado": "deferido",
+      "decisao": "acolheu o pedido subsidiário para convolar o requerimento de convocação em convite, nos exatos termos realizados em relação ao atual presidente do Banco Central do Brasil",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-02",
+      "pagina": 16,
+      "trecho_fonte": "entendo ser o caso de acolher o pedido subsidiário formulado, para convolar o requerimento de convocação em convite, nos exatos termos realizados em relação ao atual presidente do Banco Central do Brasil.",
+      "condicoes": []
+    },
+    {
+      "pedido": "garantia expressa de direitos ao requerente caso venha a comparecer à audiência designada, na qualidade de convidado ou convocado",
+      "quem_pediu": "Roberto de Oliveira Campos Neto",
+      "resultado": "deferido",
+      "decisao": "acolheu o pedido para garantir ao requerente, caso compareça na qualidade de convidado, o direito ao silêncio quanto a perguntas com risco de autoincriminação, a assistência de advogado e a vedação de medida coercitiva ou constrangimento",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-02",
+      "pagina": 17,
+      "trecho_fonte": "25. Acolho, outrossim, o pedido subsidiário para garantir ao requerente, caso venha a comparecer à audiência designada, na qualidade de convidado, os seguintes direitos e garantias:",
+      "condicoes": [
+        "direito de permanecer em silêncio relativamente às perguntas cujas respostas possam implicar risco de autoincriminação, cabendo ao próprio convidado, com sua defesa técnica, aferir a existência desse risco",
+        "assistência de advogado durante o ato",
+        "vedação de qualquer medida coercitiva e constrangimento físico ou moral pelo exercício da garantia da não autoincriminação"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão à Presidência da CPI do Crime Organizado e às defesas constituídas",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com urgência e remessa de cópia integral da decisão, à Presidência da CPI do Crime Organizado e às defesas constituídas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-02",
+      "pagina": 17,
+      "trecho_fonte": "26. Comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI do Crime Organizado e as defesas constituídas.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "A petição enumerou sete direitos e garantias; o dispositivo enumera três."
+}

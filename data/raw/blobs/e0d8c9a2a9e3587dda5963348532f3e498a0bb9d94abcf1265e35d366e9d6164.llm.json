@@ -1,0 +1,191 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198 do Distrito Federal tem como relator o Ministro Dias Toffoli.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. DIAS TOFFOLI",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Procurador-Geral da República apresentou manifestação nos autos.",
+      "pagina": 1,
+      "trecho_fonte": "Trata-se de manifestação apresentada pelo Procurador-Geral da República nos seguintes termos:",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República relata que, em decisão de 13.1.2026, o Ministro relator determinou, dentre outras medidas, que todos os bens e materiais apreendidos na operação de 14.1.2026 fossem lacrados e acautelados na sede do Supremo Tribunal Federal.",
+      "pagina": 1,
+      "trecho_fonte": "Em decisão de 13.1.2026, o eminente Ministro relator determinou, dentre outras medidas, que todos os bens e materiais apreendidos na operação de 14.1.2026 fossem lacrados eacautelados nasededo Supremo TribunalFederal.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a manifestação do Procurador-Geral da República, a autoridade policial requereu a reconsideração da determinação de lacração, apontando os riscos de frustração da operação caso não fosse realizada a imediata submissão dos dispositivos apreendidos à exploração técnico-pericial.",
+      "pagina": 1,
+      "trecho_fonte": "a autoridade policial requereu a reconsideração da determinação, apontando os riscos de frustração da operação caso não fosse realizada a imediata submissão dos dispositivos apreendidos à exploração técnica-pericial.",
+      "atribuida_a": "Autoridade policial (conforme relatado pelo Procurador-Geral da República)",
+      "entidades": [
+        {"nome": "autoridade policial", "tipo": "orgao_publico"},
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República relata que, em 14.1.2026, a Procuradoria-Geral da República manifestou-se pela reconsideração da determinação de lacração e acautelamento do material na sede do Supremo Tribunal Federal, requerendo que os materiais apreendidos permanecessem sob custódia da autoridade policial.",
+      "pagina": 1,
+      "trecho_fonte": "Em 14.1.2026, a Procuradoria-Geral da República manifestou-se pela reconsideração da determinação de lacração e acautelamento do material na sede do Supremo Tribunal Federal, requerendo fosse autorizado que os materiais apreendidos permanecessem sob custódia da autoridade policial.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal requer autorização para que a Procuradoria-Geral da República realize a extração e análise de todo o acervo probatório colhido nos autos, alegando a necessidade de formação adequada da opinião ministerial sobre a materialidade e autoria dos delitos em apuração.",
+      "pagina": 1,
+      "trecho_fonte": "dada a necessidade de formação adequada da opinião ministerial sobre a materialidade e autoria dos delitos em apuração, o Ministério Público Federal requer autorização para que a Procuradoria-Geral da República realize a extração e",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República sustenta que a análise do material probatório presente nos autos poderá acrescentar um juízo adicional sobre a participação de cada investigado nos ilícitos sob apuração.",
+      "pagina": 2,
+      "trecho_fonte": "A análise do material probatório presente nos autos poderá acrescentar um juízo adicional sobre a participação de cada investigado nos ilícitos sob apuração.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República sustenta que a autorização requerida não representa prejuízo ao andamento da investigação, de modo que seu deferimento constitui medida cabível e adequada.",
+      "pagina": 2,
+      "trecho_fonte": "a autorização requerida não representa prejuízo ao andamento da investigação, de modo que seu deferimento constitui medida cabíveleadequada.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A manifestação do Procurador-Geral da República é pela autorização para que a Procuradoria-Geral da República proceda à extração e análise de todo o acervo probatório colhido nos autos, com posterior disponibilização.",
+      "pagina": 2,
+      "trecho_fonte": "A manifestação é pela autorização para que a Procuradoria-Geral da República proceda à extração e análise de todo o acervo probatório colhido nos autos em espécie, com posterior disponibilização.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que, tendo em vista o êxito da operação realizada no dia da decisão, o material probatório colhido deve ser apreciado pelo titular da ação penal para a adequada formação da opinião ministerial sobre a materialidade e autoria dos delitos em apuração.",
+      "pagina": 2,
+      "trecho_fonte": "Tendo em vista o êxito da operação realizada no dia de hoje, o material probatório colhido deve ser apreciado pelo titular da ação penal para a adequada formação da opinião ministerial sobre a materialidade e autoria dos delitos em apuração.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma, tal como referido pelo Parquet em manifestações anteriores, que a investigação possui escopo mais amplo e não se confunde com os inquéritos anteriormente instaurados.",
+      "pagina": 2,
+      "trecho_fonte": "tal como referido pelo Parquet em manifestações anteriores, a presente investigação possui escopo mais amplo e não se confunde com os inquéritos anteriormente instaurados",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Parquet", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que a investigação, em tese, teria revelado que fundos eram operados para a gestão fraudulenta, o desvio de valores e o branqueamento de capitais pelo Banco Master, em um quadro de suposto aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização.",
+      "pagina": 2,
+      "trecho_fonte": "em tese, teria revelado que fundos eram operados para a gestão fraudulenta, o desvio de valores e o branqueamento de capitais pelo Banco Master em um quadro de suposto aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Banco Master", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a providência requerida pelo Procurador-Geral da República permitirá que o órgão acusador, destinatário do material probatório colhido nos autos, tenha uma visão sistêmica dos supostos crimes de grandes proporções por ele, em tese, identificados até o momento.",
+      "pagina": 2,
+      "trecho_fonte": "a providência requerida pelo Procurador-Geral da República permitirá que o órgão acusador, destinatário do material probatório colhido nos autos, tenha uma visão sistêmica dos supostos crimes de grandes proporções por ele, em tese, identificados até o presente momento.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pedido formulado pelo Procurador-Geral da República.",
+      "pagina": 2,
+      "trecho_fonte": "Posto isso, defiro o pedido formulado pelo Procurador-Geral da",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que se oficie ao Diretor-Geral da Polícia Federal para as providências necessárias, autorizando desde logo o encaminhamento direto à PGR do material probatório.",
+      "pagina": 3,
+      "trecho_fonte": "determino que se oficie ao Diretor-Geral da Polícia Federal para as providências necessárias, autorizando, desde logo, o encaminhamento direto à PGR do referido material.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Diretor-Geral da Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "PGR", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que o Procurador-Geral da República adote as cautelas necessárias à custódia do material, mantendo os aparelhos eletricamente carregados e em modo desacoplado de redes telefônicas e de wi-fi, para preservação de seu conteúdo e oportuna extração e periciamento.",
+      "pagina": 3,
+      "trecho_fonte": "Determino, outrossim, que o Procurador-Geral da República adote as cautelas necessárias à correta e cuidadosa custódia do referido material, bastando para tanto que os aparelhos sejam mantidos eletricamente carregados e em modo desacoplado de redes telefônicas e de wi-fi",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procurador-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o cumprimento e a publicação da decisão.",
+      "pagina": 3,
+      "trecho_fonte": "Cumpra-se. Publique-se.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 14 de janeiro de 2026, pelo Ministro Dias Toffoli, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 14 de janeiro de 2026. Ministro DIASTOFFOLI Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

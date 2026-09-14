@@ -1,0 +1,18 @@
+{
+  "itens": [
+    {
+      "pedido": "certificação do trânsito em julgado da decisão do e-doc. 237 e baixa dos autos ao arquivo",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou à Secretaria Judiciária que certifique o trânsito em julgado da decisão do e-doc. 237, com a baixa dos autos ao arquivo",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-02-10",
+      "pagina": 1,
+      "trecho_fonte": "Determino à Secretaria Judiciária que certifique o trânsito em julgado da decisão por mim proferida no e-doc. 237, com a devida baixa dos autos ao arquivo.",
+      "condicoes": [
+        "questões incidentais pendentes poderão ser apreciadas no âmbito do INQ 5.026"
+      ]
+    }
+  ],
+  "observacoes": null
+}

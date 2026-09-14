@@ -1,0 +1,487 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "FERNANDO ALVES VIEIRA apresentou petição requerendo, com fundamento no art. 118 do Código de Processo Penal e nos arts. 5º, LIV e LV, da Constituição da República, a restituição de armas de fogo, munições e veículos apreendidos durante cumprimento de mandado de busca e apreensão realizado em sua residência.",
+      "pagina": 4,
+      "trecho_fonte": "FERNANDO ALVES VIEIRA, por meio da qual requer, com fundamento no art. 118 do Código de Processo Penal e nos arts. 5º, LIV e LV, da Constituição da República, a restituição de armas de fogo, munições e veículos apreendidos durante cumprimento de mandado de busca e apreensão",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FERNANDO ALVES VIEIRA", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A petição, apresentada no âmbito das investigações relacionadas ao denominado “Banco Master”, requer também a retificação de depósito judicial e a juntada de informações acerca da destinação de moeda estrangeira apreendida.",
+      "pagina": 4,
+      "trecho_fonte": "no âmbito das investigações relacionadas ao denominado “Banco Master”, bem como a retificação de depósito judicial e a juntada de informações acerca da destinação de moeda estrangeira apreendida",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Banco Master", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente aduz que colaborou integralmente com a diligência policial realizada em 14/01/2026, indicando espontaneamente os locais de armazenamento dos armamentos, os quais seriam regularmente registrados perante o SINARM e mantidos em conformidade com as exigências do Exército Brasileiro.",
+      "pagina": 4,
+      "trecho_fonte": "colaborou integralmente com a diligência policial realizada em 14/01/2026, indicando espontaneamente os locais de armazenamento dos armamentos, os quais seriam regularmente registrados perante o SINARM e mantidos em conformidade com as exigências do Exército Brasileiro",
+      "atribuida_a": "FERNANDO ALVES VIEIRA (requerente)",
+      "entidades": [
+        {"nome": "Exército Brasileiro", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente afirma que a apreensão decorreu exclusivamente da impossibilidade momentânea de acesso ao sistema SINARM durante a operação policial, inexistindo qualquer imputação relacionada a crimes violentos ou utilização ilícita dos armamentos.",
+      "pagina": 4,
+      "trecho_fonte": "Afirma que a apreensão decorreu exclusivamente da impossibilidade momentânea de acesso ao sistema SINARM durante a operação policial, inexistindo qualquer imputação relacionada a crimes violentos ou utilização ilícita dos armamentos.",
+      "atribuida_a": "FERNANDO ALVES VIEIRA (requerente)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente aduz que as 13 armas de fogo, carregadores e munições apreendidos foram adquiridos licitamente, possuem registro regular e não guardam pertinência com os fatos investigados, que seriam de natureza estritamente econômica e financeira.",
+      "pagina": 5,
+      "trecho_fonte": "as 13 armas de fogo, carregadores e munições apreendidos foram adquiridos licitamente, possuem registro regular e não guardam qualquer pertinência com os fatos investigados, os quais seriam de natureza estritamente econômica e financeira",
+      "atribuida_a": "FERNANDO ALVES VIEIRA (requerente)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente defende o preenchimento dos requisitos previstos no art. 118 do CPP para restituição dos bens.",
+      "pagina": 5,
+      "trecho_fonte": "Defende, assim, o preenchimento dos requisitos previstos no art. 118 do CPP para restituição dos bens.",
+      "atribuida_a": "FERNANDO ALVES VIEIRA (requerente)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente alega que os veículos apreendidos, um Mitsubishi Pajero HPE 3.2D e um Land Rover Range Rover SVR, são de sua propriedade.",
+      "pagina": 5,
+      "trecho_fonte": "No tocante aos veículos apreendidos: (i) um Mitsubishi Pajero HPE 3.2D, e (ii) um Land Rover Range Rover SVR, alega que são de sua propriedade.",
+      "atribuida_a": "FERNANDO ALVES VIEIRA (requerente)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente alega que não haveria vinculação dos veículos com os fatos investigados e requer sua restituição mediante restrição de inalienabilidade e sua nomeação como fiel depositário, sob o argumento de risco de deterioração e depreciação patrimonial.",
+      "pagina": 5,
+      "trecho_fonte": "não haveria vinculação com os fatos investigados, de forma que requer sua restituição mediante imposição de restrição de inalienabilidade, além de sua nomeação como fiel depositário, sob o argumento de risco de deterioração e depreciação patrimonial decorrente da permanência em depósito estatal",
+      "atribuida_a": "FERNANDO ALVES VIEIRA (requerente)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente afirma existir equívoco no depósito judicial referente à quantia de R$ 184.750,00 apreendida em sua residência, uma vez que o numerário teria sido vinculado ao nome de terceiro estranho aos autos, Wilson Augusto Alves, e pugna pela retificação.",
+      "pagina": 5,
+      "trecho_fonte": "afirma existir equívoco no depósito judicial referente à quantia de R$ 184.750,00, importância essa apreendida em sua residência, uma vez que o numerário teria sido vinculado ao nome de terceiro estranho aos autos, Wilson Augusto Alves, pelo que pugna pela respectiva retificação",
+      "atribuida_a": "FERNANDO ALVES VIEIRA (requerente)",
+      "entidades": [
+        {"nome": "Wilson Augusto Alves", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Ministério Público Federal, instado a se manifestar, apresentou manifestação (e-Doc. 606).",
+      "pagina": 5,
+      "trecho_fonte": "Instado a se manifestar, o Ministério Público Federal (e-Doc. 606) posicionou-se pelo indeferimento dos pedidos.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal posicionou-se pelo indeferimento dos pedidos (e-Doc. 606).",
+      "pagina": 5,
+      "trecho_fonte": "o Ministério Público Federal (e-Doc. 606) posicionou-se pelo indeferimento dos pedidos",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal assentou que a restituição de bens apreendidos no curso de investigação criminal, antes do trânsito em julgado da decisão final, subordina-se ao preenchimento cumulativo dos requisitos previstos nos arts. 118 a 120 do Código de Processo Penal, em consonância com o art. 91, II, do Código Penal.",
+      "pagina": 5,
+      "trecho_fonte": "assentou que a restituição de bens apreendidos no curso de investigação criminal, antes do trânsito em julgado da decisão final, subordina-se ao preenchimento cumulativo dos requisitos previstos nos arts. 118 a 120 do Código de Processo Penal, em consonância com o art. 91, II, do Código Penal",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal assentou que os requisitos para restituição incluem inexistência de controvérsia quanto à titularidade, inexistência de risco ao regular desenvolvimento das investigações e comprovação inequívoca da origem lícita do patrimônio.",
+      "pagina": 6,
+      "trecho_fonte": "controvérsia quanto à titularidade, inexistência de risco ao regular desenvolvimento das investigações e comprovação inequívoca da origem lícita do patrimônio, de modo a afastar eventual hipótese de perdimento em favor da União",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal consignou que permanecem hígidos os fundamentos que justificaram o sequestro patrimonial, subsistindo a necessidade de manutenção da medida assecuratória.",
+      "pagina": 6,
+      "trecho_fonte": "Consignou-se, também, que permanecem hígidos os fundamentos que justificaram o sequestro patrimonial, subsistindo a necessidade de manutenção da medida assecuratória.",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal ressaltou que eventual nomeação do investigado como depositário fiel implicaria a fruição indireta de bens possivelmente vinculados à prática criminosa, esvaziando a efetividade da constrição judicial.",
+      "pagina": 6,
+      "trecho_fonte": "Ressaltou-se, ainda, que eventual nomeação do investigado como depositário fiel implicaria a fruição indireta de bens possivelmente vinculados à prática criminosa, esvaziando a efetividade da constrição judicial e frustrando a finalidade cautelar da medida.",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parquet fundamenta o posicionamento pelo indeferimento da restituição na ausência de conclusão dos exames periciais, o que inviabilizaria a adequada apreciação do pedido restitutório, porquanto a devolução prematura poderia comprometer a eficácia da persecução penal.",
+      "pagina": 6,
+      "trecho_fonte": "não há conclusão dos exames periciais, o que inviabiliza, neste momento processual, a adequada apreciação do pedido restitutório, porquanto a devolução prematura poderia comprometer a eficácia da persecução penal e a própria aplicação da lei penal",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Quanto ao numerário em moeda estrangeira e à alegada inconsistência na guia de depósito, o Ministério Público Federal reputou cabível a intimação da autoridade policial para prestar esclarecimentos acerca da forma de depósito e da regularidade dos registros.",
+      "pagina": 6,
+      "trecho_fonte": "reputou-se cabível a intimação da autoridade policial para prestar esclarecimentos acerca da forma de depósito e da regularidade dos registros correlatos",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Polícia Federal prestou informações contrárias ao pleito restitutório.",
+      "pagina": 6,
+      "trecho_fonte": "A Polícia Federal prestou informações contrárias ao pleito restitutório",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal aduz que a devolução dos bens encontra óbice expresso no art. 118 do Código de Processo Penal, uma vez que os objetos apreendidos, notadamente os veículos e armamentos, permanecem necessários à instrução investigativa.",
+      "pagina": 6,
+      "trecho_fonte": "aduzindo que a devolução dos bens encontra óbice expresso no art. 118 do Código de Processo Penal, uma vez que os objetos apreendidos, notadamente os veículos e armamentos, permanecem necessários à instrução investigativa",
+      "atribuida_a": "Polícia Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal aduz que estão pendentes os exames técnico-periciais destinados a verificar eventual adulteração e aferir a conformidade das informações prestadas pela defesa com os vestígios materiais colhidos.",
+      "pagina": 6,
+      "trecho_fonte": "estando ainda pendentes os exames técnico-periciais destinados a verificar eventual adulteração e aferir a conformidade das informações prestadas pela defesa com os vestígios",
+      "atribuida_a": "Polícia Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "As medidas de sequestro e bloqueio de bens foram deferidas com fundamento nos arts. 125 e seguintes do Código de Processo Penal e no art. 4º da Lei n. 9.613/1998.",
+      "pagina": 7,
+      "trecho_fonte": "As medidas de sequestro e bloqueio de bens foram deferidas com fundamento nos arts. 125 e seguintes do Código de Processo Penal e no art. 4º da Lei n. 9.613/1998",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que as medidas de sequestro e bloqueio foram deferidas com a finalidade específica de assegurar a eficácia da persecução penal, a reparação do dano, o perdimento de produtos e proveitos do crime e a preservação do resultado útil do processo, em investigação que apura delitos de elevada gravidade e repercussão econômica.",
+      "pagina": 7,
+      "trecho_fonte": "com a finalidade específica de assegurar a eficácia da persecução penal, a reparação do dano, o perdimento de produtos e proveitos do crime e a preservação do resultado útil do processo, em contexto de investigação que apura a prática de delitos de elevada gravidade e repercussão econômica",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a liberação de bens apreendidos configura medida de exceção, admitida somente quando demonstrado, de forma inequívoca, que não guardam qualquer relação com os fatos investigados ou não possam ser alcançados por eventual decreto de perdimento ou de reparação do dano.",
+      "pagina": 7,
+      "trecho_fonte": "A liberação de bens apreendidos, ainda que para a satisfação de créditos, configura medida de exceção, que somente se admite quando demonstrado, de forma inequívoca, que não guardam qualquer relação com os fatos investigados",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que não é essa a hipótese dos autos.",
+      "pagina": 7,
+      "trecho_fonte": "Não é essa, contudo, a hipótese dos autos.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que os bens cuja liberação se pretende integram o conjunto patrimonial objeto de constrição porque, em juízo de cognição sumária, há fortes indícios de que possam constituir produto, proveito ou instrumento de atividades ilícitas, ou bens adquiridos ou mantidos com recursos de origem ainda sob apuração.",
+      "pagina": 7,
+      "trecho_fonte": "os bens, cuja liberação se pretende integram o conjunto patrimonial objeto de constrição justamente porque, em juízo de cognição sumária, há fortes indícios de que possam constituir produto, proveito ou instrumento de atividades ilícitas",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a finalidade primordial das medidas assecuratórias é impedir a dissipação do patrimônio e garantir a efetividade da jurisdição penal.",
+      "pagina": 7,
+      "trecho_fonte": "A finalidade primordial das medidas assecuratórias é impedir a dissipação do patrimônio e garantir a efetividade da jurisdição penal",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a finalidade das medidas assecuratórias não pode ser relativizada a partir de interesses patrimoniais, ainda que revestidos de caráter alimentar, sob pena de esvaziamento da lógica do sequestro criminal.",
+      "pagina": 8,
+      "trecho_fonte": "podendo ser relativizada a partir de interesses patrimoniais, ainda que revestidos de caráter alimentar, sob pena de esvaziamento da própria lógica do sequestro criminal",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o art. 120 do Código de Processo Penal autoriza a restituição de coisas apreendidas apenas quando não mais interessarem ao processo e desde que não exista dúvida quanto ao direito do reclamante.",
+      "pagina": 8,
+      "trecho_fonte": "o art. 120 do Código de Processo Penal autoriza a restituição de coisas apreendidas apenas quando não mais interessarem ao processo e desde que não exista dúvida quanto ao direito do reclamante",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, no caso concreto, subsiste interesse processual direto na manutenção da constrição, seja para fins de prova, seja para assegurar futura reparação do dano e eventual decretação de perdimento.",
+      "pagina": 8,
+      "trecho_fonte": "No caso concreto, todavia, subsiste interesse processual direto na manutenção da constrição, seja para fins de prova, seja para assegurar futura reparação do dano e eventual decretação de perdimento, circunstâncias que afastam, por ora, a possibilidade de levantamento.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a liberação, na atual fase das investigações, dos veículos, armas e munições poderia comprometer a integralidade da garantia patrimonial destinada à recomposição dos prejuízos eventualmente causados às vítimas e ao erário, além de dificultar a futura execução de eventual decreto condenatório.",
+      "pagina": 8,
+      "trecho_fonte": "a liberação, na atual fase das investigações, dos veículos, armas e munições poderia comprometer a integralidade da garantia patrimonial destinada à recomposição dos prejuízos eventualmente causados às vítimas e ao erário, além de dificultar a futura execução de eventual decreto condenatório",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o ressarcimento ao erário ou a perda de bens não podem ser categorizados juridicamente como penas ou sanções, tratando-se de medidas destinadas à recomposição do patrimônio público desfalcado, que precede ao interesse de qualquer credor.",
+      "pagina": 8,
+      "trecho_fonte": "o ressarcimento ao erário ou a perda de bens sequer podem ser categorizados juridicamente como penas ou sanções. Cuidam-se de medidas destinadas à recomposição do patrimônio público desfalcado e que precede ao interesse de qualquer credor.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que nada pode ser exigido antes do dever de recompor o produto do crime contra a Administração Pública.",
+      "pagina": 8,
+      "trecho_fonte": "Nada pode ser exigido antes do dever de recompor o produto do crime contra a Administração Pública.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O parquet posicionou-se pela impossibilidade da restituição dos bens, posto que não houve o deslinde das investigações e inexiste prova inequívoca acerca da origem da titularidade dos bens.",
+      "pagina": 9,
+      "trecho_fonte": "o parquet se posicionou pela impossibilidade da restituição dos bens, posto que não houve o deslinde das investigações, bem como inexiste prova inequívoca acerca da origem da titularidade dos bens",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal afirma (e-Doc. 606, fl. 6-7) que não há nos autos notícia sobre a conclusão dos exames periciais dos bens apreendidos e que a ausência dessa informação impede a adequada apreciação do pleito.",
+      "pagina": 9,
+      "trecho_fonte": "Não há nos autos, contudo, notícia sobre a conclusão dos exames periciais dos bens apreendidos. A ausência dessa informação impede a adequada apreciação do pleito e pode comprometer a aplicação da lei penal.",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal afirma que, em relação aos veículos apreendidos, a situação fática que baseou seu sequestro não foi alterada, mantendo-se necessária a medida.",
+      "pagina": 9,
+      "trecho_fonte": "Em relação aos veículos apreendidos, a situação fática que baseou seu sequestro não foi alterada, mantendo-se necessária a medida em espécie.",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Ministério Público Federal afirma que a nomeação do requerente como depositário fiel configuraria proveito de fato de presumível produto de infração penal.",
+      "pagina": 9,
+      "trecho_fonte": "a nomeação do requerente como depositário fiel configuraria proveito de fato de presumível produto de infração penal",
+      "atribuida_a": "Ministério Público Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial assevera que, considerando a tipologia delitiva sob apuração, crimes contra o Sistema Financeiro Nacional e lavagem de capitais, a manutenção das apreensões e bloqueios patrimoniais constitui medida indispensável à preservação da garantia de reparação dos danos.",
+      "pagina": 10,
+      "trecho_fonte": "considerando a tipologia delitiva sob apuração, crimes contra o Sistema Financeiro Nacional e lavagem de capitais, a manutenção das apreensões e bloqueios patrimoniais constitui medida indispensável à preservação da garantia de reparação dos danos",
+      "atribuida_a": "autoridade policial (Polícia Federal)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial alerta para o risco de depreciação dos bens e de comprometimento da execução penal caso fosse deferida a devolução ou a nomeação do investigado como depositário.",
+      "pagina": 10,
+      "trecho_fonte": "alertando para o risco de depreciação dos bens e de comprometimento da execução penal caso fosse deferida a devolução ou a nomeação do investigado como depositário",
+      "atribuida_a": "autoridade policial (Polícia Federal)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que se revela legítima, em juízo de cognição sumária, a manutenção das constrições patrimoniais impostas, como forma de resguardar a eficácia da persecução penal e eventual recomposição de danos.",
+      "pagina": 10,
+      "trecho_fonte": "revela-se legítima, em juízo de cognição sumária, a manutenção das constrições patrimoniais impostas, como forma de resguardar a eficácia da persecução penal e eventual recomposição de danos",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, ausente demonstração segura de que os bens e valores pretendidos estejam dissociados do objeto da investigação, impõe-se a manutenção integral da constrição patrimonial.",
+      "pagina": 10,
+      "trecho_fonte": "ausente demonstração segura de que os bens e valores pretendidos estejam dissociados do objeto da investigação e não se prestem à finalidade cautelar que motivou o bloqueio, impõe-se a manutenção integral da constrição patrimonial",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A autoridade policial trouxe aos autos a Informação de Polícia Judiciária - IPJ-A 87/2026-UADIP/DELECOR/DRPJ/SR/PF/SP.",
+      "pagina": 10,
+      "trecho_fonte": "a própria autoridade policial trouxe aos autos a Informação de Polícia Judiciária - IPJ-A 87/2026- UADIP/DELECOR/DRPJ/SR/PF/SP",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial afirma que a Informação de Polícia Judiciária nº 87/2026 demonstra que inexiste erro na guia de depósito por constar no campo “réu” o nome de Wilson Augusto Alves, que seria outro investigado do apuratório e também alvo de cumprimento de mandado de busca.",
+      "pagina": 10,
+      "trecho_fonte": "demonstra que inexiste qualquer erro na guia de depósito por constar no campo “réu” o nome de Wilson Augusto Alves, o qual se trata de outro investigado do presente apuratório",
+      "atribuida_a": "autoridade policial (Polícia Federal)",
+      "entidades": [
+        {"nome": "Wilson Augusto Alves", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial informa que o fato ocorre devido à sistemática operacional adotada para a abertura da conta judicial, ocorrida por ocasião do primeiro depósito na conta judicial vinculada aos autos n° 0126699-73.2025.10.0.0000.",
+      "pagina": 11,
+      "trecho_fonte": "tal fato ocorre devido à sistemática operacional adotada para a abertura da conta judicial, a qual ocorreu por ocasião do primeiro depósito na conta judicial vinculada aos autos n° 0126699-73.2025.10.0.0000 (correspondente a este procedimento)",
+      "atribuida_a": "autoridade policial (Polícia Federal)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial informa que o Anexo 2 da IPJ reúne comprovantes de depósitos distintos, de outros alvos, que também trazem o nome “Wilson Augusto Alves” no campo “réu”.",
+      "pagina": 11,
+      "trecho_fonte": "o Anexo 2 da IPJ reúne comprovantes de depósitos distintos, de outros alvos, que também trazem invariavelmente o nome “Wilson Augusto Alves”",
+      "atribuida_a": "autoridade policial (Polícia Federal)",
+      "entidades": [
+        {"nome": "Wilson Augusto Alves", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial informa que as moedas estrangeiras arrecadadas na diligência não foram submetidas a depósito bancário eletrônico, mas entregues fisicamente sob custódia da Caixa Econômica Federal, Agência Século, em Belo Horizonte/MG, na data de 20/01/2026 (e-Doc. 612, fls. 2-3).",
+      "pagina": 11,
+      "trecho_fonte": "informa-se que tais valores não foram submetidos a depósito bancário eletrônico, mas sim entregues fisicamente sob custódia da Caixa Econômica Federal (Agência Século, localizada na Rua Carijós, nº 218, Centro, Belo Horizonte/MG, na data de 20/01/2026)",
+      "atribuida_a": "autoridade policial (Polícia Federal)",
+      "entidades": [
+        {"nome": "Caixa Econômica Federal", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a documentação do Anexo 3 do IPJ-A 87/2026 da Polícia Federal (e-Doc. 613, p. 8) comprova que a consignação do nome de Wilson Augusto Alves no campo réu decorre da sistemática operacional de abertura da conta judicial vinculada ao feito, cujo primeiro depósito foi originariamente associado ao referido investigado.",
+      "pagina": 11,
+      "trecho_fonte": "há comprovação de que a consignação do nome de Wilson Augusto Alves no campo \"réu\" decorre da sistemática operacional de abertura da conta judicial vinculada ao presente feito, cujo primeiro depósito foi originariamente associado ao referido investigado",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Wilson Augusto Alves", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a padronização foi corroborada pelo Anexo 2 da IPJ (e-Doc. 613, p. 7), que reúne comprovantes de depósitos de outros investigados identificados sob o mesmo nome, afastando alegação de equívoco isolado em detrimento do peticionário.",
+      "pagina": 11,
+      "trecho_fonte": "Tal padronização foi corroborada pelo Anexo 2 da citada IPJ (e-Doc. 613, p. 7), que reúne comprovantes de depósitos de outros investigados, todos igualmente identificados sob o mesmo nome no campo em questão, afastando qualquer alegação de equívoco isolado em detrimento do peticionário.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que nada há a prover acerca do pleito de retificação, porquanto comprovado o depósito e o vínculo do valor em relação ao investigado.",
+      "pagina": 12,
+      "trecho_fonte": "nada a prover acerca do referido pleito, porquanto comprovado o depósito e vínculo do valor em relação ao investigado",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A parte investigada aduz não haver comprovação da destinação do montante em moeda estrangeira apreendido no ato da busca e apreensão.",
+      "pagina": 12,
+      "trecho_fonte": "No que concerne ao montante em moeda corrente estrangeira apreendido no ato da busca e apreensão, sobre o qual a parte investigada aduz não haver comprovação da sua destinação",
+      "atribuida_a": "FERNANDO ALVES VIEIRA (parte investigada)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a autoridade policial trouxe aos autos informação dotada de fé pública, corroborada com o Termo de Acolhimento de Bem e Valor Apreendido para guarda física (e-Doc. 613, p. 9), de que os valores em moeda estrangeira não foram objeto de depósito bancário eletrônico.",
+      "pagina": 12,
+      "trecho_fonte": "a autoridade policial trouxe aos autos informação dotada de fé pública, corroborada com o Termo de Acolhimento de Bem e Valor Apreendido para guarda física (e-Doc. 613, p. 9), no sentido de que tais valores não foram objeto de depósito bancário eletrônico",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator consigna que os valores em moeda estrangeira foram entregues fisicamente à Caixa Econômica Federal, Agência Século, em Belo Horizonte/MG, em 20 de janeiro de 2026, conforme o Ofício nº 313700/2026 - DELECOR/DRPJ/SR/PF/SP.",
+      "pagina": 12,
+      "trecho_fonte": "tendo sido entregues fisicamente à Caixa Econômica Federal, Agência Século, situada na Rua Carijós, nº 218, Centro, Belo Horizonte/MG, em 20 de janeiro de 2026, consubstanciada no Ofício nº 313700/2026 - DELECOR/DRPJ/SR/PF/SP",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Caixa Econômica Federal", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera devidamente comprovada a destinação conferida à moeda estrangeira.",
+      "pagina": 12,
+      "trecho_fonte": "Destarte, devidamente comprovada a destinação conferida à moeda estrangeira.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator acolheu o parecer da Procuradoria-Geral da República e indeferiu o pedido de liberação total de bens constritos em desfavor de FERNANDO ALVES VIEIRA, mantendo, por ora, as medidas assecuratórias anteriormente decretadas.",
+      "pagina": 12,
+      "trecho_fonte": "acolho o parecer da Procuradoria-Geral da República para INDEFERIR o pedido de liberação total de bens constritos em desfavor de FERNANDO ALVES VIEIRA, mantendo-se, por ora, hígidas e integrais as medidas assecuratórias anteriormente decretadas",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "FERNANDO ALVES VIEIRA", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação da defesa e ciência à Procuradoria-Geral da República.",
+      "pagina": 12,
+      "trecho_fonte": "Intime-se a defesa. 28. Ciência à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 19 de maio de 2026, pelo Ministro André Mendonça.",
+      "pagina": 12,
+      "trecho_fonte": "Brasília, 19 de maio de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

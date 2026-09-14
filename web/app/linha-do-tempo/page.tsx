@@ -1,10 +1,11 @@
 import { LinhaTempoCaso } from "@/components/LinhaTempoCaso";
-import { getLinhaTempo, getProcessos } from "@/lib/data";
+import { explicacoesPortalTodas, getLinhaTempo, getProcessos, verbetesParaTipos } from "@/lib/data";
 
 export default function PaginaLinhaDoTempo() {
   const lt = getLinhaTempo();
   const processos = getProcessos().filter((p) => p.coletado && p.incidente).map((p) => ({ incidente: p.incidente as number, rotulo: `${p.classe} ${p.numero}` }));
   const decisoes = lt.eventos.filter((e) => e.e_decisao).length;
+  const verbetes = verbetesParaTipos(new Set(lt.eventos.map((e) => e.tipo)), explicacoesPortalTodas());
   return (
     <div className="space-y-4">
       <header className="max-w-3xl">
@@ -15,7 +16,7 @@ export default function PaginaLinhaDoTempo() {
           A categoria é um rótulo curado sobre o tipo literal do portal, que fica sempre visível.
         </p>
       </header>
-      <LinhaTempoCaso dados={lt} processos={processos} />
+      <LinhaTempoCaso dados={lt} processos={processos} verbetes={verbetes} />
     </div>
   );
 }

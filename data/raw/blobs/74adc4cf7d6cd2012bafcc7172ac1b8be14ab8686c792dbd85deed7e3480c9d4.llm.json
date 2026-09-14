@@ -1,0 +1,438 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Trata-se de referendo à decisão cautelar proferida pelo relator, Ministro André Mendonça, a partir da análise de representação formulada pela Polícia Federal.",
+      "pagina": 1,
+      "trecho_fonte": "Trata-sedereferendoàdecisãocautelarpormimproferida,apartir da análise de representação formulada pela Polícia Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MINISTRO ANDRÉ MENDONÇA", "tipo": "ministro"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Na representação, a autoridade policial pugna pela decretação de prisão preventiva e pela aplicação de medidas cautelares diversas da prisão.",
+      "pagina": 1,
+      "trecho_fonte": "por meio da qual a autoridade policial pugna (i) pela decretação de prisão preventiva, (ii) pela aplicação de medidas cautelares diversas da prisão",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Na representação, a autoridade policial pugna pelo afastamento de função pública de investigados e pela suspensão de atividades econômicas de pessoas jurídicas, no âmbito das investigações decorrentes da denominada “Operação Compliance Zero”.",
+      "pagina": 2,
+      "trecho_fonte": "afastamento de função pública de investigados e (iv) pela suspensão de atividades econômicas de pessoas jurídicas, no âmbito das investigações decorrentes da denominada “Operação Compliance Zero”",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A representação da Polícia Federal foi apresentada com fundamento nos arts. 311 e 312 do Código de Processo Penal.",
+      "pagina": 2,
+      "trecho_fonte": "A representação foi apresentada com fundamento nos arts. 311 e 312 do Código de Processo Penal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A representação tem por objetivo assegurar a regularidade das investigações que apuram a prática de crimes contra o sistema financeiro nacional, corrupção ativa e passiva, organização criminosa, lavagem de dinheiro, violação de sigilo funcional, fraude processual e obstrução de justiça.",
+      "pagina": 2,
+      "trecho_fonte": "assegurar a regularidade das investigações que apuram a prática de (i) crimes contra o sistema financeiro nacional, (ii) corrupção ativa e passiva, (iii) organização criminosa, (iv) lavagem de dinheiro, (v) violação de sigilo funcional, (vi) fraude processual e (vii) obstrução de justiça",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "As investigações da Polícia Federal apontam que o Banco Master, controlado por DANIEL BUENO VORCARO, estruturou esquema de captação agressiva de recursos mediante emissão de CDBs com rentabilidade muito superior à média de mercado, direcionando os valores para operações financeiras de alto risco, aquisição de ativos de baixa liquidez e estruturação de fundos vinculados ao próprio conglomerado.",
+      "pagina": 2,
+      "trecho_fonte": "As investigações apontam que o Banco Master, controlado por DANIEL BUENO VORCARO, estruturou esquema de captação agressiva de recursos mediante emissão de CDBs com rentabilidade muito superior à média de mercado, direcionando os valores obtidos para operações financeiras de alto risco",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Banco Master", "tipo": "organizacao"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a autoridade policial, o esquema investigado apresenta um núcleo financeiro, responsável pela estruturação das fraudes contra o sistema financeiro, e um núcleo de corrupção institucional, voltado à cooptação de servidores públicos do Banco Central.",
+      "pagina": 2,
+      "trecho_fonte": "Segundo a autoridade policial, o esquema investigado apresenta quatro núcleos principais de atuação: (i) Núcleo financeiro, responsável pela estruturação das fraudes contra o sistema financeiro; (ii) Núcleo de corrupção institucional, voltado à cooptação de servidores públicos do Banco Central",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Banco Central", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a autoridade policial, o esquema investigado apresenta um núcleo de ocultação patrimonial e lavagem de dinheiro, com utilização de empresas interpostas, e um núcleo de intimidação e obstrução de justiça, responsável pelo monitoramento ilegal de adversários, jornalistas e autoridades.",
+      "pagina": 2,
+      "trecho_fonte": "(iii) Núcleo de ocultação patrimonial e lavagem de dinheiro, com utilização de empresas interpostas; (iv) Núcleo de intimidação e obstrução de justiça, responsável pelo monitoramento ilegal de adversários, jornalistas e autoridades",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "As investigações da Polícia Federal apontam que o grupo criminoso mantinha estrutura de vigilância e coerção privada, denominada “A Turma”, destinada à obtenção ilegal de informações sigilosas e à intimidação de críticos do conglomerado financeiro.",
+      "pagina": 2,
+      "trecho_fonte": "As investigações também apontam que o grupo criminoso mantinha estrutura de vigilância e coerção privada, denominada “A Turma”, destinada à obtenção ilegal de informações sigilosas e à intimidação de críticos do conglomerado financeiro.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "A Turma", "tipo": "organizacao"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requereu a decretação de prisão preventiva de parte dos investigados e a imposição de medidas cautelares diversas da prisão em relação aos demais envolvidos.",
+      "pagina": 3,
+      "trecho_fonte": "a Polícia Federal requereu a decretação de prisão preventiva de parte dos investigados, bem como a imposição de medidas cautelares diversas da prisão em relação aos demais envolvidos",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 27 de fevereiro de 2026, foi concedida vista dos autos ao MPF por 72 horas (e-Doc. 11).",
+      "pagina": 3,
+      "trecho_fonte": "Concedida vista dos autos ao MPF em 27 de fevereiro do corrente ano por 72 horas (e-Doc. 11)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MPF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O prazo de vista ao MPF escoou in albis em 02/03/2026, às 20h27, conforme certidão contida no e-Doc. 15.",
+      "pagina": 3,
+      "trecho_fonte": "o prazo escoou in albis em 02/03/2026, às 20h27, conforme certidão contida no e-Doc. 15",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MPF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "No dia seguinte ao escoamento do prazo, a Procuradoria-Geral da República protocolizou petição (e.Doc. 13) sobre o prazo de manifestação.",
+      "pagina": 3,
+      "trecho_fonte": "No dia seguinte, quando já decorrido o prazo para manifestação, a Procuradoria-Geral da República protocoliza petição no seguinte sentido",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República afirma que o prazo exíguo, contado em horas, cogitado para a manifestação do Ministério Público é de impossível atendimento pelo titular da ação penal.",
+      "pagina": 3,
+      "trecho_fonte": "O prazo exíguo, contado em horas, cogitado para a manifestaçãodoMinistérioPúblicoédeimpossívelatendimento pelo titular da ação penal.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministério Público", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República afirma que o encaminhamento dos autos com o pedido de cota envolve situações relacionadas a dez pessoas físicas e cinco pessoas jurídicas, em fatos de alta complexidade, e se refere a pedidos de medidas drásticas.",
+      "pagina": 3,
+      "trecho_fonte": "O encaminhamento dos autos acompanhado do pedido de cota do parquet envolve situações relacionadas a dez pessoas físicas e a cinco pessoas jurídicas, envolvidas em fatos de alta complexidade",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República afirma não entrever, no pedido nem no encaminhamento dos autos, indicação de perigo iminente e imediato que induza a necessidade de análise tão rápida do pleito.",
+      "pagina": 3,
+      "trecho_fonte": "Não se entrevê no pedido, nem no encaminhamento dos autosàProcuradoria-GeraldaRepública,aindicaçãodeperigo iminente, imediato",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República requer que as providências aguardem a manifestação do titular da ação penal, a ser enviada no mais breve tempo possível.",
+      "pagina": 3,
+      "trecho_fonte": "Requeiro, por isso, que as providências aguardem a manifestação do titular da ação penal a ser enviada no mais brevetempo possível.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República assinala que, antes da análise dos autos, não pode ser favorável aos pedidos cautelares nem aboná-los.",
+      "pagina": 3,
+      "trecho_fonte": "Assinalo que antes dessa análise, a Procuradoria-Geral da República não pode ser favorável aos pedidos cautelares, não podendo aboná-los.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Após a petição da Procuradoria-Geral da República, o relator proferiu decisão deferindo os pedidos formulados pela autoridade policial para decretar a prisão preventiva de investigados.",
+      "pagina": 3,
+      "trecho_fonte": "Em seguida, proferi decisão, deferindo os pedidos formulados pela autoridade policial para decretar a prisão preventiva dos investigados",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "MINISTRO ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar decretou a prisão preventiva de DANIEL BUENO VORCARO.",
+      "pagina": 4,
+      "trecho_fonte": "DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; e (iv) MARILSON ROSENO DA SILVA.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar decretou a prisão preventiva de FABIANO CAMPOS ZETTEL.",
+      "pagina": 4,
+      "trecho_fonte": "DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; e (iv) MARILSON ROSENO DA SILVA.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "FABIANO CAMPOS ZETTEL", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar decretou a prisão preventiva de LUIZ PHILLIPI MACHADO DE MORAES MOURÃO.",
+      "pagina": 4,
+      "trecho_fonte": "DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; e (iv) MARILSON ROSENO DA SILVA.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar decretou a prisão preventiva de MARILSON ROSENO DA SILVA.",
+      "pagina": 4,
+      "trecho_fonte": "DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; e (iv) MARILSON ROSENO DA SILVA.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MARILSON ROSENO DA SILVA", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator decretou, na linha do pleiteado pela Polícia Federal, medidas judiciais diversas da prisão em relação a outros investigados.",
+      "pagina": 4,
+      "trecho_fonte": "Decretei, também, na linha do que pleiteado pela Polícia Federal, as seguintes medidas judiciais diversas da prisão em relação aos seguintes investigados",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "MINISTRO ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar determinou, em relação ao investigado PAULO SÉRGIO NEVES DE SOUZA, proibição de manter contato com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP), proibição de frequentar ou acessar as dependências do Banco Central (art. 319, II), proibição de ausentar-se do município de residência e do País com entrega do passaporte em 48 horas (arts. 319, IV, e 320), suspensão do exercício de função pública junto ao Banco Central (art. 319, VI) e monitoração eletrônica por tornozeleira (art. 319, IX).",
+      "pagina": 4,
+      "trecho_fonte": "Em relação ao investigado PAULO SÉRGIO NEVES DE SOUZA,DETERMINOa:(i)Proibiçãodemanter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "PAULO SÉRGIO NEVES DE SOUZA", "tipo": "pessoa"},
+        {"nome": "Banco Central", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar determinou, em relação ao investigado BELLINE SANTANA, proibição de manter contato com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP), proibição de frequentar ou acessar as dependências do Banco Central (art. 319, II), proibição de ausentar-se do município de residência e do País com entrega do passaporte em 48 horas (arts. 319, IV, e 320), suspensão do exercício de função pública junto ao Banco Central (art. 319, VI) e monitoração eletrônica por tornozeleira (art. 319, IX).",
+      "pagina": 4,
+      "trecho_fonte": "107.2 Em relação ao investigado BELLINE SANTANA, DETERMINO a (i)Proibiçãodemantercontato,porqualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "BELLINE SANTANA", "tipo": "pessoa"},
+        {"nome": "Banco Central", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar determinou, em relação ao investigado LEONARDO AUGUSTO FURTADO PALHARES, proibição de manter contato com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP), proibição de ausentar-se do município de residência e do País com entrega do passaporte na Polícia Federal em 48 horas (arts. 319, IV, e 320) e monitoração eletrônica por tornozeleira (art. 319, IX).",
+      "pagina": 5,
+      "trecho_fonte": "107.3 Em relação ao investigado LEONARDO AUGUSTO FURTADO PALHARES, DETERMINO a: (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "LEONARDO AUGUSTO FURTADO PALHARES", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar determinou, em relação à investigada ANA CLAUDIA QUEIROZ DE PAIVA, proibição de manter contato com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP), proibição de ausentar-se do município de residência e do País com entrega do passaporte na Polícia Federal em 48 horas (arts. 319, IV, e 320) e monitoração eletrônica por tornozeleira (art. 319, IX).",
+      "pagina": 5,
+      "trecho_fonte": "107.4 Em relação à investigada ANA CLAUDIA QUEIROZ DE PAIVA, DETERMINO a: (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANA CLAUDIA QUEIROZ DE PAIVA", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu, com base no art. 319, VI, do CPP, o pedido da Polícia Federal de suspensão, por tempo indeterminado, das atividades das sociedades empresárias listadas nas fls. 159-160 e 163 do e-Doc. 1, entre elas VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA.",
+      "pagina": 5,
+      "trecho_fonte": "Defiri, outrossim, com alicerce no art. 319, VI, do CPP, o pedido formuladopelaPolíciaFederalparasuspensão,portempoindeterminado, das atividades das seguintes sociedades empresárias listadas nas fls. 159- 160 e 163 do e-Doc. 1: (i) VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "VARAJO CONSULTORIA EMPRESARIAL SOCIEDADE UNIPESSOAL LTDA", "tipo": "organizacao"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A suspensão de atividades deferida na decisão cautelar alcançou MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A., KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA. e KING MOTORS LOCAÇÃO DE VEÍCULOS E PARTICIPAÇÕES LTDA.",
+      "pagina": 6,
+      "trecho_fonte": "EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., (iii) SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.; (iv) KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.; e (v) KING MOTORS LOCAÇÃO DE VEÍCULOS E PARTICIPAÇÕES LTDA.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MORIAH ASSET EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.", "tipo": "organizacao"},
+        {"nome": "SUPER EMPREENDIMENTOS E PARTICIPAÇÕES S.A.", "tipo": "organizacao"},
+        {"nome": "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.", "tipo": "organizacao"},
+        {"nome": "KING MOTORS LOCAÇÃO DE VEÍCULOS E PARTICIPAÇÕES LTDA.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal informou nos autos que, no cumprimento das medidas cautelares determinadas em desfavor de LUIZ PHILLIPI MACHADO DE MORAES MOURÃO, foi constatado estado de flagrância quanto ao crime previsto no artigo 12 da Lei nº 10.826/03 e lavrado Auto de Prisão em Flagrante em seu desfavor.",
+      "pagina": 6,
+      "trecho_fonte": "no cumprimento das medidas cautelares determinadas em desfavor de LUIZ PHILLIPI MACHADO DE MORAES MOURÃO, foi constatado estado de flagrância em relação ao crime previsto no artigo 12 da Lei nº 10.826/03, tendo sido lavrado Auto de Prisão em Flagrante em seu desfavor.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo ofício da Polícia Federal, durante as diligências na residência do investigado LUIZ PHILLIPI MACHADO DE MORAES MOURÃO, na Rua Engenheiro Senna Freire, nº 480, bairro São Bento, Belo Horizonte/MG, foi localizada pistola calibre .380, municiada, com carregadores e munições, sem registro nos sistemas oficiais.",
+      "pagina": 6,
+      "trecho_fonte": "durante as diligências realizadas na residência do investigado, situadanaRuaEngenheiroSennaFreire,nº480,bairroSãoBento, Belo Horizonte/MG, foi localizada pistola calibre .380, municiada, acompanhada de carregadores e munições, sem registro nos sistemas oficiais",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial reportou que, durante a custódia do preso nas dependências da Unidade de Trânsito de Presos – UTP, da Superintendência Regional da Polícia Federal em Minas Gerais, foi registrado evento de autolesão praticado pelo custodiado.",
+      "pagina": 6,
+      "trecho_fonte": "a autoridade policial reportou ainda que durante a custódia do preso nas dependências da Unidade de Trânsito de Presos – UTP, da Superintendência Regional da Polícia Federal em Minas Gerais, foi registrado evento de autolesão praticado pelo custodiado",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Unidade de Trânsito de Presos – UTP", "tipo": "orgao_publico"},
+        {"nome": "Superintendência Regional da Polícia Federal em Minas Gerais", "tipo": "orgao_publico"},
+        {"nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial reportou que o evento de autolesão demandou o acionamento do Serviço de Atendimento Móvel de Urgência – SAMU.",
+      "pagina": 6,
+      "trecho_fonte": "A situação demandou o acionamento do Serviço de Atendimento Móvel de Urgência – SAMU.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Serviço de Atendimento Móvel de Urgência – SAMU", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A autoridade policial encaminhou aos autos os relatórios das diligências elaborados após o cumprimento das determinações da parte dispositiva da decisão cautelar.",
+      "pagina": 6,
+      "trecho_fonte": "Posteriormente, a autoridade policial encaminhou os relatórios dasdiligências,elaboradosapósodevidocumprimentodasdeterminações fixadasnapartedispositivadadecisãocautelar.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo os relatórios das diligências encaminhados pela autoridade policial, foram encontradas com o ex-policial Marilson Roseno duas armas de fogo, além da identificação de outras sob sua propriedade, bem como carregadores e munições.",
+      "pagina": 6,
+      "trecho_fonte": "destaca-se que foram encontradas com o ex- policial Marilson Roseno duas armas de fogos, além da identificação de",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Marilson Roseno", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A defesa do investigado Daniel Bueno Vorcaro interpôs Agravo Regimental em face da decisão cautelar submetida a referendo.",
+      "pagina": 7,
+      "trecho_fonte": "A defesa do investigado Daniel Bueno Vorcaro interpôs Agravo Regimental em face da decisão ora submetida a referendo",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "No Agravo Regimental, a defesa de Daniel Bueno Vorcaro requer a revogação da sua prisão preventiva.",
+      "pagina": 7,
+      "trecho_fonte": "interpôs Agravo Regimental em face da decisão ora submetida a referendo, requerendo a revogação da sua prisão preventiva.",
+      "atribuida_a": "defesa de Daniel Bueno Vorcaro",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator registra o falecimento do investigado Luiz Phillipi Machado de Moraes Mourão enquanto estava custodiado pela Superintendência da Polícia Federal em Minas Gerais.",
+      "pagina": 7,
+      "trecho_fonte": "diantedofalecimentodoinvestigadoLuiz Phillipi Machado de Moraes Mourão, enquanto estava custodiado pela Superintendência da Polícia Federal em Minas Gerais",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"},
+        {"nome": "Superintendência da Polícia Federal em Minas Gerais", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Por meio do Ofício nº 1191991/2026 - NO/DREX/SR/PF/MG, a autoridade policial comunicou a instauração de investigação autônoma para apurar as hipóteses de eventual crime de induzimento, instigação ou auxílio ao suicídio (art. 122 do Código Penal).",
+      "pagina": 7,
+      "trecho_fonte": "através do Ofício nº 1191991/2026 - NO/DREX/SR/PF/MG, a autoridade policial comunicou a instauração de investigação autônoma, para apurar as hipóteses de eventual crime de induzimento, instigação ou auxílio ao suicídio (art. 122 doCódigoPenal)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial afirma não descartar, no estágio da comunicação, a necessidade de ampliar a linha investigativa para outras tipificações penais, inclusive tentativa de homicídio, a depender da evolução da prova técnica e testemunhal.",
+      "pagina": 7,
+      "trecho_fonte": "nãosedescartando,“nesteestágio,anecessidadedeampliar a linha investigativa para outras tipificações penais eventualmente incidentes, inclusive tentativa de homicídio, a depender da evolução da prova técnica e testemunhal”",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

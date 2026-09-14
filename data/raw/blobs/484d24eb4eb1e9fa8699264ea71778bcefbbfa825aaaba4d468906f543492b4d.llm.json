@@ -1,0 +1,252 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "José Eugênio Dias Toffoli e José Carlos Dias Toffoli formularam a Petição nº 20501/2026 (e-Doc. 355) no Inquérito 5.026, noticiando a aprovação dos Requerimentos n. 140/2026, 161/2026, 143/2026 e 160/2026 no âmbito da \"CPI do Crime Organizado\".",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de Petição nº 20501/2026 (e-Doc. 355), formulada por José Eugênio Dias Toffoli e José Carlos Dias Toffoli, noticiando a aprovação dos Requerimentos n. 140/2026, 161/2026, 143/2026 e 160/2026, no âmbito da “CPI do Crime Organizado”.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão registra que os requerimentos aprovados têm por objeto a convocação dos requerentes para prestar depoimento perante a Comissão Parlamentar de Inquérito, em data ainda não estabelecida.",
+      "pagina": 2,
+      "trecho_fonte": "Tais requerimentos têm por objeto a convocação dos requerentes para prestar depoimento, em data ainda não estabelecida, perante a referida Comissão Parlamentar de Inquérito.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Os requerentes asseveram que a natureza e a justificativa dos requerimentos evidenciam que foram convocados na condição de investigados, de modo que não se poderia obrigá-los a comparecimento compulsório, menos ainda sob ameaça de responsabilização penal.",
+      "pagina": 2,
+      "trecho_fonte": "Asseveram que “a própria natureza e justificativa dos requerimentos evidencia que os Requerentes foram convocados na condição de investigados, de modo que não se pode deles obrigar comparecimento compulsório, menos ainda sob ameaça de responsabilização penal” (e-doc. 355, p. 2).",
+      "atribuida_a": "José Eugênio Dias Toffoli e José Carlos Dias Toffoli",
+      "entidades": [
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Os requerentes requerem que a petição seja recebida e processada como tutela incidental de urgência ou como habeas corpus preventivo.",
+      "pagina": 2,
+      "trecho_fonte": "Ao final, requerem: “que seja recebida e processada a presente petição como tutela incidental de urgência ou, ainda, como habeas corpus",
+      "atribuida_a": "José Eugênio Dias Toffoli e José Carlos Dias Toffoli",
+      "entidades": [
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Os requerentes pedem a expedição de salvo-conduto, ainda que de ofício, nos termos do art. 5º, LXVIII, da Constituição Federal, para que não sejam obrigados a comparecer à oitiva a ser designada pela \"CPI do Crime Organizado\".",
+      "pagina": 3,
+      "trecho_fonte": "expedição de salvo conduto, ainda que de ofício, nos termos do art. 5º, LXVIII, da Constituição Federal, para que os Requerentes não sejam obrigados a comparecer à oitiva a ser designada pela denominada “CPI do Crime Organizado”",
+      "atribuida_a": "José Eugênio Dias Toffoli e José Carlos Dias Toffoli",
+      "entidades": [
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Os requerentes pedem que se consigne que o eventual não comparecimento ao ato convocatório não poderá ensejar qualquer responsabilização ou presunção desfavorável.",
+      "pagina": 3,
+      "trecho_fonte": "consignando, ainda, que o eventual não comparecimento dos Requerentes ao ato convocatório não poderá ensejar qualquer responsabilização ou presunção desfavorável.",
+      "atribuida_a": "José Eugênio Dias Toffoli e José Carlos Dias Toffoli",
+      "entidades": [
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão registra que a \"CPMI do Crime Organizado\" foi instaurada para examinar as formas contemporâneas de atuação das organizações criminosas, com atenção aos mecanismos de ocultação, dissimulação e reinserção de recursos de origem ilícita na economia formal.",
+      "pagina": 3,
+      "trecho_fonte": "“examinar as formas contemporâneas de atuação das organizações criminosas, com especial atenção aos mecanismos utilizados para ocultação, dissimulação e reinserção de recursos de origem ilícita na economia formal, notadamente por meio de atividades econômicas vulneráveis à lavagem de dinheiro”",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CPMI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera inafastável, não obstante a importância da CPMI e de sua atuação independente, a garantia constitucional de qualquer investigado contra a autoincriminação, consagrada no art. 5º, LXIII, da Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental expressamente consagrado no art. 5º, LXIII, da Constituição da República.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "CPMI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca os julgamentos das ADPFs 395 e 444, de junho de 2018, nos quais o Pleno do STF declarou a incompatibilidade da condução coercitiva de investigados para interrogatório com a Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "Nos paradigmáticos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno desta Corte declarou a incompatibilidade da condução coercitiva de investigados, para interrogatórios, com a Constituição da República",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que há jurisprudência do Supremo Tribunal Federal no sentido de que o direito do investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato.",
+      "pagina": 3,
+      "trecho_fonte": "há jurisprudência do Supremo Tribunal Federal, no sentido de que o direito de um investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o precedente HC nº 171.438/DF (Rel. Min. Gilmar Mendes, Segunda Turma, julgado em 28/05/2019), em que a ordem foi concedida para convolar a compulsoriedade de comparecimento a Comissão Parlamentar de Inquérito em facultatividade.",
+      "pagina": 4,
+      "trecho_fonte": "(HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma,j.28/05/2019,p.17/08/2020).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Min. Gilmar Mendes", "tipo": "ministro"},
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator declara ter decidido sistematicamente conforme esse entendimento em casos análogos, destacando os julgados no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "pagina": 4,
+      "trecho_fonte": "Tenho sistematicamente decidido conforme esse entendimento em casos análogos, pelo que destaco os julgados recentes no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca a legitimidade do controle jurisdicional exercido pelo STF mesmo diante dos poderes investigatórios das Comissões Parlamentares de Inquérito, o que, segundo afirma, não vulnera o princípio da separação de poderes.",
+      "pagina": 4,
+      "trecho_fonte": "Cumpre destacar, ainda, a legitimidade do controle jurisdicional exercido por esta Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o precedente MS nº 25.668/DF (Rel. Min. Celso de Mello, Tribunal Pleno, julgado em 23/03/2006), segundo o qual o controle jurisdicional de abusos praticados por Comissão Parlamentar de Inquérito não ofende o princípio da separação de poderes.",
+      "pagina": 5,
+      "trecho_fonte": "(MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno,j.23/03/2006,p.04/08/2006).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Min. Celso de Mello", "tipo": "ministro"},
+        {"nome": "Tribunal Pleno", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera patente a objeção da defesa dos requerentes José Eugênio Dias Toffoli e José Carlos Dias Toffoli.",
+      "pagina": 5,
+      "trecho_fonte": "estando patente a objeção da defesa dos requerentes José Eugênio Dias Toffoli e José Carlos Dias Toffoli",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pleito formulado na Petição nº 20501/2026 (e-Doc. 355), afastando a obrigatoriedade de comparecimento dos requerentes à \"CPI do Crime Organizado\" e transmudando-a em facultatividade, a cargo dos próprios requerentes.",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pleito formulado na Petição nº 20501/2026 (e-Doc. 355), para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo dos requerentes a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Na hipótese de os convocados optarem por comparecer ao ato, a decisão assegura-lhes o direito ao silêncio e o direito à assistência por advogado durante o ato.",
+      "pagina": 5,
+      "trecho_fonte": "asseguro-lhes, nos termos da jurisprudência consolidada desta Corte, o direito: a) ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas; b) à assistência por advogado durante o ato;",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão assegura aos convocados, caso compareçam, o direito de não serem submetidos ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo, e de não sofrerem constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "pagina": 5,
+      "trecho_fonte": "c) de não serem submetidos ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo; e d) de não sofrerem constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "José Eugênio Dias Toffoli", "tipo": "pessoa"},
+        {"nome": "José Carlos Dias Toffoli", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a comunicação, com a máxima urgência e com remessa de cópia integral, à Presidência da CPI do Crime Organizado e às defesas constituídas.",
+      "pagina": 6,
+      "trecho_fonte": "Comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI do Crime Organizado e as defesas constituídas.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão serve como salvo-conduto.",
+      "pagina": 6,
+      "trecho_fonte": "Serve esta decisão como SALVO-CONDUTO.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República.",
+      "pagina": 6,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou que lhe seja dada publicidade.",
+      "pagina": 6,
+      "trecho_fonte": "Dê-se publicidade à presente decisão.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 26 de fevereiro de 2026, pelo relator, Ministro André Mendonça.",
+      "pagina": 6,
+      "trecho_fonte": "Brasília, 26 de fevereiro de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

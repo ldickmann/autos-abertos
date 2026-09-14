@@ -1,0 +1,137 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Polícia Federal apresentou manifestação nos autos (e-doc. 612), na qual, entre outras matérias, sustenta a necessidade de abertura de processo autônomo ao feito.",
+      "pagina": 4,
+      "trecho_fonte": "Trata-se de manifestação apresentada pela Polícia Federal, em que, entre outras matérias, sustenta a necessidade de abertura de processo autônomo ao presente feito",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta a necessidade de abertura de processo autônomo porque o feito concentra elevado e complexo volume documental, prejudicando a organicidade, o manuseio dos autos e a compreensão global do objeto sob apuração, podendo gerar tumulto processual.",
+      "pagina": 4,
+      "trecho_fonte": "sustenta a necessidade de abertura de processo autônomo ao presente feito, em razão deste concentrar um elevado e complexo volume documental, a prejudicar a organicidade, o manuseio dos autos e a escorreita compreensão global do objeto sob apuração e, eventualmente, gerar tumulto processual.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal informa a existência de Inquérito Policial originariamente em trâmite perante a 8ª Vara Criminal Federal de São Paulo, cuja competência foi declinada para o Supremo Tribunal Federal sem, até o momento, autuação em classe processual própria.",
+      "pagina": 4,
+      "trecho_fonte": "Informa, ademais, a existência de Inquérito Policial, originariamente em trâmite perante a 8ª Vara Criminal Federal de São Paulo, cuja competência foi declinada para este Supremo Tribunal Federal sem, até o presente momento, autuação em classe processual própria.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "8ª Vara Criminal Federal de São Paulo", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial requer a instauração de procedimento autônomo perante o STF, na classe Inquérito (INQ), para o qual deverá ser trasladado o apuratório oriundo da Seção Judiciária de São Paulo, a fim de que ali tramite a investigação principal.",
+      "pagina": 4,
+      "trecho_fonte": "a autoridade policial requer a instauração de procedimento autônomo perante o STF, na classe Inquérito (INQ), para o qual deverá ser trasladado o apuratório oriundo da Seção Judiciária de São Paulo, a fim de que lá tramite a investigação principal.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "STF", "tipo": "orgao_publico"},
+        {"nome": "Seção Judiciária de São Paulo", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal pugna pela manutenção da Petição (PET) em tramitação apartada, com escopo restrito ao processamento e acompanhamento das medidas cautelares já em curso ou supervenientes (e-doc. 612).",
+      "pagina": 4,
+      "trecho_fonte": "pugna pela manutenção da presente Petição (PET) em tramitação apartada, restringindo-se o seu escopo, doravante, exclusivamente ao processamento e acompanhamento das medidas cautelares já em curso ou supervenientes.(e-doc. 612).",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que o presente feito, assim como outros relacionados à operação, sofre ampliação objetiva em sua cognição em virtude de pedidos diversos, muitas vezes deduzidos por partes investigadas que sequer figuram na representação inaugural.",
+      "pagina": 5,
+      "trecho_fonte": "é certo que o presente, assim como outros feitos relacionados à presente operação, sofre uma ampliação objetiva em sua cognição em virtude de pedidos diversos, muitas vezes, deduzidos por partes investigadas que sequer figuram na representação inaugural.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que, para resguardar o devido processo legal, a ampla defesa e o contraditório, convém melhor organização dos ritos em curso, sendo imprescindível a separação de apurações independentes, ainda que vinculadas a uma origem comum.",
+      "pagina": 5,
+      "trecho_fonte": "resguardar as garantias do devido processo legal, da ampla defesa e do contraditório das partes interessadas - nesta e noutras investigações - convém atentar para uma melhor organização dos ritos em curso, para o que é imprescindível a separação de apurações independentes",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "No presente feito foi concedida habilitação para vista aos patronos dos investigados na denominada 2ª Fase da Operação Compliance Zero.",
+      "pagina": 5,
+      "trecho_fonte": "ao presente feito foi concedida habilitação para vista a atuação ativa dos patronos dos investigados nesta que foi denominada a 2ª Fase da Operação Compliance Zero.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera prudente a continuidade da persecução penal em feito autônomo e apartado, a fim de não devassar o sigilo de fatos ainda sob averiguação oficial e a privacidade e intimidade das partes.",
+      "pagina": 5,
+      "trecho_fonte": "a fim de não devassar o sigilo de fatos ainda sob averiguação oficial, bem assim a privacidade e intimidade das partes, é prudente a continuidade persecução penal em feito autônomo e apartado.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a instauração de procedimento investigatório apartado, autuado como INQUÉRITO (INQ) autônomo, para o qual deverá ser trasladada toda a apuração oriunda da 8ª Vara Criminal Federal de São Paulo, passando ali a tramitar a investigação principal.",
+      "pagina": 5,
+      "trecho_fonte": "determino a instauração de procedimento investigatório apartado, autuado como INQUÉRITO (INQ) autônomo, para o qual deverá ser trasladado toda a apuração oriunda da 8ª Vara Criminal Federal de São Paulo, e que neste novo procedimento passe a tramitar a investigação principal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "8ª Vara Criminal Federal de São Paulo", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Permanece na PET nº 15.198, exclusivamente, o processamento e acompanhamento das medidas cautelares em curso e das a elas relacionadas.",
+      "pagina": 5,
+      "trecho_fonte": "permaneça nesta PET nº 15.198, exclusivamente, o processamento e acompanhamento das medidas cautelares em curso e a tais relacionadas.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Procedida a nova autuação, o Ministério Público Federal deverá ser cientificado e deverá ser aberta vista à Polícia Federal para prosseguimento das diligências investigativas.",
+      "pagina": 5,
+      "trecho_fonte": "Procedida a nova autuação, cientifique-se o Ministério Público Federal, e abra-se vista à Polícia Federal para prosseguimento das",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 11 de junho de 2026, pelo relator, Ministro André Mendonça.",
+      "pagina": 6,
+      "trecho_fonte": "Brasília, 11 de junho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

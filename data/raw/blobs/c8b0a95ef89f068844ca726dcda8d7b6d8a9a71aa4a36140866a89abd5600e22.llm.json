@@ -1,0 +1,70 @@
+{
+  "itens": [
+    {
+      "pedido": "autorização para a apresentação do investigado Daniel Bueno Vorcaro a fim de prestar depoimento perante a Comissão de Assuntos Econômicos do Senado Federal no dia 24/02/2026",
+      "quem_pediu": "Comissão de Assuntos Econômicos do Senado Federal, na pessoa do seu Presidente, Senador Renan Calheiros",
+      "resultado": "deferido",
+      "decisao": "autorizou a solicitação nos termos do pedido, condicionando o comparecimento do investigado à prévia manifestação expressa, formal e inequívoca quanto à sua opção por comparecer, consignando que o comparecimento é de caráter estritamente facultativo",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-19",
+      "pagina": 6,
+      "trecho_fonte": "autorizo a solicitação formulada pela Comissão de Assuntos Econômicos do Senado Federal, nos termos do pedido, ficando, contudo, o comparecimento do investigado condicionado à prévia manifestação expressa, formal e inequívoca quanto à sua opção por comparecer à Comissão para prestar depoimento.",
+      "condicoes": [
+        "comparecimento condicionado à prévia manifestação expressa, formal e inequívoca quanto à opção por comparecer",
+        "comparecimento de caráter estritamente facultativo, dependente de anuência explícita",
+        "direitos constitucionais resguardados, notadamente o direito ao silêncio e à não autoincriminação",
+        "qualquer transferência condicionada à prévia manifestação expressa do investigado quanto à sua opção positiva pelo comparecimento"
+      ]
+    },
+    {
+      "pedido": "consignação de que a custódia do depoente, durante sua permanência nas dependências do Congresso Nacional, ficará sob responsabilidade da Polícia Legislativa do Senado Federal",
+      "quem_pediu": "Comissão de Assuntos Econômicos do Senado Federal",
+      "resultado": "deferido",
+      "decisao": "determinou que a custódia do depoente, dentro das dependências do Congresso Nacional, ficará, conforme requerido, a cargo da Polícia Legislativa do Senado Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-19",
+      "pagina": 6,
+      "trecho_fonte": "a custódia do depoente, dentro das dependências do Congresso Nacional, deverá ficar, conforme requerido, a cargo da Polícia Legislativa do Senado Federal.",
+      "condicoes": []
+    },
+    {
+      "pedido": "definição das condições logísticas para o deslocamento até Brasília/DF e retorno ao local de custódia, inclusive quanto ao meio de transporte, admitindo-se que as despesas sejam suportadas pelo próprio convidado",
+      "quem_pediu": "Comissão de Assuntos Econômicos do Senado Federal",
+      "resultado": "outro",
+      "decisao": "determinou que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com escolta policial, vedado o deslocamento em aeronave particular",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-19",
+      "pagina": 6,
+      "trecho_fonte": "determino que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com segurança e vigilância contínua policial por meio de escolta apropriada, sendo vedado o deslocamento em qualquer aeronave",
+      "condicoes": [
+        "transporte em aeronave da própria instituição ou comercial de carreira",
+        "segurança e vigilância contínua policial por meio de escolta apropriada",
+        "vedado o deslocamento em qualquer aeronave particular",
+        "cumprido o ato, retorno imediato ao local de origem, observando-se as mesmas regras de segurança e de deslocamento"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão, com cópia integral, à Presidência da Comissão de Assuntos Econômicos do Senado Federal, às defesas constituídas e à Polícia Federal",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com a máxima urgência e remessa de cópia integral da decisão, à Presidência da Comissão de Assuntos Econômicos do Senado Federal, às defesas constituídas e à Polícia Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-19",
+      "pagina": 6,
+      "trecho_fonte": "comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da Comissão de Assuntos",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência à Procuradoria-Geral da República após cumpridas as determinações e intimação",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República, e que se intime e se adotem as providências em regime de urgência",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-02-19",
+      "pagina": 7,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria-Geral da República. 18. Intimem-se e adotem-se, com a máxima brevidade, as providências determinadas, em regime de absoluta urgência.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "Sobre a logística de deslocamento, o dispositivo não se pronuncia expressamente sobre o custeio das despesas pelo convidado; por isso o resultado foi registrado como outro."
+}

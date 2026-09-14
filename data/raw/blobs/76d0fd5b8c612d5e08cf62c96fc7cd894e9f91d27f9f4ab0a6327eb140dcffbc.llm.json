@@ -1,0 +1,148 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Thiago Assumpção Henriques apresentou petição (e-Doc. 990) postulando a restituição dos veículos PORSCHE PANAMERA, placa RTY1A00, e PORSCHE MACAN, placa RTK9H99, apreendidos no âmbito da PET 15.198.",
+      "pagina": 4,
+      "trecho_fonte": "Trata-se de petição apresentada por Thiago Assumpção Henriques (e-Doc. 990), mediante a qual postula a restituição dos veículos PORSCHE PANAMERA, placa RTY1A00, e PORSCHE MACAN, placa RTK9H99, apreendidos no âmbito da presente PET.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques narra que o PORSCHE PANAMERA, placa RTY1A00, foi adquirido mediante Cédula de Crédito Bancário firmada com o ITAÚ UNIBANCO S.A. em 9 de abril de 2024, com garantia fiduciária em favor da instituição credora.",
+      "pagina": 4,
+      "trecho_fonte": "Narra o requerente que o PORSCHE PANAMERA, placa RTY1A00, foi adquirido mediante Cédula de Crédito Bancário, firmada com o ITAÚ UNIBANCO S.A. em 9 de abril de 2024, com garantia fiduciária constituída em favor da instituição credora.",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"},
+        {"nome": "ITAÚ UNIBANCO S.A.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques narra que o PORSCHE MACAN, placa RTK9H99, foi financiado junto ao CAR BANK, contrato nº 55224624, iniciado em 4 de julho de 2025, também com alienação fiduciária.",
+      "pagina": 4,
+      "trecho_fonte": "O PORSCHE MACAN, placa RTK9H99, por sua vez, foi financiado junto ao CAR BANK, contrato nº 55224624, iniciado em 4 de julho de 2025, também com alienação fiduciária.",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"},
+        {"nome": "CAR BANK", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques sustenta que os veículos não integram plenamente seu patrimônio livre e desembaraçado, constituindo garantia real de instituições financeiras estranhas aos fatos investigados.",
+      "pagina": 4,
+      "trecho_fonte": "Sustenta que tal circunstância indica que os veículos não integram, em sua plenitude, o patrimônio livre e desembaraçado do requerente, mas constituem garantia real de terceiros – instituições financeiras estranhas a qualquer relação com os fatos investigados.",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques afirma que o financiamento em nome próprio é prova da origem dos bens em sua receita lícita e tributada, e que o gravame fiduciário indica não se tratar de ativos mantidos como instrumento de ocultação patrimonial.",
+      "pagina": 4,
+      "trecho_fonte": "Afirma que o financiamento em nome próprio é prova da origem dos bens na receita lícita e tributada do requerente e que a subsistência de gravame fiduciário sobre os bens é, em si, indicativo adicional de que não se está diante de ativos adquiridos ou mantidos como instrumento de ocultação patrimonial",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques aduz que segue em dia com as obrigações assumidas nos dois contratos de financiamento.",
+      "pagina": 4,
+      "trecho_fonte": "Aduz que segue rigorosamente em dia com as obrigações assumidas nos dois contratos de financiamento,",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques afirma que os pagamentos dos financiamentos continuaram inclusive após a apreensão dos veículos, ocorrida em 14 de janeiro de 2026.",
+      "pagina": 5,
+      "trecho_fonte": "inclusive após a apreensão ocorrida em 14 de janeiro de 2026.",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques alega que a permanência dos veículos em depósito, sem uso e sem manutenção ativa, causa degradação progressiva dos bens, como descarga da bateria, deformação dos pneus, sedimentação de fluidos e absorção de umidade.",
+      "pagina": 5,
+      "trecho_fonte": "Alega ainda que a permanência dos veículos em depósito, sem uso e sem manutenção ativa, dá causa à degradação progressiva dos bens: descarga e perda da bateria, deformação dos pneus pelo peso estático sobre um único ponto de contato, sedimentação de fluidos e absorção de umidade",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques alega que tais efeitos se agravam a cada mês de manutenção da apreensão, que se aproxima do sexto mês, e correm inteiramente à sua conta.",
+      "pagina": 5,
+      "trecho_fonte": "Tais efeitos, previsíveis e cumulativos, agravam-se a cada mês de manutenção da apreensão – que já se aproxima do sexto mês —, e correm inteiramente à conta do requerente",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Thiago Assumpção Henriques requer a restituição dos dois veículos apreendidos e, subsidiariamente, a posse direta dos bens na condição de fiel depositário.",
+      "pagina": 5,
+      "trecho_fonte": "Com essa argumentação, requer a restituição dos dois veículos apreendidos. Subsidiariamente, pleiteia a posse direta dos bens, na condição de fiel depositário.",
+      "atribuida_a": "Thiago Assumpção Henriques",
+      "entidades": [
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator anota que a matéria veiculada no pedido configura objeto estranho aos limites decididos no feito, incompatível com a autuação nos autos, razão pela qual reclama processamento autônomo.",
+      "pagina": 5,
+      "trecho_fonte": "anoto que a matéria veiculada configura objeto estranho aos limites decididos no preente feito, revelando-se incompatível com a autuação nos presentes autos, razão pela qual reclama processamento autônomo.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o desentranhamento da petição e dos documentos dos e-Docs. 990 a 996 (Petição nº 86153/2026), para autuação em apartado como PET autônoma, à qual deverá ser apensada cópia da decisão.",
+      "pagina": 5,
+      "trecho_fonte": "determino o desentranhamento da petição e dos documentos acostados sob os e-Docs. 990 a 996 (Petição nº 86153/2026), para fins de autuação em apartado, como PET autônoma, à qual deverá ser apensada cópia reprográfica da presente decisão.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Thiago Assumpção Henriques", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Procedida a nova autuação, deverá ser aberta vista ao Ministério Público Federal para manifestação específica e fundamentada sobre o pedido.",
+      "pagina": 5,
+      "trecho_fonte": "Procedida a nova autuação, abra-se vista ao Ministério Público Federal, para que se manifeste, de forma específica e fundamentada, acerca do pedido objeto da referida da Petição.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão é datada de Brasília, 5 de agosto de 2026, e assinada pelo relator, Ministro André Mendonça.",
+      "pagina": 5,
+      "trecho_fonte": "Brasília, 5 de agosto de 2026.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

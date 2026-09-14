@@ -1,0 +1,300 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida na Petição 15.556 Distrito Federal, de relatoria do Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Trata-se de pedido formulado por Ana Cláudia Queiroz de Paiva (Petição nª 30123/2026 - e-Doc. 162) para ver resguardadas garantias constitucionais em face de sua convocação para depor perante a Comissão Parlamentar de Inquérito do Crime Organizado – CPMI-CRIME.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de pedido formulado por Ana Cláudia Queiroz de Paiva (Petição nª 30123/2026 - e-Doc. 162), por meio do qual pretende ver resguardadas garantias constitucionais em face de sua convocação para depor perante a Comissão Parlamentar de Inquérito do Crime Organizado – CPMI-CRIME",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ana Cláudia Queiroz de Paiva", "tipo": "pessoa"},
+        {"nome": "Comissão Parlamentar de Inquérito do Crime Organizado – CPMI-CRIME", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A convocação de Ana Cláudia Queiroz de Paiva para prestar depoimento é em data não informada.",
+      "pagina": 2,
+      "trecho_fonte": "para prestar depoimento em data não informada",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ana Cláudia Queiroz de Paiva", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A requerente aduz que, embora formalmente convocada para \"prestar depoimento\", o que sugere convocação na condição de testemunha, os fundamentos dos requerimentos parlamentares e manifestações de membros da Comissão evidenciariam que ostenta condição material de investigada.",
+      "pagina": 2,
+      "trecho_fonte": "os fundamentos constantes dos requerimentos parlamentares e manifestações de membros da Comissão evidenciariam que, na realidade, ostenta condição material de investigada",
+      "atribuida_a": "Ana Cláudia Queiroz de Paiva (requerente)",
+      "entidades": [
+        {"nome": "Ana Cláudia Queiroz de Paiva", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A requerente afirma que lhe seriam atribuídas responsabilidades em suposta posição central nas operações referentes à estrutura financeira destinada à operacionalização de esquema investigado.",
+      "pagina": 2,
+      "trecho_fonte": "porquanto lhe seriam atribuídas responsabilidades em suposta posição central nas operações referentes à estrutura financeira destinada à operacionalização",
+      "atribuida_a": "Ana Cláudia Queiroz de Paiva (requerente, relatando os requerimentos parlamentares)",
+      "entidades": [
+        {"nome": "Ana Cláudia Queiroz de Paiva", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a requerente, os requerimentos parlamentares referem-se a esquema de corrupção institucional e lavagem de dinheiro vinculado à atuação de organização criminosa liderada por Daniel Vorcaro, em especial por intermédio da empresa Super Empreendimentos e Participações S.A.",
+      "pagina": 3,
+      "trecho_fonte": "de esquema de corrupção institucional e lavagem de dinheiro, vinculada à atuação de organização criminosa liderada por Daniel Vorcaro, em especial por intermédio da empresa Super Empreendimentos e Participações S.A.",
+      "atribuida_a": "Ana Cláudia Queiroz de Paiva (requerente, relatando os requerimentos parlamentares)",
+      "entidades": [
+        {"nome": "Daniel Vorcaro", "tipo": "pessoa"},
+        {"nome": "Super Empreendimentos e Participações S.A.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo a requerente, os requerimentos parlamentares lhe atribuiriam suposta condição de responsável pela operacionalização dos fluxos de pagamentos destinados a integrantes do núcleo de intimidação denominado \"A Turma\" e a servidores públicos supostamente cooptados, inclusive vinculados ao Banco Central.",
+      "pagina": 3,
+      "trecho_fonte": "além de suposta condição de responsável pela operacionalização dos fluxos de pagamentos destinados tanto a integrantes do núcleo de intimidação denominado “A Turma” quanto a servidores públicos supostamente cooptados, inclusive vinculados ao Banco Central",
+      "atribuida_a": "Ana Cláudia Queiroz de Paiva (requerente, relatando os requerimentos parlamentares)",
+      "entidades": [
+        {"nome": "Ana Cláudia Queiroz de Paiva", "tipo": "pessoa"},
+        {"nome": "Banco Central", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A requerente requer a concessão de salvo-conduto para afastar a obrigatoriedade de comparecimento, convertendo-o em ato facultativo.",
+      "pagina": 3,
+      "trecho_fonte": "Ao final, requer a concessão de salvo-conduto, a fim de afastar a obrigatoriedade de comparecimento, convertendo-se em ato facultativo",
+      "atribuida_a": "Ana Cláudia Queiroz de Paiva (requerente)",
+      "entidades": [
+        {"nome": "Ana Cláudia Queiroz de Paiva", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator reconhece a importância da \"CPMI do Crime Organizado\" e de sua atuação independente na apuração dos fatos que ensejaram sua instauração.",
+      "pagina": 3,
+      "trecho_fonte": "Não obstante a importância superlativa da “CPMI do Crime Organizado” e de sua atuação independente na apuração dos fatos certos e determinados que ensejaram a sua instauração",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "CPMI do Crime Organizado", "tipo": "orgao_publico"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental consagrado no art. 5º, LXIII, da Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental expressamente consagrado no art. 5º, LXIII, da Constituição da República",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Nos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno do STF declarou a incompatibilidade da condução coercitiva de investigados para interrogatórios com a Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "Nos paradigmáticos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno desta Corte declarou a incompatibilidade da condução coercitiva de investigados, para interrogatórios, com a Constituição da República",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A jurisprudência do Supremo Tribunal Federal firmou-se no sentido de que o direito do investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, inexistindo obrigatoriedade ou sanção pelo não comparecimento.",
+      "pagina": 4,
+      "trecho_fonte": "a jurisprudência do Supremo Tribunal Federal se firmou no sentido de que o direito de um investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, entendendo, como corolário do brocardo nemo tenetur se detegere, que inexiste obrigatoriedade ou sanção pelo não comparecimento",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca como precedente o HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma, julgado em 28/05/2019.",
+      "pagina": 4,
+      "trecho_fonte": "(HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma,j.28/05/2019,p.17/08/2020)",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Gilmar Mendes", "tipo": "ministro"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ter decidido sistematicamente conforme esse entendimento em casos análogos, destacando o HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "pagina": 4,
+      "trecho_fonte": "Tenho sistematicamente decidido conforme esse entendimento em casos análogos, pelo que destaco os julgados recentes no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O controle jurisdicional exercido pelo STF, mesmo diante dos poderes investigatórios das Comissões Parlamentares de Inquérito, não vulnera o princípio da separação de poderes.",
+      "pagina": 4,
+      "trecho_fonte": "Cumpre destacar, ainda, a legitimidade do controle jurisdicional exercido por esta Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca o MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno, julgado em 23/03/2006.",
+      "pagina": 5,
+      "trecho_fonte": "(MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno,j.23/03/2006,p.04/08/2006)",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Celso de Mello", "tipo": "ministro"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera patente a objeção da defesa da requerente.",
+      "pagina": 5,
+      "trecho_fonte": "Ante o exposto, estando patente a objeção da defesa da requerente",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pleito formulado por Ana Cláudia Queiroz de Paiva (Petição nª 30123/2026 - e-Doc. 162) para afastar a obrigatoriedade de comparecimento à \"CPI do Crime Organizado\", transmudando-a em facultatividade.",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pleito formulado por Ana Cláudia Queiroz de Paiva (Petição nª 30123/2026 - e-Doc. 162), para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo da requerente a decisão de comparecer, ou não, à “CPI do Crime Organizado”",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ana Cláudia Queiroz de Paiva", "tipo": "pessoa"},
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator consignou que o comparecimento é de caráter estritamente facultativo e dependerá de anuência explícita e prévia da requerente a qualquer deslocamento para o local da reunião da Comissão Parlamentar.",
+      "pagina": 5,
+      "trecho_fonte": "Consigno que o comparecimento é de caráter estritamente facultativo e dependerá de sua anuência explícita e prévia a qualquer deslocamento para o local em que será realizada a reunião da Comissão Parlamentar",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Na hipótese de a convocada optar por comparecer ao ato, foi-lhe assegurado o direito ao silêncio, ou seja, de não responder a perguntas a ela direcionadas.",
+      "pagina": 5,
+      "trecho_fonte": "asseguro-lhe, nos termos da jurisprudência consolidada desta Corte, o direito: i) ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Foi assegurado à convocada o direito à assistência por advogado durante o ato, de não ser submetida ao compromisso de dizer a verdade e de não sofrer constrangimentos físicos ou morais decorrentes do exercício desses direitos.",
+      "pagina": 6,
+      "trecho_fonte": "assistência por advogado durante o ato; iii) de não ser submetida ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo; e iv) de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A requerente encontra-se com monitoramento eletrônico.",
+      "pagina": 6,
+      "trecho_fonte": "Considerando que a requerente encontra-se com monitoramento eletrônico",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que a Polícia Federal fixe as condições logísticas do transporte da requerente à sede do Senado Federal em Brasília/DF e do retorno ao local de custódia, com escolta policial.",
+      "pagina": 6,
+      "trecho_fonte": "determino que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, com segurança e vigilância contínua policial por meio de escolta apropriada",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Cumprido o ato, a investigada deverá retornar imediatamente ao seu local de origem, observadas as mesmas regras de segurança e deslocamento.",
+      "pagina": 6,
+      "trecho_fonte": "Cumprido o ato, a investigada deverá retornar imediatamente ao seu local de origem, observando-se as mesmas regras de segurança e de deslocamento adotadas para o seu transporte rumo ao Senado",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação da decisão, com a máxima urgência e remessa de cópia integral, à Presidência da CPMI-CRIME, às defesas constituídas e à Polícia Federal, para as providências necessárias ao eventual deslocamento da requerente ao Senado Federal.",
+      "pagina": 6,
+      "trecho_fonte": "comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPMI-CRIME, as defesas constituídas e a Polícia Federal, para que sejam adotadas as providências necessárias ao eventual deslocamento da requerente ao Senado Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CPMI-CRIME", "tipo": "orgao_publico"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Senado Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Qualquer transferência da requerente ficou condicionada à prévia manifestação expressa, formal e inequívoca quanto à sua opção positiva pelo comparecimento.",
+      "pagina": 6,
+      "trecho_fonte": "ficando, todavia, qualquer transferência condicionada à prévia manifestação expressa, formal e inequívoca quanto à sua opção positiva pelo comparecimento",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão serve como salvo-conduto.",
+      "pagina": 6,
+      "trecho_fonte": "Serve esta decisão como SALVO-CONDUTO",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Determinou-se que, cumpridas as determinações, seja dada ciência à Procuradoria Geral da República.",
+      "pagina": 6,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria Geral da República",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Determinou-se que a Secretaria proceda às comunicações e providências em regime de absoluta urgência, com publicidade da decisão.",
+      "pagina": 7,
+      "trecho_fonte": "determinadas, em regime de absoluta urgência. Dê-se publicidade à presente decisão",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão é datada de Brasília, 13 de março de 2026, e assinada pelo Ministro André Mendonça, Relator.",
+      "pagina": 7,
+      "trecho_fonte": "Brasília, 13 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

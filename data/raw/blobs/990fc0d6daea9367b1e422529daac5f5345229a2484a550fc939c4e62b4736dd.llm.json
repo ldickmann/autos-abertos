@@ -1,0 +1,235 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Deputada Luciene Cavalcante apresentou, por petição encartada ao e-Doc. 822, \"Requerimento de inclusão de investigado e apuração de fatos novos\" em face do Deputado Mario Frias.",
+      "pagina": 3,
+      "trecho_fonte": "Por meio de petição encartada ao e-Doc. 822, a Deputada Luciene Cavalcante apresenta “Requerimento de inclusão de investigado e apuração de fatos novos” em face do também Deputado Mario Frias",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"},
+        {"nome": "Mario Frias", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Deputada Luciene Cavalcante fundamenta o requerimento em arquivo de áudio divulgado pelo portal Intercept Brasil em 19 de maio de 2026, em que o representado teria agradecido Daniel Vorcaro pelo fomento concedido a obra cinematográfica sobre o ex-Presidente da República Jair Bolsonaro.",
+      "pagina": 3,
+      "trecho_fonte": "a partir de arquivo de áudio divulgado pelo portal virtual Intercept Brasil, em 19 de maio de 2026, em que o representado teria agradecido Daniel Vorcaro pelo fomento concedido em obra cinematográfica sobre o ex- Presidente da República, Jair Bolsonaro.",
+      "atribuida_a": "Deputada Luciene Cavalcante",
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"},
+        {"nome": "Mario Frias", "tipo": "pessoa"},
+        {"nome": "Intercept Brasil", "tipo": "organizacao"},
+        {"nome": "Daniel Vorcaro", "tipo": "pessoa"},
+        {"nome": "Jair Bolsonaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Deputada Luciene Cavalcante apresentou, por petição encartada ao e-Doc. 831, \"Requerimento de apuração de fatos novos e inclusão de investigado\" em face de Ricardo Nunes, Prefeito do Município de São Paulo.",
+      "pagina": 3,
+      "trecho_fonte": "Por meio de petição encartada ao e-Doc. 831, a mesma Deputada apresenta “Requerimento de apuração de fatos novos e inclusão de investigado” em face de Ricardo Nunes, Prefeito do Município de São Paulo",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"},
+        {"nome": "Ricardo Nunes", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Deputada Luciene Cavalcante aventa a suspeita de possível conexão entre o Banco Master, a Concessionária Cortel SP e a Prefeitura do Município de São Paulo, responsável pela concessão e fiscalização dos serviços funerários e cemiteriais da capital paulista, concessão ocorrida em 2023.",
+      "pagina": 3,
+      "trecho_fonte": "ante a suspeita aventada, segundo a qual haveria possível conexão entre o Banco Master, a Concessionária Cortel SP e a Prefeitura do Município de São Paulo, responsável pela concessão e fiscalização dos serviços funerários e cemiteriais da capital paulista.",
+      "atribuida_a": "Deputada Luciene Cavalcante",
+      "entidades": [
+        {"nome": "Luciene Cavalcante", "tipo": "pessoa"},
+        {"nome": "Banco Master", "tipo": "organizacao"},
+        {"nome": "Concessionária Cortel SP", "tipo": "organizacao"},
+        {"nome": "Prefeitura do Município de São Paulo", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Senadora Eudócia Maria Holanda de Araujo Caldas apresentou \"Notícia-Crime\" por petição encartada ao e-Doc. 837.",
+      "pagina": 3,
+      "trecho_fonte": "Por meio da petição encertada ao e-Doc. 837, a Senadora Eudócia Maria Holanda de Araujo Caldas apresenta “Notícia-Crime”",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Eudócia Maria Holanda de Araujo Caldas", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Senadora Eudócia Maria Holanda de Araujo Caldas postula a instauração de procedimentos investigatórios e a reabertura de inquéritos já arquivados, alegando conexão temática, probatória e institucional com o objeto do inquérito.",
+      "pagina": 3,
+      "trecho_fonte": "postulando a instauração de procedimentos investigatórios e a reabertura de inquéritos já arquivados, porquanto alegadamente existente conexão temática, probatória e institucional com o objeto do presente inquérito.",
+      "atribuida_a": "Senadora Eudócia Maria Holanda de Araujo Caldas",
+      "entidades": [
+        {"nome": "Eudócia Maria Holanda de Araujo Caldas", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Banco Central do Brasil prestou informação nos autos por petição encartada ao e-Doc. 869.",
+      "pagina": 3,
+      "trecho_fonte": "Por meio da petição encartada ao e-Doc. 869, o Banco Central do Brasil informa",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Banco Central do Brasil informa a identificação de irregularidades no âmbito do conglomerado liderado pela Entrepay Instituição de Pagamento S.A., do qual faz parte a Octa Sociedade de Crédito Direito S.A.",
+      "pagina": 3,
+      "trecho_fonte": "o Banco Central do Brasil informa a identificação de ocorrência de irregularidades no âmbito do conglomerado liderado pela Entrepay Instituição de Pagamento S.A., de que faz parte a Octa Sociedade de Crédito Direito S.A.",
+      "atribuida_a": "Banco Central do Brasil",
+      "entidades": [
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "Entrepay Instituição de Pagamento S.A.", "tipo": "organizacao"},
+        {"nome": "Octa Sociedade de Crédito Direito S.A.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Banco Central do Brasil aponta que as irregularidades consistem na negociação de valores mobiliários (cotas de fundo de investimento) sem lastro suficiente e na indução do BCB a erro sobre situação financeira e operações.",
+      "pagina": 3,
+      "trecho_fonte": "“na negociação de valores mobiliários (cotas de fundo de investimento) sem lastro suficiente; indução do BCB a erro sobre situação financeira e operações,",
+      "atribuida_a": "Banco Central do Brasil",
+      "entidades": [
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "Entrepay Instituição de Pagamento S.A.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Banco Central do Brasil aponta ainda a sonegação de informações, a utilização de artifícios contábeis aparentando falsamente enquadramento em limites regulamentares e o desvio de recursos que deveriam ser destinados à liquidação de transações de pagamento.",
+      "pagina": 4,
+      "trecho_fonte": "sonegando-lhe informações; utilização de artifícios contábeis, aparentando falsamente enquadramento em limites regulamentares; e desvio de recursos que, por expressa determinação legal, deveriam ser destinados à liquidação das transações de pagamento necessárias ao recebimento pelo usuário final”",
+      "atribuida_a": "Banco Central do Brasil",
+      "entidades": [
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "Entrepay Instituição de Pagamento S.A.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo o Banco Central do Brasil, os fatos apurados administrativamente guardam conexão com os ilícitos investigados no âmbito da Operação Compliance Zero.",
+      "pagina": 4,
+      "trecho_fonte": "de acordo com o Banco Central, os fatos apurados administrativamente “guardam conexão com os ilícitos que estão sendo investigados no âmbito da Operação Compliance Zero”.",
+      "atribuida_a": "Banco Central do Brasil",
+      "entidades": [
+        {"nome": "Banco Central", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica que, embora as quatro petições versem sobre questões correlacionadas aos fatos investigados no Inquérito, os pedidos formulados e as informações prestadas guardam manifesta autonomia temática.",
+      "pagina": 4,
+      "trecho_fonte": "em que pese versem sobre questões que possuam plena correlação com os fatos objeto de investigação no bojo do presente Inquérito, os pedidos formulados e as informações prestadas guardam manifesta autonomia temática.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator determina o desentranhamento buscando preservar o bom andamento do procedimento e dos pedidos formulados em cada uma das petições.",
+      "pagina": 4,
+      "trecho_fonte": "buscando preservar o bom andamento deste procedimento, bem como dos pedidos especificamente formulados no bojo de cada uma das petições indicadas, determino o seu desentranhamento",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o desentranhamento das quatro petições e dos documentos a elas acostados, para autuação em procedimento autônomo na classe PET, a serem processados em conexão com o Inquérito.",
+      "pagina": 4,
+      "trecho_fonte": "determino o seu desentranhamento, bem como dos documentos a elas acostados, para autuação em procedimento autônomo (na classe processual PET), a serem processados em conexão com o presente Inquérito.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Secretaria Judiciária deverá desentranhar a petição do e-Doc. 822, com os anexos e-Docs. 823 a 827, para autuação em procedimento autônomo na classe PET, vinculada ao IPL em razão da conexão temática.",
+      "pagina": 4,
+      "trecho_fonte": "a) O desentranhamento da Petição encartada ao e-Doc. 822, com os respectivos anexos (e-Docs. 823 a 827), para autuação em procedimento autônomo, com a adoção da classe PET, vinculada ao presente IPL em razão da conexão temática;",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Secretaria Judiciária deverá desentranhar a petição do e-Doc. 831, com os anexos e-Docs. 832 a 834, para autuação em procedimento autônomo na classe PET, vinculada ao IPL em razão da conexão temática.",
+      "pagina": 4,
+      "trecho_fonte": "b) O desentranhamento da Petição encartada ao e-Doc. 831, com os respectivos anexos (e-Docs. 832 a 834), para autuação em procedimento autônomo, com a adoção da classe PET, vinculada ao presente IPL em razão da conexão temática;",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Secretaria Judiciária deverá desentranhar a petição do e-Doc. 837, com o anexo e-Doc. 838, para autuação em procedimento autônomo na classe PET, vinculada ao IPL em razão da conexão temática.",
+      "pagina": 5,
+      "trecho_fonte": "c) O desentranhamento da Petição encartada ao e-Doc. 837, com o respectivo anexo (e-Doc. 838), para autuação em procedimento autônomo, com a adoção da classe PET, vinculada ao presente IPL em razão da conexão temática;",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Secretaria Judiciária deverá desentranhar a petição do e-Doc. 869, com o respectivo anexo (indicado no despacho como e-Doc. 838), para autuação em procedimento autônomo na classe PET, vinculada ao IPL em razão da conexão temática.",
+      "pagina": 5,
+      "trecho_fonte": "d) O desentranhamento da Petição encartada ao e-Doc. 869, com o respectivo anexo (e-Doc. 838), para autuação em procedimento autônomo, com a adoção da classe PET, vinculada ao presente IPL em razão da conexão temática.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho determinou o traslado de cópia da decisão a cada uma das novas PETs criadas.",
+      "pagina": 5,
+      "trecho_fonte": "Translade-se cópia da presente decisão a cada uma das novas PETs criadas.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Cumprida a alínea d), a Secretaria Judiciária deverá intimar o Procurador subscrevente da informação do e-Doc. 869, na nova PET autônoma, para providenciar o traslado do processo eletrônico PE nº 307103 ao novo procedimento.",
+      "pagina": 5,
+      "trecho_fonte": "a Secretária Judiciária deverá promover a intimação do Procurador subscrevente da informação (e-Doc. 869), no bojo da nova PET autônoma, para que adote as providências necessárias ao traslado do processo eletrônico objeto de comunicação (PE nº 307103) ao novo procedimento.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretária Judiciária", "tipo": "orgao_publico"},
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Cumpridas as determinações, os novos procedimentos deverão ser feitos conclusos para apreciação específica.",
+      "pagina": 5,
+      "trecho_fonte": "Cumpridas as determinações acima, tornem conclusos os novos procedimentos para apreciação específica.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 6 de julho de 2026, pelo relator, Ministro André Mendonça.",
+      "pagina": 5,
+      "trecho_fonte": "Brasília, 6 de julho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

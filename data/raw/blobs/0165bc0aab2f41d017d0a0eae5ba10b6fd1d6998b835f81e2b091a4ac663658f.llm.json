@@ -1,0 +1,239 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "ALBERTO FELIX DE OLIVEIRA NETO apresentou petição no dia da decisão (30 de abril de 2026), diante do falecimento de seu genitor, Gerson Felix de Oliveira.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de petição apresentada por ALBERTO FELIX DE OLIVEIRA NETO no dia de hoje, em que, diante do falecimento de seu genitor, o Sr. Gerson Felix de Oliveira",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"},
+        {"nome": "Gerson Felix de Oliveira", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A declaração de óbito que instrui o pedido consta dos autos como e-Doc. 742.",
+      "pagina": 3,
+      "trecho_fonte": "devidamente documentada mediante a declaração de óbito que instrui o pedido (e-Doc. 742)",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "ALBERTO FELIX DE OLIVEIRA NETO requer autorização para deslocar-se até a cidade de Passos/MG, a fim de comparecer à cerimônia de velório e sepultamento.",
+      "pagina": 3,
+      "trecho_fonte": "requer autorização para deslocar-se até a cidade de Passos/MG, a fim de comparecer à cerimônia de velório e sepultamento.",
+      "atribuida_a": "ALBERTO FELIX DE OLIVEIRA NETO",
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente informa que a cerimônia fúnebre será realizada na Funerária São Vicente de Paulo, na Praça da Saudade, nº 247, Centro, Passos/MG, e que pretende pernoitar na Rua Mantiqueira, nº 743, Passos/MG, permanecendo até 3 de maio de 2026.",
+      "pagina": 3,
+      "trecho_fonte": "Informa, ainda, o requerente, que a cerimônia fúnebre será realizada na Funerária São Vicente de Paulo, situada na Praça da Saudade, nº 247, Centro, Passos/MG, e que pretende pernoitar no endereço situado na Rua Mantiqueira, nº 743, Passos/MG, ali permanecendo até o dia 3 de maio de 2026.",
+      "atribuida_a": "ALBERTO FELIX DE OLIVEIRA NETO",
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"},
+        {"nome": "Funerária São Vicente de Paulo", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a situação apresentada denota circunstância humanitária excepcional, documentada pela declaração de óbito que instrui o pedido (e-Doc. 742).",
+      "pagina": 3,
+      "trecho_fonte": "A situação apresentada denota circunstância humanitária excepcional, devidamente documentada mediante a declaração de óbito que instrui o pedido (e-Doc. 742).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que, ainda que o requerente esteja sujeito a medidas cautelares de natureza restritiva nos autos, o caso envolve questão humanitária excepcional.",
+      "pagina": 3,
+      "trecho_fonte": "ainda que o requerente se encontre sujeito a medidas cautelares de natureza restritiva nos presentes autos, o caso em apreço envolve questão humanitária excepcional.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que os requisitos para a manutenção das restrições em vigor estão todos presentes.",
+      "pagina": 3,
+      "trecho_fonte": "Muito embora os requisitos para a manutenção das restrições em vigor estejam todos presentes",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que os fatos comunicados apontam para um evento irreversível e de profunda magnitude afetiva, cujo enfrentamento digno compõe o núcleo essencial da proteção constitucional à família (art. 226 da CRFB) e justifica o acolhimento do pleito.",
+      "pagina": 3,
+      "trecho_fonte": "os fatos comunicados nos autos apontam para um evento irreversível e de profunda magnitude afetiva, cujo enfrentamento digno compõe o núcleo essencial da proteção constitucional à família (art. 226, da CRFB) e justifica o acolhimento do pleito apresentado.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator fundamenta a autorização no princípio da dignidade da pessoa humana (art. 1º, III, da Constituição da República) e nos valores inerentes à solidariedade familiar.",
+      "pagina": 3,
+      "trecho_fonte": "com esteio no princípio da dignidade da pessoa humana, consagrado no art. 1º, inciso III, da Constituição da República, bem como nos valores inerentes à solidariedade familiar",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca, por analogia, o art. 120, I, da Lei nº 7.210/84 (Lei de Execução Penal), segundo o qual os presos provisórios poderão obter permissão para sair do estabelecimento quando do falecimento de seu ascendente.",
+      "pagina": 4,
+      "trecho_fonte": "que pode ser empregado por analogia ao caso dos autos, que os presos provisórios poderão obter permissão para sair do estabelecimento em que se encontram, quando do falecimento de seu ascendente (art. 120, I, da Lei nº 7.210/84).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca que a autorização é deferida em caráter estritamente excepcional, temporário e condicionado, sem flexibilização das demais obrigações e restrições cautelares vigentes, notadamente a medida do art. 319, III, do CPP.",
+      "pagina": 4,
+      "trecho_fonte": "a autorização ora concedida é deferida em caráter estritamente excepcional, temporário e condicionado, não importando flexibilização das demais obrigações e restrições cautelares vigentes, notadamente da medida prevista no art. 319, III, do CPP",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Permanece vigente a proibição de o investigado manter contato com qualquer pessoa investigada no âmbito da \"Operação Compliance Zero\", sob pena de revogação imediata da autorização e da prisão domiciliar.",
+      "pagina": 4,
+      "trecho_fonte": "qual seja a de proibir o investigado de manter contato com qualquer pessoa investigada no âmbito da “Operação Compliance Zero”, sob pena de revogação imediata da presente autorização e da prisão domiciliar.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pedido de ALBERTO FELIX DE OLIVEIRA NETO, em caráter excepcional e temporário, autorizando seu deslocamento sob condições.",
+      "pagina": 4,
+      "trecho_fonte": "DEFIRO o pedido formulado por ALBERTO FELIX DE OLIVEIRA NETO, em caráter excepcional e temporário, para autorizar seu deslocamento nas seguintes condições:",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O requerente fica autorizado a deslocar-se à Rua Mantiqueira, nº 743, Passos/MG, onde deverá pernoitar, e à Funerária São Vicente de Paulo, na Praça da Saudade, nº 247, Centro, Passos/MG, vedada a permanência em qualquer outro endereço.",
+      "pagina": 4,
+      "trecho_fonte": "(i) o requerente fica autorizado a deslocar-se até o endereço situado na Rua Mantiqueira, nº 743, Passos/MG, onde deverá pernoitar durante o período de que trata a presente autorização, e ao endereço da Funerária São Vicente de Paulo, situada na Praça da Saudade, nº 247, Centro, Passos/MG",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"},
+        {"nome": "Funerária São Vicente de Paulo", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O deslocamento é autorizado para a participação de ALBERTO FELIX DE OLIVEIRA NETO na cerimônia de velório e sepultamento de seu genitor, Gerson Felix de Oliveira, no período de 30/04/2026 a 04/05/2026.",
+      "pagina": 4,
+      "trecho_fonte": "(ii) o deslocamento é autorizado para os fins de participação de ALBERTO FELIX DE OLIVEIRA NETO na cerimônia de velório e sepultamento de seu genitor Gerson Felix de Oliveira no período de 30/04/2026 a 04/05/2026",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"},
+        {"nome": "Gerson Felix de Oliveira", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Finda a cerimônia de sepultamento, o requerente deverá retornar imediatamente ao local de cumprimento de seu monitoramento, limitada sua permanência em Passos/MG ao estritamente necessário e não ultrapassando a data de 04 de maio de 2026.",
+      "pagina": 5,
+      "trecho_fonte": "o requerente deverá retornar imediatamente ao local de cumprimento de seu monitoramento, ficando sua permanência em Passos/MG limitada ao estritamente necessário para a realização do ato fúnebre, não podendo ultrapassar, em nenhuma hipótese, a data de 04 de maio de 2026",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O retorno do requerente ao local de origem deverá ser comunicado nos autos no prazo máximo de 24 horas.",
+      "pagina": 5,
+      "trecho_fonte": "(iv) o seu retorno ao local de origem deverá ser comunicado nos autos no prazo máximo de 24 (vinte e quatro) horas;",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Permanecem em vigor as demais vedações estabelecidas, em especial a de manter contato com eventuais investigados ou terceiros que guardem relação com os fatos objeto do inquérito.",
+      "pagina": 5,
+      "trecho_fonte": "(v) permanecem em vigor as demais vedações estabelecidas, em especial, a de manter contato com eventuais investigados ou terceiros que guardem relação com os fatos objeto do presente inquérito.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a remessa urgente dos autos à Secretaria Judiciária para a expedição dos documentos necessários à ciência da autoridade policial e da central de monitoração do investigado ALBERTO FELIX DE OLIVEIRA NETO.",
+      "pagina": 5,
+      "trecho_fonte": "Remetam-se, com urgência, os autos à Secretaria Judiciária para a confecção e expedição imediata de todos os documentos que forem necessários à operacionalização de ciência à autoridade policial que atua no presente feito e à central de monitoração do investigado ALBERTO FELIX DE OLIVEIRA NETO",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"},
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a flexibilização do monitoramento do investigado no período de 30/04/2026 a 04/05/2026 para os endereços da Rua Mantiqueira, nº 743, e da Funerária São Vicente de Paulo, Praça da Saudade, nº 247, Centro, ambos em Passos/MG.",
+      "pagina": 5,
+      "trecho_fonte": "a fim de proceder à flexibilização do seu monitoramento no período de 30/04/2026 a 04/05/2026, para os endereços indicados —, quais sejam, Rua Mantiqueira, nº 743, e Funerária São Vicente de Paulo, situada na Praça da Saudade, nº 247, Centro, Passos/MG",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ALBERTO FELIX DE OLIVEIRA NETO", "tipo": "pessoa"},
+        {"nome": "Funerária São Vicente de Paulo", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a intimação da defesa com urgência.",
+      "pagina": 5,
+      "trecho_fonte": "Intime-se a defesa com urgência.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou que seja dada ciência ao Ministério Público Federal.",
+      "pagina": 5,
+      "trecho_fonte": "Dê-se ciência ao Ministério Público Federal.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 30 de abril de 2026, pelo relator, Ministro André Mendonça.",
+      "pagina": 6,
+      "trecho_fonte": "Brasília, 30 de abril de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

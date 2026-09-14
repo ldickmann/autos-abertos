@@ -1,0 +1,82 @@
+{
+  "itens": [
+    {
+      "pedido": "autorização para oitiva do investigado DANIEL BUENO VORCARO, com fixação de data e local, para instrução dos Inquéritos Administrativos nº 19957.005195/2025-70, 19957.010013/2025-82 e 19957.012897/2025-18 em curso perante a CVM",
+      "quem_pediu": "Comissão de Valores Mobiliários — CVM, representada pela Advocacia-Geral da União",
+      "resultado": "deferido",
+      "decisao": "deferiu o pedido e autorizou a realização da oitiva do investigado, presencialmente ou por videoconferência, em data e horário a serem fixados consensualmente entre a CVM e a administração da unidade prisional, com ciência da defesa técnica",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 8,
+      "trecho_fonte": "18. Ante o exposto, defiro o pedido formulado pela CVM para:",
+      "condicoes": [
+        "direito ao silêncio, de forma total ou parcial",
+        "direito de ser assistido por seus defensores técnicos constituídos, com presença obrigatória durante todo o ato",
+        "direito de não produzir prova contra si mesmo",
+        "realização em sala reservada disponibilizada pela administração da unidade prisional, com garantia de sigilo das declarações",
+        "data e horário fixados consensualmente entre a CVM e a administração da unidade prisional, com ciência da defesa técnica, preferencialmente nos meses de agosto ou setembro de 2026",
+        "divulgação do teor da oitiva somente mediante autorização do relator"
+      ]
+    },
+    {
+      "pedido": "fixação da forma de realização da oitiva, preferencialmente presencial nas dependências do estabelecimento prisional, subsidiariamente por videoconferência",
+      "quem_pediu": "Comissão de Valores Mobiliários — CVM",
+      "resultado": "deferido",
+      "decisao": "autorizou a oitiva presencialmente ou por videoconferência e determinou que, na hipótese de depoimento presencial, o ato seja realizado nas dependências do estabelecimento prisional, em sala reservada, dispensado o deslocamento do depoente",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 9,
+      "trecho_fonte": "(ii) determinar, na hipótese de opção ser pelo depoimento presencial, que o ato seja realizado nas dependências do estabelecimento prisional em que se encontra o investigado, em sala reservada",
+      "condicoes": [
+        "sala reservada",
+        "garantia de sigilo das declarações",
+        "dispensa do deslocamento do depoente"
+      ]
+    },
+    {
+      "pedido": "prévia intimação da defesa técnica do investigado para acompanhamento da oitiva",
+      "quem_pediu": "Comissão de Valores Mobiliários — CVM",
+      "resultado": "deferido",
+      "decisao": "determinou a prévia intimação da defesa técnica do investigado da data designada",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 9,
+      "trecho_fonte": "(iii) determinar a prévia intimação da defesa técnica do investigado da data designada, em observância ao art. 7º, incisos XIV e XXI, da Lei nº 8.906/1994",
+      "condicoes": []
+    },
+    {
+      "pedido": "expedição de ofício ao estabelecimento prisional em que está custodiado o investigado DANIEL VORCARO",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou à Secretaria do Tribunal que expeça ofício ao estabelecimento prisional comunicando a necessidade de realização do ato e requerendo cooperação para disponibilização de sala reservada e condições logísticas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 9,
+      "trecho_fonte": "(iv) determinar à Secretaria deste Tribunal que expeça ofício ao estabelecimento em que está custodiado o investigado DANIEL VORCARO",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimação da requerente, das defesas constituídas, da Polícia Federal e do local de custódia, com remessa de cópia integral da decisão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da parte requerente, das defesas constituídas, da Polícia Federal e do local de custódia para as providências necessárias ao depoimento",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 10,
+      "trecho_fonte": "21. Intime-se a parte requerente, com remessa de cópia integral desta decisão, as defesas constituídas, a Polícia Federal e o local de custódia",
+      "condicoes": []
+    },
+    {
+      "pedido": "vista à Procuradoria-Geral da República após o cumprimento das determinações",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a abertura de vista à Procuradoria-Geral da República após cumpridas as determinações",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 10,
+      "trecho_fonte": "22. Cumpridas as determinações acima, abra-se vista à Procuradoria-Geral da República.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O pedido de oitiva prévia da PGR consta como já atendido no relatório (e-Doc. 472), sem dispositivo próprio."
+}

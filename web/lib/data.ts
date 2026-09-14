@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import type { Assercao, Decisoes, DocumentoCompleto, Entidade, Grafo, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, Verbete } from "@/lib/tipos";
+import type { Assercao, Decisoes, DocumentoCompleto, Entidade, Grafo, Integridade, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, RodadaMudancas, Verbete } from "@/lib/tipos";
 
 export * from "@/lib/tipos";
 
@@ -22,6 +22,8 @@ export const getLinhaTempo = () => ler<LinhaTempo>("linha_tempo.json");
 export const getReferencias = () => ler<Referencias>("referencias.json");
 export const getDecisoes = () => ler<Decisoes>("decisoes.json");
 export const getGlossario = () => ler<Verbete[]>("glossario.json");
+export const getIntegridade = () => ler<Integridade>("integridade.json");
+export const getMudancas = (): RodadaMudancas[] => (fs.existsSync(path.join(DATA_DIR, "mudancas.json")) ? ler<RodadaMudancas[]>("mudancas.json") : []);
 
 let _indiceGlossario: Map<string, Verbete> | null = null;
 /** Verbete cujo termo ou alguma das formas coincide com o texto (sem acentos, sem caixa); null se não houver. */
@@ -33,6 +35,24 @@ export function verbeteDe(texto: string | null | undefined): Verbete | null {
   }
   return _indiceGlossario.get(normalizarTermo(texto)) ?? null;
 }
+/** Um verbete por tipo de andamento: a explicação literal do portal quando existe (fonte "portal"), senão o glossário. */
+export function verbetesParaTipos(tipos: Iterable<string>, explicacoesPortal: Record<string, string | null>): Record<string, Verbete | null> {
+  const out: Record<string, Verbete | null> = {};
+  for (const t of tipos) {
+    const portal = explicacoesPortal[t];
+    if (portal) out[t] = { termo: t, formas: [], explicacao: portal, fonte: "portal" };
+    else { const v = verbeteDe(t); out[t] = v ? { ...v, fonte: "glossario" } : null; }
+  }
+  return out;
+}
+
+/** Explicações literais do portal para todos os tipos de andamento, juntando todos os processos coletados. */
+export function explicacoesPortalTodas(): Record<string, string | null> {
+  const out: Record<string, string | null> = {};
+  for (const inc of listarIncidentesColetados()) for (const [k, v] of Object.entries(getProcesso(inc).explicacoes_portal)) if (v && !out[k]) out[k] = v;
+  return out;
+}
+
 function normalizarTermo(s: string): string {
   return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
 }

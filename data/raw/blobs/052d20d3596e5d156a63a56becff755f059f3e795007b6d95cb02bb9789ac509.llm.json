@@ -1,0 +1,947 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator da Petição 15.198 (Distrito Federal) é o Ministro Dias Toffoli.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. DIAS TOFFOLI",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Procurador-Geral da República formulou pedido complementar nos autos (e-doc. 16, fls. 1/7).",
+      "pagina": 1,
+      "trecho_fonte": "Trata-se de pedido complementar formulado pelo Procurador-Geral da República nos seguintes termos (e-doc.16, fls. 1/7):",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República reafirma os termos da manifestação ASSCRIM/PGR n. 699/2026 e registra ter encampado a manifestação da Procuradoria da República em São Paulo.",
+      "pagina": 1,
+      "trecho_fonte": "Reafirmando os termos da manifestação ASSCRIM/PGR n. 699/2026, a Procuradoria-Geral da República registra ter encampado a manifestação da Procuradoria da República em São Paulo",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República registra que a Procuradoria da República em São Paulo se manifestou favoravelmente à busca e apreensão dos alvos listados, nos endereços indicados pela autoridade policial nos autos do pedido de prisão preventiva n. 5009071-26.2025.4.03.6181.",
+      "pagina": 1,
+      "trecho_fonte": "que se manifestou favoravelmente à busca e apreensão dos alvos a seguir, com os respectivos endereços indicados pela autoridade policial nos autos do pedido de prisão preventiva n.5009071-26.2025.4.03.6181",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica JOÃO CARLOS FALBO MANSUR (alvo nº 1) como alvo de busca e apreensão, no endereço Rua Galeno de Revoredo, n. 20, apto 132, Itaim Bibi, São Paulo/SP, CEP 04531-030.",
+      "pagina": 1,
+      "trecho_fonte": "1 - JOÃO CARLOS FALBO MANSUR (CPF 116.687.758-24) Rua Galeno de Revoredo, n. 20, apto 132, Itaim Bibi, São Paulo/SP, CEP 04531-030;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "JOÃO CARLOS FALBO MANSUR",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica DANIEL BUENO VORCARO (alvo nº 2) como alvo de busca e apreensão, em três endereços: R. Dr. Ibsen da Costa Manso, 141, Jardim América, São Paulo/SP (Endereço 1); Rua Fausto Nunes Vieira, 40, apto 501, Belvedere, Belo Horizonte/MG (Endereço 2); e Rua Elza Brandão Rodoarte, 330, apto 2100, Belvedere, Belo Horizonte/MG (Endereço 3).",
+      "pagina": 1,
+      "trecho_fonte": "2 - DANIEL BUENO VORCARO (CPF 062.098.326-44) Endereço 1: R. Dr. Ibsen da Costa Manso, 141, Jardim América, São Paulo/SP Endereço 2: Rua Fausto Nunes Vieira, 40, apto 501 – Belvedere – Belo Horizonte/MG Endereço 3: Rua Elza Brandão Rodoarte,330,apto 2100–Belvedere –Belo Horizonte/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "DANIEL BUENO VORCARO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica HENRIQUE MOURA VORCARO (alvo nº 3) como alvo de busca e apreensão, no endereço Rua João Furtado, 200 (antigo n. 63), apto 501, Gutierrez, Belo Horizonte/MG.",
+      "pagina": 1,
+      "trecho_fonte": "3 - HENRIQUE MOURA VORCARO (CPF 427.654.986- 87) Rua João Furtado, 200 (antigo n. 63), apto 501, Gutierrez, Belo Horizonte/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "HENRIQUE MOURA VORCARO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica NATÁLIA BUENO VORCARO ZETTEL e FABIANO CAMPOS ZETTEL (alvo nº 4) como alvos de busca e apreensão, no endereço Alameda do Morro, 85, Torre 01, apto 1300, Vila da Serra, Nova Lima/MG.",
+      "pagina": 1,
+      "trecho_fonte": "4 - NATÁLIA BUENO VORCARO ZETTEL (CPF 069.059.966- 88) e FABIANO CAMPOS ZETTEL (CPF 027.818.816-86) Alameda do Morro, 85, Torre 01, apto 1300, Vila da Serra,Nova Lima/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "NATÁLIA BUENO VORCARO ZETTEL",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "FABIANO CAMPOS ZETTEL",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica FELIPE CANCADO VORCARO (alvos nº 5 e 6) como alvo de busca e apreensão.",
+      "pagina": 1,
+      "trecho_fonte": "5 e 6 - FELIPE CANCADO VORCARO (CPF 075.983.426-",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "FELIPE CANCADO VORCARO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O endereço indicado pela Procuradoria-Geral da República para os alvos nº 5 e 6 é Av. Dr. Marco Paulo Simon Jardim, 740, apto 300, Vila da Serra, Nova Lima/MG.",
+      "pagina": 2,
+      "trecho_fonte": "10) Av. Dr. Marco Paulo Simon Jardim, 740, apto 300, Vila da Serra, Nova Lima/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica NELSON SEQUEIROS RODRIGUEZ TANURE (alvo nº 7) como alvo de busca e apreensão, no endereço Av. Bartolomeu Mitre n. 68, apto. 101, Leblon, Rio de Janeiro/RJ.",
+      "pagina": 2,
+      "trecho_fonte": "7 - NELSON SEQUEIROS RODRIGUEZ TANURE (CPF 041.747.715-53) Av. Bartolomeu Mitre n. 68, apto. 101, Leblon, Rio de Janeiro/RJ;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "NELSON SEQUEIROS RODRIGUEZ TANURE",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República lista BENJAMIM BOTELHO DE ALMEIDA (alvo nº 8) com a anotação de que a busca está prejudicada por ele não residir em território nacional.",
+      "pagina": 2,
+      "trecho_fonte": "8 - BENJAMIM BOTELHO DE ALMEIDA (CPF 758.535.747-87)Prejudicado por não residir em território nacional;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BENJAMIM BOTELHO DE ALMEIDA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica MAURÍCIO ANTONIO QUADRADO (alvo nº 9) como alvo de busca e apreensão, no endereço Praça Pereira Coutinho, 71, ap. 191, Vila Nova Conceição, São Paulo/SP.",
+      "pagina": 2,
+      "trecho_fonte": "9 - MAURÍCIO ANTONIO QUADRADO (CPF 032.718.308- 00) Praça Pereira Coutinho, 71, ap. 191, Vila Nova Conceição, São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "MAURÍCIO ANTONIO QUADRADO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica ASCENDINO MADUREIRA GARCIA (alvo nº 10) como alvo de busca e apreensão, no endereço Rua Jacarandá, 25, Jundiai/SP.",
+      "pagina": 2,
+      "trecho_fonte": "10 - ASCENDINO MADUREIRA GARCIA (CPF 824.655.687-87)Rua Jacarandá,25,Jundiai/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "ASCENDINO MADUREIRA GARCIA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica ANDRÉ BERALDO DE MORAIS (alvo nº 11) como alvo de busca e apreensão, no endereço Rua José Rotheia, 178, Condomínio Fazenda da Serra, Diamante, Belo Horizonte/MG.",
+      "pagina": 2,
+      "trecho_fonte": "11 - ANDRÉ BERALDO DE MORAIS (CPF 076.120.006- 10) Rua José Rotheia, 178 – Condomínio Fazenda da Serra – Diamante, Belo Horizonte/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "ANDRÉ BERALDO DE MORAIS",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA (alvo nº 12) como alvo de busca e apreensão, em dois endereços: Rua Coronel Oscar Porto, 713, apto 72, Paraíso, São Paulo/SP (Endereço 1) e Rua Queluz, 70, ap. 113, Jardim Paulista, São Paulo/SP (Endereço 2).",
+      "pagina": 2,
+      "trecho_fonte": "12 - ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA (CPF 148.427.118-17) Endereço 1: Rua Coronel Oscar Porto, 713, apto 72, Paraíso, São Paulo/SP Endereço 2: Rua Queluz, 70, ap. 113, Jardim Paulista,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica FERNANDO ALVES VIEIRA (alvo nº 13) como alvo de busca e apreensão, no endereço Rua das Acácias, 747, Village Terrase I, Vale do Sereno, Nova Lima/MG.",
+      "pagina": 2,
+      "trecho_fonte": "13 - FERNANDO ALVES VIEIRA (CPF 069.572.446-01) Rua das Acácias, 747 – Village Terrase I – Vale do Sereno, Nova Lima/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "FERNANDO ALVES VIEIRA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica LINDOLFO LUIZ COUTINHO DA SILVA (alvo nº 14) como alvo de busca e apreensão, no endereço Rua W Dois, 55, Pongelupe, Belo Horizonte/MG.",
+      "pagina": 2,
+      "trecho_fonte": "14 - LINDOLFO LUIZ COUTINHO DA SILVA (CPF 083.948.256-64)Rua W Dois,55,Pongelupe,Belo Horizonte/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "LINDOLFO LUIZ COUTINHO DA SILVA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica RICARDO BALCIUNAS (alvo nº 15) como alvo de busca e apreensão, no endereço Rua José Hemetério Andrade, 285, apto 702, Buritis, Belo Horizonte/MG.",
+      "pagina": 2,
+      "trecho_fonte": "15 - RICARDO BALCIUNAS (CPF 058.594.388-50) Rua José Hemetério Andrade,285,apto 702,Buritis,Belo Horizonte/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "RICARDO BALCIUNAS",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica VALDENICE PANTALEÃO DE SOUSA (alvo nº 16) como alvo de busca e apreensão, no endereço Rua Augusto de Lima, 585 BC, Brasília, Sarzedo/MG.",
+      "pagina": 2,
+      "trecho_fonte": "16 - VALDENICE PANTALEÃO DE SOUSA (CPF 077.295.156- 01) Rua Augusto de Lima, 585 BC, Brasília, Sarzedo/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "VALDENICE PANTALEÃO DE SOUSA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica FLAVIO DANIEL AGUETONI (alvo nº 17) como alvo de busca e apreensão.",
+      "pagina": 2,
+      "trecho_fonte": "17 - FLAVIO DANIEL AGUETONI (CPF 286.491.528-64);",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "FLAVIO DANIEL AGUETONI",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O endereço indicado pela Procuradoria-Geral da República para o alvo nº 17 é Rua João Antônio de Oliveira, 426, Torre Rovigo, apto. 403, 4º Andar, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "Rua João Antônio de Oliveira, 426, Torre Rovigo, apto. 403, 4º Andar,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica LUIS FERNANDO DE ALMEIDA (alvo nº 18) como alvo de busca e apreensão, no endereço Avenida Amador Bueno da Veiga, 3044, ap. 34, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "18 - LUIS FERNANDO DE ALMEIDA (CPF 371.215.138- 11)Avenida Amador Bueno da Veiga,3044,ap.34,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "LUIS FERNANDO DE ALMEIDA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica ANTONIO CARLOS FREIXO JUNIOR e JULIA GRASIELA DE OLIVEIRA FREIXO (alvos nº 19 e 20) como alvos de busca e apreensão, no endereço Rua Doutor João Pinheiro, 159, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "19 e 20 - ANTONIO CARLOS FREIXO JUNIOR (CPF 532.478.416- 87) e JULIA GRASIELA DE OLIVEIRA FREIXO (CPF 044.976.966-69);Rua Doutor João Pinheiro,159,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "ANTONIO CARLOS FREIXO JUNIOR",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "JULIA GRASIELA DE OLIVEIRA FREIXO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica RICARDO BATISTA DE SIQUEIRA XAVIER (alvo nº 21) como alvo de busca e apreensão, no endereço Rua Fidêncio Ramos, 74, apto 92, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "21 - RICARDO BATISTA DE SIQUEIRA XAVIER (CPF 381.698.728-12)Rua Fidêncio Ramos,74,apto 92,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "RICARDO BATISTA DE SIQUEIRA XAVIER",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica MICAELA FERRAS SEVERO (alvo nº 22) como alvo de busca e apreensão, no endereço Rua Cel. Scherer, 65, Santa Maria/RS, CEP 97.020-035.",
+      "pagina": 3,
+      "trecho_fonte": "22 - MICAELA FERRAS SEVERO (CPF 035.175.490-37) Rua Cel.Scherer,65,Santa Maria/RS,CEP 97.020-035;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "MICAELA FERRAS SEVERO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica VICENTE CONTE NETO (alvo nº 23) como alvo de busca e apreensão, no endereço Rua Peixoto Gomide, 1418, apto. 111, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "23 - VICENTE CONTE NETO (CPF 213.259.638-79) Rua Peixoto Gomide,1418.apto.111São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "VICENTE CONTE NETO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica ANTONIO CESAR CARVALHO SOBRINHO (alvo nº 24) como alvo de busca e apreensão, no endereço Rua Beta, 250, Bloco 04, apto 403, Jardim Riacho das Pedras, Contagem/MG.",
+      "pagina": 3,
+      "trecho_fonte": "24 - ANTONIO CESAR CARVALHO SOBRINHO (CPF 091.101.396-21) Rua Beta, 250, Bloco 04, apto 403 – Jardim Riacho das Pedras –Contagem/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "ANTONIO CESAR CARVALHO SOBRINHO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica JULIANA MELLO ESTEVES PEREIRA (alvo nº 25) como alvo de busca e apreensão, no endereço Rua Quatá, n. 339, apto 163, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "25 - JULIANA MELLO ESTEVES PEREIRA (CPF 089.814.446-92)Rua Quatá,n.339,apto 163–São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "JULIANA MELLO ESTEVES PEREIRA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica LUCIANA FREIRE BARCA NASCIMENTO (alvo nº 26) como alvo de busca e apreensão, no endereço Rua Manuel dos Reis, 141, Casa, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "26 - LUCIANA FREIRE BARCA NASCIMENTO (CPF 126.428.758-57)Rua Manuel dos Reis,141,Casa,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "LUCIANA FREIRE BARCA NASCIMENTO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica RICARDO SILVA VASCONCELLOS (alvo nº 27) como alvo de busca e apreensão, no endereço Rua Alves Guimarães, 689, ap. 73, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "27 - RICARDO SILVA VASCONCELLOS (CPF 083.820.017- 69)Rua Alves Guimarães,689,ap.73,São Paulo/SP",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "RICARDO SILVA VASCONCELLOS",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica RODRIGO LUIZ CAMARGO RIBEIRO (alvo nº 28) como alvo de busca e apreensão, no endereço Rua Leonardo Cerveira Varandas, 50, ap. 43, Bloco 4, Morumbi, São Paulo/SP.",
+      "pagina": 3,
+      "trecho_fonte": "28 - RODRIGO LUIZ CAMARGO RIBEIRO (CPF 226.631.328- 29) Rua Leonardo Cerveira Varandas, 50, ap. 43, Bloco 4,Morumbi,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "RODRIGO LUIZ CAMARGO RIBEIRO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica SILVIO BARRETO DA SILVA (alvo nº 29) como alvo de busca e apreensão, no endereço Rua Marechal Ramon Castilla n. 199, apto. 208, Botafogo, Rio de Janeiro/RJ.",
+      "pagina": 3,
+      "trecho_fonte": "29 - SILVIO BARRETO DA SILVA (CPF 024.175.177-28) Rua Marechal Ramon Castilla n. 199, apto. 208, Botafogo, Rio de Janeiro/RJ;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "SILVIO BARRETO DA SILVA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica THIAGO ASSUMPÇÃO HENRIQUES (alvo nº 30) como alvo de busca e apreensão.",
+      "pagina": 3,
+      "trecho_fonte": "30 - THIAGO ASSUMPÇÃO HENRIQUES (CPF",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "THIAGO ASSUMPÇÃO HENRIQUES",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O endereço indicado pela Procuradoria-Geral da República para o alvo nº 30 é Av. das Constelações, 385, Torre 5, apto 41, Vale dos Cristais, Nova Lima/MG.",
+      "pagina": 4,
+      "trecho_fonte": "Av. das Constelações, 385, Torre 5, apto 41, Vale dos Cristais,Nova Lima/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica TIAGO OLIVA SCHIETTI (alvo nº 31) como alvo de busca e apreensão, no endereço Rua Armando Petrela, 311, apto. 21, Jardim Panorama, São Paulo/SP.",
+      "pagina": 4,
+      "trecho_fonte": "31 - TIAGO OLIVA SCHIETTI (CPF 052.442.049-12) Rua Armando Petrela,311,apto.21,Jardim Panorama,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "TIAGO OLIVA SCHIETTI",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica WILSON AUGUSTO ALVES (alvo nº 32) como alvo de busca e apreensão, no endereço Rua Sevilha, 73, Santa Cruz Industrial, Contagem/MG.",
+      "pagina": 4,
+      "trecho_fonte": "32 - WILSON AUGUSTO ALVES (CPF 527.567.266-72) Rua Sevilha,73,Santa Cruz Industrial,Contagem/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "WILSON AUGUSTO ALVES",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica BANCO MASTER (alvo nº 33) como alvo de busca e apreensão, nos endereços R. Elvira Ferraz, 440, Itaim Bibi, São Paulo/SP (Endereço 1) e Avenida Brigadeiro Faria Lima, n. 3.477, 5º andar, Torre B, Itaim Bibi, São Paulo/SP (Endereço 2).",
+      "pagina": 4,
+      "trecho_fonte": "33 - BANCO MASTER (CNPJ 33.923.798/0001-00) Endereço 1: R. Elvira Ferraz, 440 - Itaim Bibi, São Paulo/SP - Endereço 2: Avenida Brigadeiro Faria Lima, n. 3.477, 5º andar, TORRE B, Itaim- Bibi, São Paulo/SP",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BANCO MASTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica para BANCO MASTER (alvo nº 33) um terceiro endereço: Praia de Botafogo, n. 228, sala 1702, Ala A, Ed. Empresarial Argentina, bairro de Botafogo, Rio de Janeiro/RJ.",
+      "pagina": 4,
+      "trecho_fonte": "Endereço 3: Praia de Botafogo, n. 228, sala 1702, Ala A, Ed. Empresarial Argentina, bairro de Botafogo, Rio de Janeiro/RJ;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BANCO MASTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica SEFER INVESTIMENTOS DTVM (alvo nº 34) como alvo de busca e apreensão, no endereço Av. Brigadeiro Faria Lima, n. 3900, 6º andar, Itaim Bibi, São Paulo/SP.",
+      "pagina": 4,
+      "trecho_fonte": "34 - SEFER INVESTIMENTOS DTVM (CNPJ 00.329.598/0001-67) Av. Brigadeiro Faria Lima, n. 3900, 6º andar, Itaim Bibi,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "SEFER INVESTIMENTOS DTVM",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica CLÍNICA MAIS MÉDICOS S.A. (alvo nº 35) como alvo de busca e apreensão, no endereço Rua Monsenhor Bicalho, 1129, Eldorado, Contagem/MG.",
+      "pagina": 4,
+      "trecho_fonte": "35 - CLÍNICA MAIS MÉDICOS S.A. (CNPJ 29.788.616/0001-50) Rua Monsenhor Bicalho, 1129, – Eldorado – Contagem/MG;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "CLÍNICA MAIS MÉDICOS S.A.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica ACURA GESTORA DE RECURSOS LTDA (alvo nº 36) como alvo de busca e apreensão, no endereço Av. Brigadeiro Faria Lima, nº 3900, 6º andar, Itaim Bibi, São Paulo/SP.",
+      "pagina": 4,
+      "trecho_fonte": "36 - ACURA GESTORA DE RECURSOS LTDA (CNPJ 18.167.777/0001-00) Av. Brigadeiro Faria Lima, nº 3900, 6º andar, Itaim Bibi,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "ACURA GESTORA DE RECURSOS LTDA",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica WNT GESTORA DE RECURSOS LTDA (alvo nº 37) como alvo de busca e apreensão, nos endereços Rua Leopoldo Couto Magalhães Júnior, n. 758, 13º andar, Itaim Bibi, São Paulo/SP (Endereço 1) e Avenida Brigadeiro Faria Lima, n. 3.477, Conjunto 81, Sala 07, Itaim Bibi, São Paulo/SP (Endereço 2).",
+      "pagina": 4,
+      "trecho_fonte": "37 - WNT GESTORA DE RECURSOS LTDA (CNPJ 28.529.686/0001-21) Endereço 1: Rua Leopoldo Couto Magalhães Júnior, n. 758, 13º andar – Itaim Bibi, São Paulo/SP Endereço 2: Avenida Brigadeiro Faria Lima, n. 3.477, Conjunto 81, Sala 07 – Itaim Bibi,São Paulo/SP;",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "WNT GESTORA DE RECURSOS LTDA",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica ANTONIO AUGUSTO CONTE (alvo nº 38) como alvo de busca e apreensão, com endereço a ser confirmado pela autoridade policial.",
+      "pagina": 4,
+      "trecho_fonte": "38 - ANTONIO AUGUSTO CONTE (CPF 216.959.918-50) Endereço a ser confirmado pela autoridade policial.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "ANTONIO AUGUSTO CONTE",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República indica CÉSAR REGINATO LIGEIRO (alvo nº 39) como alvo de busca e apreensão, com endereço a ser confirmado pela autoridade policial.",
+      "pagina": 4,
+      "trecho_fonte": "39 - CÉSAR REGINATO LIGEIRO (CPF 359.456.088-07) Endereço a ser confirmado pela autoridade policial.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "CÉSAR REGINATO LIGEIRO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República, registrados os apontamentos, reitera os termos da manifestação ASSCRIM/PGR n. 699/2026.",
+      "pagina": 5,
+      "trecho_fonte": "Registrados os apontamentos acima, reiteram-se os termos da manifestação ASSCRIM/PGR n.699/2026”",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a representação policial trouxe indícios consistentes da existência de organização criminosa (art. 2º da Lei n. 12.850/2013) voltada à prática de gestão fraudulenta de instituição financeira (art. 4º da Lei n. 7.492/86) e induzimento ou manutenção em erro de investidor (art. 6º da Lei n. 7.492/86).",
+      "pagina": 5,
+      "trecho_fonte": "a representação policial trouxe indícios consistentes da existência de organização criminosa (art. 2º da Lei n. 12.850/2013) voltada à prática de gestão fraudulenta de instituição financeira (art. 4º da Lei n. 7.492/86), induzimento ou manutenção em erro de investidor (art. 6º da Lei n. 7.492/86)",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a representação policial trouxe indícios de uso de informação privilegiada e manipulação de mercado (art. 27-C da Lei n. 6.385/76) e de lavagem de capitais (art. 1º da Lei n. 9.613/98).",
+      "pagina": 5,
+      "trecho_fonte": "uso de informação privilegiada e manipulação de mercado (art. 27-C da Lei n. 6.385/76) e lavagem de capitais (art. 1º da Lei n. 9.613/98)",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Já haviam sido autorizados os pedidos de quebra de sigilo bancário e fiscal dos investigados, bem como os pedidos de sequestro e bloqueio de bens, tal como requeridos pelo Procurador-Geral da República em sua manifestação.",
+      "pagina": 5,
+      "trecho_fonte": "já tendo sido autorizados os pedidos de quebras de sigilo bancário e fiscal dos investigados, bem como os pedidos de sequestro e bloqueio de bens, tal como requeridos pelo Procurador-Geral da República em sua manifestação.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica que já foram realizadas anteriormente diligências de busca e apreensão em relação às pessoas físicas e jurídicas relacionadas sob os nºs 2 (endereço 1), 12 e 33, sem que se verifique ou justifique a realização de novas diligências quanto a elas.",
+      "pagina": 5,
+      "trecho_fonte": "verifico já terem sido preteritamente realizadas diligências de igual jaez em relação às pessoas físicas e jurídicas relacionadas sob nºs 2 (endereço 1), 12 e 33, sem que se verifique e justifique neste momento a realização de novas diligências em relação aos citados investigados.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator ressalta que o Banco Master S.A. se encontra em regime de liquidação extrajudicial, com interventor nomeado pelo Banco Central do Brasil (BCB), em poder de quem já se encontram todos os arquivos e documentos da instituição financeira e de seus controladores.",
+      "pagina": 5,
+      "trecho_fonte": "Ressalto que o Banco Master S.A. encontra-se em regime de liquidação extrajudicial, com interventor nomeado pelo Banco Central do Brasil (BCB), em poder de quem já se encontram todos os arquivos e documentos pertencentes à instituição financeira e de seus controladores",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Banco Master S.A.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "Banco Central do Brasil (BCB)",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que eventuais elementos de prova de interesse da investigação criminal estão preservados e poderão ser compartilhados com os órgãos de persecução penal, sem necessidade de novas diligências in loco.",
+      "pagina": 5,
+      "trecho_fonte": "eventuais elementos de prova que possam interessar à investigação criminal estão preservados e poderão ser objeto de compartilhamento com os órgãos de persecução penal, sem a necessidade de novas diligências in loco.",
+      "atribuida_a": "Ministro Dias Toffoli (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu parcialmente os pedidos complementares de busca e apreensão das pessoas elencadas, nos respectivos endereços indicados, exceto em relação aos alvos sob n. 2 (endereço 1), 12 e 33.",
+      "pagina": 5,
+      "trecho_fonte": "defiro parcialmente os pedidos complementares de busca e apreensão das pessoas acima elencadas, nos respectivos endereços indicados, exceto em relação aos indivíduos sob n. 2 (endereço 1), 12 e 33, tal como requerido pelo Procurador-Geral da República em sua manifestação",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a lavratura de autos circunstanciados individualizados para as diligências de busca e apreensão.",
+      "pagina": 5,
+      "trecho_fonte": "lavrado-se para tanto autos circunstanciados individualizados",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que as diligências se realizem do modo mais discreto possível, vedado o acompanhamento por meios de imprensa ou terceiros, e preservada a intimidade das pessoas sujeitas à medida.",
+      "pagina": 6,
+      "trecho_fonte": "discreto possível, vedado o acompanhamento por meios de imprensa ou terceiros, e preservada a intimidade das pessoas sujeitas à medida.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a expedição do necessário, com preservação do sigilo dos autos.",
+      "pagina": 6,
+      "trecho_fonte": "Expeça-se o necessário, preservando-se o sigilo dos autos. Cumpra-se.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação da Procuradoria-Geral da República e da Polícia Federal para cumprimento da decisão.",
+      "pagina": 6,
+      "trecho_fonte": "Intimem-se a Procuradoria-Geral de República e a Polícia Federal para cumprimento de preente decisão.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procuradoria-Geral de República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 8 de janeiro de 2026, pelo Ministro Dias Toffoli, relator.",
+      "pagina": 6,
+      "trecho_fonte": "Brasília, 8 de janeiro de 2026. Ministro DIASTOFFOLI Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. DIAS TOFFOLI",
+          "tipo": "ministro"
+        }
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo (página 1). Os números de CPF/CNPJ e alguns endereços aparecem quebrados entre linhas ou páginas (alvos 5/6, 17 e 30 têm nome em uma página e endereço na seguinte). O nome do relator aparece na assinatura sem espaço (\"DIASTOFFOLI\") e a decisão contém o erro tipográfico \"preente\"."
+}

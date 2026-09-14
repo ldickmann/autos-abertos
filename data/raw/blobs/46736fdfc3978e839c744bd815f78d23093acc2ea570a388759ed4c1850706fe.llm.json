@@ -1,0 +1,431 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator do Inquérito 5.026 (Distrito Federal) é o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Paulo Humberto Barbosa formulou a Petição nº 21112/2026 (e-Doc. 376), noticiando a aprovação dos Requerimentos n. 141/2026 e 145/2026 no âmbito da CPI do Crime Organizado.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de Petição nº 21112/2026 (e-Doc. 376), formulada por Paulo Humberto Barbosa, noticiando a aprovação dos Requerimentos n. 141/20264 e 145/2026, no âmbito da “CPI do Crime Organizado”.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os requerimentos têm por objeto a convocação de Paulo Humberto Barbosa para prestar depoimento, em data ainda não estabelecida, perante a Comissão Parlamentar de Inquérito.",
+      "pagina": 2,
+      "trecho_fonte": "Tais requerimentos têm por objeto a convocação do requerente para prestar depoimento, em data ainda não estabelecida, perante a referida Comissão Parlamentar de Inquérito.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Paulo Humberto Barbosa assevera que a justificação constante no Requerimento nº 141/2026 é idêntica às apresentadas nos Requerimentos nº 140/2026 e 143/2026, referentes aos Srs. José Eugênio Dias Toffoli e José Carlos Dias Toffoli, respectivamente.",
+      "pagina": 2,
+      "trecho_fonte": "Assevera que “a ‘justificação’ constante no Requerimento nº 141/2026 é a idêntica àquelas apresentadas nos Requerimentos nº 140/2026 e 143/2026 — referentes aos Srs. José Eugênio Dias Toffoli e José Carlos Dias Toffoli, respectivamente” (e-Doc. 376, p. 3).",
+      "atribuida_a": "Paulo Humberto Barbosa",
+      "entidades": [
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "José Eugênio Dias Toffoli",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "José Carlos Dias Toffoli",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Paulo Humberto Barbosa sustenta que a justificação constante no Requerimento nº 145/2026 estaria embasada na configuração de uma suposta relação ilícita entre ele e outros convocados, em contexto no qual não restariam dúvidas sobre o objetivo de investigá-lo criminalmente.",
+      "pagina": 2,
+      "trecho_fonte": "a “justificação” constante no Requerimento nº 145/2026 estaria embasada na configuração de uma suposta “relação ilícita” entre o peticionante e outros convocados, em contexto no qual não restariam dúvidas “sobre o objetivo de investigar criminalmente o peticionário” (e-Doc. 376, p. 4).",
+      "atribuida_a": "Paulo Humberto Barbosa",
+      "entidades": [
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Paulo Humberto Barbosa requer a extensão dos efeitos da decisão proferida pelo Ministro Relator em 26/02/2026, de modo a afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade.",
+      "pagina": 3,
+      "trecho_fonte": "a concessão do pedido de extensão dos efeitos da r. decisão proferida por esse e. Ministro Relator, em 26/02/2026, de modo a afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do PETICIONÁRIO a decisão de comparecer, ou não",
+      "atribuida_a": "Paulo Humberto Barbosa",
+      "entidades": [
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Paulo Humberto Barbosa pede que, caso opte por comparecer ao ato, lhe sejam assegurados o direito ao silêncio, à assistência por advogado durante o ato e de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo.",
+      "pagina": 3,
+      "trecho_fonte": "seja assegurado ao Peticionário o direito a) ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ele direcionadas; b) à assistência por advogado durante o ato; c) de não ser submetidos ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo",
+      "atribuida_a": "Paulo Humberto Barbosa",
+      "entidades": [
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Paulo Humberto Barbosa pede que lhe seja assegurado o direito de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "pagina": 3,
+      "trecho_fonte": "e d) de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.”(e-doc.376,p.5-6)",
+      "atribuida_a": "Paulo Humberto Barbosa",
+      "entidades": [
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator rememora observação feita na decisão indicada como paradigma do pedido de extensão quanto à importância da CPMI do Crime Organizado e de sua atuação independente.",
+      "pagina": 3,
+      "trecho_fonte": "Inicialmente, rememoro a observação feita na decisão indicada como “paradigma” do presente pedido de extensão, no sentido de que, não obstante a importância superlativa da “CPMI do Crime Organizado” e de sua atuação independente na apuração dos fatos certos e determinados",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "CPMI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental consagrado no art. 5º, LXIII, da Constituição da República.",
+      "pagina": 3,
+      "trecho_fonte": "revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental expressamente consagrado no art. 5º, LXIII, da Constituição da República.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que, nos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno do Supremo Tribunal Federal declarou a incompatibilidade da condução coercitiva de investigados para interrogatórios com a Constituição da República.",
+      "pagina": 4,
+      "trecho_fonte": "nos paradigmáticos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno desta Corte declarou a incompatibilidade da condução coercitiva de investigados, para interrogatórios, com a Constituição da República",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca a jurisprudência do Supremo Tribunal Federal segundo a qual o direito do investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, inexistindo obrigatoriedade ou sanção pelo não comparecimento.",
+      "pagina": 4,
+      "trecho_fonte": "há jurisprudência do Supremo Tribunal Federal, no sentido de que o direito de um investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, entendendo, como corolário do brocardo nemo tenetur se detegere, que inexiste obrigatoriedade ou sanção pelo não comparecimento.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita como precedente o HC nº 171.438/DF, relator Ministro Gilmar Mendes, Segunda Turma, julgado em 28/05/2019, no qual a ordem foi concedida para convolar a compulsoriedade de comparecimento em facultatividade.",
+      "pagina": 4,
+      "trecho_fonte": "6. Ordem concedida para convolar a compulsoriedade de comparecimento em facultatividade.” (HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma,j.28/05/2019,p.17/08/2020).",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Min. Gilmar Mendes",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Segunda Turma",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ter decidido sistematicamente conforme esse entendimento em casos análogos, destacando os julgados no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "pagina": 5,
+      "trecho_fonte": "casos análogos, pelo que destaco os julgados recentes no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca a legitimidade do controle jurisdicional exercido pelo Supremo Tribunal Federal mesmo diante dos poderes investigatórios das Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes.",
+      "pagina": 5,
+      "trecho_fonte": "Cumpre destacar, ainda, a legitimidade do controle jurisdicional exercido por esta Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o MS nº 25.668/DF, relator Ministro Celso de Mello, Tribunal Pleno, julgado em 23/03/2006, segundo o qual o controle jurisdicional de abusos praticados por Comissão Parlamentar de Inquérito não ofende o princípio da separação de poderes.",
+      "pagina": 5,
+      "trecho_fonte": "(MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno,j.23/03/2006,p.04/08/2006).",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Min. Celso de Mello",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Tribunal Pleno",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera evidenciada a similitude fática entre a situação do peticionário e a dos requerentes da decisão indicada como paradigma do pedido de extensão, e patente a objeção da defesa de Paulo Humberto Barbosa.",
+      "pagina": 5,
+      "trecho_fonte": "restando evidenciada a similitude fática entre a situação do peticionário e aquela verificada em relação aos requerentes da decisão indicada como “paradigma” do presente pedido de extensão, bem como estando patente a objeção da defesa de Paulo Humberto Barbosa",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pleito formulado na Petição nº 21112/2026 (e-Doc. 376) para afastar a obrigatoriedade de comparecimento de Paulo Humberto Barbosa, transmudando-a em facultatividade.",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pleito formulado na Petição nº 21112/2026 (e-Doc. 376), para afastar a obrigatoriedade de comparecimento, transmudando-a em",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deixou a cargo do peticionário a decisão de comparecer ou não à CPI do Crime Organizado.",
+      "pagina": 6,
+      "trecho_fonte": "facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator assegurou ao convocado, na hipótese de optar por comparecer ao ato, o direito ao silêncio, à assistência por advogado durante o ato e de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo.",
+      "pagina": 6,
+      "trecho_fonte": "o direito: a) ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas; b) à assistência por advogado durante o ato; c) de não serem submetidos ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator assegurou ao convocado o direito de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "pagina": 6,
+      "trecho_fonte": "e d) de não sofrerem constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação da decisão, com máxima urgência e remessa de cópia integral, à Presidência da CPI do Crime Organizado e às defesas constituídas.",
+      "pagina": 6,
+      "trecho_fonte": "Comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI do Crime Organizado e as defesas constituídas.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão serve como salvo-conduto.",
+      "pagina": 6,
+      "trecho_fonte": "Serve esta decisão como SALVO-CONDUTO.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Paulo Humberto Barbosa",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República.",
+      "pagina": 6,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que seja dada publicidade à decisão.",
+      "pagina": 6,
+      "trecho_fonte": "Dê-se publicidade à presente decisão.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 26 de fevereiro de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 6,
+      "trecho_fonte": "Brasília, 26 de fevereiro de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes inteiramente sob sigilo (páginas 1 e 2). O documento grafa \"Requerimentos n. 141/20264\" na página 2 (aparente erro de digitação; a mesma página cita \"Requerimento nº 141/2026\"). O nome do relator aparece na assinatura sem espaço (\"ANDRÉMENDONÇA\")."
+}

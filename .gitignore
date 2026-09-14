@@ -1,5 +1,5 @@
-# dados coletados: fonte de verdade local, não versionada (grandes, reproduzíveis por coleta)
-data/raw/blobs/
+# blobs (páginas do portal e PDFs, nomeados pelo sha256) SÃO versionados desde 14/09/2026: clonar é espelhar.
+# fica de fora só o reconhecimento da Fase 0 e o robots.txt de cada coleta
 data/raw/7514886/
 data/raw/robots_*.txt
 data/*.sqlite

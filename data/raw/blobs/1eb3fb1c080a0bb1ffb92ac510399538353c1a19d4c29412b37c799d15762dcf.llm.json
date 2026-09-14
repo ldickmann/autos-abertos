@@ -1,0 +1,212 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A defesa de HENRIQUE MOURA VORCARO apresentou as Petições nºs 26.667/2026 (e.Doc. 117) e 33.739/2026 (e.Doc. 226).",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de Petições nºs 26.667/2026 (e.Doc. 117) e 33.739/2026 (e.Doc. 226), por meio das quais a defesa de HENRIQUE MOURA VORCARO",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa de HENRIQUE MOURA VORCARO suscita suposta ofensa reputacional decorrente da cobertura midiática da investigação em curso e requer acesso aos autos como interessado.",
+      "pagina": 2,
+      "trecho_fonte": "a defesa de HENRIQUE MOURA VORCARO suscita suposta ofensa reputacional decorrente da cobertura midiática da investigação em curso, bem como requer acesso aos autos como interessado",
+      "atribuida_a": "defesa de HENRIQUE MOURA VORCARO",
+      "entidades": [
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente apresenta esclarecimentos acerca de sua relação com a empresa REAG, notadamente quanto à titularidade e natureza dos valores vinculados à sua conta na referida instituição.",
+      "pagina": 2,
+      "trecho_fonte": "O requerente esclarece fatos acerca de sua relação com a empresa REAG, notadamente quanto à titularidade e natureza dos valores vinculados à sua conta na referida instituição.",
+      "atribuida_a": "HENRIQUE MOURA VORCARO (requerente)",
+      "entidades": [
+        {"nome": "REAG", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente sustenta ausência de liquidez imediata dos montantes constritos, porquanto integralizados em Fundo de Investimento em Participações vinculados a ativos de créditos de carbono pendentes de realização.",
+      "pagina": 3,
+      "trecho_fonte": "Sustenta, em síntese, ausência de liquidez imediata dos montantes constritos, porquanto integralizados em Fundo de Investimento em Participações vinculados a ativos de créditos de carbono pendentes de realização.",
+      "atribuida_a": "HENRIQUE MOURA VORCARO (requerente)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente rechaça qualquer nexo causal ou financeiro com aportes do Banco Master ou de seus prepostos.",
+      "pagina": 3,
+      "trecho_fonte": "rechaça qualquer nexo causal ou financeiro com aportes do Banco Master ou de seus prepostos",
+      "atribuida_a": "HENRIQUE MOURA VORCARO (requerente)",
+      "entidades": [
+        {"nome": "Banco Master", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente pugna pelo reconhecimento dessas circunstâncias e pela revisão das medidas constritivas contra si determinadas, alegando a sua impropriedade.",
+      "pagina": 3,
+      "trecho_fonte": "pugna pelo reconhecimento dessas circunstâncias e pela revisão das medidas constritivas contra si determinadas, alegando a sua impropriedade na espécie",
+      "atribuida_a": "HENRIQUE MOURA VORCARO (requerente)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Procuradoria-Geral da República, instada a se manifestar, apresentou manifestação (e-Doc. 330).",
+      "pagina": 3,
+      "trecho_fonte": "Instada a se manifestar, a Procuradoria-Geral da República apresentou manifestação (e-Doc. 330)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República salientou que o requerente postulou acesso aos autos e esclarecimentos acerca de sua relação com a empresa REAG, sustentando que os valores bloqueados em conta de sua titularidade não possuem liquidez imediata, por corresponderem a potencial econômico ainda não realizado, vinculado a créditos de carbono.",
+      "pagina": 3,
+      "trecho_fonte": "salientando que o requerente postulou acesso aos autos e esclarecimentos acerca de sua relação com a empresa REAG, sustentando, em síntese, que os valores bloqueados em conta de sua titularidade não possuem liquidez imediata, por corresponderem a potencial econômico ainda não realizado",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "REAG", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República consignou que tais alegações dizem respeito ao próprio mérito da investigação, ainda em curso, razão pela qual se mostra prematuro o exame definitivo da origem dos valores e de sua eventual vinculação aos fatos apurados.",
+      "pagina": 3,
+      "trecho_fonte": "conforme consignado pela Procuradoria-Geral da República, tais alegações dizem respeito ao próprio mérito da investigação, ainda em curso, razão pela qual se mostra prematuro, neste momento processual, o exame definitivo da origem dos valores e de sua eventual vinculação aos fatos apurados",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que as insurgências deduzidas pelo investigado cingem-se à validade e à natureza jurídica dos bens e valores objeto de constrição, questão que se insere no próprio mérito da eventual demanda penal.",
+      "pagina": 3,
+      "trecho_fonte": "As insurgências deduzidas pelo investigado cingem-se, especialmente, à validade e à natureza jurídica dos bens e valores objeto de constrição, quaestio essa que se insere no próprio mérito da eventual demanda penal contra si.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, neste momento processual investigatório, é inviável a cognição exauriente acerca da licitude e de eventuais liames com práticas suspeitas de ocultação ou dissimulação patrimonial, porquanto não se exige certeza quanto à origem lícita ou ilícita dos valores e bens.",
+      "pagina": 4,
+      "trecho_fonte": "neste momento processual investigatório, é inviável a cognição exauriente acerca da licitude e de eventuais liames com práticas suspeitas de ocultação ou dissimulação patrimonial, porquanto não se exige certeza quanto à origem lícita ou ilícita dos valores e bens",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República afirma, na manifestação (e-Doc. 330, fl. 4), que as alegações fazem referência ao mérito da investigação, ainda sob apuração, e que seria prematura qualquer conclusão sobre o tema.",
+      "pagina": 4,
+      "trecho_fonte": "Referidas alegações, porém, fazem referência ao mérito da investigação, ainda sob apuração. Desse modo, seria prematura qualquer conclusão sobre o tema, não sendo o atual estado processual o momento para avaliação definitiva da origem dos valores investidos",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, em sede de procedimento investigatório, vigora o juízo de cognição sumária, próprio das medidas assecuratórias, fundado em indícios suficientes de materialidade e autoria (fumus comissi delicti) e no risco de ineficácia da persecução penal ou da futura reparação do dano (periculum in mora).",
+      "pagina": 4,
+      "trecho_fonte": "em sede de procedimento investigatório vigora o juízo de cognição sumária, próprio das medidas assecuratórias, fundado em indícios suficientes de materialidade e autoria (fumus comissi delicti) e no risco de ineficácia da persecução penal ou da futura reparação do dano (periculum in mora)",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O requerente apontou que não pretende, por ora, “discutir o bloqueio” (fl. 1 do e.Doc. 226).",
+      "pagina": 4,
+      "trecho_fonte": "o requerente ter apontado que não pretende, por ora, “discutir o bloqueio” (fl. 1 do e.Doc. 226)",
+      "atribuida_a": "HENRIQUE MOURA VORCARO (requerente)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "As medidas de sequestro e bloqueio de bens foram deferidas com fundamento nos arts. 125 e seguintes do Código de Processo Penal e no art. 4º da Lei n. 9.613/1998.",
+      "pagina": 4,
+      "trecho_fonte": "as medidas de sequestro e bloqueio de bens foram deferidas com fundamento nos arts. 125 e seguintes do Código de Processo Penal e no art. 4º da Lei n. 9.613/1998",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que as medidas de sequestro e bloqueio foram deferidas com a finalidade específica de assegurar a eficácia da persecução penal, a reparação do dano, o perdimento de produtos e proveitos do crime e a preservação do resultado útil do processo.",
+      "pagina": 4,
+      "trecho_fonte": "com a finalidade específica de assegurar a eficácia da persecução penal, a reparação do dano, o perdimento de produtos e proveitos do crime e a preservação do resultado útil do processo",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a investigação apura a prática de delitos de elevada gravidade e repercussão econômica.",
+      "pagina": 4,
+      "trecho_fonte": "em contexto de investigação que apura a prática de delitos de elevada gravidade e repercussão econômica",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a finalidade primordial das medidas assecuratórias é impedir a dissipação do patrimônio e garantir a efetividade da jurisdição penal.",
+      "pagina": 5,
+      "trecho_fonte": "a finalidade primordial das medidas assecuratórias é impedir a dissipação do patrimônio e garantir a efetividade da jurisdição penal",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator acolheu o parecer da Procuradoria-Geral da República e indeferiu o pedido de HENRIQUE MOURA VORCARO, mantendo, por ora, as medidas assecuratórias anteriormente decretadas.",
+      "pagina": 5,
+      "trecho_fonte": "acolho o parecer da Procuradoria-Geral da República para INDEFERIR o pedido de HENRIQUE MOURA VORCARO, mantendo-se, por ora, hígidas e integrais as medidas assecuratórias anteriormente decretadas",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "HENRIQUE MOURA VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão ressalva ulterior análise quanto à tese de licitude e natureza dos créditos do requerente a partir da evolução das investigações.",
+      "pagina": 5,
+      "trecho_fonte": "sem prejuízo de ulterior análise quanto à tese de licitude e natureza dos seus créditos a partir da evolução das investigações",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação da parte e ciência à Procuradoria-Geral da República.",
+      "pagina": 5,
+      "trecho_fonte": "Intime-se a parte. Dê-se ciência à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 29 de maio de 2026, pelo Ministro André Mendonça.",
+      "pagina": 5,
+      "trecho_fonte": "Brasília, 29 de maio de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

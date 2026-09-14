@@ -1,0 +1,56 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a abertura de vista à Procuradoria-Geral da República.",
+      "pagina": 2,
+      "trecho_fonte": "Abra-se vista à Procuradoria-Geral da República, para",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A vista destina-se à manifestação sobre o pleito formulado pelo Distrito Federal (e-doc. 1051).",
+      "pagina": 3,
+      "trecho_fonte": "manifestação sobre o pleito formulado pelo Distrito Federal (e-doc. 1051).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Distrito Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Distrito Federal formulou pleito nos autos, registrado como e-doc. 1051.",
+      "pagina": 3,
+      "trecho_fonte": "o pleito formulado pelo Distrito Federal (e-doc. 1051)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Distrito Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 28 de agosto de 2026, e assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 28 de agosto de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; a única frase do despacho está dividida entre as páginas 2 e 3."
+}

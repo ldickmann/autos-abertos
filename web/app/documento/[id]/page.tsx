@@ -36,6 +36,12 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
             </div>
           )}
           <div className="sm:col-span-2"><dt className="inline font-semibold">sha256: </dt><dd className="inline break-all font-mono text-xs">{m.sha256}</dd></div>
+          <div className="sm:col-span-2">
+            <details className="text-xs">
+              <summary className="cursor-pointer text-neutral-700">Como verificar este documento</summary>
+              <p className="mt-1">Baixe o arquivo pela URL de origem acima e calcule o hash: <code>Get-FileHash .\arquivo.{m.formato} -Algorithm SHA256</code> (Windows), <code>shasum -a 256 arquivo.{m.formato}</code> (macOS) ou <code>sha256sum arquivo.{m.formato}</code> (Linux). O resultado deve ser igual ao sha256 acima.{m.codigo_autenticacao ? " Ou use o código de autenticação no portal do STF." : ""} <Link className="underline" href="/verificar">Mais formas de conferir.</Link></p>
+            </details>
+          </div>
         </dl>
         <div className="mt-3 flex flex-wrap gap-4">
           <Carimbo snapshot={m.snapshot} prefixo="documento baixado em" />

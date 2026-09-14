@@ -1,0 +1,124 @@
+[ {
+  "objetoIncidente" : {
+    "id" : 7519395,
+    "identificacao" : "Pet 15556 Ref",
+    "identificacaoCompleta" : "REFERENDO NA PETIÇÃO 15556",
+    "principal" : 7514886,
+    "pai" : 7514886,
+    "tipoObjetoIncidente" : {
+      "codigo" : "IJ",
+      "descricao" : "Incidente Julgamento"
+    },
+    "cadeia" : ""
+  },
+  "listasJulgamento" : [ {
+    "id" : 227146,
+    "nomeLista" : "138-2026",
+    "julgado" : false,
+    "admiteSustentacaoOral" : false,
+    "ministroRelator" : {
+      "codigo" : "52",
+      "descricao" : "MIN. ANDRÉ MENDONÇA"
+    },
+    "votoRelator" : {
+      "codigo" : "490815",
+      "descricao" : "Voto",
+      "link" : "https://digital.stf.jus.br/decisoes-monocraticas/api/public/votos/490815/conteudo.pdf"
+    },
+    "relatorioRelator" : {
+      "codigo" : "490817",
+      "descricao" : "Relatório",
+      "link" : "https://digital.stf.jus.br/decisoes-monocraticas/api/public/votos/490817/conteudo.pdf"
+    },
+    "complementoVotoRelator" : "",
+    "ministroDestaque" : "",
+    "ministroVista" : "",
+    "ministroVistor" : "",
+    "sessao" : {
+      "numero" : 7,
+      "ano" : 2026,
+      "colegiado" : {
+        "codigo" : "2T",
+        "descricao" : "Segunda Turma"
+      },
+      "dataPrevistaInicio" : "13/03/2026",
+      "dataPrevistaFim" : "20/03/2026",
+      "dataInicio" : "13/03/2026",
+      "dataFim" : "20/03/2026",
+      "tipoJulgamentoVirtual" : "",
+      "tipoSessao" : {
+        "codigo" : "O",
+        "descricao" : "Sessão Ordinária"
+      }
+    },
+    "textoDecisao" : "",
+    "cabecalho" : "",
+    "tipoListaJulgamento" : {
+      "codigo" : "7",
+      "descricao" : "Listas dos Relatores (Referendos)"
+    },
+    "tipoResultadoJulgamento" : "",
+    "votos" : [ {
+      "numeroOrdemVotoSessao" : 1,
+      "ministro" : {
+        "codigo" : "45",
+        "descricao" : "MIN. LUIZ FUX"
+      },
+      "dataVoto" : "13/03/2026",
+      "tipoVoto" : {
+        "codigo" : "9",
+        "descricao" : "Acompanho o relator"
+      },
+      "acompanhandoMinistro" : "",
+      "votoAntecipado" : "Não",
+      "textos" : [ ]
+    }, {
+      "numeroOrdemVotoSessao" : 2,
+      "ministro" : {
+        "codigo" : "44",
+        "descricao" : "MIN. DIAS TOFFOLI"
+      },
+      "dataVoto" : "13/03/2026",
+      "tipoVoto" : {
+        "codigo" : "11",
+        "descricao" : "Suspeito"
+      },
+      "acompanhandoMinistro" : "",
+      "votoAntecipado" : "Não",
+      "textos" : [ ]
+    }, {
+      "numeroOrdemVotoSessao" : 3,
+      "ministro" : {
+        "codigo" : "51",
+        "descricao" : "MIN. NUNES MARQUES"
+      },
+      "dataVoto" : "13/03/2026",
+      "tipoVoto" : {
+        "codigo" : "9",
+        "descricao" : "Acompanho o relator"
+      },
+      "acompanhandoMinistro" : "",
+      "votoAntecipado" : "Não",
+      "textos" : [ ]
+    }, {
+      "numeroOrdemVotoSessao" : 4,
+      "ministro" : {
+        "codigo" : "36",
+        "descricao" : "MIN. GILMAR MENDES"
+      },
+      "dataVoto" : "20/03/2026",
+      "tipoVoto" : {
+        "codigo" : "10",
+        "descricao" : "Acompanho o relator com ressalvas"
+      },
+      "acompanhandoMinistro" : "",
+      "votoAntecipado" : "Não",
+      "textos" : [ {
+        "codigo" : "503028",
+        "descricao" : "Voto Vogal",
+        "link" : "https://digital.stf.jus.br/decisoes-monocraticas/api/public/votos/503028/conteudo.pdf"
+      } ]
+    } ]
+  } ],
+  "sustentacoesOrais" : [ ]
+} ]

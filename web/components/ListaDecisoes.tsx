@@ -19,9 +19,24 @@ const COR_RESULTADO: Record<string, string> = {
   outro: "bg-neutral-100 text-neutral-900 border-neutral-400",
 };
 
-export function ListaDecisoes({ itens, rotulos, processos, verbetes, compacta = false, incidenteFixo }: {
+function normalizar(s: string): string {
+  return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+/* Verbetes cujas formas aparecem dentro do texto de uma condição (ex.: "recolhimento domiciliar noturno" → Recolhimento domiciliar). */
+function verbetesNoTexto(texto: string, glossario: Verbete[]): Verbete[] {
+  const t = normalizar(texto);
+  const achados: Verbete[] = [];
+  for (const v of glossario) {
+    if (v.contexto !== "condicao") continue;   // só verbetes escritos para explicar condições de medidas cautelares
+    if (v.formas.some((f) => f.length >= 6 && t.includes(normalizar(f))) && !achados.includes(v)) achados.push(v);
+  }
+  return achados.slice(0, 2);
+}
+
+export function ListaDecisoes({ itens, rotulos, processos, verbetes, glossario = [], compacta = false, incidenteFixo }: {
   itens: Decisao[]; rotulos: Record<string, string>; processos: { incidente: number; rotulo: string }[];
-  verbetes: Record<string, Verbete | null>; compacta?: boolean; incidenteFixo?: number;
+  verbetes: Record<string, Verbete | null>; glossario?: Verbete[]; compacta?: boolean; incidenteFixo?: number;
 }) {
   const [processo, setProcesso] = useState<number | "">(incidenteFixo ?? "");
   const [resultado, setResultado] = useState("");
@@ -83,7 +98,12 @@ export function ListaDecisoes({ itens, rotulos, processos, verbetes, compacta = 
             <dl className="mt-2 grid gap-x-4 gap-y-1 sm:grid-cols-[auto_1fr]">
               <dt className="text-neutral-700">Pedido</dt><dd className="leitura">{i.pedido}{i.quem_pediu ? <span className="text-neutral-700"> — por {i.quem_pediu}</span> : null}</dd>
               <dt className="text-neutral-700">Decisão</dt><dd className="leitura">{i.decisao}<span className="text-neutral-700"> — {i.quem_decidiu}</span></dd>
-              {i.condicoes.length > 0 && (<><dt className="text-neutral-700">Condições</dt><dd><ul className="list-disc pl-5">{i.condicoes.map((c, k) => <li key={k}>{c}</li>)}</ul></dd></>)}
+              {i.condicoes.length > 0 && (<><dt className="text-neutral-700">Condições</dt><dd><ul className="list-disc pl-5">{i.condicoes.map((c, k) => {
+                const vs = verbetesNoTexto(c, glossario);
+                return (
+                  <li key={k}>{c}{vs.length > 0 && <span className="block text-xs text-neutral-700">em linguagem simples: {vs.map((v, j) => <span key={v.termo}>{j > 0 ? " " : ""}<Termo verbete={{ ...v, fonte: "glossario" }}>{v.termo.toLowerCase()}</Termo> — {v.explicacao}</span>)}</span>}</li>
+                );
+              })}</ul></dd></>)}
             </dl>
             <details className="mt-2 text-xs">
               <summary className="cursor-pointer text-neutral-700">Fonte: <Link className="underline" href={`/documento/${i.documento_id}#p-${i.pagina}`}>{i.titulo_documento ?? "documento"} {i.documento_id}, p. {i.pagina}</Link></summary>

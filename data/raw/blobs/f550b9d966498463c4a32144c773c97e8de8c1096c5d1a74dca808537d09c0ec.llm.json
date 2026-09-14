@@ -1,0 +1,296 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Polícia Federal peticionou nos autos a respeito da transferência do investigado preso DANIEL BUENO VORCARO para a Penitenciária Federal em Brasília.",
+      "pagina": 1,
+      "trecho_fonte": "A Polícia Federal peticiona nos autos apontando a necessidade de imediata transferência do investigado preso DANIEL BUENO VORCARO para a Penitenciária Federal em Brasília.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Penitenciária Federal em Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal aponta a necessidade de imediata transferência do investigado preso DANIEL BUENO VORCARO para a Penitenciária Federal em Brasília.",
+      "pagina": 1,
+      "trecho_fonte": "apontando a necessidade de imediata transferência do investigado preso DANIEL BUENO VORCARO para a Penitenciária Federal em Brasília.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Penitenciária Federal em Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Como fundamento de seu requerimento, a Polícia Federal indica haver necessidade premente de tutela da integridade física do custodiado.",
+      "pagina": 1,
+      "trecho_fonte": "Como fundamento de seu requerimento, indica que há necessidade premente de tutela da integridade física do custodiado,",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão transcreve excerto da Petição nº 25581/2026 (e-Doc. 78), apresentada pela Polícia Federal.",
+      "pagina": 2,
+      "trecho_fonte": "transcrevo o seguinte excerto da Petição nº 25581/2026 (e-Doc. 78):",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que a Lei nº 11.671/2008 estabelece, em seu art. 3º, que serão incluídos em estabelecimentos penais federais de segurança máxima aqueles para quem a medida se justifique no interesse da segurança pública ou do próprio preso, condenado ou provisório.",
+      "pagina": 2,
+      "trecho_fonte": "estabelece, em sei art. 3º, que “serão incluídos em estabelecimentos penais federais de segurança máxima aqueles para quem a medida se justifique no interesse da segurança pública ou do próprio preso, condenado ou provisório”",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que o STJ, ao julgar o RHC 182.232, firmou a necessidade de que o preso se enquadre em pelo menos uma das hipóteses do art. 3º do Decreto 6.877/2009.",
+      "pagina": 2,
+      "trecho_fonte": "o STJ estabeleceu outras balizas ao julgar o RHC 182.232, firmando a necessidade que o preso se enquadre, pelo menos, em uma das hipóteses relacionadas no artigo 3ºdo Decreto 6.877/2009.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "STJ", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que o Sistema Penitenciário Federal, instituído pela Lei nº 11.671/2008, prevê a inclusão de presos provisórios ou condenados quando presentes circunstâncias que indiquem a necessidade de isolamento em razão da gravidade concreta dos fatos, do risco à ordem pública ou da necessidade de resguardar a persecução penal.",
+      "pagina": 2,
+      "trecho_fonte": "prevê a possibilidade de inclusão de presos provisórios ou condenados quando presentes circunstâncias que indiquem a necessidade de isolamento em razão da gravidade concreta dos fatos, do risco à ordem pública ou da necessidade de resguardar a segurança e a efetividade da persecução penal",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que o Decreto nº 6.877, de 18 de junho de 2009, reforça que o sistema federal se destina ao recolhimento de presos cuja custódia exija maior controle estatal, regime de segurança mais rigoroso ou medidas especiais de monitoramento.",
+      "pagina": 2,
+      "trecho_fonte": "A regulamentação da matéria pelo Decreto nº 6.877, de 18 de junho de 2009, reforça que o sistema federal se destina justamente ao recolhimento de presos cuja custódia exija maior controle estatal, regime de segurança mais rigoroso ou medidas especiais de monitoramento",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que o risco à segurança pública decorrente da permanência de DANIEL BUENO VORCARO em presídio estadual no Estado de São Paulo deriva da análise dos elementos informativos coligidos na investigação.",
+      "pagina": 2,
+      "trecho_fonte": "o risco à segurança pública em decorrência da permanência de DANIEL BUENO VORCARO em presídio estadual no Estado de São Paulo deriva da análise dos",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que os elementos informativos coligidos na investigação indicam que o investigado detém significativa capacidade de articulação e influência sobre diversos atores em diferentes esferas do poder público e do setor privado.",
+      "pagina": 3,
+      "trecho_fonte": "elementos informativos coligidos ao longo da investigação, que indicam que o referido investigado detém significativa capacidade de articulação e influência sobre diversos atores situados em diferentes esferas do poder público e do setor privado",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal afirma que essa circunstância constituiu um dos fundamentos que justificaram a adoção de medidas cautelares de natureza pessoal no caso.",
+      "pagina": 3,
+      "trecho_fonte": "circunstância que, inclusive, constituiu um dos fundamentos que justificaram a adoção de medidas cautelares denaturezapessoalno presentecaso.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que as peculiaridades do caso recomendam cautela redobrada na execução da medida constritiva, diante da potencial capacidade do investigado de mobilizar redes de influência aptas a interferir na condução das investigações ou no cumprimento das determinações judiciais.",
+      "pagina": 3,
+      "trecho_fonte": "recomenda cautela redobrada quanto à execução da medida constritiva, sobretudo diante da potencial capacidade do investigado de mobilizar redes de influência com aptidão para, direta ou indiretamente, interferir na regular condução das investigações ou no cumprimento das determinações judiciais.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que a custódia do investigado em unidade prisional com regime de segurança diferenciado e monitoramento mais rigoroso é medida apta a preservar a efetividade da prisão preventiva e a mitigar riscos institucionais associados à sensibilidade da investigação.",
+      "pagina": 3,
+      "trecho_fonte": "a custódia do investigado em unidade prisional dotada de regime de segurança diferenciado e monitoramento mais rigoroso revela-se medida apta a preservar a efetividade da prisão preventiva e a mitigar riscos institucionais associados à elevada sensibilidade da investigação",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que a custódia em unidade de segurança diferenciada serve também como forma de melhor garantir a integridade física do próprio preso.",
+      "pagina": 3,
+      "trecho_fonte": "inclusive, e pelas mesmas razões, servindo como forma de melhor garantir da integridade física do próprio preso.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal sustenta que a Penitenciária Federal em Brasília apresenta condições institucionais que permitem monitoramento mais próximo da execução da custódia, em razão da localização da unidade em relação aos órgãos responsáveis pela investigação e pela supervisão judicial.",
+      "pagina": 3,
+      "trecho_fonte": "a Penitenciária Federal em Brasília apresenta condições institucionais que permitem monitoramento mais próximo da execução da custódia, considerando a localização da unidade em relação aos órgãos responsáveis pela condução da investigação",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Penitenciária Federal em Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial entende que a custódia do investigado no Sistema Penitenciário Federal, especificamente na Penitenciária Federal em Brasília, mostra-se medida adequada, proporcional e alinhada às finalidades preventivas da prisão cautelar.",
+      "pagina": 3,
+      "trecho_fonte": "entende esta autoridade policial que a custódia do investigado no Sistema Penitenciário Federal, especificamente na Penitenciária Federal em Brasília, mostra-se medida",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Penitenciária Federal em Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal representa pela autorização da transferência de DANIEL BUENO VORCARO para a Penitenciária Federal em Brasília – PFBRA, unidade integrante do Sistema Penitenciário Federal, onde poderá permanecer custodiado à disposição do Supremo Tribunal Federal.",
+      "pagina": 4,
+      "trecho_fonte": "representa-se a Vossa Excelência para que seja autorizada a transferência de DANIEL BUENO VORCARO para a Penitenciária Federal em Brasília – PFBRA, unidade integrante do Sistema Penitenciário Federal, onde poderá permanecer custodiado à disposição desse Supremo Tribunal Federal",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Penitenciária Federal em Brasília – PFBRA", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que o contexto narrado pela instituição requerente se amolda ao art. 3º da Lei nº 11.671/2008, que prevê a inclusão de presos em estabelecimentos penais federais quando a medida se justificar no interesse da segurança pública ou do próprio preso.",
+      "pagina": 4,
+      "trecho_fonte": "O contexto narrado pela instituição requerente se amolda ao que previsto no art. 3º da Lei nº 11.671/2008, preceito legal que predica a inclusão de presos em estabelecimentos penais federais, quando tal medida se justificar no interesse da segurança pública ou do próprio preso.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera presente, no caso, a hipótese descrita no art. 3º da Lei nº 11.671/2008.",
+      "pagina": 4,
+      "trecho_fonte": "Presente, in casu, a hipótese descrita no citado dispositivo legal, acolho o pedido formulado",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator acolheu o pedido da Polícia Federal e determinou a imediata transferência do investigado preso DANIEL BUENO VORCARO para a penitenciária federal indicada pela Polícia Federal.",
+      "pagina": 4,
+      "trecho_fonte": "acolho o pedido formulado e determino a imediata transferência do investigado preso DANIEL BUENO VORCARO para a penitenciária federal indicada pela Policia Federal.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a intimação da Polícia Federal para que, em diálogo interinstitucional com a direção da penitenciária em que o investigado se encontra preso, adote imediatamente as medidas necessárias para viabilizar a transferência.",
+      "pagina": 4,
+      "trecho_fonte": "Intime-se a Polícia Federal para que, em diálogo interinstitucional com a direção da Penitenciária em que o investigado se encontra preso, possa imediatamente adotar as medidas necessárias para viabilizar a transferência.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a intimação da Direção da Penitenciária em que DANIEL BUENO VORCARO atualmente se encontra e da Direção da Penitenciária Federal em Brasília para ciência da decisão.",
+      "pagina": 4,
+      "trecho_fonte": "Intimem-se a Direção da Penitenciária em que o investigado DANIEL BUENO VORCARO atualmente se encontra, bem como a Direção da Penitenciária Federal em Brasília para ciência desta decisão e",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "Penitenciária Federal em Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou que as direções das penitenciárias adotem todas as medidas de segurança necessárias para a preservação da integridade física do preso durante toda a transferência.",
+      "pagina": 5,
+      "trecho_fonte": "para que adotem todas as medidas de segurança necessárias para a preservação da integridade física do preso durante toda a transferência.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a intimação da Secretaria Nacional de Políticas Penais - SENAPPEN.",
+      "pagina": 5,
+      "trecho_fonte": "Intime-se a Secretaria Nacional de Políticas Penais - SENAPPEN.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Nacional de Políticas Penais - SENAPPEN", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a intimação da defesa do investigado preso.",
+      "pagina": 5,
+      "trecho_fonte": "Intime-se a defesa do investigado preso.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou que seja cientificada a Procuradoria-Geral da República.",
+      "pagina": 5,
+      "trecho_fonte": "Cientifique-se a Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 5 de março de 2026, pelo relator, Ministro André Mendonça, com determinação de publicação.",
+      "pagina": 5,
+      "trecho_fonte": "Publique-se. Brasília, 5 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

@@ -1,37 +1,442 @@
 {
-  "_nota": "Glossário EDITORIAL, escrito para quem não é da área jurídica. Explica termos gerais do processo penal e do funcionamento do STF; não diz nada sobre este caso nem sobre pessoas. Curado e versionado com o código; a interface marca cada uso como 'glossário'. Cada verbete tem: termo, formas (variantes que aparecem no portal e nos documentos), explicação curta, e opcionalmente 'mais' (um parágrafo a mais).",
+  "_nota": "Glossário EDITORIAL, escrito para quem não é da área jurídica. Explica termos gerais do processo penal e do funcionamento do STF; não diz nada sobre este caso nem sobre pessoas. Curado e versionado com o código; a interface marca cada uso como 'glossário'. Cada verbete tem: termo, formas (variantes que aparecem no portal e nos documentos), explicação curta, e opcionalmente 'mais' (um parágrafo a mais). 'contexto: condicao' marca os verbetes usados para explicar condições de medidas cautelares nas decisões.",
   "verbetes": [
-    {"termo": "Pet (Petição)", "formas": ["Pet", "PET", "Petição avulsa"], "explicacao": "Classe processual usada no STF para pedidos que ainda não têm um tipo próprio de ação, como requerimentos ligados a investigações. Um 'Pet' pode conter pedidos de medidas cautelares, prisão ou diligências."},
-    {"termo": "Inq (Inquérito)", "formas": ["Inq", "INQ", "Inquérito"], "explicacao": "Investigação penal que tramita no STF quando envolve pessoa com foro por prerrogativa de função ou fatos conexos. Ainda não é ação penal: serve para reunir elementos antes de eventual denúncia."},
-    {"termo": "Rcl (Reclamação)", "formas": ["Rcl", "RCL", "Reclamação"], "explicacao": "Pedido feito ao STF para preservar sua competência ou garantir que uma decisão sua seja cumprida por outro órgão do Judiciário."},
-    {"termo": "HC (Habeas corpus)", "formas": ["HC", "RHC", "Habeas corpus"], "explicacao": "Ação que protege a liberdade de locomoção contra prisão ou ameaça de prisão considerada ilegal. RHC é o recurso contra a decisão de um habeas corpus."},
-    {"termo": "Agravo regimental", "formas": ["AgR", "agravo regimental", "Interposto agravo regimental"], "explicacao": "Recurso contra uma decisão tomada por um único ministro, pedindo que o colegiado (Turma ou Plenário) a reexamine."},
-    {"termo": "Embargos de declaração", "formas": ["embargos de declaração", "Opostos embargos de declaração"], "explicacao": "Pedido para que o próprio julgador esclareça uma omissão, contradição ou obscuridade na decisão. Não serve para discutir o mérito de novo."},
-    {"termo": "Relator", "formas": ["relator", "relatora", "MIN.", "Ministro relator"], "explicacao": "Ministro sorteado para conduzir o processo: decide pedidos urgentes sozinho (decisão monocrática) e apresenta o caso aos colegas quando o julgamento é coletivo."},
-    {"termo": "Decisão monocrática", "formas": ["Decisão monocrática", "decisão monocrática"], "explicacao": "Decisão tomada por um único ministro, em geral o relator, sem passar pelo colegiado. Pode ser contestada por agravo regimental."},
-    {"termo": "Acórdão", "formas": ["acórdão", "Inteiro teor do acórdão"], "explicacao": "Documento que registra a decisão de um órgão colegiado (Turma ou Plenário), com a ementa (resumo oficial) e os votos."},
-    {"termo": "Voto", "formas": ["Voto", "Voto Vogal", "voto vogal"], "explicacao": "Manifestação escrita de um ministro no julgamento colegiado. O voto do relator abre o julgamento; 'voto vogal' é o de outro ministro da Turma."},
-    {"termo": "Referendo", "formas": ["referendo", "Liminar referendada", "Referendo"], "explicacao": "Quando o relator decide sozinho uma medida urgente, o colegiado depois confirma (referenda) ou não essa decisão."},
-    {"termo": "Sessão virtual", "formas": ["sessão virtual", "Julgamento Virtual", "Iniciado Julgamento Virtual", "Finalizado Julgamento Virtual"], "explicacao": "Julgamento em que os ministros registram seus votos por escrito num sistema eletrônico, durante um período de dias, sem reunião presencial."},
-    {"termo": "Turma e Plenário", "formas": ["Segunda Turma", "Primeira Turma", "Plenário", "2ª Turma"], "explicacao": "O STF julga em três formações: Primeira Turma e Segunda Turma (cinco ministros cada) e o Plenário (todos os onze)."},
-    {"termo": "Prisão preventiva", "formas": ["prisão preventiva", "preventiva"], "explicacao": "Prisão decretada antes de julgamento final, quando o juiz entende haver risco à investigação, à ordem pública ou à aplicação da lei (art. 312 do Código de Processo Penal). Não é condenação."},
-    {"termo": "Prisão temporária", "formas": ["prisão temporária", "temporária"], "explicacao": "Prisão por prazo fixo (em regra 5 dias, prorrogáveis) para viabilizar diligências de investigação (Lei 7.960/1989). Também não é condenação."},
-    {"termo": "Medidas cautelares", "formas": ["medidas cautelares", "cautelares diversas da prisão", "medida cautelar"], "explicacao": "Restrições impostas em vez da prisão, como usar tornozeleira, não sair do país, não falar com certas pessoas ou recolher-se em casa à noite (art. 319 do Código de Processo Penal)."},
-    {"termo": "Busca e apreensão", "formas": ["busca e apreensão"], "explicacao": "Diligência autorizada pelo juiz para entrar num local e recolher objetos, documentos ou dispositivos que interessem à investigação."},
-    {"termo": "Investigado, réu e requerido", "formas": ["investigado", "réu", "requerido", "INVEST.(A/S)", "REQDO.(A/S)"], "explicacao": "Status processual literal do portal: 'investigado' é quem está sendo investigado num inquérito; 'réu' é quem responde a uma ação penal já aberta; 'requerido' é contra quem se dirige um pedido. Nenhum desses termos significa culpa."},
-    {"termo": "Interessado", "formas": ["interessado", "INTDO.(A/S)"], "explicacao": "Quem participa do processo sem ser autor nem parte contrária, mas pode ser afetado pelo resultado."},
-    {"termo": "Autoridade policial", "formas": ["autoridade policial", "AUT. POL.", "Delegado de Polícia Federal"], "explicacao": "O delegado que conduz o inquérito e faz os pedidos de diligências ao juiz."},
-    {"termo": "PGR (Procuradoria-Geral da República)", "formas": ["PGR", "Procuradoria-Geral da República", "Procurador-Geral da República", "Vista à PGR"], "explicacao": "Chefia do Ministério Público Federal, que atua nos processos do STF: dá pareceres, faz pedidos e pode oferecer denúncia. 'Vista à PGR' é o envio dos autos para ela se manifestar."},
-    {"termo": "Denúncia", "formas": ["denúncia", "denunciado"], "explicacao": "Peça em que o Ministério Público acusa formalmente alguém; se o tribunal a recebe, o inquérito vira ação penal e o investigado passa a réu."},
-    {"termo": "Deferido e indeferido", "formas": ["deferido", "indeferido", "Deferido", "Indeferido", "Deferido em parte"], "explicacao": "'Deferido' é pedido aceito; 'indeferido' é pedido negado; 'deferido em parte' é aceito só em parte."},
-    {"termo": "Negado seguimento", "formas": ["negado seguimento", "nego seguimento"], "explicacao": "O julgador recusa examinar o pedido ou recurso por uma razão formal (por exemplo, o caminho escolhido não cabe), sem decidir o mérito."},
-    {"termo": "Prejudicado", "formas": ["prejudicado", "julgo prejudicado"], "explicacao": "O pedido perdeu o objeto: algo aconteceu que o tornou sem sentido (por exemplo, a medida que se pedia para revogar já foi revogada)."},
-    {"termo": "Trânsito em julgado", "formas": ["trânsito em julgado", "Transitado(a) em julgado"], "explicacao": "Momento em que a decisão se torna definitiva, porque não cabe mais recurso."},
-    {"termo": "Sigilo", "formas": ["sigiloso", "Sigiloso", "SOB SIGILO", "Decisão (sigiloso)"], "explicacao": "Quando o processo ou um ato corre em segredo, o portal público mostra só informações genéricas. Este site só usa o que o portal devolve publicamente."},
-    {"termo": "Distribuição por prevenção", "formas": ["Distribuído por prevenção", "prevenção"], "explicacao": "Regra pela qual um processo novo vai para o mesmo relator de um processo anterior relacionado, em vez de ser sorteado."},
-    {"termo": "Conclusos ao relator", "formas": ["Conclusos ao(à) Relator(a)", "conclusos"], "explicacao": "Os autos foram enviados ao gabinete do relator para que ele decida algo."},
-    {"termo": "DJE", "formas": ["DJE", "Publicação, DJE", "Diário da Justiça Eletrônico"], "explicacao": "Diário da Justiça Eletrônico: publicação oficial das decisões. A partir da publicação contam-se os prazos."},
-    {"termo": "Incidente", "formas": ["incidente"], "explicacao": "Número interno que o portal do STF dá a cada processo ou a cada fase dele (por exemplo, o agravo dentro de um processo). É o identificador usado nas URLs do portal e nesta base."},
-    {"termo": "Autos", "formas": ["autos"], "explicacao": "O conjunto de documentos do processo, na ordem em que foram juntados. 'Autos abertos' são autos públicos, que qualquer pessoa pode consultar."}
+    {
+      "termo": "Pet (Petição)",
+      "formas": [
+        "Pet",
+        "PET",
+        "Petição avulsa"
+      ],
+      "explicacao": "Classe processual usada no STF para pedidos que ainda não têm um tipo próprio de ação, como requerimentos ligados a investigações. Um 'Pet' pode conter pedidos de medidas cautelares, prisão ou diligências."
+    },
+    {
+      "termo": "Inq (Inquérito)",
+      "formas": [
+        "Inq",
+        "INQ",
+        "Inquérito"
+      ],
+      "explicacao": "Investigação penal que tramita no STF quando envolve pessoa com foro por prerrogativa de função ou fatos conexos. Ainda não é ação penal: serve para reunir elementos antes de eventual denúncia."
+    },
+    {
+      "termo": "Rcl (Reclamação)",
+      "formas": [
+        "Rcl",
+        "RCL",
+        "Reclamação"
+      ],
+      "explicacao": "Pedido feito ao STF para preservar sua competência ou garantir que uma decisão sua seja cumprida por outro órgão do Judiciário."
+    },
+    {
+      "termo": "HC (Habeas corpus)",
+      "formas": [
+        "HC",
+        "RHC",
+        "Habeas corpus"
+      ],
+      "explicacao": "Ação que protege a liberdade de locomoção contra prisão ou ameaça de prisão considerada ilegal. RHC é o recurso contra a decisão de um habeas corpus."
+    },
+    {
+      "termo": "Agravo regimental",
+      "formas": [
+        "AgR",
+        "agravo regimental",
+        "Interposto agravo regimental"
+      ],
+      "explicacao": "Recurso contra uma decisão tomada por um único ministro, pedindo que o colegiado (Turma ou Plenário) a reexamine."
+    },
+    {
+      "termo": "Embargos de declaração",
+      "formas": [
+        "embargos de declaração",
+        "Opostos embargos de declaração"
+      ],
+      "explicacao": "Pedido para que o próprio julgador esclareça uma omissão, contradição ou obscuridade na decisão. Não serve para discutir o mérito de novo."
+    },
+    {
+      "termo": "Relator",
+      "formas": [
+        "relator",
+        "relatora",
+        "MIN.",
+        "Ministro relator"
+      ],
+      "explicacao": "Ministro sorteado para conduzir o processo: decide pedidos urgentes sozinho (decisão monocrática) e apresenta o caso aos colegas quando o julgamento é coletivo."
+    },
+    {
+      "termo": "Decisão monocrática",
+      "formas": [
+        "Decisão monocrática",
+        "decisão monocrática"
+      ],
+      "explicacao": "Decisão tomada por um único ministro, em geral o relator, sem passar pelo colegiado. Pode ser contestada por agravo regimental."
+    },
+    {
+      "termo": "Acórdão",
+      "formas": [
+        "acórdão",
+        "Inteiro teor do acórdão"
+      ],
+      "explicacao": "Documento que registra a decisão de um órgão colegiado (Turma ou Plenário), com a ementa (resumo oficial) e os votos."
+    },
+    {
+      "termo": "Voto",
+      "formas": [
+        "Voto",
+        "Voto Vogal",
+        "voto vogal"
+      ],
+      "explicacao": "Manifestação escrita de um ministro no julgamento colegiado. O voto do relator abre o julgamento; 'voto vogal' é o de outro ministro da Turma."
+    },
+    {
+      "termo": "Referendo",
+      "formas": [
+        "referendo",
+        "Liminar referendada",
+        "Referendo"
+      ],
+      "explicacao": "Quando o relator decide sozinho uma medida urgente, o colegiado depois confirma (referenda) ou não essa decisão."
+    },
+    {
+      "termo": "Sessão virtual",
+      "formas": [
+        "sessão virtual",
+        "Julgamento Virtual",
+        "Iniciado Julgamento Virtual",
+        "Finalizado Julgamento Virtual"
+      ],
+      "explicacao": "Julgamento em que os ministros registram seus votos por escrito num sistema eletrônico, durante um período de dias, sem reunião presencial."
+    },
+    {
+      "termo": "Turma e Plenário",
+      "formas": [
+        "Segunda Turma",
+        "Primeira Turma",
+        "Plenário",
+        "2ª Turma"
+      ],
+      "explicacao": "O STF julga em três formações: Primeira Turma e Segunda Turma (cinco ministros cada) e o Plenário (todos os onze)."
+    },
+    {
+      "termo": "Prisão preventiva",
+      "formas": [
+        "prisão preventiva",
+        "preventiva"
+      ],
+      "explicacao": "Prisão decretada antes de julgamento final, quando o juiz entende haver risco à investigação, à ordem pública ou à aplicação da lei (art. 312 do Código de Processo Penal). Não é condenação."
+    },
+    {
+      "termo": "Prisão temporária",
+      "formas": [
+        "prisão temporária",
+        "temporária"
+      ],
+      "explicacao": "Prisão por prazo fixo (em regra 5 dias, prorrogáveis) para viabilizar diligências de investigação (Lei 7.960/1989). Também não é condenação."
+    },
+    {
+      "termo": "Medidas cautelares",
+      "formas": [
+        "medidas cautelares",
+        "cautelares diversas da prisão",
+        "medida cautelar"
+      ],
+      "explicacao": "Restrições impostas em vez da prisão, como usar tornozeleira, não sair do país, não falar com certas pessoas ou recolher-se em casa à noite (art. 319 do Código de Processo Penal).",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Busca e apreensão",
+      "formas": [
+        "busca e apreensão"
+      ],
+      "explicacao": "Diligência autorizada pelo juiz para entrar num local e recolher objetos, documentos ou dispositivos que interessem à investigação."
+    },
+    {
+      "termo": "Investigado, réu e requerido",
+      "formas": [
+        "investigado",
+        "réu",
+        "requerido",
+        "INVEST.(A/S)",
+        "REQDO.(A/S)"
+      ],
+      "explicacao": "Status processual literal do portal: 'investigado' é quem está sendo investigado num inquérito; 'réu' é quem responde a uma ação penal já aberta; 'requerido' é contra quem se dirige um pedido. Nenhum desses termos significa culpa."
+    },
+    {
+      "termo": "Interessado",
+      "formas": [
+        "interessado",
+        "INTDO.(A/S)"
+      ],
+      "explicacao": "Quem participa do processo sem ser autor nem parte contrária, mas pode ser afetado pelo resultado."
+    },
+    {
+      "termo": "Autoridade policial",
+      "formas": [
+        "autoridade policial",
+        "AUT. POL.",
+        "Delegado de Polícia Federal"
+      ],
+      "explicacao": "O delegado que conduz o inquérito e faz os pedidos de diligências ao juiz."
+    },
+    {
+      "termo": "PGR (Procuradoria-Geral da República)",
+      "formas": [
+        "PGR",
+        "Procuradoria-Geral da República",
+        "Procurador-Geral da República",
+        "Vista à PGR"
+      ],
+      "explicacao": "Chefia do Ministério Público Federal, que atua nos processos do STF: dá pareceres, faz pedidos e pode oferecer denúncia. 'Vista à PGR' é o envio dos autos para ela se manifestar."
+    },
+    {
+      "termo": "Denúncia",
+      "formas": [
+        "denúncia",
+        "denunciado"
+      ],
+      "explicacao": "Peça em que o Ministério Público acusa formalmente alguém; se o tribunal a recebe, o inquérito vira ação penal e o investigado passa a réu."
+    },
+    {
+      "termo": "Deferido e indeferido",
+      "formas": [
+        "deferido",
+        "indeferido",
+        "Deferido",
+        "Indeferido",
+        "Deferido em parte"
+      ],
+      "explicacao": "'Deferido' é pedido aceito; 'indeferido' é pedido negado; 'deferido em parte' é aceito só em parte."
+    },
+    {
+      "termo": "Negado seguimento",
+      "formas": [
+        "negado seguimento",
+        "nego seguimento"
+      ],
+      "explicacao": "O julgador recusa examinar o pedido ou recurso por uma razão formal (por exemplo, o caminho escolhido não cabe), sem decidir o mérito."
+    },
+    {
+      "termo": "Prejudicado",
+      "formas": [
+        "prejudicado",
+        "julgo prejudicado"
+      ],
+      "explicacao": "O pedido perdeu o objeto: algo aconteceu que o tornou sem sentido (por exemplo, a medida que se pedia para revogar já foi revogada)."
+    },
+    {
+      "termo": "Trânsito em julgado",
+      "formas": [
+        "trânsito em julgado",
+        "Transitado(a) em julgado"
+      ],
+      "explicacao": "Momento em que a decisão se torna definitiva, porque não cabe mais recurso."
+    },
+    {
+      "termo": "Sigilo",
+      "formas": [
+        "sigiloso",
+        "Sigiloso",
+        "SOB SIGILO",
+        "Decisão (sigiloso)"
+      ],
+      "explicacao": "Quando o processo ou um ato corre em segredo, o portal público mostra só informações genéricas. Este site só usa o que o portal devolve publicamente."
+    },
+    {
+      "termo": "Distribuição por prevenção",
+      "formas": [
+        "Distribuído por prevenção",
+        "prevenção"
+      ],
+      "explicacao": "Regra pela qual um processo novo vai para o mesmo relator de um processo anterior relacionado, em vez de ser sorteado."
+    },
+    {
+      "termo": "Conclusos ao relator",
+      "formas": [
+        "Conclusos ao(à) Relator(a)",
+        "conclusos"
+      ],
+      "explicacao": "Os autos foram enviados ao gabinete do relator para que ele decida algo."
+    },
+    {
+      "termo": "DJE",
+      "formas": [
+        "DJE",
+        "Publicação, DJE",
+        "Diário da Justiça Eletrônico"
+      ],
+      "explicacao": "Diário da Justiça Eletrônico: publicação oficial das decisões. A partir da publicação contam-se os prazos."
+    },
+    {
+      "termo": "Incidente",
+      "formas": [
+        "incidente"
+      ],
+      "explicacao": "Número interno que o portal do STF dá a cada processo ou a cada fase dele (por exemplo, o agravo dentro de um processo). É o identificador usado nas URLs do portal e nesta base."
+    },
+    {
+      "termo": "Autos",
+      "formas": [
+        "autos"
+      ],
+      "explicacao": "O conjunto de documentos do processo, na ordem em que foram juntados. 'Autos abertos' são autos públicos, que qualquer pessoa pode consultar."
+    },
+    {
+      "termo": "Público",
+      "formas": [
+        "Público",
+        "público",
+        "Publicidade"
+      ],
+      "explicacao": "Processo público: qualquer pessoa pode consultar os autos no portal do STF. É o oposto de sigiloso."
+    },
+    {
+      "termo": "Recolhimento domiciliar",
+      "formas": [
+        "recolhimento domiciliar",
+        "recolhimento noturno",
+        "recolhimento em residência"
+      ],
+      "explicacao": "Obrigação de ficar em casa nos períodos fixados pelo juiz, em geral à noite e nos dias de folga. Não é prisão domiciliar: fora desses períodos a pessoa pode sair.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Prisão domiciliar",
+      "formas": [
+        "prisão domiciliar"
+      ],
+      "explicacao": "A pessoa cumpre a prisão em casa, em vez de num estabelecimento prisional, geralmente por razões de saúde, idade ou cuidado de dependentes.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Monitoração eletrônica",
+      "formas": [
+        "monitoração eletrônica",
+        "monitoramento eletrônico",
+        "tornozeleira",
+        "tornozeleira eletrônica"
+      ],
+      "explicacao": "Uso de tornozeleira eletrônica, que informa à Justiça onde a pessoa está.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Proibição de contato",
+      "formas": [
+        "proibição de contato",
+        "proibição de manter contato",
+        "não manter contato"
+      ],
+      "explicacao": "A pessoa não pode falar, escrever ou se encontrar com determinadas pessoas (outros investigados, testemunhas), por qualquer meio.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Proibição de ausentar-se",
+      "formas": [
+        "proibição de ausentar-se",
+        "não se ausentar",
+        "proibição de se ausentar",
+        "ausentar-se da comarca",
+        "ausentar-se do país"
+      ],
+      "explicacao": "A pessoa não pode sair da cidade ou do país sem autorização do juiz; costuma vir acompanhada da entrega do passaporte.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Entrega de passaporte",
+      "formas": [
+        "entrega do passaporte",
+        "entrega de passaporte",
+        "passaporte"
+      ],
+      "explicacao": "A pessoa entrega o passaporte à Justiça para não poder viajar ao exterior.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Suspensão de função ou atividade",
+      "formas": [
+        "suspensão do exercício",
+        "suspensão da função",
+        "afastamento da função",
+        "suspensão de atividade"
+      ],
+      "explicacao": "A pessoa fica afastada de um cargo, função ou atividade econômica enquanto a medida durar, para evitar que ela seja usada na prática investigada.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Comparecimento periódico",
+      "formas": [
+        "comparecimento periódico",
+        "comparecimento em juízo",
+        "comparecimento mensal"
+      ],
+      "explicacao": "Obrigação de se apresentar ao juízo em datas fixadas (por exemplo, todo mês) para informar e justificar suas atividades.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Fiança",
+      "formas": [
+        "fiança"
+      ],
+      "explicacao": "Valor em dinheiro ou bens depositado como garantia de que a pessoa vai cumprir as obrigações do processo.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Bloqueio e sequestro de bens",
+      "formas": [
+        "bloqueio de bens",
+        "sequestro de bens",
+        "indisponibilidade de bens",
+        "bloqueio de valores",
+        "sequestro"
+      ],
+      "explicacao": "Medidas que impedem a venda ou a movimentação de bens e valores enquanto a investigação apura sua origem ou garante um eventual ressarcimento. Não transferem a propriedade.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Quebra de sigilo",
+      "formas": [
+        "quebra de sigilo",
+        "afastamento do sigilo",
+        "sigilo bancário",
+        "sigilo fiscal",
+        "sigilo telemático"
+      ],
+      "explicacao": "Autorização judicial para que a investigação acesse dados protegidos: movimentações bancárias, declarações fiscais, registros de comunicação.",
+      "contexto": "condicao"
+    },
+    {
+      "termo": "Diligência",
+      "formas": [
+        "diligência",
+        "diligências",
+        "Determinada a diligência"
+      ],
+      "explicacao": "Qualquer providência de investigação ou de andamento do processo: ouvir alguém, buscar documentos, pedir informações a um órgão."
+    },
+    {
+      "termo": "De ofício",
+      "formas": [
+        "de ofício",
+        "determinado de ofício"
+      ],
+      "explicacao": "Quando o juiz decide algo por iniciativa própria, sem que uma das partes tenha pedido."
+    },
+    {
+      "termo": "Homologação",
+      "formas": [
+        "homologado",
+        "homologação",
+        "homologo"
+      ],
+      "explicacao": "O juiz confirma a validade de um ato feito por outros (um acordo, uma desistência), sem decidir o mérito da disputa."
+    },
+    {
+      "termo": "Não conhecido",
+      "formas": [
+        "não conhecido",
+        "não conheço"
+      ],
+      "explicacao": "O julgador nem examina o pedido ou recurso, porque falta um requisito formal para isso."
+    }
   ]
 }

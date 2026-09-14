@@ -1,0 +1,125 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "João Carlos Falbo Mansur apresentou a Petição nº 22887/2026, juntada no e-Doc. 473.",
+      "pagina": 4,
+      "trecho_fonte": "Por meio da Petição nº 22887/2026 (e-Doc. 473), João Carlos Falbo Mansur requereu",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "João Carlos Falbo Mansur", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "João Carlos Falbo Mansur requereu, em caráter de urgência, que fosse assegurada a faculdade de seu comparecimento à sessão da CPI do Crime Organizado designada para 03/03/2026.",
+      "pagina": 4,
+      "trecho_fonte": "João Carlos Falbo Mansur requereu, em caráter de urgência, fosse assegurada a faculdade de seu comparecimento à sessão da CPI do Crime Organizado designada para 03/03/2026.",
+      "atribuida_a": "João Carlos Falbo Mansur",
+      "entidades": [
+        {"nome": "João Carlos Falbo Mansur", "tipo": "pessoa"},
+        {"nome": "CPI do Crime Organizado", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Concomitantemente ao peticionamento, João Carlos Falbo Mansur impetrou Habeas Corpus perante o Supremo Tribunal Federal, distribuído livremente ao Ministro Flávio Dino.",
+      "pagina": 4,
+      "trecho_fonte": "concomitantemente ao aludido peticionamento, o requerente impetrou Habeas Corpus perante essa Suprema Corte, tendo o referido writ sido objeto de livre distribuição ao Ministro Flávio Dino.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "João Carlos Falbo Mansur", "tipo": "pessoa"},
+        {"nome": "Ministro Flávio Dino", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 02/03/2026, nos autos do HC nº 269.005/DF, o Ministro Flávio Dino proferiu decisão deferindo parcialmente a liminar para assegurar ao paciente o direito ao silêncio quanto a perguntas potencialmente incriminatórias, a dispensa de compromisso de dizer a verdade, a assistência plena por advogado e a vedação de constrangimentos físicos ou morais.",
+      "pagina": 4,
+      "trecho_fonte": "no dia 02/03/2026, nos autos do HC nº 269.005/DF, Sua Excelência proferiu decisão deferindo parcialmente a liminar para assegurar ao paciente o direito ao silêncio quanto a perguntas potencialmente incriminatórias, a dispensa de compromisso de dizer a verdade, a assistência plena por advogado",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Flávio Dino", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "João Carlos Falbo Mansur apresentou a Petição nº 24650/2026, juntada no e-Doc. 491.",
+      "pagina": 4,
+      "trecho_fonte": "por meio da Petição nº 24650/2026 (e-Doc. 491), João Carlos Falbo Mansur apresenta novo pedido",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "João Carlos Falbo Mansur", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "João Carlos Falbo Mansur apresenta, na Petição nº 24650/2026, novo pedido nos mesmos termos do primeiro requerimento, em relação à convocação recebida para comparecimento perante a Comissão Parlamentar Mista de Inquérito no dia 11/03/2026.",
+      "pagina": 4,
+      "trecho_fonte": "João Carlos Falbo Mansur apresenta novo pedido, nos mesmos termos do primeiro requerimento, desta feita em relação à convocação recebida para comparecimento perante a mesma Comissão Parlamentar Mista de Inquérito no dia 11/03/2026.",
+      "atribuida_a": "João Carlos Falbo Mansur",
+      "entidades": [
+        {"nome": "João Carlos Falbo Mansur", "tipo": "pessoa"},
+        {"nome": "Comissão Parlamentar Mista de Inquérito", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que, a partir do cotejo entre os dois requerimentos apresentados nos autos (e-Docs. 473 e 491) e o objeto do HC nº 269.005/DF, sob relatoria do Ministro Flávio Dino, resta evidente a identidade entre os pedidos.",
+      "pagina": 5,
+      "trecho_fonte": "A partir do cotejo entre os dois requerimentos apresentados nos presentes autos (e-Docs. 473 e 491) e o objeto do HC nº 269.005/DF, sob relatoria do Ministro Flávio Dino, resta evidente a identidade entre os pedidos.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Ministro Flávio Dino", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que no HC nº 269.005/DF já fora proferida decisão liminar acolhendo em parte os pedidos formulados e que, para evitar o risco de decisões conflitantes ou contraditórias, reconhece-se a prejudicialidade de ambos os pedidos deduzidos nos autos.",
+      "pagina": 5,
+      "trecho_fonte": "no referido writ já fora proferida decisão liminar acolhendo em parte os pedidos formulados. Desse modo, para evitar o risco de decisões conflitantes ou contraditórias, o que poderia ocorrer caso os pedidos viessem a ser decididos separadamente, reconhece-se a prejudicialidade de ambos os pedidos",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deu por prejudicados os pedidos deduzidos por meio das Petições nº 22887/2026 (e-Doc. 473) e 24650/2026 (e-Doc. 491), diante da identidade de objetos com o HC nº 269.005/DF.",
+      "pagina": 5,
+      "trecho_fonte": "diante da identidade de objetos entre os requerimentos ora apreciados e o HC nº 269.005/DF, dou por prejudicados os pedidos deduzidos por meio das Petições nº 22887/2026 (e-Doc. 473) e 24650/2026 (e-Doc. 491).",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação, com urgência.",
+      "pagina": 5,
+      "trecho_fonte": "Intime-se, com urgência.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 9 de março de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 5,
+      "trecho_fonte": "Brasília, 9 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

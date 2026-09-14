@@ -23,6 +23,8 @@
   ingerir-extracao             lê data/extracao/respostas/<id>.json, valida e persiste (mesma validação da API)
   preparar-decisoes            entradas para pedidos/resultados por decisão (data/extracao/decisoes/entradas)
   ingerir-decisoes             lê data/extracao/decisoes/respostas/<id>.json, valida e persiste em decisao_item
+  vigiar                       recoleta cada processo, compara com a cópia anterior e registra em CHANGELOG-PORTAL.md
+  verificar                    recalcula o sha256 de cada blob local e compara com o registrado
 """
 
 from __future__ import annotations
@@ -272,10 +274,46 @@ def cmd_ingerir_decisoes(args):
     print(json.dumps(ingerir_decisoes(con, cliente, documentos=docs, log=print), ensure_ascii=False))
 
 
+def cmd_vigiar(args):
+    from .vigiar import registrar, vigiar
+    incs = [int(x) for x in args.incidentes.split(",")] if args.incidentes else None
+    rel = vigiar(_con(), incidentes=incs)
+    registrar(rel)
+    print(json.dumps([{"processo": r["processo"], **r["resumo"]} for r in rel], ensure_ascii=False))
+
+
+def cmd_verificar(args):
+    from .integridade import verificar_blobs
+    r = verificar_blobs(_con())
+    print(json.dumps({k: v for k, v in r.items() if k != "problemas"}, ensure_ascii=False))
+    for x in r["problemas"][:50]:
+        print("  ", json.dumps(x, ensure_ascii=False))
+    raise SystemExit(0 if not r["problemas"] else 1)
+
+
+def cmd_mapa(args):
+    from .mapa import gerar_mapa
+    saida = config.RAIZ / "docs" / "MAPA-DO-CASO.md"
+    saida.parent.mkdir(exist_ok=True)
+    saida.write_text(gerar_mapa(_con(), semente=args.semente), "utf-8")
+    print("mapa →", saida)
+
+
 def cmd_exportar(args):
     from .exportar import exportar
+    from .mapa import gerar_mapa
     saida = Path(args.saida) if args.saida else config.RAIZ / "web" / "public" / "data"
-    print(json.dumps(exportar(_con(), saida, semente=args.semente), ensure_ascii=False), "→", saida)
+    con = _con()
+    print(json.dumps(exportar(con, saida, semente=args.semente), ensure_ascii=False), "→", saida)
+    mapa = config.RAIZ / "docs" / "MAPA-DO-CASO.md"
+    mapa.parent.mkdir(exist_ok=True)
+    mapa.write_text(gerar_mapa(con, semente=args.semente), "utf-8")
+    print("mapa →", mapa)
+    from .integridade import gerar_manifesto
+    man = gerar_manifesto(con)
+    (saida / "integridade.json").write_text(json.dumps(man, ensure_ascii=False, indent=1), "utf-8")
+    (config.RAIZ / "INTEGRIDADE.sha256").write_text(f"{man['raiz_sha256']}  integridade.json  gerado_em={man['gerado_em']}\n", "utf-8", newline="\n")
+    print("integridade →", saida / "integridade.json", "| raiz", man["raiz_sha256"][:16] + "…")
 
 
 def cmd_status(args):
@@ -312,6 +350,9 @@ def main(argv=None):
     p.add_argument("--dry-run", action="store_true"); p.add_argument("--modelo"); p.add_argument("--effort", default="high")
     p.set_defaults(f=cmd_extrair_assercoes)
     p = sub.add_parser("assercoes"); p.add_argument("--documento", type=int); p.set_defaults(f=cmd_assercoes)
+    p = sub.add_parser("vigiar"); p.add_argument("--incidentes"); p.set_defaults(f=cmd_vigiar)
+    p = sub.add_parser("verificar"); p.set_defaults(f=cmd_verificar)
+    p = sub.add_parser("mapa"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_mapa)
     p = sub.add_parser("exportar"); p.add_argument("--saida"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_exportar)
     p = sub.add_parser("preparar-extracao"); p.add_argument("--documentos"); p.add_argument("--limite", type=int)
     p.add_argument("--modelo", default="claude-code/claude-opus-5"); p.set_defaults(f=cmd_preparar_extracao)

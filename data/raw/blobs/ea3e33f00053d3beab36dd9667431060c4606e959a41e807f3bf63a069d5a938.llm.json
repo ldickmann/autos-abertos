@@ -1,0 +1,27 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Gerência de Processos Originários Criminais certificou que foi retificada a autuação para incluir os advogados do Requerido, nos termos da Petição n. 107084/2026.",
+      "pagina": 1,
+      "trecho_fonte": "Certifico que foi retificada a autuação para incluir os advogados do Requerido, nos termos da Petição n. 107084/2026",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Gerência de Processos Originários Criminais", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Certificou-se que não foi possível incluir o advogado Luiz Rennó Netto, pois o sistema de peticionamento eletrônico do STF não conseguiu vincular o número de OAB/MG 108098 a esse advogado.",
+      "pagina": 1,
+      "trecho_fonte": "Certifico que não foi possível incluir o advogado Luiz Rennó Netto, pois o sistema de peticionamento eletrônico do STF não conseguiu vincular o número de OAB/MG: 108098 a esse advogado.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Gerência de Processos Originários Criminais", "tipo": "orgao_publico"},
+        {"nome": "Luiz Rennó Netto", "tipo": "advogado"},
+        {"nome": "STF", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

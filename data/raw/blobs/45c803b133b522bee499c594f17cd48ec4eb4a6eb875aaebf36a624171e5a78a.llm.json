@@ -1,0 +1,16 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Secretaria Judiciária informou que os autos foram disponibilizados à autoridade policial em 1 de abril de 2026.",
+      "pagina": 1,
+      "trecho_fonte": "A Secretaria Judiciária informa que, nesta data, os autos foram disponibilizados à autoridade policial.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"},
+        {"nome": "autoridade policial", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

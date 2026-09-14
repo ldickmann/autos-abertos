@@ -55,6 +55,11 @@
       "de": "nome:DIASTOFFOLI",
       "para": "ministro:DIAS TOFFOLI",
       "motivo": "assinatura eletrônica extraída do PDF sem o espaço entre nome e sobrenome"
+    },
+    {
+      "de": "nome:BANCO CENTRAL",
+      "para": "nome:BANCO CENTRAL DO BRASIL",
+      "motivo": "nos documentos, 'Banco Central' é a forma curta de Banco Central do Brasil (a autarquia)"
     }
   ]
 }

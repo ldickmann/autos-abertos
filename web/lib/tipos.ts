@@ -41,7 +41,23 @@ export type Decisao = {
 
 export type Decisoes = { rotulos_resultado: Record<string, string>; itens: Decisao[] };
 
-export type Verbete = { termo: string; formas: string[]; explicacao: string; mais?: string };
+export type Verbete = { termo: string; formas: string[]; explicacao: string; mais?: string; fonte?: "portal" | "glossario"; contexto?: string };
+
+export type Integridade = {
+  gerado_em: string; como_conferir: string; raiz_sha256: string;
+  totais: { registros_de_coleta: number; snapshots: number; documentos: number };
+  registros_de_coleta: { id: string; arquivo: string; sha256: string; linhas: number }[];
+  snapshots: { id: number; coleta_id: string; incidente: number; aba: string; url: string; fetched_at: string; http_status: number; sha256: string; bytes: number }[];
+  documentos: { id: number; incidente: number; titulo: string | null; url: string; formato: string; sha256: string; paginas: number | null; baixado_em: string | null;
+    codigo_autenticacao: string | null; senha_autenticacao: string | null; processo: string | null }[];
+};
+
+export type Mudanca = { o_que: string; mudanca: "sumiu" | "apareceu" | "mudou"; item: string };
+export type RodadaMudancas = {
+  em: string;
+  processos: { incidente: number; processo: string; antes: string | null; depois: string; abas_identicas: string[]; mudancas: Mudanca[];
+    resumo: { sumiu: number; apareceu: number; mudou: number } }[];
+};
 
 export type Referencias = {
   dispositivos: { dispositivo: string; artigo: string; diploma: string; ocorrencias: number;

@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { BadgeEpistemico } from "@/components/Badges";
-import type { Andamento, TipoEpistemico } from "@/lib/tipos";
+import { Termo } from "@/components/Termo";
+import type { Andamento, TipoEpistemico, Verbete } from "@/lib/tipos";
 import { formatarData, formatarDataHora } from "@/lib/tipos";
 
-export function LinhaDoTempo({ andamentos, explicacoes }: { andamentos: Andamento[]; explicacoes: Record<string, string | null> }) {
+export function LinhaDoTempo({ andamentos, verbetes }: { andamentos: Andamento[]; verbetes: Record<string, Verbete | null> }) {
   const [tipo, setTipo] = useState("");
   const [tipoEp, setTipoEp] = useState<"" | TipoEpistemico>("");
   const [soDecisoes, setSoDecisoes] = useState(false);
@@ -62,14 +63,11 @@ export function LinhaDoTempo({ andamentos, explicacoes }: { andamentos: Andament
             <div className="rounded border border-neutral-300 bg-white p-3">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <time dateTime={a.data} className="font-mono text-sm font-semibold">{formatarData(a.data)}</time>
-                <span className="font-semibold">{a.tipo}</span>
+                <Termo verbete={verbetes[a.tipo] ?? null}><span className="font-semibold">{a.tipo}</span></Termo>
                 {a.e_decisao && <span className="rounded bg-blue-800 px-2 py-0.5 text-xs font-semibold text-white">decisão</span>}
                 {a.e_pauta && <span className="rounded bg-neutral-700 px-2 py-0.5 text-xs font-semibold text-white">pauta</span>}
               </div>
               {a.descricao && <p className="mt-1 text-sm">{a.descricao}</p>}
-              {explicacoes[a.tipo] && (
-                <p className="mt-1 text-xs text-neutral-700"><span className="font-medium">Explicação do portal do STF:</span> {explicacoes[a.tipo]}</p>
-              )}
               {a.documentos.length > 0 && (
                 <ul className="mt-2 flex flex-wrap gap-2 text-sm">
                   {a.documentos.map((d) => (

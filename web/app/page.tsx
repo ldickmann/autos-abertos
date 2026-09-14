@@ -77,7 +77,7 @@ export default function Home() {
             <div className="flex flex-col gap-2 text-sm">
               <Link href={`/processo/${cab.incidente}`} className="botao-primario toque rounded px-4 py-2 text-center font-semibold">Abrir os autos</Link>
               <Link href="/linha-do-tempo" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Linha do tempo do caso</Link>
-              <Link href="/grafo" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Grafo de ligações</Link>
+              <Link href="/glossario" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Glossário</Link>
               <Link href="/busca" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Buscar nos autos</Link>
               <p className="mt-2 text-xs text-neutral-700">
                 <Carimbo snapshot={cab.snapshot} />{" "}
@@ -105,7 +105,7 @@ export default function Home() {
             <span className="mt-1 block text-sm text-neutral-700">Pedido por pedido: quem pediu, o que pediu e o que o ministro ou a Turma decidiu, com o trecho do documento.</span>
           </Link>
         </div>
-        <p className="mt-2 text-sm text-neutral-700">Termos difíceis aparecem sublinhados; clique para ver o significado, ou consulte o <Link className="underline" href="/glossario">glossário</Link>.</p>
+        <p className="mt-2 text-sm text-neutral-700">Termos difíceis aparecem sublinhados; clique para ver o significado, ou consulte o <Link className="underline" href="/glossario">glossário</Link>. Para conferir qualquer documento com o próprio STF, veja <Link className="underline" href="/verificar">como verificar</Link>.</p>
       </section>
 
       <section aria-labelledby="titulo-relacionados">

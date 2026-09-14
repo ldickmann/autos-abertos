@@ -1,0 +1,143 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Komerco Consultoria Ltda apresentou petição juntada aos autos no e-Doc. 997.",
+      "pagina": 4,
+      "trecho_fonte": "Trata-se de petição apresentada por KOMERCO CONSULTORIA LTDA (e-Doc. 997)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Komerco Consultoria Ltda postula a restituição do veículo I/TOYOTA HILUX SWSRXA4RD, placa SWJ7G45, Renavam 01396127957, ano/modelo 2024/2025, cor preta, apreendido no âmbito da PET.",
+      "pagina": 4,
+      "trecho_fonte": "postula a restituição do veículo I/TOYOTA HILUX SWSRXA4RD, Placa SWJ7G45, Renavam 01396127957, ano/modelo 2024/2025, cor preta, apreendido no âmbito da presente PET.",
+      "atribuida_a": "KOMERCO CONSULTORIA LTDA",
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Komerco Consultoria Ltda narra que o veículo foi adquirido legalmente, sendo sua propriedade indiscutível, de modo que a manutenção da apreensão se mostra desnecessária.",
+      "pagina": 4,
+      "trecho_fonte": "Narra a requerente que o veículo foi adquirido legalmente, sendo a propriedade do mesmo indiscutível, de modo que a manutenção da apreensão se mostra desnecessária",
+      "atribuida_a": "KOMERCO CONSULTORIA LTDA",
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Komerco Consultoria Ltda aduz que as medidas assecuratórias não podem ser transformadas em meios para promover o confisco antecipado de bens de quem sequer figure no polo passivo da demanda.",
+      "pagina": 4,
+      "trecho_fonte": "Aduz que as medidas assecuratórias não podem ser transformadas em meios para promover o confisco antecipado de bens de quem sequer figure no polo passivo da demanda",
+      "atribuida_a": "KOMERCO CONSULTORIA LTDA",
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Komerco Consultoria Ltda alega que a manutenção da apreensão do veículo lhe ocasionará grave prejuízo de ordem patrimonial e operacional, porque o veículo é utilizado no regular exercício de suas atividades empresariais.",
+      "pagina": 4,
+      "trecho_fonte": "a manutenção da apreensão do veículo ocasionará à requerente grave prejuízo de ordem patrimonial e operacional, justamente porque é utilizado no regular exercício de suas atividades empresariais",
+      "atribuida_a": "KOMERCO CONSULTORIA LTDA",
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Komerco Consultoria Ltda sustenta que a restituição do bem é de extrema importância para a preservação do patrimônio e a continuidade de suas atividades, uma vez que depende do automóvel para o exercício de suas demandas profissionais.",
+      "pagina": 4,
+      "trecho_fonte": "Sustenta que a restituição do bem é de extrema importância para a preservação do patrimônio e a continuidade das suas atividades, uma vez que depende do automóvel para o regular exercício de suas demandas profissionais.",
+      "atribuida_a": "KOMERCO CONSULTORIA LTDA",
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Komerco Consultoria Ltda afirma que, diante da inexistência de elementos probatórios que corroborem a associação do veículo a atividades criminosas, a restituição ao seu legítimo proprietário é medida que se impõe, nos termos do art. 120 do Código de Processo Penal.",
+      "pagina": 4,
+      "trecho_fonte": "Afirma que diante da inexistência de elementos probatórios que corroborem a associação do veículo a atividades criminosas, a restituição ao seu legítimo proprietário é medida que se impõe, nos termos do art. 120, do Código de Processo Penal",
+      "atribuida_a": "KOMERCO CONSULTORIA LTDA",
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Komerco Consultoria Ltda requer a restituição do veículo, sob o argumento de que o bem não mais interessa às investigações em andamento.",
+      "pagina": 5,
+      "trecho_fonte": "requer a restituição do veículo na medida em que o bem não mais interessa às investigações em andamento.",
+      "atribuida_a": "KOMERCO CONSULTORIA LTDA",
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Em caráter subsidiário, Komerco Consultoria Ltda pleiteia sua nomeação como depositária fiel, a fim de que possa utilizar o veículo de sua propriedade.",
+      "pagina": 5,
+      "trecho_fonte": "Em caráter subsidiário, pleiteia a nomeação da requerente como depositária fiel, a fim de que possa utilizar o veículo de sua propriedade.",
+      "atribuida_a": "KOMERCO CONSULTORIA LTDA",
+      "entidades": [
+        {"nome": "KOMERCO CONSULTORIA LTDA", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator anota que a matéria veiculada no pedido da requerente configura objeto estranho aos limites decididos no feito, revelando-se incompatível com a autuação nos autos, razão pela qual reclama processamento autônomo.",
+      "pagina": 5,
+      "trecho_fonte": "anoto que a matéria veiculada configura objeto estranho aos limites decididos no preente feito, revelando-se incompatível com a autuação nos presentes autos, razão pela qual reclama processamento autônomo.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o desentranhamento da petição e dos documentos acostados sob os e-Docs. 997 a 1003 (Petição nº 87271/2026), para autuação em apartado como PET autônoma, à qual deverá ser apensada cópia reprográfica da decisão.",
+      "pagina": 5,
+      "trecho_fonte": "determino o desentranhamento da petição e dos documentos acostados sob os e-Docs. 997 a 1003 (Petição nº 87271/2026), para fins de autuação em apartado, como PET autônoma, à qual deverá ser apensada cópia reprográfica da presente decisão.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, procedida a nova autuação, seja aberta vista ao Ministério Público Federal para manifestação específica e fundamentada sobre o pedido da Petição.",
+      "pagina": 5,
+      "trecho_fonte": "Procedida a nova autuação, abra-se vista ao Ministério Público Federal, para que se manifeste, de forma específica e fundamentada, acerca do pedido objeto da referida da Petição.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministério Público Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 5 de agosto de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 5,
+      "trecho_fonte": "Brasília, 5 de agosto de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

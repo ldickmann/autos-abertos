@@ -1,0 +1,159 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Daniel Bueno Vorcaro apresentou a Petição nº 26370/2026, juntada no e-Doc. 105.",
+      "pagina": 2,
+      "trecho_fonte": "Por meio da Petição nº 26370/2026 (e-Doc. 105) Daniel Bueno Vorcaro requer",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Daniel Bueno Vorcaro requer que seja determinado à direção da Penitenciária Federal de Brasília que permita a realização de visitas diárias de seus advogados regularmente constituídos, independentemente de agendamento, sem monitoramento ou gravação por áudio e/ou vídeo.",
+      "pagina": 2,
+      "trecho_fonte": "seja determinada à direção da Penitenciária Federal de Brasília que permita a realização de visitas diárias, independentemente de agendamento, de seus advogados regularmente constituídos, sem a realização de qualquer tipo de monitoramento ou gravação por áudio e/ou vídeo",
+      "atribuida_a": "Daniel Bueno Vorcaro",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Penitenciária Federal de Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Daniel Bueno Vorcaro requer que seja possibilitado o ingresso de cópias impressas dos autos e garantido o direito dos advogados de tomar notas escritas durante os encontros, nos termos do art. 7º, III, da Lei Federal nº 8.906/1994 e do art. 41, IX, da Lei de Execução Penal.",
+      "pagina": 2,
+      "trecho_fonte": "possibilitando ainda o ingresso de cópias impressas dos autos e garantindo o direito dos advogados de tomar notas escritas durante os encontro, nos termos do art. 7º, III, da Lei Federal nº. 8.906/1994 e art. 41, IX, da Lei de Execução Penal",
+      "atribuida_a": "Daniel Bueno Vorcaro",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Daniel Bueno Vorcaro argumenta que, segundo informações obtidas junto à diretoria da Penitenciária Federal de Brasília, a visita dos defensores ao seu constituinte não poderia ocorrer em datas específicas.",
+      "pagina": 2,
+      "trecho_fonte": "argumenta que, segundo informações obtidas junto à diretoria da Penitenciária Federal de Brasília, a visita dos defensores ao seu constituinte não poderia ocorrer em datas específicas.",
+      "atribuida_a": "Daniel Bueno Vorcaro",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Penitenciária Federal de Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Daniel Bueno Vorcaro alega que o encontro com os advogados seria monitorado, com gravação por meio de áudio e vídeo, não sendo possível o ingresso dos defensores no parlatório sequer com papel e caneta.",
+      "pagina": 2,
+      "trecho_fonte": "tal encontro com os advogados seria monitorado, com gravação por meio de áudio e vídeo, não sendo possível o ingresso dos defensores no parlatório sequer com papel e caneta",
+      "atribuida_a": "Daniel Bueno Vorcaro",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca o art. 3º, § 2º, da Lei 11.671, de 2008, segundo o qual os estabelecimentos penais federais de segurança máxima deverão dispor de monitoramento de áudio e vídeo no parlatório e nas áreas comuns, para fins de preservação da ordem interna e da segurança pública.",
+      "pagina": 2,
+      "trecho_fonte": "De acordo com o art. 3º, § 2º, da Lei 11.671, de 2008, os estabelecimentos penais federais de segurança máxima deverão dispor de monitoramento de áudio e vídeo no parlatório e nas áreas comuns, para fins de preservação da ordem interna e da segurança pública.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o mesmo dispositivo legal excetua expressamente o uso do monitoramento durante o atendimento advocatício, salvo se houver expressa autorização judicial em sentido contrário.",
+      "pagina": 3,
+      "trecho_fonte": "o mesmo dispositivo legal excetua expressamente o uso do referido monitoramento durante o atendimento advocatício, salvo se houver expressa autorização judicial em sentido contrário.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator transcreve o § 2º do art. 3º da Lei 11.671/2008, que veda o uso do monitoramento de áudio e vídeo nas celas e no atendimento advocatício, salvo expressa autorização judicial em contrário.",
+      "pagina": 3,
+      "trecho_fonte": "vedado seu uso nas celas e no atendimento advocatício, salvo expressa autorização judicialem contrário.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que, analisada a situação fática do peticionante à luz do quadro normativo, não se vislumbram razões aptas a ensejar o enquadramento do caso na exceção prevista na parte final do dispositivo aplicável.",
+      "pagina": 3,
+      "trecho_fonte": "Analisando a situação fática atualmente verificada em relação ao peticionante à luz desse quadro normativo, não se vislumbram razões aptas a ensejar o enquadramento do caso na exceção prevista na parte final do dispositivo aplicável.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator, acolhendo o pedido da defesa, determinou à direção da Penitenciária Federal de Brasília que permita a realização de visitas dos advogados regularmente constituídos nos autos, independentemente de agendamento, sem qualquer tipo de monitoramento ou gravação por áudio e/ou vídeo.",
+      "pagina": 3,
+      "trecho_fonte": "determino à direção da Penitenciária Federal de Brasília que permita a realização de visitas dos advogados regularmente constituídos nos autos, independentemente de agendamento, sem a realização de qualquer tipo de monitoramento ou gravação por áudio e/ou vídeo.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Penitenciária Federal de Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator autorizou o ingresso de cópias impressas dos autos.",
+      "pagina": 3,
+      "trecho_fonte": "Autorizo, ainda, o ingresso de cópias impressas dos autos e a",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator autorizou a possibilidade de os advogados tomarem notas escritas durante os encontros.",
+      "pagina": 4,
+      "trecho_fonte": "possibilidade de os advogados tomarem notas escritas durante os encontros.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão assegura à administração do estabelecimento prisional a possibilidade de adotar as medidas de precaução necessárias para compatibilizar as autorizações deferidas com a preservação da segurança integral do custodiado e do estabelecimento.",
+      "pagina": 4,
+      "trecho_fonte": "fica assegurada à administração do estabelecimento prisional a possibilidade de adotar as medida de precaução necessárias para que a concretização das autorizações ora deferidas seja compatibilizada com a manutenção das condições necessárias à preservação da segurança integral do custodiado",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação e a publicação da decisão.",
+      "pagina": 4,
+      "trecho_fonte": "Intime-se. Publique-se.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 9 de março de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 4,
+      "trecho_fonte": "Brasília, 9 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

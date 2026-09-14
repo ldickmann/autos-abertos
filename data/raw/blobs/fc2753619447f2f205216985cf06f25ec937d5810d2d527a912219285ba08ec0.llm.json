@@ -1,0 +1,84 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Henrique Moura Vorcaro apresentou esclarecimentos por meio da Petição nº 79635/2026, encartada ao e-Doc. 965.",
+      "pagina": 4,
+      "trecho_fonte": "Por meio da Petição nº 79635/2026, encartada ao e-Doc. 965, Henrique Moura Vorcaro apresenta esclarecimentos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Henrique Moura Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Henrique Moura Vorcaro requer a revogação da prisão preventiva (e-Docs. 965-972).",
+      "pagina": 4,
+      "trecho_fonte": "Requer, ainda, a revogação da prisão preventiva (e-Docs. 965-972).",
+      "atribuida_a": "Henrique Moura Vorcaro",
+      "entidades": [
+        {"nome": "Henrique Moura Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A petição de Henrique Moura Vorcaro foi juntada após o referendo, pela Segunda Turma do Supremo Tribunal Federal, da medida cautelar pessoal decretada em seu desfavor na PET nº 15.978/DF.",
+      "pagina": 4,
+      "trecho_fonte": "A petição foi juntada após o referendo, pela Segunda Turma do Supremo Tribunal Federal, da medida cautelar pessoal decretada em seu desfavor, no bojo da PET nº 15.978/DF.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Henrique Moura Vorcaro", "tipo": "pessoa"},
+        {"nome": "Segunda Turma do Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que, recobrado o sigilo dos autos da PET nº 15.978/DF, convém apreciar o pedido naquela mesma PET, por medida de racionalização dos processos e resguardo do sigilo da parte peticionária.",
+      "pagina": 4,
+      "trecho_fonte": "Recobrado o sigilo daqueles autos, convém apreciar o pedido naquela mesma PET nº 15.978/DF, por medida de racionalização dos processos, e resguardo do sigilo da parte peticionária.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o desentranhamento do pedido e dos documentos que o acompanham (e-Docs. 965 a 972), para juntada na PET 15.978, com cópia da decisão.",
+      "pagina": 4,
+      "trecho_fonte": "desentranhe-se o pedido com os documentos que o acompanham (e-Docs. 965 a 972), para sua juntada na PET 15.978, com cópia da presente decisão.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumprido o desentranhamento, seja aberta vista à Procuradoria-Geral da República, na PET 15.978, para manifestação sobre o pedido.",
+      "pagina": 4,
+      "trecho_fonte": "Cumprido o item anterior, naquele feito, abra-se vista à Procuradoria-Geral da República para manifestação sobre o pedido.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 6 de julho de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 5,
+      "trecho_fonte": "Brasília, 6 de julho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

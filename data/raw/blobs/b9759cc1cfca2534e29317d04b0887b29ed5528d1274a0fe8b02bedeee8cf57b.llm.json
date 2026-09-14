@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "garantia da faculdade de comparecimento à sessão da CPI do Crime Organizado designada para 03/03/2026 (Petição nº 22887/2026)",
+      "quem_pediu": "João Carlos Falbo Mansur",
+      "resultado": "prejudicado",
+      "decisao": "deu por prejudicado o pedido, diante da identidade de objeto com o HC nº 269.005/DF, no qual já fora proferida decisão liminar",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-09",
+      "pagina": 5,
+      "trecho_fonte": "dou por prejudicados os pedidos deduzidos por meio das Petições nº 22887/2026 (e-Doc. 473) e 24650/2026 (e-Doc. 491).",
+      "condicoes": []
+    },
+    {
+      "pedido": "garantia da faculdade de comparecimento à sessão da Comissão Parlamentar Mista de Inquérito designada para 11/03/2026 (Petição nº 24650/2026)",
+      "quem_pediu": "João Carlos Falbo Mansur",
+      "resultado": "prejudicado",
+      "decisao": "deu por prejudicado o pedido, diante da identidade de objeto com o HC nº 269.005/DF, no qual já fora proferida decisão liminar",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-09",
+      "pagina": 5,
+      "trecho_fonte": "dou por prejudicados os pedidos deduzidos por meio das Petições nº 22887/2026 (e-Doc. 473) e 24650/2026 (e-Doc. 491).",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

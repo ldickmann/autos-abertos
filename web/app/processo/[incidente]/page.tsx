@@ -3,7 +3,7 @@ import { BadgeEpistemico, Carimbo, Publicidade, StatusProcessual } from "@/compo
 import { LinhaDoTempo } from "@/components/LinhaDoTempo";
 import { ListaDecisoes } from "@/components/ListaDecisoes";
 import { Termo } from "@/components/Termo";
-import { formatarData, getDecisoes, getMeta, getProcesso, listarIncidentesColetados, verbeteDe } from "@/lib/data";
+import { formatarData, getDecisoes, getGlossario, getMeta, getProcesso, listarIncidentesColetados, verbeteDe, verbetesParaTipos } from "@/lib/data";
 
 export function generateStaticParams() {
   return listarIncidentesColetados().map((i) => ({ incidente: String(i) }));
@@ -16,6 +16,7 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
   const cab = p.cabecalho;
   const eSemente = cab.incidente === meta.semente;
   const decisoes = getDecisoes();
+  const verbetesTipos = verbetesParaTipos(new Set(p.andamentos.map((a) => a.tipo)), p.explicacoes_portal);
   const verbetesResultado = Object.fromEntries(Object.entries(decisoes.rotulos_resultado).map(([k, r]) => [k, verbeteDe(r.split(" (")[0]) ?? verbeteDe(k)]));
 
   return (
@@ -24,7 +25,7 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
       <header className="rounded-lg border border-neutral-300 bg-white p-5">
         <div className="flex flex-wrap items-baseline gap-3">
           <h1 className="text-2xl font-bold"><Termo verbete={verbeteDe(cab.classe)}>{cab.classe}</Termo> {cab.numero}</h1>
-          <Publicidade valor={cab.publicidade} />
+          <Termo verbete={verbeteDe(cab.publicidade)}><Publicidade valor={cab.publicidade} /></Termo>
           {eSemente && <span className="rounded bg-neutral-800 px-2 py-0.5 text-xs font-semibold text-white">processo principal deste mapa</span>}
         </div>
         <dl className="mt-3 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
@@ -57,7 +58,7 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
           <h2 id="dec" className="text-lg font-bold">O que foi decidido neste processo <span className="text-sm font-normal text-neutral-700">({p.decisoes!.length} itens, pedido por pedido)</span></h2>
           <p className="mt-1 text-sm text-neutral-700">O que se pediu, quem pediu e o que o julgador decidiu, com a página e o trecho literal de cada decisão. Clique num resultado para ver o que a palavra significa.</p>
           <div className="mt-2">
-            <ListaDecisoes itens={p.decisoes!} rotulos={decisoes.rotulos_resultado} processos={[{ incidente: cab.incidente, rotulo: `${cab.classe} ${cab.numero}` }]} verbetes={verbetesResultado} compacta incidenteFixo={cab.incidente} />
+            <ListaDecisoes itens={p.decisoes!} rotulos={decisoes.rotulos_resultado} processos={[{ incidente: cab.incidente, rotulo: `${cab.classe} ${cab.numero}` }]} verbetes={verbetesResultado} glossario={getGlossario()} compacta incidenteFixo={cab.incidente} />
           </div>
         </section>
       )}
@@ -118,7 +119,7 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
 
       <section aria-labelledby="lt">
         <h2 id="lt" className="text-lg font-bold">Linha do tempo <span className="text-sm font-normal text-neutral-700">({p.andamentos.length} andamentos)</span></h2>
-        <LinhaDoTempo andamentos={p.andamentos} explicacoes={p.explicacoes_portal} />
+        <LinhaDoTempo andamentos={p.andamentos} verbetes={verbetesTipos} />
       </section>
 
       <details className="rounded border border-neutral-300 bg-white p-3 text-sm">
