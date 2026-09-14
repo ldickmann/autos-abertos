@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { useTelaLarga } from "@/lib/useTelaLarga";
 import type { LinhaTempo } from "@/lib/tipos";
 import { formatarData } from "@/lib/tipos";
 
@@ -31,10 +32,19 @@ export function LinhaTempoCaso({ dados, processos }: { dados: LinhaTempo; proces
 
   const alternar = <T,>(s: Set<T>, v: T) => { const n = new Set(s); if (n.has(v)) n.delete(v); else n.add(v); return n; };
 
+  // No celular os filtros ficam fechados por padrão (ocupariam duas telas); no desktop, sempre visíveis.
+  const telaLarga = useTelaLarga();
+  const [filtrosAbertos, setFiltrosAbertos] = useState<boolean | null>(null);
+  const abertos = filtrosAbertos ?? telaLarga;
+
   return (
     <div className="grid gap-4 lg:grid-cols-[250px_minmax(0,1fr)]">
-      <aside className="text-sm">
-        <form className="folha space-y-3 border border-neutral-300 bg-white p-3 lg:sticky lg:top-3" onSubmit={(ev) => ev.preventDefault()} aria-label="Filtros da linha do tempo do caso">
+      <aside className="min-w-0 text-sm">
+        <details className="folha border border-neutral-300 bg-white p-3 lg:sticky lg:top-3" open={abertos} onToggle={(ev) => setFiltrosAbertos(ev.currentTarget.open)}>
+          <summary className="toque cursor-pointer font-semibold">
+            Filtros{" "}<span className="font-normal text-neutral-600">· {categorias.size} de {dados.categorias.length} categorias, {procs.size} de {processos.length} processos</span>
+          </summary>
+        <form className="mt-2 space-y-3" onSubmit={(ev) => ev.preventDefault()} aria-label="Filtros da linha do tempo do caso">
           <fieldset>
             <legend className="font-medium">O que mostrar</legend>
             <ul className="mt-1 space-y-1">
@@ -45,7 +55,7 @@ export function LinhaTempoCaso({ dados, processos }: { dados: LinhaTempo; proces
           </fieldset>
           <fieldset>
             <legend className="font-medium">Processos</legend>
-            <ul className="mt-1 space-y-1">
+            <ul className="mt-1 grid grid-cols-2 gap-x-2 gap-y-1 lg:grid-cols-1">
               {processos.map((p) => (
                 <li key={p.incidente}><label className="flex items-center gap-2"><input type="checkbox" checked={procs.has(p.incidente)} onChange={() => setProcs(alternar(procs, p.incidente))} /> {p.rotulo}</label></li>
               ))}
@@ -58,9 +68,10 @@ export function LinhaTempoCaso({ dados, processos }: { dados: LinhaTempo; proces
           <label className="flex items-center gap-2"><input type="checkbox" checked={soComDoc} onChange={(ev) => setSoComDoc(ev.target.checked)} /> só com documento</label>
           <p role="status" className="text-neutral-700">{eventos.length} de {dados.eventos.length} andamentos, em {porDia.length} dias</p>
         </form>
+        </details>
       </aside>
 
-      <ol className="linha-tempo relative ml-5 border-l-2 border-neutral-400 pl-5">
+      <ol className="linha-tempo relative ml-5 min-w-0 border-l-2 border-neutral-400 pl-5">
         {porDia.map(([dia, lista]) => (
           <li key={dia} data-decisao={lista.some((e) => e.e_decisao)} data-categoria={lista[0].categoria} className="relative mb-5">
             <time dateTime={dia} className="font-mono text-sm font-semibold">{formatarData(dia)}</time>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Newsreader } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import { NavPrincipal } from "@/components/NavPrincipal";
 import { TemaToggle } from "@/components/TemaToggle";
 import { getMeta, formatarDataHora } from "@/lib/data";
 
@@ -13,17 +14,6 @@ export const metadata: Metadata = {
   title: "Autos Abertos",
   description: "Dados públicos de processos do Supremo Tribunal Federal, estruturados, buscáveis e com proveniência em cada item.",
 };
-
-const NAV = [
-  { href: "/", rotulo: "Início" },
-  { href: "/linha-do-tempo", rotulo: "Linha do tempo" },
-  { href: "/grafo", rotulo: "Grafo" },
-  { href: "/busca", rotulo: "Busca" },
-  { href: "/assercoes", rotulo: "Asserções" },
-  { href: "/entidades", rotulo: "Entidades" },
-  { href: "/referencias", rotulo: "Referências" },
-  { href: "/sobre", rotulo: "Método" },
-];
 
 // Aplica o tema antes da primeira pintura, para não piscar. Padrão: escuro.
 const SCRIPT_TEMA = `(function(){var t='escuro';try{var s=localStorage.getItem('tema');if(s==='claro'||s==='escuro')t=s;}catch(e){}document.documentElement.dataset.tema=t;})();`;
@@ -40,24 +30,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Pular para o conteúdo
         </a>
         <header className="border-b border-neutral-300 bg-white">
-          <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
+          {/* Até lg: título e tema na primeira linha, nav como trilho rolável na segunda. Desktop: tudo numa linha. */}
+          <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto] items-center gap-x-3 gap-y-2 px-4 py-3 lg:grid-cols-[auto_1fr_auto]">
             <Link href="/" className="font-serif text-xl tracking-tight">
-              Autos Abertos <span className="font-sans text-sm text-neutral-700">processos públicos do STF</span>
+              Autos Abertos <span className="hidden font-sans text-sm text-neutral-700 sm:inline">processos públicos do STF</span>
             </Link>
-            <div className="flex items-center gap-2">
-              <nav aria-label="Principal">
-                <ul className="flex flex-wrap gap-0.5">
-                  {NAV.map((n) => (
-                    <li key={n.href}>
-                      <Link href={n.href} className="rounded px-2.5 py-1.5 text-sm font-medium hover:bg-neutral-100">
-                        {n.rotulo}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-              <TemaToggle />
-            </div>
+            <div className="order-3 col-span-2 min-w-0 lg:order-2 lg:col-span-1 lg:justify-self-end"><NavPrincipal /></div>
+            <div className="order-2 lg:order-3"><TemaToggle /></div>
           </div>
         </header>
         <main id="conteudo" className="mx-auto max-w-6xl px-4 py-6">{children}</main>

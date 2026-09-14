@@ -53,7 +53,7 @@ export default function Home() {
           Processos sigilosos mostram só o que o portal público devolve.
         </p>
         <div className="mt-3 overflow-x-auto">
-          <table className="w-full min-w-[640px] border-collapse text-sm">
+          <table className="tabela-responsiva w-full min-w-[640px] border-collapse text-sm">
             <thead>
               <tr className="border-b border-neutral-400 text-left">
                 <th scope="col" className="py-2 pr-3">Processo</th>
@@ -67,14 +67,14 @@ export default function Home() {
             <tbody>
               {relacionados.map((p) => (
                 <tr key={`${p.classe}${p.numero}`} className="border-b border-neutral-200">
-                  <td className="py-2 pr-3 font-medium">
+                  <td data-rotulo="Processo" className="py-2 pr-3 font-medium">
                     {p.coletado && p.incidente ? <Link className="underline" href={`/processo/${p.incidente}`}>{p.classe} {p.numero}</Link> : `${p.classe} ${p.numero}`}
                   </td>
-                  <td className="py-2 pr-3"><Publicidade valor={p.publicidade} /></td>
-                  <td className="py-2 pr-3">{p.relator ?? "—"}</td>
-                  <td className="py-2 pr-3">{(p.assuntos ?? []).join("; ") || "—"}</td>
-                  <td className="py-2 pr-3">{p.contagens?.andamentos ?? "—"}</td>
-                  <td className="py-2 pr-3">{p.coletado_em ? formatarData(p.coletado_em) : "não coletado"}</td>
+                  <td data-rotulo="Publicidade" className="py-2 pr-3"><Publicidade valor={p.publicidade} /></td>
+                  <td data-rotulo="Relator" className="py-2 pr-3">{p.relator ?? "—"}</td>
+                  <td data-rotulo="Assunto" className="py-2 pr-3">{(p.assuntos ?? []).join("; ") || "—"}</td>
+                  <td data-rotulo="Andamentos" className="py-2 pr-3">{p.contagens?.andamentos ?? "—"}</td>
+                  <td data-rotulo="Coletado em" className="py-2 pr-3">{p.coletado_em ? formatarData(p.coletado_em) : "não coletado"}</td>
                 </tr>
               ))}
             </tbody>
