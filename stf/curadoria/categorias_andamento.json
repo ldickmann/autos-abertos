@@ -1,0 +1,27 @@
+{
+  "_nota": "Categorias CURADAS de tipos de andamento, para filtrar a linha do tempo unificada. O tipo literal do portal fica sempre visível; a categoria é um rótulo derivado por padrão (regex sobre o nome do tipo, sem acentos, maiúsculas), versionado com o código. Um tipo marcado e_decisao/e_pauta pelo portal cai em 'decisao'/'julgamento' antes de qualquer padrão.",
+  "ordem": ["decisao", "julgamento", "recurso", "peticao", "comunicacao", "distribuicao", "tramitacao", "publicacao", "encerramento", "outro"],
+  "rotulos": {
+    "decisao": "decisões e despachos",
+    "julgamento": "julgamento e pauta",
+    "recurso": "recursos e embargos",
+    "peticao": "petições e manifestações",
+    "comunicacao": "comunicações e intimações",
+    "distribuicao": "autuação e distribuição",
+    "tramitacao": "movimentação interna",
+    "publicacao": "publicações no DJE",
+    "encerramento": "encerramento",
+    "outro": "outros"
+  },
+  "padroes": [
+    {"categoria": "julgamento", "padroes": ["JULGAMENTO", "PAUTA", "ATA DE JULGAMENTO"]},
+    {"categoria": "decisao", "padroes": ["^DECISAO", "^DESPACHO", "^DEFERIDO", "^INDEFERIDO", "^LIMINAR", "DETERMINADA A DILIGENCIA", "REFERENDAD"]},
+    {"categoria": "recurso", "padroes": ["AGRAVO", "EMBARGOS", "RECURSO"]},
+    {"categoria": "peticao", "padroes": ["^PETICAO", "^PROTOCOLADO", "^JUNTADA", "MANIFESTACAO"]},
+    {"categoria": "comunicacao", "padroes": ["COMUNICACAO", "INTIMA", "^EXPEDIDO", "MANDADO", "VISTA A PGR", "AUTOS DISPONIBILIZADOS", "JUNTADA DE AR", "^CERTIDAO"]},
+    {"categoria": "distribuicao", "padroes": ["^AUTUADO", "DISTRIBUIDO", "REDISTRIBUIDO", "RETORNO AO TRAMITE"]},
+    {"categoria": "publicacao", "padroes": ["DJE", "PUBLICA"]},
+    {"categoria": "tramitacao", "padroes": ["^CONCLUSOS", "^REMESSA", "LANCAMENTO INDEVIDO"]},
+    {"categoria": "encerramento", "padroes": ["PROCESSO FINDO", "TRANSITADO", "BAIXA AO ARQUIVO"]}
+  ]
+}

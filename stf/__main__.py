@@ -78,6 +78,7 @@ def cmd_reconstruir(args):
     from .documentos import extrair_texto
     from .entidades import construir_entidades
     from .referencias import construir_referencias
+    from .grafo import atualizar_profundidade
     con = _con()
     apagar_projecao(con)
     criar_schema(con)
@@ -87,6 +88,7 @@ def cmd_reconstruir(args):
     print("texto:", json.dumps(extrair_texto(con, log=lambda s: None), ensure_ascii=False))
     print("entidades:", json.dumps(construir_entidades(con), ensure_ascii=False))
     print("referencias:", json.dumps(construir_referencias(con), ensure_ascii=False))
+    print("profundidade:", atualizar_profundidade(con), "processos")
 
 
 def cmd_diff(args):

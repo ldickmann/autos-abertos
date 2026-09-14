@@ -12,6 +12,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .grafo import construir_grafo, cruzamentos
+from .linha_tempo import ORDEM, ROTULOS, categoria_de, linha_tempo_unificada
+from .referencias import resumo_dispositivos
 
 STATUS_PROCESSUAL = {
     "requerente": "requerente", "requerido": "requerido", "advogado": "advogado", "investigado": "investigado",
@@ -88,11 +90,16 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
                 "id": r["id"], "rotulo": r["rotulo"], "formato": r["formato"], "url": r["url"], "baixado": r["sha256"] is not None,
                 "paginas": r["paginas"], "tem_texto": bool(r["tem_camada_texto"]), "codigo_autenticacao": r["codigo_autenticacao"],
                 "assercoes": assercoes_doc.get(r["id"], [])})
+        pet_por_andamento = {r["andamento_id"]: {"numero": r["numero"], "recebido_por": r["recebido_por"], "data_peticionamento": r["data_peticionamento"]}
+                             for r in con.execute("SELECT ap.andamento_id, p.numero, p.recebido_por, p.data_peticionamento FROM andamento_peticao ap "
+                                                  "JOIN peticao p ON p.id=ap.peticao_id JOIN andamento a ON a.id=ap.andamento_id WHERE a.incidente=?", (inc,))}
         andamentos = []
         for r in con.execute("SELECT * FROM andamento WHERE incidente=? ORDER BY posicao", (inc,)):
             andamentos.append({"id": r["id"], "data": r["data"], "tipo": r["tipo"], "descricao": r["descricao"],
                                "e_decisao": bool(r["e_decisao"]), "e_pauta": bool(r["e_pauta"]),
                                "documentos": docs_por_andamento.get(r["id"], []),
+                               "categoria": categoria_de(r["tipo"], r["e_decisao"], r["e_pauta"]),
+                               "peticao": pet_por_andamento.get(r["id"]),
                                "snapshot": _snap(con, r["snapshot_last_seen"], cache), "hash": r["hash_natural"][:12]})
         peticoes = [{"numero": r["numero"], "data_peticionamento": r["data_peticionamento"], "recebido_em": r["recebido_em"],
                      "recebido_por": r["recebido_por"], "snapshot": _snap(con, r["snapshot_last_seen"], cache)}
@@ -141,13 +148,22 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
             "SELECT ordem, pagina_inicio, pagina_fim, secao, texto FROM documento_chunk WHERE documento_id=? ORDER BY ordem", (d["id"],))]
         andamentos_ref = [dict(r) for r in con.execute(
             "SELECT a.id, a.data, a.tipo, a.incidente FROM andamento_documento ad JOIN andamento a ON a.id=ad.andamento_id WHERE ad.documento_id=?", (d["id"],))]
+        referencias = {
+            "processos": [dict(r) for r in con.execute(
+                "SELECT r.classe, r.numero, r.pagina, r.ocorrencias, r.trecho, p.incidente_principal AS incidente "
+                "FROM documento_ref_processo r LEFT JOIN processo p ON p.classe=r.classe AND p.numero=r.numero WHERE r.documento_id=? ORDER BY r.pagina, r.classe, r.numero", (d["id"],))],
+            "dispositivos": [dict(r) for r in con.execute(
+                "SELECT dispositivo, artigo, diploma, pagina, ocorrencias, trecho FROM documento_ref_dispositivo WHERE documento_id=? ORDER BY pagina, dispositivo", (d["id"],))],
+            "andamentos_citados": [dict(r) for r in con.execute(
+                "SELECT ra.andamento_id, ra.tipo_citado, ra.data_citada, a.incidente FROM documento_ref_andamento ra JOIN andamento a ON a.id=ra.andamento_id WHERE ra.documento_id=?", (d["id"],))],
+        }
         meta_doc = {"id": d["id"], "incidente": d["incidente"], "endpoint": d["endpoint"], "id_portal": d["id_portal"], "formato": d["formato"],
                     "url": d["url"], "titulo": d["titulo"], "sha256": d["sha256"], "paginas": d["paginas"], "tem_texto": bool(d["tem_camada_texto"]),
                     "precisa_ocr": bool(d["precisa_ocr"]), "codigo_autenticacao": d["codigo_autenticacao"],
                     "senha_autenticacao": d["senha_autenticacao"], "baixado_em": d["baixado_em"],
                     "snapshot": _snap(con, d["snapshot_download"], cache), "andamentos": andamentos_ref}
         _escrever(saida / "documento" / f"{d['id']}.json",
-                  {"meta": meta_doc, "paginas": paginas, "chunks": chunks, "assercoes": assercoes_por_doc.get(d["id"], [])})
+                  {"meta": meta_doc, "paginas": paginas, "chunks": chunks, "assercoes": assercoes_por_doc.get(d["id"], []), "referencias": referencias})
         for a in assercoes_por_doc.get(d["id"], []):
             todas_assercoes.append({**a, "documento": {k: meta_doc[k] for k in ("id", "incidente", "titulo", "url", "codigo_autenticacao")},
                                     "data_andamento": andamentos_ref[0]["data"] if andamentos_ref else None})
@@ -179,13 +195,24 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
     _escrever(saida / "busca.json", busca)
 
     _escrever(saida / "grafo.json", construir_grafo(con))
+    _escrever(saida / "linha_tempo.json", {"categorias": [{"id": c, "rotulo": ROTULOS[c]} for c in ORDEM], "eventos": linha_tempo_unificada(con)})
+    proc_de = {(r["classe"], r["numero"]): r["incidente_principal"] for r in con.execute("SELECT classe, numero, incidente_principal FROM processo")}
+    citados = []
+    for r in con.execute("SELECT r.classe, r.numero, COUNT(DISTINCT r.documento_id) n_docs, SUM(r.ocorrencias) n_oc, "
+                         "json_group_array(DISTINCT d.incidente) incidentes FROM documento_ref_processo r JOIN documento d ON d.id=r.documento_id "
+                         "GROUP BY r.classe, r.numero ORDER BY n_docs DESC, n_oc DESC"):
+        citados.append({"classe": r["classe"], "numero": r["numero"], "incidente": proc_de.get((r["classe"], r["numero"])),
+                        "n_docs": r["n_docs"], "n_ocorrencias": r["n_oc"], "citado_por": json.loads(r["incidentes"])})
+    _escrever(saida / "referencias.json", {"dispositivos": resumo_dispositivos(con), "processos_citados": citados})
     _escrever(saida / "cruzamentos.json", cruzamentos(con))
     _escrever(saida / "processos.json", lista_processos)
     coletas = [dict(r) for r in con.execute("SELECT id, incidente, ingerida_em FROM coleta ORDER BY id")]
     _escrever(saida / "meta.json", {
         "gerado_em": datetime.now(timezone.utc).isoformat(), "semente": semente, "coletado_em": coletado_em, "coletas": coletas,
         "contagens": {"processos": len([p for p in lista_processos if p["coletado"]]), "documentos": docs_exportados,
-                      "entidades": len(ents), "assercoes": len(todas_assercoes), "busca": len(busca)},
+                      "entidades": len(ents), "assercoes": len(todas_assercoes), "busca": len(busca),
+                      "processos_citados": len(citados), "dispositivos": con.execute("SELECT COUNT(DISTINCT dispositivo) FROM documento_ref_dispositivo").fetchone()[0]},
+        "curadoria": {"grupos": "stf/curadoria/grupos.json", "categorias_andamento": "stf/curadoria/categorias_andamento.json"},
         "tipos_epistemicos": {
             "fato_processual": "Evento verificável nos autos: uma decisão, um prazo, uma juntada. Diz o que aconteceu no processo.",
             "alegacao_parte": "Afirmação que o documento atribui a uma parte, órgão ou pessoa. O sistema registra que foi alegado, não que é verdade.",
