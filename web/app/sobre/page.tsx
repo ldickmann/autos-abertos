@@ -59,7 +59,7 @@ export default function PaginaSobre() {
           <li>O texto dos documentos é extraído automaticamente do PDF e pode conter erros de leitura; em caso de dúvida, consulte o original.</li>
         </ul>
       </section>
-      <p className="text-xs text-neutral-700">Base gerada em {formatarDataHora(meta.gerado_em)}. Código-fonte, relatórios de cada fase e política de coleta em github.com/ldickmann/nao-definido.</p>
+      <p className="text-xs text-neutral-700">Base gerada em {formatarDataHora(meta.gerado_em)}. Código-fonte, relatórios de cada fase e política de coleta em github.com/ldickmann/autos-abertos.</p>
     </div>
   );
 }

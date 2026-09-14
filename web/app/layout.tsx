@@ -4,7 +4,7 @@ import "./globals.css";
 import { getMeta, formatarDataHora } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Mapeador de processos do STF",
+  title: "Autos Abertos",
   description: "Dados públicos de processos do Supremo Tribunal Federal, estruturados, buscáveis e com proveniência em cada item.",
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b border-neutral-300 bg-white">
           <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
             <Link href="/" className="text-lg font-bold tracking-tight">
-              Mapeador de processos do STF
+              Autos Abertos <span className="text-sm font-normal text-neutral-700">· processos públicos do STF</span>
             </Link>
             <nav aria-label="Principal">
               <ul className="flex flex-wrap gap-1">
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Cada item mostra a data em que foi coletado e aponta para o documento de origem. Este site não emite opinião nem conclusão
               sobre pessoas; registra o que consta nos autos públicos, com o status processual literal do portal.
             </p>
-            <p className="mt-1">Código aberto: <a className="underline" href="https://github.com/ldickmann/nao-definido">github.com/ldickmann/nao-definido</a></p>
+            <p className="mt-1">Código aberto: <a className="underline" href="https://github.com/ldickmann/autos-abertos">github.com/ldickmann/autos-abertos</a></p>
           </div>
         </footer>
       </body>

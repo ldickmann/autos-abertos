@@ -1,4 +1,6 @@
-# stf-mapeador
+# Autos Abertos
+
+Site público: https://ldickmann.github.io/autos-abertos/ · código: https://github.com/ldickmann/autos-abertos
 
 Camada de acesso estruturado a processos públicos do Supremo Tribunal Federal: coleta educada,
 snapshots imutáveis, projeção SQLite com busca, proveniência em cada linha.
@@ -15,7 +17,7 @@ com ponteiro para documento e página.
 | 1 — ingestão determinística | concluída | [FASE1-RELATORIO.md](FASE1-RELATORIO.md) |
 | 2 — grafo de processos e entidades | concluída | [FASE2-RELATORIO.md](FASE2-RELATORIO.md) |
 | 3 — documentos | concluída | [FASE3-RELATORIO.md](FASE3-RELATORIO.md) |
-| 4 — camada semântica | construída; execução aguarda credencial da API | [FASE4-RELATORIO.md](FASE4-RELATORIO.md) |
+| 4 — camada semântica | em execução pelo Claude Code (55/226 documentos, 1041 asserções publicadas) | [FASE4-RELATORIO.md](FASE4-RELATORIO.md) |
 | 5 — interface | concluída (export estático) | [FASE5-RELATORIO.md](FASE5-RELATORIO.md) |
 
 ## Uso
