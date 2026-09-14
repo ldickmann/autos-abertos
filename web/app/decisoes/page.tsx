@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { ListaDecisoes } from "@/components/ListaDecisoes";
-import { getDecisoes, getProcessos, verbeteDe } from "@/lib/data";
+import { getDecisoes, getGlossario, getProcessos, verbeteDe } from "@/lib/data";
 
 export default function PaginaDecisoes() {
   const d = getDecisoes();
@@ -21,7 +21,7 @@ export default function PaginaDecisoes() {
         </p>
       </header>
       <Suspense>
-        <ListaDecisoes itens={d.itens} rotulos={d.rotulos_resultado} processos={processos} verbetes={verbetes} />
+        <ListaDecisoes itens={d.itens} rotulos={d.rotulos_resultado} processos={processos} verbetes={verbetes} glossario={getGlossario()} />
       </Suspense>
     </div>
   );
