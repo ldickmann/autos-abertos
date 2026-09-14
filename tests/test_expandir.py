@@ -39,7 +39,7 @@ def test_expandir_profundidade_1_coleta_os_vizinhos_por_completo(ambiente):
     assert con.execute("select status from processo where classe='Pet' and numero=15556").fetchone()[0] == "semente"
     assert con.execute("select status from processo where classe='Pet' and numero=15499").fetchone()[0] == "nao_encontrado"
     snaps = con.execute("select count(*) from snapshot where incidente=1000001").fetchone()[0]
-    assert snaps == 12  # resolução (listarProcessos) + robots + casca + 9 abas
+    assert snaps == 14  # resolução + robots + casca + 9 abas + votacao_json + 1 sessão virtual
     # os vizinhos relacionam os mesmos processos (fixtures iguais): fronteira vazia na profundidade 1
     assert rel.fronteira == []
 

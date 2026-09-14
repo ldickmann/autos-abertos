@@ -20,8 +20,9 @@ CONTATO = "ldickmann12@gmail.com"
 USER_AGENT = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64; stf-mapeador/{VERSAO}; +mailto:{CONTATO})"
 
 INTERVALO_MINIMO_S = 3.0
-TETO_REQUISICOES_POR_COLETA = 12   # 1 casca + 9 abas + margem para redirects; documentos têm teto próprio
+TETO_REQUISICOES_POR_COLETA = 24   # robots + casca + 9 abas + JSON de objetos + 1 JSON por sessão virtual + margem
 BACKOFF_BASE_S = 5.0
 BACKOFF_TENTATIVAS = 3
 TIMEOUT_S = 60.0
-TETO_REQUISICOES_POR_EXPANSAO = 150  # 7 resoluções + 7 vizinhos × 11 abas = 84 no caso-semente; margem para agravos
+TETO_REQUISICOES_POR_EXPANSAO = 250  # profundidade 2 deste caso: ~11 processos × ~13 requisições + resoluções
+TETO_REQUISICOES_POR_RODADA_DOCS = 400  # 223 documentos conhecidos + votos/relatórios; ≥3 s cada → ~20 min

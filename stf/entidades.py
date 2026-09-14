@@ -53,12 +53,15 @@ def construir_entidades(con: sqlite3.Connection) -> dict:
 
     with con:
         con.execute("DELETE FROM entidade_mencao")
-        con.execute("DELETE FROM entidade")
+        # entidades vindas de documentos (Fase 4) têm asserções ligadas; ficam. Só as de partes são recriadas.
+        con.execute("DELETE FROM entidade WHERE origem='partes' AND id NOT IN (SELECT entidade_id FROM assercao_entidade)")
         for (tipo, chave), ps in grupos.items():
             nome = Counter(p["nome"] for p in ps).most_common(1)[0][0]
-            cur = con.execute("INSERT INTO entidade (tipo, chave, nome, natureza_provavel) VALUES (?,?,?,?)",
-                              (tipo, chave, nome, natureza_provavel(nome)))
-            eid = cur.lastrowid
+            con.execute(
+                "INSERT INTO entidade (tipo, chave, nome, natureza_provavel, origem) VALUES (?,?,?,?,'partes') "
+                "ON CONFLICT(chave) DO UPDATE SET tipo=excluded.tipo, nome=excluded.nome, natureza_provavel=excluded.natureza_provavel, origem='partes'",
+                (tipo, chave, nome, natureza_provavel(nome)))
+            eid = con.execute("SELECT id FROM entidade WHERE chave=?", (chave,)).fetchone()["id"]
             con.executemany(
                 "INSERT INTO entidade_mencao (entidade_id, parte_id, incidente, papel_portal, papel, bloco) VALUES (?,?,?,?,?,?)",
                 [(eid, p["id"], p["incidente"], p["papel_portal"], p["papel"], p["bloco"]) for p in ps])

@@ -14,15 +14,15 @@ com ponteiro para documento e página.
 | 0 — reconhecimento | concluída | [FASE0-RELATORIO.md](FASE0-RELATORIO.md) |
 | 1 — ingestão determinística | concluída | [FASE1-RELATORIO.md](FASE1-RELATORIO.md) |
 | 2 — grafo de processos e entidades | concluída | [FASE2-RELATORIO.md](FASE2-RELATORIO.md) |
-| 3 — documentos | em andamento | |
-| 4 — camada semântica | | |
-| 5 — interface | | |
+| 3 — documentos | concluída | [FASE3-RELATORIO.md](FASE3-RELATORIO.md) |
+| 4 — camada semântica | construída; execução aguarda credencial da API | [FASE4-RELATORIO.md](FASE4-RELATORIO.md) |
+| 5 — interface | concluída (export estático) | [FASE5-RELATORIO.md](FASE5-RELATORIO.md) |
 
 ## Uso
 
 ```bash
 python -m pip install -r requirements.txt
-python -m pytest -q                       # 65 testes, offline
+python -m pytest -q                       # 86 testes, offline
 python -m stf coletar 7514886             # 11 requisições, ≥3 s entre elas, UA identificado
 python -m stf buscar "prisao preventiva"
 python -m stf diff <coleta_a> <coleta_b>
@@ -30,6 +30,11 @@ python -m stf reconstruir                 # recria o SQLite a partir dos blobs
 python -m stf expandir 7514886 --profundidade 2   # resolve e coleta os processos relacionados
 python -m stf grafo                       # lista de arestas + data/grafo.json
 python -m stf cruzamentos                 # entidades em vários processos, relações, coincidências
+python -m stf baixar-docs                 # documentos (cache por sha256) + texto por página
+python -m stf buscar-docs "sisbajud"      # FTS5 no texto dos documentos
+python -m stf extrair-assercoes --dry-run # Fase 4 (exige ANTHROPIC_API_KEY para rodar de verdade)
+python -m stf exportar                    # JSON estático para a interface
+cd web && npm ci && npm run build         # site estático em web/out
 ```
 
 Fonte de verdade: `data/raw/blobs/` (conteúdo por sha256) e `data/raw/coletas/*.jsonl`.

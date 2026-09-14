@@ -124,9 +124,43 @@ CREATE TABLE IF NOT EXISTS documento (
     texto_path          TEXT,
     codigo_autenticacao TEXT,
     senha_autenticacao  TEXT,
+    blob_path           TEXT,
+    http_status         INTEGER,
+    baixado_em          TEXT,
+    snapshot_download   INTEGER,
+    precisa_ocr         INTEGER,
     snapshot_first_seen INTEGER NOT NULL,
     UNIQUE (endpoint, id_portal)
 );
+
+CREATE TABLE IF NOT EXISTS documento_pagina (
+    documento_id INTEGER NOT NULL REFERENCES documento(id),
+    pagina       INTEGER NOT NULL,
+    texto        TEXT NOT NULL,
+    chars        INTEGER NOT NULL,
+    PRIMARY KEY (documento_id, pagina)
+);
+
+CREATE TABLE IF NOT EXISTS documento_chunk (
+    id            INTEGER PRIMARY KEY,
+    documento_id  INTEGER NOT NULL REFERENCES documento(id),
+    ordem         INTEGER NOT NULL,
+    pagina_inicio INTEGER NOT NULL,
+    pagina_fim    INTEGER NOT NULL,
+    secao         TEXT,
+    texto         TEXT NOT NULL,
+    chars         INTEGER NOT NULL,
+    UNIQUE (documento_id, ordem)
+);
+
+CREATE VIRTUAL TABLE IF NOT EXISTS documento_fts USING fts5(
+    texto,
+    content='documento_pagina', content_rowid='rowid',
+    tokenize='unicode61 remove_diacritics 2'
+);
+CREATE TRIGGER IF NOT EXISTS documento_pagina_ai AFTER INSERT ON documento_pagina BEGIN
+    INSERT INTO documento_fts(rowid, texto) VALUES (new.rowid, new.texto);
+END;
 
 CREATE TABLE IF NOT EXISTS andamento_documento (
     andamento_id INTEGER NOT NULL REFERENCES andamento(id),
@@ -195,7 +229,8 @@ CREATE TABLE IF NOT EXISTS entidade (
     tipo              TEXT NOT NULL,     -- parte | advogado
     chave             TEXT NOT NULL UNIQUE,   -- oab:<num/UF> | nome:<normalizado>
     nome              TEXT NOT NULL,     -- forma mais frequente vista
-    natureza_provavel TEXT               -- pessoa_juridica quando o nome tem sufixo societário explícito; senão NULL
+    natureza_provavel TEXT,              -- pessoa_juridica quando o nome tem sufixo societário explícito; senão NULL
+    origem            TEXT NOT NULL DEFAULT 'partes'   -- partes | documento ("terceiro mencionado")
 );
 CREATE TABLE IF NOT EXISTS entidade_mencao (
     entidade_id  INTEGER NOT NULL REFERENCES entidade(id),
@@ -206,6 +241,94 @@ CREATE TABLE IF NOT EXISTS entidade_mencao (
     bloco        INTEGER NOT NULL
 );
 CREATE INDEX IF NOT EXISTS ix_mencao_entidade ON entidade_mencao(entidade_id);
+
+-- sessão virtual (JSON de sistemas.stf.jus.br): objetos incidente, listas de julgamento e votos
+CREATE TABLE IF NOT EXISTS objeto_incidente (
+    id                     INTEGER PRIMARY KEY,
+    incidente_principal    INTEGER,
+    pai                    INTEGER,
+    tipo                   TEXT,     -- PR | IJ | RC | ...
+    tipo_descricao         TEXT,
+    identificacao          TEXT,
+    identificacao_completa TEXT,
+    cadeia                 TEXT,
+    snapshot_first_seen    INTEGER NOT NULL,
+    snapshot_last_seen     INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS lista_julgamento (
+    id                  INTEGER PRIMARY KEY,
+    objeto_incidente_id INTEGER NOT NULL,
+    lista_id            INTEGER,
+    nome_lista          TEXT,
+    julgado             INTEGER,
+    relator             TEXT,
+    tipo_lista          TEXT,
+    colegiado           TEXT,
+    sessao_numero       INTEGER,
+    sessao_ano          INTEGER,
+    data_inicio         TEXT,
+    data_fim            TEXT,
+    tipo_sessao         TEXT,
+    texto_decisao       TEXT,
+    resultado           TEXT,
+    hash                TEXT NOT NULL UNIQUE,
+    snapshot_first_seen INTEGER NOT NULL,
+    snapshot_last_seen  INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS voto (
+    id           INTEGER PRIMARY KEY,
+    lista_id     INTEGER NOT NULL REFERENCES lista_julgamento(id),
+    ordem        INTEGER,
+    ministro     TEXT,
+    data         TEXT,
+    tipo_voto    TEXT,
+    acompanhando TEXT,
+    antecipado   TEXT,
+    UNIQUE (lista_id, ordem, ministro)
+);
+
+-- Fase 4: camada semântica (único lugar com LLM)
+CREATE TABLE IF NOT EXISTS extracao (
+    id                    INTEGER PRIMARY KEY,
+    documento_id          INTEGER NOT NULL REFERENCES documento(id),
+    sha256_documento      TEXT NOT NULL,
+    prompt_version        TEXT NOT NULL,
+    modelo                TEXT NOT NULL,
+    executada_em          TEXT NOT NULL,
+    status                TEXT NOT NULL,   -- ok | rejeitada:<motivo> | erro:<tipo>
+    input_tokens          INTEGER,
+    output_tokens         INTEGER,
+    cache_read_tokens     INTEGER,
+    assercoes_validas     INTEGER,
+    assercoes_descartadas INTEGER,
+    resposta_path         TEXT,            -- resposta bruta do modelo (blob), para auditoria
+    descartadas_json      TEXT,
+    UNIQUE (documento_id, sha256_documento, prompt_version, modelo)
+);
+
+CREATE TABLE IF NOT EXISTS assercao (
+    id              INTEGER PRIMARY KEY,
+    documento_id    INTEGER NOT NULL REFERENCES documento(id),
+    extracao_id     INTEGER NOT NULL REFERENCES extracao(id),
+    pagina          INTEGER NOT NULL,
+    tipo_epistemico TEXT NOT NULL CHECK (tipo_epistemico IN ('fato_processual','alegacao_parte','fundamento_decisorio')),
+    texto           TEXT NOT NULL,
+    trecho_fonte    TEXT NOT NULL,   -- citação literal presente na página (verificada)
+    atribuida_a     TEXT,
+    entidades_json  TEXT NOT NULL,
+    modelo          TEXT NOT NULL,
+    prompt_version  TEXT NOT NULL,
+    criado_em       TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_assercao_doc ON assercao(documento_id, pagina);
+
+CREATE TABLE IF NOT EXISTS assercao_entidade (
+    assercao_id  INTEGER NOT NULL REFERENCES assercao(id),
+    entidade_id  INTEGER NOT NULL REFERENCES entidade(id),
+    nome_literal TEXT NOT NULL,
+    tipo_citado  TEXT NOT NULL,
+    PRIMARY KEY (assercao_id, entidade_id)
+);
 
 CREATE VIRTUAL TABLE IF NOT EXISTS andamento_fts USING fts5(
     descricao, tipo,
@@ -218,7 +341,9 @@ END;
 """
 
 TABELAS_DERIVADAS = [
-    "entidade_mencao", "entidade", "processo",
+    "assercao_entidade", "assercao", "extracao",
+    "entidade_mencao", "entidade", "processo", "documento_fts", "documento_chunk", "documento_pagina",
+    "voto", "lista_julgamento", "objeto_incidente",
     "andamento_documento", "processo_relacao", "andamento_fts", "andamento", "tipo_andamento",
     "documento", "parte", "peticao", "deslocamento", "incidente_versao", "incidente",
     "snapshot", "coleta",

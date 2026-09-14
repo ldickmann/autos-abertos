@@ -21,6 +21,7 @@ import httpx
 
 from . import config
 from .parse.casca import parse_casca
+from .sessao import parse_objetos_incidente, url_oi, url_sessao
 from .store import BlobStore, RegistroColeta, caminho_relativo, sha256
 
 
@@ -140,4 +141,50 @@ def coletar_incidente(incidente: int, *, blobs: Path = config.BLOBS, coletas: Pa
         url = urljoin(config.BASE_PROCESSOS, rel)
         r = c.get(url, aba=aba, referer=url_casca)
         gravar(aba, url, r, c.log[-1])
+
+    # sessão virtual: a aba do portal carrega este JSON de outro host; seguimos a mesma dependência
+    if "sessao" in casca.abas:
+        _coletar_sessao(c, incidente, gravar)
+    return reg.caminho
+
+
+def _coletar_sessao(c: ClienteEducado, incidente: int, gravar) -> None:
+    referer = f"{config.BASE_PROCESSOS}detalhe.asp?incidente={incidente}"
+    url = url_oi(incidente)
+    r = c.get(url, aba="votacao_json", referer=referer)
+    gravar("votacao_json", url, r, c.log[-1])
+    if r is not None and r.status_code == 200:
+        try:
+            objetos = parse_objetos_incidente(r.content)
+        except ValueError:
+            objetos = []
+        for o in objetos:
+            url = url_sessao(o.id)
+            r2 = c.get(url, aba="sessao_virtual_json", referer=referer)
+            gravar("sessao_virtual_json", url, r2, c.log[-1])
+
+
+def coletar_sessao_virtual(incidente: int, *, blobs: Path = config.BLOBS, coletas: Path = config.COLETAS,
+                           cliente: ClienteEducado | None = None, log: Callable[[str], None] = print) -> Path:
+    """Só os JSONs de sessão virtual de um incidente já coletado (1 + N requisições)."""
+    c = cliente or ClienteEducado()
+    bs = BlobStore(blobs)
+    coleta_id = f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}-sessao-{incidente}"
+    reg = RegistroColeta(coletas, coleta_id)
+
+    def gravar(aba: str, url: str, r: httpx.Response | None, entrada: dict) -> None:
+        if r is None:
+            reg.anotar({"incidente": incidente, "aba": aba, "url": url, "fetched_at": entrada["iniciada_em"],
+                        "http_status": 0, "sha256": None, "bytes": 0, "raw_path": None, "erro": entrada.get("erro")})
+            log(f"  {aba}: ERRO {entrada.get('erro')}")
+            return
+        p = bs.gravar(r.content, ext=_ext(r.headers.get("content-type"), str(r.url)))
+        reg.anotar({"incidente": incidente, "aba": aba, "url": url, "url_final": str(r.url),
+                    "fetched_at": entrada["iniciada_em"], "http_status": r.status_code, "sha256": sha256(r.content),
+                    "bytes": len(r.content), "raw_path": caminho_relativo(p, config.RAIZ), "content_type": r.headers.get("content-type"),
+                    "user_agent": config.USER_AGENT, "redirects": entrada.get("redirects", []), "esperou_s": entrada["esperou_s"]})
+        log(f"  {aba}: {r.status_code} {len(r.content)} B")
+
+    log(f"sessão virtual {coleta_id}")
+    _coletar_sessao(c, incidente, gravar)
     return reg.caminho

@@ -9,7 +9,7 @@ ABAS = ["casca", "informacoes", "partes", "andamentos", "decisoes", "sessao",
         "deslocamentos", "peticoes", "recursos", "pautas"]
 
 
-def montar_coleta(tmp_path, fx, coleta_id, transformar=None):
+def montar_coleta(tmp_path, fx, coleta_id, transformar=None, incidente=7514886):
     """Cria blobs + registro JSONL a partir dos fixtures, opcionalmente transformando o HTML."""
     bs = BlobStore(tmp_path / "blobs")
     reg = RegistroColeta(tmp_path / "coletas", coleta_id=coleta_id)
@@ -19,8 +19,8 @@ def montar_coleta(tmp_path, fx, coleta_id, transformar=None):
             raw = transformar(aba, raw)
         p = bs.gravar(raw, ext="html")
         reg.anotar({
-            "incidente": 7514886, "aba": aba,
-            "url": f"https://portal.stf.jus.br/processos/aba{aba}.asp?incidente=7514886",
+            "incidente": incidente, "aba": aba,
+            "url": f"https://portal.stf.jus.br/processos/aba{aba}.asp?incidente={incidente}",
             "fetched_at": f"2026-09-14T01:06:{50 + i:02d}+00:00", "http_status": 200,
             "sha256": p.stem, "bytes": len(raw), "raw_path": str(p), "content_type": "text/html",
         })

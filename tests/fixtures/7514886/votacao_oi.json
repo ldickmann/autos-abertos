@@ -1,0 +1,13 @@
+[ {
+  "objetoIncidente" : {
+    "id" : 7519395,
+    "identificacao" : "Pet 15556 Ref",
+    "identificacaoCompleta" : "REFERENDO NA PETIÇÃO 15556",
+    "principal" : 7514886,
+    "pai" : 7514886,
+    "tipoObjetoIncidente" : {
+      "codigo" : "IJ",
+      "descricao" : "Incidente Julgamento"
+    }
+  }
+} ]

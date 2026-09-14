@@ -11,6 +11,14 @@
   entidades                    (re)constrói entidades canônicas a partir das partes
   grafo                        imprime a lista de arestas e grava data/grafo.json
   cruzamentos                  o que se repete entre processos (entidades, relações, números de origem)
+  sessao <incidente>|--todos   coleta só os JSONs de sessão virtual (objetos incidente, listas, votos)
+  baixar-docs [--incidente N]  baixa documentos ainda não baixados (cache por sha256) e extrai o texto
+  extrair-texto                texto por página, chunks e código de autenticação dos documentos baixados
+  buscar-docs "<termos>"       busca FTS5 no texto dos documentos, com página
+  sessoes                      listas de julgamento virtual e votos por ministro
+  extrair-assercoes            Fase 4: LLM sobre documentos (--documentos 1,2,3 | --limite N | --dry-run | --modelo)
+  assercoes [--documento N]    lista asserções com tipo epistêmico, página e trecho-fonte
+  exportar [--saida DIR]       JSON estático para a interface (padrão: web/public/data), semente 7514886
 """
 
 from __future__ import annotations
@@ -65,12 +73,16 @@ def cmd_ingerir(args):
 
 
 def cmd_reconstruir(args):
+    from .documentos import extrair_texto
+    from .entidades import construir_entidades
     con = _con()
     apagar_projecao(con)
     criar_schema(con)
     for reg in sorted(config.COLETAS.glob("*.jsonl")):
         r = ingerir_coleta(con, reg)
         print(f"{reg.name}: {json.dumps(r, ensure_ascii=False)}")
+    print("texto:", json.dumps(extrair_texto(con, log=lambda s: None), ensure_ascii=False))
+    print("entidades:", json.dumps(construir_entidades(con), ensure_ascii=False))
 
 
 def cmd_diff(args):
@@ -119,6 +131,90 @@ def cmd_cruzamentos(args):
     print(formatar_cruzamentos(cruzamentos(_con())))
 
 
+def cmd_sessao(args):
+    from .coleta import ClienteEducado, coletar_sessao_virtual
+    con = _con()
+    incs = [r[0] for r in con.execute("SELECT numero FROM incidente ORDER BY numero")] if args.todos else [args.incidente]
+    cliente = ClienteEducado(teto=10 * max(1, len(incs)))
+    for inc in incs:
+        reg = coletar_sessao_virtual(inc, cliente=cliente)
+        print(json.dumps(ingerir_coleta(con, reg), ensure_ascii=False))
+
+
+def cmd_baixar_docs(args):
+    from .documentos import baixar_documentos, extrair_texto
+    con = _con()
+    print(json.dumps(baixar_documentos(con, incidente=args.incidente, teto=args.teto), ensure_ascii=False))
+    print("texto:", json.dumps(extrair_texto(con), ensure_ascii=False))
+
+
+def cmd_extrair_texto(args):
+    from .documentos import extrair_texto
+    print(json.dumps(extrair_texto(_con()), ensure_ascii=False))
+
+
+def cmd_buscar_docs(args):
+    con = _con()
+    rows = con.execute(
+        "SELECT d.incidente, d.endpoint, d.id_portal, d.titulo, p.pagina, "
+        "snippet(documento_fts, 0, '[', ']', '…', 14) AS trecho "
+        "FROM documento_fts JOIN documento_pagina p ON p.rowid = documento_fts.rowid JOIN documento d ON d.id = p.documento_id "
+        "WHERE documento_fts MATCH ? ORDER BY rank LIMIT ?", (args.termos, args.limite)).fetchall()
+    for r in rows:
+        print(f"inc {r['incidente']} | {r['titulo']} ({r['endpoint']}/{r['id_portal']}) p.{r['pagina']} | {r['trecho']}")
+    print(f"{len(rows)} resultado(s)")
+
+
+def cmd_sessoes(args):
+    con = _con()
+    for l in con.execute("SELECT l.*, o.identificacao, o.incidente_principal FROM lista_julgamento l "
+                         "JOIN objeto_incidente o ON o.id = l.objeto_incidente_id ORDER BY l.data_inicio"):
+        print(f"{l['identificacao']} (inc {l['incidente_principal']}) | lista {l['nome_lista']} | {l['colegiado']} "
+              f"{l['data_inicio']}→{l['data_fim']} | relator {l['relator']} | julgado={l['julgado']} | resultado={l['resultado']}")
+        for v in con.execute("SELECT ministro, tipo_voto, data FROM voto WHERE lista_id=? ORDER BY ordem", (l["id"],)):
+            print(f"    {v['data']} {v['ministro']}: {v['tipo_voto']}")
+
+
+def cmd_extrair_assercoes(args):
+    from .semantica import MODELO_PADRAO, PROMPT_TEXTO, PROMPT_VERSION, estimar_tokens, extrair_assercoes
+    con = _con()
+    docs = [int(x) for x in args.documentos.split(",")] if args.documentos else None
+    est = estimar_tokens(con, docs)
+    print(f"prompt_version={PROMPT_VERSION} modelo={args.modelo or MODELO_PADRAO}")
+    print("estimativa:", json.dumps(est, ensure_ascii=False))
+    if args.dry_run:
+        print("--- prompt ---"); print(PROMPT_TEXTO)
+        return
+    import os
+    if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
+        sys.exit("sem credencial: defina ANTHROPIC_API_KEY (ou use `ant auth login`) antes de rodar a extração")
+    from .semantica import ClienteAnthropic
+    cliente = ClienteAnthropic(modelo=args.modelo or MODELO_PADRAO, effort=args.effort)
+    r = extrair_assercoes(con, cliente, documentos=docs, limite=args.limite)
+    print(json.dumps(r, ensure_ascii=False))
+
+
+def cmd_assercoes(args):
+    con = _con()
+    sql = ("SELECT a.id, a.documento_id, d.titulo, d.incidente, a.pagina, a.tipo_epistemico, a.texto, a.trecho_fonte, a.atribuida_a "
+           "FROM assercao a JOIN documento d ON d.id=a.documento_id")
+    params: list = []
+    if args.documento:
+        sql += " WHERE a.documento_id=?"; params.append(args.documento)
+    sql += " ORDER BY a.documento_id, a.pagina, a.id"
+    for r in con.execute(sql, params):
+        print(f"#{r['id']} doc {r['documento_id']} ({r['titulo']}, inc {r['incidente']}) p.{r['pagina']} [{r['tipo_epistemico']}]"
+              + (f" atribuída a {r['atribuida_a']}" if r["atribuida_a"] else ""))
+        print(f"    {r['texto']}")
+        print(f"    fonte: \"{r['trecho_fonte'][:160]}\"")
+
+
+def cmd_exportar(args):
+    from .exportar import exportar
+    saida = Path(args.saida) if args.saida else config.RAIZ / "web" / "public" / "data"
+    print(json.dumps(exportar(_con(), saida, semente=args.semente), ensure_ascii=False), "→", saida)
+
+
 def cmd_status(args):
     con = _con()
     print(json.dumps(resumo(con), ensure_ascii=False, indent=2))
@@ -142,6 +238,16 @@ def main(argv=None):
     p = sub.add_parser("entidades"); p.set_defaults(f=cmd_entidades)
     p = sub.add_parser("grafo"); p.set_defaults(f=cmd_grafo)
     p = sub.add_parser("cruzamentos"); p.set_defaults(f=cmd_cruzamentos)
+    p = sub.add_parser("sessao"); p.add_argument("incidente", type=int, nargs="?"); p.add_argument("--todos", action="store_true"); p.set_defaults(f=cmd_sessao)
+    p = sub.add_parser("baixar-docs"); p.add_argument("--incidente", type=int); p.add_argument("--teto", type=int); p.set_defaults(f=cmd_baixar_docs)
+    p = sub.add_parser("extrair-texto"); p.set_defaults(f=cmd_extrair_texto)
+    p = sub.add_parser("buscar-docs"); p.add_argument("termos"); p.add_argument("--limite", type=int, default=20); p.set_defaults(f=cmd_buscar_docs)
+    p = sub.add_parser("sessoes"); p.set_defaults(f=cmd_sessoes)
+    p = sub.add_parser("extrair-assercoes"); p.add_argument("--documentos"); p.add_argument("--limite", type=int)
+    p.add_argument("--dry-run", action="store_true"); p.add_argument("--modelo"); p.add_argument("--effort", default="high")
+    p.set_defaults(f=cmd_extrair_assercoes)
+    p = sub.add_parser("assercoes"); p.add_argument("--documento", type=int); p.set_defaults(f=cmd_assercoes)
+    p = sub.add_parser("exportar"); p.add_argument("--saida"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_exportar)
     args = ap.parse_args(argv)
     args.f(args)
 

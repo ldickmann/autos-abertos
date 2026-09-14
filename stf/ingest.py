@@ -22,6 +22,7 @@ from .parse.partes import parse_partes
 from .parse.peticoes import parse_peticoes
 from .parse.relacoes import extrair_relacoes
 from .resolver import interpretar_resolucao
+from .sessao import parse_objetos_incidente, parse_sessao_virtual
 from . import config
 from .store import RegistroColeta, resolver_raw
 
@@ -64,6 +65,7 @@ def _registrar_snapshots(con: sqlite3.Connection, coleta_id: str, registros: lis
     """Insere as linhas de snapshot e devolve {aba: {"id": snapshot_id, "reg": registro}}
     para as abas com HTTP 200. Linhas de resolução (listarProcessos) derivam a tabela `processo`."""
     por_aba: dict[str, dict] = {}
+    pendentes_doc: list = []
     semente = int(coleta_id.rsplit("-", 1)[-1]) if "-resolucoes-" in coleta_id else None
     for r in registros:
         incidente = r.get("incidente_resolvido") or r["incidente"] or semente
@@ -85,9 +87,52 @@ def _registrar_snapshots(con: sqlite3.Connection, coleta_id: str, registros: lis
         elif r["aba"] == "resolucao":
             upsert_processo(con, r["classe"], int(r["numero"]), None, "erro", url_final=r.get("url_final"),
                             snapshot_id=sid, resolvido_em=r["fetched_at"], profundidade=r.get("profundidade"))
+        if r["aba"] == "documento" and r.get("endpoint") and r.get("sha256"):
+            pendentes_doc.append((r, sid))
+        if r["aba"] in ("votacao_json", "sessao_virtual_json") and r["http_status"] == 200:
+            por_aba.setdefault("_sessao", []).append({"id": sid, "reg": r})
         if r["http_status"] == 200 and r["aba"] not in por_aba:
             por_aba[r["aba"]] = {"id": sid, "reg": r}
+    por_aba["_documentos"] = pendentes_doc
     return por_aba
+
+
+def _projetar_sessao(con, incidente: int, snaps: list[dict]) -> None:
+    for snap in snaps:
+        r, sid = snap["reg"], snap["id"]
+        raw = _ler_blob(r)
+        if r["aba"] == "votacao_json":
+            for o in parse_objetos_incidente(raw):
+                con.execute(
+                    "INSERT INTO objeto_incidente (id, incidente_principal, pai, tipo, tipo_descricao, identificacao, "
+                    "identificacao_completa, cadeia, snapshot_first_seen, snapshot_last_seen) VALUES (?,?,?,?,?,?,?,?,?,?) "
+                    "ON CONFLICT(id) DO UPDATE SET snapshot_last_seen=MAX(objeto_incidente.snapshot_last_seen, excluded.snapshot_last_seen)",
+                    (o.id, o.principal, o.pai, o.tipo, o.tipo_descricao, o.identificacao, o.identificacao_completa, o.cadeia, sid, sid))
+            continue
+        for l in parse_sessao_virtual(raw):
+            h = _h("lista", l.objeto_incidente_id, l.lista_id, l.nome_lista, l.julgado, l.relator, l.colegiado,
+                   l.data_inicio, l.data_fim, l.texto_decisao, l.resultado,
+                   [(v.ordem, v.ministro, v.data, v.tipo_voto, v.acompanhando) for v in l.votos])
+            row = con.execute("SELECT id FROM lista_julgamento WHERE hash=?", (h,)).fetchone()
+            if row:
+                con.execute("UPDATE lista_julgamento SET snapshot_last_seen=MAX(snapshot_last_seen, ?) WHERE id=?", (sid, row["id"]))
+            else:
+                cur = con.execute(
+                    "INSERT INTO lista_julgamento (objeto_incidente_id, lista_id, nome_lista, julgado, relator, tipo_lista, colegiado, "
+                    "sessao_numero, sessao_ano, data_inicio, data_fim, tipo_sessao, texto_decisao, resultado, hash, "
+                    "snapshot_first_seen, snapshot_last_seen) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    (l.objeto_incidente_id, l.lista_id, l.nome_lista, None if l.julgado is None else int(l.julgado), l.relator,
+                     l.tipo_lista, l.colegiado, l.sessao_numero, l.sessao_ano, l.data_inicio, l.data_fim, l.tipo_sessao,
+                     l.texto_decisao, l.resultado, h, sid, sid))
+                lid = cur.lastrowid
+                con.executemany(
+                    "INSERT OR IGNORE INTO voto (lista_id, ordem, ministro, data, tipo_voto, acompanhando, antecipado) VALUES (?,?,?,?,?,?,?)",
+                    [(lid, v.ordem, v.ministro, v.data, v.tipo_voto, v.acompanhando, v.antecipado) for v in l.votos])
+            for d in l.documentos:
+                con.execute(
+                    "INSERT INTO documento (incidente, endpoint, id_portal, formato, url, titulo, snapshot_first_seen) "
+                    "VALUES (?,?,?,?,?,?,?) ON CONFLICT(endpoint, id_portal) DO UPDATE SET titulo=COALESCE(documento.titulo, excluded.titulo)",
+                    (incidente, "votos", d.id_portal, "pdf", d.url, d.rotulo, sid))
 
 
 def _projetar_incidente(con, incidente: int, snap_casca: dict, snap_info: dict | None) -> None:
@@ -188,8 +233,10 @@ def _projetar_andamentos(con, incidente: int, snap: dict, aba: str) -> dict[str,
         )
         for d in a.documentos:
             con.execute(
-                "INSERT OR IGNORE INTO documento (incidente, endpoint, id_portal, formato, url, titulo, snapshot_first_seen) "
-                "VALUES (?,?,?,?,?,?,?)",
+                "INSERT INTO documento (incidente, endpoint, id_portal, formato, url, titulo, snapshot_first_seen) "
+                "VALUES (?,?,?,?,?,?,?) ON CONFLICT(endpoint, id_portal) DO UPDATE SET "
+                "titulo=COALESCE(documento.titulo, excluded.titulo), "
+                "snapshot_first_seen=MIN(documento.snapshot_first_seen, excluded.snapshot_first_seen)",
                 (incidente, d.endpoint, d.id_portal, d.formato, d.url, d.rotulo, snap["id"]),
             )
             did = con.execute("SELECT id FROM documento WHERE endpoint=? AND id_portal=?",
@@ -234,6 +281,9 @@ def ingerir_coleta(con: sqlite3.Connection, registro_path: Path) -> dict:
     if "-resolucoes-" in coleta_id:
         # registro de resoluções de uma expansão: o incidente é a semente, que está no id
         incidente = int(coleta_id.rsplit("-", 1)[-1])
+    elif "-documentos-" in coleta_id:
+        # rodada de download: cada linha traz o incidente do próprio documento; a coleta é multi-incidente
+        incidente = 0
     else:
         incidentes = {r["incidente"] for r in registros}
         if len(incidentes) != 1:
@@ -259,6 +309,15 @@ def ingerir_coleta(con: sqlite3.Connection, registro_path: Path) -> dict:
             _projetar_peticoes(con, incidente, snaps["peticoes"])
         if "deslocamentos" in snaps:
             _projetar_deslocamentos(con, incidente, snaps["deslocamentos"])
+        if snaps.get("_sessao"):
+            _projetar_sessao(con, incidente, snaps["_sessao"])
+        # documentos baixados: só depois de os andamentos terem criado as linhas de `documento`
+        from .documentos import registrar_download
+        for r, sid in snaps.get("_documentos", []):
+            fmt = r.get("formato_real") or ("pdf" if r["raw_path"].endswith(".pdf") else "rtf" if r["raw_path"].endswith(".rtf") else None)
+            ok = r["http_status"] == 200 and fmt in ("pdf", "rtf")
+            registrar_download(con, r["endpoint"], r["id_portal"], r["sha256"] if ok else None, r["raw_path"],
+                               r["http_status"], r["fetched_at"], sid, fmt, incidente=r["incidente"], url=r["url"])
 
     return resumo(con, incidente)
 
