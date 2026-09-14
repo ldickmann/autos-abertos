@@ -1,38 +1,197 @@
 @import "tailwindcss";
 
-:root {
+/*
+  Autos Abertos — sistema visual.
+
+  Ideia: uma sala de leitura à noite. O fundo é ardósia azulada; as "folhas" (cartões) são
+  superfícies um tom acima; a tinta é um branco quente de papel sob luz de leitura. Só três
+  cores cromáticas existem, e são semânticas: fato (verde-sálvia), alegação (âmbar) e
+  fundamento (azul-aço). Nenhuma cor de marca além delas.
+
+  A profundidade é física, não decorativa: folhas levantam da mesa ao passar o mouse
+  (perspectiva + leve inclinação), carimbos "batem" quando um bloco abre. Movimento só
+  responde a uma ação e some com prefers-reduced-motion.
+
+  Os tokens abaixo alimentam a paleta `neutral`/`white` do Tailwind (@theme inline), então as
+  utilidades já usadas nas páginas (bg-white, border-neutral-300, text-neutral-700…) trocam
+  de tema sem edição página a página. Tema padrão: escuro. `data-tema="claro"` inverte.
+*/
+
+:root,
+:root[data-tema="escuro"] {
+  color-scheme: dark;
+  --fundo: #15181d;
+  --folha: #1d2127;
+  --folha-alta: #262b33;
+  --fio: #343a44;
+  --fio-forte: #4a5261;
+  --tinta: #e9e4d8;
+  --tinta-2: #a39f93;
+  --tinta-3: #7c786d;
+  --fato: #8fcba4;
+  --fato-fundo: #1f3a2c;
+  --fato-texto: #cfeed9;
+  --alegacao: #e4b35f;
+  --alegacao-fundo: #3f321a;
+  --alegacao-texto: #f4dfae;
+  --fundamento: #93b6e6;
+  --fundamento-fundo: #1f2f47;
+  --fundamento-texto: #cfe0f7;
+  --vinculo: #b9cdea;
+  --marca: #f4d27a;
+  --sombra: 0 18px 30px -18px rgb(0 0 0 / 0.75), 0 1px 0 var(--fio);
+}
+
+:root[data-tema="claro"] {
   color-scheme: light;
+  --fundo: #f3f1ec;
+  --folha: #ffffff;
+  --folha-alta: #f8f6f1;
+  --fio: #d9d5cb;
+  --fio-forte: #a8a396;
+  --tinta: #1c1b18;
+  --tinta-2: #5b5850;
+  --tinta-3: #85806f;
+  --fato: #1f7a4d;
+  --fato-fundo: #dcf3e5;
+  --fato-texto: #124a2f;
+  --alegacao: #9a6a0a;
+  --alegacao-fundo: #fbedc7;
+  --alegacao-texto: #5d3f05;
+  --fundamento: #2456a8;
+  --fundamento-fundo: #dde9fb;
+  --fundamento-texto: #163a75;
+  --vinculo: #1d4ed8;
+  --marca: #8a5a00;
+  --sombra: 0 14px 24px -18px rgb(30 25 10 / 0.35), 0 1px 0 var(--fio);
+}
+
+@theme inline {
+  --font-sans: var(--font-plex), "IBM Plex Sans", system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), "Newsreader", Georgia, serif;
+  --font-mono: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-white: var(--folha);
+  --color-neutral-50: var(--fundo);
+  --color-neutral-100: var(--folha-alta);
+  --color-neutral-200: var(--fio);
+  --color-neutral-300: var(--fio);
+  --color-neutral-400: var(--fio-forte);
+  --color-neutral-500: var(--tinta-3);
+  --color-neutral-600: var(--tinta-2);
+  --color-neutral-700: var(--tinta-2);
+  --color-neutral-800: var(--tinta);
+  --color-neutral-900: var(--tinta);
+
+  --color-emerald-100: var(--fato-fundo);
+  --color-emerald-700: var(--fato);
+  --color-emerald-900: var(--fato-texto);
+  --color-amber-100: var(--alegacao-fundo);
+  --color-amber-700: var(--alegacao);
+  --color-amber-900: var(--alegacao-texto);
+  --color-sky-100: var(--fundamento-fundo);
+  --color-sky-800: var(--fundamento);
+  --color-sky-900: var(--fundamento-texto);
+  --color-blue-700: var(--vinculo);
+  --color-blue-800: var(--fundamento);
 }
 
 html {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--fundo);
+  color: var(--tinta);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
 }
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-summary:focus-visible {
-  outline: 2px solid #1d4ed8;
+h1, h2, h3, .leitura {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+  letter-spacing: -0.005em;
+}
+h1 { font-weight: 500; }
+h2, h3 { font-weight: 500; }
+.leitura { line-height: 1.55; font-size: 1.02rem; }
+code, .mono { font-family: var(--font-mono); font-size: 0.85em; }
+
+a { color: inherit; }
+a.underline, .prose a { text-decoration-color: var(--vinculo); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--tinta); }
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--marca);
   outline-offset: 2px;
+  border-radius: 3px;
 }
 
-mark {
-  background: #fde68a;
-  color: inherit;
+mark { background: var(--alegacao-fundo); color: inherit; box-shadow: 0 0 0 2px var(--alegacao-fundo); }
+
+::selection { background: var(--fundamento-fundo); }
+
+/* Folha: qualquer cartão que "levanta" da mesa. */
+.folha {
+  border-radius: 3px;
+  transform-style: preserve-3d;
+  transition: transform 0.28s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+}
+@media (hover: hover) {
+  .folha:hover, .folha:focus-within {
+    transform: perspective(900px) rotateX(1.4deg) translateY(-2px);
+    box-shadow: var(--sombra);
+    border-color: var(--fio-forte);
+  }
 }
 
+/* Carimbo: o selo epistêmico bate na folha quando o bloco abre. */
+.carimbo {
+  display: inline-block;
+  transform-origin: 50% 60%;
+}
+details[open] .carimbo { animation: carimbar 0.34s cubic-bezier(0.2, 0.9, 0.3, 1.25) both; }
+@keyframes carimbar {
+  from { transform: scale(1.45) rotate(-7deg); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before {
+  content: "";
+  display: inline-block;
+  width: 0.45em; height: 0.45em;
+  margin-right: 0.55em;
+  border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+  transform: rotate(-45deg) translateY(-0.1em);
+  transition: transform 0.2s ease;
+}
+details[open] > summary::before { transform: rotate(45deg) translateY(-0.15em); }
+
+/* Linha do tempo: o fio e os pontos */
 .linha-tempo li::before {
   content: "";
   position: absolute;
-  left: -1.35rem;
-  top: 0.55rem;
-  width: 0.65rem;
-  height: 0.65rem;
+  left: -1.4rem;
+  top: 0.7rem;
+  width: 0.62rem; height: 0.62rem;
   border-radius: 9999px;
-  background: #525252;
+  background: var(--tinta-3);
+  box-shadow: 0 0 0 3px var(--fundo);
 }
+.linha-tempo li[data-decisao="true"]::before { background: var(--fundamento); }
+.linha-tempo li[data-categoria="peticao"]::before { background: var(--alegacao); }
 
-.linha-tempo li[data-decisao="true"]::before {
-  background: #1d4ed8;
+/* Interruptor de tema: vira como uma ficha */
+.interruptor { perspective: 400px; }
+.interruptor .face { transition: transform 0.45s cubic-bezier(0.3, 0.8, 0.3, 1); transform-style: preserve-3d; }
+:root[data-tema="claro"] .interruptor .face { transform: rotateY(180deg); }
+.interruptor .lado { backface-visibility: hidden; }
+.interruptor .lado.verso { transform: rotateY(180deg); }
+
+/* Grafo */
+.grafo-canvas { touch-action: none; }
+.legenda-linha { display: inline-block; width: 1.6rem; height: 0; border-top-width: 2px; vertical-align: middle; margin-right: 0.4rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  .folha:hover { transform: none; }
 }

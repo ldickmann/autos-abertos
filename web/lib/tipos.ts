@@ -11,9 +11,32 @@ export type Documento = {
   paginas: number | null; tem_texto: boolean; codigo_autenticacao: string | null; assercoes?: AssercaoResumo[];
 };
 
+export type PeticaoLigada = { numero: string; recebido_por: string | null; data_peticionamento: string | null } | null;
+
 export type Andamento = {
   id: number; data: string; tipo: string; descricao: string; e_decisao: boolean; e_pauta: boolean;
-  documentos: Documento[]; snapshot: Snapshot; hash: string;
+  documentos: Documento[]; snapshot: Snapshot; hash: string; categoria?: string; peticao?: PeticaoLigada;
+};
+
+export type EventoLinhaTempo = {
+  andamento_id: number; incidente: number; processo: string; data: string; tipo: string; categoria: string; descricao: string;
+  e_decisao: boolean; e_pauta: boolean; e_recurso: boolean;
+  documentos: { id: number; rotulo: string; baixado: boolean; paginas: number | null }[];
+  peticao: PeticaoLigada; assercoes: number; hash: string; snapshot: number;
+};
+
+export type LinhaTempo = { categorias: { id: string; rotulo: string }[]; eventos: EventoLinhaTempo[] };
+
+export type ReferenciasDocumento = {
+  processos: { classe: string; numero: number; pagina: number; ocorrencias: number; trecho: string; incidente: number | null }[];
+  dispositivos: { dispositivo: string; artigo: string; diploma: string; pagina: number; ocorrencias: number; trecho: string }[];
+  andamentos_citados: { andamento_id: number; tipo_citado: string; data_citada: string; incidente: number }[];
+};
+
+export type Referencias = {
+  dispositivos: { dispositivo: string; artigo: string; diploma: string; ocorrencias: number;
+    documentos: { documento_id: number; incidente: number; titulo: string | null; pagina: number; ocorrencias: number }[] }[];
+  processos_citados: { classe: string; numero: number; incidente: number | null; n_docs: number; n_ocorrencias: number; citado_por: number[] }[];
 };
 
 export type Parte = {
@@ -70,10 +93,11 @@ export type DocumentoCompleto = {
   paginas: { n: number; texto: string }[];
   chunks: { ordem: number; pagina_inicio: number; pagina_fim: number; secao: string | null; texto: string }[];
   assercoes: Assercao[];
+  referencias?: ReferenciasDocumento;
 };
 
 export type Entidade = {
-  id: number; nome: string; tipo: string; chave: string; natureza_provavel: string | null; origem: string;
+  id: number; nome: string; tipo: string; chave: string; natureza_provavel: string | null; origem: string; grupo?: string | null;
   status_padrao: string | null;
   mencoes: { incidente: number; papel_portal: string; papel: string; processo: string | null; status_processual: string }[];
   assercoes: number;
@@ -85,10 +109,9 @@ export type Meta = {
   contagens: Record<string, number>; tipos_epistemicos: Record<TipoEpistemico, string>;
 };
 
-export type Grafo = {
-  nodes: { id: string; tipo: "processo" | "entidade"; rotulo: string; dados: Record<string, unknown> }[];
-  edges: { origem: string; destino: string; tipo: string; dados: Record<string, unknown> }[];
-};
+export type NoGrafo = { id: string; tipo: "processo" | "entidade"; rotulo: string; dados: Record<string, unknown> };
+export type ArestaGrafo = { origem: string; destino: string; tipo: string; dados: Record<string, unknown> };
+export type Grafo = { nodes: NoGrafo[]; edges: ArestaGrafo[] };
 
 export function formatarData(iso: string | null | undefined): string {
   if (!iso) return "—";

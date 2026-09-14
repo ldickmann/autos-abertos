@@ -1,0 +1,1029 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Reclamação 88.121, do Distrito Federal, tem como relator o Ministro Dias Toffoli.",
+      "pagina": 1,
+      "trecho_fonte": "RECLAMAÇÃO 88.121 DISTRITO FEDERAL RELATOR :MIN. DIAS TOFFOLI",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DIAS TOFFOLI", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Trata-se de reclamação constitucional, com pedido de liminar, ajuizada por D.B.V. contra ato do Juízo da 10ª Vara Federal da Seção Judiciária do Distrito Federal, sob alegada violação ao decidido pelo Supremo Tribunal Federal na Pet nº 13.488.",
+      "pagina": 1,
+      "trecho_fonte": "Cuida-se de reclamação constitucional, com pedido de liminar, ajuizada por D.B.V., contra ato do Juízo da 10ª Vara Federal da Seção Judiciária do Distrito Federal, sob alegada violação ao que decidido por esta Suprema Corte nos autos da Pet nº 13.488.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "D.B.V.", "tipo": "pessoa"},
+        {"nome": "Juízo da 10ª Vara Federal da Seção Judiciária do Distrito Federal", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante alega que foi alvo de medida de busca e apreensão e teve contra si expedido mandado de prisão preventiva após a comunicação ao Banco Central sobre a aquisição do Banco Master pela Fictor Holding.",
+      "pagina": 1,
+      "trecho_fonte": "O reclamante alega que foi alvo de medida de busca e apreensão e teve contra si expedido mandado de prisão preventiva após a comunicação ao Banco Central sobre a aquisição do Banco Master pela Fictor Holding",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "Banco Central", "tipo": "orgao_publico"},
+        {"nome": "Banco Master", "tipo": "organizacao"},
+        {"nome": "Fictor Holding", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante afirma que os fatos estão inseridos nas investigações da Operação Compliance Zero, que apura supostos crimes contra o Sistema Financeiro Nacional relacionados à venda de carteiras de crédito entre o Banco Master S.A. e o Banco de Brasília (BRB).",
+      "pagina": 1,
+      "trecho_fonte": "Afirma que os fatos estão inseridos nas investigações da “Operação Compliance Zero”, que apura supostos crimes contra o Sistema Financeiro Nacional relacionados à venda de carteiras de crédito entre o Banco Master S.A. e o Banco de Brasília (BRB).",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "Banco Master S.A.", "tipo": "organizacao"},
+        {"nome": "Banco de Brasília (BRB)", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante aponta que foi apreendida pela Polícia Federal, em seu endereço, pasta pertencente ao Deputado Federal J.C.B, que trata, aparentemente, de uma opção de compra e venda de imóvel.",
+      "pagina": 1,
+      "trecho_fonte": "Aponta que foi apreendido, pela Polícia Federal, no endereço do reclamante, “pasta pertencente ao Deputado Federal [J.C.B]”, que trata, aparentemente, de uma opção de compra e venda de imóvel.",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "J.C.B", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante acrescenta que o termo de apreensão nº 4480657/2025, lavrado após a decretação da medida cautelar, não mencionou o nome do deputado federal nem indicou tratar-se de elemento de prova relacionado a um parlamentar.",
+      "pagina": 1,
+      "trecho_fonte": "Acrescenta que o termo de apreensão nº 4480657/2025, lavrado após a decretação da medida cautelar, não mencionou o nome do deputado federal, tampouco indicou tratar-se de elemento de prova relacionado a um parlamentar.",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Segundo o reclamante, a autoridade policial quedou-se silente e lavrou o Termo de Apreensão nº 4480657/2025 suprimindo o nome do parlamentar.",
+      "pagina": 1,
+      "trecho_fonte": "a autoridade policial quedou-se silente e ainda lavrou o Termo de Apreensão nº 4480657/2025 suprimindo o nome do parlamentar",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante ressalta que a investigação é semelhante à Operação Overclean (Pet. 13.884), na qual houve a identificação de operações imobiliárias envolvendo um parlamentar, o que justificaria a remessa dos autos ao Supremo Tribunal Federal.",
+      "pagina": 2,
+      "trecho_fonte": "Ressalta que a investigação é semelhante à “Operação Overclean” (Pet. 13.884), na qual houve a identificação de operações imobiliárias envolvendo um parlamentar, o que justificaria a remessa dos autos ao Supremo Tribunal Federal.",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante afirma que, de acordo com notícias jornalísticas, o referido Deputado estaria envolvido com as investigações da Operação Overclean, que apura possíveis crimes de desvios de recursos públicos provenientes de emendas parlamentares, corrupção e lavagem de dinheiro.",
+      "pagina": 2,
+      "trecho_fonte": "De acordo com notícias jornalísticas, referido Deputado estaria envolvido com as investigações empreendidas no bojo dessa Operação Overclean, que apura possíveis crimes de desvios de recursos públicos provenientes de emendas parlamentares, corrupção e lavagem de dinheiro.",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante afirma que se apontou que J.C.B. teria destinado R$ 575.000,00 em emendas pix ao município de Boquira, cujo prefeito era Alan França (PSB).",
+      "pagina": 2,
+      "trecho_fonte": "Apontou-se que [J.C.B.] teria destinado R$ 575.000,00 em emendas pix ao município de Boquira, cujo prefeito era Alan França (PSB)",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "J.C.B.", "tipo": "pessoa"},
+        {"nome": "Alan França", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante afirma tratar-se do mesmo parlamentar identificado na busca e apreensão contra ele e de instrumento similar ao que ensejou a remessa dos autos da Operação Overclean ao STF, um documento que aponta operação imobiliária, mais precisamente uma opção de compra.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se do mesmo parlamentar identificado na busca e apreensão contra o Reclamante, e de instrumento similar àquele que ensejou a remessa dos autos naquela investigação ao STF, qual seja, um documento que aponta operação imobiliária, mais precisamente uma opção de compra",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "STF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante afirma não conhecer detalhes das investigações da Operação Overclean, cujos autos estão em sigilo, mas que aparentemente existem instrumentos jurídicos referentes a operações comerciais similares (operações imobiliárias).",
+      "pagina": 2,
+      "trecho_fonte": "O Reclamante não conhece detalhes das investigações da Operação Overclean, cujos autos estão em sigilo, mas aparentemente existem instrumentos jurídicos referentes a operações comerciais similares (operações imobiliárias)",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante conclui que existem indícios suficientes de que a prova coletada no processo nº 1117412-75.2025.4.01.3400, referente a suposta opção de compra e venda pertencente ao deputado federal J.C.B., diz respeito às investigações da Operação Overclean, sob relatoria do Ministro Nunes Marques.",
+      "pagina": 3,
+      "trecho_fonte": "coletada no processo nº 1117412-75.2025.4.01.3400, referente a suposta opção de compra e venda pertercente ao deputado federal J.C.B., diz respeito às investigações da “Operação Overclean”, as quais estão sob relatoria do eminente Ministro Nunes Marques.",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "J.C.B.", "tipo": "pessoa"},
+        {"nome": "Nunes Marques", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante pugna pela revogação da segregação cautelar, sustentando que o Supremo Tribunal Federal é o órgão competente para sua análise e que a prisão é ilegal por não estar amparada em fato contemporâneo que justificasse o risco à instrução processual ou à aplicação da lei penal.",
+      "pagina": 3,
+      "trecho_fonte": "Pugna-se, ainda, pela revogação da segregação cautelar, uma vez que o Supremo Tribunal Federal é o órgão competente para a sua análise, bem como a prisão é considerada ilegal por não estar amparada em fato contemporâneo que justificasse o risco à instrução processual ou à aplicação da lei penal",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante ressalta que os supostos riscos apontados pela autoridade coatora para justificar a prisão preventiva já estão acobertados pelas medidas restritivas impostas, como a nomeação de liquidante e a indisponibilidade dos bens dos controladores e ex-administradores.",
+      "pagina": 3,
+      "trecho_fonte": "Ressalta, em síntese, que os supostos riscos apontados, pela autoridade coatora, para justificar a prisão preventiva, já estão acobertados pelas medidas restritivas impostas, como a nomeação de liquidante e a indisponibilidade dos bens dos controladores e ex-administradores.",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante requer liminarmente a imediata suspensão das investigações perante o Juízo Federal de primeiro grau e sua remessa ao STF, e a avaliação da necessidade de manutenção de sua prisão ou de substituição por medidas cautelares alternativas.",
+      "pagina": 3,
+      "trecho_fonte": "Requer-se, liminarmente, i) “a imediata suspensão das investigações perante o MM. Juízo Federal de primeiro grau e sua remessa a esse E. STF”; e ii) “a avaliação da necessidade de manutenção da prisão do reclamante ou de substituição por medidas cautelares alternativas”.",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "STF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "No mérito, o reclamante postula a procedência da ação para reconhecer o descumprimento da autoridade da decisão do Supremo Tribunal Federal nos autos da Operação Overclean, com remessa do Inquérito Policial 1096304-87.2025.4.01.3400 e das medidas cautelares conexas ao STF.",
+      "pagina": 3,
+      "trecho_fonte": "No mérito, postula pela procedência da ação, para reconhecer “o descumprimento da autoridade da decisão desse E. Supremo Tribunal Federal nos autos da Operação Overclean, remetendo os autos do Inquérito Policial 1096304-87.2025.4.01.3400 e das medidas cautelares conexas para essa E. Corte”.",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 28 de novembro de 2025, o relator determinou a emenda à inicial, solicitou informações à autoridade reclamada e concedeu vista à Procuradoria-Geral da República (doc. 23).",
+      "pagina": 3,
+      "trecho_fonte": "Em 28 de novembro de 2025, determinei a emenda à inicial, solicitei informações à autoridade reclamada e concedi vista à Procuradoria-Geral da República (doc. 23).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 3 de dezembro de 2025, o relator deferiu a habilitação de Luiz Antonio Bull, concedeu acesso dos autos à Polícia Federal e determinou que novas diligências e medidas fossem previamente submetidas ao crivo do Supremo Tribunal Federal (doc. 46).",
+      "pagina": 3,
+      "trecho_fonte": "Em 3 de dezembro de 2025, deferi a habilitação de Luiz Antonio Bull, concedi acesso dos autos à Polícia Federal e determinei que “novas diligências e medidas devem ser previamente submetidas ao crivo desta Suprema Corte",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luiz Antonio Bull", "tipo": "pessoa"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "As defesas do reclamante e do coinvestigado Luiz Antonio Bull reforçam a necessidade de analisar o pedido liminar para suspender os atos instrutórios e investigativos relacionados à Operação Compliance Zero até o julgamento definitivo da Reclamação (docs. 32 e 44).",
+      "pagina": 4,
+      "trecho_fonte": "As defesas do reclamante e do coinvestigado Luiz Antonio Bull reforçam a necessidade de analisar o pedido liminar para suspender os atos instrutórios e investigativos relacionados à “Operação Compliance Zero”, até o julgamento definitivo desta Reclamação (docs. 32 e 44).",
+      "atribuida_a": "defesas do reclamante e do coinvestigado Luiz Antonio Bull",
+      "entidades": [
+        {"nome": "Luiz Antonio Bull", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa sustenta que há urgência na apreciação do pleito, uma vez que as investigações seguem seu curso, com autoridades policiais definindo datas para depoimentos, que já foram agendados e depois remarcados (doc. 32).",
+      "pagina": 4,
+      "trecho_fonte": "há urgência na apreciação do pleito específico, uma vez que as investigações seguem seu curso, com autoridades policiais definindo datas para depoimentos, que já foram agendados edepois remarcados.",
+      "atribuida_a": "defesas do reclamante e do coinvestigado Luiz Antonio Bull",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa sustenta que há notícias de diversas outras investigações conexas com o objeto da Reclamação, nas quais é possível que existam pleitos e decisões judiciais por autoridades eventualmente incompetentes (doc. 32).",
+      "pagina": 4,
+      "trecho_fonte": "há notícias de diversas outras investigações conexas com o objeto da presente, onde é possível que existam pleitos e decisões judiciais por autoridades eventualmente incompetentes",
+      "atribuida_a": "defesas do reclamante e do coinvestigado Luiz Antonio Bull",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa sustenta que há pleito no Tribunal Regional Federal para repristinação das medidas cautelares, o que tornaria ainda mais urgente a suspensão dos feitos em andamento (doc. 32).",
+      "pagina": 4,
+      "trecho_fonte": "há pleito no Tribunal Regional Federal para repristinação das medidas cautelares, o que torna ainda mais urgenteasuspensão dos feitos em andamento.",
+      "atribuida_a": "defesas do reclamante e do coinvestigado Luiz Antonio Bull",
+      "entidades": [
+        {"nome": "Tribunal Regional Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa afirma que a 10ª Turma do TRF1 agendou para o dia 9 de dezembro a apreciação colegiada da decisão monocrática da Relatora que substituiu a cautelar de prisão por medidas alternativas (doc. 32).",
+      "pagina": 4,
+      "trecho_fonte": "a 10ª Turma do TRF1 agendou para o dia 9 de dezembro – terça-feira que vem – a apreciação colegiada da decisão monocrática da Relatora, que substituiu a cautelar de prisão por medidas alternativas (Doc. 04)",
+      "atribuida_a": "defesas do reclamante e do coinvestigado Luiz Antonio Bull",
+      "entidades": [
+        {"nome": "10ª Turma do TRF1", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa sustenta que a Polícia Federal não está apenas analisando a documentação e o material apreendido na busca e apreensão, mas, muito provavelmente, vem procedendo ao compartilhamento desses elementos com o MPF de primeira instância (doc. 44).",
+      "pagina": 4,
+      "trecho_fonte": "a Polícia Federal não está apenas analisando a documentação e o material apreendido na busca e apreensão, mas, muito provavelmente, vem procedendo ao compartilhamento desses elementos com o MPF de primeira instância",
+      "atribuida_a": "defesas do reclamante e do coinvestigado Luiz Antonio Bull",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "MPF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa destaca que documentos sigilosos da operação têm sido indevidamente vazados à imprensa (doc. 44).",
+      "pagina": 5,
+      "trecho_fonte": "destaca-se que documentos sigilosos da operação têm sido indevidamente vazados à imprensa",
+      "atribuida_a": "defesas do reclamante e do coinvestigado Luiz Antonio Bull",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 4 de dezembro de 2025, o Deputado Federal João Carlos Paolilo Bacelar Filho requereu acesso aos autos, com fundamento na Súmula Vinculante nº 14 (doc. 52).",
+      "pagina": 5,
+      "trecho_fonte": "Em 4 de dezembro de 2025, o Deputado Federal João Carlos Paolilo Bacelar Filho requereu acesso aos autos, com fundamento na Súmula Vinculante nº 14.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "João Carlos Paolilo Bacelar Filho", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Em 5 de dezembro de 2025, o reclamante reforça a ausência de riscos relativos às supostas reiteração criminosa, obstrução da justiça e movimentação de recursos pelo alto poder econômico, requerendo a revogação das medidas cautelares diversas da prisão (doc. 68).",
+      "pagina": 5,
+      "trecho_fonte": "Em 5 de dezembro de 2025, o reclamante reforça a ausência de riscos relativos “às suspostas reitração criminosa, obstrução da justiça e movimentação de recursos pelo alto poder econômico”, requerendo a revogação das medidas cautelares diversas da prisão (doc. 68).",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator defere o pedido do Deputado Federal João Carlos Paolilo Bacelar Filho porque ele é referido nos documentos apreendidos nos autos nº 1096304-87.2025.4.01.3400 e é responsável pela postulação de deslocamento de competência para o STF, verificando-se interesse jurídico direto no deslinde da reclamação.",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pedido formulado pelo Deputado Federal João Carlos Paolilo Bacelar Filho, porquanto referido nos documentos apreendidos nos autos nº 1096304-87.2025.4.01.3400 e responsável pela postulação de deslocamento de competência para esta Corte.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "João Carlos Paolilo Bacelar Filho", "tipo": "pessoa"},
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, diante de investigação supostamente dirigida contra pessoas com foro por prerrogativa de função, a competência da corte constitucional está fixada.",
+      "pagina": 5,
+      "trecho_fonte": "Diante de investigação supostamente dirigida contra pessoas com foro por prerrogativa de função, a competência da corte constitucional está fixada.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que qualquer medida judicial há de ser avaliada previamente pelo Supremo Tribunal Federal e não mais pela instância inferior.",
+      "pagina": 5,
+      "trecho_fonte": "Qualquer medida judicial há de ser avaliada previamente por esta Corte e não mais pela instância inferior.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que as defesas do reclamante e do coinvestigado narram fatos que evidenciam risco concreto de comprometimento da investigação, tendo em vista a continuidade da operação por autoridades supostamente incompetentes.",
+      "pagina": 5,
+      "trecho_fonte": "as defesas do reclamante e do coinvestigado narram fatos que evidenciam risco concreto de comprometimento da investigação, tendo em vista a continuidade da operação por autoridades supostamente incompetentes.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o cabimento da reclamação deve ser aferido nos estritos limites das normas de regência, que a concebem para preservação da competência do Tribunal e garantia da autoridade de suas decisões (art. 102, I, l, CF).",
+      "pagina": 6,
+      "trecho_fonte": "O cabimento da reclamação, instituto jurídico de natureza constitucional, deve ser aferido nos estritos limites das normas de regência, que somente a concebem para preservação da competência do Tribunal e para garantia da autoridade de suas decisões (art. 102, I, l, CF)",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca a redação do art. 988 do Código de Processo Civil de 2015.",
+      "pagina": 6,
+      "trecho_fonte": "Ainda pertinente a redação do art. 988, do Código de Processo Civil de 2015",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a função precípua da reclamação constitucional reside na proteção da autoridade das decisões de efeito vinculante da Corte Constitucional e no impedimento de usurpação de sua competência.",
+      "pagina": 6,
+      "trecho_fonte": "Vê-se que a função precípua da reclamação constitucional reside na proteção da autoridade das decisões de efeito vinculante proferidas pela Corte Constitucional e no impedimento de usurpação da competência que lhe foi atribuída constitucionalmente.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera a reclamação cabível, pois a ação busca impedir a usurpação da competência do Supremo Tribunal Federal pelo juízo reclamado.",
+      "pagina": 6,
+      "trecho_fonte": "Diante das premissas teóricas e dos parâmetros constitucionais invocados, a presente reclamação é cabível. A ação constitucional busca impedir a usurpação da competência do Supremo Tribunal Federal pelo juízo reclamado, nas circunstâncias indicadas na inicial.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 28 de novembro de 2025, a Desembargadora Solange Salgado concedeu parcialmente o habeas corpus, determinando a substituição da prisão preventiva por medidas cautelares (doc. 34).",
+      "pagina": 7,
+      "trecho_fonte": "Em 28 de novembro de 2025, a Desembargadora Solange Salgado concedeu parcialmente o habeas corpus, determinando a substituição da prisão preventiva por medidas cautelares (doc. 34).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Solange Salgado", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator adia a apreciação da manutenção das medidas cautelares distintas da prisão por considerar indispensável a instrução completa do processo, com as informações da autoridade reclamada e o parecer da Procuradoria-Geral da República.",
+      "pagina": 7,
+      "trecho_fonte": "adia-se a apreciação da manutenção das medidas distintas da prisão, por se considerar indispensável a instrução completa do processo, com as informações da autoridade reclamada e o parecer da Procuradoria-Geral da República.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a concessão de tutela antecipada na reclamação constitucional exige a demonstração, em juízo sumário, da probabilidade do direito alegado e do risco de dano decorrente da manutenção do ato reclamado.",
+      "pagina": 7,
+      "trecho_fonte": "A concessão de tutela antecipada no âmbito da reclamação constitucional exige a demonstração, ainda que em juízo sumário, da probabilidade do direito alegado e do risco de dano decorrente da manutenção do ato reclamado.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a cognição nessa fase é limitada ao exame, prima facie, da coerência entre a decisão impugnada e o precedente ou ato cuja autoridade se busca preservar, ou da própria competência do tribunal.",
+      "pagina": 7,
+      "trecho_fonte": "A cognição do relator, nessa fase, é necessariamente limitada: examinam-se, prima facie, a coerência entre a decisão impugnada e o precedente ou ato judicial cuja autoridade se busca preservar ou, ainda, a própria competência do tribunal, como é o caso em análise.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a reclamação é mecanismo voltado à preservação da autoridade institucional da Corte, cuja atuação pode justificar, em determinadas hipóteses, a concessão da medida até mesmo de ofício, citando Daniel Mitidiero.",
+      "pagina": 7,
+      "trecho_fonte": "Trata-se, em essência, de mecanismo voltado à preservação da autoridade institucional da Corte, cuja atuação, em determinadas hipóteses pode justificar a concessão da medida até mesmo de ofício",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa narra que o Inquérito Policial nº 1096304-87.2025.4.01.3400 e suas medidas cautelares conexas tramitam na Seção Judiciária do Distrito Federal, primeira instância da Justiça Federal.",
+      "pagina": 8,
+      "trecho_fonte": "Narra a defesa que o Inquérito Policial nº 1096304-87.2025.4.01.3400 e suas medidas cautelares conexas tramitam na Seção Judiciária do Distrito Federal (primeira instância da Justiça Federal).",
+      "atribuida_a": "defesa do reclamante",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O reclamante sustenta ter havido usurpação da competência do Supremo Tribunal Federal, ao argumento de que foi apreendido termo de compra e venda de imóvel envolvendo parlamentar federal, juntado aos autos do mandado de busca e apreensão nº 1117412-75.2025.4.01.3400, sem que a descoberta fosse noticiada ao STF.",
+      "pagina": 8,
+      "trecho_fonte": "O reclamante sustenta, em síntese, ter havido usurpação da competência desta Suprema Corte, ao argumento de que foi apreendido termo de compra e venda de imóvel, envolvendo parlamentar federal, juntado aos autos do mandado de busca e apreensão nº 1117412-75.2025.4.01.3400",
+      "atribuida_a": "reclamante (D.B.V.)",
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, verificada em investigação penal a existência de elementos mínimos que indiquem possível participação de agente submetido à jurisdição originária do STF, impõe-se o imediato envio dos autos ao Supremo Tribunal Federal.",
+      "pagina": 8,
+      "trecho_fonte": "Verificando-se, no curso ou na deflagração de investigação penal, a existência de elementos mínimos que indiquem possível participação de agente submetido à jurisdição originária desta Corte, impõe-se o imediato envio dos autos ao Supremo Tribunal Federal.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, segundo reiterada jurisprudência, cabe apenas ao Supremo Tribunal Federal decidir sobre a remessa de investigações envolvendo autoridade com prerrogativa de foro na Corte, citando a Rcl 7913 AgR (Tribunal Pleno, DJe de 9/9/2011).",
+      "pagina": 8,
+      "trecho_fonte": "Segundo reiterada jurisprudência desta Corte, cabe apenas ao Supremo Tribunal Federal decidir sobre a remessa de investigações envolvendo autoridade com prerrogativa de foro na Corte (Rcl 7913 Agr, de minha relatoria, Tribunal Pleno, DJe de 9/9/2011).",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a persecução penal em instância incompetente configura violação direta ao devido processo legal, podendo acarretar a nulidade das provas e dos atos instrutórios produzidos em desfavor do detentor da prerrogativa de foro.",
+      "pagina": 8,
+      "trecho_fonte": "A persecução penal em instância incompetente configura violação direta ao devido processo legal, podendo acarretar a nulidade das provas e dos eventuais atos instrutórios produzidos em desfavor do detentor da prerrogativa de foro.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que somente se admite solução diversa nas hipóteses excepcionais da teoria do juízo aparente ou quando a descoberta da participação da autoridade ocorrer supervenientemente, desde que haja pronta remessa ao STF.",
+      "pagina": 8,
+      "trecho_fonte": "Somente se admite solução diversa nas hipóteses excepcionais amparadas pela teoria do juízo aparente ou quando a descoberta da participação da autoridade ocorrer supervenientemente",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a competência fundada na prerrogativa por função traduz garantia institucional voltada à proteção do exercício do cargo público, não constituindo privilégio pessoal do agente que o ocupa.",
+      "pagina": 8,
+      "trecho_fonte": "A competência fundada na prerrogativa por função traduz garantia institucional voltada à proteção do exercício do cargo público, não constituindo privilégio pessoal conferido ao agente que o ocupa.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o Ministro Victor Nunes (Rcl 473 primeira, Tribunal Pleno, DJ 8/6/1962), segundo o qual a presumida independência do tribunal de superior hierarquia é uma garantia bilateral, contra e a favor do acusado.",
+      "pagina": 9,
+      "trecho_fonte": "A presumida independência do tribunal de superior hierarquia é, pois, uma garantia bilateral, garantia contra e a favor do acusado” (Rcl 473 primeira, Rel. Min. Victor Nunes, TribunalPleno,DJ8/6/1962).",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Victor Nunes", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o Tribunal Pleno recentemente definiu o alcance do foro por prerrogativa de função e ressaltou a importância do instituto para evitar pressões externas sobre o órgão julgador e proteger o eficiente exercício da função pública, citando o Inq 4787 AgR-QO (Rel. Min. Gilmar Mendes, 27/5/2025).",
+      "pagina": 9,
+      "trecho_fonte": "O Tribunal Pleno recentemente definiu o alcance do foro por prerrogativa de função e ressaltou a importância do instituto para evitar pressões externas sobre o órgão julgador e proteger o eficiente exercício da função pública",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Gilmar Mendes", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o foro por prerrogativa projeta-se também sobre a etapa pré-processual, alcançando a investigação criminal e a supervisão judicial dos atos correspondentes.",
+      "pagina": 10,
+      "trecho_fonte": "Por essa razão, o foro por prerrogativa projeta-se também sobre a etapa pré-processual, alcançando a investigação criminal e a supervisão judicial dos atos correspondentes.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o entendimento do Tribunal Pleno no Inq 2411 QO (Rel. Min. Gilmar Mendes, DJe 25/4/2008), segundo o qual a iniciativa do procedimento investigatório deve ser confiada ao MPF com a supervisão do Ministro-Relator do STF.",
+      "pagina": 10,
+      "trecho_fonte": "A iniciativa do procedimento investigatório deve ser confiada ao MPF contando com a supervisão do Ministro-Relator do STF” (Inq 2411 QO, Relator o Ministro Gilmar Mendes,TribunalPleno,DJe25/4/2008).",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Gilmar Mendes", "tipo": "ministro"},
+        {"nome": "MPF", "tipo": "orgao_publico"},
+        {"nome": "STF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a prerrogativa de foro assegura que eventual persecução penal envolvendo membros do Parlamento seja conduzida sob a direção de órgão colegiado, dotado de maior independência e estabilidade decisória, citando a ADI 5526.",
+      "pagina": 10,
+      "trecho_fonte": "É por meio da prerrogativa de foro que se assegura que eventual persecução penal envolvendo membros do Parlamento seja conduzida sob a direção de órgão colegiado, dotado de maior independência e estabilidade decisória, características essenciais à preservação do equilíbrio entre os Poderes",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, ainda que o parlamentar não figure como alvo direto da investigação, a apreensão de documentos ou elementos probatórios que repercutam, mesmo de modo indireto, sobre o exercício do mandato interfere no desempenho de suas funções.",
+      "pagina": 10,
+      "trecho_fonte": "Ainda que o parlamentar não figure como alvo direto da investigação, a apreensão de documentos ou de quaisquer elementos probatórios que repercutam, mesmo de modo indireto, sobre o exercício do mandato, interfere no desempenho de suas funções.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, nessa hipótese, firma-se a competência do Supremo Tribunal Federal nos termos do art. 53, § 1º, combinado com o art. 102, I, b, da Constituição da República.",
+      "pagina": 10,
+      "trecho_fonte": "Nessa hipótese, firma-se a competência desta Suprema Corte, nos termos do art. 53, § 1º, combinado com o art. 102, I, “b”, da Constituição da República.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca julgado do Pleno (ADPF 424, Rel. Min. Cristiano Zanin, 13/10/2025) que fixou a competência exclusiva do STF para autorizar medidas cautelares probatórias nas dependências do Congresso Nacional e em imóveis funcionais ocupados por parlamentares, ainda que a pessoa diretamente investigada não detenha mandato parlamentar.",
+      "pagina": 11,
+      "trecho_fonte": "autorizar medidas cautelares probatórias a serem cumpridas nas dependências do Congresso Nacional e em imóveis funcionais ocupados por parlamentares, “ainda que a pessoa diretamente investigada não detenha mandato parlamentar” (ADPF 424, Relator o Ministro Cristiano Zanin",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Cristiano Zanin", "tipo": "ministro"},
+        {"nome": "Congresso Nacional", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a justificativa da ADPF 424 é a mesma do caso em análise: a supervisão do STF sobre investigações que envolvam pessoas com foro por prerrogativa de função, a fim de evitar investigações indiretas sem a fiscalização da autoridade judicial competente, o que configuraria violação ao princípio do juiz natural.",
+      "pagina": 11,
+      "trecho_fonte": "Trata-se da supervisão do Supremo Tribunal Federal sobre investigações que envolvam pessoas com foro por prerrogativa de função, a fim de evitar investigações indiretas sem a devida fiscalização da autoridade judicial competente, o que configuraria clara violação ao princípio do juiz natural.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator transcreve a ementa da ADPF 424, segundo a qual, ainda que a investigação não tenha como alvo direto o parlamentar, a apreensão de documentos e dispositivos informáticos nesses locais repercute, ainda que indiretamente, sobre o desempenho da atividade parlamentar e o exercício do mandato.",
+      "pagina": 12,
+      "trecho_fonte": "Ainda que a investigação não tenha como alvo direto o parlamentar, a apreensão nesses locais de objetos, como documentos e dispositivos informáticos, repercute, ainda que indiretamente, sobre o desempenho da atividade parlamentar e o próprio exercício do mandato",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que não procede a alegação de que o juízo de primeiro grau ou a Polícia Federal poderiam realizar a triagem do material apreendido para separar eventuais elementos vinculados a parlamentares.",
+      "pagina": 13,
+      "trecho_fonte": "A alegação de que o juízo de primeiro grau ou a própria Polícia Federal poderiam realizar a triagem do material apreendido para separar eventuais elementos vinculados a Parlamentares não procede.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que tal triagem implicaria, ainda que indiretamente, a condução de investigação sobre autoridade com foro por prerrogativa de função, configurando usurpação da competência do STF e podendo comprometer a validade da investigação, gerando nulidades insanáveis.",
+      "pagina": 13,
+      "trecho_fonte": "A ação implicaria, ainda que indiretamente, a condução de uma investigação sobre uma autoridade com foro por prerrogativa de função. Isso configuraria usurpação indevida da competência desta Suprema Corte e poderia comprometer a validade da investigação, gerando nulidades insanáveis.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que somente o Supremo Tribunal Federal detém competência para determinar quais elementos probatórios podem ser utilizados ou segregados, citando a Rcl 24473 (Segunda Turma, DJe 6/9/2018).",
+      "pagina": 13,
+      "trecho_fonte": "Nessas circunstâncias, somente o Supremo Tribunal Federal detém competência para determinar quais elementos probatórios podem ser utilizados ou segregados (Rcl 24473, de minha relatoria, Segunda Turma, DJe 6/9/2018).",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que compete ao Supremo Tribunal Federal a palavra final acerca da relevância de um indício para a instauração de sua competência.",
+      "pagina": 13,
+      "trecho_fonte": "Compete ao Supremo Tribunal Federal a palavra final acerca da relevância de um indício para a instauração de sua competência.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que incumbe aos agentes públicos envolvidos na operação a remessa prévia dos indícios de suposta participação parlamentar ao STF, a fim de verificar a possibilidade de avocação dos autos.",
+      "pagina": 13,
+      "trecho_fonte": "Incumbe aos agentes públicos envolvidos na operação a remessa prévia dos indícios de suposta participação parlamentar à Suprema Corte, a fim de verificar a possibilidade de avocação dos autos.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator reconhece o entendimento jurisprudencial de que é imprescindível a constatação de indícios da participação ativa e concreta do titular da prerrogativa em ilícitos penais para o deslocamento de competência, não sendo automática a vinda da investigação ao STF, citando o HC 82.647/PR (Rel. Min. Carlos Velloso).",
+      "pagina": 13,
+      "trecho_fonte": "Não se olvida o entendimento jurisprudencial de que é imprescindível a constatação da existência de indícios da participação ativa e concreta do titular da prerrogativa em ilícitos penais, para deslocamento de competência, não sendo automática a vinda do processo ou da investigação",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Carlos Velloso", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica, em exame preliminar, consonância, em tese, com o entendimento jurisprudencial do STF, uma vez que os elementos apreendidos parecem relacionados ao exercício do mandato parlamentar.",
+      "pagina": 14,
+      "trecho_fonte": "Dito isso, em exame preliminar, verifica-se, em tese, consonância com o entendimento jurisprudencial desta Corte, uma vez que os elementos apreendidos parecem relacionados ao exercício do mandato parlamentar.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que tal fato pode indicar conexão com investigação em curso no Supremo Tribunal Federal ou a prática de outros crimes comuns, situações que também justificariam a supervisão do STF.",
+      "pagina": 14,
+      "trecho_fonte": "Tal fato pode indicar conexão com investigação em curso no Supremo Tribunal Federal ou a prática de outros crimes comuns, situações que também justificariam a supervisão deste Supremo Tribunal.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma, com apoio no Ministro Flávio Dino (Rcl 84434 MC-Ref), que se trata de matéria que demanda cautela redobrada, especialmente quando presente a possibilidade de incidência da competência originária do STF.",
+      "pagina": 14,
+      "trecho_fonte": "Como bem assinalado pelo Ministro Flávio Dino, trata-se de matéria que demanda cautela redobrada, especialmente quando presente a possibilidade de incidência da competência originária deste Tribunal",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Flávio Dino", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera prematuro acolher a alegação de que o documento apreendido careceria de relevância penal quanto à autoridade detentora de prerrogativa de foro, de modo a afastar a competência do STF para a supervisão da investigação.",
+      "pagina": 14,
+      "trecho_fonte": "Nesse contexto, mostra-se prematuro, portanto, acolher a alegação de que o documento apreendido careceria de relevância penal quanto à autoridade detentora de prerrogativa de foro, de modo a afastar a competência desta Corte para a necessária supervisão da investigação.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, nesta fase, a suspensão da operação nas instâncias antecedentes é essencial para resguardar a competência constitucional do STF e é a única forma de garantir a integridade das investigações e prevenir o comprometimento dos atos subsequentes.",
+      "pagina": 14,
+      "trecho_fonte": "Nesta fase, a suspensão da operação, nas instâncias antecedentes, é essencial para resguardar a competência constitucional do Supremo Tribunal Federal. É a única forma de garantir a integridade das investigações e previnir o comprometimento dos atos subsequentes.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o risco de dano irreparável ou de difícil reparação surge do trâmite de investigações em instâncias inferiores enquanto um parlamentar federal aguarda pronunciamento do Supremo.",
+      "pagina": 14,
+      "trecho_fonte": "O risco de dano irreparável ou de difícil reparação surge do trâmite de investigações em instâncias inferiores, enquanto um parlamentar federal aguarda pronunciamento do Supremo.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator transcreve a ementa da Rcl 84434 MC-Ref (Rel. Min. Flávio Dino, Primeira Turma, DJe 13/10/25), em que se deferiu parcialmente medida cautelar para determinar a imediata remessa ao STF dos autos em que figure como investigado o Deputado Federal e do material apreendido que lhe diga respeito, e suspender o inquérito no STJ quanto ao parlamentar.",
+      "pagina": 16,
+      "trecho_fonte": "Medida cautelar parcialmente deferida para determinar a imediata remessa ao Supremo Tribunal Federal dos autos em que figure como investigado o Deputado Federal e de todo o material apreendido que diga respeito ao parlamentar, e suspender o trâmite do inquérito em curso",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Flávio Dino", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"},
+        {"nome": "Superior Tribunal de Justiça", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, não obstante as diretrizes do precedente da Rcl 84434, o caso concreto impõe a suspensão do trâmite investigativo nas instâncias antecedentes em relação a todos os investigados, até esclarecimento suficiente acerca do grau de envolvimento do parlamentar mencionado.",
+      "pagina": 16,
+      "trecho_fonte": "o caso concreto impõe, de forma inafastável, a suspensão do trâmite investigativo, nas instâncias antecedentes, em relação a todos os investigados, até que se alcance esclarecimento suficiente acerca do grau de envolvimento do parlamentar mencionado.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma tratar-se de imperiosa necessidade destinada a resguardar a higidez das investigações e a autoridade constitucional da competência do STF, e não de mera conveniência.",
+      "pagina": 16,
+      "trecho_fonte": "Trata-se, pois, de imperiosa necessidade destinada a resguardar a higidez das investigações e a própria autoridade constitucional da competência desta Suprema Corte, e não de mera conveniência.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a medida preserva a validade dos elementos probatórios futuros, evitando que eventual usurpação de competência acarrete nulidades subsequentes que comprometam a eficácia da persecução penal.",
+      "pagina": 17,
+      "trecho_fonte": "A medida preserva, de modo prudente e proporcional, a validade dos elementos probatórios futuros, evitando que eventual usurpação de competência acarrete nulidades subsequentes que comprometam, de forma irreversível, a eficácia da persecução penal.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que não há prejuízo à continuidade da operação e que a providência liminar assegura o regular prosseguimento das apurações, sob a supervisão imediata do STF.",
+      "pagina": 17,
+      "trecho_fonte": "Ressalte-se que não há qualquer prejuízo à continuidade da operação. Ao contrário, a providência liminar ora deferida assegura o regular prosseguimento das apurações, que seguirão seu curso natural, porém sob a supervisão imediata deste Supremo Tribunal Federal",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a medida cautelar é imprescindível, adequada e estritamente vinculada ao objetivo de preservar a competência constitucional do STF, garantir o devido processo legal e evitar nulidades.",
+      "pagina": 17,
+      "trecho_fonte": "Em síntese, a medida cautelar é imprescindível, adequada e estritamente vinculada ao objetivo de preservar a competência constitucional desta Corte, de garantir o devido processo legal e de evitar nulidades.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que não se pretende paralisar a investigação, mas ordenar a transferência da supervisão dos atos subsequentes para o STF, evitando a consumação de nulidades futuras.",
+      "pagina": 17,
+      "trecho_fonte": "Não se pretende paralisar a investigação, mas ordenar a transferência da supervisão dos atos subsequentes para este Tribunal, evitando-se, assim, a consumação de nulidades futuras que poderiam comprometer a integridade de todo o procedimento investigatório.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a jurisprudência demonstra os riscos decorrentes da não observância imediata da competência do juízo, tendo em vista inúmeros casos de anulação de investigações e processos, muitas vezes após longos períodos de tramitação.",
+      "pagina": 17,
+      "trecho_fonte": "A jurisprudência demonstra, de maneira cabal, os riscos decorrentes da não observância imediata da competência do juízo, tendo em vista inúmeros casos de anulação de investigações e processos, muitas vezes após longos períodos de tramitação.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a continuidade de investigações por juízo sem competência constitucional é causa de nulidade insanável.",
+      "pagina": 17,
+      "trecho_fonte": "A continuidade de investigações por juízo sem competência constitucional é causa de nulidade insanável.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a usurpação da competência do STF para a supervisão de investigações criminais, ainda que indireta, resulta na declaração de ilicitude e ineficácia das provas e da persecução penal, conforme decidido em casos anteriores.",
+      "pagina": 17,
+      "trecho_fonte": "A usurpação da competência do Supremo Tribunal Federal para a supervisão de investigações criminais, ainda que de forma indireta, resulta na declaração de ilicitude e ineficácia das provas e da persecução penal, conforme decidido em casos anteriores",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator transcreve a ementa da Pet 6554 AgR (Rel. Min. Gilmar Mendes, Segunda Turma, 12/9/2025), segundo a qual a violação às regras do foro por prerrogativa de função, pela indevida manutenção e aprofundamento de investigações em primeiro grau contra titulares da garantia, deve resultar na declaração da ilicitude e da ineficácia das provas e do processo.",
+      "pagina": 18,
+      "trecho_fonte": "A violação às regras do foro por prerrogativa de função, com base na indevida manutenção e aprofundamento de investigações contra os agentes públicos titulares de tal garantia em primeiro grau, deve resultar na declaração da ilicitude e da ineficácia das provas e do processo.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Gilmar Mendes", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator transcreve a ementa da AP 933 QO (Segunda Turma, 3/2/2016), segundo a qual a usurpação da competência do Tribunal Regional Eleitoral para supervisionar as investigações constitui vício que contamina de nulidade a investigação em relação ao detentor de prerrogativa de foro, por violação do princípio do juiz natural.",
+      "pagina": 20,
+      "trecho_fonte": "A usurpação da competência do Tribunal Regional Eleitoral para supervisionar as investigações constitui vício que contamina de nulidade a investigação realizada em relação ao detentor de prerrogativa de foro, por violação do princípio do juiz natural (art. 5º, LIII, CF).",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Tribunal Regional Eleitoral", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator transcreve a ementa do Inq 2842 (Rel. Min. Ricardo Lewandowski, Tribunal Pleno, DJe 27/2/2014), segundo a qual a competência do STF, quando da possibilidade de envolvimento de parlamentar em ilícito penal, alcança a fase de investigação.",
+      "pagina": 21,
+      "trecho_fonte": "A competência do Supremo Tribunal Federal, quando da possibilidade de envolvimento de parlamentar em ilícito penal, alcança a fase de investigação, materializada pelo desenvolvimento do inquérito.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Ricardo Lewandowski", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que os precedentes revelam que a atuação de juízo incompetente não é mero vício formal, mas causa real de anulação completa de investigações e processos, gerando prejuízos irreparáveis à eficiência da persecução penal.",
+      "pagina": 21,
+      "trecho_fonte": "Esses precedentes revelam, portanto, que a atuação de juízo incompetente não é mero vício formal, mas causa real de anulação completa de investigações e processos, muitas vezes após longos períodos de instrução, gerando prejuízos irreparáveis à eficiência da persecução penal.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que os vícios ocorridos na tramitação do inquérito não devem ser desconsiderados ou minimizados diante da possibilidade de competência originária do STF, e que a omissão pode resultar na validação de um procedimento falho, cujo resultado poderá ser anulado futuramente.",
+      "pagina": 21,
+      "trecho_fonte": "Os vícios ocorridos na tramitação do inquérito não devem ser desconsiderados ou minimizados, especialmente diante da possibilidade de competência originária deste Tribunal. A omissão pode resultar na validação de um procedimento falho, cujo resultado poderá ser anulado futuramente.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o provimento liminar se impõe como medida de prudência institucional e respeito ao devido processo legal.",
+      "pagina": 21,
+      "trecho_fonte": "Em síntese, o provimento liminar se impõe como medida de prudência institucional e respeito ao devido processo legal,",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator reafirma o que foi dito no julgamento do Inquérito nº 2.842, de relatoria do Ministro Ricardo Lewandowski (DJ 27/2/14), no sentido de que não se diga que no Supremo Tribunal Federal não há andamento nem condenações.",
+      "pagina": 22,
+      "trecho_fonte": "Para concluir este tema, reafirmo o que foi dito no julgamento do Inquérito nº 2.842, de relatoria do Ministro Ricardo Lewandowski, DJ 27/2/14",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Ricardo Lewandowski", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ser necessário oficiar ao Banco Central do Brasil para garantir o regular funcionamento das instituições financeiras envolvidas e evitar riscos ao seu equilíbrio econômico-financeiro e ao Sistema Financeiro Nacional (SFN).",
+      "pagina": 22,
+      "trecho_fonte": "Por fim, para garantir o regular funcionamento das instituições financeiras envolvidas e evitar riscos ao seu equilíbrio econômico-financeiro, bem como ao Sistema Financeiro Nacional (SFN), é necessário oficiar ao Banco Central do Brasil.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o Banco Central é a autoridade responsável pela fiscalização e supervisão prudencial das instituições do sistema e deve fornecer a documentação e os elementos informativos relativos aos procedimentos administrativos em curso envolvendo as instituições investigadas.",
+      "pagina": 22,
+      "trecho_fonte": "Trata-se da autoridade responsável pela fiscalização e supervisão prudencial das instituições que compõem o sistema. Assim, deve o Banco Central fornecer a documentação e os elementos informativos relativos aos procedimentos administrativos em curso envolvendo as instituições investigadas.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Banco Central", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o compartilhamento desses dados pelo Banco Central é essencial para a compreensão do cenário regulatório e para a adoção de medidas judiciais cabíveis ou a prevenção de providências judiciais desfavoráveis.",
+      "pagina": 22,
+      "trecho_fonte": "O compartilhamento desses dados, em conformidade com as competências legais do Banco Central, é essencial para a compreensão do cenário regulatório e para a adoção de medidas judiciais cabíveis ou para a prevenção de providências judiciais desfavoráveis.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Banco Central", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma, com base no artigo 192 da Constituição Federal, ser imprescindível que o Banco Central do Brasil se abstenha de cumprir decisões judiciais relativas às instituições bancárias envolvidas na operação Compliance Zero que não provenham do Supremo Tribunal Federal.",
+      "pagina": 23,
+      "trecho_fonte": "é imprescindível que o Banco Central do Brasil se abstenha de cumprir quaisquer decisões judiciais relativas às instituições bancárias envolvidas na operação \"Compliance Zero\" que não provenham deste Supremo Tribunal Federal.",
+      "atribuida_a": "Ministro Dias Toffoli (Relator)",
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu parcialmente o pedido liminar para suspender as investigações perante o Juízo Federal da 10ª Vara da Seção Judiciária do Distrito Federal e as demais instâncias antecedentes.",
+      "pagina": 23,
+      "trecho_fonte": "defiro parcialmente o pedido liminar, para suspender as investigações perante o Juízo Federal da 10ª Vara da Seção Judiciária do Distrito Federal e as demais instâncias antecedentes",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Juízo Federal da 10ª Vara da Seção Judiciária do Distrito Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a remessa ao STF de toda matéria, inclusive conexa, relativa à investigação da operação Compliance Zero, com a continuidade das investigações sob supervisão imediata do Supremo Tribunal Federal até o julgamento definitivo da reclamação.",
+      "pagina": 23,
+      "trecho_fonte": "determinar sua remessa a esta Suprema Corte de toda matéria, inclusive conexa, à investigação da denominada operação “Compliance Zero”, com a continuidade das investigações sob a supervisão imediata deste Supremo Tribunal Federal, até o julgamento definitivo da presente reclamação.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Ficam mantidas, por ora, todas as decisões administrativas, cíveis e criminais até então proferidas em relação a todos os investigados, inclusive as constrições sobre bens e valores.",
+      "pagina": 23,
+      "trecho_fonte": "Ficam mantidas, por ora, todas as decisões administrativas, cíveis e criminais até então proferidas em relação a todos os investigados, inclusive as constrições sobre bens e valores.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pedido de acesso aos autos ao Deputado Federal João Carlos Paolilo Bacelar Filho, nos termos da Súmula Vinculante nº 14.",
+      "pagina": 23,
+      "trecho_fonte": "Defiro o pedido de acesso dos presentes autos ao Deputado Federal João Carlos Paolilo Bacelar Filho, nos termos da súmula vinculante nº 14.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "João Carlos Paolilo Bacelar Filho", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que se oficie ao Banco Central do Brasil para que forneça a documentação e os elementos informativos relativos aos procedimentos administrativos em curso que envolvam as pessoas e instituições investigadas.",
+      "pagina": 23,
+      "trecho_fonte": "Oficie-se ao Banco Central do Brasil para que forneça a documentação e os elementos informativos relativos aos procedimentos administrativos em curso que envolvam as pessoas e as instituições investigadas que entenda necessárias para a devida apuração dos fatos.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Banco Central do Brasil", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou à Polícia Federal que forneça todos os procedimentos investigatórios referentes à Operação Compliance Zero, inclusive conexas, de forma sigilosa.",
+      "pagina": 23,
+      "trecho_fonte": "Determino à Polícia Federal que forneça todos os procedimentos investigatórios referentes à Operação “Compliance Zero”, inclusive conexas, de forma sigilosa.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação da decisão ao Diretor-Geral da Polícia Federal, ao Juízo da 10ª Vara Federal da Seção do Distrito Federal, ao Tribunal Regional da 1ª Região e ao Superior Tribunal de Justiça, observando-se o sigilo dos autos.",
+      "pagina": 23,
+      "trecho_fonte": "Comunique-se ao Diretor-Geral da Polícia Federal, ao Juízo da 10ª Vara Federal da Seção do Distrito Federal, ao Tribunal Regional da 1ª Região e ao Superior Tribunal de Justiça, observando-se o sigilo dos autos.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Juízo da 10ª Vara Federal da Seção do Distrito Federal", "tipo": "orgao_publico"},
+        {"nome": "Tribunal Regional da 1ª Região", "tipo": "orgao_publico"},
+        {"nome": "Superior Tribunal de Justiça", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o cumprimento da decisão com urgência.",
+      "pagina": 23,
+      "trecho_fonte": "Cumpra-se, com urgência.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi assinada em Brasília, em 9 de dezembro de 2025, pelo Ministro Dias Toffoli, Relator.",
+      "pagina": 24,
+      "trecho_fonte": "Brasília, 9 de dezembro de 2025. Ministro DIASTOFFOLI Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DIASTOFFOLI", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Partes, advogados e beneficiário constam como SOB SIGILO no cabeçalho (página 1); o reclamante é identificado apenas pelas iniciais D.B.V. e o parlamentar por J.C.B."
+}

@@ -1,0 +1,343 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O acórdão de referendo na Petição 15.556 Distrito Federal foi julgado pela Segunda Turma em 23/03/2026, com relatoria do Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "23/03/2026 SEGUNDA TURMA REFERENDO NA PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"},
+        {"nome": "SEGUNDA TURMA", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O acórdão trata de referendo à decisão cautelar proferida pelo relator a partir da análise de representação formulada pela Polícia Federal.",
+      "pagina": 1,
+      "trecho_fonte": "Trata-se de referendo à decisão cautelar por mim proferida, a partir da análise de representação formulada pela Polícia Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial pugna pela decretação de prisão preventiva.",
+      "pagina": 1,
+      "trecho_fonte": "por meio da qual a autoridade policial pugna (i) pela decretação de prisão",
+      "atribuida_a": "Polícia Federal (autoridade policial)",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial pugna pela aplicação de medidas cautelares diversas da prisão e pelo afastamento de função pública de investigados.",
+      "pagina": 2,
+      "trecho_fonte": "((iiii)) ppeellaa aapplliiccaaççããoo ddee mmeeddiiddaass ccaauutteellaarreess ddiivveerrssaass ddaa pprriissããoo,, ((iiiiii)) ppeelloo aaffaassttaammeennttoo ddee ffuunnççããoo ppúúbblliiccaa ddee iinnvveessttiiggaaddooss",
+      "atribuida_a": "Polícia Federal (autoridade policial)",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial pugna pela suspensão de atividades econômicas de pessoas jurídicas, no âmbito das investigações decorrentes da denominada \"Operação Compliance Zero\".",
+      "pagina": 2,
+      "trecho_fonte": "((iivv)) ppeellaa ssuussppeennssããoo ddee aattiivviiddaaddeess eeccoonnôômmiiccaass ddee ppeessssooaass jjuurrííddiiccaass,, nnoo ââmmbbiittoo ddaass iinnvveessttiiggaaççõõeess ddeeccoorrrreenntteess ddaa ddeennoommiinnaaddaa ““OOppeerraaççããoo CCoommpplliiaannccee ZZeerroo””",
+      "atribuida_a": "Polícia Federal (autoridade policial)",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A questão em discussão abrange a decretação da prisão preventiva dos investigados Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+      "pagina": 2,
+      "trecho_fonte": "((ii)) DDaanniieell BBuueennoo VVoorrccaarroo;; ((iiii)) FFaabbiiaannoo CCaammppooss ZZeetttteell;; ((iiiiii)) LLuuiizz PPhhiilllliippii MMaacchhaaddoo ddee MMoorraaeess MMoouurrããoo;; ee ((iivv)) MMaarriillssoonn RRoosseennoo ddaa SSiillvvaa",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"},
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"},
+        {"nome": "Marilson Roseno da Silva", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A questão em discussão abrange a decretação de medidas cautelares diversas da prisão em relação aos investigados Paulo Sérgio Neves de Souza, Belline Santana, Leonardo Augusto Furtado Palhares e Ana Claudia Queiroz de Paiva.",
+      "pagina": 2,
+      "trecho_fonte": "((vv)) PPaauulloo SSéérrggiioo NNeevveess ddee SSoouuzzaa;; ((vvii)) BBeelllliinnee SSaannttaannaa;; ((vviiii)) LLeeoonnaarrddoo AAuugguussttoo FFuurrttaaddoo PPaallhhaarreess ee ((vviiiiii)) AAnnaa CCllaauuddiiaa QQuueeiirroozz ddee PPaaiivvaa",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Paulo Sérgio Neves de Souza", "tipo": "pessoa"},
+        {"nome": "Belline Santana", "tipo": "pessoa"},
+        {"nome": "Leonardo Augusto Furtado Palhares", "tipo": "pessoa"},
+        {"nome": "Ana Claudia Queiroz de Paiva", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A prisão preventiva exige a presença do fumus commissi delicti e do periculum libertatis, nos termos dos arts. 282 e 312 do Código de Processo Penal.",
+      "pagina": 2,
+      "trecho_fonte": "AA pprriissããoo pprreevveennttiivvaa eexxiiggee aa pprreesseennççaa ddoo ffuummuuss ccoommiissssii ddeelliiccttii ee ddoo ppeerriiccuulluumm lliibbeerrttaattiiss,, nnooss tteerrmmooss ddooss aarrttss.. 228822 ee 331122 ddoo CCóóddiiggoo ddee PPrroocceessssoo PPeennaall",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A prisão preventiva é medida excepcional que se justifica em hipóteses de necessidade concreta para a instrução criminal, a garantia da ordem pública ou a aplicação da lei penal.",
+      "pagina": 2,
+      "trecho_fonte": "sseennddoo mmeeddiiddaa eexxcceeppcciioonnaall qquuee ssee jjuussttiiffiiccaa eemm hhiippóótteesseess ddee nneecceessssiiddaaddee ccoonnccrreettaa ppaarraa aa iinnssttrruuççããoo ccrriimmiinnaall,, aa ggaarraannttiiaa ddaa oorrddeemm ppúúbblliiccaa oouu aa aapplliiccaaççããoo ddaa lleeii ppeennaall",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "As investigações demonstram indícios robustos de participação de Daniel Bueno Vorcaro, Fabiano Campos Zettel e Luiz Phillipi Machado de Moraes Mourão, entre outros investigados, em organização criminosa armada.",
+      "pagina": 2,
+      "trecho_fonte": "AAss iinnvveessttiiggaaççõõeess ddeemmoonnssttrraamm iinnddíícciiooss rroobbuussttooss ddee ppaarrttiicciippaaççããoo ddee ((ii)) DDaanniieell BBuueennoo VVoorrccaarroo;; ((iiii)) FFaabbiiaannoo CCaammppooss ZZeetttteell;; ((iiiiii)) LLuuiizz PPhhiilllliippii",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"},
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A organização criminosa armada seria voltada à prática de diversos ilícitos, com uso de vínculos societários e familiares para ocultação de valores ilícitos.",
+      "pagina": 2,
+      "trecho_fonte": "eemm oorrggaanniizzaaççããoo ccrriimmiinnoossaa aarrmmaaddaa,, vvoollttaaddaa àà pprrááttiiccaa ddee ddiivveerrssooss iillíícciittooss,, ccoomm uussoo ddee vvíínnccuullooss ssoocciieettáárriiooss ee ffaammiilliiaarreess ppaarraa ooccuullttaaççããoo ddee vvaalloorreess iillíícciittooss",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "De acordo com o estágio atual das investigações, o grupo criminoso é composto por quatro núcleos principais de atuação, sendo o primeiro o Núcleo financeiro, responsável pela estruturação das fraudes contra o sistema financeiro.",
+      "pagina": 2,
+      "trecho_fonte": "ccoommppoossttoo ppoorr qquuaattrroo nnúúcclleeooss pprriinncciippaaiiss ddee aattuuaaççããoo:: ((ii)) NNúúcclleeoo ffiinnaanncceeiirroo,, rreessppoonnssáávveell ppeellaa eessttrruuttuurraaççããoo ddaass ffrraauuddeess ccoonnttrraa oo ssiisstteemmaa ffiinnaanncceeiirroo",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O segundo núcleo, de corrupção institucional, seria voltado à cooptação de servidores públicos do Banco Central.",
+      "pagina": 2,
+      "trecho_fonte": "((iiii)) NNúúcclleeoo ddee ccoorrrruuppççããoo iinnssttiittuucciioonnaall,, vvoollttaaddoo àà ccooooppttaaççããoo ddee sseerrvviiddoorreess ppúúbblliiccooss ddoo BBaannccoo CCeennttrraall",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Banco Central", "tipo": "orgao_publico"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O terceiro núcleo, de ocultação patrimonial e lavagem de dinheiro, atuaria com utilização de empresas interpostas.",
+      "pagina": 2,
+      "trecho_fonte": "((iiiiii)) NNúúcclleeoo ddee ooccuullttaaççããoo ppaattrriimmoonniiaall ee llaavvaaggeemm ddee ddiinnhheeiirroo,, ccoomm uuttiilliizzaaççããoo ddee eemmpprreessaass iinntteerrppoossttaass",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O quarto núcleo, de intimidação e obstrução de justiça, seria responsável pelo monitoramento ilegal de adversários, jornalistas e autoridades.",
+      "pagina": 3,
+      "trecho_fonte": "ddee iinnttiimmiiddaaççããoo ee oobbssttrruuççããoo ddee jjuussttiiççaa,, rreessppoonnssáávveell ppeelloo mmoonniittoorraammeennttoo iilleeggaall ddee aaddvveerrssáárriiooss,, jjoorrnnaalliissttaass ee aauuttoorriiddaaddeess",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Está configurado o periculum libertatis pela gravidade concreta das condutas, indícios de continuidade delitiva e ameaça a testemunhas.",
+      "pagina": 3,
+      "trecho_fonte": "EEssttáá ccoonnffiigguurraaddoo oo ppeerriiccuulluumm lliibbeerrttaattiiss ppeellaa ggrraavviiddaaddee ccoonnccrreettaa ddaass ccoonndduuttaass,, iinnddíícciiooss ddee ccoonnttiinnuuiiddaaddee ddeelliittiivvaa,, aammeeaaççaa aa tteesstteemmuunnhhaass",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O periculum libertatis também está configurado pela dilapidação patrimonial, ocultação de bens e movimentações financeiras.",
+      "pagina": 3,
+      "trecho_fonte": "ddiillaappiiddaaççããoo ppaattrriimmoonniiaall,, ooccuullttaaççããoo ddee bbeennss ee mmoovviimmeennttaaççõõeess ffiinnaanncceeiirraass",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "As medidas cautelares alternativas à prisão, previstas no art. 319 do CPP, revelam-se, no momento, insuficientes para neutralizar os riscos.",
+      "pagina": 3,
+      "trecho_fonte": "MMeeddiiddaass ccaauutteellaarreess aalltteerrnnaattiivvaass àà pprriissããoo,, pprreevviissttaass nnoo aarrtt.. 331199 ddoo CCPPPP,, rreevveellaamm--ssee,, nnoo mmoommeennttoo,, iinnssuuffiicciieenntteess ppaarraa nneeuuttrraalliizzaarr ooss rriissccooss",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "A insuficiência das medidas alternativas decorre da capacidade de influência, intimidação e articulação dos investigados Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva.",
+      "pagina": 3,
+      "trecho_fonte": "aannttee aa ccaappaacciiddaaddee ddee iinnfflluuêênncciiaa,, iinnttiimmiiddaaççããoo ee aarrttiiccuullaaççããoo ddooss iinnvveessttiiggaaddooss ((ii)) DDaanniieell BBuueennoo VVoorrccaarroo;; ((iiii)) FFaabbiiaannoo CCaammppooss ZZeetttteell",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"},
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"},
+        {"nome": "Marilson Roseno da Silva", "tipo": "pessoa"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Quanto a Paulo Sérgio Neves de Souza, Belline Santana, Leonardo Augusto Furtado Palhares e Ana Claudia Queiroz de Paiva, embora presentes indícios de participação no esquema, demonstrou-se suficiente, no presente momento, a decretação de medidas cautelares diversas da prisão previstas no art. 319 do CPP.",
+      "pagina": 3,
+      "trecho_fonte": "ddeemmoonnssttrroouu--ssee ssuuffiicciieennttee,, nnoo pprreesseennttee mmoommeennttoo,, aa ddeeccrreettaaççããoo ddee mmeeddiiddaass ccaauutteellaarreess ddiivveerrssaass ddaa pprriissããoo,, ttaall ccoommoo pprreevviissttaass nnoo aarrtt.. 331199 ddoo CCPPPP",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Paulo Sérgio Neves de Souza", "tipo": "pessoa"},
+        {"nome": "Belline Santana", "tipo": "pessoa"},
+        {"nome": "Leonardo Augusto Furtado Palhares", "tipo": "pessoa"},
+        {"nome": "Ana Claudia Queiroz de Paiva", "tipo": "pessoa"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Um dos investigados, sobre o qual recaía decreto de prisão preventiva, faleceu, com posterior perda da eficácia da medida diante do óbito.",
+      "pagina": 3,
+      "trecho_fonte": "FFaalleecciimmeennttoo ddee uumm ddooss iinnvveessttiiggaaddooss,, ssoobbrree oo qquuaall rreeccaaííaa ddeeccrreettoo ddee pprriissããoo pprreevveennttiivvaa.. PPoosstteerriioorr ppeerrddaa ddaa eeffiiccáácciiaa ddaa mmeeddiiddaa ddiiaannttee ddoo rreeffeerriiddoo óóbbiittoo",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "As causas do óbito do investigado estão sendo objeto de apuração em investigação autônoma.",
+      "pagina": 3,
+      "trecho_fonte": "ccuujjaass ccaauussaass eessttããoo sseennddoo oobbjjeettoo ddee aappuurraaççããoo eemm iinnvveessttiiggaaççããoo aauuttôônnoommaa",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão cautelar foi referendada para manter a decretação das prisões preventivas e a aplicação das medidas cautelares diversas da prisão, excetuado o comando destinado ao investigado que veio a falecer.",
+      "pagina": 3,
+      "trecho_fonte": "DDeecciissããoo ccaauutteellaarr rreeffeerreennddaaddaa ppaarraa mmaanntteerr aa ddeeccrreettaaççããoo ddaass pprriissõõeess pprreevveennttiivvaass ee aa aapplliiccaaççããoo ddaass mmeeddiiddaass ccaauutteellaarreess ddiivveerrssaass ddaa pprriissããoo",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Na Sessão Virtual de 13 a 20 de março de 2026, os Ministros da Segunda Turma do Supremo Tribunal Federal acordaram, por unanimidade, em referendar a liminar concedida.",
+      "pagina": 3,
+      "trecho_fonte": "nnaa SSeessssããoo VViirrttuuaall ddee 1133 aa 2200 ddee mmaarrççoo ddee 22002266,, aaccoorrddaamm ooss MMiinniissttrrooss ddaa SSeegguunnddaa TTuurrmmaa ddoo SSuupprreemmoo TTrriibbuunnaall FFeeddeerraall,, ppoorr uunnaanniimmiiddaaddee,, eemm rreeffeerreennddaarr aa lliimmiinnaarr",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Segunda Turma do Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Foi excetuado do referendo apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, porque veio a falecer, ocasionando a superveniente perda da eficácia da decisão quanto à fração que recaía sobre ele.",
+      "pagina": 4,
+      "trecho_fonte": "eexxcceettuuaaddoo aappeennaass oo ccoommaannddoo ddeessttiinnaaddoo aaoo iinnvveessttiiggaaddoo LLuuiizz PPhhiilllliippii MMaacchhaaddoo ddee MMoorraaeess MMoouurrããoo,, ppoorrqquuee vveeiioo aa ffaalleecceerr",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Ministro Gilmar Mendes acompanhou o Relator com ressalvas.",
+      "pagina": 4,
+      "trecho_fonte": "OO MMiinniissttrroo GGiillmmaarr MMeennddeess aaccoommppaannhhoouu oo RReellaattoorr ccoomm rreessssaallvvaass",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Gilmar Mendes", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Ministro Dias Toffoli afirmou suspeição.",
+      "pagina": 4,
+      "trecho_fonte": "AAffiirrmmoouu ssuussppeeiiççããoo oo MMiinniissttrroo DDiiaass TTooffffoollii",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O acórdão é datado de Brasília, 23 de março de 2026, e assinado pelo Ministro André Mendonça, Relator.",
+      "pagina": 4,
+      "trecho_fonte": "BBrraassíílliiaa,, 2233 ddee mmaarrççoo ddee 22002266.. MMiinniissttrroo AANNDDRRÉÉ MMEENNDDOONNÇÇAA RReellaattoorr",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Conforme o extrato de ata, a Turma, por unanimidade, referendou a liminar concedida, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, nos termos do voto do Relator, Ministro André Mendonça.",
+      "pagina": 6,
+      "trecho_fonte": "DDeecciissããoo:: AA TTuurrmmaa,, ppoorr uunnaanniimmiiddaaddee,, rreeffeerreennddoouu aa lliimmiinnaarr ccoonncceeddiiddaa,, eexxcceettuuaaddoo aappeennaass oo ccoommaannddoo ddeessttiinnaaddoo aaoo iinnvveessttiiggaaddoo LLuuiizz PPhhiilllliippii MMaacchhaaddoo ddee MMoorraaeess MMoouurrããoo",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O julgamento ocorreu na Sessão Virtual da Segunda Turma de 13.3.2026 a 20.3.2026.",
+      "pagina": 6,
+      "trecho_fonte": "SSeegguunnddaa TTuurrmmaa,, SSeessssããoo VViirrttuuaall ddee 1133..33..22002266 aa 2200..33..22002266",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A composição da Segunda Turma na sessão foi: Ministros Gilmar Mendes (Presidente), Dias Toffoli, Luiz Fux, Nunes Marques e André Mendonça.",
+      "pagina": 6,
+      "trecho_fonte": "CCoommppoossiiççããoo:: MMiinniissttrrooss GGiillmmaarr MMeennddeess ((PPrreessiiddeennttee)),, DDiiaass TTooffffoollii,, LLuuiizz FFuuxx,, NNuunneess MMaarrqquueess ee AAnnddrréé MMeennddoonnççaa",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Gilmar Mendes", "tipo": "ministro"},
+        {"nome": "Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Luiz Fux", "tipo": "ministro"},
+        {"nome": "Nunes Marques", "tipo": "ministro"},
+        {"nome": "André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O extrato de ata é assinado por Maria Clara Viotti Beck, Secretária da Segunda Turma.",
+      "pagina": 6,
+      "trecho_fonte": "MMaarriiaa CCllaarraa VViioottttii BBeecckk SSeeccrreettáárriiaa ddaa SSeegguunnddaa TTuurrmmaa",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Maria Clara Viotti Beck", "tipo": "pessoa"}
+      ]
+    }
+  ],
+  "observacoes": "Da página 2 à página 6 o texto extraído apresenta todos os caracteres duplicados (artefato de extração do PDF); os trechos_fonte dessas páginas reproduzem literalmente essa duplicação, enquanto os campos texto e entidades usam a grafia normal. Página 5 contém apenas cabeçalho de partes sob sigilo."
+}

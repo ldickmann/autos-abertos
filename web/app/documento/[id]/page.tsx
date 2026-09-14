@@ -39,6 +39,49 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
         </div>
       </header>
 
+      {d.referencias && (d.referencias.processos.length > 0 || d.referencias.dispositivos.length > 0 || d.referencias.andamentos_citados.length > 0) && (
+        <section aria-labelledby="refs" className="folha border border-neutral-300 bg-white p-4 text-sm">
+          <h2 id="refs" className="text-lg">O que este documento cita</h2>
+          <p className="text-xs text-neutral-700">Encontrado no texto por padrão literal (classe e número de processo; artigo e diploma). Cada item leva à página.</p>
+          <div className="mt-2 grid gap-4 md:grid-cols-3">
+            {d.referencias.processos.length > 0 && (
+              <div>
+                <h3 className="font-semibold">Processos</h3>
+                <ul className="mt-1 space-y-0.5">
+                  {agrupar(d.referencias.processos, (x) => `${x.classe} ${x.numero}`).map(([k, xs]) => (
+                    <li key={k}>{xs[0].incidente ? <Link className="underline" href={`/processo/${xs[0].incidente}`}>{k}</Link> : k}
+                      <span className="text-xs text-neutral-600"> p. {xs.map((x) => <a key={x.pagina} className="underline" href={`#p-${x.pagina}`} title={x.trecho}>{x.pagina}</a>).reduce<React.ReactNode[]>((acc, el, i) => (i ? [...acc, ", ", el] : [el]), [])}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {d.referencias.dispositivos.length > 0 && (
+              <div>
+                <h3 className="font-semibold">Dispositivos legais</h3>
+                <ul className="mt-1 space-y-0.5">
+                  {agrupar(d.referencias.dispositivos, (x) => x.dispositivo).map(([k, xs]) => (
+                    <li key={k}>{k}
+                      <span className="text-xs text-neutral-600"> p. {xs.map((x) => <a key={x.pagina} className="underline" href={`#p-${x.pagina}`} title={x.trecho}>{x.pagina}</a>).reduce<React.ReactNode[]>((acc, el, i) => (i ? [...acc, ", ", el] : [el]), [])}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {d.referencias.andamentos_citados.length > 0 && (
+              <div>
+                <h3 className="font-semibold">Andamentos a que se refere</h3>
+                <ul className="mt-1 space-y-0.5">
+                  {d.referencias.andamentos_citados.map((a) => (
+                    <li key={a.andamento_id}><Link className="underline" href={`/processo/${a.incidente}#andamento-${a.andamento_id}`}>{formatarData(a.data_citada)} {a.tipo_citado}</Link></li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
       {d.assercoes.length > 0 && (
         <section aria-labelledby="ass">
           <h2 id="ass" className="text-lg font-bold">Asserções extraídas ({d.assercoes.length})</h2>
@@ -75,4 +118,10 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
       <p className="text-xs text-neutral-600">Base gerada com o texto extraído automaticamente do PDF; em caso de dúvida, consulte o original no portal. Extraído em {formatarDataHora(m.baixado_em)}.</p>
     </div>
   );
+}
+
+function agrupar<T>(itens: T[], chave: (x: T) => string): [string, T[]][] {
+  const m = new Map<string, T[]>();
+  for (const x of itens) m.set(chave(x), [...(m.get(chave(x)) ?? []), x]);
+  return [...m.entries()];
 }

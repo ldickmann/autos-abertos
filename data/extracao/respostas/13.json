@@ -1,0 +1,461 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Comissão de Valores Mobiliários — CVM, representada pela Advocacia-Geral da União, apresentou requerimento de autorização para oitiva do investigado DANIEL BUENO VORCARO (e-Docs. 418 e 456).",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de requerimento apresentado pela Comissão de Valores Mobiliários — CVM, representada pela Advocacia-Geral da União, mediante a qual a autarquia federal requer, em síntese, a autorização para oitiva do investigado DANIEL BUENO VORCARO (e-Docs. 418 e 456).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Comissão de Valores Mobiliários — CVM", "tipo": "orgao_publico"},
+        {"nome": "Advocacia-Geral da União", "tipo": "orgao_publico"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM sustenta que a oitiva do investigado seria necessária à instrução dos processos administrativos sancionadores em curso perante a CVM, com fundamento nos arts. 8º e 9º, inciso II, da Lei nº 6.385/1976 e no art. 5º, incisos LIV, LV e LXIII, da Constituição da República.",
+      "pagina": 2,
+      "trecho_fonte": "porquanto a medida seria necessária à instrução dos processos administrativos sancionadores em curso perante a CVM, com fundamento nos arts. 8º e 9º, inciso II, da Lei nº 6.385/1976, no art. 5º, incisos LIV, LV e LXIII, da Constituição da República",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM aduz que as investigações relativas à Operação Compliance Zero apontam que o Banco Master S.A., então controlado por DANIEL BUENO VORCARO, teria estruturado esquema de captação agressiva de recursos mediante a emissão de Certificados de Depósito Bancário (CDBs) com rentabilidade significativamente superior à média de mercado.",
+      "pagina": 3,
+      "trecho_fonte": "Aduz que as investigações em trâmite relativas à Operação Compliance Zero apontam que o Banco Master S.A., então controlado por DANIEL BUENO VORCARO, teria estruturado esquema de captação agressiva de recursos mediante a emissão de Certificados de Depósito Bancário (CDBs)",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "Banco Master S.A.", "tipo": "organizacao"},
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM aduz que os valores captados teriam sido direcionados a operações financeiras de elevado risco, à aquisição de ativos de baixa liquidez e à estruturação de fundos vinculados ao próprio conglomerado econômico.",
+      "pagina": 3,
+      "trecho_fonte": "os valores captados teriam sido direcionados a operações financeiras de elevado risco, à aquisição de ativos de baixa liquidez e à estruturação de fundos vinculados ao próprio conglomerado econômico",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM afirma que, em tese, pelo que até o momento levantado pelas investigações, haveria sérios indícios da prática de crimes contra o sistema financeiro nacional, notadamente gestão fraudulenta, indução de investidor em erro mediante fraude e emissão ou negociação irregular de valores mobiliários, previstos na Lei nº 7.492/1986.",
+      "pagina": 3,
+      "trecho_fonte": "haveria sérios indícios da prática de crimes contra o sistema financeiro nacional, notadamente de delitos de gestão fraudulenta, indução de investidor em erro mediante fraude e emissão ou negociação irregular de valores mobiliários, todos previstos na Lei nº 7.492/1986",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "No entendimento da Comissão de Valores Mobiliários, a oitiva do investigado seria imprescindível a fim de instruir os processos administrativos em trâmite junto à Gerência de Processos Sancionadores – GPS-1.",
+      "pagina": 3,
+      "trecho_fonte": "seria imprescindível, no entendimento da Comissão de Valores Mobiliários, a oitiva do investigado, a fim de instruir os processos administrativos em trâmite junto à Gerência de Processos Sancionadores – GPS-1",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "Comissão de Valores Mobiliários", "tipo": "orgao_publico"},
+        {"nome": "Gerência de Processos Sancionadores – GPS-1", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM informa que a Investigação Administrativa nº 19957.005195/2025-70 apura indícios de infrações cometidas pela Ambipar Participações e Empreendimentos S.A., seus controladores e pessoas a eles ligadas, nos mercados à vista e de derivativos, nos anos de 2024 e 2025.",
+      "pagina": 3,
+      "trecho_fonte": "(i) Investigação Administrativa nº 19957.005195/2025-70 – apuração de indícios de infrações cometidas pela Ambipar Participações e Empreendimentos S.A., seus controladores e pessoas a eles ligadas, nos mercados à vista e de derivativos, nos anos de 2024 e 2025",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "Ambipar Participações e Empreendimentos S.A.", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM informa que a Investigação Administrativa nº 19957.010013/2025-82 apura indícios de infrações na emissão de notas comerciais adquiridas pelos fundos CITY-02 FIDC NP RI, CITY FIDC NP, MÁXIMA FIM – CRÉDITO PRIVADO 2, MN I FIDC NP e ST 1001 FIDC RL, bem como possíveis irregularidades de seus gestores e administradores.",
+      "pagina": 4,
+      "trecho_fonte": "apuração de indícios de infrações na emissão de notas comerciais adquiridas pelos fundos CITY-02 FIDC NP RI, CITY FIDC NP, MÁXIMA FIM – CRÉDITO PRIVADO 2, MN I FIDC NP e ST 1001 FIDC RL",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "CITY-02 FIDC NP RI", "tipo": "organizacao"},
+        {"nome": "CITY FIDC NP", "tipo": "organizacao"},
+        {"nome": "MÁXIMA FIM – CRÉDITO PRIVADO 2", "tipo": "organizacao"},
+        {"nome": "MN I FIDC NP", "tipo": "organizacao"},
+        {"nome": "ST 1001 FIDC RL", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM informa que a Investigação Administrativa nº 19957.012897/2025-18 apura indícios de infrações na emissão de Certificados de Recebíveis Imobiliários (CRIs) adquiridos pelos fundos CITY-02 FIDC NP RI, CITY FIDC NP e MÁXIMA FIM – CRÉDITO PRIVADO 2, bem como possíveis irregularidades de gestores e administradores.",
+      "pagina": 4,
+      "trecho_fonte": "(iii) Investigação Administrativa nº 19957.012897/2025-18 – apuração de indícios de infrações na emissão de Certificados de Recebíveis Imobiliários (CRIs) adquiridos pelos fundos CITY-02 FIDC NP RI, CITY FIDC NP e MÁXIMA FIM – CRÉDITO PRIVADO 2",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "CITY-02 FIDC NP RI", "tipo": "organizacao"},
+        {"nome": "CITY FIDC NP", "tipo": "organizacao"},
+        {"nome": "MÁXIMA FIM – CRÉDITO PRIVADO 2", "tipo": "organizacao"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM fundamenta sua legitimidade para oitiva do investigado no art. 9º, inciso II, da Lei nº 6.385/1976, que lhe confere competência para intimar pessoas naturais e jurídicas a prestarem informações e esclarecimentos, sob cominação de multa.",
+      "pagina": 4,
+      "trecho_fonte": "A CVM fundamenta sua legitimidade para oitiva do investigado no art. 9º, inciso II, da Lei nº 6.385/1976, que lhe confere competência para intimar pessoas naturais e jurídicas a prestarem informações e esclarecimentos, sob cominação de multa",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM invoca o art. 5º da Resolução CVM nº 45, de 31 de agosto de 2021, que determina a oitiva prévia do investigado antes da formulação de acusação formal em processo sancionador.",
+      "pagina": 4,
+      "trecho_fonte": "invoca o art. 5º da Resolução CVM nº 45, de 31 de agosto de 2021, que determina a oitiva prévia do investigado antes da formulação de acusação formal em processo sancionador",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM sustenta que o processo administrativo sancionador da Autarquia está sujeito aos princípios constitucionais do devido processo legal, do contraditório e da ampla defesa (art. 5º, incisos LIV e LV, CF/88).",
+      "pagina": 4,
+      "trecho_fonte": "Sustenta, ainda, que o processo administrativo sancionador da Autarquia está sujeito aos princípios constitucionais do devido processo legal, do contraditório e da ampla defesa (art. 5º, incisos LIV e LV, CF/88)",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM sustenta que a realização da oitiva de investigado preso, em fase de inquérito, não encontra vedação jurídica, cabendo ao Ministro Relator a avaliação de sua conveniência e oportunidade.",
+      "pagina": 4,
+      "trecho_fonte": "a realização da oitiva de investigado preso, em fase de inquérito, não encontra vedação jurídica, cabendo ao Ministro Relator a avaliação de sua conveniência e oportunidade",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM requer que a oitiva seja realizada, preferencialmente, de forma presencial nas dependências do estabelecimento prisional onde se encontra o investigado.",
+      "pagina": 4,
+      "trecho_fonte": "Requer a CVM que a oitiva seja realizada, preferencialmente, de forma presencial nas dependências do estabelecimento prisional onde se",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM requer que a data da oitiva seja acordada entre a CVM e o Juízo, preferencialmente nos meses de agosto e setembro de 2026, e admite, de forma subsidiária, a realização por videoconferência segura a partir da própria unidade prisional.",
+      "pagina": 5,
+      "trecho_fonte": "mediante designação de data acordada entre a CVM e este Juízo, preferencialmente nos meses de agosto e setembro de 2026. De forma subsidiária, admite a realização por videoconferência segura a partir da própria unidade prisional.",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A CVM formula os pedidos de deferimento da oitiva com fixação de data e local pelo Tribunal, fixação da forma de realização do ato, preferencialmente presencial, prévia intimação da defesa técnica do investigado e oitiva prévia da Procuradoria-Geral da República.",
+      "pagina": 5,
+      "trecho_fonte": "(i) deferimento da oitiva, com fixação de data e local pelo Tribunal; (ii) fixação da forma de realização do ato, preferencialmente presencial; (iii) prévia intimação da defesa técnica do investigado para acompanhamento; e (iv) oitiva prévia da Procuradoria-Geral da República",
+      "atribuida_a": "Comissão de Valores Mobiliários (CVM)",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Procuradoria-Geral da República, instada a se manifestar, apresentou manifestação sobre o requerimento (e-Doc. 472).",
+      "pagina": 5,
+      "trecho_fonte": "Instada a se manifestar, a Procuradoria-Geral da República não vislumbrou impedimento à realização da oitiva",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República não vislumbrou impedimento à realização da oitiva para a instrução dos Inquéritos Administrativos n. 19957.005195/2025-70, 19957.010013/2025-82 e 19957.012897/2025-18.",
+      "pagina": 5,
+      "trecho_fonte": "a Procuradoria-Geral da República não vislumbrou impedimento à realização da oitiva, para a instrução dos Inquéritos Administrativos n. 19957.005195/2025-70, 19957.010013/2025-82 e 19957.012897/2025-18",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República registrou a necessidade de facultar ao investigado a sua efetiva participação no ato, realçando a natureza voluntária da medida, diante do direito constitucional de não produzir prova contra si mesmo.",
+      "pagina": 5,
+      "trecho_fonte": "registrando apenas a necessidade de facultar ao investigado a sua efetiva participação no ato, realçando a natureza voluntária da medida, diante da necessária observância ao direito constitucional de não produzir prova contra si mesmo",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o art. 9º da Lei nº 6.385/1976 autoriza a CVM a tomar depoimentos e ouvir investigados no âmbito de seus procedimentos administrativos investigatórios e sancionadores, poder decorrente do poder de polícia administrativo conferido à autarquia.",
+      "pagina": 5,
+      "trecho_fonte": "o art. 9º da Lei nº 6.385/1976 autoriza a CVM a tomar depoimentos e ouvir investigados no âmbito de seus procedimentos administrativos investigatórios e sancionadores, sendo tal poder decorrente do poder de polícia administrativo conferido à autarquia",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o art. 9º outorga à CVM poderes para intimar pessoas para prestar informações ou esclarecimentos, sob pena de sanções (inciso II), e, no inciso V, o poder de instaurar e conduzir processo administrativo sancionador (PAS).",
+      "pagina": 5,
+      "trecho_fonte": "intimar pessoas para prestar informações ou esclarecimentos, sob pena de sanções (inciso II). E, no seu inciso V, a lei atribui-lhe o poder de instaurar e conduzir processo administrativo sancionador (PAS)",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o cerne da questão consiste em definir se à CVM são conferidos poderes para colheita de depoimento, posto que o caso transcende a apuração de infrações administrativas.",
+      "pagina": 7,
+      "trecho_fonte": "No caso, o cerne da questão consiste em definir se à CVM são conferidos poderes para colheita de depoimento, posto que o caso em tela transcende a apuração de infrações administrativas.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, como apontado pela própria autarquia, há fortes indícios de crimes contra o sistema financeiro nacional e que o depoimento que se busca obter é de investigado nos procedimentos investigatórios no âmbito da Operação “Compliance Zero”.",
+      "pagina": 7,
+      "trecho_fonte": "Como já apontado pela própria autarquia, há fortes indícios de crimes contra sistema financeiro nacional e o depoimento que se busca obter é de investigado nos autos dos procedimentos investigatórios no âmbito da Operação “Compliance Zero”.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ser necessário observar os princípios constitucionais do devido processo legal, do contraditório e da ampla defesa (art. 5º, incisos LIV e LV, CF/88), haja vista a condição de investigado de DANIEL VORCARO.",
+      "pagina": 7,
+      "trecho_fonte": "é necessário observar os princípios constitucionais do devido processo legal, do contraditório e da ampla defesa (art. 5º, incisos LIV e LV, CF/88), haja vista a condição de investigado de DANIEL VORCARO",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "DANIEL VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a CVM é parte legítima para requerer ao Juízo responsável pela supervisão judicial das investigações criminais autorização para a coleta de depoimento do investigado custodiado preventivamente.",
+      "pagina": 7,
+      "trecho_fonte": "a CVM é parte legítima para requerer ao Juízo responsável pela supervisão judicial das investigações criminais em andamento autorização para a coleta de depoimento do investigado custodiado preventivamente, por determinação judicial",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O investigado encontra-se custodiado preventivamente, por determinação judicial, no âmbito da Operação “Compliance Zero”.",
+      "pagina": 7,
+      "trecho_fonte": "Inexiste, in casu, qualquer óbice jurídico à realização de interrogatório ou oitiva do investigado preso cautelarmente no âmbito da Operação “Compliance Zero”.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma inexistir qualquer óbice jurídico à realização de interrogatório ou oitiva do investigado preso cautelarmente no âmbito da Operação “Compliance Zero”.",
+      "pagina": 7,
+      "trecho_fonte": "Inexiste, in casu, qualquer óbice jurídico à realização de interrogatório ou oitiva do investigado preso cautelarmente no âmbito da Operação “Compliance Zero”.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ser inafastável a garantia constitucional do investigado contra a autoincriminação (art. 5º, LXIII, da Constituição da República), uma vez que o teor do depoimento poderá ser encaminhado ao Ministério Público caso surjam evidências de caráter criminal.",
+      "pagina": 8,
+      "trecho_fonte": "constitucional de qualquer investigado contra a autoincriminação, direito fundamental expressamente consagrado no art. 5º, LXIII, da Constituição da República, uma vez que o teor do depoimento poderá ser encaminhado ao Ministério Público, caso surjam evidências de caráter criminal.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministério Público", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que devem ser resguardadas as limitações constitucionais de não se compelir o investigado a produzir prova contra si mesmo, bem como o direito ao silêncio e a presença de advogado, se for de seu interesse, em qualquer ato investigatório.",
+      "pagina": 8,
+      "trecho_fonte": "devem ser resguardadas as limitações constitucionais inafastáveis de não se compelir o investigado a produzir prova contra si mesmo, bem como do seu direito ao silêncio e da presença de advogado, se for de seu interesse na esfera administrativa, em qualquer ato investigatório",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o depoimento pleiteado coaduna-se com os princípios da eficiência administrativa e da duração razoável do processo, e que, no processo administrativo sancionador, há que ser garantido ao investigado o contraditório.",
+      "pagina": 8,
+      "trecho_fonte": "o depoimento ora pleiteado coaduna-se com os princípios da eficiência administrativa e duração razoável do processo, além de que, no âmbito do processo administrativo sancionador, há que ser garantido ao investigado o contraditório",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator autorizou a oitiva do investigado no interior das dependências do estabelecimento prisional, em sala de segurança e privacidade, dispensando-se o deslocamento do depoente e respeitado o sigilo.",
+      "pagina": 8,
+      "trecho_fonte": "fica autorizada a oitiva do investigado no interior das dependências do estabelecimento prisional em sala de segurança e privacidade, dispensando-se o deslocamento do depoente, respeitado o sigilo",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão resguarda ao investigado o direito ao silêncio, total ou parcial, e o direito de ser assistido por seus defensores técnicos constituídos, com presença obrigatória durante todo o ato.",
+      "pagina": 8,
+      "trecho_fonte": "(i) o direito ao silêncio, de forma total ou parcial, nos termos do art. 5º, inciso LXIII, da CF/88 e do art. 186 do CPP; (ii) o direito de ser assistido por seus defensores técnicos constituídos, com presença obrigatória durante todo o ato",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão resguarda ao investigado o direito de não produzir prova contra si mesmo (nemo tenetur se detegere), nos termos do art. 8º, § 2º, alínea g, da Convenção Americana sobre Direitos Humanos.",
+      "pagina": 8,
+      "trecho_fonte": "(iii) o direito de não produzir prova contra si mesmo (nemo tenetur se detegere) (art. 8º, § 2º, alínea g, da Convenção Americana sobre Direitos Humanos)",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pedido formulado pela CVM.",
+      "pagina": 8,
+      "trecho_fonte": "Ante o exposto, defiro o pedido formulado pela CVM para",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão autoriza a realização de oitiva do investigado DANIEL BUENO VORCARO, presencialmente ou por videoconferência, no bojo dos Inquéritos Administrativos nº 19957.005195/2025-70, 19957.010013/2025-82 e 19957.012897/2025-18, em curso perante a CVM.",
+      "pagina": 9,
+      "trecho_fonte": "(i) autorizar a realização de oitiva do investigado, presencialmente ou por meio de vídeo conferência, DANIEL BUENO VORCARO, no bojo dos Inquéritos Administrativos nº 19957.005195/2025-70, 19957.010013/2025-82 e 19957.012897/2025-18, todos em curso perante a CVM",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DANIEL BUENO VORCARO", "tipo": "pessoa"},
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina que a oitiva se realize em data e horário fixados consensualmente entre a CVM e a administração da unidade prisional, com ciência da defesa técnica do investigado, preferencialmente nos meses de agosto ou setembro de 2026.",
+      "pagina": 9,
+      "trecho_fonte": "que deverá se realizar em data e horário a serem fixados consensualmente, a partir de tratativa previamente estabelecidas entre a CVM e a administração da unidade prisional, com ciência da defesa técnica do investigado, preferencialmente nos meses de agosto ou setembro de 2026",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina que, na hipótese de depoimento presencial, o ato seja realizado nas dependências do estabelecimento prisional em que se encontra o investigado, em sala reservada, com garantia de sigilo das declarações, dispensando-se o deslocamento do depoente.",
+      "pagina": 9,
+      "trecho_fonte": "(ii) determinar, na hipótese de opção ser pelo depoimento presencial, que o ato seja realizado nas dependências do estabelecimento prisional em que se encontra o investigado, em sala reservada, com garantia de sigilo das declarações, dispensando-se o deslocamento do depoente",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina a prévia intimação da defesa técnica do investigado da data designada, em observância ao art. 7º, incisos XIV e XXI, da Lei nº 8.906/1994 (Estatuto da OAB).",
+      "pagina": 9,
+      "trecho_fonte": "(iii) determinar a prévia intimação da defesa técnica do investigado da data designada, em observância ao art. 7º, incisos XIV e XXI, da Lei nº 8.906/1994 (Estatuto da OAB)",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina à Secretaria do Tribunal que expeça ofício ao estabelecimento em que está custodiado o investigado DANIEL VORCARO, comunicando a necessidade de realização do ato e requerendo a cooperação da administração prisional.",
+      "pagina": 9,
+      "trecho_fonte": "(iv) determinar à Secretaria deste Tribunal que expeça ofício ao estabelecimento em que está custodiado o investigado DANIEL VORCARO, comunicando a necessidade de realização do ato e requerendo a cooperação da administração prisional",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "DANIEL VORCARO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão assegura ao investigado, em qualquer hipótese, o direito ao silêncio (total ou parcial), à não autoincriminação e ao pleno exercício da autodefesa.",
+      "pagina": 10,
+      "trecho_fonte": "direito ao silêncio (total ou parcial), à não autoincriminação e ao pleno exercício da autodefesa",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina que o depoimento seja realizado em sala reservada, disponibilizada pela administração da unidade prisional, com garantia de sigilo das declarações prestadas.",
+      "pagina": 10,
+      "trecho_fonte": "O depoimento deverá ser realizado em sala reservada, a ser disponibilizada pela administração da unidade prisional, com garantia de sigilo das declarações prestadas",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina que o dia e horário do depoimento sejam ajustados diretamente entre a CVM e o estabelecimento em que o preso se encontra custodiado, com ciência da defesa técnica do investigado.",
+      "pagina": 10,
+      "trecho_fonte": "O dia e horário do depoimento serão ajustados diretamente entre a CVM e o estabelecimento em que o preso se encontra custodiado, com ciência da defesa técnica do investigado.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "CVM", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determina que a divulgação do teor da oitiva somente poderá ocorrer nos limites e na forma estabelecidos mediante autorização do relator.",
+      "pagina": 10,
+      "trecho_fonte": "A divulgação do teor da oitiva somente poderá ocorrer nos limites e na forma estabelecidos mediante autorização deste relator",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que o sigilo se impõe com redobrada intensidade, dada a magnitude e a delicadeza das investigações em curso.",
+      "pagina": 10,
+      "trecho_fonte": "cujo sigilo se impõe com redobrada intensidade, dada a magnitude e a delicadeza das investigações em curso",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação da parte requerente, das defesas constituídas, da Polícia Federal e do local de custódia do investigado, com remessa de cópia integral da decisão, para as providências necessárias ao depoimento perante a Comissão de Valores Mobiliários.",
+      "pagina": 10,
+      "trecho_fonte": "Intime-se a parte requerente, com remessa de cópia integral desta decisão, as defesas constituídas, a Polícia Federal e o local de custódia em que o investigado se encontra custodiado, para que sejam adotadas as providências necessárias ao depoimento do investigado",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Comissão de Valores Mobiliários", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumpridas as determinações, seja aberta vista à Procuradoria-Geral da República.",
+      "pagina": 10,
+      "trecho_fonte": "Cumpridas as determinações acima, abra-se vista à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 24 de julho de 2026, pelo Ministro ANDRÉ MENDONÇA.",
+      "pagina": 10,
+      "trecho_fonte": "Brasília, 24 de julho de 2026. Ministro ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}
