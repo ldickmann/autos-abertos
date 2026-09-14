@@ -27,7 +27,7 @@ export function Termo({ verbete, children }: { verbete: Verbete | null; children
         <span id={id} role="note" className="nota-termo folha">
           <span className="block font-semibold">{verbete.termo}</span>
           <span className="leitura block">{verbete.explicacao}</span>
-          <Link className="mt-1 block text-xs underline" href="/glossario">glossário completo</Link>
+          <span className="mt-1 block text-xs text-neutral-600">{verbete.fonte === "portal" ? "explicação literal do portal do STF" : <>glossário editorial — <Link className="underline" href="/glossario">ver todos os termos</Link></>}</span>
         </span>
       )}
     </span>

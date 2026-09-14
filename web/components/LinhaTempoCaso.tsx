@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { Termo } from "@/components/Termo";
 import { useTelaLarga } from "@/lib/useTelaLarga";
-import type { LinhaTempo } from "@/lib/tipos";
+import type { LinhaTempo, Verbete } from "@/lib/tipos";
 import { formatarData } from "@/lib/tipos";
 
 /* Todos os andamentos de todos os processos do caso, num fio só. A categoria é curadoria (rótulo derivado do tipo);
    o tipo literal do portal fica sempre visível. */
-export function LinhaTempoCaso({ dados, processos }: { dados: LinhaTempo; processos: { incidente: number; rotulo: string }[] }) {
+export function LinhaTempoCaso({ dados, processos, verbetes }: { dados: LinhaTempo; processos: { incidente: number; rotulo: string }[]; verbetes: Record<string, Verbete | null> }) {
   const [categorias, setCategorias] = useState<Set<string>>(() => new Set(["decisao", "julgamento", "recurso"]));
   const [procs, setProcs] = useState<Set<number>>(() => new Set(processos.map((p) => p.incidente)));
   const [de, setDe] = useState("");
@@ -80,7 +81,7 @@ export function LinhaTempoCaso({ dados, processos }: { dados: LinhaTempo; proces
                 <li key={e.andamento_id} className="folha border border-neutral-300 bg-white p-3">
                   <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm">
                     <Link className="rounded-sm bg-neutral-900 px-1.5 py-px text-xs font-semibold text-neutral-50" href={`/processo/${e.incidente}#andamento-${e.andamento_id}`}>{e.processo}</Link>
-                    <span className="font-semibold">{e.tipo}</span>
+                    <Termo verbete={verbetes[e.tipo] ?? null}><span className="font-semibold">{e.tipo}</span></Termo>
                     {e.e_decisao && <span className="rounded-sm bg-blue-800 px-1.5 py-px text-xs font-medium text-white">decisão</span>}
                     {e.e_pauta && <span className="rounded-sm bg-neutral-700 px-1.5 py-px text-xs font-medium text-white">pauta</span>}
                     <span className="text-xs text-neutral-600">{dados.categorias.find((c) => c.id === e.categoria)?.rotulo}</span>

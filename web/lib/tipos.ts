@@ -41,7 +41,7 @@ export type Decisao = {
 
 export type Decisoes = { rotulos_resultado: Record<string, string>; itens: Decisao[] };
 
-export type Verbete = { termo: string; formas: string[]; explicacao: string; mais?: string };
+export type Verbete = { termo: string; formas: string[]; explicacao: string; mais?: string; fonte?: "portal" | "glossario"; contexto?: string };
 
 export type Referencias = {
   dispositivos: { dispositivo: string; artigo: string; diploma: string; ocorrencias: number;

@@ -33,6 +33,24 @@ export function verbeteDe(texto: string | null | undefined): Verbete | null {
   }
   return _indiceGlossario.get(normalizarTermo(texto)) ?? null;
 }
+/** Um verbete por tipo de andamento: a explicação literal do portal quando existe (fonte "portal"), senão o glossário. */
+export function verbetesParaTipos(tipos: Iterable<string>, explicacoesPortal: Record<string, string | null>): Record<string, Verbete | null> {
+  const out: Record<string, Verbete | null> = {};
+  for (const t of tipos) {
+    const portal = explicacoesPortal[t];
+    if (portal) out[t] = { termo: t, formas: [], explicacao: portal, fonte: "portal" };
+    else { const v = verbeteDe(t); out[t] = v ? { ...v, fonte: "glossario" } : null; }
+  }
+  return out;
+}
+
+/** Explicações literais do portal para todos os tipos de andamento, juntando todos os processos coletados. */
+export function explicacoesPortalTodas(): Record<string, string | null> {
+  const out: Record<string, string | null> = {};
+  for (const inc of listarIncidentesColetados()) for (const [k, v] of Object.entries(getProcesso(inc).explicacoes_portal)) if (v && !out[k]) out[k] = v;
+  return out;
+}
+
 function normalizarTermo(s: string): string {
   return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
 }
