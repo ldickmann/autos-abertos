@@ -52,14 +52,14 @@ export function Busca({ processos }: { processos: { incidente: number; rotulo: s
 
   return (
     <div>
-      <form className="flex flex-wrap items-end gap-3 rounded border border-neutral-300 bg-white p-3 text-sm" onSubmit={(e) => e.preventDefault()} role="search">
-        <label className="flex grow flex-col"><span className="font-medium">Termos</span>
-          <input type="search" className="mt-1 rounded border border-neutral-400 px-2 py-1" value={q} onChange={(e) => setQ(e.target.value)} placeholder="ex.: prisão preventiva, SISBAJUD, agravo" autoFocus /></label>
+      <form className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:items-end rounded border border-neutral-300 bg-white p-3 text-sm" onSubmit={(e) => e.preventDefault()} role="search">
+        <label className="col-span-2 flex grow flex-col"><span className="font-medium">Termos</span>
+          <input type="search" className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={q} onChange={(e) => setQ(e.target.value)} placeholder="ex.: prisão preventiva, SISBAJUD, agravo" autoFocus /></label>
         <label className="flex flex-col"><span className="font-medium">Onde</span>
-          <select className="mt-1 rounded border border-neutral-400 px-2 py-1" value={tipo} onChange={(e) => setTipo(e.target.value)}><option value="">andamentos e documentos</option><option value="andamento">só andamentos</option><option value="documento">só documentos</option></select></label>
+          <select className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={tipo} onChange={(e) => setTipo(e.target.value)}><option value="">andamentos e documentos</option><option value="andamento">só andamentos</option><option value="documento">só documentos</option></select></label>
         <label className="flex flex-col"><span className="font-medium">Processo</span>
-          <select className="mt-1 rounded border border-neutral-400 px-2 py-1" value={inc} onChange={(e) => setInc(e.target.value)}><option value="">todos</option>{processos.map((p) => <option key={p.incidente} value={String(p.incidente)}>{p.rotulo}</option>)}</select></label>
-        <p role="status" className="text-neutral-700">{!indice ? (erro ? `erro ao carregar o índice: ${erro}` : "carregando índice…") : q.trim().length < 2 ? "digite ao menos 2 caracteres" : `${resultados.length} resultado(s)`}</p>
+          <select className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={inc} onChange={(e) => setInc(e.target.value)}><option value="">todos</option>{processos.map((p) => <option key={p.incidente} value={String(p.incidente)}>{p.rotulo}</option>)}</select></label>
+        <p role="status" className="col-span-2 text-neutral-700">{!indice ? (erro ? `erro ao carregar o índice: ${erro}` : "carregando índice…") : q.trim().length < 2 ? "digite ao menos 2 caracteres" : `${resultados.length} resultado(s)`}</p>
       </form>
       <ol className="mt-3 space-y-2">
         {resultados.map(({ e }) => (

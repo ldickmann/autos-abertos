@@ -48,3 +48,18 @@ Ver [FASE0-RELATORIO.md, seção 2](FASE0-RELATORIO.md). Resumo: user-agent iden
 contato em toda requisição, uma requisição por vez, intervalo mínimo de 3 s, backoff em 429/5xx,
 sem descoberta automática, teto duro por execução. O `robots.txt` do portal desaconselha acesso
 automatizado a `/processos`; a exceção adotada e seus limites estão documentados no relatório.
+
+## Versionamento
+
+Duas branches permanentes e branches curtas por tarefa (adotado em 14/09/2026):
+
+- `main` — o que está publicado. Só recebe merge de `develop`; cada push republica o site no GitHub Pages.
+- `develop` — integração; branch padrão do repositório (PRs miram aqui).
+- `<tipo>/<assunto-curto>` — uma por tarefa, criada a partir de `develop` e mesclada de volta com
+  `--no-ff`. Tipos: `feat/` (funcionalidade), `fix/` (correção), `chore/` (dados, fila, manutenção),
+  `docs/` (relatórios e documentação), `refactor/`.
+
+Fluxo: `git switch -c feat/x develop` → commits → `git switch develop && git merge --no-ff feat/x`
+→ quando `develop` estiver pronta para publicar, `git switch main && git merge --no-ff develop && git push`.
+Mensagens de commit no imperativo, em português, com o escopo no início quando ajudar
+(`Fase 4: …`, `Interface: …`).

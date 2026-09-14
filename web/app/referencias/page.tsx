@@ -48,7 +48,7 @@ export default function PaginaReferencias() {
         <div className="mt-2 grid gap-3 md:grid-cols-2">
           <div className="folha border border-neutral-300 bg-white p-3 text-sm">
             <h3 className="font-semibold">Deste caso</h3>
-            <table className="mt-2 w-full border-collapse">
+            <div className="overflow-x-auto"><table className="mt-2 w-full border-collapse">
               <thead><tr className="border-b text-left"><th scope="col" className="py-1 pr-3">Processo</th><th scope="col" className="py-1 pr-3">Documentos</th><th scope="col" className="py-1 pr-3">Citado por</th></tr></thead>
               <tbody>{internos.map((p) => (
                 <tr key={`${p.classe}${p.numero}`} className="border-b border-neutral-100">
@@ -57,11 +57,11 @@ export default function PaginaReferencias() {
                   <td className="py-1 pr-3 text-xs">{p.citado_por.map((i) => rotulo.get(i) ?? i).join(", ")}</td>
                 </tr>
               ))}</tbody>
-            </table>
+            </table></div>
           </div>
           <div className="folha border border-neutral-300 bg-white p-3 text-sm">
             <h3 className="font-semibold">Externos <span className="font-normal text-neutral-600">(não coletados: HCs, precedentes, outros feitos)</span></h3>
-            <table className="mt-2 w-full border-collapse">
+            <div className="overflow-x-auto"><table className="mt-2 w-full border-collapse">
               <thead><tr className="border-b text-left"><th scope="col" className="py-1 pr-3">Processo</th><th scope="col" className="py-1 pr-3">Documentos</th><th scope="col" className="py-1 pr-3">Citado por</th></tr></thead>
               <tbody>{externos.map((p) => (
                 <tr key={`${p.classe}${p.numero}`} className="border-b border-neutral-100">
@@ -70,7 +70,7 @@ export default function PaginaReferencias() {
                   <td className="py-1 pr-3 text-xs">{p.citado_por.map((i) => rotulo.get(i) ?? i).join(", ")}</td>
                 </tr>
               ))}</tbody>
-            </table>
+            </table></div>
           </div>
         </div>
       </section>
