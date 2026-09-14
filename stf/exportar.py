@@ -17,6 +17,9 @@ from .linha_tempo import ORDEM, ROTULOS, categoria_de, linha_tempo_unificada
 from .referencias import resumo_dispositivos
 from .funcoes import ROTULOS as ROTULOS_FUNCAO, funcao_de
 from .decisoes import ROTULO_RESULTADO
+from .cronologia import cronologia
+from .externas import exportar_fontes, fontes_curadas
+from .saidas import csv_assercoes, csv_cronologia, csv_decisoes, feed_atom
 
 STATUS_PROCESSUAL = {
     "requerente": "requerente", "requerido": "requerido", "advogado": "advogado", "investigado": "investigado",
@@ -56,6 +59,9 @@ def _decisoes(con) -> list[dict]:
 def _escrever(path: Path, obj) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), "utf-8")
+
+
+SITE = "https://ldickmann.github.io/autos-abertos"
 
 
 def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
@@ -229,6 +235,18 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
                         "n_docs": r["n_docs"], "n_ocorrencias": r["n_oc"], "citado_por": json.loads(r["incidentes"])})
     _escrever(saida / "referencias.json", {"dispositivos": resumo_dispositivos(con), "processos_citados": citados})
     _escrever(saida / "decisoes.json", {"rotulos_resultado": ROTULO_RESULTADO, "itens": todas_decisoes})
+    cron = cronologia(con)
+    _escrever(saida / "cronologia.json", cron)
+    _escrever(saida / "fontes_externas.json", exportar_fontes(con, fontes_curadas()))
+    # saídas abertas: CSV para planilha e feed Atom para acompanhar
+    avisos = json.loads((config.RAIZ / "stf" / "curadoria" / "avisos.json").read_text("utf-8"))["avisos"]
+    mud_path = saida / "mudancas.json"
+    mudancas = json.loads(mud_path.read_text("utf-8")) if mud_path.exists() else []
+    gerado_em = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    (saida / "decisoes.csv").write_text(csv_decisoes(todas_decisoes), "utf-8", newline="\n")
+    (saida / "assercoes.csv").write_text(csv_assercoes(todas_assercoes), "utf-8", newline="\n")
+    (saida / "cronologia.csv").write_text(csv_cronologia(cron["eventos"]), "utf-8", newline="\n")
+    (saida.parent / "feed.xml").write_text(feed_atom(SITE, avisos=avisos, mudancas=mudancas, gerado_em=gerado_em), "utf-8", newline="\n")
     _escrever(saida / "glossario.json", json.loads((config.RAIZ / "stf" / "curadoria" / "glossario.json").read_text("utf-8"))["verbetes"])
     _escrever(saida / "avisos.json", json.loads((config.RAIZ / "stf" / "curadoria" / "avisos.json").read_text("utf-8"))["avisos"])
     _escrever(saida / "cruzamentos.json", cruzamentos(con))

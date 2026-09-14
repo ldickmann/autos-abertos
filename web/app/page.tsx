@@ -94,7 +94,11 @@ export default function Home() {
       <section aria-labelledby="titulo-comecar">
         <h2 id="titulo-comecar" className="text-lg">Por onde começar</h2>
         <p className="text-sm text-neutral-700">Três perguntas que a base responde sem interpretar nada: cada resposta aponta para o documento ou o registro do portal de onde saiu.</p>
-        <div className="mt-3 grid gap-3 md:grid-cols-3">
+        <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+          <Link href="/cronologia" className="folha block border border-neutral-300 bg-white p-4 no-underline">
+            <span className="leitura block text-lg">O que aconteceu, e quando?</span>
+            <span className="mt-1 block text-sm text-neutral-700">Uma cronologia que junta o registro do portal, o que os documentos dizem (com data no próprio trecho) e as decisões.</span>
+          </Link>
           <Link href={`/processo/${cab.incidente}`} className="folha block border border-neutral-300 bg-white p-4 no-underline">
             <span className="leitura block text-lg">Do que trata o processo?</span>
             <span className="mt-1 block text-sm text-neutral-700">O assunto cadastrado pelo STF, quem é o relator e a linha do tempo de tudo o que aconteceu nos autos.</span>

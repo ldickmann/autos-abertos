@@ -344,6 +344,16 @@ CREATE TABLE IF NOT EXISTS decisao_item (
 );
 CREATE INDEX IF NOT EXISTS ix_decisao_item_doc ON decisao_item(documento_id, pagina);
 
+-- datas citadas no trecho literal de cada asserção (stf/datas.py): projeção determinística
+CREATE TABLE IF NOT EXISTS assercao_data (
+    assercao_id INTEGER NOT NULL REFERENCES assercao(id),
+    data        TEXT NOT NULL,     -- AAAA-MM-DD
+    literal     TEXT NOT NULL,     -- como aparece no trecho ("18/11/2025", "1º de junho de 2026")
+    n_datas     INTEGER NOT NULL,  -- quantas datas distintas o trecho tem; 1 = entra na cronologia
+    PRIMARY KEY (assercao_id, data)
+);
+CREATE INDEX IF NOT EXISTS ix_assercao_data_data ON assercao_data(data);
+
 CREATE TABLE IF NOT EXISTS assercao_entidade (
     assercao_id  INTEGER NOT NULL REFERENCES assercao(id),
     entidade_id  INTEGER NOT NULL REFERENCES entidade(id),
@@ -397,6 +407,20 @@ CREATE INDEX IF NOT EXISTS ix_andamento_tipo ON andamento(tipo);
 CREATE INDEX IF NOT EXISTS ix_peticao_inc ON peticao(incidente, numero);
 CREATE INDEX IF NOT EXISTS ix_andamento_documento_doc ON andamento_documento(documento_id);
 
+-- fontes externas oficiais (stf/externas.py): capturas append-only de páginas do Banco Central, Senado etc.
+CREATE TABLE IF NOT EXISTS fonte_externa_snapshot (
+    id           INTEGER PRIMARY KEY,
+    fonte_id     TEXT NOT NULL,
+    url          TEXT NOT NULL,
+    fetched_at   TEXT NOT NULL,
+    http_status  INTEGER,
+    sha256       TEXT,
+    bytes        INTEGER,
+    content_type TEXT,
+    raw_path     TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_fonte_externa_fonte ON fonte_externa_snapshot(fonte_id, id);
+
 CREATE VIRTUAL TABLE IF NOT EXISTS andamento_fts USING fts5(
     descricao, tipo,
     content='andamento', content_rowid='id',
@@ -408,7 +432,7 @@ END;
 """
 
 TABELAS_DERIVADAS = [
-    "decisao_item", "documento_ref_processo", "documento_ref_dispositivo", "andamento_peticao", "documento_ref_andamento",
+    "assercao_data", "decisao_item", "documento_ref_processo", "documento_ref_dispositivo", "andamento_peticao", "documento_ref_andamento",
     "assercao_entidade", "assercao", "extracao",
     "entidade_mencao", "entidade", "processo", "documento_fts", "documento_chunk", "documento_pagina",
     "voto", "lista_julgamento", "objeto_incidente",
