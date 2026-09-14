@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Autos Abertos: avisos e mudanças</title>
+  <id>https://ldickmann.github.io/autos-abertos/feed.xml</id>
+  <updated>2026-09-14T14:37:11+00:00</updated>
+  <link href="https://ldickmann.github.io/autos-abertos/"/>
+  <link rel="self" href="https://ldickmann.github.io/autos-abertos/feed.xml"/>
+  <entry>
+    <id>https://ldickmann.github.io/autos-abertos/#base-2026-09-14T14:37:11+00:00</id>
+    <title>Base atualizada em 2026-09-14 14:37 UTC</title>
+    <updated>2026-09-14T14:37:11+00:00</updated>
+    <link href="https://ldickmann.github.io/autos-abertos/"/>
+    <summary>Nova publicação dos dados do site.</summary>
+  </entry>
+  <entry>
+    <id>https://ldickmann.github.io/autos-abertos/mudancas/#2026-09-14T13:33+00:00</id>
+    <title>Portal do STF recoletado em 2026-09-14 13:33: nenhuma mudança</title>
+    <updated>2026-09-14T13:33+00:00</updated>
+    <link href="https://ldickmann.github.io/autos-abertos/mudancas/"/>
+    <summary>Sem mudanças.</summary>
+  </entry>
+  <entry>
+    <id>https://ldickmann.github.io/autos-abertos/#aviso-plenario-2026-09-15</id>
+    <title>Aviso: Sessão plenária extraordinária do STF (2026-09-15 10:00)</title>
+    <updated>2026-09-15T10:00:00-03:00</updated>
+    <link href="https://www.youtube.com/@STF_oficial/streams"/>
+    <summary>Na terça-feira, 15 de setembro, às 10h (horário de Brasília), o Plenário do STF se reúne em sessão pública para decidir se autoriza a abertura de investigação sobre o ministro Alexandre de Moraes, no contexto do caso Banco Master, o mesmo conjunto de processos desta base. A sessão é transmitida ao vivo pela TV Justiça, pela Rádio Justiça e pelo canal oficial do STF no YouTube.</summary>
+  </entry>
+</feed>

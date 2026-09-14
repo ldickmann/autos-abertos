@@ -23,6 +23,7 @@
   ingerir-extracao             lê data/extracao/respostas/<id>.json, valida e persiste (mesma validação da API)
   preparar-decisoes            entradas para pedidos/resultados por decisão (data/extracao/decisoes/entradas)
   ingerir-decisoes             lê data/extracao/decisoes/respostas/<id>.json, valida e persiste em decisao_item
+  capturar-externas            copia (com hash) as fontes oficiais externas de stf/curadoria/fontes_externas.json
   vigiar                       recoleta cada processo, compara com a cópia anterior e registra em CHANGELOG-PORTAL.md
   verificar                    recalcula o sha256 de cada blob local e compara com o registrado
 """
@@ -94,6 +95,8 @@ def cmd_reconstruir(args):
     print("entidades:", json.dumps(construir_entidades(con), ensure_ascii=False))
     print("referencias:", json.dumps(construir_referencias(con), ensure_ascii=False))
     print("profundidade:", atualizar_profundidade(con), "processos")
+    from .externas import reingerir_externas
+    print("fontes externas:", reingerir_externas(con), "capturas reingeridas do registro")
 
 
 def cmd_diff(args):
@@ -253,8 +256,12 @@ def cmd_preparar_extracao(args):
 def cmd_ingerir_extracao(args):
     from .semantica import ClienteArquivo, extrair_assercoes
     docs = [int(x) for x in args.documentos.split(",")] if args.documentos else None
+    from .datas import construir_datas
+    con = _con()
+    criar_schema(con)
     cliente = ClienteArquivo(config.DATA / "extracao" / "respostas", modelo=args.modelo)
-    print(json.dumps(extrair_assercoes(_con(), cliente, documentos=docs, log=print), ensure_ascii=False))
+    print(json.dumps(extrair_assercoes(con, cliente, documentos=docs, log=print), ensure_ascii=False))
+    print("datas:", json.dumps(construir_datas(con), ensure_ascii=False))
 
 
 def cmd_preparar_decisoes(args):
@@ -272,6 +279,13 @@ def cmd_ingerir_decisoes(args):
     criar_schema(con)
     cliente = ClienteArquivo(config.DATA / "extracao" / "decisoes" / "respostas", modelo=args.modelo)
     print(json.dumps(ingerir_decisoes(con, cliente, documentos=docs, log=print), ensure_ascii=False))
+
+
+def cmd_capturar_externas(args):
+    from .externas import REGISTRO, capturar_fontes, fontes_curadas
+    con = _con()
+    criar_schema(con)
+    print(json.dumps(capturar_fontes(con, fontes_curadas(), registro=REGISTRO), ensure_ascii=False))
 
 
 def cmd_vigiar(args):
@@ -350,6 +364,7 @@ def main(argv=None):
     p.add_argument("--dry-run", action="store_true"); p.add_argument("--modelo"); p.add_argument("--effort", default="high")
     p.set_defaults(f=cmd_extrair_assercoes)
     p = sub.add_parser("assercoes"); p.add_argument("--documento", type=int); p.set_defaults(f=cmd_assercoes)
+    p = sub.add_parser("capturar-externas"); p.set_defaults(f=cmd_capturar_externas)
     p = sub.add_parser("vigiar"); p.add_argument("--incidentes"); p.set_defaults(f=cmd_vigiar)
     p = sub.add_parser("verificar"); p.set_defaults(f=cmd_verificar)
     p = sub.add_parser("mapa"); p.add_argument("--semente", type=int, default=7514886); p.set_defaults(f=cmd_mapa)

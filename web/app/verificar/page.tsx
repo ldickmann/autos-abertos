@@ -66,6 +66,18 @@ export default function PaginaVerificar() {
       </section>
 
       <section className="folha border border-neutral-300 bg-white p-4">
+        <h2 className="text-lg">Baixar os dados e acompanhar</h2>
+        <p className="leitura mt-1 text-sm">Para planilha (CSV, UTF-8, ponto e vírgula; cada linha traz documento, página e trecho literal):</p>
+        <ul className="mt-2 flex flex-wrap gap-2 text-sm">
+          <li><a className="toque rounded border border-neutral-400 px-3 py-1 underline hover:bg-neutral-100" href="data/decisoes.csv">decisoes.csv</a></li>
+          <li><a className="toque rounded border border-neutral-400 px-3 py-1 underline hover:bg-neutral-100" href="data/assercoes.csv">assercoes.csv</a></li>
+          <li><a className="toque rounded border border-neutral-400 px-3 py-1 underline hover:bg-neutral-100" href="data/cronologia.csv">cronologia.csv</a></li>
+          <li><a className="toque rounded border border-neutral-400 px-3 py-1 underline hover:bg-neutral-100" href="https://github.com/ldickmann/autos-abertos/releases" rel="noreferrer">pacote completo (release)</a></li>
+        </ul>
+        <p className="mt-2 text-sm text-neutral-700">Para receber avisos e as rodadas de vigilância do portal num leitor de feeds: <a className="underline" href="feed.xml">feed.xml</a> (Atom).</p>
+      </section>
+
+      <section className="folha border border-neutral-300 bg-white p-4">
         <h2 className="text-lg">4. Refazendo tudo do zero</h2>
         <p className="leitura mt-1 text-sm">
           O código é aberto. Qualquer pessoa pode coletar de novo o mesmo processo no portal do STF, reconstruir a base e comparar os hashes com os

@@ -19,6 +19,11 @@ Ordem de execução decidida em 14/09/2026. Cada item vira commit próprio; o si
 | 19 | Avisos de acontecimentos públicos | **feito (14/09)**: `stf/curadoria/avisos.json` → faixa no topo de todas as páginas + cartão na capa, com contagem regressiva, "ao vivo agora" e link para o canal oficial do STF no YouTube; some depois de `ate`. Primeiro aviso: sessão plenária extraordinária de 15/09/2026, 10h | ao terminar a sessão, registrar o resultado como aviso encerrado e, quando o STF publicar a ata/decisão, coletar e ligar aos processos |
 | 20 | Responsividade e testes no DevTools | **feito (14/09)**: varredura de estouro horizontal em 15 páginas a 375 px (só /decisoes estourava: select com opção longa, corrigido + regra global para campos); Lighthouse mobile: início 100/100/100, processo 97→ alvos de toque, decisões 97 → alvos de toque, documento 93 → `<dl>` inválida e links pequenos; todos corrigidos | repetir a varredura a cada release |
 
+| 21 | Cronologia: o que aconteceu, quando e segundo quem | **feito (14/09)**: `stf/datas.py` extrai por regra a data escrita no trecho literal de cada asserção (334 com data única, 10 de jurisprudência), junta com decisões datadas e registros do portal em `/cronologia` (filtros por origem, tipo epistêmico, processo, período, busca) | quando a extração de asserções for refeita, as datas se refazem sozinhas |
+| 22 | Fontes oficiais fora do STF | **feito (14/09)**: `stf/curadoria/fontes_externas.json` (Banco Central: registro da liquidação, dados abertos, ata do Comef; Senado: CPI, TD 363, CAE), `python -m stf capturar-externas` com hash e histórico append-only (`data/raw/externas.jsonl`), página `/fontes-externas` | a página do regime de liquidação do BC respondeu 500 na 1ª captura: repetir; ampliar a lista (TCU, CVM, DOU) conforme aparecerem nos documentos |
+| 23 | Saídas abertas | **feito (14/09)**: `decisoes.csv`, `assercoes.csv`, `cronologia.csv` (UTF-8 com BOM, `;`) e `feed.xml` (Atom com avisos e rodadas de vigilância), links em `/verificar` | — |
+| 24 | Entidade: quem diz o quê | **feito (14/09)**: página da entidade agrupa as asserções por natureza (fato / alegação por quem alega / fundamento por julgador), com trecho | — |
+
 ## Restrições que valem para todos os itens
 
 - Proveniência obrigatória; tipagem epistêmica; append-only; coleta educada; sem inferência sobre pessoas (ver `README.md`).

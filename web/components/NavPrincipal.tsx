@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const NAV = [
   { href: "/", rotulo: "Início" },
   { href: "/decisoes", rotulo: "Decisões" },
+  { href: "/cronologia", rotulo: "Cronologia" },
   { href: "/linha-do-tempo", rotulo: "Linha do tempo" },
   { href: "/busca", rotulo: "Busca" },
   { href: "/assercoes", rotulo: "Asserções" },
@@ -14,6 +15,7 @@ const NAV = [
   { href: "/glossario", rotulo: "Glossário" },
   { href: "/verificar", rotulo: "Verificar" },
   { href: "/mudancas", rotulo: "O que mudou" },
+  { href: "/fontes-externas", rotulo: "Fontes oficiais" },
   { href: "/sobre", rotulo: "Método" },
 ];
 
