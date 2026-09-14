@@ -1,0 +1,55 @@
+{
+  "itens": [
+    {
+      "pedido": "determinação à direção da Penitenciária Federal de Brasília para permitir visitas de seus advogados regularmente constituídos, independentemente de agendamento, sem monitoramento ou gravação por áudio e/ou vídeo (Petição nº 26370/2026, e-Doc. 105)",
+      "quem_pediu": "Daniel Bueno Vorcaro",
+      "resultado": "deferido",
+      "decisao": "acolheu o pedido e determinou à direção da Penitenciária Federal de Brasília que permita visitas dos advogados regularmente constituídos nos autos, independentemente de agendamento, sem qualquer tipo de monitoramento ou gravação por áudio e/ou vídeo",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-09",
+      "pagina": 3,
+      "trecho_fonte": "acolhendo o pedido formulado pela defesa, determino à direção da Penitenciária Federal de Brasília que permita a realização de visitas dos advogados regularmente constituídos nos autos, independentemente de agendamento, sem a realização de qualquer tipo de monitoramento ou gravação",
+      "condicoes": [
+        "fica assegurada à administração do estabelecimento prisional a possibilidade de adotar as medida de precaução necessárias para que a concretização das autorizações ora deferidas seja compatibilizada com a manutenção das condições necessárias à preservação da segurança integral do custodiado e do estabelecimento como um todo"
+      ]
+    },
+    {
+      "pedido": "ingresso de cópias impressas dos autos nas visitas dos advogados",
+      "quem_pediu": "Daniel Bueno Vorcaro",
+      "resultado": "deferido",
+      "decisao": "autorizou o ingresso de cópias impressas dos autos",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-09",
+      "pagina": 3,
+      "trecho_fonte": "7. Autorizo, ainda, o ingresso de cópias impressas dos autos e a",
+      "condicoes": [
+        "fica assegurada à administração do estabelecimento prisional a possibilidade de adotar as medida de precaução necessárias para que a concretização das autorizações ora deferidas seja compatibilizada com a manutenção das condições necessárias à preservação da segurança integral do custodiado e do estabelecimento como um todo"
+      ]
+    },
+    {
+      "pedido": "garantia do direito de os advogados tomarem notas escritas durante os encontros",
+      "quem_pediu": "Daniel Bueno Vorcaro",
+      "resultado": "deferido",
+      "decisao": "autorizou a possibilidade de os advogados tomarem notas escritas durante os encontros",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-09",
+      "pagina": 3,
+      "trecho_fonte": "7. Autorizo, ainda, o ingresso de cópias impressas dos autos e a",
+      "condicoes": [
+        "fica assegurada à administração do estabelecimento prisional a possibilidade de adotar as medida de precaução necessárias para que a concretização das autorizações ora deferidas seja compatibilizada com a manutenção das condições necessárias à preservação da segurança integral do custodiado e do estabelecimento como um todo"
+      ]
+    },
+    {
+      "pedido": "intimação e publicação da decisão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação e a publicação da decisão",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-09",
+      "pagina": 4,
+      "trecho_fonte": "Intime-se. Publique-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O pedido menciona visitas diárias; o dispositivo fala em visitas independentemente de agendamento."
+}

@@ -1,0 +1,59 @@
+{
+  "itens": [
+    {
+      "pedido": "concessão de salvo-conduto para afastar a obrigatoriedade de comparecimento de Ana Cláudia Queiroz de Paiva perante a CPMI do Crime Organizado, convertendo-o em ato facultativo (Petição nº 30123/2026)",
+      "quem_pediu": "Ana Cláudia Queiroz de Paiva (defesa da requerente)",
+      "resultado": "deferido",
+      "decisao": "deferiu o pleito para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo da requerente a decisão de comparecer ou não; a decisão serve como salvo-conduto",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-13",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pleito formulado por Ana Cláudia Queiroz de Paiva (Petição nª 30123/2026 - e-Doc. 162), para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade",
+      "condicoes": [
+        "comparecimento de caráter estritamente facultativo, dependente de anuência explícita e prévia a qualquer deslocamento",
+        "direito ao silêncio, de não responder a perguntas a ela direcionadas",
+        "direito à assistência por advogado durante o ato",
+        "direito de não ser submetida ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo",
+        "direito de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores"
+      ]
+    },
+    {
+      "pedido": "fixação das condições logísticas do transporte da requerente à sede do Senado Federal e do retorno ao local de custódia",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, com escolta, devendo a investigada retornar imediatamente ao local de origem após o ato",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-13",
+      "pagina": 6,
+      "trecho_fonte": "determino que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, com segurança e vigilância contínua policial por meio de escolta apropriada.",
+      "condicoes": [
+        "segurança e vigilância contínua policial por meio de escolta apropriada",
+        "retorno imediato ao local de origem após cumprido o ato, com as mesmas regras de segurança e de deslocamento",
+        "qualquer transferência condicionada à prévia manifestação expressa, formal e inequívoca quanto à opção positiva pelo comparecimento"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão à Presidência da CPMI-CRIME, às defesas constituídas e à Polícia Federal",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com urgência e remessa de cópia integral da decisão, à Presidência da CPMI-CRIME, às defesas constituídas e à Polícia Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-13",
+      "pagina": 6,
+      "trecho_fonte": "12. Assim, comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPMI-CRIME, as defesas constituídas e a Polícia Federal",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência à Procuradoria-Geral da República após o cumprimento das determinações",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se dê ciência à Procuradoria-Geral da República após cumpridas as determinações",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-13",
+      "pagina": 6,
+      "trecho_fonte": "15. Cumpridas as determinações acima, dê-se ciência à Procuradoria",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

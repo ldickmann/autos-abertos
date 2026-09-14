@@ -1,0 +1,38 @@
+{
+  "itens": [
+    {
+      "pedido": "instauração de PET sigilosa em apartado, vinculada ao INQ 5026, para apurar eventuais crimes de embaraço à investigação sobre organização criminosa, violação de sigilo funcional, corrupção ativa e passiva e lavagem de dinheiro, que teriam sido praticados, em tese, por DANIEL BUENO VORCARO, FABIANO CAMPOS ZETTEL, LUIZ PHILLIPI MACHADO DE MORAES MOURÃO e demais integrantes dos núcleos denominados \"A Turma\" e \"Os meninos\"",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "autorizou, nos termos do artigo 21, inciso XV, do Regimento Interno do Supremo Tribunal Federal, a instauração de procedimento investigatório vinculado ao INQ 5026 para apuração da hipótese criminal delineada pela autoridade policial",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-28",
+      "pagina": 2,
+      "trecho_fonte": "autorizo, nos termos do artigo 21, inciso XV, do Regimento Interno do Supremo Tribunal Federal, a instauração de procedimento investigatório vinculado ao INQ 5026 para apuração da hipótese criminal delineada pela autoridade policial.",
+      "condicoes": []
+    },
+    {
+      "pedido": "remessa dos autos à Polícia Federal para a realização das diligências investigativas",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a remessa à Polícia Federal para a realização das diligências investigativas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-28",
+      "pagina": 2,
+      "trecho_fonte": "4. Remeta-se à Polícia Federal para a realização das diligências investigativas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência à Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se cientifique a Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-28",
+      "pagina": 2,
+      "trecho_fonte": "5. Cientifique-se a Procuradoria-Geral da República.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

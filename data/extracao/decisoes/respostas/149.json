@@ -1,0 +1,38 @@
+{
+  "itens": [
+    {
+      "pedido": "instauração de procedimento autônomo perante o STF, na classe Inquérito (INQ), com traslado do apuratório oriundo da 8ª Vara Criminal Federal de São Paulo, para que nele tramite a investigação principal",
+      "quem_pediu": "Polícia Federal (autoridade policial, e-doc. 612)",
+      "resultado": "deferido",
+      "decisao": "determinou a instauração de procedimento investigatório apartado, autuado como Inquérito (INQ) autônomo, com traslado de toda a apuração oriunda da 8ª Vara Criminal Federal de São Paulo, passando a investigação principal a tramitar no novo procedimento",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-06-11",
+      "pagina": 5,
+      "trecho_fonte": "determino a instauração de procedimento investigatório apartado, autuado como INQUÉRITO (INQ) autônomo, para o qual deverá ser trasladado toda a apuração oriunda da 8ª Vara Criminal Federal de São Paulo, e que neste novo procedimento passe a tramitar a investigação principal",
+      "condicoes": []
+    },
+    {
+      "pedido": "manutenção da PET nº 15.198 em tramitação apartada, com escopo restrito ao processamento e acompanhamento das medidas cautelares em curso ou supervenientes",
+      "quem_pediu": "Polícia Federal (autoridade policial, e-doc. 612)",
+      "resultado": "deferido",
+      "decisao": "determinou que permaneça na PET nº 15.198, exclusivamente, o processamento e acompanhamento das medidas cautelares em curso e a tais relacionadas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-06-11",
+      "pagina": 5,
+      "trecho_fonte": "e permaneça nesta PET nº 15.198, exclusivamente, o processamento e acompanhamento das medidas cautelares em curso e a tais relacionadas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência ao Ministério Público Federal e vista à Polícia Federal após a nova autuação",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, procedida a nova autuação, seja cientificado o Ministério Público Federal e aberta vista à Polícia Federal para prosseguimento das diligências investigativas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-06-11",
+      "pagina": 5,
+      "trecho_fonte": "Procedida a nova autuação, cientifique-se o Ministério Público Federal, e abra-se vista à Polícia Federal para prosseguimento das",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "A decisão aprecia especificamente o item IV da manifestação da Polícia Federal (e-doc. 612); as demais matérias ali tratadas não são decididas neste documento."
+}

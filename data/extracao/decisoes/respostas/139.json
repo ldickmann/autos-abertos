@@ -1,0 +1,40 @@
+{
+  "itens": [
+    {
+      "pedido": "restituição do veículo I/Toyota Hilux SWSRXA4RD, placa SWJ7G45, apreendido nos autos",
+      "quem_pediu": "Komerco Consultoria Ltda",
+      "resultado": "outro",
+      "decisao": "não decidiu o pedido; considerou a matéria estranha aos limites do feito e determinou o desentranhamento da petição e dos documentos (e-Docs. 997 a 1003) para autuação em apartado, como PET autônoma",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-08-05",
+      "pagina": 5,
+      "trecho_fonte": "7. Ante o exposto, determino o desentranhamento da petição e dos documentos acostados sob os e-Docs. 997 a 1003 (Petição nº 87271/2026), para fins de autuação em apartado, como PET autônoma, à qual deverá ser apensada cópia reprográfica da presente decisão.",
+      "condicoes": [
+        "apensamento de cópia reprográfica da decisão à PET autônoma"
+      ]
+    },
+    {
+      "pedido": "nomeação da requerente como depositária fiel do veículo, em caráter subsidiário",
+      "quem_pediu": "Komerco Consultoria Ltda",
+      "resultado": "outro",
+      "decisao": "não decidiu o pedido; determinou o desentranhamento da petição para autuação em apartado, como PET autônoma",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-08-05",
+      "pagina": 5,
+      "trecho_fonte": "7. Ante o exposto, determino o desentranhamento da petição e dos documentos acostados sob os e-Docs. 997 a 1003 (Petição nº 87271/2026), para fins de autuação em apartado, como PET autônoma",
+      "condicoes": []
+    },
+    {
+      "pedido": "vista ao Ministério Público Federal sobre o pedido da petição, após a nova autuação",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, procedida a nova autuação, se abra vista ao Ministério Público Federal para manifestação específica e fundamentada sobre o pedido",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-08-05",
+      "pagina": 5,
+      "trecho_fonte": "8. Procedida a nova autuação, abra-se vista ao Ministério Público Federal, para que se manifeste, de forma específica e fundamentada, acerca do pedido objeto da referida da Petição.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O pedido de restituição do veículo e o pedido subsidiário não foram decididos no mérito; a decisão limita-se a determinar a autuação em apartado."
+}

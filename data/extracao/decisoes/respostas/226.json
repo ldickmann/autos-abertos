@@ -1,0 +1,54 @@
+{
+  "itens": [
+    {
+      "pedido": "que as providências aguardassem a manifestação do titular da ação penal, com nova vista dos autos à Procuradoria-Geral da República para manifestação, em prazo adequado, sobre as medidas cautelares decretadas",
+      "quem_pediu": "Procurador-Geral da República (eDOC 13)",
+      "resultado": "outro",
+      "decisao": "entendeu imprescindível facultar ao Procurador-Geral da República a oportunidade de manifestação em prazo adequado sobre as medidas cautelares decretadas, independentemente do referendo, admitida a possibilidade de reavaliação após a manifestação; consignou que a ocorrência não importa em nulidade",
+      "quem_decidiu": "Ministro Gilmar Mendes (voto vogal)",
+      "data": null,
+      "pagina": 20,
+      "trecho_fonte": "entendo ser imprescindível facultar ao Procurador-Geral da República a oportunidade de manifestação em prazo adequado sobre as medidas cautelares decretadas, independentemente do seu referendo.",
+      "condicoes": []
+    },
+    {
+      "pedido": "transferência e manutenção do investigado Daniel Bueno Vorcaro em penitenciária federal de segurança máxima",
+      "quem_pediu": "Polícia Federal (eDOC 78)",
+      "resultado": "outro",
+      "decisao": "consignou, em sua visão, não ter sido caracterizada nenhuma das hipóteses da Lei 11.671/2008 para manutenção do investigado Daniel Bueno Vorcaro em Penitenciária Federal de Segurança Máxima, o que resultaria na ilegalidade de sua manutenção nesse regime; registrou notícia de posterior determinação de transferência pelo relator",
+      "quem_decidiu": "Ministro Gilmar Mendes (voto vogal)",
+      "data": null,
+      "pagina": 22,
+      "trecho_fonte": "parece-me não ter sido devidamente caracterizada nenhuma das hipóteses da Lei 11.671/2008 para manutenção do investigado Daniel Bueno Vorcaro sob custódia em Penitenciária Federal de Segurança Máxima – o que, em minha visão, resulta na ilegalidade de sua manutenção em tal regime carcerário.",
+      "condicoes": []
+    },
+    {
+      "pedido": "substituição da prisão preventiva de Fabiano Campos Zettel por prisão domiciliar, por razões humanitárias",
+      "quem_pediu": "defesa de Fabiano Campos Zettel (eDOC 115)",
+      "resultado": "outro",
+      "decisao": "considerou que as particularidades do caso impõem, por ora, o referendo da medida cautelar; salientou que, finalizadas as diligências investigativas relativas ao investigado, deve ser reavaliada a possibilidade de substituição da prisão preventiva por domiciliar",
+      "quem_decidiu": "Ministro Gilmar Mendes (voto vogal)",
+      "data": null,
+      "pagina": 41,
+      "trecho_fonte": "considero que as particularidades do caso concreto impõem, por ora, o referendo da medida cautelar ante os indícios aludidos no tópico anterior de que demonstram a necessidade de segregação do investigado",
+      "condicoes": [
+        "tão logo finalizadas as diligências investigativas diretamente vinculadas ao aprofundamento das investigações no que tange ao investigado Fabiano Campos Zettel, deve ser reavaliada a possibilidade de substituição de sua prisão preventiva por domiciliar"
+      ]
+    },
+    {
+      "pedido": "referendo da decisão monocrática do relator que decretou medidas cautelares contra os investigados, em especial a prisão preventiva de Daniel Bueno Vorcaro, Fabiano Campos Zettel, Luiz Phillipi Machado de Moraes Mourão e Marilson Roseno da Silva",
+      "quem_pediu": null,
+      "resultado": "referendado",
+      "decisao": "referendou, por ora, a decisão proferida, por conveniência da instrução criminal e para assegurar a aplicação da lei penal, sem subscrever o fundamento da garantia da ordem pública, sem prejuízo de eventual reavaliação das medidas após manifestação da Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro Gilmar Mendes (voto vogal)",
+      "data": null,
+      "pagina": 42,
+      "trecho_fonte": "Com essas ressalvas e por esses fundamentos, referendo, por ora, a decisão proferida, sem prejuízo de eventual reavaliação das medidas, após a devida manifestação da Procuradoria-Geral da República.",
+      "condicoes": [
+        "sem prejuízo de eventual reavaliação das medidas, após a devida manifestação da Procuradoria-Geral da República",
+        "ressalvada a possibilidade de reavaliação após manifestação do titular da ação penal ou após ultimadas as providências investigativas referentes ao aprofundamento das investigações"
+      ]
+    }
+  ],
+  "observacoes": "Voto vogal em referendo; data da sessão não consta no dispositivo. Itens 1 a 3 registram posições do voto sem dispositivo próprio, classificadas como outro."
+}

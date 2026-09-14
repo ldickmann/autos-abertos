@@ -1,0 +1,18 @@
+# Decisões, pedaço 5: 14 documento(s), 121520 caracteres
+
+Para CADA documento abaixo: leia o arquivo de entrada inteiro e grave a resposta JSON no caminho indicado.
+
+- doc 27: Despacho (Pet 15556, 2 p., 2183 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\27.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\27.json`
+- doc 29: Despacho (Pet 15556, 3 p., 2602 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\29.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\29.json`
+- doc 42: Decisão monocrática (Pet 15556, 7 p., 10146 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\42.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\42.json`
+- doc 97: Decisão monocrática (Inq 5026, 6 p., 9577 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\97.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\97.json`
+- doc 103: Despacho (Inq 5026, 3 p., 3404 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\103.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\103.json`
+- doc 104: Decisão monocrática (Inq 5026, 6 p., 8876 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\104.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\104.json`
+- doc 105: Decisão monocrática (Inq 5026, 7 p., 11064 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\105.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\105.json`
+- doc 121: Despacho (Inq 5026, 1 p., 813 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\121.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\121.json`
+- doc 145: Despacho (Pet 15198, 5 p., 5016 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\145.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\145.json`
+- doc 146: Despacho (Pet 15198, 4 p., 4225 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\146.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\146.json`
+- doc 149: Despacho (Pet 15198, 6 p., 7103 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\149.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\149.json`
+- doc 159: Decisão monocrática (Pet 15198, 11 p., 17289 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\159.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\159.json`
+- doc 183: Decisão monocrática (Pet 15198, 20 p., 37500 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\183.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\183.json`
+- doc 207: Despacho (Pet 15504, 2 p., 1722 chars) — entrada `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\entradas\207.entrada.md` → resposta `C:\Users\ldick\developer\autos-abertos\data\extracao\decisoes\respostas\207.json`

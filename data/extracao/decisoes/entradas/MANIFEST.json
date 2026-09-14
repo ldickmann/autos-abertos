@@ -1,0 +1,735 @@
+{
+ "prompt_version": "decisao_v1-ede6c235a65e",
+ "modelo": "claude-code/claude-opus-5",
+ "documentos": [
+  {
+   "id": 4,
+   "titulo": "Despacho",
+   "processo": "Pet 15556",
+   "paginas": 2,
+   "chars": 1986,
+   "entrada": "4.entrada.md",
+   "resposta": "4.json"
+  },
+  {
+   "id": 6,
+   "titulo": "Despacho",
+   "processo": "Pet 15556",
+   "paginas": 2,
+   "chars": 1930,
+   "entrada": "6.entrada.md",
+   "resposta": "6.json"
+  },
+  {
+   "id": 10,
+   "titulo": "Despacho",
+   "processo": "Pet 15556",
+   "paginas": 2,
+   "chars": 2154,
+   "entrada": "10.entrada.md",
+   "resposta": "10.json"
+  },
+  {
+   "id": 11,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 6,
+   "chars": 9432,
+   "entrada": "11.entrada.md",
+   "resposta": "11.json"
+  },
+  {
+   "id": 12,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 5,
+   "chars": 6553,
+   "entrada": "12.entrada.md",
+   "resposta": "12.json"
+  },
+  {
+   "id": 13,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 11,
+   "chars": 17644,
+   "entrada": "13.entrada.md",
+   "resposta": "13.json"
+  },
+  {
+   "id": 15,
+   "titulo": "Despacho",
+   "processo": "Pet 15556",
+   "paginas": 5,
+   "chars": 6655,
+   "entrada": "15.entrada.md",
+   "resposta": "15.json"
+  },
+  {
+   "id": 17,
+   "titulo": "Despacho",
+   "processo": "Pet 15556",
+   "paginas": 3,
+   "chars": 2679,
+   "entrada": "17.entrada.md",
+   "resposta": "17.json"
+  },
+  {
+   "id": 21,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 7,
+   "chars": 11024,
+   "entrada": "21.entrada.md",
+   "resposta": "21.json"
+  },
+  {
+   "id": 22,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 6,
+   "chars": 8424,
+   "entrada": "22.entrada.md",
+   "resposta": "22.json"
+  },
+  {
+   "id": 23,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 5,
+   "chars": 7029,
+   "entrada": "23.entrada.md",
+   "resposta": "23.json"
+  },
+  {
+   "id": 25,
+   "titulo": "Inteiro teor do acórdão",
+   "processo": "Pet 15556",
+   "paginas": 6,
+   "chars": 9525,
+   "entrada": "25.entrada.md",
+   "resposta": "25.json"
+  },
+  {
+   "id": 27,
+   "titulo": "Despacho",
+   "processo": "Pet 15556",
+   "paginas": 2,
+   "chars": 2183,
+   "entrada": "27.entrada.md",
+   "resposta": "27.json"
+  },
+  {
+   "id": 29,
+   "titulo": "Despacho",
+   "processo": "Pet 15556",
+   "paginas": 3,
+   "chars": 2602,
+   "entrada": "29.entrada.md",
+   "resposta": "29.json"
+  },
+  {
+   "id": 31,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 6,
+   "chars": 9171,
+   "entrada": "31.entrada.md",
+   "resposta": "31.json"
+  },
+  {
+   "id": 34,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 3,
+   "chars": 3920,
+   "entrada": "34.entrada.md",
+   "resposta": "34.json"
+  },
+  {
+   "id": 37,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 6,
+   "chars": 9920,
+   "entrada": "37.entrada.md",
+   "resposta": "37.json"
+  },
+  {
+   "id": 39,
+   "titulo": "Decisão de Julgamento",
+   "processo": "Pet 15556",
+   "paginas": 1,
+   "chars": 513,
+   "entrada": "39.entrada.md",
+   "resposta": "39.json"
+  },
+  {
+   "id": 42,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 7,
+   "chars": 10146,
+   "entrada": "42.entrada.md",
+   "resposta": "42.json"
+  },
+  {
+   "id": 43,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 7,
+   "chars": 10502,
+   "entrada": "43.entrada.md",
+   "resposta": "43.json"
+  },
+  {
+   "id": 45,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 4,
+   "chars": 5390,
+   "entrada": "45.entrada.md",
+   "resposta": "45.json"
+  },
+  {
+   "id": 47,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 5,
+   "chars": 7737,
+   "entrada": "47.entrada.md",
+   "resposta": "47.json"
+  },
+  {
+   "id": 53,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 3,
+   "chars": 3664,
+   "entrada": "53.entrada.md",
+   "resposta": "53.json"
+  },
+  {
+   "id": 54,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 3,
+   "chars": 4773,
+   "entrada": "54.entrada.md",
+   "resposta": "54.json"
+  },
+  {
+   "id": 55,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15556",
+   "paginas": 48,
+   "chars": 91101,
+   "entrada": "55.entrada.md",
+   "resposta": "55.json"
+  },
+  {
+   "id": 63,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 3,
+   "chars": 2740,
+   "entrada": "63.entrada.md",
+   "resposta": "63.json"
+  },
+  {
+   "id": 64,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 3,
+   "chars": 2553,
+   "entrada": "64.entrada.md",
+   "resposta": "64.json"
+  },
+  {
+   "id": 65,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 4,
+   "chars": 4919,
+   "entrada": "65.entrada.md",
+   "resposta": "65.json"
+  },
+  {
+   "id": 68,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 3,
+   "chars": 2828,
+   "entrada": "68.entrada.md",
+   "resposta": "68.json"
+  },
+  {
+   "id": 70,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 5,
+   "chars": 7387,
+   "entrada": "70.entrada.md",
+   "resposta": "70.json"
+  },
+  {
+   "id": 72,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 4,
+   "chars": 4797,
+   "entrada": "72.entrada.md",
+   "resposta": "72.json"
+  },
+  {
+   "id": 75,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 6,
+   "chars": 7963,
+   "entrada": "75.entrada.md",
+   "resposta": "75.json"
+  },
+  {
+   "id": 77,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 3,
+   "chars": 3273,
+   "entrada": "77.entrada.md",
+   "resposta": "77.json"
+  },
+  {
+   "id": 78,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 2,
+   "chars": 2240,
+   "entrada": "78.entrada.md",
+   "resposta": "78.json"
+  },
+  {
+   "id": 85,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 2,
+   "chars": 2303,
+   "entrada": "85.entrada.md",
+   "resposta": "85.json"
+  },
+  {
+   "id": 93,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 3,
+   "chars": 2374,
+   "entrada": "93.entrada.md",
+   "resposta": "93.json"
+  },
+  {
+   "id": 94,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 7,
+   "chars": 10322,
+   "entrada": "94.entrada.md",
+   "resposta": "94.json"
+  },
+  {
+   "id": 95,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 17,
+   "chars": 32077,
+   "entrada": "95.entrada.md",
+   "resposta": "95.json"
+  },
+  {
+   "id": 97,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 6,
+   "chars": 9577,
+   "entrada": "97.entrada.md",
+   "resposta": "97.json"
+  },
+  {
+   "id": 98,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 4,
+   "chars": 4575,
+   "entrada": "98.entrada.md",
+   "resposta": "98.json"
+  },
+  {
+   "id": 103,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 3,
+   "chars": 3404,
+   "entrada": "103.entrada.md",
+   "resposta": "103.json"
+  },
+  {
+   "id": 104,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 6,
+   "chars": 8876,
+   "entrada": "104.entrada.md",
+   "resposta": "104.json"
+  },
+  {
+   "id": 105,
+   "titulo": "Decisão monocrática",
+   "processo": "Inq 5026",
+   "paginas": 7,
+   "chars": 11064,
+   "entrada": "105.entrada.md",
+   "resposta": "105.json"
+  },
+  {
+   "id": 121,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 1,
+   "chars": 813,
+   "entrada": "121.entrada.md",
+   "resposta": "121.json"
+  },
+  {
+   "id": 123,
+   "titulo": "Despacho",
+   "processo": "Inq 5026",
+   "paginas": 2,
+   "chars": 2325,
+   "entrada": "123.entrada.md",
+   "resposta": "123.json"
+  },
+  {
+   "id": 139,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 5,
+   "chars": 6385,
+   "entrada": "139.entrada.md",
+   "resposta": "139.json"
+  },
+  {
+   "id": 140,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 6,
+   "chars": 7233,
+   "entrada": "140.entrada.md",
+   "resposta": "140.json"
+  },
+  {
+   "id": 143,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 4,
+   "chars": 3849,
+   "entrada": "143.entrada.md",
+   "resposta": "143.json"
+  },
+  {
+   "id": 144,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 13,
+   "chars": 21767,
+   "entrada": "144.entrada.md",
+   "resposta": "144.json"
+  },
+  {
+   "id": 145,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 5,
+   "chars": 5016,
+   "entrada": "145.entrada.md",
+   "resposta": "145.json"
+  },
+  {
+   "id": 146,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 4,
+   "chars": 4225,
+   "entrada": "146.entrada.md",
+   "resposta": "146.json"
+  },
+  {
+   "id": 148,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 5,
+   "chars": 4811,
+   "entrada": "148.entrada.md",
+   "resposta": "148.json"
+  },
+  {
+   "id": 149,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 6,
+   "chars": 7103,
+   "entrada": "149.entrada.md",
+   "resposta": "149.json"
+  },
+  {
+   "id": 151,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 4,
+   "chars": 3894,
+   "entrada": "151.entrada.md",
+   "resposta": "151.json"
+  },
+  {
+   "id": 153,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 4,
+   "chars": 3906,
+   "entrada": "153.entrada.md",
+   "resposta": "153.json"
+  },
+  {
+   "id": 157,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 12,
+   "chars": 20641,
+   "entrada": "157.entrada.md",
+   "resposta": "157.json"
+  },
+  {
+   "id": 158,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 10,
+   "chars": 16356,
+   "entrada": "158.entrada.md",
+   "resposta": "158.json"
+  },
+  {
+   "id": 159,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 11,
+   "chars": 17289,
+   "entrada": "159.entrada.md",
+   "resposta": "159.json"
+  },
+  {
+   "id": 161,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 4,
+   "chars": 3823,
+   "entrada": "161.entrada.md",
+   "resposta": "161.json"
+  },
+  {
+   "id": 166,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 5,
+   "chars": 5921,
+   "entrada": "166.entrada.md",
+   "resposta": "166.json"
+  },
+  {
+   "id": 169,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 7,
+   "chars": 10049,
+   "entrada": "169.entrada.md",
+   "resposta": "169.json"
+  },
+  {
+   "id": 183,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 20,
+   "chars": 37500,
+   "entrada": "183.entrada.md",
+   "resposta": "183.json"
+  },
+  {
+   "id": 184,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 1,
+   "chars": 1253,
+   "entrada": "184.entrada.md",
+   "resposta": "184.json"
+  },
+  {
+   "id": 185,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 3,
+   "chars": 4529,
+   "entrada": "185.entrada.md",
+   "resposta": "185.json"
+  },
+  {
+   "id": 186,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 8,
+   "chars": 15423,
+   "entrada": "186.entrada.md",
+   "resposta": "186.json"
+  },
+  {
+   "id": 187,
+   "titulo": "Despacho",
+   "processo": "Pet 15198",
+   "paginas": 1,
+   "chars": 1709,
+   "entrada": "187.entrada.md",
+   "resposta": "187.json"
+  },
+  {
+   "id": 188,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15198",
+   "paginas": 6,
+   "chars": 9679,
+   "entrada": "188.entrada.md",
+   "resposta": "188.json"
+  },
+  {
+   "id": 194,
+   "titulo": "Despacho",
+   "processo": "Pet 15499",
+   "paginas": 2,
+   "chars": 1486,
+   "entrada": "194.entrada.md",
+   "resposta": "194.json"
+  },
+  {
+   "id": 197,
+   "titulo": "Despacho",
+   "processo": "Pet 15499",
+   "paginas": 2,
+   "chars": 2310,
+   "entrada": "197.entrada.md",
+   "resposta": "197.json"
+  },
+  {
+   "id": 199,
+   "titulo": "Despacho",
+   "processo": "Pet 15499",
+   "paginas": 2,
+   "chars": 1722,
+   "entrada": "199.entrada.md",
+   "resposta": "199.json"
+  },
+  {
+   "id": 203,
+   "titulo": "Despacho",
+   "processo": "Pet 15504",
+   "paginas": 2,
+   "chars": 1724,
+   "entrada": "203.entrada.md",
+   "resposta": "203.json"
+  },
+  {
+   "id": 205,
+   "titulo": "Despacho",
+   "processo": "Pet 15504",
+   "paginas": 2,
+   "chars": 1499,
+   "entrada": "205.entrada.md",
+   "resposta": "205.json"
+  },
+  {
+   "id": 207,
+   "titulo": "Despacho",
+   "processo": "Pet 15504",
+   "paginas": 2,
+   "chars": 1722,
+   "entrada": "207.entrada.md",
+   "resposta": "207.json"
+  },
+  {
+   "id": 211,
+   "titulo": "Despacho",
+   "processo": "Pet 15504",
+   "paginas": 2,
+   "chars": 2153,
+   "entrada": "211.entrada.md",
+   "resposta": "211.json"
+  },
+  {
+   "id": 214,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15612",
+   "paginas": 1,
+   "chars": 1411,
+   "entrada": "214.entrada.md",
+   "resposta": "214.json"
+  },
+  {
+   "id": 215,
+   "titulo": "Decisão monocrática",
+   "processo": "Pet 15612",
+   "paginas": 7,
+   "chars": 12453,
+   "entrada": "215.entrada.md",
+   "resposta": "215.json"
+  },
+  {
+   "id": 219,
+   "titulo": "Despacho",
+   "processo": "Rcl 88121",
+   "paginas": 1,
+   "chars": 1012,
+   "entrada": "219.entrada.md",
+   "resposta": "219.json"
+  },
+  {
+   "id": 220,
+   "titulo": "Decisão monocrática",
+   "processo": "Rcl 88121",
+   "paginas": 2,
+   "chars": 3367,
+   "entrada": "220.entrada.md",
+   "resposta": "220.json"
+  },
+  {
+   "id": 222,
+   "titulo": "Decisão monocrática",
+   "processo": "Rcl 88121",
+   "paginas": 24,
+   "chars": 48930,
+   "entrada": "222.entrada.md",
+   "resposta": "222.json"
+  },
+  {
+   "id": 224,
+   "titulo": "Voto",
+   "processo": "Pet 15556",
+   "paginas": 53,
+   "chars": 95811,
+   "entrada": "224.entrada.md",
+   "resposta": "224.json"
+  },
+  {
+   "id": 226,
+   "titulo": "Voto Vogal",
+   "processo": "Pet 15556",
+   "paginas": 42,
+   "chars": 88638,
+   "entrada": "226.entrada.md",
+   "resposta": "226.json"
+  }
+ ]
+}

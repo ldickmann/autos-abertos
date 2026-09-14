@@ -1,0 +1,38 @@
+{
+  "itens": [
+    {
+      "pedido": "agravo regimental contra a decisão que permitiu a realização de visitas a Daniel Bueno Vorcaro por advogados constituídos nos autos, independente de agendamento, sem monitoramento ou gravação (e-Doc. 123)",
+      "quem_pediu": "Procuradoria-Geral da República (e-Doc. 211, em ratificação à Petição nº 32458/2026, e-Doc. 207)",
+      "resultado": "prejudicado",
+      "decisao": "reconheceu a prejudicialidade do agravo regimental da Procuradoria-Geral da República, que, diante da perda do objeto recursal, requereu a desistência do recurso (e-Doc. 245)",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-31",
+      "pagina": 3,
+      "trecho_fonte": "Em razão de andamentos processuais posteriores, verifico que os pedidos em análise estão todos prejudicados.",
+      "condicoes": []
+    },
+    {
+      "pedido": "agravo regimental contra a decisão monocrática que decretou a prisão preventiva de Daniel Bueno Vorcaro (e-Doc. 16)",
+      "quem_pediu": "defesa de Daniel Bueno Vorcaro (e-Doc. 124)",
+      "resultado": "prejudicado",
+      "decisao": "declarou prejudicado o agravo regimental diante do ulterior julgamento do referendo da decisão cautelar pela Segunda Turma, na Sessão Virtual de 13/03/2026 a 20/03/2026 (e-Doc. 257)",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-31",
+      "pagina": 3,
+      "trecho_fonte": "Já o agravo interposto pela defesa de Daniel Bueno Vorcaro, assim como os pedidos deduzidos pela defesa de Fabiano Campos Zettel restaram prejudicados diante do ulterior julgamento do referendo da decisão cautelar, à unanimidade, pela Segunda Turma",
+      "condicoes": []
+    },
+    {
+      "pedido": "substituição da prisão de Fabiano Campos Zettel por medidas cautelares alternativas",
+      "quem_pediu": "defesa de Fabiano Campos Zettel (Petição nº 26678/2026, e-Doc. 115, reiterada pela Petição nº 31.630/2026, e-Doc. 188)",
+      "resultado": "prejudicado",
+      "decisao": "declarou prejudicado o pedido diante do ulterior julgamento do referendo da decisão cautelar pela Segunda Turma, na Sessão Virtual de 13/03/2026 a 20/03/2026 (e-Doc. 257)",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-31",
+      "pagina": 3,
+      "trecho_fonte": "Já o agravo interposto pela defesa de Daniel Bueno Vorcaro, assim como os pedidos deduzidos pela defesa de Fabiano Campos Zettel restaram prejudicados diante do ulterior julgamento do referendo da decisão cautelar, à unanimidade, pela Segunda Turma",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "Na página 3 o relator determinou ainda a intimação das defesas e ciência à Procuradoria-Geral da República."
+}

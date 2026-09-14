@@ -1,0 +1,272 @@
+{
+  "itens": [
+    {
+      "pedido": "dilação do prazo para que as providências aguardem a manifestação da Procuradoria-Geral da República sobre os pedidos cautelares",
+      "quem_pediu": "Procuradoria-Geral da República",
+      "resultado": "indeferido",
+      "decisao": "indeferiu o pedido de dilação formulado pela Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 3,
+      "trecho_fonte": "8. Sobre a petição da Procuradoria-Geral da República, antecipo, desde logo, que indefiro o pedido de dilação, remetendo a exposição dos motivos para tanto ao item decisório destinado à análise meritória dos pedidos formulados.",
+      "condicoes": []
+    },
+    {
+      "pedido": "prisão preventiva de Daniel Bueno Vorcaro",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "decretou a prisão preventiva de Daniel Bueno Vorcaro, com fundamento nos artigos 282, 311 e 312 do Código de Processo Penal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 40,
+      "trecho_fonte": "acolhendo o pedido da Polícia Federal, DECRETO A PRISÃO PREVENTIVA DOS INVESTIGADOS: (i) DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; (iv) MARILSON ROSENO DA SILVA.",
+      "condicoes": [
+        "apresentação para audiência de custódia em até 24h perante o Juízo Federal da Subseção Judiciária com competência sobre o território em que os investigados se encontrarem custodiados",
+        "cumprimento da prisão em estabelecimento compatível com a condição pessoal dos investigados, assegurando-lhes todas as garantias constitucionais",
+        "observância dos direitos constitucionais dos investigados e da Súmula Vinculante nº 11"
+      ]
+    },
+    {
+      "pedido": "prisão preventiva de Fabiano Campos Zettel",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "decretou a prisão preventiva de Fabiano Campos Zettel, com fundamento nos artigos 282, 311 e 312 do Código de Processo Penal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 40,
+      "trecho_fonte": "acolhendo o pedido da Polícia Federal, DECRETO A PRISÃO PREVENTIVA DOS INVESTIGADOS: (i) DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; (iv) MARILSON ROSENO DA SILVA.",
+      "condicoes": [
+        "apresentação para audiência de custódia em até 24h perante o Juízo Federal da Subseção Judiciária com competência sobre o território em que os investigados se encontrarem custodiados",
+        "cumprimento da prisão em estabelecimento compatível com a condição pessoal dos investigados, assegurando-lhes todas as garantias constitucionais",
+        "observância dos direitos constitucionais dos investigados e da Súmula Vinculante nº 11"
+      ]
+    },
+    {
+      "pedido": "prisão preventiva de Luiz Phillipi Machado de Moraes Mourão",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "decretou a prisão preventiva de Luiz Phillipi Machado de Moraes Mourão, com fundamento nos artigos 282, 311 e 312 do Código de Processo Penal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 40,
+      "trecho_fonte": "acolhendo o pedido da Polícia Federal, DECRETO A PRISÃO PREVENTIVA DOS INVESTIGADOS: (i) DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; (iv) MARILSON ROSENO DA SILVA.",
+      "condicoes": [
+        "apresentação para audiência de custódia em até 24h perante o Juízo Federal da Subseção Judiciária com competência sobre o território em que os investigados se encontrarem custodiados",
+        "cumprimento da prisão em estabelecimento compatível com a condição pessoal dos investigados, assegurando-lhes todas as garantias constitucionais",
+        "observância dos direitos constitucionais dos investigados e da Súmula Vinculante nº 11"
+      ]
+    },
+    {
+      "pedido": "prisão preventiva de Marilson Roseno da Silva",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "decretou a prisão preventiva de Marilson Roseno da Silva, com fundamento nos artigos 282, 311 e 312 do Código de Processo Penal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 40,
+      "trecho_fonte": "acolhendo o pedido da Polícia Federal, DECRETO A PRISÃO PREVENTIVA DOS INVESTIGADOS: (i) DANIEL BUENO VORCARO; (ii) FABIANO CAMPOS ZETTEL; (iii) LUIZ PHILLIPI MACHADO DE MORAES MOURÃO; (iv) MARILSON ROSENO DA SILVA.",
+      "condicoes": [
+        "apresentação para audiência de custódia em até 24h perante o Juízo Federal da Subseção Judiciária com competência sobre o território em que os investigados se encontrarem custodiados",
+        "cumprimento da prisão em estabelecimento compatível com a condição pessoal dos investigados, assegurando-lhes todas as garantias constitucionais",
+        "observância dos direitos constitucionais dos investigados e da Súmula Vinculante nº 11"
+      ]
+    },
+    {
+      "pedido": "medidas cautelares diversas da prisão em relação a Paulo Sérgio Neves de Souza, incluindo suspensão do exercício de função pública",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "decretou medidas cautelares diversas da prisão em relação a Paulo Sérgio Neves de Souza: proibição de contato com testemunhas e investigados, proibição de acesso às dependências do Banco Central, proibição de ausentar-se do município e do País com entrega do passaporte, suspensão do exercício de função pública e monitoração eletrônica",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 40,
+      "trecho_fonte": "107.1. Em relação ao investigado PAULO SÉRGIO NEVES DE SOUZA, DETERMINO a: (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP);",
+      "condicoes": [
+        "Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+        "Proibição de frequentar ou mesmo de acessar as dependências do Banco Central (art. 319, II, do CPP)",
+        "Proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP)",
+        "suspensão do exercício de função pública exercida junto ao Banco Central (art. 319, VI, do CPP)",
+        "monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP)",
+        "observância das regras e deveres da monitoração eletrônica enumerados no item 109 (i a xiv), inclusive proibição de acesso a sedes empresariais ou escritórios das empresas investigadas"
+      ]
+    },
+    {
+      "pedido": "medidas cautelares diversas da prisão em relação a Belline Santana, incluindo suspensão do exercício de função pública",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "decretou medidas cautelares diversas da prisão em relação a Belline Santana: proibição de contato com testemunhas e investigados, proibição de acesso às dependências do Banco Central, proibição de ausentar-se do município e do País com entrega do passaporte, suspensão do exercício de função pública e monitoração eletrônica",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 41,
+      "trecho_fonte": "107.2 Em relação ao investigado BELLINE SANTANA, DETERMINO a (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP);",
+      "condicoes": [
+        "Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+        "Proibição de frequentar ou mesmo de acessar as dependências do Banco Central (art. 319, II, do CPP)",
+        "Proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP)",
+        "suspensão do exercício de função pública exercida junto ao Banco Central (art. 319, VI, do CPP)",
+        "monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP)",
+        "observância das regras e deveres da monitoração eletrônica enumerados no item 109 (i a xiv), inclusive proibição de acesso a sedes empresariais ou escritórios das empresas investigadas"
+      ]
+    },
+    {
+      "pedido": "medidas cautelares diversas da prisão em relação a Leonardo Augusto Furtado Palhares",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "decretou medidas cautelares diversas da prisão em relação a Leonardo Augusto Furtado Palhares: proibição de contato com testemunhas e investigados, proibição de ausentar-se do município e do País com entrega do passaporte e monitoração eletrônica",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 41,
+      "trecho_fonte": "107.3 Em relação ao investigado LEONARDO AUGUSTO FURTADO PALHARES, DETERMINO a: (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP);",
+      "condicoes": [
+        "Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+        "Proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP)",
+        "monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP)",
+        "observância das regras e deveres da monitoração eletrônica enumerados no item 109 (i a xiv), inclusive proibição de acesso a sedes empresariais ou escritórios das empresas investigadas"
+      ]
+    },
+    {
+      "pedido": "medidas cautelares diversas da prisão em relação a Ana Claudia Queiroz de Paiva",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "decretou medidas cautelares diversas da prisão em relação a Ana Claudia Queiroz de Paiva: proibição de contato com testemunhas e investigados, proibição de ausentar-se do município e do País com entrega do passaporte e monitoração eletrônica",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 41,
+      "trecho_fonte": "107.4 Em relação à investigada ANA CLAUDIA QUEIROZ DE PAIVA, DETERMINO a: (i) Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na",
+      "condicoes": [
+        "Proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+        "Proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP)",
+        "monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP)",
+        "observância das regras e deveres da monitoração eletrônica enumerados no item 109 (i a xiv), inclusive proibição de acesso a sedes empresariais ou escritórios das empresas investigadas"
+      ]
+    },
+    {
+      "pedido": "suspensão das atividades de Varajo Consultoria Empresarial Sociedade Unipessoal Ltda",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "deferiu a suspensão, por tempo indeterminado, das atividades de Varajo Consultoria Empresarial Sociedade Unipessoal Ltda, com alicerce no art. 319, VI, do CPP",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 42,
+      "trecho_fonte": "108. DEFIRO, outrossim, com alicerce no art. 319, VI, do CPP, o pedido formulado pela Polícia Federal para suspensão, por tempo indeterminado, das atividades das seguintes sociedades empresárias listadas nas fls. 159-160 e 163 do e-Doc. 1:",
+      "condicoes": [
+        "expedição de ofícios às Juntas Comerciais e à Receita Federal do Brasil para informar do teor da decisão"
+      ]
+    },
+    {
+      "pedido": "suspensão das atividades de Moriah Asset Empreendimentos e Participações Ltda",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "deferiu a suspensão, por tempo indeterminado, das atividades de Moriah Asset Empreendimentos e Participações Ltda, com alicerce no art. 319, VI, do CPP",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 42,
+      "trecho_fonte": "108. DEFIRO, outrossim, com alicerce no art. 319, VI, do CPP, o pedido formulado pela Polícia Federal para suspensão, por tempo indeterminado, das atividades das seguintes sociedades empresárias listadas nas fls. 159-160 e 163 do e-Doc. 1:",
+      "condicoes": [
+        "expedição de ofícios às Juntas Comerciais e à Receita Federal do Brasil para informar do teor da decisão"
+      ]
+    },
+    {
+      "pedido": "suspensão das atividades de Super Empreendimentos e Participações S.A.",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "deferiu a suspensão, por tempo indeterminado, das atividades de Super Empreendimentos e Participações S.A., com alicerce no art. 319, VI, do CPP",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 42,
+      "trecho_fonte": "108. DEFIRO, outrossim, com alicerce no art. 319, VI, do CPP, o pedido formulado pela Polícia Federal para suspensão, por tempo indeterminado, das atividades das seguintes sociedades empresárias listadas nas fls. 159-160 e 163 do e-Doc. 1:",
+      "condicoes": [
+        "expedição de ofícios às Juntas Comerciais e à Receita Federal do Brasil para informar do teor da decisão"
+      ]
+    },
+    {
+      "pedido": "suspensão das atividades de King Participações Imobiliárias Ltda",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "deferiu a suspensão, por tempo indeterminado, das atividades de King Participações Imobiliárias Ltda, com alicerce no art. 319, VI, do CPP",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 42,
+      "trecho_fonte": "108. DEFIRO, outrossim, com alicerce no art. 319, VI, do CPP, o pedido formulado pela Polícia Federal para suspensão, por tempo indeterminado, das atividades das seguintes sociedades empresárias listadas nas fls. 159-160 e 163 do e-Doc. 1:",
+      "condicoes": [
+        "expedição de ofícios às Juntas Comerciais e à Receita Federal do Brasil para informar do teor da decisão"
+      ]
+    },
+    {
+      "pedido": "suspensão das atividades de King Motors Locação de Veículos e Participações Ltda",
+      "quem_pediu": "Polícia Federal",
+      "resultado": "deferido",
+      "decisao": "deferiu a suspensão, por tempo indeterminado, das atividades de King Motors Locação de Veículos e Participações Ltda, com alicerce no art. 319, VI, do CPP",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 42,
+      "trecho_fonte": "108. DEFIRO, outrossim, com alicerce no art. 319, VI, do CPP, o pedido formulado pela Polícia Federal para suspensão, por tempo indeterminado, das atividades das seguintes sociedades empresárias listadas nas fls. 159-160 e 163 do e-Doc. 1:",
+      "condicoes": [
+        "expedição de ofícios às Juntas Comerciais e à Receita Federal do Brasil para informar do teor da decisão"
+      ]
+    },
+    {
+      "pedido": "expedição de ofício à Polícia Penal e/ou Tribunal competentes pela monitoração eletrônica dos quatro investigados submetidos à medida",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a expedição urgente de ofício à Polícia Penal e/ou Tribunal competentes pela monitoração eletrônica, com cópia da decisão, que terá força de Mandado de Monitoração Eletrônica",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 44,
+      "trecho_fonte": "111. Expeça-se, COM URGÊNCIA, ofício à Polícia Penal e/ou Tribunal competentes pela monitoração eletrônica das localidades dos quatro investigados acima declinados com cópia desta decisão, que terá",
+      "condicoes": [
+        "relatórios de acompanhamento da monitoração eletrônica enviados mensalmente pelas centrais de monitoração à equipe da Polícia Federal em Brasília"
+      ]
+    },
+    {
+      "pedido": "expedição dos mandados de prisão e de ofícios às Juntas Comerciais, à Receita Federal do Brasil e ao Banco Central do Brasil, com encaminhamento à CINQ/CGRC/DICOR/PF",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a expedição urgente dos mandados, de ofícios às Juntas Comerciais e à Receita Federal do Brasil sobre a suspensão das atividades das cinco entidades, e de ofício ao Banco Central do Brasil com cópia da decisão",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 46,
+      "trecho_fonte": "117. Expeçam-se os competentes mandados, com urgência e observando-se o caráter estritamente sigiloso dos autos. 118. Expeça(m)-se ofício(s) à(s) Junta(s) Comercial(is) do(s) local(is) em que sediadas as sociedades empresárias mencionadas nas fls. 159-160 e 163 do e-Doc. 1",
+      "condicoes": [
+        "ofícios encaminhados à CINQ/CGRC/DICOR/PF, que se encarregará de remeter os expedientes aos órgãos destinatários"
+      ]
+    },
+    {
+      "pedido": "compartilhamento com o Banco Central do Brasil dos elementos informativos levantados nos autos em desfavor de Paulo Sérgio Neves de Souza e de Belline Santana, para apuração disciplinar",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "autorizou, após a certificação do cumprimento das medidas deferidas, o compartilhamento com o BACEN dos elementos informativos relativos a Paulo Sérgio Neves de Souza e Belline Santana para apuração disciplinar",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 46,
+      "trecho_fonte": "121. Após a certificação do efetivo cumprimento de todas as medidas ora deferidas, autorizo o compartilhamento com o BACEN dos",
+      "condicoes": [
+        "O BACEN deverá informar nestes autos as providências adotadas em relação aos dois servidores no prazo de trinta dias e posteriormente a cada seis meses"
+      ]
+    },
+    {
+      "pedido": "vista temporária dos autos aos advogados habilitados que, na qualidade de defensores dos investigados, vierem a formular tal requerimento",
+      "quem_pediu": null,
+      "resultado": "deferido",
+      "decisao": "deferiu, após o efetivo cumprimento das medidas, a concessão de vista temporária aos advogados habilitados no sistema que vierem a requerê-la como defensores dos investigados",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 47,
+      "trecho_fonte": "(ii) ficando deferida a concessão de vista temporária aos advogados habilitados no sistema que, na qualidade de defensores dos investigados nestes autos, vierem a formular tal requerimento.",
+      "condicoes": [
+        "após o efetivo cumprimento de todas as medidas ora deferidas"
+      ]
+    },
+    {
+      "pedido": "ciência à autoridade policial e à Procuradoria-Geral da República, publicidade da decisão e inclusão do feito na pauta da Sessão de Julgamento Virtual da Segunda Turma para referendo",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou ciência à autoridade policial e, após as expedições dos mandados, à Procuradoria-Geral da República; publicidade da decisão após o cumprimento das medidas; e inclusão do feito na próxima pauta da Sessão de Julgamento Virtual da Segunda Turma para apreciação do referendo",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 47,
+      "trecho_fonte": "125. Por fim, em observância ao art. 21, V, § 5º, do RISTF, inclua-se o feito na próxima pauta da Sessão de Julgamento Virtual da Segunda Turma, para fins de apreciação do referendo à presente decisão.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O pedido de afastamento de função pública mencionado no relatório corresponde à medida de suspensão do exercício de função pública decretada para Paulo Sérgio Neves de Souza e Belline Santana."
+}
