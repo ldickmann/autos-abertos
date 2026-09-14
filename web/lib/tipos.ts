@@ -178,3 +178,48 @@ export function formatarDataHora(iso: string | null | undefined): string {
   const p = (n: number) => String(n).padStart(2, "0");
   return `${p(dt.getUTCDate())}/${p(dt.getUTCMonth() + 1)}/${dt.getUTCFullYear()} ${p(dt.getUTCHours())}:${p(dt.getUTCMinutes())} UTC`;
 }
+
+// ---------------------------------------------------------------- fluxos financeiros (fluxos.json)
+export type FluxoFonte = {
+  id: number; tipo: string; identificador: string; orgao: string; destinatario: string | null; emitido_em: string | null; incidente: number;
+  processo: string | null; curadoria_path: string; curadoria_sha256: string; carregado_em: string;
+  documento: { id: number; titulo: string | null; paginas: number | null; sha256: string | null };
+};
+export type FluxoAtor = {
+  id: number; chave: string; nome: string; tipo: "pessoa_fisica" | "pessoa_juridica" | "desconhecido"; documento_mascarado: string | null;
+  atividade: string | null; entidade_id: number | null; papeis: string[];
+  totais: { entradas_centavos: number; saidas_centavos: number; n_transacoes: number };
+};
+export type FluxoBem = { id: number; tipo: "veiculo" | "imovel"; descricao: string; valor_centavos: number | null; valor_referencia_centavos: number | null; data_negocio: string | null };
+export type FluxoComunicacao = {
+  id: number; fonte_id: number; secao: "suspeita" | "automatica" | "especie"; numero: string; titular_ator_id: number | null; segmento: string | null;
+  comunicante: string | null; local: string | null; periodo_inicio: string | null; periodo_fim: string | null; valor_centavos: number | null;
+  creditos_centavos: number | null; debitos_centavos: number | null; informacoes: string | null; consideracoes: string | null;
+  pagina_inicio: number; pagina_fim: number; documento_id: number | null;
+  participacoes: { ator_id: number; papel: string }[]; bens: FluxoBem[]; ocorrencias: { norma: string; codigo: string | null; descricao: string | null }[];
+};
+export type FluxoTransacao = {
+  id: number; comunicacao_id: number; origem_ator_id: number | null; destino_ator_id: number | null; valor_centavos: number; data: string | null;
+  periodo_inicio: string | null; periodo_fim: string | null; tipo: string; natureza: "individual" | "agregado" | "resumo_tipo"; quantidade: number | null;
+  bem_id: number | null; descricao: string | null; pagina: number; trecho_fonte: string; documento_id: number | null; secao: FluxoComunicacao["secao"];
+};
+export type FluxoAresta = {
+  origem: number; destino: number; dirigida: boolean; valor_centavos: number; n: number; transacoes: number[]; comunicacao_id?: number;
+  naturezas: string[]; tipos: string[]; secoes: string[];
+};
+export type FluxosDados = {
+  fontes: FluxoFonte[]; atores: FluxoAtor[]; comunicacoes: FluxoComunicacao[]; transacoes: FluxoTransacao[];
+  grafo: { nos: { id: number; nome: string; tipo: FluxoAtor["tipo"]; totais: FluxoAtor["totais"]; entidade_id: number | null }[]; arestas: FluxoAresta[] };
+  resumo: { atores: number; comunicacoes: number; transacoes: number; individuais: number; agregadas: number; por_secao: Record<string, number> };
+};
+
+/** 1920500000 → "R$ 19.205.000,00"; com `curto`, "R$ 19,2 mi". */
+export function formatarReais(centavos: number | null | undefined, curto = false): string {
+  if (centavos == null) return "—";
+  const v = centavos / 100;
+  if (curto) {
+    if (Math.abs(v) >= 1e6) return `R$ ${(v / 1e6).toLocaleString("pt-BR", { maximumFractionDigits: 1 })} mi`;
+    if (Math.abs(v) >= 1e3) return `R$ ${(v / 1e3).toLocaleString("pt-BR", { maximumFractionDigits: 0 })} mil`;
+  }
+  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+}

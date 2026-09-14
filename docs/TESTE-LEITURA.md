@@ -18,7 +18,7 @@ Objetivo: descobrir onde o site deixa de ser entendido por quem não é da área
 | 4 | "Em que dia o STF confirmou (referendou) uma decisão do relator?" | acha o resultado "referendado"? entende o termo? | Decisões → filtro resultado |
 | 5 | "Quais condições uma pessoa teve de cumprir em vez de ficar presa?" | acha as condições num item de decisão? a linha "em linguagem simples" ajuda? | Decisões → condições |
 | 6 | "Mostre uma frase do documento original que sustenta uma dessas informações." | abre "Fonte" e chega ao documento na página certa? | qualquer item → Fonte → documento |
-| 7 | "Quais outros processos estão ligados ao principal, e por quê?" | usa a capa (apensos) ou o grafo? entende as linhas do grafo com a legenda? | capa → apensos; grafo → ficha |
+| 7 | "Quais outros processos estão ligados ao principal, e por quê?" | usa a capa (apensos)? acha a relação declarada na página do processo? | capa → apensos → página do processo |
 | 8 | "O que significa 'Vista à PGR'?" | clica no termo na linha do tempo? entende a explicação do portal? | linha do tempo → termo |
 
 ## Perguntas de encerramento

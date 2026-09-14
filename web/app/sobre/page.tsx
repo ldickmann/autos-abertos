@@ -54,7 +54,7 @@ export default function PaginaSobre() {
       <section>
         <h2 className="text-lg font-bold">Ferramentas de trabalho</h2>
         <p className="mt-1 text-sm">
-          O <Link className="underline" href="/grafo">grafo de ligações</Link> continua publicado, mas saiu da navegação principal: ele existe para quem mantém a base
+          O grafo de ligações não é mais publicado como página: ele existe só como arquivo (<code>grafo.json</code>) para quem mantém a base
           (e para o modelo que a analisa) enxergar todas as ligações de uma vez e achar o que falta. As mesmas ligações aparecem, uma a uma e com fonte,
           nas páginas de cada processo, entidade e documento. O mapa em texto que resume a base inteira está em <code>docs/MAPA-DO-CASO.md</code>, no repositório.
         </p>
