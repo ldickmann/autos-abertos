@@ -309,3 +309,49 @@ def test_csvs_por_tabela_atores_comunicacoes_e_bens(tmp_path):
     b = bens_csv(con).strip().splitlines()
     assert b[0] == "id,comunicacao,secao,numero,tipo,descricao,valor_reais,valor_referencia_reais,data_negocio"
     assert len(b) == 2 and "imovel" in b[1] and "livro" not in b[1]        # identificação nunca sai
+
+
+# ---------------------------------------------------------------- trajetos (curadoria com prova em cada passo)
+
+def _banco_com_assercao(tmp_path):
+    con = _banco_carregado(tmp_path)
+    con.execute("INSERT INTO extracao (id, documento_id, sha256_documento, prompt_version, modelo, executada_em, status) VALUES (1, 274, 'x', 'v', 'm', 'agora', 'ok')")
+    con.execute("INSERT INTO assercao (id, documento_id, extracao_id, pagina, tipo_epistemico, texto, trecho_fonte, atribuida_a, entidades_json, modelo, prompt_version, criado_em) "
+                "VALUES (637, 274, 1, 3, 'alegacao_parte', 'A PF sustenta que Fulano é operador de Beltrano.', 'IGREJA TESTE', 'Polícia Federal', '[]', 'm', 'v', 'agora')")
+    con.commit()
+    return con
+
+
+TRAJETOS = {"trajetos": [{
+    "id": "t1", "titulo": "De Fulano à igreja", "resumo": "teste",
+    "passos": [
+        {"de": "Fulano", "para": "Igreja", "valor": "19.205.000,00", "quando": "2024–2025", "como": "26 lançamentos",
+         "provas": [{"assercao": 637}, {"comunicacao": ["suspeita", "1"], "origem": "027.818.816-86"}]},
+    ]}]}
+
+
+def test_exportar_trajetos_resolve_provas_com_documento_pagina_e_quem_afirma(tmp_path):
+    from stf.fluxos_export import exportar_trajetos
+    con = _banco_com_assercao(tmp_path)
+    out = exportar_trajetos(con, TRAJETOS)
+    passo = out["trajetos"][0]["passos"][0]
+    a = next(p for p in passo["provas"] if p["tipo"] == "assercao")
+    assert a["documento_id"] == 274 and a["pagina"] == 3 and a["atribuida_a"] == "Polícia Federal" and a["tipo_epistemico"] == "alegacao_parte" and "operador" in a["texto"]
+    c = next(p for p in passo["provas"] if p["tipo"] == "comunicacao")
+    assert c["documento_id"] == 274 and c["pagina"] == 3 and c["comunicante"] == "Banco do Brasil S.A." and c["valor_centavos"] == 1_920_500_000 and c["n_transacoes"] == 1
+
+
+def test_exportar_trajetos_recusa_prova_inexistente(tmp_path):
+    from stf.fluxos_export import exportar_trajetos
+    con = _banco_com_assercao(tmp_path)
+    ruim = {"trajetos": [{"id": "t", "titulo": "x", "resumo": "", "passos": [{"de": "a", "para": "b", "provas": [{"assercao": 99999}]}]}]}
+    with pytest.raises(ValueError):
+        exportar_trajetos(con, ruim)
+    trecho_ruim = {"trajetos": [{"id": "t", "titulo": "x", "resumo": "", "passos": [{"de": "a", "para": "b", "provas": [{"documento": 274, "pagina": 3, "trecho": "isto não está lá"}]}]}]}
+    with pytest.raises(ValueError):
+        exportar_trajetos(con, trecho_ruim)
+    ok = {"trajetos": [{"id": "t", "titulo": "x", "resumo": "", "passos": [{"de": "a", "para": "b", "provas": [{"documento": 274, "pagina": 3, "trecho": "Relacionados CPF/CNPJ", "quem": "COAF"}]}]}]}
+    assert exportar_trajetos(con, ok)["trajetos"][0]["passos"][0]["provas"][0]["atribuida_a"] == "COAF"
+    sem_prova = {"trajetos": [{"id": "t", "titulo": "x", "resumo": "", "passos": [{"de": "a", "para": "b", "provas": []}]}]}
+    with pytest.raises(ValueError):
+        exportar_trajetos(con, sem_prova)

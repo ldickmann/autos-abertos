@@ -43,6 +43,10 @@ export default function PaginaRede() {
           com busca, filtros e ordenação. É a peça 2 da <Link className="underline" href={`/processo/${fonte.incidente}`}>{fonte.processo}</Link>, cujo sigilo foi levantado em 14/09/2026
           (<Link className="underline" href={`/documento/${fonte.documento.id}`}>íntegra, {fonte.documento.paginas} páginas</Link>). Cada linha aponta a página e o trecho de onde saiu.
         </p>
+        <Link href="/rede-de-pagamentos/trajetos" className="folha mt-3 block max-w-3xl border border-neutral-300 bg-white p-4 no-underline" style={{ borderLeft: "6px solid var(--marca)" }}>
+          <span className="leitura block text-lg">Como esse dinheiro se liga ao Banco Master e a Daniel Vorcaro?</span>
+          <span className="mt-1 block text-sm text-neutral-700">Os caminhos do dinheiro, passo a passo: do caixa do banco à Super, da Super à igreja e aos fornecedores, e a ponta que ainda está no escuro — cada passo com quem afirma e onde está escrito. →</span>
+        </Link>
       </header>
 
       <PainelFluxos dados={dados} situacoes={situacoes} />

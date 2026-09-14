@@ -11,7 +11,11 @@ type Secao = { id: string; rotulo: string; href: string; itens: { href: string; 
 
 const SECOES: Secao[] = [
   { id: "inicio", rotulo: "Início", href: "/", itens: [], casa: (p) => p === "/" },
-  { id: "pagamentos", rotulo: "Rede de pagamentos", href: "/rede-de-pagamentos", itens: [], casa: (p) => p.startsWith("/rede-de-pagamentos") },
+  {
+    id: "pagamentos", rotulo: "Rede de pagamentos", href: "/rede-de-pagamentos",
+    itens: [{ href: "/rede-de-pagamentos", rotulo: "Tabelas: quem pagou, quem recebeu" }, { href: "/rede-de-pagamentos/trajetos", rotulo: "Os caminhos do dinheiro" }],
+    casa: (p) => p.startsWith("/rede-de-pagamentos"),
+  },
   {
     id: "acontecimentos", rotulo: "Acontecimentos", href: "/cronologia",
     itens: [{ href: "/cronologia", rotulo: "Cronologia" }, { href: "/linha-do-tempo", rotulo: "Linha do tempo" }, { href: "/decisoes", rotulo: "Decisões" }, { href: "/mudancas", rotulo: "O que mudou" }],
@@ -53,7 +57,7 @@ export function NavPrincipal() {
         <ul aria-label={`Páginas de ${ativa.rotulo}`} className="nav-trilho -mx-4 flex w-max gap-0.5 overflow-x-auto border-t border-neutral-200 px-4 pt-1 lg:mx-0 lg:w-auto lg:flex-wrap lg:overflow-visible lg:px-0">
           {ativa.itens.map((i) => (
             <li key={i.href}>
-              <Link href={i.href} aria-current={pathname === i.href || pathname.startsWith(i.href + "/") ? "page" : undefined}
+              <Link href={i.href} aria-current={pathname === i.href || (pathname.startsWith(i.href + "/") && !ativa.itens.some((o) => o.href !== i.href && pathname.startsWith(o.href))) ? "page" : undefined}
                 className="block whitespace-nowrap rounded px-2.5 py-1 text-sm text-neutral-700 hover:bg-neutral-100">
                 {i.rotulo}
               </Link>

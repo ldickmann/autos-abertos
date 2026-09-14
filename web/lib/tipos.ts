@@ -223,3 +223,13 @@ export function formatarReais(centavos: number | null | undefined, curto = false
   }
   return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
+
+// ---------------------------------------------------------------- trajetos (trajetos.json): passos com prova
+export type ProvaAssercao = { tipo: "assercao"; id: number; documento_id: number; documento_titulo: string | null; incidente: number; pagina: number; tipo_epistemico: TipoEpistemico; texto: string; trecho_fonte: string; atribuida_a: string | null };
+export type ProvaComunicacao = { tipo: "comunicacao"; comunicacao_id: number; secao: string; numero: string; comunicante: string | null; local: string | null; periodo_inicio: string | null; periodo_fim: string | null; documento_id: number; pagina: number; valor_centavos: number; n_transacoes: number; transacoes: { id: number; valor_centavos: number; pagina: number; trecho_fonte: string; data: string | null; periodo_inicio: string | null; periodo_fim: string | null; tipo: string; natureza: string; quantidade: number | null }[] };
+export type ProvaDocumento = { tipo: "documento"; documento_id: number; documento_titulo: string | null; incidente: number; pagina: number; trecho_fonte: string; atribuida_a: string | null };
+export type Prova = ProvaAssercao | ProvaComunicacao | ProvaDocumento;
+export type PassoTrajeto = { de: string; para: string; valor: string | null; quando: string | null; como: string; provas: Prova[] };
+export type Trajeto = { id: string; titulo: string; pergunta: string; resumo: string; quem_afirma: string; passos: PassoTrajeto[]; contrapontos: { quem: string; o_que: string; provas: Prova[] }[]; lacunas: string | null };
+export type Cruzamento = { id: string; titulo: string; explicacao: string; eventos: { data: string; lado: "autos" | "cartorios"; texto: string; prova: Prova }[] };
+export type TrajetosDados = { trajetos: Trajeto[]; cruzamentos: Cruzamento[] };

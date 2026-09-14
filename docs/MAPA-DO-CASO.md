@@ -1,18 +1,18 @@
 # Mapa do caso (gerado)
 
-Gerado em 2026-09-14T23:11+00:00 por `python -m stf mapa`. Listagem determinística da base; sem interpretação. Use para achar lacunas: o que ainda não foi coletado, extraído ou ligado.
+Gerado em 2026-09-14T23:34+00:00 por `python -m stf mapa`. Listagem determinística da base; sem interpretação. Use para achar lacunas: o que ainda não foi coletado, extraído ou ligado.
 
 ## Processos
 
 | processo | incidente | publicidade | relator | profundidade | andamentos | partes | docs (com texto) | asserções | decisões (itens) | coletado em |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pet 15645 | 7526458 | Público | MIN. ANDRÉ MENDONÇA | None | 5 | 2 | 7 (6) | 0 | 0 | 2026-09-14 |
-| Pet 16704 | 7687920 | Público | MINISTRO PRESIDENTE | None | 155 | 5 | 45 (0) | 0 | 0 | 2026-09-14 |
+| Pet 16704 | 7687920 | Público | MINISTRO PRESIDENTE | None | 155 | 5 | 45 (41) | 0 | 0 | 2026-09-14 |
 | Pet 15556 (semente) | 7514886 | Público | MIN. ANDRÉ MENDONÇA | 0 | 407 | 54 | 60 (60) | 1062 | 98 | 2026-09-14 |
 | Inq 5026 | 7473347 | Público | MIN. ANDRÉ MENDONÇA | 1 | 659 | 72 | 70 (70) | 450 | 55 | 2026-09-14 |
 | Inq 5035 | 7498168 | Público | MIN. ANDRÉ MENDONÇA | 1 | 48 | 16 | 6 (6) | 16 | 0 | 2026-09-14 |
 | Pet 15198 | 7473336 | Público | MIN. ANDRÉ MENDONÇA | 1 | 405 | 115 | 57 (57) | 684 | 64 | 2026-09-14 |
-| Pet 15499 | 7509111 | Público | MIN. ANDRÉ MENDONÇA | 1 | 41 | 12 | 10 (10) | 24 | 5 | 2026-09-14 |
+| Pet 15499 | 7509111 | Público | MIN. ANDRÉ MENDONÇA | 1 | 42 | 12 | 10 (10) | 24 | 5 | 2026-09-14 |
 | Pet 15504 | 7509527 | Público | MIN. ANDRÉ MENDONÇA | 1 | 44 | 29 | 13 (13) | 29 | 7 | 2026-09-14 |
 | Pet 16440 | 7649959 | Sigiloso | MIN. ANDRÉ MENDONÇA | 1 | 3 | 0 | 0 (0) | 0 | 0 | 2026-09-14 |
 | Pet 16441 | 7649960 | Sigiloso | MIN. ANDRÉ MENDONÇA | 1 | 3 | 0 | 0 (0) | 0 | 0 | 2026-09-14 |
@@ -219,8 +219,8 @@ Dispositivos legais mais citados: art. 270 CPC (72 docs), art. 5 Lei 11.419/2006
 
 ## Lacunas conhecidas
 
-- 46 documento(s) sem download
-- 6 documento(s) sem extração de asserções válida
+- 5 documento(s) sem download
+- 47 documento(s) sem extração de asserções válida
 - 5 processo(s) sigiloso(s): o portal só devolve cabeçalho e andamentos genéricos
 - 77 processo(s) citados em documentos e não coletados (a maioria são precedentes; os que importam ao caso aparecem no topo da lista acima)
 - 53 proposta(s) de alias de entidade aguardando decisão humana (data/curadoria/aliases-propostos.json)

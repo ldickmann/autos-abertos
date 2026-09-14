@@ -175,3 +175,79 @@ def bens_csv(con: sqlite3.Connection) -> str:
         w.writerow([r["id"], r["comunicacao_id"], r["secao"], r["numero"], r["tipo"], r["descricao"], _reais(r["valor_centavos"]),
                     _reais(r["valor_referencia_centavos"]), r["data_negocio"]])
     return out.getvalue()
+
+
+# ---------------------------------------------------------------- trajetos: curadoria com prova em cada passo
+
+def _resolvedor_de_provas(con: sqlite3.Connection):
+    """Devolve uma função que transforma uma referência de prova ({assercao}, {comunicacao}, {documento}) no registro
+    completo (documento, página, quem afirma, texto/trecho) ou levanta ValueError se a prova não existe."""
+    atores = {r["chave"]: dict(r) for r in con.execute("SELECT id, chave, nome FROM fluxo_ator")}
+    doc_por_fonte = {r[0]: r[1] for r in con.execute("SELECT id, documento_id FROM fluxo_fonte")}
+
+    def resolver(pr: dict, onde: str) -> dict:
+        if "assercao" in pr:
+            a = con.execute("SELECT a.id, a.documento_id, a.pagina, a.tipo_epistemico, a.texto, a.trecho_fonte, a.atribuida_a, d.incidente, d.titulo "
+                            "FROM assercao a JOIN documento d ON d.id=a.documento_id WHERE a.id=?", (pr["assercao"],)).fetchone()
+            if not a:
+                raise ValueError(f"{onde}: asserção {pr['assercao']} não existe")
+            return {"tipo": "assercao", "id": a["id"], "documento_id": a["documento_id"], "documento_titulo": a["titulo"], "incidente": a["incidente"],
+                    "pagina": a["pagina"], "tipo_epistemico": a["tipo_epistemico"], "texto": a["texto"], "trecho_fonte": a["trecho_fonte"], "atribuida_a": a["atribuida_a"]}
+        if "comunicacao" in pr:
+            secao, numero = pr["comunicacao"]
+            c = con.execute("SELECT id, fonte_id, secao, numero, comunicante, local, periodo_inicio, periodo_fim, valor_centavos, pagina_inicio FROM fluxo_comunicacao "
+                            "WHERE secao=? AND numero=?", (secao, numero)).fetchone()
+            if not c:
+                raise ValueError(f"{onde}: comunicação {secao} {numero} não existe")
+            where, args = ["comunicacao_id=?", "natureza!='resumo_tipo'"], [c["id"]]
+            for lado in ("origem", "destino"):
+                if pr.get(lado):
+                    from .fluxos import chave_ator
+                    chave = chave_ator(pr[lado])[0]
+                    if chave not in atores:
+                        raise ValueError(f"{onde}: ator {pr[lado]} não existe")
+                    where.append(f"{lado}_ator_id=?"); args.append(atores[chave]["id"])
+            tx = con.execute(f"SELECT id, valor_centavos, pagina, trecho_fonte, data, periodo_inicio, periodo_fim, tipo, natureza, quantidade FROM fluxo_transacao "
+                             f"WHERE {' AND '.join(where)} ORDER BY valor_centavos DESC", args).fetchall()
+            return {"tipo": "comunicacao", "comunicacao_id": c["id"], "secao": c["secao"], "numero": c["numero"], "comunicante": c["comunicante"], "local": c["local"],
+                    "periodo_inicio": c["periodo_inicio"], "periodo_fim": c["periodo_fim"], "documento_id": doc_por_fonte[c["fonte_id"]],
+                    "pagina": tx[0]["pagina"] if tx else c["pagina_inicio"], "valor_centavos": sum(t["valor_centavos"] for t in tx) if tx else c["valor_centavos"],
+                    "n_transacoes": len(tx), "transacoes": [dict(t) for t in tx[:12]]}
+        if "documento" in pr:
+            from .fluxos_carga import trecho_na_pagina
+            d = con.execute("SELECT d.id, d.titulo, d.incidente, p.texto FROM documento d JOIN documento_pagina p ON p.documento_id=d.id AND p.pagina=? WHERE d.id=?",
+                            (pr["pagina"], pr["documento"])).fetchone()
+            if not d or not trecho_na_pagina(pr["trecho"], d["texto"]):
+                raise ValueError(f"{onde}: trecho não encontrado no documento {pr['documento']} p. {pr['pagina']}")
+            return {"tipo": "documento", "documento_id": d["id"], "documento_titulo": d["titulo"], "incidente": d["incidente"], "pagina": pr["pagina"],
+                    "trecho_fonte": pr["trecho"], "atribuida_a": pr.get("quem")}
+        raise ValueError(f"{onde}: prova de tipo desconhecido {pr}")
+    return resolver
+
+
+def exportar_trajetos(con: sqlite3.Connection, curado: dict) -> dict:
+    """Resolve as provas de cada passo, contraponto e evento de cruzamento. Um item sem prova, ou com prova que não
+    existe no banco, derruba a exportação: a página não pode afirmar um elo que não aponte para documento e página."""
+    resolver = _resolvedor_de_provas(con)
+    out = {"trajetos": [], "cruzamentos": []}
+    for tj in curado["trajetos"]:
+        passos, contrapontos = [], []
+        for i, p in enumerate(tj["passos"]):
+            provas = [resolver(pr, f"trajeto {tj['id']}, passo {i}") for pr in p.get("provas") or []]
+            if not provas:
+                raise ValueError(f"trajeto {tj['id']}, passo {i}: passo sem prova")
+            passos.append({**{k: v for k, v in p.items() if k != "provas"}, "provas": provas})
+        for i, cp in enumerate(tj.get("contrapontos") or []):
+            provas = [resolver(pr, f"trajeto {tj['id']}, contraponto {i}") for pr in cp.get("provas") or []]
+            if not provas:
+                raise ValueError(f"trajeto {tj['id']}, contraponto {i}: contraponto sem prova")
+            contrapontos.append({**{k: v for k, v in cp.items() if k != "provas"}, "provas": provas})
+        out["trajetos"].append({**{k: v for k, v in tj.items() if k not in ("passos", "contrapontos")}, "passos": passos, "contrapontos": contrapontos})
+    for cz in curado.get("cruzamentos") or []:
+        eventos = []
+        for i, ev in enumerate(cz.get("eventos") or []):
+            ref = {k: ev[k] for k in ("assercao", "comunicacao", "documento", "pagina", "trecho", "quem") if k in ev}
+            prova = resolver(ref, f"cruzamento {cz.get('id')}, evento {i}")
+            eventos.append({**{k: v for k, v in ev.items() if k not in ref}, "prova": prova})
+        out["cruzamentos"].append({**{k: v for k, v in cz.items() if k != "eventos"}, "eventos": eventos})
+    return out

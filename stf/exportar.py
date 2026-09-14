@@ -254,6 +254,13 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
     (saida / "fluxos_atores.csv").write_text(atores_csv(con), "utf-8", newline="\n")
     (saida / "fluxos_comunicacoes.csv").write_text(comunicacoes_csv(con), "utf-8", newline="\n")
     (saida / "fluxos_bens.csv").write_text(bens_csv(con), "utf-8", newline="\n")
+    # trajetos: curadoria com prova em cada passo; só faz sentido (e só valida) com fluxos carregados
+    from .fluxos_export import exportar_trajetos
+    trajetos_path = config.RAIZ / "stf" / "curadoria" / "trajetos.json"
+    if trajetos_path.exists() and con.execute("SELECT COUNT(*) FROM fluxo_fonte").fetchone()[0]:
+        _escrever(saida / "trajetos.json", exportar_trajetos(con, json.loads(trajetos_path.read_text("utf-8"))))
+    else:
+        _escrever(saida / "trajetos.json", {"trajetos": [], "cruzamentos": []})
     (saida.parent / "feed.xml").write_text(feed_atom(SITE, avisos=avisos, mudancas=mudancas, gerado_em=gerado_em), "utf-8", newline="\n")
     _escrever(saida / "glossario.json", json.loads((config.RAIZ / "stf" / "curadoria" / "glossario.json").read_text("utf-8"))["verbetes"])
     _escrever(saida / "avisos.json", json.loads((config.RAIZ / "stf" / "curadoria" / "avisos.json").read_text("utf-8"))["avisos"])
