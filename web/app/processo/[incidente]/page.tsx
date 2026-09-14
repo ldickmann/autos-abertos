@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { BadgeEpistemico, Carimbo, Publicidade, StatusProcessual } from "@/components/Badges";
 import { LinhaDoTempo } from "@/components/LinhaDoTempo";
-import { formatarData, getMeta, getProcesso, listarIncidentesColetados } from "@/lib/data";
+import { ListaDecisoes } from "@/components/ListaDecisoes";
+import { Termo } from "@/components/Termo";
+import { formatarData, getDecisoes, getMeta, getProcesso, listarIncidentesColetados, verbeteDe } from "@/lib/data";
 
 export function generateStaticParams() {
   return listarIncidentesColetados().map((i) => ({ incidente: String(i) }));
@@ -13,13 +15,15 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
   const meta = getMeta();
   const cab = p.cabecalho;
   const eSemente = cab.incidente === meta.semente;
+  const decisoes = getDecisoes();
+  const verbetesResultado = Object.fromEntries(Object.entries(decisoes.rotulos_resultado).map(([k, r]) => [k, verbeteDe(r.split(" (")[0]) ?? verbeteDe(k)]));
 
   return (
     <div className="space-y-8">
       <nav aria-label="Trilha" className="text-sm"><Link className="underline" href="/">Início</Link> / {cab.classe} {cab.numero}</nav>
       <header className="rounded-lg border border-neutral-300 bg-white p-5">
         <div className="flex flex-wrap items-baseline gap-3">
-          <h1 className="text-2xl font-bold">{cab.classe} {cab.numero}</h1>
+          <h1 className="text-2xl font-bold"><Termo verbete={verbeteDe(cab.classe)}>{cab.classe}</Termo> {cab.numero}</h1>
           <Publicidade valor={cab.publicidade} />
           {eSemente && <span className="rounded bg-neutral-800 px-2 py-0.5 text-xs font-semibold text-white">processo principal deste mapa</span>}
         </div>
@@ -48,6 +52,16 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
         </div>
       </header>
 
+      {(p.decisoes?.length ?? 0) > 0 && (
+        <section aria-labelledby="dec">
+          <h2 id="dec" className="text-lg font-bold">O que foi decidido neste processo <span className="text-sm font-normal text-neutral-700">({p.decisoes!.length} itens, pedido por pedido)</span></h2>
+          <p className="mt-1 text-sm text-neutral-700">O que se pediu, quem pediu e o que o julgador decidiu, com a página e o trecho literal de cada decisão. Clique num resultado para ver o que a palavra significa.</p>
+          <div className="mt-2">
+            <ListaDecisoes itens={p.decisoes!} rotulos={decisoes.rotulos_resultado} processos={[{ incidente: cab.incidente, rotulo: `${cab.classe} ${cab.numero}` }]} verbetes={verbetesResultado} compacta incidenteFixo={cab.incidente} />
+          </div>
+        </section>
+      )}
+
       {p.relacoes.length > 0 && (
         <section aria-labelledby="rel">
           <h2 id="rel" className="text-lg font-bold">Relações declaradas nos andamentos</h2>
@@ -70,7 +84,7 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
           <ul className="mt-2 grid gap-1 text-sm sm:grid-cols-2">
             {p.partes.map((pt) => (
               <li key={pt.id} className={`flex flex-wrap items-center gap-2 rounded px-2 py-1 ${pt.papel === "advogado" ? "pl-6 text-neutral-800" : "bg-white"}`}>
-                <StatusProcessual status={pt.status_processual} literal={pt.papel_portal} />
+                <Termo verbete={verbeteDe(pt.status_processual)}><StatusProcessual status={pt.status_processual} literal={pt.papel_portal} /></Termo>
                 {pt.entidade_id && !pt.e_placeholder ? (
                   <Link className="underline" href={`/entidade/${pt.entidade_id}`}>{pt.nome}</Link>
                 ) : (

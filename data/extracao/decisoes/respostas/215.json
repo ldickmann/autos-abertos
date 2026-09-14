@@ -1,0 +1,64 @@
+{
+  "itens": [
+    {
+      "pedido": "instauração de inquérito policial para averiguação da origem dos vazamentos de informações dos aparelhos do investigado para a imprensa",
+      "quem_pediu": "defesa do investigado DANIEL BUENO VORCARO",
+      "resultado": "deferido",
+      "decisao": "acolheu o requerimento e determinou a instauração de inquérito policial para a averiguação dos alegados vazamentos noticiados",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-06",
+      "pagina": 6,
+      "trecho_fonte": "acolho o requerimento formulado pela defesa do investigado DANIEL BUENO VORCARO, e determino a instauração do competente inquérito policial, para a averiguação dos alegados vazamentos noticiados.",
+      "condicoes": [
+        "irrestrita observância à garantia constitucional da preservação do sigilo da fonte em favor dos profissionais jornalistas",
+        "hipótese investigativa voltada à eventual identificação daqueles que teriam o dever de custodiar o material sigiloso e o violaram, e não dos jornalistas que obtiveram acesso indireto às informações",
+        "autuação em apartado, com distribuição por prevenção ao presente feito"
+      ]
+    },
+    {
+      "pedido": "autuação em apartado dos autos da investigação determinada, com distribuição por prevenção",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que os autos da investigação sejam autuados em apartado e distribuídos por prevenção ao presente feito",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-06",
+      "pagina": 6,
+      "trecho_fonte": "20. Os autos inerentes à investigação ora determinada devem ser objeto de autuação em apartado, distribuídos por prevenção ao presente feito.",
+      "condicoes": []
+    },
+    {
+      "pedido": "comunicação da decisão à defesa do investigado requerente",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação da decisão à defesa do investigado requerente",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-06",
+      "pagina": 7,
+      "trecho_fonte": "21. Comunique-se a presente decisão à defesa do investigado requerente.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimação da Polícia Federal para instauração do inquérito no âmbito da Coordenação de Inquéritos nos Tribunais Superiores",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da Polícia Federal para instauração do inquérito no âmbito da CNIQ/CGRC/DICOR/PF",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-06",
+      "pagina": 7,
+      "trecho_fonte": "22. Intime-se a Polícia Federal, para instauração do inquérito ora determinado, no âmbito da Coordenação de Inquéritos nos Tribunais Superiores (CNIQ/CGRC/DICOR/PF).",
+      "condicoes": []
+    },
+    {
+      "pedido": "vista à Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, após as providências, se dê vista à Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-06",
+      "pagina": 7,
+      "trecho_fonte": "23. Após, dê-se vista à Procuradoria-Geral da República.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O pedido da CPMI do INSS de 02/03/2026 (compartilhamento em 48 horas) é apenas relatado, sem dispositivo próprio nesta decisão."
+}

@@ -21,6 +21,8 @@
   exportar [--saida DIR]       JSON estático para a interface (padrão: web/public/data), semente 7514886
   preparar-extracao            Fase 4 pelo Claude Code: grava data/extracao/entradas/<id>.entrada.md + MANIFEST.json
   ingerir-extracao             lê data/extracao/respostas/<id>.json, valida e persiste (mesma validação da API)
+  preparar-decisoes            entradas para pedidos/resultados por decisão (data/extracao/decisoes/entradas)
+  ingerir-decisoes             lê data/extracao/decisoes/respostas/<id>.json, valida e persiste em decisao_item
 """
 
 from __future__ import annotations
@@ -253,6 +255,23 @@ def cmd_ingerir_extracao(args):
     print(json.dumps(extrair_assercoes(_con(), cliente, documentos=docs, log=print), ensure_ascii=False))
 
 
+def cmd_preparar_decisoes(args):
+    from .decisoes import preparar_entradas
+    docs = [int(x) for x in args.documentos.split(",")] if args.documentos else None
+    saida = config.DATA / "extracao" / "decisoes" / "entradas"
+    print(json.dumps(preparar_entradas(_con(), saida, documentos=docs, modelo=args.modelo), ensure_ascii=False), "→", saida)
+
+
+def cmd_ingerir_decisoes(args):
+    from .decisoes import ingerir_decisoes
+    from .semantica import ClienteArquivo
+    docs = [int(x) for x in args.documentos.split(",")] if args.documentos else None
+    con = _con()
+    criar_schema(con)
+    cliente = ClienteArquivo(config.DATA / "extracao" / "decisoes" / "respostas", modelo=args.modelo)
+    print(json.dumps(ingerir_decisoes(con, cliente, documentos=docs, log=print), ensure_ascii=False))
+
+
 def cmd_exportar(args):
     from .exportar import exportar
     saida = Path(args.saida) if args.saida else config.RAIZ / "web" / "public" / "data"
@@ -298,6 +317,10 @@ def main(argv=None):
     p.add_argument("--modelo", default="claude-code/claude-opus-5"); p.set_defaults(f=cmd_preparar_extracao)
     p = sub.add_parser("ingerir-extracao"); p.add_argument("--documentos"); p.add_argument("--modelo", default="claude-code/claude-opus-5")
     p.set_defaults(f=cmd_ingerir_extracao)
+    p = sub.add_parser("preparar-decisoes"); p.add_argument("--documentos"); p.add_argument("--modelo", default="claude-code/claude-opus-5")
+    p.set_defaults(f=cmd_preparar_decisoes)
+    p = sub.add_parser("ingerir-decisoes"); p.add_argument("--documentos"); p.add_argument("--modelo", default="claude-code/claude-opus-5")
+    p.set_defaults(f=cmd_ingerir_decisoes)
     args = ap.parse_args(argv)
     args.f(args)
 

@@ -1,0 +1,62 @@
+{
+  "itens": [
+    {
+      "pedido": "declaração da extinção da punibilidade de PHILLIPI MACHADO DE MORAES MOURÃO, em razão do falecimento do investigado, com esteio no art. 107, I, do CP",
+      "quem_pediu": "defesa de PHILLIPI MACHADO DE MORAES MOURÃO",
+      "resultado": "deferido",
+      "decisao": "acolheu o parecer da Procuradoria-Geral da República e declarou extinta a punibilidade em relação a PHILLIPI MACHADO DE MORAES MOURÃO, nos termos do art. 107, inciso I, do Código Penal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-29",
+      "pagina": 5,
+      "trecho_fonte": "7. Ante o exposto, acolho o parecer da Procuradoria-Geral da República para declarar extinta a punibilidade em relação PHILLIPI MACHADO DE MORAES MOURÃO, nos termos do art. 107, inciso I, do Código Penal e determinar o arquivamento parcial das investigações.",
+      "condicoes": []
+    },
+    {
+      "pedido": "arquivamento das investigações em face do investigado falecido PHILLIPI MACHADO DE MORAES MOURÃO",
+      "quem_pediu": "defesa de PHILLIPI MACHADO DE MORAES MOURÃO",
+      "resultado": "deferido",
+      "decisao": "determinou o arquivamento parcial das investigações",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-29",
+      "pagina": 5,
+      "trecho_fonte": "7. Ante o exposto, acolho o parecer da Procuradoria-Geral da República para declarar extinta a punibilidade em relação PHILLIPI MACHADO DE MORAES MOURÃO, nos termos do art. 107, inciso I, do Código Penal e determinar o arquivamento parcial das investigações.",
+      "condicoes": []
+    },
+    {
+      "pedido": "manutenção das medidas assecuratórias patrimoniais (sequestro de bens e valores) em face de PHILLIPI MACHADO DE MORAES MOURÃO",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "manteve as medidas assecuratórias patrimoniais (sequestro de bens e valores) em face de PHILLIPI MACHADO DE MORAES MOURÃO, quanto à possível necessidade de reparação de prejuízos",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-29",
+      "pagina": 5,
+      "trecho_fonte": "permanecem hígidas as medidas assecuratórias patrimoniais (sequestro de bens e valores) em face de PHILLIPI MACHADO DE MORAES MOURÃO, notadamente quanto à possível necessidade de reparação de prejuízos.",
+      "condicoes": [
+        "ficam os herdeiros, diretamente ou por intermédio do inventariante que represente o espólio, instados a ingressar nos autos para acompanhamento das restrições patrimoniais"
+      ]
+    },
+    {
+      "pedido": "intimação da defesa com o inteiro teor da decisão",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da defesa",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-29",
+      "pagina": 5,
+      "trecho_fonte": "10. Intime-se a defesa e expeça-se ofício à autoridade policial, com o inteiro teor desta decisão, para as providências cabíveis.",
+      "condicoes": []
+    },
+    {
+      "pedido": "expedição de ofício à autoridade policial com o inteiro teor da decisão",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a expedição de ofício à autoridade policial, com o inteiro teor da decisão, para as providências cabíveis",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-05-29",
+      "pagina": 5,
+      "trecho_fonte": "10. Intime-se a defesa e expeça-se ofício à autoridade policial, com o inteiro teor desta decisão, para as providências cabíveis.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

@@ -1,0 +1,64 @@
+{
+  "itens": [
+    {
+      "pedido": "aplicação dos itens 114 e 115 da decisão contida no e-Doc. 16 (audiência de custódia) ao crime objeto da comunicação de prisão em flagrante do investigado Luiz Phillipi Machado de Moraes Mourão (e.Doc. 51)",
+      "quem_pediu": "o próprio relator, de ofício, a partir de comunicação de prisão em flagrante protocolizada pela Polícia Federal",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a aplicação dos itens 114 e 115 da decisão contida no e-Doc. 16 também em relação ao novo crime ensejador do flagrante",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-04",
+      "pagina": 1,
+      "trecho_fonte": "2. Diante do flagrante de crime noticiado, DETERMINO a aplicação dos itens 114 e 115 da decisão contida no e-Doc. 16, e que são abaixo transcritos, também em relação a este novo crime ensejador do flagrante:",
+      "condicoes": [
+        "apresentação do investigado para audiência de custódia em até 24h, perante o Juízo Federal da Subseção Judiciária com competência sobre o território em que se encontrar custodiado, independentemente de expedição de carta de ordem",
+        "o magistrado que presidir a audiência de custódia terá delegação para atuar exclusivamente na verificação dos requisitos estritamente formais da prisão e do tratamento conferido ao preso",
+        "qualquer decisão de soltura por irregularidade na execução da custódia só poderá ser tomada pelo relator do processo"
+      ]
+    },
+    {
+      "pedido": "conclusão dos autos, após a audiência de custódia, para decisão sobre a eventual conversão do flagrante em prisão preventiva",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, após a audiência de custódia, os autos voltem imediatamente conclusos para decisão sobre a eventual conversão do flagrante em prisão preventiva",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-04",
+      "pagina": 2,
+      "trecho_fonte": "3. Após a realização da Audiência de Custódia nos termos acima, voltem-me os autos imediatamente conclusos para decisão sobre a eventual conversão do citado flagrante em prisão preventiva.",
+      "condicoes": []
+    },
+    {
+      "pedido": "expedição de ofício ao Juízo que efetuará a audiência de custódia do investigado Luiz Phillipi Machado de Moraes Mourão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se oficie, com urgência, ao Juízo que efetuará a audiência de custódia, para ciência da decisão, podendo a própria decisão servir como ofício",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-04",
+      "pagina": 2,
+      "trecho_fonte": "4. Oficie-se, com urgência, ao Juízo que efetuará a audiência de custódia do investigado LUIZ PHILLIPI MACHADO DE MORAES MOURÃO para ciência deste decisum, podendo esta decisão servir como ofício para a comunicação.",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência ao Ministério Público Federal",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, após, seja dada ciência ao MPF",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-04",
+      "pagina": 2,
+      "trecho_fonte": "5. Após, dê-se ciência ao MPF.",
+      "condicoes": []
+    },
+    {
+      "pedido": "publicação da decisão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a publicação da decisão",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-04",
+      "pagina": 3,
+      "trecho_fonte": "6. Publique-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

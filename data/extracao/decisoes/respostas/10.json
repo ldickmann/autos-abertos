@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "vista à autoridade policial para manifestação sobre a viabilidade do pedido de espelhamento de dispositivos eletrônicos apreendidos de Paulo Sérgio Neves de Souza (e-doc. 474)",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a abertura de vista à autoridade policial para manifestação sobre a viabilidade do pedido de espelhamento de dispositivos eletrônicos apreendidos",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-27",
+      "pagina": 2,
+      "trecho_fonte": "1. Abra-se vista à autoridade policial para manifestação sobre a viabilidade do pedido de espelhamento de dispositivos eletrônicos apreendidos de Paulo Sérgio Neves de Souza (e-doc. 474).",
+      "condicoes": []
+    },
+    {
+      "pedido": "vista ao Ministério Público Federal após a manifestação policial",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou vista ao Ministério Público Federal após a vinda da manifestação policial",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-27",
+      "pagina": 2,
+      "trecho_fonte": "2. Com a vinda da manifestação policial, dê-se vista ao Ministério Público Federal.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

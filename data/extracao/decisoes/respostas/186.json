@@ -1,0 +1,115 @@
+{
+  "itens": [
+    {
+      "pedido": "expedição de mandado de busca pessoal sobre Fabiano Campos Zettel e seus pertences, no local em que ele seja encontrado (Pet. 2475/2026, e-doc nº 74)",
+      "quem_pediu": "Polícia Federal, com manifestação favorável do Procurador-Geral da República",
+      "resultado": "deferido",
+      "decisao": "deferiu a realização de busca pessoal sobre Fabiano Campos Zettel e seus pertences, no local em que ele seja encontrado, com eventual apreensão de material relacionado e útil à investigação",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 6,
+      "trecho_fonte": "DEFIRO as seguintes providências cautelares: 1. A realização de BUSCA PESSOAL sobre FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86) e seus pertences, no local em que ele seja encontrado (o que provavelmente se dará quando do seu embarque no aeroporto internacional de Guarulhos/SP na noite de 13.01.2026)",
+      "condicoes": [
+        "eventual apreensão de material relacionado e útil à investigação"
+      ]
+    },
+    {
+      "pedido": "expedição de mandado de busca pessoal em Fabiano Campos Zettel e em seus pertences, inclusive bagagens despachadas, para apreensão de objetos de interesse da investigação, especialmente aparelho de telefone celular e demais dispositivos eletrônicos",
+      "quem_pediu": "Polícia Federal, com manifestação favorável do Procurador-Geral da República",
+      "resultado": "deferido",
+      "decisao": "deferiu a realização de busca pessoal em Fabiano Campos Zettel e em seus pertences, inclusive bagagens despachadas, para apreensão de objetos de interesse da investigação, especialmente aparelho de telefone celular, demais dispositivos eletrônicos e valores monetários eventualmente portados",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 7,
+      "trecho_fonte": "2. A realização de BUSCA PESSOAL em FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86) e em seus pertences (inclusive bagagens despachadas), de forma a possibilitar a APREENSÃO de objetos de interesse da investigação, especialmente seu aparelho de telefone celular",
+      "condicoes": []
+    },
+    {
+      "pedido": "decretação da prisão temporária de Fabiano Campos Zettel pelo prazo mínimo de um dia",
+      "quem_pediu": "Polícia Federal, com manifestação favorável do Procurador-Geral da República",
+      "resultado": "deferido",
+      "decisao": "decretou a prisão temporária de Fabiano Campos Zettel até às 07:00 horas de 14.01.2026",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 7,
+      "trecho_fonte": "3. A decretação da PRISÃO TEMPORÁRIA em desfavor do FABIANO CAMPOS ZETTEL (CPF: 027.818.816-86), até às 07:00 horas de 14.01.2026, por se tratar de medida imprescindível para as investigações desenvolvidas",
+      "condicoes": [
+        "prisão temporária até às 07:00 horas de 14.01.2026"
+      ]
+    },
+    {
+      "pedido": "decretação da proibição de deixar o país do investigado Fabiano Campos Zettel",
+      "quem_pediu": "Polícia Federal, com manifestação favorável do Procurador-Geral da República",
+      "resultado": "deferido",
+      "decisao": "impôs medida cautelar diversa da prisão consistente na apreensão de passaporte(s) e na proibição de sair do país, para que o investigado permaneça no Brasil até o fim das investigações",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 7,
+      "trecho_fonte": "bem como a imposição de MEDIDA CAUTELAR DIVERSA DA PRISÃO, consistente na apreensão de seu(s) passaporte(s) e na proibição em sair do país, de forma a possibilitar que o investigado permaneça no Brasil até o fim das investigações;",
+      "condicoes": [
+        "apreensão de seu(s) passaporte(s)",
+        "proibição em sair do país"
+      ]
+    },
+    {
+      "pedido": "expedição de mandado de busca pessoal sobre Nelson Sequeiros Rodriguez Tanure e seus pertences, no local em que ele seja encontrado",
+      "quem_pediu": "Polícia Federal, com manifestação favorável do Procurador-Geral da República",
+      "resultado": "deferido",
+      "decisao": "deferiu a realização de busca pessoal sobre Nelson Sequeiros Rodriguez Tanure e seus pertences, no local em que ele seja encontrado, com eventual apreensão de material relacionado e útil à investigação",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 7,
+      "trecho_fonte": "4. A realização de BUSCA PESSOAL sobre NELSON SEQUEIROS RODRIGUEZ TANURE (CPF: 041.747.715-53) e seus pertences, no local em que ele seja encontrado (o que provavelmente se dará quando do seu embarque no aeroporto internacional do Rio de Janeiro/RJ na manhã de 14.01.2026)",
+      "condicoes": [
+        "eventual apreensão de material relacionado e útil à investigação"
+      ]
+    },
+    {
+      "pedido": "lacração e acautelamento, na sede do Supremo Tribunal Federal, de todos os bens e materiais apreendidos",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que todos os bens e materiais apreendidos por força da decisão anterior e da presente sejam lacrados e acautelados diretamente na sede do Supremo Tribunal Federal, até ulterior determinação",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 8,
+      "trecho_fonte": "DETERMINO que todos os bens e materiais APREENDIDOS por força do cumprimento da decisão por mim anteriormente proferidas e aqueles resultantes do cumprimento da presente, deverão ser LACRADOS e ACAUTELADOS diretamente na sede do SUPREMO TRIBUNAL FEDERAL, até ulterior determinação.",
+      "condicoes": []
+    },
+    {
+      "pedido": "informação, pelo Diretor-Geral do Departamento de Polícia Federal, da razão do descumprimento da ordem anteriormente exarada",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que o Diretor-Geral do Departamento de Polícia Federal informe à Corte, no prazo de 24 horas, a razão do descumprimento da ordem anteriormente exarada para cumprimento das medidas no prazo estabelecido",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 8,
+      "trecho_fonte": "DETERMINO, ainda, que o DIRETOR-GERAL do DEPARTAMENTO DE POLÍCIA FEDERAL, no prazo subsequente de 24 horas, informe a esta Corte a razão do descumprimento da ordem por mim anteriormente exarada para cumprimento das medidas em prazo legal estabelecido.",
+      "condicoes": [
+        "prazo de 24 horas"
+      ]
+    },
+    {
+      "pedido": "cumprimento da decisão, servindo a própria decisão de mandado",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou o cumprimento, servindo a decisão de mandado, com oportuna expedição dos documentos correspondentes",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 8,
+      "trecho_fonte": "Cumpra-se, servindo a presente de mandado, com oportuna expedição dos documentos correspondentes.",
+      "condicoes": []
+    },
+    {
+      "pedido": "publicação da decisão a partir das 12:00 horas do dia 14.01.2026",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a publicação da decisão a partir das 12:00 horas do dia 14.01.2026",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-13",
+      "pagina": 8,
+      "trecho_fonte": "Determino a publicação desta decisão a partir das 12:00 horas do dia 14.01.2026.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O verbo DEFIRO está na página 6; os itens 2 a 4 do dispositivo estão na página 7."
+}

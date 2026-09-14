@@ -1,0 +1,27 @@
+{
+  "itens": [
+    {
+      "pedido": "acesso integral aos autos do Inquérito nº 5026/STF",
+      "quem_pediu": "defesa de João Pedro Leite Nunes (e-Doc. 1.015)",
+      "resultado": "prejudicado",
+      "decisao": "julgou prejudicado o pedido, porque o acesso aos autos já havia sido concedido ao requerente desde 24 de agosto do corrente ano",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-08-28",
+      "pagina": 4,
+      "trecho_fonte": "Diante do exposto, julgo prejudicados ambos os pedidos deduzidos por meio da petição encartada ao e-Doc. 1.015.",
+      "condicoes": []
+    },
+    {
+      "pedido": "adiamento da oitiva do investigado designada para o dia 27/08/2026",
+      "quem_pediu": "defesa de João Pedro Leite Nunes (e-Doc. 1.015)",
+      "resultado": "prejudicado",
+      "decisao": "julgou prejudicado o pedido ante a superveniência da data inicialmente indicada para a realização do ato",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-08-28",
+      "pagina": 4,
+      "trecho_fonte": "Diante do exposto, julgo prejudicados ambos os pedidos deduzidos por meio da petição encartada ao e-Doc. 1.015.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}

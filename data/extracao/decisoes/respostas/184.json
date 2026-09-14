@@ -1,0 +1,41 @@
+{
+  "itens": [
+    {
+      "pedido": "indicação de peritos da Polícia Federal para acompanhamento da extração de dados e realização da perícia do material custodiado no Ministério Público Federal",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "indicou os peritos da Polícia Federal LUIS FILIPE DA CRUZ NASSIF, TIAGO BARROSO DE MELO, ENELSON CANDEIA DA CRUZ FILHO e LORENZO VICTOR SCHREPEL DELMUTTI, com livre acesso ao material apreendido e apoio da Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-15",
+      "pagina": 1,
+      "trecho_fonte": "indico os seguintes peritos da Polícia Federal: 1. LUIS FILIPE DA CRUZ NASSIF; 2. TIAGO BARROSO DE MELO; 3. ENELSON CANDEIA DA CRUZ FILHO; e 4. LORENZO VICTOR SCHREPEL DELMUTTI.",
+      "condicoes": [
+        "livre acesso dos peritos ao material apreendido",
+        "apoio da Procuradoria-Geral da República para acompanhamento dos trabalhos periciais"
+      ]
+    },
+    {
+      "pedido": "publicidade da decisão contida no e-Doc. 14",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou à Secretaria Judiciária que torne pública a decisão contida no e-Doc. 14",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-15",
+      "pagina": 1,
+      "trecho_fonte": "determino à Secretaria Judiciária que torne pública a decisão contida no e-Doc. 14.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimação da Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2026-01-15",
+      "pagina": 1,
+      "trecho_fonte": "Intime-se a Procuradoria-Geral da República.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}
