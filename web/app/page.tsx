@@ -1,53 +1,95 @@
 import Link from "next/link";
-import { Carimbo, LegendaEpistemica, Publicidade } from "@/components/Badges";
+import { BadgeEpistemico, Carimbo, LegendaEpistemica, Publicidade } from "@/components/Badges";
 import { formatarData, getMeta, getProcesso, getProcessos } from "@/lib/data";
+import type { TipoEpistemico } from "@/lib/tipos";
 
+/* A página inicial é a capa dos autos: o processo principal como folha de rosto, com o índice do que a base
+   contém sobre ele. Cada linha do índice leva ao lugar certo. O que está fora da capa é o apenso (processos
+   relacionados) e a legenda de leitura. */
 export default function Home() {
   const meta = getMeta();
   const processos = getProcessos();
   const semente = getProcesso(meta.semente);
   const cab = semente.cabecalho;
   const decisoes = semente.andamentos.filter((a) => a.e_decisao).length;
+  const documentos = semente.andamentos.reduce((n, a) => n + a.documentos.filter((d) => d.baixado).length, 0);
   const relacionados = processos.filter((p) => p.incidente !== meta.semente);
+  const cont = semente.contagem_assercoes ?? { fato_processual: 0, alegacao_parte: 0, fundamento_decisorio: 0 };
+  const totalAssercoes = Object.values(cont).reduce((a, b) => a + b, 0);
+
+  const indice: { rotulo: string; valor: string | number; href: string; nota?: string }[] = [
+    { rotulo: "Andamentos", valor: semente.andamentos.length, href: `/processo/${cab.incidente}#lt`, nota: `${decisoes} decisões` },
+    { rotulo: "Documentos com texto", valor: documentos, href: `/processo/${cab.incidente}#lt` },
+    { rotulo: "Partes", valor: semente.partes.length, href: `/processo/${cab.incidente}#partes` },
+    { rotulo: "Petições", valor: semente.peticoes.length, href: `/processo/${cab.incidente}` },
+    { rotulo: "Sessões virtuais", valor: semente.sessoes.length, href: `/processo/${cab.incidente}#sessoes` },
+    { rotulo: "Asserções extraídas", valor: totalAssercoes, href: "/assercoes" },
+  ];
 
   return (
-    <div className="space-y-8">
-      <section aria-labelledby="titulo-semente" className="rounded-lg border border-neutral-300 bg-white p-5">
-        <div className="flex flex-wrap items-baseline gap-3">
-          <h1 id="titulo-semente" className="text-2xl font-bold">
-            {cab.classe} {cab.numero}
-          </h1>
-          <Publicidade valor={cab.publicidade} />
-          {cab.natureza && <span className="text-sm text-neutral-700">{cab.natureza}</span>}
-          {cab.reu_preso ? <span className="alerta rounded px-2 py-0.5 text-xs font-semibold">Réu preso</span> : null}
-        </div>
-        <dl className="mt-3 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
-          <div><dt className="inline font-semibold">Número único: </dt><dd className="inline">{cab.numero_unico ?? "—"}</dd></div>
-          <div><dt className="inline font-semibold">Relator: </dt><dd className="inline">{cab.relator ?? "—"}</dd></div>
-          <div><dt className="inline font-semibold">Protocolo: </dt><dd className="inline">{formatarData(cab.data_protocolo)}</dd></div>
-          <div><dt className="inline font-semibold">Último incidente: </dt><dd className="inline">{cab.ultimo_incidente ?? "—"}</dd></div>
-          <div className="sm:col-span-2"><dt className="inline font-semibold">Assunto: </dt><dd className="inline">{cab.assuntos.join("; ") || "—"}</dd></div>
-        </dl>
-        <ul className="mt-4 flex flex-wrap gap-4 text-sm">
-          <li><span className="font-semibold">{semente.andamentos.length}</span> andamentos</li>
-          <li><span className="font-semibold">{decisoes}</span> decisões</li>
-          <li><span className="font-semibold">{semente.partes.length}</span> partes</li>
-          <li><span className="font-semibold">{semente.peticoes.length}</span> petições</li>
-          <li><span className="font-semibold">{semente.sessoes.length}</span> sessões virtuais</li>
-        </ul>
-        <div className="mt-4 flex flex-wrap items-center gap-4">
-          <Link href={`/processo/${cab.incidente}`} className="botao-primario rounded px-4 py-2 text-sm font-semibold">
-            Abrir linha do tempo
-          </Link>
-          <Carimbo snapshot={cab.snapshot} />
-          <a className="text-sm underline" href={`https://portal.stf.jus.br/processos/detalhe.asp?incidente=${cab.incidente}`} rel="noreferrer">
-            Ver no portal do STF
-          </a>
+    <div className="space-y-10">
+      <section aria-labelledby="titulo-semente" className="capa">
+        <div className="capa-verso" aria-hidden />
+        <div className="capa-folha folha border border-neutral-300 bg-white">
+          <header className="border-b border-neutral-300 px-5 pt-5 pb-4 sm:px-8">
+            <p className="text-sm text-neutral-700">Supremo Tribunal Federal — autos públicos</p>
+            <div className="mt-1 flex flex-wrap items-end gap-x-4 gap-y-2">
+              <h1 id="titulo-semente" className="text-4xl leading-none sm:text-5xl">
+                {cab.classe} {cab.numero}
+              </h1>
+              <div className="flex flex-wrap items-center gap-2 pb-1">
+                <Publicidade valor={cab.publicidade} />
+                {cab.natureza && <span className="rounded-sm border border-neutral-400 px-1.5 py-px text-xs">{cab.natureza}</span>}
+                {cab.reu_preso ? <span className="alerta rounded-sm px-1.5 py-px text-xs font-semibold">réu preso</span> : null}
+              </div>
+            </div>
+            <dl className="mt-3 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
+              <div><dt className="inline text-neutral-700">Relator </dt><dd className="inline">{cab.relator ?? "—"}</dd></div>
+              <div><dt className="inline text-neutral-700">Protocolo </dt><dd className="inline">{formatarData(cab.data_protocolo)}</dd></div>
+              <div><dt className="inline text-neutral-700">Número único </dt><dd className="inline">{cab.numero_unico ?? "—"}</dd></div>
+              <div><dt className="inline text-neutral-700">Último incidente </dt><dd className="inline">{cab.ultimo_incidente ?? "—"}</dd></div>
+              <div className="sm:col-span-2"><dt className="inline text-neutral-700">Assunto </dt><dd className="inline leitura text-base">{cab.assuntos.join("; ") || "—"}</dd></div>
+            </dl>
+          </header>
+
+          <div className="grid gap-6 px-5 py-5 sm:px-8 lg:grid-cols-[minmax(0,1fr)_280px]">
+            <div>
+              <h2 className="text-sm text-neutral-700">Índice do que a base tem sobre este processo</h2>
+              <ol className="indice mt-2">
+                {indice.map((i) => (
+                  <li key={i.rotulo}>
+                    <Link href={i.href} className="indice-linha">
+                      <span className="indice-rotulo">{i.rotulo}{i.nota ? <span className="text-neutral-700"> ({i.nota})</span> : null}</span>
+                      <span className="indice-pontos" aria-hidden />
+                      <span className="indice-valor">{i.valor}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+              {totalAssercoes > 0 && (
+                <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                  {(["fato_processual", "alegacao_parte", "fundamento_decisorio"] as TipoEpistemico[]).map((t) => (
+                    <span key={t} className="flex items-center gap-1"><BadgeEpistemico tipo={t} /> {cont[t]}</span>
+                  ))}
+                </p>
+              )}
+            </div>
+            <div className="flex flex-col gap-2 text-sm">
+              <Link href={`/processo/${cab.incidente}`} className="botao-primario toque rounded px-4 py-2 text-center font-semibold">Abrir os autos</Link>
+              <Link href="/linha-do-tempo" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Linha do tempo do caso</Link>
+              <Link href="/grafo" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Grafo de ligações</Link>
+              <Link href="/busca" className="toque rounded border border-neutral-400 px-4 py-2 text-center hover:bg-neutral-100">Buscar nos autos</Link>
+              <p className="mt-2 text-xs text-neutral-700">
+                <Carimbo snapshot={cab.snapshot} />{" "}
+                <a className="underline" href={`https://portal.stf.jus.br/processos/detalhe.asp?incidente=${cab.incidente}`} rel="noreferrer">ver no portal do STF</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section aria-labelledby="titulo-relacionados">
-        <h2 id="titulo-relacionados" className="text-lg font-bold">Processos relacionados, declarados nos próprios autos</h2>
+        <h2 id="titulo-relacionados" className="text-lg">Apensos: processos relacionados, declarados nos próprios autos</h2>
         <p className="text-sm text-neutral-700">
           Extraídos dos andamentos de distribuição por prevenção e certidões de autuação. Cada um foi coletado por completo.
           Processos sigilosos mostram só o que o portal público devolve.
