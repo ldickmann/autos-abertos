@@ -1,0 +1,23 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os autos do Inq 5026 foram autuados em 22/12/2025 às 17:01:00, com assunto Direito Penal, Crimes contra o Sistema Financeiro Nacional, e Direito Processual Penal, Investigação Penal.",
+      "pagina": 1,
+      "trecho_fonte": "Data de autuação: 22/12/2025 às 17:01:00 Outros Dados: Folhas: 1 Volumes: 1 Apensos: 0 Assunto: DIREITO PENAL | Crimes Previstos na Legislação Extravagante | Crimes contra o Sistema Financeiro Nacional, DIREITO PROCESSUAL PENAL | Investigação Penal",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os autos foram distribuídos ao Ministro Dias Toffoli, com característica de distribuição Prevenção Relator/Sucessor, tendo como processo justificador a Pet 15172, em 22/12/2025.",
+      "pagina": 1,
+      "trecho_fonte": "Certifico, para os devidos fins, que estes autos foram distribuídos ao Senhor MIN. DIAS TOFFOLI, com a adoção dos seguintes parâmetros: Característica da distribuição: Prevenção Relator/Sucessor Processo Justificador: Pet 15172",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MIN. DIAS TOFFOLI", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

@@ -77,6 +77,7 @@ def cmd_ingerir(args):
 def cmd_reconstruir(args):
     from .documentos import extrair_texto
     from .entidades import construir_entidades
+    from .referencias import construir_referencias
     con = _con()
     apagar_projecao(con)
     criar_schema(con)
@@ -85,6 +86,7 @@ def cmd_reconstruir(args):
         print(f"{reg.name}: {json.dumps(r, ensure_ascii=False)}")
     print("texto:", json.dumps(extrair_texto(con, log=lambda s: None), ensure_ascii=False))
     print("entidades:", json.dumps(construir_entidades(con), ensure_ascii=False))
+    print("referencias:", json.dumps(construir_referencias(con), ensure_ascii=False))
 
 
 def cmd_diff(args):
@@ -112,6 +114,16 @@ def cmd_expandir(args):
     rel = expandir(con, args.incidente, profundidade=args.profundidade, cliente=ClienteEducado(teto=args.teto))
     print(json.dumps({k: v for k, v in rel.__dict__.items()}, ensure_ascii=False, indent=2, default=str))
     print("entidades:", json.dumps(construir_entidades(con), ensure_ascii=False))
+
+
+def cmd_referencias(args):
+    from .referencias import construir_referencias, contagem_por_diploma, resumo_dispositivos
+    con = _con()
+    criar_schema(con)
+    print(json.dumps(construir_referencias(con), ensure_ascii=False))
+    print("por diploma:", dict(contagem_por_diploma(con).most_common()))
+    for d in resumo_dispositivos(con)[:args.top]:
+        print(f"  {d['dispositivo']:32s} {len(d['documentos']):3d} doc(s)  {d['ocorrencias']:3d} ocorrência(s)")
 
 
 def cmd_entidades(args):
@@ -251,6 +263,7 @@ def main(argv=None):
     p = sub.add_parser("expandir"); p.add_argument("incidente", type=int)
     p.add_argument("--profundidade", type=int, default=1); p.add_argument("--teto", type=int, default=config.TETO_REQUISICOES_POR_EXPANSAO)
     p.set_defaults(f=cmd_expandir)
+    p = sub.add_parser("referencias"); p.add_argument("--top", type=int, default=20); p.set_defaults(f=cmd_referencias)
     p = sub.add_parser("entidades"); p.set_defaults(f=cmd_entidades)
     p = sub.add_parser("grafo"); p.set_defaults(f=cmd_grafo)
     p = sub.add_parser("cruzamentos"); p.set_defaults(f=cmd_cruzamentos)

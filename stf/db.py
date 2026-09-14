@@ -230,7 +230,8 @@ CREATE TABLE IF NOT EXISTS entidade (
     chave             TEXT NOT NULL UNIQUE,   -- oab:<num/UF> | nome:<normalizado>
     nome              TEXT NOT NULL,     -- forma mais frequente vista
     natureza_provavel TEXT,              -- pessoa_juridica quando o nome tem sufixo societário explícito; senão NULL
-    origem            TEXT NOT NULL DEFAULT 'partes'   -- partes | documento ("terceiro mencionado")
+    origem            TEXT NOT NULL DEFAULT 'partes',  -- partes | portal (relator/votos) | documento ("terceiro mencionado")
+    grupo             TEXT               -- agrupamento curado de órgãos (stf/curadoria/grupos.json); NULL para o resto
 );
 CREATE TABLE IF NOT EXISTS entidade_mencao (
     entidade_id  INTEGER NOT NULL REFERENCES entidade(id),
@@ -330,6 +331,51 @@ CREATE TABLE IF NOT EXISTS assercao_entidade (
     PRIMARY KEY (assercao_id, entidade_id)
 );
 
+-- referências determinísticas (stf/referencias.py): texto de documentos e descrições de andamentos
+CREATE TABLE IF NOT EXISTS documento_ref_processo (
+    id           INTEGER PRIMARY KEY,
+    documento_id INTEGER NOT NULL REFERENCES documento(id),
+    pagina       INTEGER NOT NULL,
+    classe       TEXT NOT NULL,
+    numero       INTEGER NOT NULL,
+    ocorrencias  INTEGER NOT NULL,
+    trecho       TEXT NOT NULL,
+    UNIQUE (documento_id, pagina, classe, numero)
+);
+CREATE INDEX IF NOT EXISTS ix_ref_processo ON documento_ref_processo(classe, numero);
+CREATE TABLE IF NOT EXISTS documento_ref_dispositivo (
+    id           INTEGER PRIMARY KEY,
+    documento_id INTEGER NOT NULL REFERENCES documento(id),
+    pagina       INTEGER NOT NULL,
+    artigo       TEXT NOT NULL,
+    diploma      TEXT NOT NULL,
+    dispositivo  TEXT NOT NULL,   -- "art. 312 CPP"
+    ocorrencias  INTEGER NOT NULL,
+    trecho       TEXT NOT NULL,
+    UNIQUE (documento_id, pagina, dispositivo)
+);
+CREATE INDEX IF NOT EXISTS ix_ref_dispositivo ON documento_ref_dispositivo(dispositivo);
+CREATE TABLE IF NOT EXISTS andamento_peticao (
+    andamento_id  INTEGER NOT NULL UNIQUE REFERENCES andamento(id),
+    peticao_id    INTEGER NOT NULL REFERENCES peticao(id),
+    numero_citado TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS documento_ref_andamento (
+    documento_id INTEGER NOT NULL REFERENCES documento(id),
+    pagina       INTEGER NOT NULL,
+    andamento_id INTEGER NOT NULL REFERENCES andamento(id),
+    tipo_citado  TEXT NOT NULL,
+    data_citada  TEXT NOT NULL,
+    PRIMARY KEY (documento_id, andamento_id)
+);
+CREATE INDEX IF NOT EXISTS ix_parte_inc ON parte(incidente);
+CREATE INDEX IF NOT EXISTS ix_documento_inc ON documento(incidente);
+CREATE INDEX IF NOT EXISTS ix_pagina_doc ON documento_pagina(documento_id);
+CREATE INDEX IF NOT EXISTS ix_assercao_entidade_ent ON assercao_entidade(entidade_id);
+CREATE INDEX IF NOT EXISTS ix_andamento_tipo ON andamento(tipo);
+CREATE INDEX IF NOT EXISTS ix_peticao_inc ON peticao(incidente, numero);
+CREATE INDEX IF NOT EXISTS ix_andamento_documento_doc ON andamento_documento(documento_id);
+
 CREATE VIRTUAL TABLE IF NOT EXISTS andamento_fts USING fts5(
     descricao, tipo,
     content='andamento', content_rowid='id',
@@ -341,6 +387,7 @@ END;
 """
 
 TABELAS_DERIVADAS = [
+    "documento_ref_processo", "documento_ref_dispositivo", "andamento_peticao", "documento_ref_andamento",
     "assercao_entidade", "assercao", "extracao",
     "entidade_mencao", "entidade", "processo", "documento_fts", "documento_chunk", "documento_pagina",
     "voto", "lista_julgamento", "objeto_incidente",

@@ -1,0 +1,12 @@
+{
+  "_nota": "Agrupamento CURADO de órgãos e instituições, para colorir e filtrar o grafo. Não é dado do portal: é uma lista de padrões mantida no repositório, versionada com o código. Cada padrão é uma expressão regular aplicada ao nome normalizado (maiúsculas, sem acentos). Pessoas físicas nunca entram aqui.",
+  "grupos": [
+    {"grupo": "Polícia Federal", "padroes": ["POLICIA FEDERAL", "\\bDPF\\b", "DELEGAD[OA] DE POLICIA", "SUPERINTENDENCIA REGIONAL"]},
+    {"grupo": "Ministério Público", "padroes": ["MINISTERIO PUBLICO", "PROCURADOR(?:IA)?[- ]GERAL D[AE] REPUBLICA", "PROCURADORIA DA REPUBLICA", "\\bPGR\\b", "\\bMPF\\b", "PROCURADOR DA REPUBLICA"]},
+    {"grupo": "Supremo Tribunal Federal", "padroes": ["SUPREMO TRIBUNAL FEDERAL", "\\bSTF\\b", "GABINETE D[OA] MINISTR", "SECRETARIA JUDICIARIA", "PRIMEIRA TURMA", "SEGUNDA TURMA", "PLENARIO"]},
+    {"grupo": "Outros tribunais e juízos", "padroes": ["SUPERIOR TRIBUNAL DE JUSTICA", "\\bSTJ\\b", "TRIBUNAL REGIONAL FEDERAL", "\\bTRF", "TRIBUNAL DE JUSTICA", "VARA (?:FEDERAL|CRIMINAL)", "JUIZO DA", "JUSTICA FEDERAL"]},
+    {"grupo": "Reguladores e sistema financeiro", "padroes": ["BANCO CENTRAL", "\\bBACEN\\b", "COMISSAO DE VALORES MOBILIARIOS", "\\bCVM\\b", "\\bCOAF\\b", "CONSELHO DE CONTROLE DE ATIVIDADES FINANCEIRAS", "TESOURO NACIONAL", "RECEITA FEDERAL"]},
+    {"grupo": "Poder Legislativo e Executivo", "padroes": ["SENADO FEDERAL", "CAMARA DOS DEPUTADOS", "CONGRESSO NACIONAL", "PRESIDENCIA DA REPUBLICA", "MINISTERIO DA", "ADVOCACIA-GERAL DA UNIAO", "\\bAGU\\b"]},
+    {"grupo": "Ordem dos Advogados", "padroes": ["ORDEM DOS ADVOGADOS", "\\bOAB\\b"]}
+  ]
+}

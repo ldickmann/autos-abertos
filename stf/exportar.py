@@ -19,6 +19,7 @@ STATUS_PROCESSUAL = {
     "autor": "autor", "reu": "réu", "denunciado": "denunciado", "agravante": "agravante", "agravado": "agravado",
     "paciente": "paciente", "impetrante": "impetrante", "coator": "autoridade coatora", "amicus_curiae": "amicus curiae",
     "recorrente": "recorrente", "recorrido": "recorrido", "embargante": "embargante", "embargado": "embargado",
+    "reclamante": "reclamante", "reclamado": "reclamado", "beneficiario": "beneficiário",
 }
 
 

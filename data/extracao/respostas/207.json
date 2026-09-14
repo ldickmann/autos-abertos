@@ -1,0 +1,35 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial sustenta a necessidade de diligências complementares que reputa imprescindíveis para a ultimação das investigações (e-Doc. 43).",
+      "pagina": 2,
+      "trecho_fonte": "realização de diligências complementares que reputa imprescindíveis para a ultimação das investigações (e-Doc. 43).",
+      "atribuida_a": "autoridade policial",
+      "entidades": [
+        {"nome": "autoridade policial", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "Com fulcro no artigo 230-C, § 1º, do RISTF, o relator defere a prorrogação de prazo por mais 60 dias.",
+      "pagina": 2,
+      "trecho_fonte": "Com fulcro no artigo 230-C, § 1º, do RISTF defiro a prorrogação de prazo, por mais 60 (sessenta) dias.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a remessa dos autos à Polícia Federal para a continuidade das investigações.",
+      "pagina": 2,
+      "trecho_fonte": "Remetam-se os autos à Polícia Federal para a continuidade das investigações.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

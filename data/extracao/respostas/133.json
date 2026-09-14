@@ -1,0 +1,32 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os autos do e-Inq 5035 foram autuados em 09/02/2026.",
+      "pagina": 1,
+      "trecho_fonte": "Data de autuação: 09/02/2026 às 18:47:59",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O assunto do processo é Direito Processual Penal | Investigação Penal.",
+      "pagina": 1,
+      "trecho_fonte": "Assunto: DIREITO PROCESSUAL PENAL | Investigação Penal",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Certificou-se que os autos foram distribuídos ao Ministro André Mendonça, com característica de Prevenção Relator/Sucessor, tendo como processo justificador o Inq 5026, em 13 de fevereiro de 2026.",
+      "pagina": 1,
+      "trecho_fonte": "Certifico, para os devidos fins, que estes autos foram distribuídos ao Senhor MIN. ANDRÉ MENDONÇA, com a adoção dos seguintes parâmetros:",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Coordenadoria de Processamento Inicial", "tipo": "orgao_publico"},
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

@@ -32,8 +32,11 @@ def con(tmp_path_factory):
 
 def test_entidades_canonicas_por_nome_e_por_oab(con):
     # 8 incidentes com as mesmas 56 partes (fixtures iguais) → as entidades não se multiplicam
-    n = con.execute("select count(*) from entidade").fetchone()[0]
+    n = con.execute("select count(*) from entidade where origem='partes'").fetchone()[0]
     assert n == 54  # 56 partes − 2 placeholders "SEM REPRESENTAÇÃO NOS AUTOS"
+    ministros = con.execute("select nome, chave, grupo from entidade where tipo='ministro' order by nome").fetchall()
+    assert [m["chave"] for m in ministros] and all(m["chave"].startswith("ministro:") and m["grupo"] == "Supremo Tribunal Federal" for m in ministros)
+    assert not any(m["nome"].startswith("MIN.") for m in ministros)   # prefixo removido, acentos preservados
     adv = con.execute("select * from entidade where nome='SERGIO RODRIGUES LEONARDO'").fetchone()
     assert adv["tipo"] == "advogado" and adv["chave"] == "oab:40852/DF"
     vorcaro = con.execute("select * from entidade where nome='DANIEL BUENO VORCARO'").fetchone()

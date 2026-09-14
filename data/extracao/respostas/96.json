@@ -1,0 +1,23 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou o desentranhamento da Petição nº 18822/2026 (e-Doc. 342-343) e sua vinculação aos autos da PET 15549.",
+      "pagina": 2,
+      "trecho_fonte": "À Secretaria para que proceda o desentranhamento da Petição nº 18822/2026 (e-Doc. 342-343) e faça sua vinculação nos autos da PET 15549.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação e proferiu o despacho em 26 de fevereiro de 2026.",
+      "pagina": 2,
+      "trecho_fonte": "Intime-se. Brasília, 26 de fevereiro de 2026.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

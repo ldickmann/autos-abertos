@@ -1,0 +1,35 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal requer nova prorrogação de prazo para a realização de diligências reputadas imprescindíveis para o esclarecimento dos fatos.",
+      "pagina": 2,
+      "trecho_fonte": "A Polícia Federal requer nova prorrogação de prazo para a realização de diligências reputadas imprescindíveis para o esclarecimento dos fatos.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator, considerando as razões apresentadas pela autoridade de polícia judiciária federal no e-Doc. 524, defere o pedido e prorroga o inquérito por mais 60 dias.",
+      "pagina": 2,
+      "trecho_fonte": "Considerando-se as razões apresentadas pela autoridade de polícia judiciária federal no e-Doc. 524, defiro o pedido, prorrogando o inquérito por mais 60 (sessenta) dias.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "ANDRÉ MENDONÇA", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação da Procuradoria-Geral da República e a publicação do despacho.",
+      "pagina": 2,
+      "trecho_fonte": "Intime-se a Procuradoria-Geral da República. Publique-se.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

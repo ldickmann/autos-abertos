@@ -1,0 +1,27 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a abertura de vista à Procuradoria-Geral da República para manifestação sobre o pedido de conversão da prisão preventiva em domiciliar, formulado por Fabiano Campos Zettel, em 27 de abril de 2026.",
+      "pagina": 2,
+      "trecho_fonte": "Abra-se vista à Procuradoria-Geral da República para manifestação sobre o pedido de conversão da prisão preventiva em domiciliar, formulado por Fabiano Campos Zettel (e-Docs. 358 a 363)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a abertura de vista à Procuradoria-Geral da República para manifestação sobre o pedido de restituição de bens, formulado por Paulo Sérgio Neves de Souza, em 27 de abril de 2026.",
+      "pagina": 2,
+      "trecho_fonte": "bem como sobre o pedido de restituição de bens, formulado por Paulo Sérgio Neves de Souza (e-Docs. 366 a 367).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Paulo Sérgio Neves de Souza", "tipo": "pessoa"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

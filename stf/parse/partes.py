@@ -37,6 +37,9 @@ PAPEIS: dict[str, str] = {
     "RÉU(É)(S)": "reu",
     "DENUNCIADO(A/S)": "denunciado",
     "INVEST.(A/S)": "investigado",
+    "RECLTE.(S)": "reclamante",
+    "RECLDO.(A/S)": "reclamado",
+    "BENEF.(A/S)": "beneficiario",
 }
 
 PLACEHOLDERS = {"SEM REPRESENTAÇÃO NOS AUTOS", "SOB SIGILO"}

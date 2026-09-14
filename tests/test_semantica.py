@@ -110,8 +110,10 @@ def test_entidades_resolvem_para_canonicas_ou_viram_terceiro_mencionado(banco):
     lig = con.execute("select a.tipo_epistemico from assercao_entidade ae join assercao a on a.id=ae.assercao_id "
                       "where ae.entidade_id=?", (vorcaro["id"],)).fetchall()
     assert [l[0] for l in lig] == ["fato_processual"]
-    mendonca = con.execute("select * from entidade where nome like '%MENDON%'").fetchone()
-    assert mendonca["origem"] == "documento" and mendonca["tipo"] == "ministro"
+    # o relator do cadastro ("MIN. ANDRÉ MENDONÇA") e a citação do documento ("Ministro André Mendonça") são a mesma entidade
+    mendonca = con.execute("select * from entidade where chave='ministro:ANDRE MENDONCA'").fetchone()
+    assert mendonca["origem"] == "portal" and mendonca["tipo"] == "ministro" and mendonca["grupo"] == "Supremo Tribunal Federal"
+    assert con.execute("select count(*) from entidade where nome like '%MENDON%'").fetchone()[0] == 1
     assert con.execute("select count(*) from entidade where nome='DANIEL BUENO VORCARO'").fetchone()[0] == 1
 
 

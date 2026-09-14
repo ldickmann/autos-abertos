@@ -26,7 +26,7 @@ from typing import Callable, Literal, Protocol
 from pydantic import BaseModel, Field, ValidationError
 
 from . import config
-from .entidades import normalizar
+from .entidades import chave_ministro, grupo_de, nome_ministro, normalizar
 from .store import BlobStore, caminho_relativo, resolver_raw
 
 PROMPT_PATH = Path(__file__).parent / "prompts" / "extracao_v1.md"
@@ -208,17 +208,25 @@ def validar_resposta(texto_json: str, paginas: list[str]) -> tuple[list[Assercao
 # ---------------------------------------------------------------- persistência
 
 def _resolver_entidade(con, citada: EntidadeCitada, sid: int | None) -> int:
-    chave = f"nome:{normalizar(citada.nome)}"
+    nome = citada.nome.strip()
+    if citada.tipo == "ministro" or _PREFIXO_MIN.match(nome):
+        # "Ministro André Mendonça (relator)" e "MIN. ANDRÉ MENDONÇA" (portal) são a mesma entidade
+        chave, nome, tipo = chave_ministro(nome), nome_ministro(nome), "ministro"
+    else:
+        chave, tipo = f"nome:{normalizar(nome)}", citada.tipo
     row = con.execute("SELECT id FROM entidade WHERE chave=?", (chave,)).fetchone()
     if row:
         return row["id"]
     # advogados canônicos têm chave por OAB; tenta casar pelo nome antes de criar
-    row = con.execute("SELECT id FROM entidade WHERE nome=? AND tipo='advogado'", (normalizar(citada.nome),)).fetchone()
+    row = con.execute("SELECT id FROM entidade WHERE nome=? AND tipo='advogado'", (normalizar(nome),)).fetchone()
     if row:
         return row["id"]
-    cur = con.execute("INSERT INTO entidade (tipo, chave, nome, natureza_provavel, origem) VALUES (?,?,?,?,?)",
-                      (citada.tipo, chave, citada.nome.strip(), None, "documento"))
+    cur = con.execute("INSERT INTO entidade (tipo, chave, nome, natureza_provavel, origem, grupo) VALUES (?,?,?,?,?,?)",
+                      (tipo, chave, nome, None, "documento", "Supremo Tribunal Federal" if tipo == "ministro" else grupo_de(nome)))
     return cur.lastrowid
+
+
+_PREFIXO_MIN = re.compile(r"^\s*(?:MIN\.?|MINISTR[OA])\s+", re.I)
 
 
 def extrair_assercoes(con: sqlite3.Connection, cliente: ClienteLLM, *, documentos: list[int] | None = None,
