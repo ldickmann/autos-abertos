@@ -32,28 +32,28 @@ export function LinhaDoTempo({ andamentos, explicacoes }: { andamentos: Andament
 
   return (
     <div>
-      <form className="mt-3 flex flex-wrap items-end gap-3 rounded border border-neutral-300 bg-white p-3 text-sm" onSubmit={(e) => e.preventDefault()} aria-label="Filtros da linha do tempo">
-        <label className="flex flex-col">
+      <form className="mt-3 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:items-end rounded border border-neutral-300 bg-white p-3 text-sm" onSubmit={(e) => e.preventDefault()} aria-label="Filtros da linha do tempo">
+        <label className="col-span-2 flex flex-col sm:col-span-1">
           <span className="font-medium">Tipo de andamento</span>
-          <select className="mt-1 rounded border border-neutral-400 px-2 py-1" value={tipo} onChange={(e) => setTipo(e.target.value)}>
+          <select className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={tipo} onChange={(e) => setTipo(e.target.value)}>
             <option value="">todos</option>
             {tipos.map((t) => <option key={t} value={t}>{t}</option>)}
           </select>
         </label>
         <label className="flex flex-col">
           <span className="font-medium">Tipo de asserção</span>
-          <select className="mt-1 rounded border border-neutral-400 px-2 py-1" value={tipoEp} onChange={(e) => setTipoEp(e.target.value as "" | TipoEpistemico)} disabled={totalAssercoes === 0}>
+          <select className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={tipoEp} onChange={(e) => setTipoEp(e.target.value as "" | TipoEpistemico)} disabled={totalAssercoes === 0}>
             <option value="">qualquer</option>
             <option value="fato_processual">fato processual</option>
             <option value="alegacao_parte">alegação de parte</option>
             <option value="fundamento_decisorio">fundamento decisório</option>
           </select>
         </label>
-        <label className="flex flex-col"><span className="font-medium">De</span><input type="date" className="mt-1 rounded border border-neutral-400 px-2 py-1" value={de} onChange={(e) => setDe(e.target.value)} /></label>
-        <label className="flex flex-col"><span className="font-medium">Até</span><input type="date" className="mt-1 rounded border border-neutral-400 px-2 py-1" value={ate} onChange={(e) => setAte(e.target.value)} /></label>
+        <label className="flex flex-col"><span className="font-medium">De</span><input type="date" className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={de} onChange={(e) => setDe(e.target.value)} /></label>
+        <label className="flex flex-col"><span className="font-medium">Até</span><input type="date" className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={ate} onChange={(e) => setAte(e.target.value)} /></label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={soDecisoes} onChange={(e) => setSoDecisoes(e.target.checked)} /> só decisões</label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={soComDoc} onChange={(e) => setSoComDoc(e.target.checked)} /> só com documento</label>
-        <p role="status" className="text-neutral-700">{filtrados.length} de {andamentos.length}{totalAssercoes ? ` · ${totalAssercoes} asserções` : ""}</p>
+        <p role="status" className="col-span-2 text-neutral-700">{filtrados.length} de {andamentos.length}{totalAssercoes ? ` · ${totalAssercoes} asserções` : ""}</p>
       </form>
 
       <ol className="linha-tempo relative mt-4 ml-5 border-l-2 border-neutral-400 pl-5">

@@ -4,6 +4,7 @@ import cytoscape, { type Core, type ElementDefinition } from "cytoscape";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ArestaGrafo, Grafo, NoGrafo } from "@/lib/tipos";
+import { useTelaLarga } from "@/lib/useTelaLarga";
 
 /*
   Leitura do grafo:
@@ -91,6 +92,11 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
   const [busca, setBusca] = useState("");
   const [modoCaminho, setModoCaminho] = useState(false);
   const [tema, setTema] = useState(0);
+  // Painéis laterais: abertos no desktop, fechados no celular (o canvas vem primeiro); o usuário pode alternar.
+  const telaLarga = useTelaLarga();
+  const [paineis, setPaineis] = useState<{ filtros: boolean | null; legenda: boolean | null }>({ filtros: null, legenda: null });
+  const filtrosAbertos = paineis.filtros ?? telaLarga;
+  const legendaAberta = paineis.legenda ?? telaLarga;
   const focoRef = useRef<string | null>(null);
   const modoCaminhoRef = useRef(false);
   useEffect(() => { focoRef.current = foco; }, [foco]);
@@ -224,7 +230,7 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
   const centrarEm = (id: string) => {
     const cy = cyRef.current; if (!cy) return;
     const no = cy.getElementById(id); if (no.empty()) return;
-    cy.animate({ center: { eles: no }, zoom: Math.max(cy.zoom(), 1.2) }, { duration: 350 });
+    cy.animate({ center: { eles: no }, zoom: Math.max(cy.zoom(), telaLarga ? 1.2 : 0.8) }, { duration: 350 });
     no.select(); setFoco(id); setCaminho(null); setDestino(null); setModoCaminho(false); aplicarFoco(cy, id, null);
   };
 
@@ -247,9 +253,9 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
 
   return (
     <div className="grid gap-3 lg:grid-cols-[230px_minmax(0,1fr)_300px]">
-      <aside className="space-y-3 text-sm">
-        <details className="folha border border-neutral-300 bg-white p-3" open>
-          <summary className="cursor-pointer font-semibold">Filtros</summary>
+      <aside className="min-w-0 space-y-3 text-sm">
+        <details className="folha border border-neutral-300 bg-white p-3" open={filtrosAbertos} onToggle={(ev) => { const aberto = ev.currentTarget.open; setPaineis((p) => ({ ...p, filtros: aberto })); }}>
+          <summary className="toque cursor-pointer font-semibold">Filtros</summary>
           <form className="mt-2 space-y-3" onSubmit={(ev) => { ev.preventDefault(); if (sugestoes[0]) centrarEm(sugestoes[0].id); }}>
             <label className="block">
               <span className="font-medium">Encontrar</span>
@@ -285,8 +291,8 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
             </div>
           </form>
         </details>
-        <details className="folha border border-neutral-300 bg-white p-3" open>
-          <summary className="cursor-pointer font-semibold">Legenda</summary>
+        <details className="folha border border-neutral-300 bg-white p-3" open={legendaAberta} onToggle={(ev) => { const aberto = ev.currentTarget.open; setPaineis((p) => ({ ...p, legenda: aberto })); }}>
+          <summary className="toque cursor-pointer font-semibold">Legenda</summary>
           <ul className="mt-2 space-y-1 text-xs">
             <li><span className="mr-1 inline-block rounded-sm bg-neutral-900 px-1 text-[10px] font-semibold text-neutral-50">Pet 15556</span> processo (borda dupla: principal)</li>
             <li><span className="mr-1 inline-block rounded-sm border border-dashed border-neutral-400 px-1 text-[10px]">HC 79812</span> processo citado, não coletado</li>
@@ -303,14 +309,15 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
         </details>
       </aside>
 
-      <div className="min-w-0">
-        <div ref={ref} className="grafo-canvas h-[62vh] min-h-[420px] w-full rounded border border-neutral-300 bg-white" role="img" aria-label="Grafo interativo de processos e entidades; a tabela ao final da página contém as mesmas ligações" />
-        <p role="status" className="mt-1 text-xs text-neutral-600">{visivel.nos.length} nós, {visivel.arestas.length} ligações. Clique num nó para ver a ficha; clique no fundo para sair do foco.</p>
+      <div className="order-first min-w-0 lg:order-none">
+        <div ref={ref} className="grafo-canvas h-[70svh] min-h-[380px] w-full lg:h-[62vh] lg:min-h-[420px] rounded border border-neutral-300 bg-white" role="img" aria-label="Grafo interativo de processos e entidades; a tabela ao final da página contém as mesmas ligações" />
+        <p role="status" className="mt-1 text-xs text-neutral-600">{visivel.nos.length} nós, {visivel.arestas.length} ligações. Toque num nó para ver a ficha; toque no fundo para sair do foco.</p>
       </div>
 
-      <aside className="text-sm">
+      <aside className="min-w-0 text-sm">
         {focoNo ? (
-          <div className="folha border border-neutral-300 bg-white p-3">
+          <section className="folha folha-inferior border border-neutral-300 bg-white p-3" aria-label={`Ficha de ${focoNo.rotulo}`}>
+            <button type="button" className="toque float-right -mr-1 -mt-1 rounded px-2 text-lg leading-none text-neutral-600 hover:bg-neutral-100 lg:hidden" aria-label="Fechar ficha" onClick={() => { setFoco(null); setCaminho(null); setDestino(null); setModoCaminho(false); if (cyRef.current) { cyRef.current.elements().unselect(); aplicarFoco(cyRef.current, null, null); } }}>×</button>
             <p className="text-xs text-neutral-600">{focoNo.tipo === "processo" ? (focoNo.dados.externo ? "processo citado, não coletado" : "processo") : `${String(focoNo.dados.subtipo)}${focoNo.dados.grupo ? `, ${String(focoNo.dados.grupo)}` : ""}`}</p>
             <h2 className="text-lg leading-tight">{focoNo.rotulo}</h2>
             {focoNo.tipo === "processo" && !focoNo.dados.externo && <p className="mt-1 text-xs text-neutral-700">relator {String(focoNo.dados.relator ?? "—")}, {String(focoNo.dados.publicidade ?? "")}</p>}
@@ -334,7 +341,7 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
             )}
             {caminho === null && destino && <p className="mt-2 text-xs">Sem caminho entre os dois nós com as camadas ativas.</p>}
             <h3 className="mt-3 text-sm font-semibold">Ligações ({ligacoes.length})</h3>
-            <div className="mt-1 max-h-[46vh] space-y-2 overflow-auto pr-1">
+            <div className="mt-1 space-y-2 pr-1 lg:max-h-[46vh] lg:overflow-auto">
               {ligacoesPorTipo.map(([tipo, ls]) => (
                 <details key={tipo} open={ls.length <= 8}>
                   <summary className="cursor-pointer text-xs font-medium"><span className="legenda-linha" style={estiloLinha(tipo)} />{ROTULO_ARESTA[tipo] ?? tipo} ({ls.length})</summary>
@@ -354,7 +361,7 @@ export function GrafoInterativo({ grafo, semente }: { grafo: Grafo; semente: num
                 </details>
               ))}
             </div>
-          </div>
+          </section>
         ) : (
           <div className="folha border border-neutral-300 bg-white p-3 text-neutral-700">
             <p>Clique num nó para abrir a ficha: papéis, quantas asserções o citam e cada ligação com a sua fonte (documento e página, andamento ou cadastro).</p>
