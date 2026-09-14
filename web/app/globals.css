@@ -199,9 +199,33 @@ details[open] > summary::before { transform: rotate(45deg) translateY(-0.15em); 
 .grafo-canvas { touch-action: none; }
 .legenda-linha { display: inline-block; width: 1.6rem; height: 0; border-top-width: 2px; vertical-align: middle; margin-right: 0.4rem; }
 
+/* Capa dos autos (página inicial): a folha de rosto sobre uma segunda folha, em perspectiva leve.
+   O índice tem pontilhado de sumário; o valor fica à direita, como num índice impresso. */
+.capa { position: relative; perspective: 1400px; }
+.capa-verso {
+  position: absolute; inset: 10px -6px -10px 6px;
+  border: 1px solid var(--fio); border-radius: 3px; background: var(--folha-alta);
+  transform: rotate(0.6deg);
+}
+.capa-folha { position: relative; transform: rotateX(0.6deg); transform-origin: 50% 100%; }
+@media (hover: hover) {
+  .capa-folha:hover, .capa-folha:focus-within { transform: perspective(1400px) rotateX(0deg) translateY(-2px); }
+}
+.indice { list-style: none; margin: 0; padding: 0; }
+.indice-linha {
+  display: flex; align-items: baseline; gap: 0.5rem;
+  padding: 0.35rem 0; text-decoration: none; color: inherit;
+  font-family: var(--font-serif); font-size: 1.05rem;
+}
+.indice-linha:hover .indice-rotulo, .indice-linha:focus-visible .indice-rotulo { text-decoration: underline; text-decoration-color: var(--vinculo); text-underline-offset: 3px; }
+.indice-rotulo { flex: 0 1 auto; }
+.indice-pontos { flex: 1 1 1rem; min-width: 1rem; border-bottom: 1px dotted var(--fio-forte); transform: translateY(-0.3em); }
+.indice-valor { flex: 0 0 auto; font-variant-numeric: tabular-nums; font-weight: 500; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
   .folha:hover { transform: none; }
+  .capa-folha, .capa-folha:hover { transform: none; }
 }
 
 /* ---------- Responsividade ---------- */

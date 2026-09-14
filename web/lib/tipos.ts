@@ -86,7 +86,7 @@ export type Assercao = {
 export type DocumentoCompleto = {
   meta: {
     id: number; incidente: number; endpoint: string; id_portal: string; formato: string; url: string; titulo: string;
-    sha256: string; paginas: number | null; tem_texto: boolean; precisa_ocr: boolean; codigo_autenticacao: string | null;
+    funcao?: string; sha256: string; paginas: number | null; tem_texto: boolean; precisa_ocr: boolean; codigo_autenticacao: string | null;
     senha_autenticacao: string | null; baixado_em: string | null; snapshot: Snapshot;
     andamentos: { id: number; data: string; tipo: string; incidente: number }[];
   };
@@ -107,6 +107,7 @@ export type Meta = {
   gerado_em: string; semente: number; coletado_em: Record<string, string>;
   coletas: { id: string; incidente: number; ingerida_em: string }[];
   contagens: Record<string, number>; tipos_epistemicos: Record<TipoEpistemico, string>;
+  funcoes_documento?: Record<string, string>;
 };
 
 export type NoGrafo = { id: string; tipo: "processo" | "entidade"; rotulo: string; dados: Record<string, unknown> };
