@@ -74,6 +74,8 @@ class ClienteEducado:
                 self.log.append(entrada)
                 return None
             self.ultima = self.relogio()
+            # cada salto de redirect é uma requisição a mais no portal; conta no teto
+            self.count += len(r.history)
             entrada.update(status=r.status_code, bytes=len(r.content), url_final=str(r.url),
                            redirects=[(str(h.url), h.status_code) for h in r.history])
             self.log.append(entrada)

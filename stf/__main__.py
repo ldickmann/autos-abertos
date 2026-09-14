@@ -7,6 +7,10 @@
   diff <coleta_a> <coleta_b>   compara duas coletas (ids ou caminhos de registro)
   buscar "<termos>"            busca FTS5 em andamentos
   status                       contagens do banco
+  expandir <incidente>         resolve processos relacionados e coleta cada um por completo (--profundidade, --teto)
+  entidades                    (re)constrói entidades canônicas a partir das partes
+  grafo                        imprime a lista de arestas e grava data/grafo.json
+  cruzamentos                  o que se repete entre processos (entidades, relações, números de origem)
 """
 
 from __future__ import annotations
@@ -86,6 +90,35 @@ def cmd_buscar(args):
     print(f"{len(rows)} resultado(s)")
 
 
+def cmd_expandir(args):
+    from .coleta import ClienteEducado
+    from .entidades import construir_entidades
+    from .expandir import expandir
+    con = _con()
+    rel = expandir(con, args.incidente, profundidade=args.profundidade, cliente=ClienteEducado(teto=args.teto))
+    print(json.dumps({k: v for k, v in rel.__dict__.items()}, ensure_ascii=False, indent=2, default=str))
+    print("entidades:", json.dumps(construir_entidades(con), ensure_ascii=False))
+
+
+def cmd_entidades(args):
+    from .entidades import construir_entidades
+    print(json.dumps(construir_entidades(_con()), ensure_ascii=False))
+
+
+def cmd_grafo(args):
+    from .grafo import construir_grafo, formatar_arestas
+    g = construir_grafo(_con())
+    saida = config.DATA / "grafo.json"
+    saida.write_text(json.dumps(g, ensure_ascii=False, indent=1), "utf-8")
+    print(formatar_arestas(g))
+    print(f"\ngravado: {saida}")
+
+
+def cmd_cruzamentos(args):
+    from .grafo import cruzamentos, formatar_cruzamentos
+    print(formatar_cruzamentos(cruzamentos(_con())))
+
+
 def cmd_status(args):
     con = _con()
     print(json.dumps(resumo(con), ensure_ascii=False, indent=2))
@@ -103,6 +136,12 @@ def main(argv=None):
     p = sub.add_parser("diff"); p.add_argument("a"); p.add_argument("b"); p.set_defaults(f=cmd_diff)
     p = sub.add_parser("buscar"); p.add_argument("termos"); p.add_argument("--limite", type=int, default=20); p.set_defaults(f=cmd_buscar)
     p = sub.add_parser("status"); p.set_defaults(f=cmd_status)
+    p = sub.add_parser("expandir"); p.add_argument("incidente", type=int)
+    p.add_argument("--profundidade", type=int, default=1); p.add_argument("--teto", type=int, default=config.TETO_REQUISICOES_POR_EXPANSAO)
+    p.set_defaults(f=cmd_expandir)
+    p = sub.add_parser("entidades"); p.set_defaults(f=cmd_entidades)
+    p = sub.add_parser("grafo"); p.set_defaults(f=cmd_grafo)
+    p = sub.add_parser("cruzamentos"); p.set_defaults(f=cmd_cruzamentos)
     args = ap.parse_args(argv)
     args.f(args)
 

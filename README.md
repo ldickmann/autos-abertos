@@ -13,8 +13,8 @@ com ponteiro para documento e página.
 |---|---|---|
 | 0 — reconhecimento | concluída | [FASE0-RELATORIO.md](FASE0-RELATORIO.md) |
 | 1 — ingestão determinística | concluída | [FASE1-RELATORIO.md](FASE1-RELATORIO.md) |
-| 2 — grafo de processos | aguardando gate | |
-| 3 — documentos | | |
+| 2 — grafo de processos e entidades | concluída | [FASE2-RELATORIO.md](FASE2-RELATORIO.md) |
+| 3 — documentos | em andamento | |
 | 4 — camada semântica | | |
 | 5 — interface | | |
 
@@ -22,11 +22,14 @@ com ponteiro para documento e página.
 
 ```bash
 python -m pip install -r requirements.txt
-python -m pytest -q                       # 48 testes, offline
+python -m pytest -q                       # 65 testes, offline
 python -m stf coletar 7514886             # 11 requisições, ≥3 s entre elas, UA identificado
 python -m stf buscar "prisao preventiva"
 python -m stf diff <coleta_a> <coleta_b>
 python -m stf reconstruir                 # recria o SQLite a partir dos blobs
+python -m stf expandir 7514886 --profundidade 2   # resolve e coleta os processos relacionados
+python -m stf grafo                       # lista de arestas + data/grafo.json
+python -m stf cruzamentos                 # entidades em vários processos, relações, coincidências
 ```
 
 Fonte de verdade: `data/raw/blobs/` (conteúdo por sha256) e `data/raw/coletas/*.jsonl`.

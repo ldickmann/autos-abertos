@@ -24,3 +24,4 @@ TETO_REQUISICOES_POR_COLETA = 12   # 1 casca + 9 abas + margem para redirects; d
 BACKOFF_BASE_S = 5.0
 BACKOFF_TENTATIVAS = 3
 TIMEOUT_S = 60.0
+TETO_REQUISICOES_POR_EXPANSAO = 150  # 7 resoluções + 7 vizinhos × 11 abas = 84 no caso-semente; margem para agravos

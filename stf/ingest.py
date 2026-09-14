@@ -21,6 +21,7 @@ from .parse.informacoes import parse_informacoes
 from .parse.partes import parse_partes
 from .parse.peticoes import parse_peticoes
 from .parse.relacoes import extrair_relacoes
+from .resolver import interpretar_resolucao
 from . import config
 from .store import RegistroColeta, resolver_raw
 
@@ -39,20 +40,51 @@ def _ler_blob(reg: dict) -> bytes:
     return data
 
 
+def upsert_processo(con, classe: str, numero: int, incidente: int | None, status: str, *, candidatos=None,
+                    url_final=None, snapshot_id=None, resolvido_em=None, profundidade=None) -> None:
+    """Uma linha por (classe, número). Nunca rebaixa 'semente'/'resolvido' para outro status."""
+    con.execute(
+        "INSERT INTO processo (classe, numero, incidente_principal, status, candidatos, url_final, snapshot_id, resolvido_em, profundidade) "
+        "VALUES (?,?,?,?,?,?,?,?,?) ON CONFLICT(classe, numero) DO UPDATE SET "
+        "incidente_principal=COALESCE(excluded.incidente_principal, processo.incidente_principal), "
+        "status=CASE WHEN processo.status='semente' THEN 'semente' "
+        "            WHEN processo.status='resolvido' AND excluded.status <> 'semente' THEN 'resolvido' "
+        "            ELSE excluded.status END, "
+        "candidatos=COALESCE(excluded.candidatos, processo.candidatos), "
+        "url_final=COALESCE(excluded.url_final, processo.url_final), "
+        "snapshot_id=COALESCE(excluded.snapshot_id, processo.snapshot_id), "
+        "resolvido_em=COALESCE(excluded.resolvido_em, processo.resolvido_em), "
+        "profundidade=COALESCE(processo.profundidade, excluded.profundidade)",
+        (classe, numero, incidente, status, json.dumps(candidatos) if candidatos else None, url_final, snapshot_id,
+         resolvido_em, profundidade),
+    )
+
+
 def _registrar_snapshots(con: sqlite3.Connection, coleta_id: str, registros: list[dict]) -> dict[str, dict]:
     """Insere as linhas de snapshot e devolve {aba: {"id": snapshot_id, "reg": registro}}
-    para as abas com HTTP 200."""
+    para as abas com HTTP 200. Linhas de resolução (listarProcessos) derivam a tabela `processo`."""
     por_aba: dict[str, dict] = {}
+    semente = int(coleta_id.rsplit("-", 1)[-1]) if "-resolucoes-" in coleta_id else None
     for r in registros:
+        incidente = r.get("incidente_resolvido") or r["incidente"] or semente
         cur = con.execute(
             "INSERT OR IGNORE INTO snapshot (coleta_id, incidente, aba, url, fetched_at, http_status, "
             "sha256, bytes, raw_path, content_type) VALUES (?,?,?,?,?,?,?,?,?,?)",
-            (coleta_id, r["incidente"], r["aba"], r["url"], r["fetched_at"], r["http_status"],
+            (coleta_id, incidente, r["aba"], r["url"], r["fetched_at"], r["http_status"],
              r["sha256"], r["bytes"], r["raw_path"], r.get("content_type")),
         )
         sid = cur.lastrowid if cur.rowcount else con.execute(
             "SELECT id FROM snapshot WHERE coleta_id=? AND aba=? AND url=? AND fetched_at=?",
             (coleta_id, r["aba"], r["url"], r["fetched_at"])).fetchone()[0]
+        if r["aba"] == "resolucao" and r["http_status"] == 200:
+            res = interpretar_resolucao(r["classe"], int(r["numero"]), r.get("url_final") or r["url"], _ler_blob(r))
+            upsert_processo(con, res.classe, res.numero, res.incidentes[0] if res.status == "resolvido" else None,
+                            res.status, candidatos=res.incidentes if res.status == "multiplos" else None,
+                            url_final=res.url_final, snapshot_id=sid, resolvido_em=r["fetched_at"],
+                            profundidade=r.get("profundidade"))
+        elif r["aba"] == "resolucao":
+            upsert_processo(con, r["classe"], int(r["numero"]), None, "erro", url_final=r.get("url_final"),
+                            snapshot_id=sid, resolvido_em=r["fetched_at"], profundidade=r.get("profundidade"))
         if r["http_status"] == 200 and r["aba"] not in por_aba:
             por_aba[r["aba"]] = {"id": sid, "reg": r}
     return por_aba
@@ -98,6 +130,11 @@ def _projetar_incidente(con, incidente: int, snap_casca: dict, snap_info: dict |
         "INSERT OR IGNORE INTO incidente_versao (incidente, snapshot_id, hash, campos) VALUES (?,?,?,?)",
         (incidente, sid, versao_hash, json.dumps(campos, ensure_ascii=False)),
     )
+    # todo incidente coletado é um processo resolvido (a casca diz classe e número);
+    # se existe um registro de resoluções cujo id termina em "-resolucoes-<incidente>", ele foi semente de expansão
+    upsert_processo(con, casca.classe, casca.numero_processo, incidente, "resolvido", resolvido_em=visto)
+    if con.execute("SELECT 1 FROM coleta WHERE id LIKE ?", (f"%-resolucoes-{incidente}",)).fetchone():
+        con.execute("UPDATE processo SET status='semente', profundidade=0 WHERE incidente_principal=?", (incidente,))
 
 
 def _upsert_visto(con, tabela: str, hash_natural: str, campos: dict, sid: int, *, avancar: bool = True) -> int:
@@ -194,15 +231,21 @@ def ingerir_coleta(con: sqlite3.Connection, registro_path: Path) -> dict:
     if not registros:
         raise ValueError(f"registro vazio: {registro_path}")
     coleta_id = registros[0]["coleta_id"]
-    incidentes = {r["incidente"] for r in registros}
-    if len(incidentes) != 1:
-        raise ValueError(f"registro com mais de um incidente: {incidentes}")
-    incidente = incidentes.pop()
+    if "-resolucoes-" in coleta_id:
+        # registro de resoluções de uma expansão: o incidente é a semente, que está no id
+        incidente = int(coleta_id.rsplit("-", 1)[-1])
+    else:
+        incidentes = {r["incidente"] for r in registros}
+        if len(incidentes) != 1:
+            raise ValueError(f"registro com mais de um incidente: {incidentes}")
+        incidente = incidentes.pop()
 
     with con:
         con.execute("INSERT OR IGNORE INTO coleta (id, incidente, registro_path, ingerida_em) VALUES (?,?,?,?)",
                     (coleta_id, incidente, str(registro_path), _agora()))
         snaps = _registrar_snapshots(con, coleta_id, registros)
+        if "-resolucoes-" in coleta_id:
+            con.execute("UPDATE processo SET status='semente', profundidade=0 WHERE incidente_principal=?", (incidente,))
 
         if "casca" in snaps:
             _projetar_incidente(con, incidente, snaps["casca"], snaps.get("informacoes"))

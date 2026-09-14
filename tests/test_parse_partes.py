@@ -50,3 +50,20 @@ def test_partes_sem_representacao_nao_vira_pessoa(fx):
     assert [p.bloco for p in sem] == [1, 30]
     assert all(p.e_placeholder for p in sem)
     assert all(p.papel == "advogado" and p.oab == [] for p in sem)
+
+
+def test_separa_oab_em_formatos_reais_do_portal():
+    from stf.parse.partes import _separa_oab
+    casos = {
+        "ALVARO AUGUSTO MACEDO VASQUES ORIONE SOUZA (30814/A/MT, 317282/SP)": ["30814/A/MT", "317282/SP"],
+        "ODEL MIKAEL JEAN ANTUN (62591/DF, 229733/RJ, 141073A/RS, 172515/SP)": ["62591/DF", "229733/RJ", "141073A/RS", "172515/SP"],
+        "PEDRO IVO RODRIGUES VELLOSO CORDEIRO (23944/DF, 32957 A/PB, 450956/SP)": ["23944/DF", "32957 A/PB", "450956/SP"],
+        "TICIANO FIGUEIREDO DE OLIVEIRA (5922-A/AP, 23870/DF)": ["5922-A/AP", "23870/DF"],
+        "CARMEN MANSANO DA COSTA BARROS FILHA (01875/A/DF, 041099/RJ)": ["01875/A/DF", "041099/RJ"],
+        "SEM REPRESENTAÇÃO NOS AUTOS": [],
+        "KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA": [],
+    }
+    for bruto, oabs in casos.items():
+        nome, extraidas = _separa_oab(bruto)
+        assert extraidas == oabs, bruto
+        assert "(" not in nome or not oabs, bruto

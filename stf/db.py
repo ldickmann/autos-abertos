@@ -175,6 +175,38 @@ CREATE TABLE IF NOT EXISTS processo_relacao (
     UNIQUE (incidente_origem, classe_destino, numero_destino, tipo)
 );
 
+-- processo (classe+número) → incidente principal, resolvido via listarProcessos.asp
+CREATE TABLE IF NOT EXISTS processo (
+    classe              TEXT NOT NULL,
+    numero              INTEGER NOT NULL,
+    incidente_principal INTEGER,
+    status              TEXT NOT NULL,   -- resolvido | multiplos | nao_encontrado | erro | semente
+    candidatos          TEXT,            -- JSON, quando multiplos
+    url_final           TEXT,
+    snapshot_id         INTEGER,         -- snapshot da resposta de resolução
+    resolvido_em        TEXT,
+    profundidade        INTEGER,         -- distância da semente em que foi descoberto
+    PRIMARY KEY (classe, numero)
+);
+
+-- entidades canônicas, derivadas deterministicamente das partes (ver stf/entidades.py)
+CREATE TABLE IF NOT EXISTS entidade (
+    id                INTEGER PRIMARY KEY,
+    tipo              TEXT NOT NULL,     -- parte | advogado
+    chave             TEXT NOT NULL UNIQUE,   -- oab:<num/UF> | nome:<normalizado>
+    nome              TEXT NOT NULL,     -- forma mais frequente vista
+    natureza_provavel TEXT               -- pessoa_juridica quando o nome tem sufixo societário explícito; senão NULL
+);
+CREATE TABLE IF NOT EXISTS entidade_mencao (
+    entidade_id  INTEGER NOT NULL REFERENCES entidade(id),
+    parte_id     INTEGER NOT NULL UNIQUE REFERENCES parte(id),
+    incidente    INTEGER NOT NULL,
+    papel_portal TEXT NOT NULL,
+    papel        TEXT NOT NULL,
+    bloco        INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_mencao_entidade ON entidade_mencao(entidade_id);
+
 CREATE VIRTUAL TABLE IF NOT EXISTS andamento_fts USING fts5(
     descricao, tipo,
     content='andamento', content_rowid='id',
@@ -186,6 +218,7 @@ END;
 """
 
 TABELAS_DERIVADAS = [
+    "entidade_mencao", "entidade", "processo",
     "andamento_documento", "processo_relacao", "andamento_fts", "andamento", "tipo_andamento",
     "documento", "parte", "peticao", "deslocamento", "incidente_versao", "incidente",
     "snapshot", "coleta",

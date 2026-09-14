@@ -41,7 +41,9 @@ PAPEIS: dict[str, str] = {
 
 PLACEHOLDERS = {"SEM REPRESENTAÇÃO NOS AUTOS", "SOB SIGILO"}
 
-_OAB_RE = re.compile(r"^(?P<nome>.*?)\s*\((?P<oabs>(?:\d+/[A-Z]{2}(?:,\s*)?)+)\)\s*$")
+# formatos vistos no portal: 317282/SP, 30814/A/MT, 141073A/RS, "32957 A/PB", 5922-A/AP, 01875/A/DF
+_OAB_UMA = r"\d+\s?-?\s?[A-Z]?(?:/[A-Z])?/[A-Z]{2}"
+_OAB_RE = re.compile(rf"^(?P<nome>.*?)\s*\((?P<oabs>(?:{_OAB_UMA}(?:,\s*)?)+)\)\s*$")
 
 
 @dataclass
