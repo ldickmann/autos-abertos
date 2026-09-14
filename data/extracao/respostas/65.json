@@ -1,0 +1,161 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A defesa de João Pedro Leite Nunes formulou requerimento nos autos.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de requerimento formulado pela defesa de JOÃO PEDRO",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "João Pedro Leite Nunes", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa de João Pedro Leite Nunes postula o acesso integral aos autos do Inquérito nº 5026/STF.",
+      "pagina": 3,
+      "trecho_fonte": "LEITE NUNES, por meio do qual postula: (i) o acesso integral aos autos do Inquérito nº 5026/STF",
+      "atribuida_a": "Defesa de João Pedro Leite Nunes",
+      "entidades": [
+        {"nome": "João Pedro Leite Nunes", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa de João Pedro Leite Nunes postula o adiamento da oitiva designada para 27/08/2026, sob o fundamento de que a defesa técnica constituída ainda não teve acesso ao caderno investigativo.",
+      "pagina": 3,
+      "trecho_fonte": "o adiamento da oitiva designada para o dia 27/08/2026, sob o fundamento de que a defesa técnica constituída ainda não teve acesso ao caderno investigativo",
+      "atribuida_a": "Defesa de João Pedro Leite Nunes",
+      "entidades": [
+        {"nome": "João Pedro Leite Nunes", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa sustenta ser imprescindível a prévia análise dos elementos já documentados para o adequado exercício da ampla defesa e para a preparação do investigado para o ato.",
+      "pagina": 3,
+      "trecho_fonte": "sendo imprescindível a prévia análise dos elementos já documentados para o adequado exercício da ampla defesa e para a preparação do investigado para o ato.",
+      "atribuida_a": "Defesa de João Pedro Leite Nunes",
+      "entidades": [
+        {"nome": "João Pedro Leite Nunes", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa narra que o investigado foi intimado para prestar depoimento perante a Delegacia de Inquéritos Especiais da Polícia Federal.",
+      "pagina": 3,
+      "trecho_fonte": "Narra a defesa que o investigado foi intimado para prestar depoimento perante a Delegacia de Inquéritos Especiais da Polícia Federal",
+      "atribuida_a": "Defesa de João Pedro Leite Nunes",
+      "entidades": [
+        {"nome": "João Pedro Leite Nunes", "tipo": "pessoa"},
+        {"nome": "Delegacia de Inquéritos Especiais da Polícia Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa requer a concessão de prazo razoável para exame dos autos, em razão da complexidade técnica das questões que serão abordadas durante a oitiva.",
+      "pagina": 3,
+      "trecho_fonte": "requerendo a concessão de prazo razoável para exame dos autos, especialmente em razão da complexidade técnica das questões que serão abordadas durante a oitiva.",
+      "atribuida_a": "Defesa de João Pedro Leite Nunes",
+      "entidades": [
+        {"nome": "João Pedro Leite Nunes", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca o art. 5º, inciso LV, da Constituição da República, que assegura o contraditório e a ampla defesa, com os meios e recursos a ela inerentes.",
+      "pagina": 3,
+      "trecho_fonte": "A Constituição da República assegura, em seu art. 5º, inciso LV, o contraditório e a ampla defesa, com os meios e recursos a ela inerentes.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que, embora o inquérito policial possua natureza inquisitorial, é pacífico o entendimento de que o investigado e seu defensor possuem o direito de acesso aos elementos de prova já documentados nos autos que digam respeito ao exercício do direito de defesa.",
+      "pagina": 3,
+      "trecho_fonte": "Embora o inquérito policial possua natureza inquisitorial e não se confunda com a fase processual, é pacífico o entendimento de que o investigado e seu defensor possuem o direito de acesso aos elementos de prova já documentados nos autos e que digam respeito ao exercício do direito de defesa.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca a Súmula Vinculante nº 14 do Supremo Tribunal Federal, segundo a qual é direito do defensor, no interesse do representado, ter acesso amplo aos elementos de prova já documentados em procedimento investigatório, ressalvadas as diligências em andamento cujo conhecimento prévio possa comprometer sua eficácia.",
+      "pagina": 3,
+      "trecho_fonte": "a Súmula Vinculante nº 14 do Supremo Tribunal Federal consagrou o entendimento segundo o qual é direito do defensor, no interesse do representado, ter acesso amplo aos elementos de prova já documentados em procedimento investigatório realizado por órgão com competência de polícia judiciária",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O acesso aos autos foi concedido ao requerente desde 24 de agosto de 2026.",
+      "pagina": 4,
+      "trecho_fonte": "requerente desde 24 de agosto do corrente ano",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica que o acesso aos autos já foi concedido ao requerente desde 24 de agosto de 2026, o que torna o pedido prejudicado nesta parte.",
+      "pagina": 4,
+      "trecho_fonte": "requerente desde 24 de agosto do corrente ano, o que torna o pedido prejudicado nesta parte.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica que, ante a superveniência da data inicialmente indicada para a oitiva (27/08/2026), o pedido de adiamento resta igualmente prejudicado.",
+      "pagina": 4,
+      "trecho_fonte": "ante a superveniência da data inicialmente indicada para realização do ato, verifica-se que este segundo pedido resta igualmente prejudicado.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator julgou prejudicados ambos os pedidos deduzidos por meio da petição encartada ao e-Doc. 1.015.",
+      "pagina": 4,
+      "trecho_fonte": "julgo prejudicados ambos os pedidos deduzidos por meio da petição encartada ao e-Doc. 1.015.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação.",
+      "pagina": 4,
+      "trecho_fonte": "Intime-se.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 28 de agosto de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 4,
+      "trecho_fonte": "Brasília, 28 de agosto de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

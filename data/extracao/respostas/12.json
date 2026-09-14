@@ -1,0 +1,238 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556 do Distrito Federal tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Consta nos autos petição veiculada no e-Doc. 287, em que Fabiano Campos Zettel formula pedidos relacionados às condições de sua custódia atual.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de petição veiculada no e-Doc. 287 em que FABIANO CAMPOS ZETTEL formula pedidos relacionados às condições de sua custódia atual",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Fabiano Campos Zettel requer autorização para que o contato com seus procuradores seja feito em sala reservada.",
+      "pagina": 2,
+      "trecho_fonte": "notadamente autorização para que o contato com seus procuradores seja feito em sala reservada",
+      "atribuida_a": "Fabiano Campos Zettel",
+      "entidades": [
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Fabiano Campos Zettel requer que o estabelecimento prisional autorize a entrada de aparelho televisor.",
+      "pagina": 2,
+      "trecho_fonte": "bem como que o estabelecimento prisional autorize a entrada de aparelho televisor",
+      "atribuida_a": "Fabiano Campos Zettel",
+      "entidades": [
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Procuradoria-Geral da República, instada a se manifestar, apresentou parecer no e-Doc. 330.",
+      "pagina": 2,
+      "trecho_fonte": "Instalada a se manifestar a Procuradoria-Geral da República apresentou parecer (e-Doc. 330)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República afirma em parecer que a possibilidade de doação de televisão não foi devidamente comprovada nos autos.",
+      "pagina": 2,
+      "trecho_fonte": "A possibilidade de doação de televisão, por sua vez, não foi devidamente comprovada nos autos.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República afirma que não há comprovação da alegação de que a Direção do estabelecimento prisional indicou a possibilidade de entrada do aparelho, desde que respeitadas as normas locais e com prévia autorização do Ministro.",
+      "pagina": 3,
+      "trecho_fonte": "comprovação da alegação de que a Direção do estabelecimento prisional indicou a possibilidade de entrada do aparelho desde que respeitadas as normais locais e com prévia autorização do eminente Ministro.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República afirma que, desse modo, o exame do pedido está comprometido.",
+      "pagina": 3,
+      "trecho_fonte": "Dessemodo,o examedo pedido écomprometido.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a manifestação ministerial é clara ao afirmar que, quanto ao pedido de doação de aparelho de televisão, os elementos coligidos são insuficientes à sua comprovação nos autos e que inexiste demonstração de anuência do estabelecimento prisional.",
+      "pagina": 3,
+      "trecho_fonte": "a manifestação ministerial é clara ao afirmar que, no que concerne ao pedido de doação de aparelho de televisão, os elementos coligidos mostram-se insuficientes à sua comprovação nos autos, bem como inexiste demonstração de anuência do estabelecimento prisional.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que, nos mesmos termos do que foi decidido em relação ao investigado Daniel Bueno Vorcaro, não seria o caso de deferimento do pedido de disponibilização de aparelho de televisão na cela do custodiado.",
+      "pagina": 3,
+      "trecho_fonte": "nos mesmo termos do que foi decidido em relação ao investigado DANIEL BUENO VORCARO, também aqui não seria o caso de deferimento do pedido para disponibilização de aparelho de televisão na cela do custodiado.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que a pretensão se refere a matéria inerente ao funcionamento administrativo da penitenciária e que não se extrai do arcabouço normativo a existência de direito subjetivo autônomo do custodiado à posse de equipamento dessa natureza em cela.",
+      "pagina": 3,
+      "trecho_fonte": "a pretensão se refere a matéria inerente ao funcionamento administrativo da penitenciária e não se extrai do arcabouço normativo incidente ao caso a existência de direito subjetivo autônomo do custodiado à posse de equipamento dessa natureza em cela",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a disciplina sobre objetos permitidos, facilidades materiais e condições de permanência é submetida, em regra, às normas administrativas da unidade e ao respectivo regime de segurança.",
+      "pagina": 3,
+      "trecho_fonte": "sendo a disciplina sobre objetos permitidos, facilidades materiais e condições de permanência submetida, em regra, às normas administrativas da unidade e ao respectivo regime de segurança.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera, nos termos do parecer do MPF, que não há comprovação de que a Direção do estabelecimento prisional indicou a possibilidade de entrada do aparelho, o que também compromete o acolhimento do pedido.",
+      "pagina": 3,
+      "trecho_fonte": "nos termos do parecer do MPF, portanto, não há comprovação de que a Direção do estabelecimento prisional indicou a possibilidade de entrada do aparelho desde que respeitadas as normais locais, o que adicionalmente ao fundamento acima também compromete o acolhimento do pedido.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "MPF", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Parquet manifestou-se no sentido de que o parlatório apresenta estrutura adequada ao atendimento das necessidades de advogados e custodiados, inclusive em demandas complexas.",
+      "pagina": 4,
+      "trecho_fonte": "o Parquet manifestou-se no sentido de que o parlatório apresenta estrutura adequada ao atendimento das necessidades de advogados e custodiados, inclusive em demandas complexas",
+      "atribuida_a": "Parquet (Procuradoria-Geral da República)",
+      "entidades": [
+        {"nome": "Parquet", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Parquet sustenta ser descabida a pretensão de adoção de um procedimento excepcional por tempo indeterminado, sob pena de comprometimento da organização do sistema penitenciário e de estímulo a pedidos análogos.",
+      "pagina": 4,
+      "trecho_fonte": "sendo descabida a pretensão de adoção de um procedimento excepcional por tempo indeterminado, sob pena de comprometimento da organização do sistema penitenciário e de estímulo a pedidos análogos que desvirtuem os canais formais de comunicação.",
+      "atribuida_a": "Parquet (Procuradoria-Geral da República)",
+      "entidades": [
+        {"nome": "Parquet", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que as prerrogativas do direito à assistência por advogado e à plena defesa, resguardadas na custódia cautelar, não ostentam caráter absoluto e devem coexistir com os imperativos de segurança e a disciplina do sistema penitenciário.",
+      "pagina": 4,
+      "trecho_fonte": "As prerrogativas do direito à assistência por advogado e à plena defesa igualmente resguardadas no âmbito da custódia cautelar não ostentam caráter absoluto, devendo coexistir harmonicamente com os imperativos de segurança e a disciplina do sistema penitenciário.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que, conforme relatado pelo requerente, já existe parlatório destinado à interlocução entre o causídico e o custodiado.",
+      "pagina": 4,
+      "trecho_fonte": "conforme relatado pelo requerente, já existe parlatório destinado à interlocução entre o causídico e o custodiado",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que, em observância aos princípios da legalidade e da eficiência administrativa (art. 37, caput, da Constituição da República), eventual determinação de flexibilização das normas operacionais do sistema carcerário ensejaria comprometimento da gestão da unidade prisional.",
+      "pagina": 4,
+      "trecho_fonte": "em observância aos princípios da legalidade e da eficiência administrativa (art. 37, caput, da Constituição da República), eventual determinação de flexibilização das normas operacionais do sistema carcerário ensejaria comprometimento da gestão da unidade prisional.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que a gestão de bens e a disciplina de ingresso de objetos em estabelecimentos prisionais são atos de discricionariedade administrativa da autoridade penitenciária, pautados por regulamentos internos e imperativos de segurança pública.",
+      "pagina": 4,
+      "trecho_fonte": "a gestão de bens e a disciplina de ingresso de objetos em estabelecimentos prisionais consubstanciam-se em atos de discricionariedade administrativa da autoridade penitenciária, pautados por regulamentos internos e imperativos de segurança pública",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que, inexistindo lastro probatório mínimo, não cabe a intervenção jurisdicional sem prévia e expressa manifestação da administração do estabelecimento prisional.",
+      "pagina": 4,
+      "trecho_fonte": "inexistindo, na hipótese, lastro probatório mínimo, não cabe a intervenção jurisdicional sem prévia e expressa manifestação da administração do estabelecimento prisional.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator acolheu o parecer da Procuradoria-Geral da República e indeferiu os pedidos formulados por Fabiano Campos Zettel.",
+      "pagina": 4,
+      "trecho_fonte": "Ante o exposto, acolho o parecer da Procuradoria-Geral da República para indeferir os pedidos formulados por Fabiano Campos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os pedidos indeferidos de Fabiano Campos Zettel constam da Petição nº 41003/2026 (e-Doc. 287).",
+      "pagina": 5,
+      "trecho_fonte": "Zettel (Petição nº 41003/2026, e-Doc. 287).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 23 de julho de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 5,
+      "trecho_fonte": "Brasília, 23 de julho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

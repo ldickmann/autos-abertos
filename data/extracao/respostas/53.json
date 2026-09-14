@@ -1,0 +1,132 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Polícia Federal protocolizou comunicação de prisão em flagrante do investigado LUIZ PHILLIPI MACHADO DE MORAES MOURÃO (e.Doc. 51).",
+      "pagina": 1,
+      "trecho_fonte": "A Polícia Federal protocoliza comunicação de Prisão em Flagrante do investigado LUIZ PHILLIPI MACHADO DE MORAES MOURÃO (e.Doc. 51).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que, no momento do cumprimento da prisão preventiva do investigado, foi encontrada uma arma de fogo de MORAES MOURÃO, sem que ele apresentasse qualquer documento hábil para o seu porte e propriedade.",
+      "pagina": 1,
+      "trecho_fonte": "No momento do cumprimento de prisão preventiva do referido investigado, foi encontrada uma arma de fogo de MORAES MOURÃO, sem que ele apresentasse qualquer documento hábil para o seu porte e propriedade.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que tal circunstância configura, em tese, um crime adicional previsto no art. 16 da Lei nº 10.826/03, além daqueles já apontados pela Polícia Federal em sua representação (e-Doc. 1).",
+      "pagina": 1,
+      "trecho_fonte": "Tal circunstância configura, em tese, um crime adicional previsto no art. 16 da Lei nº 10.826/03 além daqueles já apontados pela Polícia Federal em sua representação (e-Doc. 1).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Polícia Federal", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a aplicação dos itens 114 e 115 da decisão contida no e-Doc. 16 também em relação ao novo crime ensejador do flagrante.",
+      "pagina": 1,
+      "trecho_fonte": "Diante do flagrante de crime noticiado, DETERMINO a aplicação dos itens 114 e 115 da decisão contida no e-Doc. 16, e que são abaixo transcritos, também em relação a este novo crime ensejador do flagrante:",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O item 114 da decisão contida no e-Doc. 16 determina que, efetivadas as prisões, os investigados sejam apresentados para audiências de custódia em até 24h, perante o Juízo Federal da Subseção Judiciária com competência sobre o território em que se encontrarem custodiados, independentemente de expedição de carta de ordem.",
+      "pagina": 2,
+      "trecho_fonte": "os investigados deverão ser apresentados para audiências de custódia em até 24h, a serem conduzidas perante o Juízo Federal da Subseção Judiciária com competência sobre o território em que os investigados se encontrarem custodiados, independentemente de expedição de carta de ordem",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O item 115 da decisão contida no e-Doc. 16 estabelece que o magistrado que presidir a audiência de custódia terá delegação para atuar exclusivamente na verificação dos requisitos estritamente formais da prisão e do tratamento conferido ao preso, não para rever os requisitos da decretação nem para decidir em sentido contrário à manutenção da custódia.",
+      "pagina": 2,
+      "trecho_fonte": "delegação para atuar exclusivamente no que concerne à verificação do preenchimento dos requisitos estritamente formais da prisão e do tratamento conferido ao preso, mas não para rever os requisitos que levaram à sua decretação e nem mesmo para decidir em sentido contrário à manutenção da custódia",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O item 115 da decisão contida no e-Doc. 16 estabelece que, se o magistrado que atuar por delegação na audiência de custódia entender haver irregularidade na execução material da prisão ou no tratamento conferido ao preso, deverá enviar informação sobre a situação específica ao relator nos autos do mesmo processo.",
+      "pagina": 2,
+      "trecho_fonte": "entender que há alguma irregularidade na forma como a prisão foi materialmente executada ou em relação ao tratamento conferido ao preso, S. Excelência deverá enviar informação acerca da situação específica a este relator nos autos deste mesmo processo.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O item 115 da decisão contida no e-Doc. 16 estabelece que qualquer decisão de soltura por irregularidade na execução da custódia só poderá ser tomada pelo relator do processo.",
+      "pagina": 2,
+      "trecho_fonte": "Qualquer decisão de soltura por irregularidade na execução da custódiasó poderáser tomadapelo relator desteprocesso.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, após a realização da audiência de custódia, os autos voltem imediatamente conclusos para decisão sobre a eventual conversão do flagrante em prisão preventiva.",
+      "pagina": 2,
+      "trecho_fonte": "Após a realização da Audiência de Custódia nos termos acima, voltem-me os autos imediatamente conclusos para decisão sobre a eventual conversão do citado flagrante em prisão preventiva.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que se oficie, com urgência, ao Juízo que efetuará a audiência de custódia do investigado LUIZ PHILLIPI MACHADO DE MORAES MOURÃO para ciência da decisão, podendo a própria decisão servir como ofício para a comunicação.",
+      "pagina": 2,
+      "trecho_fonte": "Oficie-se, com urgência, ao Juízo que efetuará a audiência de custódia do investigado LUIZ PHILLIPI MACHADO DE MORAES MOURÃO para ciência deste decisum, podendo esta decisão servir como ofício para a comunicação.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, após, se dê ciência ao MPF.",
+      "pagina": 2,
+      "trecho_fonte": "Após, dê-se ciência ao MPF.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "MPF", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a publicação da decisão, proferida em Brasília em 4 de março de 2026 e assinada pelo Ministro André Mendonça.",
+      "pagina": 3,
+      "trecho_fonte": "6. Publique-se. Brasília, 4 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Os itens 114 e 115 transcritos na página 2 são citação de decisão anterior (e-Doc. 16); o texto extraído traz palavras coladas (\"daautoridadepolicial\", \"custódiasó poderáser tomadapelo relator desteprocesso\"), reproduzidas literalmente no trecho_fonte."
+}

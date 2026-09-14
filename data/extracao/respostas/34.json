@@ -1,0 +1,152 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.556, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.556 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Procuradoria-Geral da República interpôs agravo regimental (e-Doc. 211), em ratificação a pedido apresentado por meio da Petição nº 32458/2026 (e-Doc. 207).",
+      "pagina": 2,
+      "trecho_fonte": "Consta dos autos Agravos regimentais interpostos (i) pela Procuradoria-Geral da República (e-Doc. 211), em ratificação a pedido apresentado por meio da Petição nº 32458/2026 (e-Doc. 207)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Daniel Bueno Vorcaro interpôs agravo regimental, registrado como e-Doc. 124.",
+      "pagina": 2,
+      "trecho_fonte": "e (ii) por Daniel Bueno Vorcaro (e-Doc. 124).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O agravo regimental interposto pela PGR impugna a decisão (e-Doc. 123) que permitiu a realização de visitas a Daniel Bueno Vorcaro de advogados constituídos nos autos, independente de agendamento, sem monitoramento ou gravação por áudio ou vídeo, enquanto custodiado na Penitenciária Federal em Brasília.",
+      "pagina": 2,
+      "trecho_fonte": "impugna a decisão “que permitiu a realização de visitas a Daniel Bueno Vorcaro de advogados constituídos nos autos, independente de agendamento, sem monitoramento ou gravação por áudio ou vídeo”, enquanto custodiado na Penitenciária Federal em Brasília (e-Doc. 123).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "PGR", "tipo": "orgao_publico"},
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Penitenciária Federal em Brasília", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O agravo regimental interposto por Daniel Bueno Vorcaro insurge-se contra a decisão monocrática que decretou sua prisão preventiva (e-Doc. 16).",
+      "pagina": 2,
+      "trecho_fonte": "o Agravo Regimental interposto por Daniel Bueno Vorcaro insurge-se contra a decisão monocrática que decretou sua prisão preventiva (e-Doc. 16).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Fabiano Campos Zettel requer a substituição de sua prisão por medidas cautelares alternativas.",
+      "pagina": 3,
+      "trecho_fonte": "Fabiano Campos Zettel requer a substituição de sua prisão por medidas cautelares alternativas.",
+      "atribuida_a": "Fabiano Campos Zettel",
+      "entidades": [
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O pedido de Fabiano Campos Zettel foi reiterado pela Petição nº 31.630/2026 (e-Doc. 188).",
+      "pagina": 3,
+      "trecho_fonte": "O pedido foi reiterado pela Petição nº 31.630/2026 (e-Doc. 188).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica que, em razão de andamentos processuais posteriores, os pedidos em análise estão todos prejudicados.",
+      "pagina": 3,
+      "trecho_fonte": "Em razão de andamentos processuais posteriores, verifico que os pedidos em análise estão todos prejudicados.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que a prejudicialidade do agravo interposto pela Procuradoria-Geral da República, em ratificação à Petição nº 32458/2026, foi reconhecida pelo próprio parquet na manifestação encartada ao e-Doc. 245.",
+      "pagina": 3,
+      "trecho_fonte": "A prejudicialidade do agravo interposto pela Procuradoria-Geral da República, em ratificação à Petição nº 32458/2026, foi reconhecida pelo próprio parquet, através de manifestação encartada ao e-Doc. 245",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Procuradoria-Geral da República, por manifestação encartada ao e-Doc. 245, requereu formalmente a desistência do agravo regimental, diante da perda do objeto recursal.",
+      "pagina": 3,
+      "trecho_fonte": "através de manifestação encartada ao e-Doc. 245, por meio da qual, diante da perda do objeto recursal, requereu formalmente a desistência do referido recurso.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera prejudicados o agravo interposto pela defesa de Daniel Bueno Vorcaro e os pedidos deduzidos pela defesa de Fabiano Campos Zettel diante do ulterior julgamento do referendo da decisão cautelar pela Segunda Turma.",
+      "pagina": 3,
+      "trecho_fonte": "Já o agravo interposto pela defesa de Daniel Bueno Vorcaro, assim como os pedidos deduzidos pela defesa de Fabiano Campos Zettel restaram prejudicados diante do ulterior julgamento do referendo da decisão cautelar, à unanimidade, pela Segunda Turma",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Daniel Bueno Vorcaro", "tipo": "pessoa"},
+        {"nome": "Fabiano Campos Zettel", "tipo": "pessoa"},
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Segunda Turma julgou o referendo da decisão cautelar, à unanimidade, na Sessão Virtual realizada entre 13/03/2026 e 20/03/2026, conforme ata de julgamento encartada ao e-Doc. 257.",
+      "pagina": 3,
+      "trecho_fonte": "julgamento do referendo da decisão cautelar, à unanimidade, pela Segunda Turma, na Sessão Virtual realizada entre 13/03/2026 a 20/03/2026, conforme ata de julgamento encartada ao e-Doc. 257.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a intimação das defesas técnicas respectivas e a ciência da Procuradoria-Geral da República.",
+      "pagina": 3,
+      "trecho_fonte": "Intimem-se as defesas técnicas respectivas. Cientifique-se a Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 31 de março de 2026, e assinada pelo Ministro André Mendonça, relator.",
+      "pagina": 3,
+      "trecho_fonte": "Brasília, 31 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; o texto da decisão ocupa as páginas 2 e 3."
+}

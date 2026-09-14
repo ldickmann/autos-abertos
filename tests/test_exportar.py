@@ -41,3 +41,26 @@ def test_exporta_arquivos_com_proveniencia(tmp_path):
     assert vorcaro["mencoes"][0]["papel_portal"] == "REQDO.(A/S)" and vorcaro["origem"] == "partes"
     assert (saida / "grafo.json").exists() and (saida / "cruzamentos.json").exists()
     assert json.loads((saida / "assercoes.json").read_text("utf-8")) == []
+
+
+def test_processo_exportado_traz_assercoes_dentro_de_cada_documento(tmp_path):
+    con = abrir(":memory:"); criar_schema(con)
+    rel = Relogio()
+    cliente = ClienteEducado(transport=PortalFalso({("Pet", 15556): 7514886}).transporte(), relogio=rel.monotonic, dormir=rel.sleep, teto=500)
+    expandir(con, 7514886, profundidade=0, cliente=cliente, blobs=tmp_path / "blobs", coletas=tmp_path / "coletas", log=lambda s: None)
+    construir_entidades(con)
+    doc = con.execute("select id from documento where id_portal='15389657076'").fetchone()["id"]
+    con.execute("update documento set sha256='abc', blob_path='x', paginas=1, tem_camada_texto=1 where id=?", (doc,))
+    con.execute("insert into documento_pagina (documento_id, pagina, texto, chars) values (?,1,'DESPACHO: Abra-se vista.',24)", (doc,))
+    con.execute("insert into extracao (documento_id, sha256_documento, prompt_version, modelo, executada_em, status) values (?,'abc','v1','m','2026-09-14','ok')", (doc,))
+    eid = con.execute("select id from extracao").fetchone()["id"]
+    con.execute("insert into assercao (documento_id, extracao_id, pagina, tipo_epistemico, texto, trecho_fonte, entidades_json, modelo, prompt_version, criado_em) "
+                "values (?,?,1,'fato_processual','Foi aberta vista.','Abra-se vista.','[]','m','v1','2026-09-14')", (doc, eid))
+    con.commit()
+    exportar(con, tmp_path / "web", semente=7514886)
+    proc = json.loads((tmp_path / "web" / "processo" / "7514886.json").read_text("utf-8"))
+    andamento = next(a for a in proc["andamentos"] if any(d["id"] == doc for d in a["documentos"]))
+    d = next(d for d in andamento["documentos"] if d["id"] == doc)
+    assert d["assercoes"] == [{"id": 1, "pagina": 1, "tipo_epistemico": "fato_processual", "texto": "Foi aberta vista.",
+                               "trecho_fonte": "Abra-se vista.", "atribuida_a": None}]
+    assert proc["contagem_assercoes"] == {"fato_processual": 1, "alegacao_parte": 0, "fundamento_decisorio": 0}

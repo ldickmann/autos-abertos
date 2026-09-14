@@ -1,0 +1,2147 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198, do Distrito Federal, tem como relator o Ministro Dias Toffoli.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. DIAS TOFFOLI",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Procurador-Geral da República formulou pedido nos autos da Petição 15.198 (e-doc. 6, fls. 1/7), em atenção ao despacho proferido em 23.12.2025.",
+      "pagina": 1,
+      "trecho_fonte": "Trata-se de pedido formulado pelo Procurador-Geral da República nos seguintes termos (e-doc. 6, fls. 1/7)",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Um despacho foi proferido em 23.12.2025 nos autos, ao qual o Procurador-Geral da República respondeu com sua manifestação.",
+      "pagina": 1,
+      "trecho_fonte": "em atenção ao despacho proferido em 23.12.2025",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial representou, perante o Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo, pela prisão preventiva de Daniel Bueno Vorcaro.",
+      "pagina": 1,
+      "trecho_fonte": "A autoridade policial representou, perante o Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo, pelas medidas de prisão preventiva de Daniel Bueno Vorcaro",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {
+          "nome": "Daniel Bueno Vorcaro",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial representou pela busca e apreensão contra trinta e oito alvos.",
+      "pagina": 1,
+      "trecho_fonte": "pelas medidas de prisão preventiva de Daniel Bueno Vorcaro, busca e apreensão contra trinta e oito alvos",
+      "atribuida_a": "Polícia Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial representou pelo sequestro e bloqueio de bens e valores, até o limite de R$ 5.775.234.097,25, contra os mesmos alvos da busca e apreensão.",
+      "pagina": 1,
+      "trecho_fonte": "sequestro e bloqueio de bens e valores, até o limite de R$ 5.775.234.097,25, contra os mesmos alvos da busca e apreensão",
+      "atribuida_a": "Polícia Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial representou pelo afastamento do sigilo bancário e fiscal de cento e uma pessoas e entidades.",
+      "pagina": 1,
+      "trecho_fonte": "afastamento do sigilo bancário efiscaldecento eumapessoas eentidades.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Em 27.10.2025, a Procuradoria da República em São Paulo manifestou-se pelo deferimento parcial dos pedidos formulados pela autoridade policial.",
+      "pagina": 1,
+      "trecho_fonte": "Em 27.10.2025, a Procuradoria da República em São Paulo manifestou-se pelo deferimento parcial dos pedidos formulados.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em decisão de 24.11.2025, o Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo solicitou esclarecimentos sobre as medidas requeridas pela autoridade policial.",
+      "pagina": 1,
+      "trecho_fonte": "Em decisão de 24.11.2025, o Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo solicitou esclarecimentos sobre as medidas requeridas pela autoridade policial.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 27.11.2025, a Polícia Federal forneceu as informações solicitadas pelo Juízo, procedendo à individualização dos valores dos pedidos de sequestro e bloqueio de bens e esclarecendo o período de quebra de sigilo fiscal.",
+      "pagina": 1,
+      "trecho_fonte": "A Polícia Federal, em 27.11.2025, forneceu as informações solicitadas. Procedeu à individualização dos valores dos pedidos de sequestro e bloqueio de bens. Esclareceu o período de quebra de sigilo fiscal.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Em 27.11.2025, a Polícia Federal acrescentou pedido de busca e apreensão contra João Carlos Falbo Mansur, a partir de comunicação realizada pelo Banco Central do Brasil ao Ministério Público Federal.",
+      "pagina": 1,
+      "trecho_fonte": "Acrescentou pedido de busca e apreensão contra João Carlos Falbo Mansur, a partir de comunicação realizada pelo Banco Central do Brasil ao Ministério Público Federal",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "João Carlos Falbo Mansur",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "Banco Central do Brasil",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Ministério Público Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República afirma que a comunicação do Banco Central do Brasil ao Ministério Público Federal trouxe indícios de crimes contra o SFN envolvendo o Banco Master e a REAG TRUST DTVM.",
+      "pagina": 2,
+      "trecho_fonte": "SFN envolvendo o Banco Master e a REAG TRUST DTVM.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {
+          "nome": "Banco Central do Brasil",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Banco Master",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "REAG TRUST DTVM",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal entendeu ausente conexão ou sobreposição entre a atual apuração e as investigações Fundo Fake e Compliance Zero.",
+      "pagina": 2,
+      "trecho_fonte": "Entendeu ausente conexão ou sobreposição com as investigações Fundo Fake e Compliance Zero.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Polícia Federal retificou o pedido de sequestro e bloqueio de bens.",
+      "pagina": 2,
+      "trecho_fonte": "Retificou o pedido desequestro ebloqueio debens.",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Em 28.11.2025, a Procuradoria da República em São Paulo encampou as conclusões da Polícia Federal quanto aos períodos das quebras (20.10.2020 a 21.10.2025) e à individualização dos pedidos de sequestro.",
+      "pagina": 2,
+      "trecho_fonte": "Em 28.11.2025, a Procuradoria da República em São Paulo encampou as conclusões da Polícia Federal em relação aos períodos das quebras (20.10.2020 a 21.10.2025) e à individualização dos pedidos de sequestro",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Em 28.11.2025, a Procuradoria da República em São Paulo manifestou-se pela ausência de sobreposição entre as investigações Fundo Fake, Compliance Zero e a atual apuração, e pela competência do Juízo Federal de São Paulo.",
+      "pagina": 2,
+      "trecho_fonte": "manifestando-se pela ausência de sobreposição das investigações Fundo Fake, Compliance Zero e a atual apuração, e pela competência do Juízo Federal de São Paulo",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo manifestou-se pelo deferimento da busca e apreensão contra João Mansur.",
+      "pagina": 2,
+      "trecho_fonte": "Manifestou-se pelo deferimento da buscaeapreensão contraJoão Mansur.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "João Mansur",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em decisão de 5.12.2025, o Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo determinou a suspensão do trâmite do feito em decorrência da decisão proferida pelo Ministro Dias Toffoli nos autos da Reclamação n. 88.121/STF.",
+      "pagina": 2,
+      "trecho_fonte": "Em decisão de 5.12.2025, o Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo determinou a suspensão do trâmite do feito em decorrência da decisão proferida pelo eminente Ministro Dias Toffoli nos autos da Reclamação n. 88.121/STF",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão do Ministro Dias Toffoli na Reclamação n. 88.121/STF determinou a remessa dos autos da Operação Compliance Zero e conexos ao STF.",
+      "pagina": 2,
+      "trecho_fonte": "Reclamação n. 88.121/STF, que determinou a remessa dos autos daOperação ComplianceZero econexos ao STF.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "STF",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Em 23.12.2025, a Procuradoria da República em São Paulo requereu a remessa dos autos ao Supremo Tribunal Federal, por vinculação à Petição n. 15.198/DF.",
+      "pagina": 2,
+      "trecho_fonte": "Em 23.12.2025, a Procuradoria da República em São Paulo requereu a remessa dos autos ao Supremo Tribunal Federal, por vinculação àPetição n.15.198/DF.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em decisão de 3.12.2025 nos autos da Reclamação n. 88.121/STF, o Ministro relator deferiu o acesso pelo Departamento de Polícia Federal.",
+      "pagina": 2,
+      "trecho_fonte": "o eminente Ministro relator,em decisão de3.12.2025,assim determinou: ‘Defiro, também, o acesso pelo Departamento de Polícia Federal",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Departamento de Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Na decisão de 3.12.2025 da Reclamação n. 88.121/STF, o Ministro relator consignou que, até ulterior apreciação do pedido pendente de manifestação da Procuradoria-Geral da República, novas diligências e medidas devem ser previamente submetidas ao crivo do Supremo Tribunal Federal, inclusive sobre outras investigações conexas.",
+      "pagina": 2,
+      "trecho_fonte": "novas diligências e medidas devem ser previamente submetidas ao crivo desta Suprema Corte, cuja competência originária se encontra estabelecida, até final decisão a respeito da presente Reclamação. Inclusive sobre outras investigações conexas.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Na decisão de 3.12.2025 da Reclamação n. 88.121/STF, o Ministro relator determinou que qualquer medida judicial há de ser avaliada previamente pelo Supremo Tribunal Federal e não mais pela instância inferior.",
+      "pagina": 3,
+      "trecho_fonte": "Neste sentido, qualquer medida judicial há de ser avaliada previamente por esta Corte e não mais pela instância inferior.’",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República sustenta que a remessa da atual apuração ao Supremo Tribunal Federal mostrou-se necessária, na mesma linha acautelatória adotada na Reclamação n. 88.121/STF, enquanto não delimitada a real participação da autoridade com foro de prerrogativa.",
+      "pagina": 3,
+      "trecho_fonte": "a remessa da atual apuração à Corte mostrou-se necessária, na mesma linha acautelatória já adotada nos autos da Reclamação n. 88.121/STF, para que, enquanto não delimitada a real participação da autoridade com foro de prerrogativa no Supremo Tribunal Federal",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República afirma que a representação policial trouxe indícios consistentes da existência de organização criminosa (art. 2º da Lei n. 12.850/2013) voltada à prática de gestão fraudulenta de instituição financeira, induzimento ou manutenção em erro de investidor, uso de informação privilegiada e manipulação de mercado e lavagem de capitais.",
+      "pagina": 3,
+      "trecho_fonte": "Na espécie, a representação policial trouxe indícios consistentes da existência de organização criminosa (art. 2º da Lei n. 12.850/2013) voltada à prática de gestão fraudulenta de instituição financeira (art. 4º da Lei n. 7.492/86), induzimento ou manutenção em erro de investidor",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República afirma haver elementos suficientes que apontam para o aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização, mediante o uso de fundos de investimento e rede de entidades conectadas por vínculos societários, familiares ou funcionais.",
+      "pagina": 3,
+      "trecho_fonte": "Há elementos suficientes que apontam, como indicado pela autoridade policial, para o ‘aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização’, notadamente mediante o uso de fundos de investimento e intrincada rede de entidades",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República afirma que a manifestação de 27.10.2025 da Procuradoria da República em São Paulo discorre em detalhe sobre os indícios concretos trazidos pela autoridade policial e a imprescindibilidade de deferimento das medidas requeridas.",
+      "pagina": 3,
+      "trecho_fonte": "a manifestação de 27.10.2025 apresentada pela Procuradoria da República em São Paulo discorre em detalhe sobre os indícios concretos trazidos pela autoridade policial e a imprescindibilidadededeferimento das medidas requeridas.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República encampa parcialmente a manifestação da Procuradoria da República em São Paulo, com a retificação proposta pela autoridade policial em 27.11.2025, afastando o pedido de prisão de Daniel Bueno Vorcaro.",
+      "pagina": 4,
+      "trecho_fonte": "a Procuradoria-Geral da República encampa parcialmente a manifestação da Procuradoria da República em São Paulo, com a retificação proposta pela autoridade policial em 27.11.2025, afastando, porém, o pedido deprisão deDanielBueno Vorcaro.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Daniel Bueno Vorcaro",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A segregação de Daniel Bueno Vorcaro, decretada no âmbito da Operação Compliance Zero, foi substituída por medidas cautelares alternativas nos autos do Habeas Corpus n. 1045014-48.2025.4.01.0000.",
+      "pagina": 4,
+      "trecho_fonte": "a segregação do investigado, decretada no âmbito da Operação Compliance Zero, foi substituída por medidas cautelares alternativas nos autos do Habeas Corpus n. 1045014-48.2025.4.01.0000",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Daniel Bueno Vorcaro",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Habeas Corpus n. 1045014-48.2025.4.01.0000 impôs a Daniel Bueno Vorcaro comparecimento periódico em Juízo, proibição de contato com demais investigados e testemunhas, proibição de se ausentar do Município de residência sem autorização judicial, retenção de passaporte e proibição de se ausentar do país.",
+      "pagina": 4,
+      "trecho_fonte": "impôs a Daniel Bueno Vorcaro o comparecimento periódico em Juízo, proibição de contato com demais investigados e testemunhas, proibição de se ausentar do Município de residência sem autorização judicial, retenção de passaporte, proibição de se ausentar do país",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Daniel Bueno Vorcaro",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "As medidas cautelares impostas a Daniel Bueno Vorcaro no Habeas Corpus n. 1045014-48.2025.4.01.0000 incluem suspensão do exercício de atividade de natureza econômico-financeira e monitoração eletrônica.",
+      "pagina": 4,
+      "trecho_fonte": "retenção de passaporte, proibição de se ausentar do país, suspensão do exercício de atividade de natureza econômico-financeira e monitoração eletrônica.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Daniel Bueno Vorcaro",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República afirma não haver notícia de descumprimento das medidas cautelares impostas a Daniel Bueno Vorcaro e que, ausentes indícios específicos de perigo gerado pelo estado de liberdade do investigado, as medidas cautelares mostram-se suficientes.",
+      "pagina": 4,
+      "trecho_fonte": "Não há notícia de descumprimento de referidas medidas, estando a situação do investigado equacionada. No atual momento processual, portanto, ausentes indícios específicos de perigo gerado pelo estado de liberdade do investigado, as medidas cautelares mostram-sesuficientes.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {
+          "nome": "Daniel Bueno Vorcaro",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O Procurador-Geral da República requer o deferimento dos pedidos formulados pela autoridade policial, à exceção da prisão de Daniel Bueno Vorcaro, para quem considera atualmente suficientes as medidas cautelares em vigor.",
+      "pagina": 4,
+      "trecho_fonte": "requerendo o deferimento dos pedidos formulados pela autoridade policial, à exceção da prisão de Daniel Bueno Vorcaro, para quem as medidas cautelares em vigor são atualmentesuficientes.",
+      "atribuida_a": "Procurador-Geral da República",
+      "entidades": [
+        {
+          "nome": "Daniel Bueno Vorcaro",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica que o requerimento de remessa do feito ao Supremo Tribunal Federal formulado pelo Procurador-Geral da República mostra-se pertinente e necessário.",
+      "pagina": 4,
+      "trecho_fonte": "Bem examinados os autos, verifico, inicialmente, que o requerimento de remessa do feito ao Supremo Tribunal Federal formulado pelo Procurador-Geral da República mostra-se pertinente e necessário",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a remessa ao Supremo Tribunal Federal serve para prevenir incertezas futuras sobre a legitimidade de atos praticados ao longo do feito e para evitar nulidades, em um quadro de aparente aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização.",
+      "pagina": 5,
+      "trecho_fonte": "apenas para prevenir incertezas futuras sobre a legitimidade de atos praticados ao longo do feito, como também para evitar nulidades, garantindo-se o imperativo da efetiva aplicação da lei penal, segundo as balizas do devido processo penal, em um quadro de aparente aproveitamento sistemático",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende ser o caso de deferimento do pedido formulado pelo Procurador-Geral da República ao Supremo Tribunal Federal.",
+      "pagina": 5,
+      "trecho_fonte": "Nesse sentido, entendo que é o caso de deferimento do pedido formulado pelo Procurador-Geral da República ao Supremo Tribunal Federal.",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito está em curso perante a 8ª Vara Criminal Federal de São Paulo desde 27 de maio de 2025.",
+      "pagina": 5,
+      "trecho_fonte": "um relato preciso de tudo o que se contém no Inquérito em curso perante a 8ª Vara Criminal Federal de São Paulo desde 27 de maio de 2025",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "8ª Vara Criminal Federal de São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A manifestação da Procuradoria da República em São Paulo de 27.10.2025 consta dos autos no e-doc. 12, fls. 3650/3655.",
+      "pagina": 5,
+      "trecho_fonte": "manifestação Procuradoria da República em São Paulo, realizada no dia 27.10.2025, conforme reproduzido abaixo (e-doc. 12, fls. 3650/3655)",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que o inquérito policial foi instaurado para apurar gestão fraudulenta, indução de investidor em erro, uso de informação privilegiada e manipulação de mercado, lavagem de dinheiro e constituição de organização criminosa, praticados, em tese, por diversas pessoas no âmbito do BANCO MÁSTER S.A.",
+      "pagina": 5,
+      "trecho_fonte": "notadamente gestão fraudulenta, indução de investidor em erro, uso de informação privilegiada e manipulação de mercado, além de lavagem de dinheiro e constituição de organização criminosa, praticados, em tese, por diversas pessoas no âmbito do BANCO MÁSTER S.A",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER S.A",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que o Departamento de Polícia Federal recebeu uma denúncia anônima em seu e-mail institucional contendo um arquivo PDF intitulado “INFORMAÇÕES BANCO MÁSTER”, cujo recebimento foi formalizado no processo SEI-PF nº 08500.019096/2025-17.",
+      "pagina": 5,
+      "trecho_fonte": "o Departamento de Polícia Federal recebeu uma denúncia anônima no seu e-mail institucional, que continha um arquivo em formato PDF intitulado “INFORMAÇÕES BANCO MÁ STER”. O recebimento do arquivo foi formalizado no processo SEI-PF nº 08500.019096/2025-17",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Departamento de Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que as diligências documentadas em Informações de Polícia Judiciária corroboraram o conteúdo da notitia criminis e culminaram na abertura de inquérito policial.",
+      "pagina": 6,
+      "trecho_fonte": "Foram realizadas diligências, que estão devidamente documentadas em diversas Informações de Polícia Judiciária, as quais corroboraram o conteúdo da notitia criminis e culminaram na abertura de inquérito policial, no qual foram procedidas novas diligências.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a Informação de Polícia Judiciária nº 90/2025-UADIP/DELECOR/DRPJ/SR/PF/SP confirmou os fatos descritos no arquivo “INFORMAÇÕES BANCO MÁSTER” por meio de análise documental, cruzamento de dados e verificação de fontes externas.",
+      "pagina": 6,
+      "trecho_fonte": "a Informação de Polícia Judiciária nº 90/2025- UADIP/DELECOR/DRPJ/SR/PF/SP confirmou os fatos descritos no arquivo intitulado “INFORMAÇÕES BANCO MÁSTER” por meio de análise documental, cruzamento de dados e verificação de fontes externas.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a análise da Informação de Polícia Judiciária nº 90/2025 revelou elementos de prova apontando para uma rede complexa e articulada de relações empresariais e financeiras, com indícios de crimes contra o Sistema Financeiro Nacional, lavagem de dinheiro e organização criminosa.",
+      "pagina": 6,
+      "trecho_fonte": "Essa análise revelou elementos de prova que apontam para a existência de uma rede complexa e articulada de relações empresariais e financeiras, com indícios consistentes da prática de crimes contra o Sistema Financeiro Nacional",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a informação policial demonstrou o aproveitamento de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização, com o uso de fundos de investimento para circulação de ativos sem liquidez, artificialmente precificados, e reiteradas operações entre partes relacionadas.",
+      "pagina": 6,
+      "trecho_fonte": "a informação policial demonstrou o aproveitamento de vulnerabilidades do mercado de capitais e do sistemaderegulação efiscalização,com o uso defundos de investimento para circulação de ativos sem liquidez, artificialmente precificados, e reiteradas operações entre partes relacionadas",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a Informação de Polícia Judiciária de Análise nº 142694627/2025-NADIP/DFIN/CGRC/DICOR/PF analisou as Demonstrações Financeiras do BANCO MÁXIMA e, posteriormente, do BANCO MÁSTER, relativas aos exercícios de 2019 a 2024.",
+      "pagina": 6,
+      "trecho_fonte": "Já na Informação de Polícia Judiciária de Análise nº 142694627/2025-NADIP/DFIN/CGRC/DICOR/PF, foram analisadas as Demonstrações Financeiras do BANCO MÁXIMA e, posteriormente, do BANCO MÁSTER, relativas aos exercícios de 2019 a 2024.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁXIMA",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a Informação de Polícia Judiciária nº 154/2025-UADIP/DELECOR/DRPJ/SR/PF/SP realizou a análise dos investimentos do BANCO MÁSTER.",
+      "pagina": 6,
+      "trecho_fonte": "Já na Informação de Polícia Judiciária nº 154/2025-UADIP/DELECOR/DRPJ/SR/PF/SP foi realizada a análisedos investimentos do BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a análise dos RIFs, encartados aos autos com autorização judicial, culminou na Informação de Polícia Judiciária de Análise nº 142907544/2025-NADIP/DFIN/CGRC/DICOR/PF.",
+      "pagina": 7,
+      "trecho_fonte": "aos autos com a devida autorização judicial, o que culminou na Informação de Polícia Judiciária de Análise nº 142907544/2025- NADIP/DFIN/CGRC/DICOR/PF.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a análise constatou que empresas com capital social ínfimo cediam direitos creditórios milionários para Fundos de Investimento em Direitos Creditórios vinculados ao BANCO MÁSTER.",
+      "pagina": 7,
+      "trecho_fonte": "A análise constatou que empresas com capital social ínfimo cediam direitos creditórios milionários para Fundos de Investimento em Direitos Creditórios (“FIDCs”) vinculados ao BANCO MÁSTER",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a análise revelou movimentações financeiras suspeitas, incluindo uma transferência de R$ 9 milhões de um intermediário para HENRIQUE MOURA VORCARO, pai de DANIEL BUENO VORCARO, sócio administrador do BANCO MÁSTER.",
+      "pagina": 7,
+      "trecho_fonte": "revelou movimentações financeiras suspeitas, incluindo uma transferência de R$ 9 milhões de um intermediário para HENRIQUE MOURA VORCARO (“HENRIQUE VORCARO”), pai de DANIEL BUENO VORCARO (“DANIEL VORCARO”), sócio administrador do BANCO MÁSTER",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "HENRIQUE MOURA VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "DANIEL BUENO VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a Informação de Polícia Judiciária de Análise nº 142907544/2025 concluiu haver fortes indícios de desvio de recursos e risco sistêmico ao sistema financeiro.",
+      "pagina": 7,
+      "trecho_fonte": "concluindo que há fortes indícios de desvio de recursos e risco sistêmico ao sistema financeiro.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a Informação de Polícia Judiciária de Análise nº 143088130/2025-NADIP/DFIN/CGRC/DICOR/PF expõe que o BANCO MÁSTER direcionou parte considerável dos recursos captados por emissão de CDBs a fundos de investimento, predominantemente FIDCs, nos quais o próprio BANCO MÁSTER figurava como cotista único.",
+      "pagina": 7,
+      "trecho_fonte": "a qual expõe que o BANCO MÁSTER direcionou uma parte considerável dos recursos captados junto ao mercado, por meio da emissão de CDBs, a fundos de investimento, predominantemente FIDCs, nos quais o próprio BANCO MÁSTER figurava como cotista único.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que esses fundos eram utilizados para adquirir Notas Comerciais e direitos creditórios de empresas com vínculos societários ou relações pessoais com os sócios do BANCO MÁSTER.",
+      "pagina": 7,
+      "trecho_fonte": "estes fundos eram utilizados para adquirir Notas Comerciais (NCs) e direitos creditórios de empresas que possuíam vínculos societários ou relações pessoais com os sócios do BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a CLÍNICA MAIS MÉDICOS S.A. emitiu R$ 361.147.355,00 em NCs sem quaisquer garantias, com capital social integralizado zero e receita operacional bruta anual de R$ 54.079,64 em 2023, superada pelo valor da dívida em mais de 6.500 vezes.",
+      "pagina": 7,
+      "trecho_fonte": "revelou que esta empresa emitiu R$ 361.147.355,00 em NCs sem quaisquer garantias, sendo que seu capital social integralizado era zero e sua receita operacional bruta anual (R$ 54.079,64 em 2023) era superada pelo valor da dívida em mais de 6.500 vezes",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "CLÍNICA MAIS MÉDICOS S.A.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que VALDENICE PANTALEÃO, presidente e sócia da CLÍNICA MAIS MÉDICOS, não possui patrimônio, foi beneficiária de auxílio emergencial em 2020 e 2021 e figurava como interposta pessoa.",
+      "pagina": 8,
+      "trecho_fonte": "que, apesar de presidir uma sociedade que captou milhões, não possui patrimônio e foi beneficiária de auxílio emergencial em 2020 e 2021, o que demonstra que na realidade figurava como interpostapessoa(“laranja”).",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "VALDENICE PANTALEÃO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CLÍNICA MAIS MÉDICOS",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que VALDENICE PANTALEÃO outorgou procuração a FERNANDO ALVES VIEIRA, que possui vínculos previamente identificados com familiares de sócios do BANCO MÁSTER.",
+      "pagina": 8,
+      "trecho_fonte": "VALDENICE PANTALEÃO outorgou procuração a FERNANDO ALVES VIEIRA (“FERNANDO VIEIRA”), que possui com vínculos previamente identificados com familiares de sócios do BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "VALDENICE PANTALEÃO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "FERNANDO ALVES VIEIRA",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a CLÍNICA MAIS MÉDICOS está ligada ao HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA., que também emitiu NCs no montante de R$ 372.476.329,00.",
+      "pagina": 8,
+      "trecho_fonte": "restou apurado que a CLÍNICA MAIS MÉDICOS está ligada ao HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA. (“HOSPITAL DA CRIANÇA SÃO JOSÉ”), que também emitiu NCs no montante de R$ 372.476.329,00",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "CLÍNICA MAIS MÉDICOS",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a HOLDING AF S.A. e a SIMETRIA PLANOS DE SAÚDE EIRELI reproduziram o mesmo padrão de emissão de NCs adquiridas pelos fundos do BANCO MÁSTER.",
+      "pagina": 8,
+      "trecho_fonte": "outras empresas vinculadas aos sócios, como a HOLDING AF S.A. e SIMETRIA PLANOS DE SAÚDE EIRELI, reproduziram o mesmo padrão de emissão de NCs adquiridas pelos fundos do BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "HOLDING AF S.A.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "SIMETRIA PLANOS DE SAÚDE EIRELI",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, dos mais de R$ 3,5 bilhões investidos pelo BANCO MÁSTER em fundos dos quais é cotista único, aproximadamente R$ 1,8 bilhão foi destinado à aquisição de NCs emitidas por empresas vinculadas aos próprios sócios.",
+      "pagina": 8,
+      "trecho_fonte": "dos mais de R$ 3,5 bilhões investidos pelo BANCO MÁSTER em fundos dos quais é cotista único, aproximadamente R$ 1,8 bilhão foi destinado à aquisição de NCs emitidas por empresas vinculadas aos próprios sócios",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que as operações caracterizam fortes indícios de estruturação financeira irregular e simulação de operações, resultando, após consolidação com as operações correlatas, em um valor global de R$ 5.775.234.097,25.",
+      "pagina": 8,
+      "trecho_fonte": "o que caracteriza a presença de fortes indícios de estruturação financeira irregular e simulação de operações, resultando, após a consolidação com as operações correlatas, em um valor global deR$5.775.234.097,25.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que foram localizados elementos de prova de interesse durante a análise do inquérito policial nº 5002240-59.2025.4.03.6181, instaurado para apurar gestão fraudulenta e lavagem de dinheiro praticados, em tese, pelos responsáveis pelas administradoras de fundos REAG, RUBY CAPITAL e TRUSTEE DTVM.",
+      "pagina": 8,
+      "trecho_fonte": "durante a análise do inquérito policial nº 5002240-59.2025.4.03.6181, instaurado para apurar a prática dos crimes de gestão fraudulenta e lavagem de dinheiro, praticados, em tese, pelos responsáveis pelas administradoras de fundos de investimento REAG, RUBY CAPITAL e TRUSTEE DTVM.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "REAG",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "RUBY CAPITAL",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "TRUSTEE DTVM",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a autoridade policial obteve, perante a 7ª Vara Criminal Federal de São Paulo, autorização judicial de compartilhamento de provas em favor da presente investigação.",
+      "pagina": 9,
+      "trecho_fonte": "Federal de São Paulo, autorização judicial de compartilhamento de provas em favor da presente investigação.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, naqueles autos, os fundos administrados pela REAG, RUBY CAPITAL e TRUSTEE DTVM foram utilizados para a ocultação de patrimônio de investigados que operam no ramo de venda de combustíveis.",
+      "pagina": 9,
+      "trecho_fonte": "naqueles autos, os fundos administrados por aquelas administradoras foram utilizados para a ocultação de patrimônio de vários investigados que operam no ramo de venda de combustíveis (postos de combustíveis e serviços).",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, com base no material compartilhado, foi confeccionada a Informação de Polícia Judiciária nº 148/2025-UADIP/DELECOR/DRPJ/SR/PF/SP, consoante autorização judicial proferida nos autos nº 5008135-98.2025.4.03.6181.",
+      "pagina": 9,
+      "trecho_fonte": "Com base no material compartilhado, foi confeccionada a Informação de Polícia Judiciária nº 148/2025-UADIP/DELECOR/DRPJ/SR/PF/SP, consoante expressa autorização judicial neste sentido, proferida nos autos nº5008135-98.2025.4.03.6181.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a autoridade policial realizou análise em fontes abertas sobre o histórico de sanções aplicadas pela CVM ao BANCO MÁSTER.",
+      "pagina": 9,
+      "trecho_fonte": "a autoridade policial realizou a análise em fontes abertas acerca do histórico de sanções aplicadas pela CVM ao BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "CVM",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a Informação de Polícia Judiciária nº 4114889/2025 identificou ao menos outras 5 oportunidades em que fontes oficiais, incluindo processos sancionatórios da CVM, identificaram operações complexas e potencialmente ilícitas efetuadas pelo BANCO MÁSTER e pessoas a ele relacionadas.",
+      "pagina": 9,
+      "trecho_fonte": "Informação de Polícia Judiciária nº 4114889/2025, que identificou, ao menos, outras 5 oportunidades em que fontes oficiais, incluindo processos sancionatórios da CVM, identificaram operações complexas e potencialmente ilícitas efetuadas pelo BANCO MÁSTER e pessoas a ele relacionadas.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "CVM",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Sobreveio aos autos nova manifestação da Procuradoria da República em São Paulo (e-doc. 12, fls. 4647-4665).",
+      "pagina": 9,
+      "trecho_fonte": "Na sequência, sobreveio aos autos nova manifestação da Procuradoria da República em São Paulo, da qual colho os seguintes trechos (e-doc. 12, fls. 4647-4665)",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a representação inaugural da Polícia Federal delimita como objeto da investigação a apuração de gestão fraudulenta, desvio de valores de Instituição Financeira, Organização Criminosa e Lavagem de Dinheiro cometidos na gestão do BANCO MÁSTER, que ocorria na cidade de São Paulo, na rua Brigadeiro Faria Lima.",
+      "pagina": 9,
+      "trecho_fonte": "a representação inaugural da Polícia Federal delimita que o objeto da presente investigação é a apuração dos delitos de gestão fraudulenta, desvio de valores de Instituição Financeira, Organização Criminosa e Lavagem de Dinheiro cometidos na gestão do BANCO MÁSTER, que ocorria na cidade de São Paulo",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que a representação do BANCO CENTRAL envolvendo o BANCO MÁSTER foi endereçada à Procuradoria da República em São Paulo porque os fatos investigados ocorreram nessa Subseção Judiciária, o que atrai a competência da Justiça Federal de São Paulo nos termos do art. 70 do Código de Processo Penal.",
+      "pagina": 10,
+      "trecho_fonte": "a representação do BANCO CENTRAL envolvendo o BANCO MÁSTER foi endereçada à Procuradoria da República em São Paulo, haja vista que os fatos investigados ocorreram nesta Subseção Judiciária, o que atrai a competência da Justiça Federal de São Paulo, nos termos do art. 70 do Código de Processo Penal",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO CENTRAL",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Justiça Federal de São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que o histórico juntado pela Polícia Federal sobre anteriores investigações serve como indício da existência de organização criminosa estruturada desde a década passada e demonstra que os fatos sob apuração não foram fruto de situação ocasional de descontrole.",
+      "pagina": 10,
+      "trecho_fonte": "o histórico juntado pela Polícia Federal a respeito de anteriores investigações serve como indício da existência do crime de organização criminosa estruturada desde a década passada, bem como demonstra que os fatos sob apuração não foram fruto de uma situação ocasional de descontrole.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que a menção e eventual juntada de documentos da Operação “FUNDO FAKE” e de outros inquéritos não altera nem amplia o objeto da investigação, cujo escopo é delimitado na gestão do BANCO MÁSTER.",
+      "pagina": 10,
+      "trecho_fonte": "a menção e a eventual juntada de documentos da chamada Operação “FUNDO FAKE” e dos outros inquéritos mencionados pela Autoridade Policial não altera nem amplia o objeto deste apuratório, pois os eventuais delitos cometidos pelos gestores de RPPS’s não são objeto desta investigação",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que os documentos juntados possuem relevância para a decretação de prisão preventiva e para a valoração da existência da organização criminosa, afastando a alegação de concurso eventual de pessoas.",
+      "pagina": 10,
+      "trecho_fonte": "Os documentos juntados possuem relevância para a decretação de prisão preventiva (baseada na necessidade de garantia da ordem pública) e para a valoração a respeito da existência da organização criminosa, afastando a alegação deconcurso eventualdepessoas.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que os inquéritos a respeito dos fundos possuíam objeto diferente, pois visavam apurar a conduta dos administradores, gestores e custodiantes desses fundos, e não dos gestores do BANCO MÁSTER.",
+      "pagina": 10,
+      "trecho_fonte": "os inquéritos a respeito dos fundos possuíam objeto diferente do presente feito, na medida que tais investigações visavam apurar a conduta dos administradores, gestores e custodiantes desses fundos e não dos gestores do BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que a presente investigação possui escopo mais amplo que o daqueles inquéritos, pois descortinou que os fundos eram operados para a gestão fraudulenta, o desvio de valores e o branqueamento de capitais do BANCO MÁSTER.",
+      "pagina": 11,
+      "trecho_fonte": "a presente investigação possui escopo mais amplo que não se confunde com o desses inquéritos, na medida em que descortinou que tais fundos eram operados de fato para a gestão fraudulenta, o desvio de valores e o branqueamento de capitais do BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que a Operação “COMPLIANCE ZERO” tem por objeto a apuração de gestão fraudulenta/temerária do BANCO BRB, com o concurso de algumas pessoas ligadas ao BANCO MÁSTER, enquanto a presente investigação apura delitos cometidos na gestão do BANCO MÁSTER, sem envolver o BANCO BRB.",
+      "pagina": 11,
+      "trecho_fonte": "a denominada Operação “COMPLIANCE ZERO” possui por objeto a apuração do delito de gestão fraudulenta/temerária do BANCO BRB, com o concurso de algumas pessoas ligadas ao BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO BRB",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que não há sobreposição de investigações, pois o BACEN tem formulado representações autônomas às Subseções Judiciárias do Distrito Federal e de São Paulo e só existem 3 alvos em comum entre a Operação “COMPLIANCE ZERO” e o presente feito.",
+      "pagina": 11,
+      "trecho_fonte": "resta evidente que não há sobreposição de investigações, tanto é assim que o BACEN tem formulado representações autônomas à Subseção Judiciária do Distrito Federal e à de São Paulo, bem como considerando que só existem 3 alvos em comum entre a chamada Operação “COMPLIANCE ZERO” e o presente feito",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BACEN",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que a competência para o processamento dos crimes de gestão fraudulenta, desvio de valores e branqueamento de capitais do BANCO MÁSTER é da Justiça Federal de São Paulo, conforme precedente do Superior Tribunal de Justiça.",
+      "pagina": 11,
+      "trecho_fonte": "A competência para o processamento dos crimes de gestão fraudulenta, o desvio de valores e o branqueamento de capitais do BANCO MÁSTER é da Justiça Federal de São Paulo, conforme observa-se do seguinte precedente do Superior TribunaldeJustiça",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "Justiça Federal de São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, em data anterior à decisão do Juízo, aportou na Procuradoria da República em São Paulo representação do BACEN relacionada com o objeto da presente investigação.",
+      "pagina": 11,
+      "trecho_fonte": "aportou na Procuradoria da República em São Paulo representação do BACEN relacionada com o objeto da presente investigação, fato que corrobora a linha investigativa adotada",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BACEN",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta ser de rigor o deferimento do pedido adicional de busca e apreensão em relação a JOÃO MANSUR, diante da representação do BACEN que, segundo ela, demonstra a utilização da REAG para o desvio de valores do BANCO MÁSTER.",
+      "pagina": 12,
+      "trecho_fonte": "de rigor o deferimento do pedido adicional de busca e apreensão em relação a JOÃO MANSUR, notadamente diante da representação do BACEN que demonstra a utilização da REAG para o desvio de valores do BANCO MÁSTER",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "JOÃO MANSUR",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BACEN",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "REAG",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que pessoas relacionadas a JOÃO MANSUR, seus filhos, foram utilizadas para a prática dos crimes.",
+      "pagina": 12,
+      "trecho_fonte": "considerando que pessoas relacionadas a JOÃO MANSUR – seus filhos -foram utilizados paraapráticados crimes.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "JOÃO MANSUR",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a representação do BANCO CENTRAL contém fluxograma que demonstra o uso de diversos FIDCs para a operacionalização das fraudes no BANCO MÁSTER.",
+      "pagina": 12,
+      "trecho_fonte": "Tais fatos restaram muito bem elucidados na representação do BANCO CENTRAL por meio de fluxograma que demonstra o uso de diversos FIDIC’S para a operacionalização das fraudes no BANCO MÁSTER",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO CENTRAL",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que o fluxograma demonstra que a BRAIN REALTY passou a dever R$ 459 milhões ao BANCO MÁSTER, com a maior parte do valor aplicada em papéis de baixa liquidez (“Cártulas do BESC”), enquanto os fundos ASTRALO 95 e REAG GROWTH 95 se tornaram credores do BANCO MÁSTER DE INVESTIMENTOS.",
+      "pagina": 12,
+      "trecho_fonte": "apesar da BRAIN REALTY passasse a dever R$ 459 milhões ao BANCO MÁSTER, a maior parte do valor tomado foi aplicada em papéis de baixa liquidez e realização contingente (“Cártulas do BESC”), ao passo que os fundos ASTRALO 95 e REAG GROWTH 95 se tornaram credores do BANCO MÁSTER DE INVESTIMENTOS",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BRAIN REALTY",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "ASTRALO 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "REAG GROWTH 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANCO MÁSTER DE INVESTIMENTOS",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que os fundos ASTRALO 95 e REAG GROWTH 95 se tornaram credores do BANCO MÁSTER DE INVESTIMENTOS pelo montante total de R$ 450 milhões em CDBs.",
+      "pagina": 12,
+      "trecho_fonte": "os fundos ASTRALO 95 e REAG GROWTH 95 se tornaram credores do BANCO MÁSTER DE INVESTIMENTOS pelo montantetotaldeR$450milhões em CDBs.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "ASTRALO 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "REAG GROWTH 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANCO MÁSTER DE INVESTIMENTOS",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que os fluxos ocorridos entre abril e maio de 2024 totalizaram um desembolso de R$ 1,45 bilhão pelo BANCO MÁSTER, com retorno de R$ 1,38 bilhão via aquisição de CDBs pelos fundos ASTRALO 95 e REAG GROWTH 95.",
+      "pagina": 12,
+      "trecho_fonte": "Tais fluxos, que ocorreram entre abril e maio de 2024, totalizaram um desembolso de R$ 1,45 bilhão pelo BANCO MÁSTER, com um retorno de R$ 1,38 bilhão via aquisição de CDBs pelos fundos ASTRALO 95eREAG GROWTH 95.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "ASTRALO 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "REAG GROWTH 95",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que os CDBs adquiridos por esses fundos eram paulatinamente resgatados nos dias subsequentes.",
+      "pagina": 12,
+      "trecho_fonte": "Observou-se, ainda, que os CDBs adquiridos por esses fundos eram paulatinamente resgatados nos dias subsequentes.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, em 21.5.2024, o Fundo ASTRALO 95 resgatou aproximadamente R$ 800 milhões em CDBs, transferindo R$ 650 milhões para o FIP TERMÓPILAS.",
+      "pagina": 12,
+      "trecho_fonte": "em 21.5.2024, o Fundo ASTRALO 95 resgatou aproximadamente R$ 800 milhões em CDBs, transferindo R$ 650 milhões para o FIP TERMÓPILAS",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "ASTRALO 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "FIP TERMÓPILAS",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que o FIP TERMÓPILAS transferiu esse mesmo valor para a empresa SUPER EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., em conta mantida no BANCO MÁSTER.",
+      "pagina": 13,
+      "trecho_fonte": "transferiu esse mesmo valor para a empresa SUPER EMPREENDIMENTOS E PARTICIPAÇÕES LTDA., em conta mantidano BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "FIP TERMÓPILAS",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "SUPER EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que operações realizadas via CCBs ou CRIs entre 24.4.2024 e 17.5.2024 tiveram desembolso total pelo Banco de R$ 1,45 bilhão e retorno via aplicação em CDBs de R$ 1,38 bilhão.",
+      "pagina": 13,
+      "trecho_fonte": "algumas operações realizadas, seja via CCBs ou CRIs entre 24.4.2024 e 17.5.2024, com desembolso total pelo Banco de R$ 1,45 bilhão e retorno via aplicação em CDBs de R$1,38 bilhão",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que a extensão e a complexidade das cadeias de transações apresentam indícios de que as operações foram estruturadas mediante participação coordenada do BANCO MÁSTER e da REAG DTVM, com o objetivo comum de desviar recursos do Conglomerado MÁSTER para outros veículos.",
+      "pagina": 13,
+      "trecho_fonte": "A extensão e a complexidade destas cadeias de transações apresentam indícios de que as operações foram struturadas mediante a participação coordenada do BANCO MÁSTER e da REAG DTVM, possuindo o objetivo comum de desviar recursos do Conglomerado MÁSTER para outros veículos",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "REAG DTVM",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "Conglomerado MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que os fundos ASTRALO 95 e REAG GROWTH 95 integram uma cadeia de controle cujos principais beneficiários finais declarados são LUCAS FRANCOLINO FALBO MANSUR, MARINA FRANCO FALBO MANSUR e ALEX FRANCO FALBO MANSUR, que mantêm vínculo familiar com JOÃO CARLOS FALBO MANSUR, controlador da REAG DTVM.",
+      "pagina": 13,
+      "trecho_fonte": "integram uma extensa cadeia de controle, cujos principais beneficiários finais declarados são LUCAS FRANCOLINO FALBO MANSUR, MARINA FRANCO FALBO MANSUR e ALEX FRANCO FALBO MANSUR, indivíduos que mantêm vínculo familiar com o controlador da REAG DTVM, JOÃO CARLOS FALBO MANSUR.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "ASTRALO 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "REAG GROWTH 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "LUCAS FRANCOLINO FALBO MANSUR",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "MARINA FRANCO FALBO MANSUR",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "ALEX FRANCO FALBO MANSUR",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "JOÃO CARLOS FALBO MANSUR",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "REAG DTVM",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma haver dúvidas sobre o real controlador da cadeia de fundos, pois o GALO FORTE FIP, de propriedade direta do ASTRALO 95 e administrado pela TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., apresentou informações conflitantes.",
+      "pagina": 13,
+      "trecho_fonte": "visto que o GALO FORTE FUNDO DE INVESTIMENTO EM PARTICIPAÇÕES MULTIESTRATÉGIA (GALO FORTE FIP), de propriedade direta do ASTRALO 95 e administrado pela TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., apresentou informações conflitantes.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "GALO FORTE FUNDO DE INVESTIMENTO EM PARTICIPAÇÕES MULTIESTRATÉGIA",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "ASTRALO 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que o ASTRALO 95 deteve 100% das cotas do GALO FORTE FIP até novembro de 2024.",
+      "pagina": 13,
+      "trecho_fonte": "embora o ASTRALO 95 tenha detido 100% das cotas do GALO FORTE FIP até novembro de 2024",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "ASTRALO 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "GALO FORTE FIP",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, a partir de dezembro de 2024, as cotas do GALO FORTE FIP passaram a ser detidas por DANIEL VORCARO (cerca de 80%) e pelo ASTRALO 95 (cerca de 20%), em contradição com o conhecimento público que, desde o final de 2023, indicava DANIEL VORCARO como proprietário do GALO FORTE FIP.",
+      "pagina": 14,
+      "trecho_fonte": "DANIEL VORCARO (cerca de 80%) e pelo ASTRALO 95 (cerca de 20%), em contradição com o conhecimento público que, desde o final de 2023, indicava DANIEL VORCARO como o proprietário do GALO FORTE FIP.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "ASTRALO 95",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "GALO FORTE FIP",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial especificou o período da quebra do sigilo fiscal como compreendido de 20/10/2020 a 21/10/2025, mesmo período relativo à quebra bancária.",
+      "pagina": 14,
+      "trecho_fonte": "a autoridade policial especificou o período da quebra do sigilo fiscal como sendo compreendido de 20/10/2020 a 21/10/2025, mesmo período relativo à quebra bancária",
+      "atribuida_a": "Polícia Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que o período de 20/10/2020 a 21/10/2025 é aquele em que os investigados já estavam no controle do BANCO MÁSTER e possibilita a análise da origem e do destino dos recursos movimentados e a apuração da real capacidade financeira dos investigados.",
+      "pagina": 14,
+      "trecho_fonte": "A importância deste lapso é possibilitar a análise da origem e do destino dos recursos movimentados, bem como para apurar a real capacidade financeira dos investigados",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial apresentou quadro com a relação de alvos e a necessidade do afastamento dos sigilos.",
+      "pagina": 14,
+      "trecho_fonte": "a autoridade policial apresentou o seguinte quadro, que indica a relação de alvos e a necessidade do afastamento dos sigilos em questão",
+      "atribuida_a": "Polícia Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial apresentou o agrupamento dos agentes e empresas relacionados a cada um dos fundos investigados, para individualização dos valores objeto do pedido de sequestro e bloqueio.",
+      "pagina": 14,
+      "trecho_fonte": "em relação à individualização dos valores a serem objeto do pedido de sequestro e bloqueio, a autoridade policial apresentou o agrupamento dos agentes e empresas relacionados a cada um dos fundos atualmente investigados",
+      "atribuida_a": "Polícia Federal",
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que integram o entorno investigativo do FIDIC CITY a SEFER INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., como administradora, e as gestoras WNT GESTORA DE RECURSOS LTDA. e ACURA GESTORA DE RECURSOS LTDA.",
+      "pagina": 14,
+      "trecho_fonte": "em relação ao FIDIC CITY, integram o seu entorno investigativo as seguintes instituições: SEFER INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., na qualidade de administradora, e as gestoras WNT GESTORA DE RECURSOS LTDA.eACURA GESTORA DE RECURSOS LTDA.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "FIDIC CITY",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "SEFER INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "WNT GESTORA DE RECURSOS LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "ACURA GESTORA DE RECURSOS LTDA.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que BENJAMIN BOTELHO é proprietário e controlador da FOCO DTVM (atualmente SEFER Investimentos) e sustenta que as medidas devem recair sobre seu patrimônio e sobre todas as participações que envolvem a SEFER.",
+      "pagina": 15,
+      "trecho_fonte": "em relação à SEFER, BENJAMIN BOTELHO é Proprietário e controlador da FOCO DTVM (atualmente SEFER Investimentos), devendo as medidas recaírem sobre seu patrimônio e em todas as participações que envolvem aSEFER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BENJAMIN BOTELHO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "FOCO DTVM",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "SEFER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que foram identificadas como empresas cedentes a BENEFÍCIO INTELECTUAL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA., a SIMETRIA PLANOS DE SAÚDE EIRELI, o HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA., a CONFIANCE LIFE CORRETORA DE SEGUROS, PREVIDÊNCIA E PLANOS DE SAÚDE LTDA. e a HOLDING AF S.A.",
+      "pagina": 15,
+      "trecho_fonte": "No tocante às empresas cedentes, foram identificadas: BENEFÍCIO INTELECTUAL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA.; SIMETRIA PLANOS DE SAÚDE EIRELI; HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA.; CONFIANCE LIFE CORRETORA DE SEGUROS, PREVIDÊNCIA E PLANOS DE SAÚDE LTDA.; e HOLDING AF S.A.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BENEFÍCIO INTELECTUAL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "SIMETRIA PLANOS DE SAÚDE EIRELI",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "CONFIANCE LIFE CORRETORA DE SEGUROS, PREVIDÊNCIA E PLANOS DE SAÚDE LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "HOLDING AF S.A.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, conforme a IPJ 114/2025, as empresas cedentes apresentam vínculos diretos e indiretos com ANDRÉ BERALDO e FERNANDO VIEIRA e com as sociedades ABM PARTICIPAÇÕES EMPREENDIMENTOS LTDA. e ABM INVESTIMENTOS IMOBILIÁRIOS.",
+      "pagina": 15,
+      "trecho_fonte": "Conforme demonstrado na IPJ 114/2025, essas empresas apresentam vínculos diretos e indiretos com ANDRÉ BERALDO e FERNANDO VIEIRA, bem como com as sociedades ABM PARTICIPAÇÕES EMPREENDIMENTOS LTDA.eABM INVESTIMENTOS IMOBILIÁRIOS.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "ANDRÉ BERALDO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "FERNANDO VIEIRA",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "ABM PARTICIPAÇÕES EMPREENDIMENTOS LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "ABM INVESTIMENTOS IMOBILIÁRIOS",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que a ABM PARTICIPAÇÕES EMPREENDIMENTOS LTDA. e a ABM INVESTIMENTOS IMOBILIÁRIOS mantêm conexões com HENRIQUE VORCARO, NATALIA VORCARO e FELIPE VORCARO por meio de pessoas jurídicas associadas a ANDRÉ e FERNANDO, notadamente TRÊS VALE NEGÓCIOS IMOBILIÁRIOS LTDA. e TRANCOSO ECO NEGÓCIOS IMOBILIÁRIOS LTDA.",
+      "pagina": 15,
+      "trecho_fonte": "Essas duas últimas mantêm conexões com HENRIQUE VORCARO, NATALIA VORCARO e FELIPE VORCARO — por meio de pessoas jurídicas associadas diretamente a ANDRÉ e FERNANDO, notadamente TRÊS VALE NEGÓCIOS IMOBILIÁRIOS LTDA. e TRANCOSO ECO NEGÓCIOS IMOBILIÁRIOS LTDA.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "HENRIQUE VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "NATALIA VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "FELIPE VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "TRÊS VALE NEGÓCIOS IMOBILIÁRIOS LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "TRANCOSO ECO NEGÓCIOS IMOBILIÁRIOS LTDA.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que ANTONIO CESAR CARVALHO SOBRINHO é sócio da CONFIANCE.",
+      "pagina": 15,
+      "trecho_fonte": "ANTONIO CESAR CARVALHO SOBRINHO ésócio daCONFIANCE.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "ANTONIO CESAR CARVALHO SOBRINHO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CONFIANCE",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que o valor de R$ 302.586.000,00 relativo ao FIDIC CITY deve recair sobre as pessoas físicas mencionadas, sobre DANIEL VORCARO, presidente do BANCO MÁSTER, sobre o próprio BANCO MÁSTER, como cotista único do fundo, e sobre as respectivas gestoras e a administradora.",
+      "pagina": 15,
+      "trecho_fonte": "o valor de R$ 302.586.000,00 deve recair sobre essas pessoas físicas, bem como sobre DANIEL VORCARO, presidente do BANCO MÁSTER, e sobre o próprio BANCO MÁSTER, na qualidade de cotista único do fundo analisado, além das respectivas gestoras edaadministradora.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, em relação ao FIDIC CITY 02, verificou-se a atuação conjunta de SEFER, WNT e ACURA.",
+      "pagina": 15,
+      "trecho_fonte": "em relação ao FIDIC CITY 02, verificou-se a atuação conjunta de SEFER, WNT e ACURA.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "FIDIC CITY 02",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "SEFER",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "WNT",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "ACURA",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que a medida de sequestro de R$ 1.483.355.684,00 relativa ao FIDIC CITY 02 deve recair sobre as mesmas pessoas físicas e jurídicas do FIDIC CITY 01, acrescentando-se a CLÍNICA MAIS MÉDICOS S.A. e seus sócios, ex-sócios e diretores VALDENICE PANTALEAO, LINDOLFO LUIZ COUTINHO DA SILVA e RICARDO BALCIUNAS.",
+      "pagina": 16,
+      "trecho_fonte": "a medida de sequestro de R$ 1.483.355.684,00 deve recair sobre as mesmas pessoas físicas e jurídicas citadas acima, acrescentando-se a CLÍNICA MAIS MÉDICOS S.A. e seus sócios, ex-sócios e diretores VALDENICE PANTALEAO, LINDOLFO LUIZ COUTINHO DA SILVA e RICARDO BALCIUNAS.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "CLÍNICA MAIS MÉDICOS S.A.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "VALDENICE PANTALEAO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "LINDOLFO LUIZ COUTINHO DA SILVA",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "RICARDO BALCIUNAS",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que há ainda CRIs emitidos pela BASE SECURITIZADORA S.A. no montante de R$ 1.012.025.000,00.",
+      "pagina": 16,
+      "trecho_fonte": "há ainda os CRIs emitidos pela BASE SECURITIZADORA S.A.,no montantedeR$1.012.025.000,00.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "BASE SECURITIZADORA S.A.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que os valores dos CRIs emitidos pela BASE SECURITIZADORA S.A. devem alcançar o patrimônio de CESAR LIGEIRO, RICARDO BATISTA DE SIQUEIRA XAVIER, VICENTE CONTE NETO, ANTONIO CONTE e DANIEL VORCARO, e do próprio BANCO MÁSTER, cotista único do fundo.",
+      "pagina": 16,
+      "trecho_fonte": "Esses valores devem alcançar o patrimônio de CESAR LIGEIRO e RICARDO BATISTA DE SIQUEIRA XAVIER, VICENTE CONTE NETO, ANTONIO CONTE e DANIEL VORCARO, e sobre o próprio BANCO MÁSTER, costa único do fundo em questão.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "CESAR LIGEIRO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "RICARDO BATISTA DE SIQUEIRA XAVIER",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "VICENTE CONTE NETO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "ANTONIO CONTE",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que, em relação ao FIDIC MN I, constatou-se a atuação conjunta de SEFER, WNT e ACURA, e que as empresas relacionadas ao fundo são CONFIANCE LIFE CORRETORA DE SEGUROS, PREVIDÊNCIA E PLANOS DE SAÚDE EIRELI, HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA. e SIMETRIA PLANOS DE SAÚDE EIRELI.",
+      "pagina": 16,
+      "trecho_fonte": "Já em relação ao FIDIC MN I, constatou-se também aqui a atuação conjunta de SEFER, WNT e ACURA. As empresas relacionadas ao presente fundo são: CONFIANCE LIFE CORRETORA DE SEGUROS, PREVIDÊNCIA E PLANOS DE SAÚDE EIRELI; HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA.; e SIMETRIA PLANOS DE SAÚDE EIRELI",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "FIDIC MN I",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "SEFER",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "WNT",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "ACURA",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "HOSPITAL DA CRIANÇA SÃO JOSÉ LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "SIMETRIA PLANOS DE SAÚDE EIRELI",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que foram identificados, vinculados aos créditos cedidos ao FIDIC MN I, R$ 48.199.183,00 relativos à CONFIANCE, R$ 231.221.360,20 referentes à Simetria e R$ 179.873.593,89 provenientes da Benefício Intelectual.",
+      "pagina": 16,
+      "trecho_fonte": "Os seguintes valores foram identificados vinculados aos créditos cedidos: R$ 48.199.183,00 relativos à CONFIANCE (IPJ- A nº 143088130/2025 – NADIP/DFIN/CGRC/DICOR/PF); R$ 231.221.360,20 referentes à Simetria; e R$ 179.873.593,89 provenientes da Benefício Intelectual",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "CONFIANCE",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "Simetria",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "Benefício Intelectual",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que os valores vinculados ao FIDIC MN I devem alcançar o patrimônio das mesmas pessoas físicas identificadas, de DANIEL VORCARO, presidente do BANCO MÁSTER, do próprio BANCO MÁSTER, como cotista único, e das respectivas gestoras e administradora.",
+      "pagina": 17,
+      "trecho_fonte": "tais valores devem alcançar o patrimônio das mesmas pessoas físicas identificadas, bem como o de DANIEL VORCARO, presidente do BANCO MÁSTER, e o do próprio BANCO MÁSTER, na qualidade de cotista único do fundo analisado,além das respectivas gestoras edaadministradora.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que o FIDIC ALVARINHO tem os mesmos gestores e administradores e como principal cedente a BELLO PACTUM PARTICIPAÇÕES S.A., cuja composição societária inclui FLAVIO DANIEL AGUETONI e LUIS FERNANDO DE ALMEIDA.",
+      "pagina": 17,
+      "trecho_fonte": "No que tange ao FIDIC ALVARINHO, foram identificados os mesmos gestores e administradores. Além disso, o fundo em questão possui como principal cedente a BELLO PACTUM PARTICIPAÇÕES S.A., cuja composição societária inclui FLAVIO DANIEL AGUETONI e LUIS FERNANDO DE ALMEIDA.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "FIDIC ALVARINHO",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BELLO PACTUM PARTICIPAÇÕES S.A.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "FLAVIO DANIEL AGUETONI",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "LUIS FERNANDO DE ALMEIDA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que FLAVIO e LUIS FERNANDO mantêm vínculos societários com a BANVOX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., empresa associada a MAURÍCIO QUADRADO, citado na IPJ 90/2025 como um dos sócios do BANCO MÁSTER.",
+      "pagina": 17,
+      "trecho_fonte": "FLAVIO e LUIS FERNANDO também mantêm vínculos societários com a BANVOX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., empresa associada a MAURÍCIO QUADRADO, citado na IPJ 90/2025 como um dos sócios do BANCO MÁSTER.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "FLAVIO DANIEL AGUETONI",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "LUIS FERNANDO DE ALMEIDA",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANVOX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "MAURÍCIO QUADRADO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que o sequestro relativo ao FIDC ALVARINHO, no montante de R$ 24.225.642,22, deve recair exclusivamente sobre DANIEL VORCARO, o BANCO MASTER, a BANVOX, MAURÍCIO QUADRADO, FLAVIO DANIEL AGUETONI e LUIS FERNANDO DE ALMEIDA.",
+      "pagina": 17,
+      "trecho_fonte": "o sequestro relativo às fraudes no FIDC ALVARINHO, no montante de R$ 24.225.642,22, deve recair exclusivamente sobre DANIEL VORCARO, sobre o BANCO MASTER, sobre a BANVOX, e sobre MAURÍCIO QUADRADO, FLAVIO DANIEL AGUETONI e LUIS FERNANDO DE ALMEIDA.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "FIDC ALVARINHO",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MASTER",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "BANVOX",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "MAURÍCIO QUADRADO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "FLAVIO DANIEL AGUETONI",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "LUIS FERNANDO DE ALMEIDA",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo afirma que o FIDIC JEITTO é administrado pela MASTER CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS LTDA. e tem como principal cedente a JEITTO INSTITUIÇÃO DE PAGAMENTO LTDA., que detém 149,98% de participação no patrimônio líquido do fundo, correspondendo a aproximadamente R$ 1.073.380.633,94.",
+      "pagina": 17,
+      "trecho_fonte": "o referido fundo é administrado pela MASTER CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS LTDA., tendo como principal cedente a JEITTO INSTITUIÇÃO DE PAGAMENTO LTDA., que detém 149,98% de participação no patrimônio líquido do fundo, correspondendo a aproximadamenteR$1.073.380.633,94.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "FIDIC JEITTO",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "MASTER CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "JEITTO INSTITUIÇÃO DE PAGAMENTO LTDA.",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que o valor apurado no FIDIC JEITTO deve recair sobre DANIEL VORCARO e sobre o próprio BANCO MÁSTER, em razão de sua participação direta e indireta na estrutura do fundo.",
+      "pagina": 17,
+      "trecho_fonte": "o valor apurado deve recair sobre DANIEL VORCARO e sobre o próprio BANCO MÁSTER, em razão de suaparticipação diretaeindiretanaestruturado fundo.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A representação inaugural da Polícia Federal apontou que ASCENDINO MADUREIRA GARCIA, vulgo “DINO”, atua como operador tático e intermediário entre DANIEL VORCARO e ARTUR FIGUEIREDO, este responsável pela execução técnica das movimentações e ajustes contábeis no interior do grupo.",
+      "pagina": 18,
+      "trecho_fonte": "Em relação a ASCENDINO MADUREIRA GARCIA, vulgo “DINO”, restou apontado na representação inaugural que ele atua como operador tático e intermediário entre DANIEL VORCARO (DV) e ARTUR FIGUEIREDO, responsável pela execução técnica das movimentações e ajustes contábeis no interior do grupo",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {
+          "nome": "ASCENDINO MADUREIRA GARCIA",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "ARTUR FIGUEIREDO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que as medidas que envolvam DANIEL VORCARO devem necessariamente recair sobre DINO.",
+      "pagina": 18,
+      "trecho_fonte": "razão pela qual as medidas que envolvam DANIEL VORCARO devem necessariamente recair sobreDINO.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "DINO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial salientou que NELSON TANURE é apontado como beneficiário final da LORMONT PARTICIPAÇÕES S.A., cujas CCBs de R$ 73,7 milhões concentraram 97% da carteira do FIDC MARANTA em operação entre partes relacionadas.",
+      "pagina": 18,
+      "trecho_fonte": "Quanto a NELSON TANURE, a autoridade policial salientou que ele é apontado como o beneficiário final da LORMONT PARTICIPAÇÕES S.A., cujas CCBs de R$ 73,7 milhões concentraram 97% da carteira do FIDC MARANTA em operação entre partes relacionadas",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {
+          "nome": "NELSON TANURE",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "LORMONT PARTICIPAÇÕES S.A.",
+          "tipo": "organizacao"
+        },
+        {
+          "nome": "FIDC MARANTA",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A autoridade policial salientou que NELSON TANURE é assentado como sócio oculto do BANCO MÁSTER, exercendo influência por meio de fundos e estruturas societárias complexas.",
+      "pagina": 18,
+      "trecho_fonte": "é também assentado como sócio oculto do BANCO MÁSTER, exercendo influência por meio de fundos eestruturas societárias complexas",
+      "atribuida_a": "Polícia Federal",
+      "entidades": [
+        {
+          "nome": "NELSON TANURE",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "BANCO MÁSTER",
+          "tipo": "organizacao"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria da República em São Paulo sustenta que o bloqueio do patrimônio de NELSON TANURE deve ocorrer no mesmo volume daquele relativo a DANIEL VORCARO.",
+      "pagina": 18,
+      "trecho_fonte": "razão pela qual o bloqueio do seu patrimônio deve ocorrer no mesmo volumedaqueleem relação aDANIEL VORCARO.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "NELSON TANURE",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "DANIEL VORCARO",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "O MINISTÉRIO PÚBLICO FEDERAL encampa as conclusões da Polícia Federal quanto ao período das quebras e à individualização dos pedidos de sequestro, e manifesta-se pela ausência de sobreposição de investigações e pela competência do Juízo da 8ª Vara Criminal Federal de São Paulo.",
+      "pagina": 18,
+      "trecho_fonte": "o MINISTÉRIO PÚBLICO FEDERAL encampa as conclusões da Polícia Federal em relação ao período das quebras, bem como em relação à individualização dos pedidos de sequestro e manifesta-se pela ausência de sobreposição deinvestigações epelacompetênciadesteJuízo.",
+      "atribuida_a": "Procuradoria da República em São Paulo",
+      "entidades": [
+        {
+          "nome": "MINISTÉRIO PÚBLICO FEDERAL",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica que as investigações do Inquérito em curso na 8ª Vara Federal Criminal de São Paulo são ainda mais amplas do que aquelas objeto da “Operação Compliance”, de sua relatoria, o que demonstra o acerto do Procurador-Geral da República em requerer a remessa do feito ao Supremo Tribunal Federal.",
+      "pagina": 18,
+      "trecho_fonte": "as investigações levadas a efeito no Inquérito que estava em curso na 8ª Vara Federal Criminal de São Paulo são ainda mais amplas do que aquelas objeto da “Operação Compliance”, de minha relatoria, demonstrando-se também desta perspectiva o acerto do Procurador-Geral da República",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "8ª Vara Federal Criminal de São Paulo",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator ressalta que, quanto às medidas de quebra de sigilo e constrição de bens, a cognição do relator nessa fase é necessariamente limitada, examinando-se a coerência entre os indícios reunidos nas investigações e a imprescindibilidade da adoção das medidas requeridas.",
+      "pagina": 19,
+      "trecho_fonte": "deve-se ressaltar que a cognição do relator, nessa fase, é necessariamente limitada: examina-se, em síntese, a coerência entre os indícios reunidos nas investigações realizadas e a imprescindibilidade da adoção das medidas requeridas.",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a representação policial trouxe indícios consistentes da existência de organização criminosa (art. 2º da Lei n. 12.850/2013) voltada à prática de gestão fraudulenta de instituição financeira (art. 4º da Lei n. 7.492/86) e induzimento ou manutenção em erro de investidor (art. 6º da Lei n. 7.492/86).",
+      "pagina": 19,
+      "trecho_fonte": "In casu, a representação policial trouxe indícios consistentes da existência de organização criminosa (art. 2º da Lei n. 12.850/2013) voltada à prática de gestão fraudulenta de instituição financeira (art. 4º da Lei n. 7.492/86), induzimento ou manutenção em erro de investidor",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a representação policial trouxe indícios consistentes de uso de informação privilegiada e manipulação de mercado (art. 27-C da Lei n. 6.385/76) e lavagem de capitais (art. 1º da Lei n. 9.613/98).",
+      "pagina": 19,
+      "trecho_fonte": "uso de informação privilegiada e manipulação de mercado (art. 27-C da Lei n. 6.385/76) e lavagem de capitais (art. 1º da Lei n. 9.613/98).",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator verifica, na linha do consignado pelo Procurador-Geral da República e pela Polícia Federal, que há elementos suficientes apontando para o aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização, mediante o uso de fundos de investimento e rede de entidades conectadas por vínculos societários, familiares ou funcionais.",
+      "pagina": 19,
+      "trecho_fonte": "Também verifico que, na linha do que consignado pelo Procurador- Geral da República e pela Polícia Federal, que há elementos suficientes que apontam para o “aproveitamento sistemático de vulnerabilidades do mercado de capitais e do sistema de regulação e fiscalização",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        },
+        {
+          "nome": "Polícia Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que a manifestação de 27.10.2025 da Procuradoria da República em São Paulo discorre em detalhe sobre os indícios concretos trazidos pela autoridade policial e estabelece o vínculo necessário à concessão das medidas requeridas, sem prejuízo de revisão do quadro fático probatório no transcurso das investigações.",
+      "pagina": 19,
+      "trecho_fonte": "a manifestação de 27.10.2025 apresentada pela Procuradoria da República em São Paulo discorre em detalhe sobre os indícios concretos trazidos pela autoridade policial e a imprescindibilidade de deferimento das medidas requeridas, estabelecendo o vínculo necessário à concessão das medidas requeridas",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procuradoria da República em São Paulo",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera urgente e necessário o deferimento dos pedidos formulados pelo Procurador-Geral da República, nos exatos limites em que formulados.",
+      "pagina": 19,
+      "trecho_fonte": "Diante desse cenário, mostra-se urgente e necessário o deferimento dos pedidos formulados pelo Procurador-Geral da República nestes autos, nos exatos limites em que formulados.",
+      "atribuida_a": "Ministro Dias Toffoli",
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu os pedidos de quebra de sigilo bancário e fiscal dos investigados indicados nas manifestações transcritas, nos períodos indicados.",
+      "pagina": 19,
+      "trecho_fonte": "Por todo o exposto, defiro os pedidos de quebras de sigilo bancário e fiscal dos investigados nas manifestações transcritas acima, nos períodos indicados",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu os pedidos de sequestro e bloqueio de bens, tal como requeridos pelo Procurador-Geral da República em sua manifestação.",
+      "pagina": 19,
+      "trecho_fonte": "bem como os pedidos de sequestro e bloqueio de bens, tal como requeridos pelo Procurador-Geral da República em sua manifestação.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procurador-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a expedição do necessário, preservando-se o sigilo dos autos.",
+      "pagina": 20,
+      "trecho_fonte": "Expeça-se o necessário, preservando-se o sigilo dos autos.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 6 de janeiro de 2026, pelo Ministro Dias Toffoli, relator.",
+      "pagina": 20,
+      "trecho_fonte": "Brasília, 6 de janeiro de 2026. Ministro DIASTOFFOLI Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Dias Toffoli",
+          "tipo": "ministro"
+        }
+      ]
+    }
+  ],
+  "observacoes": null
+}

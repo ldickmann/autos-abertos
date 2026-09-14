@@ -1,0 +1,363 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator da Petição 15.198 (Distrito Federal) é o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Fabiano Campos Zettel formulou a Petição nº 20776/2026 (e-Doc. 455), noticiando a aprovação dos Requerimentos n. 167/2026 e 187/2026 no âmbito da CPI do Crime Organizado.",
+      "pagina": 4,
+      "trecho_fonte": "Trata-se da Petição nº 20776/2026 (e-Doc. 455), formulada por Fabiano Campos Zettel, noticiando a aprovação dos Requerimentos n. 167/2026 e 187/2026, no âmbito da “CPI do Crime Organizado”.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os Requerimentos n. 167/2026 e 187/2026 têm por objeto a convocação de Fabiano Campos Zettel para prestar depoimento, em data ainda não estabelecida, perante a Comissão Parlamentar de Inquérito.",
+      "pagina": 4,
+      "trecho_fonte": "Tais requerimentos têm por objeto a convocação do requerente para prestar depoimento, em data ainda não estabelecida, perante a referida Comissão Parlamentar de Inquérito.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Fabiano Campos Zettel assevera que a justificação dos requerimentos aprovados não deixa dúvidas sobre a condição de investigado a ele atribuída.",
+      "pagina": 4,
+      "trecho_fonte": "Assevera que a “justificação” dos requerimentos aprovados “não deixa dúvidas sobre a condição de investigado atribuída a Fabiano Campos Zettel” (e-doc. 455, p. 1).",
+      "atribuida_a": "Fabiano Campos Zettel",
+      "entidades": [
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "Fabiano Campos Zettel requer autorização e salvo-conduto para não comparecer aos atos convocatórios, afastando-se a compulsoriedade de comparecimento, como medida necessária ao pleno direito à não autoincriminação e ao silêncio.",
+      "pagina": 4,
+      "trecho_fonte": "autorização e salvo-conduto para que ele não compareça aos atos convocatórios, como medida necessária à viabilização do pleno direito à não autoincriminação e, assim, ao silêncio, afastando-se a compulsoriedade de comparecimento.",
+      "atribuida_a": "Fabiano Campos Zettel",
+      "entidades": [
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator rememora observação feita em decisões proferidas em pedidos semelhantes quanto à importância da CPMI do Crime Organizado e de sua atuação independente na apuração dos fatos que ensejaram sua instauração.",
+      "pagina": 4,
+      "trecho_fonte": "Inicialmente, rememoro a observação feita em decisões proferidas no contexto de pedidos semelhantes, no sentido de que, não obstante a importância superlativa da “CPMI do Crime Organizado” e de sua atuação independente na apuração dos fatos certos e determinados que ensejaram a sua instauração",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "CPMI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental consagrado no art. 5º, LXIII, da Constituição da República.",
+      "pagina": 5,
+      "trecho_fonte": "revela-se inafastável a garantia constitucional de qualquer investigado contra a autoincriminação, direito fundamental expressamente consagrado no art. 5º, LXIII, da Constituição da República.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator registra que, nos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno do Supremo Tribunal Federal declarou a incompatibilidade da condução coercitiva de investigados para interrogatórios com a Constituição da República.",
+      "pagina": 5,
+      "trecho_fonte": "nos paradigmáticos julgamentos das ADPFs 395 e 444, de junho de 2018, o Pleno desta Corte declarou a incompatibilidade da condução coercitiva de investigados, para interrogatórios, com a Constituição da República",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator invoca a jurisprudência do Supremo Tribunal Federal segundo a qual o direito do investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, inexistindo obrigatoriedade ou sanção pelo não comparecimento.",
+      "pagina": 5,
+      "trecho_fonte": "há jurisprudência do Supremo Tribunal Federal, no sentido de que o direito de um investigado à não autoincriminação abrange a faculdade de comparecer ou não ao ato, entendendo, como corolário do brocardo nemo tenetur se detegere, que inexiste obrigatoriedade ou sanção pelo não comparecimento.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita como precedente o HC nº 171.438/DF, relator Ministro Gilmar Mendes, Segunda Turma, julgado em 28/05/2019, no qual a ordem foi concedida para convolar a compulsoriedade de comparecimento em facultatividade.",
+      "pagina": 6,
+      "trecho_fonte": "6. Ordem concedida para convolar a compulsoriedade de comparecimento em facultatividade.” (HC nº 171.438/DF, Rel. Min. Gilmar Mendes, Segunda Turma,j.28/05/2019,p.17/08/2020).",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Min. Gilmar Mendes",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Segunda Turma",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma ter decidido sistematicamente conforme esse entendimento em casos análogos, destacando os julgados no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "pagina": 6,
+      "trecho_fonte": "Tenho sistematicamente decidido conforme esse entendimento em casos análogos, pelo que destaco os julgados recentes no HC 232.643, HC 247.450, HC 247.450 Extn, HC 247.792 e HC 254.442.",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator destaca a legitimidade do controle jurisdicional exercido pelo Supremo Tribunal Federal mesmo diante dos poderes investigatórios das Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes.",
+      "pagina": 6,
+      "trecho_fonte": "Cumpre destacar, ainda, a legitimidade do controle jurisdicional exercido por esta Suprema Corte, mesmo diante dos poderes investigatórios conferidos às Comissões Parlamentares de Inquérito, o que não vulnera o princípio da separação de poderes",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Supremo Tribunal Federal",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o MS nº 25.668/DF, relator Ministro Celso de Mello, Tribunal Pleno, julgado em 23/03/2006, segundo o qual o controle jurisdicional de abusos praticados por Comissão Parlamentar de Inquérito não ofende o princípio da separação de poderes.",
+      "pagina": 6,
+      "trecho_fonte": "(MS nº 25.668/DF, Rel. Min. Celso de Mello, Tribunal Pleno,j.23/03/2006,p.04/08/2006).",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Min. Celso de Mello",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Tribunal Pleno",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera patente a objeção da defesa do requerente Fabiano Campos Zettel.",
+      "pagina": 7,
+      "trecho_fonte": "estando patente a objeção da defesa do requerente Fabiano Campos Zettel",
+      "atribuida_a": "Ministro André Mendonça (relator)",
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator deferiu o pleito formulado na Petição nº 20776/2026 (e-Doc. 455) para afastar a obrigatoriedade de comparecimento de Fabiano Campos Zettel à CPI do Crime Organizado, transmudando-a em facultatividade e deixando a cargo do requerente a decisão de comparecer ou não.",
+      "pagina": 7,
+      "trecho_fonte": "defiro o pleito formulado na Petição nº 20776/2026 (e-Doc. 455), para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do requerente a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator assegurou ao convocado, na hipótese de optar por comparecer ao ato, o direito ao silêncio, à assistência por advogado durante o ato e de não ser submetido ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo.",
+      "pagina": 7,
+      "trecho_fonte": "o direito: a) ao silêncio, ou seja, de, assim querendo, não responder a perguntas a ela direcionadas; b) à assistência por advogado durante o ato; c) de não serem submetidos ao compromisso de dizer a verdade ou de subscrever termos com esse conteúdo",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator assegurou ao convocado o direito de não sofrer constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "pagina": 7,
+      "trecho_fonte": "e d) de não sofrerem constrangimentos físicos ou morais decorrentes do exercício dos direitos anteriores.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou a comunicação da decisão, com máxima urgência e remessa de cópia integral, à Presidência da CPI do Crime Organizado e às defesas constituídas.",
+      "pagina": 7,
+      "trecho_fonte": "Comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPI do Crime Organizado e as defesas constituídas.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "CPI do Crime Organizado",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão serve como salvo-conduto.",
+      "pagina": 7,
+      "trecho_fonte": "Serve esta decisão como SALVO-CONDUTO.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Fabiano Campos Zettel",
+          "tipo": "pessoa"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República.",
+      "pagina": 7,
+      "trecho_fonte": "Cumpridas as determinações acima, dê-se ciência à Procuradoria-Geral da República.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        },
+        {
+          "nome": "Procuradoria-Geral da República",
+          "tipo": "orgao_publico"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que seja dada publicidade à decisão.",
+      "pagina": 7,
+      "trecho_fonte": "Dê-se publicidade à presente decisão.",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 27 de fevereiro de 2026, pelo Ministro André Mendonça, relator.",
+      "pagina": 7,
+      "trecho_fonte": "Brasília, 27 de fevereiro de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {
+          "nome": "MIN. ANDRÉ MENDONÇA",
+          "tipo": "ministro"
+        }
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes inteiramente sob sigilo (páginas 1 a 4). O nome do relator aparece na assinatura sem espaço (\"ANDRÉMENDONÇA\"), aparente falha de extração do texto."
+}

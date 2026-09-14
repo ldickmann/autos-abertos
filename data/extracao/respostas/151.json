@@ -1,0 +1,51 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 3 de junho de 2026, o relator determinou a abertura de vista à Procuradoria-Geral da República para manifestação sobre o agravo regimental interposto por Maurício Antonio Quadrado, Luís Fernando de Almeida e Flávio Daniel Aguetoni (e-doc. 684).",
+      "pagina": 4,
+      "trecho_fonte": "Abra-se vista à Procuradoria-Geral da República, para manifestação sobre o agravo regimental interposto por Maurício Antonio Quadrado, Luís Fernando de Almeida e Flávio Daniel Aguetoni (e-doc. 684).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Maurício Antonio Quadrado", "tipo": "pessoa"},
+        {"nome": "Luís Fernando de Almeida", "tipo": "pessoa"},
+        {"nome": "Flávio Daniel Aguetoni", "tipo": "pessoa"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Maurício Antonio Quadrado, Luís Fernando de Almeida e Flávio Daniel Aguetoni interpuseram agravo regimental, registrado como e-doc. 684.",
+      "pagina": 4,
+      "trecho_fonte": "agravo regimental interposto por Maurício Antonio Quadrado, Luís Fernando de Almeida e Flávio Daniel Aguetoni (e-doc. 684)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Maurício Antonio Quadrado", "tipo": "pessoa"},
+        {"nome": "Luís Fernando de Almeida", "tipo": "pessoa"},
+        {"nome": "Flávio Daniel Aguetoni", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 3 de junho de 2026, e assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 4,
+      "trecho_fonte": "Brasília, 3 de junho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes inteiramente sob sigilo nas páginas 1 a 4; o texto do despacho ocupa apenas a página 4."
+}

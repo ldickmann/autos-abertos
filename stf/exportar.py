@@ -69,6 +69,15 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
                            "bloco": r["bloco"], "e_placeholder": bool(r["e_placeholder"]), "entidade_id": r["entidade_id"],
                            "snapshot": _snap(con, r["snapshot_last_seen"], cache)})
 
+        assercoes_doc: dict[int, list] = {}
+        contagem = {"fato_processual": 0, "alegacao_parte": 0, "fundamento_decisorio": 0}
+        for a in con.execute(
+                "SELECT a.id, a.documento_id, a.pagina, a.tipo_epistemico, a.texto, a.trecho_fonte, a.atribuida_a FROM assercao a "
+                "JOIN documento d ON d.id = a.documento_id WHERE d.incidente=? ORDER BY a.documento_id, a.pagina, a.id", (inc,)):
+            assercoes_doc.setdefault(a["documento_id"], []).append({
+                "id": a["id"], "pagina": a["pagina"], "tipo_epistemico": a["tipo_epistemico"], "texto": a["texto"],
+                "trecho_fonte": a["trecho_fonte"], "atribuida_a": a["atribuida_a"]})
+            contagem[a["tipo_epistemico"]] += 1
         docs_por_andamento: dict[int, list] = {}
         for r in con.execute(
                 "SELECT ad.andamento_id, ad.rotulo, d.id, d.formato, d.url, d.sha256, d.paginas, d.tem_camada_texto, d.codigo_autenticacao "
@@ -76,7 +85,8 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
                 "WHERE a.incidente=?", (inc,)):
             docs_por_andamento.setdefault(r["andamento_id"], []).append({
                 "id": r["id"], "rotulo": r["rotulo"], "formato": r["formato"], "url": r["url"], "baixado": r["sha256"] is not None,
-                "paginas": r["paginas"], "tem_texto": bool(r["tem_camada_texto"]), "codigo_autenticacao": r["codigo_autenticacao"]})
+                "paginas": r["paginas"], "tem_texto": bool(r["tem_camada_texto"]), "codigo_autenticacao": r["codigo_autenticacao"],
+                "assercoes": assercoes_doc.get(r["id"], [])})
         andamentos = []
         for r in con.execute("SELECT * FROM andamento WHERE incidente=? ORDER BY posicao", (inc,)):
             andamentos.append({"id": r["id"], "data": r["data"], "tipo": r["tipo"], "descricao": r["descricao"],
@@ -105,7 +115,7 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
             "SELECT DISTINCT t.nome, t.explicacao_portal FROM tipo_andamento t JOIN andamento a ON a.tipo = t.nome WHERE a.incidente=?", (inc,))}
         _escrever(saida / "processo" / f"{inc}.json", {
             "cabecalho": cab, "partes": partes, "andamentos": andamentos, "peticoes": peticoes, "deslocamentos": deslocamentos,
-            "relacoes": relacoes, "sessoes": sessoes, "explicacoes_portal": tipos,
+            "relacoes": relacoes, "sessoes": sessoes, "explicacoes_portal": tipos, "contagem_assercoes": contagem,
         })
         lista_processos.append({"classe": p["classe"], "numero": p["numero"], "incidente": inc, "coletado": True,
                                 "publicidade": p["publicidade"], "relator": p["relator"], "assuntos": cab["assuntos"],

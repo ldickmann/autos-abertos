@@ -1,0 +1,159 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A defesa de PHILLIPI MACHADO DE MORAES MOURÃO apresentou a Petição nº 34437/2026 (e-Doc. 235), informando o falecimento do investigado, ocorrido em 06/03/2026, conforme Certidão de Óbito juntada como e-Doc. 236.",
+      "pagina": 2,
+      "trecho_fonte": "Trata-se de Petição nº 34437/2026 (e-Doc. 235), por meio da qual a defesa de PHILLIPI MACHADO DE MORAES MOURÃO informa o falecimento do investigado, ocorrido no dia 06/03/2026, conforme Certidão de Óbito (e-Doc.236).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A defesa de PHILLIPI MACHADO DE MORAES MOURÃO formula pedido de arquivamento das investigações em face do de cujus e de declaração da extinção da punibilidade, com base no art. 107, I, do Código Penal.",
+      "pagina": 2,
+      "trecho_fonte": "Ao final, formula pedido de arquivamento das investigações, em face do de cujus e seja declarada a extinção da punibilidade, com esteio no art. 107, I, do CP.",
+      "atribuida_a": "defesa de PHILLIPI MACHADO DE MORAES MOURÃO",
+      "entidades": [
+        {"nome": "PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Instada a se manifestar, a Procuradoria-Geral da República apresentou parecer (e-Doc. 330).",
+      "pagina": 2,
+      "trecho_fonte": "Instalada a se manifestar a Procuradoria-Geral da República apresentou parecer (e-Doc. 330).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "alegacao_parte",
+      "texto": "A Procuradoria-Geral da República manifesta-se favoravelmente ao pedido de extinção da punibilidade formulado pela defesa de Luiz Phillipi Machado de Moraes Mourão, dado o óbito do investigado.",
+      "pagina": 3,
+      "trecho_fonte": "No que concerne ao pedido de extinção de punibilidade formulado pela defesa de Luiz Phillipi Machado de Moraes Mourão, dado o óbito do investigado, a Procuradoria-Geral da Repúblicasemanifestafavoravelmente.",
+      "atribuida_a": "Procuradoria-Geral da República",
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que o posicionamento da Procuradoria-Geral da República deve ser acolhido.",
+      "pagina": 3,
+      "trecho_fonte": "O posicionamento da Procuradoria-Geral da República deve ser acolhido.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a morte do agente constitui causa objetiva de exclusão do jus puniendi estatal, fundada no princípio da intranscendência da pena (art. 5º, XLV, da CF/88 e art. 107, I, do Código Penal).",
+      "pagina": 3,
+      "trecho_fonte": "A morte do agente constitui causa objetiva de exclusão do jus puniendi estatal, fundada no princípio da intranscendência da pena (art. 5º, XLV, da CF/88 e art. 107, inciso I, do Código Penal).",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator considera que, ante a prova inequívoca do óbito do investigado (e-Doc. 236) e a anuência do Parquet, impõe-se o reconhecimento da perda superveniente do interesse de agir estatal na seara penal, subsistindo os reflexos extrapenais.",
+      "pagina": 3,
+      "trecho_fonte": "ante a prova inequívoca do óbito do investigado (e-Doc. 236) e a anuência do Parquet quanto à incidência de causa extintiva da punibilidade de caráter personalíssimo, impõe-se o reconhecimento da perda superveniente do interesse de agir estatal sob a seara penal, subsistindo os reflexos extrapenais",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator cita o precedente Inq 4870 (Rel. Cristiano Zanin, Primeira Turma, julgado em 12/03/2025), em que foi decretada a extinção da punibilidade de investigado em razão da juntada de certidão de óbito aos autos (art. 107, I, do Código Penal).",
+      "pagina": 5,
+      "trecho_fonte": "Decretada a extinção de punibilidade de Josival Cavalcanti da Silva, dada a juntada da certidão de óbito aos autos (art. 107, I, do Código Penal). (Inq 4870, Rel. Cristiano Zanin, Primeira Turma,j.12/03/2025,p.18/03/2025)",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Cristiano Zanin", "tipo": "ministro"},
+        {"nome": "Primeira Turma", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator acolheu o parecer da Procuradoria-Geral da República, declarou extinta a punibilidade em relação a PHILLIPI MACHADO DE MORAES MOURÃO, nos termos do art. 107, I, do Código Penal, e determinou o arquivamento parcial das investigações.",
+      "pagina": 5,
+      "trecho_fonte": "acolho o parecer da Procuradoria-Geral da República para declarar extinta a punibilidade em relação PHILLIPI MACHADO DE MORAES MOURÃO, nos termos do art. 107, inciso I, do Código Penal e determinar o arquivamento parcial das investigações.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator entende que a obrigação de reparar eventuais danos, por não se tratar de pena, mas de medida de recomposição patrimonial, transmite-se aos herdeiros, razão pela qual as medidas assecuratórias patrimoniais permanecem hígidas.",
+      "pagina": 5,
+      "trecho_fonte": "a obrigação de reparar eventuais danos, por não se tratar de pena, mas de medida de recomposição patrimonial, transmite-se aos herdeiros, razão pela qual permanecem hígidas as medidas assecuratórias patrimoniais (sequestro de bens e valores)",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "As medidas assecuratórias patrimoniais (sequestro de bens e valores) em face de PHILLIPI MACHADO DE MORAES MOURÃO permanecem hígidas, notadamente quanto à possível necessidade de reparação de prejuízos.",
+      "pagina": 5,
+      "trecho_fonte": "permanecem hígidas as medidas assecuratórias patrimoniais (sequestro de bens e valores) em face de PHILLIPI MACHADO DE MORAES MOURÃO, notadamente quanto à possível necessidade de reparação de prejuízos.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os herdeiros de PHILLIPI MACHADO DE MORAES MOURÃO, diretamente ou por intermédio do inventariante que represente o espólio, ficam instados a ingressar nos autos para acompanhamento das restrições patrimoniais.",
+      "pagina": 5,
+      "trecho_fonte": "ficam os herdeiros, diretamente ou por intermédio do inventariante que represente o espólio, instados a ingressar nos autos para acompanhamento das restrições patrimoniais.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "PHILLIPI MACHADO DE MORAES MOURÃO", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator afirma que a extinção da punibilidade reconhecida não é óbice à decretação de eventuais futuras medidas constritivas ou de afastamento de sigilo contra o de cujus.",
+      "pagina": 5,
+      "trecho_fonte": "a extinção da punibilidade ora reconhecida também não é óbice para que sejam decretadas eventuais futuras medidas constritivas ou mesmo de afastamento de sigilo contra o de cujus",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão determinou a intimação da defesa e a expedição de ofício à autoridade policial, com o inteiro teor da decisão, para as providências cabíveis.",
+      "pagina": 5,
+      "trecho_fonte": "Intime-se a defesa e expeça-se ofício à autoridade policial, com o inteiro teor desta decisão, para as providências cabíveis.",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A decisão foi proferida em Brasília, em 29 de maio de 2026, pelo relator, Ministro André Mendonça.",
+      "pagina": 6,
+      "trecho_fonte": "Brasília, 29 de maio de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": null
+}

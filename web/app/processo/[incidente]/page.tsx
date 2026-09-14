@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Carimbo, Publicidade, StatusProcessual } from "@/components/Badges";
+import { BadgeEpistemico, Carimbo, Publicidade, StatusProcessual } from "@/components/Badges";
 import { LinhaDoTempo } from "@/components/LinhaDoTempo";
 import { formatarData, getMeta, getProcesso, listarIncidentesColetados } from "@/lib/data";
 
@@ -33,6 +33,15 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
           <div className="sm:col-span-2"><dt className="inline font-semibold">Assunto: </dt><dd className="inline">{cab.assuntos.join("; ") || "—"}</dd></div>
           <div className="sm:col-span-2"><dt className="inline font-semibold">Números de origem: </dt><dd className="inline break-all">{cab.numeros_origem.join(", ") || "—"}</dd></div>
         </dl>
+        {p.contagem_assercoes && Object.values(p.contagem_assercoes).some((n) => n > 0) && (
+          <p className="mt-3 flex flex-wrap items-center gap-2 text-sm">
+            <span className="font-semibold">Asserções extraídas dos documentos:</span>
+            {(["fato_processual", "alegacao_parte", "fundamento_decisorio"] as const).map((t) => (
+              <span key={t} className="flex items-center gap-1"><BadgeEpistemico tipo={t} /> {p.contagem_assercoes?.[t] ?? 0}</span>
+            ))}
+            <a className="underline" href="#lt">(ver na linha do tempo)</a>
+          </p>
+        )}
         <div className="mt-3 flex flex-wrap gap-4">
           <Carimbo snapshot={cab.snapshot} />
           <a className="text-sm underline" href={`https://portal.stf.jus.br/processos/detalhe.asp?incidente=${cab.incidente}`} rel="noreferrer">Ver no portal do STF</a>

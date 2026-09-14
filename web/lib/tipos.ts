@@ -1,8 +1,14 @@
+export type TipoEpistemico = "fato_processual" | "alegacao_parte" | "fundamento_decisorio";
+
 export type Snapshot = { id: number; fetched_at: string; sha256: string; url: string; aba: string } | null;
+
+export type AssercaoResumo = {
+  id: number; pagina: number; tipo_epistemico: TipoEpistemico; texto: string; trecho_fonte: string; atribuida_a: string | null;
+};
 
 export type Documento = {
   id: number; rotulo: string; formato: string; url: string; baixado: boolean;
-  paginas: number | null; tem_texto: boolean; codigo_autenticacao: string | null;
+  paginas: number | null; tem_texto: boolean; codigo_autenticacao: string | null; assercoes?: AssercaoResumo[];
 };
 
 export type Andamento = {
@@ -37,6 +43,7 @@ export type Processo = {
   deslocamentos: { destino: string; enviado_por: string; data_envio: string; guia: string; recebido_em: string | null; snapshot: Snapshot }[];
   relacoes: { tipo: string; classe: string; numero: number; fonte_andamento_id: number; snapshot: Snapshot }[];
   sessoes: Sessao[]; explicacoes_portal: Record<string, string | null>;
+  contagem_assercoes?: Record<TipoEpistemico, number>;
 };
 
 export type ProcessoResumo = {
@@ -44,8 +51,6 @@ export type ProcessoResumo = {
   relator?: string | null; assuntos?: string[]; data_protocolo?: string | null; status?: string;
   contagens?: Record<string, number>; coletado_em?: string | null;
 };
-
-export type TipoEpistemico = "fato_processual" | "alegacao_parte" | "fundamento_decisorio";
 
 export type Assercao = {
   id: number; pagina: number; tipo_epistemico: TipoEpistemico; texto: string; trecho_fonte: string;

@@ -1,0 +1,103 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A certidão de julgamento refere-se ao Referendo na Petição 15.556, do Distrito Federal, de relatoria do Ministro André Mendonça, na Segunda Turma.",
+      "pagina": 1,
+      "trecho_fonte": "SEGUNDA TURMA CERTIDÃO DE JULGAMENTO REFERENDO NA PETIÇÃO 15.556 DISTRITO FEDERAL PROCED. : DISTRITO FEDERAL/DF RELATOR(A): MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Segunda Turma, por unanimidade, referendou a liminar concedida, nos termos do voto do Relator, Ministro André Mendonça.",
+      "pagina": 2,
+      "trecho_fonte": "Decisão: A Turma, por unanimidade, referendou a liminar concedida",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O referendo excetuou o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, que veio a falecer, com a superveniente perda da eficácia da decisão especificamente em relação à fração que recaía sobre ele.",
+      "pagina": 2,
+      "trecho_fonte": "excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, porque veio a falecer, ocasionando a superveniente perda da eficácia da decisão, especificamente em relação à fração que recaía sobre si",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Luiz Phillipi Machado de Moraes Mourão", "tipo": "pessoa"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O julgamento se deu nos termos do voto do Relator, Ministro André Mendonça.",
+      "pagina": 2,
+      "trecho_fonte": "nos termos do voto do Relator, Ministro André Mendonça.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Ministro Gilmar Mendes acompanhou o Relator com ressalvas.",
+      "pagina": 2,
+      "trecho_fonte": "O Ministro Gilmar Mendes acompanhou o Relator com ressalvas.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Gilmar Mendes", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Ministro Dias Toffoli afirmou suspeição.",
+      "pagina": 2,
+      "trecho_fonte": "Afirmou suspeição o Ministro Dias Toffoli.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O julgamento ocorreu na Sessão Virtual da Segunda Turma de 13.3.2026 a 20.3.2026.",
+      "pagina": 2,
+      "trecho_fonte": "Segunda Turma, Sessão Virtual de 13.3.2026 a 20.3.2026.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A composição da Segunda Turma no julgamento foi: Ministros Gilmar Mendes (Presidente), Dias Toffoli, Luiz Fux, Nunes Marques e André Mendonça.",
+      "pagina": 2,
+      "trecho_fonte": "Composição: Ministros Gilmar Mendes (Presidente), Dias Toffoli, Luiz Fux, Nunes Marques e André Mendonça.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"},
+        {"nome": "Ministro Gilmar Mendes", "tipo": "ministro"},
+        {"nome": "Ministro Dias Toffoli", "tipo": "ministro"},
+        {"nome": "Ministro Luiz Fux", "tipo": "ministro"},
+        {"nome": "Ministro Nunes Marques", "tipo": "ministro"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A certidão foi lavrada por Maria Clara Viotti Beck, Secretária da Segunda Turma.",
+      "pagina": 2,
+      "trecho_fonte": "Maria Clara Viotti Beck Secretária da Segunda Turma",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Maria Clara Viotti Beck", "tipo": "pessoa"},
+        {"nome": "Segunda Turma", "tipo": "orgao_publico"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2; a certidão não informa a data de assinatura, apenas o período da sessão virtual."
+}

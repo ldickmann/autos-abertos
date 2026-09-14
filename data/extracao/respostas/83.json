@@ -1,0 +1,56 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O Inquérito 5.026, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "INQUÉRITO 5.026 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em 20 de março de 2026, o relator determinou à Secretaria Judiciária a abertura de vista dos autos, sucessivamente, à autoridade policial e à Procuradoria-Geral da República, para manifestação sobre os pleitos de acesso aos autos.",
+      "pagina": 2,
+      "trecho_fonte": "À Secretaria Judiciária, para que promova a abertura de vista dos autos, sucessivamente, à autoridade policial e à Procuradoria-Geral da República, a fim de que se manifestem acerca dos pleitos de acesso aos autos",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Os pleitos de acesso aos autos constam das petições encartadas aos e-Docs. 268, 270, 313, 316, 335, 340, 350, 394, 450, 472, 513, 516, 537, 540 e 549.",
+      "pagina": 2,
+      "trecho_fonte": "pleitos de acesso aos autos contidos nas petições encartadas aos e-Docs. 268, 270, 313, 316, 335, 340, 350, 394, 450, 472, 513, 516, 537, 540 e 549",
+      "atribuida_a": null,
+      "entidades": []
+    },
+    {
+      "tipo_epistemico": "fundamento_decisorio",
+      "texto": "O relator determina que as manifestações sobre os pleitos de acesso aos autos se deem à luz do disposto na Súmula Vinculante nº 14 do Supremo Tribunal Federal.",
+      "pagina": 2,
+      "trecho_fonte": "à luz do disposto na Súmula Vinculante nº 14 do Supremo Tribunal Federal.",
+      "atribuida_a": "Ministro André Mendonça",
+      "entidades": [
+        {"nome": "Supremo Tribunal Federal", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 20 de março de 2026, e assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 2,
+      "trecho_fonte": "Brasília, 20 de março de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes sob sigilo nas páginas 1 e 2."
+}

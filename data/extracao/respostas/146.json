@@ -1,0 +1,67 @@
+{
+  "assercoes": [
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Petição 15.198, do Distrito Federal, tem como relator o Ministro André Mendonça.",
+      "pagina": 1,
+      "trecho_fonte": "PETIÇÃO 15.198 DISTRITO FEDERAL RELATOR :MIN. ANDRÉ MENDONÇA",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "Em despacho de 26 de junho de 2026, o relator determinou à Secretaria Judiciária inaugurar um novo procedimento para cada um dos processos disponibilizados por meio dos links de acesso transmitidos pela Procuradoria-Geral da República (e-doc. 984), em cumprimento à decisão contida no e-Doc. 703.",
+      "pagina": 4,
+      "trecho_fonte": "Em cumprimento à determinação expedida na decisão contida no e-Doc. 703, caberá à Secretaria Judiciária inaugurar um novo procedimento para cada um dos processos, integralmente disponibilizados através dos links de acesso transmitidos pela Procuradoria-Geral da República (e-doc. 984).",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Secretaria Judiciária", "tipo": "orgao_publico"},
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"},
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "A Procuradoria-Geral da República transmitiu links de acesso aos processos, registrados no e-doc. 984.",
+      "pagina": 4,
+      "trecho_fonte": "disponibilizados através dos links de acesso transmitidos pela Procuradoria-Geral da República (e-doc. 984)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Procuradoria-Geral da República", "tipo": "orgao_publico"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que os processos sejam autuados na classe \"Inquérito (INQ)\", com cópia dos documentos de transmissão (e-Docs. 983 a 985), em observância ao item 7 da decisão contida no e-Doc. 703.",
+      "pagina": 4,
+      "trecho_fonte": "Em observância ao item 7 daquela decisão (e-Doc. 703), autuem-se os processos na classe “Inquérito (INQ)”, com cópia dos documentos de transmissão (e-Docs. 983 a 985)",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O relator determinou que os documentos de transmissão (e-Docs. 983 a 985) sejam desentranhados do presente feito.",
+      "pagina": 4,
+      "trecho_fonte": "com cópia dos documentos de transmissão (e-Docs. 983 a 985), que deverão ser desentranhados do presente feito.",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    },
+    {
+      "tipo_epistemico": "fato_processual",
+      "texto": "O despacho foi proferido em Brasília, em 26 de junho de 2026, e assinado pelo Ministro André Mendonça, relator.",
+      "pagina": 4,
+      "trecho_fonte": "Brasília, 26 de junho de 2026. Ministro ANDRÉMENDONÇA Relator",
+      "atribuida_a": null,
+      "entidades": [
+        {"nome": "Ministro André Mendonça", "tipo": "ministro"}
+      ]
+    }
+  ],
+  "observacoes": "Cabeçalho das partes inteiramente sob sigilo nas páginas 1 a 4; o texto do despacho ocupa apenas a página 4."
+}
