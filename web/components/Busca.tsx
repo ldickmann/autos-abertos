@@ -21,7 +21,7 @@ export function Busca({ processos }: { processos: { incidente: number; rotulo: s
   const [erro, setErro] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/data/busca.json")
+    fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/data/busca.json`)
       .then((r) => r.json())
       .then((dados: Entrada[]) => {
         const ms = new MiniSearch<Entrada>({
