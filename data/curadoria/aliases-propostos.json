@@ -1,0 +1,500 @@
+{
+ "gerado_em": "2026-09-14T12:36:13.999573+00:00",
+ "limiar": 0.9,
+ "propostas": [
+  {
+   "similaridade": 0.986,
+   "a": {
+    "id": 417,
+    "nome": "Três Vales Negócios Imobiliários Ltda.",
+    "chave": "nome:TRES VALES NEGOCIOS IMOBILIARIOS LTDA",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 470,
+    "nome": "TRÊS VALE NEGÓCIOS IMOBILIÁRIOS LTDA.",
+    "chave": "nome:TRES VALE NEGOCIOS IMOBILIARIOS LTDA",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.979,
+   "a": {
+    "id": 293,
+    "nome": "CPI do Crime Organizado",
+    "chave": "nome:CPI DO CRIME ORGANIZADO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 296,
+    "nome": "CPMI do Crime Organizado",
+    "chave": "nome:CPMI DO CRIME ORGANIZADO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.974,
+   "a": {
+    "id": 10,
+    "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO",
+    "chave": "nome:LUIZ PHILLIPI MACHADO DE MORAES MOURAO",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 343,
+    "nome": "LUIZ PHILLIPE MACHADO DE MORAES MOURÃO",
+    "chave": "nome:LUIZ PHILLIPE MACHADO DE MORAES MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.967,
+   "a": {
+    "id": 56,
+    "nome": "PROCURADOR-GERAL DA REPÚBLICA",
+    "chave": "nome:PROCURADOR GERAL DA REPUBLICA",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 241,
+    "nome": "Procuradoria-Geral da República",
+    "chave": "nome:PROCURADORIA GERAL DA REPUBLICA",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.963,
+   "a": {
+    "id": 405,
+    "nome": "Juízo da 6ª Vara Criminal Federal da Seção Judiciária de São Paulo/SP",
+    "chave": "nome:JUIZO DA 6A VARA CRIMINAL FEDERAL DA SECAO JUDICIARIA DE SAO PAULO SP",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 429,
+    "nome": "Juízo da 8ª Vara Criminal Federal da Seção Judiciária de São Paulo",
+    "chave": "nome:JUIZO DA 8A VARA CRIMINAL FEDERAL DA SECAO JUDICIARIA DE SAO PAULO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.952,
+   "a": {
+    "id": 139,
+    "nome": "MICAELA FERRAZ SEVERO",
+    "chave": "nome:MICAELA FERRAZ SEVERO",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 501,
+    "nome": "MICAELA FERRAS SEVERO",
+    "chave": "nome:MICAELA FERRAS SEVERO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.951,
+   "a": {
+    "id": 29,
+    "nome": "SUPER EMPREENDIMENTOS E PARTICIPACOES S.A",
+    "chave": "nome:SUPER EMPREENDIMENTOS E PARTICIPACOES SA",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 449,
+    "nome": "SUPER EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.",
+    "chave": "nome:SUPER EMPREENDIMENTOS E PARTICIPACOES LTDA",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.939,
+   "a": {
+    "id": 253,
+    "nome": "Comissão de Valores Mobiliários — CVM",
+    "chave": "nome:COMISSAO DE VALORES MOBILIARIOS CVM",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 257,
+    "nome": "Comissão de Valores Mobiliários",
+    "chave": "nome:COMISSAO DE VALORES MOBILIARIOS",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.933,
+   "a": {
+    "id": 246,
+    "nome": "Controladoria-Geral da União – CGU",
+    "chave": "nome:CONTROLADORIA GERAL DA UNIAO CGU",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 250,
+    "nome": "Controladoria-Geral da União",
+    "chave": "nome:CONTROLADORIA GERAL DA UNIAO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.933,
+   "a": {
+    "id": 529,
+    "nome": "Phillipe Mourão",
+    "chave": "nome:PHILLIPE MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 531,
+    "nome": "Phillipi Mourão",
+    "chave": "nome:PHILLIPI MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.932,
+   "a": {
+    "id": 418,
+    "nome": "Trancoso Eco Negócios Imobiliários Ltda.",
+    "chave": "nome:TRANCOSO ECO NEGOCIOS IMOBILIARIOS LTDA",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 423,
+    "nome": "Trancoso Eco Negócios Imobiliários",
+    "chave": "nome:TRANCOSO ECO NEGOCIOS IMOBILIARIOS",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.93,
+   "a": {
+    "id": 10,
+    "nome": "LUIZ PHILLIPI MACHADO DE MORAES MOURAO",
+    "chave": "nome:LUIZ PHILLIPI MACHADO DE MORAES MOURAO",
+    "tipo": "parte",
+    "origem": "partes"
+   },
+   "b": {
+    "id": 283,
+    "nome": "PHILLIPI MACHADO DE MORAES MOURÃO",
+    "chave": "nome:PHILLIPI MACHADO DE MORAES MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.93,
+   "a": {
+    "id": 434,
+    "nome": "CLÍNICA MAIS MÉDICOS S.A.",
+    "chave": "nome:CLINICA MAIS MEDICOS SA",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 436,
+    "nome": "CLÍNICA MAIS MÉDICOS",
+    "chave": "nome:CLINICA MAIS MEDICOS",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.923,
+   "a": {
+    "id": 331,
+    "nome": "PAULO SÉRGIO SOUZA",
+    "chave": "nome:PAULO SERGIO SOUZA",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 506,
+    "nome": "PAULO SÉRGIO DE SOUZA",
+    "chave": "nome:PAULO SERGIO DE SOUZA",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.92,
+   "a": {
+    "id": 314,
+    "nome": "Banco Central do Brasil",
+    "chave": "nome:BANCO CENTRAL DO BRASIL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 505,
+    "nome": "Banco Central do Brasil (BCB)",
+    "chave": "nome:BANCO CENTRAL DO BRASIL BCB",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.919,
+   "a": {
+    "id": 535,
+    "nome": "Superintendência Regional da Polícia Federal em Minas Gerais",
+    "chave": "nome:SUPERINTENDENCIA REGIONAL DA POLICIA FEDERAL EM MINAS GERAIS",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 537,
+    "nome": "Superintendência da Polícia Federal em Minas Gerais",
+    "chave": "nome:SUPERINTENDENCIA DA POLICIA FEDERAL EM MINAS GERAIS",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.917,
+   "a": {
+    "id": 294,
+    "nome": "Comissão Parlamentar de Inquérito",
+    "chave": "nome:COMISSAO PARLAMENTAR DE INQUERITO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 302,
+    "nome": "Comissão Mista Parlamentar de Inquérito",
+    "chave": "nome:COMISSAO MISTA PARLAMENTAR DE INQUERITO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.917,
+   "a": {
+    "id": 294,
+    "nome": "Comissão Parlamentar de Inquérito",
+    "chave": "nome:COMISSAO PARLAMENTAR DE INQUERITO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 428,
+    "nome": "Comissão Parlamentar Mista de Inquérito",
+    "chave": "nome:COMISSAO PARLAMENTAR MISTA DE INQUERITO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.917,
+   "a": {
+    "id": 300,
+    "nome": "Penitenciária Federal em Brasília",
+    "chave": "nome:PENITENCIARIA FEDERAL DE BRASILIA",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 310,
+    "nome": "Penitenciária Federal em Brasília – PFBRA",
+    "chave": "nome:PENITENCIARIA FEDERAL EM BRASILIA PFBRA",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.914,
+   "a": {
+    "id": 375,
+    "nome": "Comando Vermelho (CV)",
+    "chave": "nome:COMANDO VERMELHO CV",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 379,
+    "nome": "Comando Vermelho",
+    "chave": "nome:COMANDO VERMELHO",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.911,
+   "a": {
+    "id": 386,
+    "nome": "Comissão de Assuntos Econômicos do Senado Federal",
+    "chave": "nome:COMISSAO DE ASSUNTOS ECONOMICOS DO SENADO FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 393,
+    "nome": "Comissão de Assuntos Econômicos do Senado",
+    "chave": "nome:COMISSAO DE ASSUNTOS ECONOMICOS DO SENADO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.908,
+   "a": {
+    "id": 515,
+    "nome": "Juízo da 10ª Vara Federal da Seção Judiciária do Distrito Federal",
+    "chave": "nome:JUIZO DA 10A VARA FEDERAL DA SECAO JUDICIARIA DO DISTRITO FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 527,
+    "nome": "Juízo da 10ª Vara Federal da Seção do Distrito Federal",
+    "chave": "nome:JUIZO DA 10A VARA FEDERAL DA SECAO DO DISTRITO FEDERAL",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.907,
+   "a": {
+    "id": 428,
+    "nome": "Comissão Parlamentar Mista de Inquérito",
+    "chave": "nome:COMISSAO PARLAMENTAR MISTA DE INQUERITO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 511,
+    "nome": "Comissão Parlamentar Mista de Inquérito do INSS",
+    "chave": "nome:COMISSAO PARLAMENTAR MISTA DE INQUERITO DO INSS",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.906,
+   "a": {
+    "id": 306,
+    "nome": "Comissão Parlamentar de Inquérito do Crime Organizado",
+    "chave": "nome:COMISSAO PARLAMENTAR DE INQUERITO DO CRIME ORGANIZADO",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 307,
+    "nome": "Comissão Parlamentar de Inquérito do Crime Organizado – CPMI-CRIME",
+    "chave": "nome:COMISSAO PARLAMENTAR DE INQUERITO DO CRIME ORGANIZADO CPMI CRIME",
+    "tipo": "orgao_publico",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.902,
+   "a": {
+    "id": 259,
+    "nome": "Ambipar Participações e Empreendimentos S.A.",
+    "chave": "nome:AMBIPAR PARTICIPACOES E EMPREENDIMENTOS SA",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 345,
+    "nome": "SUPER PARTICIPAÇÕES E EMPREENDIMENTOS S.A.",
+    "chave": "nome:SUPER PARTICIPACOES E EMPREENDIMENTOS SA",
+    "tipo": "organizacao",
+    "origem": "documento"
+   },
+   "pessoas": false,
+   "decisao": null
+  },
+  {
+   "similaridade": 0.901,
+   "a": {
+    "id": 283,
+    "nome": "PHILLIPI MACHADO DE MORAES MOURÃO",
+    "chave": "nome:PHILLIPI MACHADO DE MORAES MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "b": {
+    "id": 343,
+    "nome": "LUIZ PHILLIPE MACHADO DE MORAES MOURÃO",
+    "chave": "nome:LUIZ PHILLIPE MACHADO DE MORAES MOURAO",
+    "tipo": "pessoa",
+    "origem": "documento"
+   },
+   "pessoas": true,
+   "decisao": null
+  }
+ ]
+}

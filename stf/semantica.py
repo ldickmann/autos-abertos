@@ -26,7 +26,7 @@ from typing import Callable, Literal, Protocol
 from pydantic import BaseModel, Field, ValidationError
 
 from . import config
-from .entidades import chave_ministro, grupo_de, nome_ministro, normalizar
+from .entidades import chave_ministro, chave_nome, grupo_de, nome_ministro, normalizar
 from .store import BlobStore, caminho_relativo, resolver_raw
 
 PROMPT_PATH = Path(__file__).parent / "prompts" / "extracao_v1.md"
@@ -213,7 +213,9 @@ def _resolver_entidade(con, citada: EntidadeCitada, sid: int | None) -> int:
         # "Ministro André Mendonça (relator)" e "MIN. ANDRÉ MENDONÇA" (portal) são a mesma entidade
         chave, nome, tipo = chave_ministro(nome), nome_ministro(nome), "ministro"
     else:
-        chave, tipo = f"nome:{normalizar(nome)}", citada.tipo
+        chave, tipo = chave_nome(nome), citada.tipo
+        if chave.startswith("ministro:"):   # alias curado apontou para um ministro (ex.: assinatura sem espaço)
+            tipo = "ministro"
     row = con.execute("SELECT id FROM entidade WHERE chave=?", (chave,)).fetchone()
     if row:
         return row["id"]

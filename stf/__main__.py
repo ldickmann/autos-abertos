@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import datetime, timezone
 import sys
 from pathlib import Path
 
@@ -126,6 +127,19 @@ def cmd_referencias(args):
     print("por diploma:", dict(contagem_por_diploma(con).most_common()))
     for d in resumo_dispositivos(con)[:args.top]:
         print(f"  {d['dispositivo']:32s} {len(d['documentos']):3d} doc(s)  {d['ocorrencias']:3d} ocorrência(s)")
+
+
+def cmd_aliases_propor(args):
+    from .aliases import propor_aliases
+    con = _con()
+    props = propor_aliases(con)
+    saida = config.DATA / "curadoria" / "aliases-propostos.json"
+    saida.parent.mkdir(parents=True, exist_ok=True)
+    saida.write_text(json.dumps({"gerado_em": datetime.now(timezone.utc).isoformat(), "limiar": 0.9, "propostas": props},
+                                ensure_ascii=False, indent=1), "utf-8")
+    print(f"{len(props)} proposta(s) → {saida}")
+    for x in props[:args.top]:
+        print(f"  {x['similaridade']:.3f}  {x['a']['nome']}  ~  {x['b']['nome']}{'  [pessoas]' if x['pessoas'] else ''}")
 
 
 def cmd_entidades(args):
@@ -266,6 +280,7 @@ def main(argv=None):
     p.add_argument("--profundidade", type=int, default=1); p.add_argument("--teto", type=int, default=config.TETO_REQUISICOES_POR_EXPANSAO)
     p.set_defaults(f=cmd_expandir)
     p = sub.add_parser("referencias"); p.add_argument("--top", type=int, default=20); p.set_defaults(f=cmd_referencias)
+    p = sub.add_parser("aliases-propor"); p.add_argument("--top", type=int, default=15); p.set_defaults(f=cmd_aliases_propor)
     p = sub.add_parser("entidades"); p.set_defaults(f=cmd_entidades)
     p = sub.add_parser("grafo"); p.set_defaults(f=cmd_grafo)
     p = sub.add_parser("cruzamentos"); p.set_defaults(f=cmd_cruzamentos)

@@ -60,3 +60,10 @@ Não pode, e o schema impede: resumos narrativos, conexões "prováveis" entre p
 3. Grafo: arestas `citado_em`, `cita_processo`, `co_citacao`, `relator_de`, `votou_em`; nós externos; remoção de isolados; contagens por nó.
 4. Export: `linha_tempo.json`, `referencias.json` (dispositivos → documentos), campos novos em `processo/<inc>.json` e `documento/<id>.json`.
 5. Interface do grafo (item 3 da fila) sobre esses dados; depois a versão escura (item 4).
+
+## 6. Decisões tomadas na execução (14/09/2026)
+
+- **4.2 (função do documento):** feito sem modelo. Os títulos do portal já são específicos (Intimação, Despacho, Decisão monocrática, Vista à PGR, Certidão, Termo, Voto, Relatório, Acórdão); a única ambiguidade, o despacho que decide, é resolvida pela marcação `e_decisao` do próprio portal. Mapa curado em `stf/curadoria/funcoes_documento.json` (`stf/funcoes.py`); exportado em `documento.meta.funcao`.
+- **4.3 (aliases):** feito em três camadas, nenhuma com modelo. (a) Chave forte em `stf/aliases.py`: sem acentos, pontuação, hífens; "S.A."/"S/A" viram "SA" — junta "LTDA." com "LTDA", "Procuradoria-Geral" com "Procuradoria Geral" (563 → 544 entidades). (b) Lista curada `stf/curadoria/aliases.json`, cada entrada com motivo (assinaturas sem espaço, erro de digitação, sigla). (c) `python -m stf aliases-propor` gera `data/curadoria/aliases-propostos.json` com pares parecidos (difflib ≥ 0,9) para decisão humana; pares entre pessoas são marcados e nunca fundidos por código.
+- **4.4 (pedidos e resultados por decisão):** pendente. Exige nova versão do prompt (campos estruturados: pedido, quem pediu, resultado, dispositivo) e uma rodada de subagentes sobre as ~95 decisões/despachos; fica para quando houver janela de uso.
+

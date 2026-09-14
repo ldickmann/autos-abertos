@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BadgeEpistemico, Carimbo } from "@/components/Badges";
-import { formatarData, formatarDataHora, getDocumento, listarDocumentos } from "@/lib/data";
+import { formatarData, formatarDataHora, getDocumento, getMeta, listarDocumentos } from "@/lib/data";
 
 export function generateStaticParams() {
   return listarDocumentos().map((id) => ({ id: String(id) }));
@@ -10,6 +10,7 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
   const { id } = await params;
   const d = getDocumento(id);
   const m = d.meta;
+  const meta = getMeta();
   const porPagina = new Map<number, typeof d.assercoes>();
   for (const a of d.assercoes) porPagina.set(a.pagina, [...(porPagina.get(a.pagina) ?? []), a]);
 
@@ -20,6 +21,9 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
       </nav>
       <header className="rounded-lg border border-neutral-300 bg-white p-5">
         <h1 className="text-2xl font-bold">{m.titulo ?? "Documento"} <span className="text-base font-normal text-neutral-700">({m.formato.toUpperCase()}, {m.paginas ?? d.paginas.length} página{(m.paginas ?? d.paginas.length) === 1 ? "" : "s"})</span></h1>
+        {m.funcao && meta.funcoes_documento?.[m.funcao] && m.funcao !== "outro" && (
+          <p className="mt-1 text-xs text-neutral-700">função: {meta.funcoes_documento[m.funcao]} <span title="derivada do título literal do portal por regra curada (stf/curadoria/funcoes_documento.json)">(curadoria)</span></p>
+        )}
         <dl className="mt-3 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
           {m.andamentos.map((a) => (
             <div key={a.id}><dt className="inline font-semibold">Andamento: </dt><dd className="inline"><Link className="underline" href={`/processo/${a.incidente}#andamento-${a.id}`}>{formatarData(a.data)} · {a.tipo}</Link></dd></div>

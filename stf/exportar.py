@@ -14,6 +14,7 @@ from pathlib import Path
 from .grafo import construir_grafo, cruzamentos
 from .linha_tempo import ORDEM, ROTULOS, categoria_de, linha_tempo_unificada
 from .referencias import resumo_dispositivos
+from .funcoes import ROTULOS as ROTULOS_FUNCAO, funcao_de
 
 STATUS_PROCESSUAL = {
     "requerente": "requerente", "requerido": "requerido", "advogado": "advogado", "investigado": "investigado",
@@ -148,6 +149,8 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
             "SELECT ordem, pagina_inicio, pagina_fim, secao, texto FROM documento_chunk WHERE documento_id=? ORDER BY ordem", (d["id"],))]
         andamentos_ref = [dict(r) for r in con.execute(
             "SELECT a.id, a.data, a.tipo, a.incidente FROM andamento_documento ad JOIN andamento a ON a.id=ad.andamento_id WHERE ad.documento_id=?", (d["id"],))]
+        andamentos_ref_dec = [dict(r) for r in con.execute(
+            "SELECT a.e_decisao FROM andamento_documento ad JOIN andamento a ON a.id=ad.andamento_id WHERE ad.documento_id=?", (d["id"],))]
         referencias = {
             "processos": [dict(r) for r in con.execute(
                 "SELECT r.classe, r.numero, r.pagina, r.ocorrencias, r.trecho, p.incidente_principal AS incidente "
@@ -158,7 +161,7 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
                 "SELECT ra.andamento_id, ra.tipo_citado, ra.data_citada, a.incidente FROM documento_ref_andamento ra JOIN andamento a ON a.id=ra.andamento_id WHERE ra.documento_id=?", (d["id"],))],
         }
         meta_doc = {"id": d["id"], "incidente": d["incidente"], "endpoint": d["endpoint"], "id_portal": d["id_portal"], "formato": d["formato"],
-                    "url": d["url"], "titulo": d["titulo"], "sha256": d["sha256"], "paginas": d["paginas"], "tem_texto": bool(d["tem_camada_texto"]),
+                    "url": d["url"], "titulo": d["titulo"], "funcao": funcao_de(d["titulo"], any(a["e_decisao"] for a in andamentos_ref_dec)), "sha256": d["sha256"], "paginas": d["paginas"], "tem_texto": bool(d["tem_camada_texto"]),
                     "precisa_ocr": bool(d["precisa_ocr"]), "codigo_autenticacao": d["codigo_autenticacao"],
                     "senha_autenticacao": d["senha_autenticacao"], "baixado_em": d["baixado_em"],
                     "snapshot": _snap(con, d["snapshot_download"], cache), "andamentos": andamentos_ref}
@@ -212,7 +215,9 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
         "contagens": {"processos": len([p for p in lista_processos if p["coletado"]]), "documentos": docs_exportados,
                       "entidades": len(ents), "assercoes": len(todas_assercoes), "busca": len(busca),
                       "processos_citados": len(citados), "dispositivos": con.execute("SELECT COUNT(DISTINCT dispositivo) FROM documento_ref_dispositivo").fetchone()[0]},
-        "curadoria": {"grupos": "stf/curadoria/grupos.json", "categorias_andamento": "stf/curadoria/categorias_andamento.json"},
+        "curadoria": {"grupos": "stf/curadoria/grupos.json", "categorias_andamento": "stf/curadoria/categorias_andamento.json",
+                      "funcoes_documento": "stf/curadoria/funcoes_documento.json", "aliases": "stf/curadoria/aliases.json"},
+        "funcoes_documento": ROTULOS_FUNCAO,
         "tipos_epistemicos": {
             "fato_processual": "Evento verificável nos autos: uma decisão, um prazo, uma juntada. Diz o que aconteceu no processo.",
             "alegacao_parte": "Afirmação que o documento atribui a uma parte, órgão ou pessoa. O sistema registra que foi alegado, não que é verdade.",
