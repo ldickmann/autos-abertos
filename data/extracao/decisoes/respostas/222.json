@@ -1,0 +1,100 @@
+{
+  "itens": [
+    {
+      "pedido": "liminar de imediata suspensão das investigações perante o Juízo Federal de primeiro grau (Inquérito Policial nº 1096304-87.2025.4.01.3400 e medidas cautelares conexas) e sua remessa ao Supremo Tribunal Federal",
+      "quem_pediu": "D.B.V. (reclamante)",
+      "resultado": "parcialmente_deferido",
+      "decisao": "deferiu parcialmente o pedido liminar para suspender as investigações perante o Juízo Federal da 10ª Vara da Seção Judiciária do Distrito Federal e as demais instâncias antecedentes, e determinar a remessa ao Supremo Tribunal Federal de toda matéria, inclusive conexa, à investigação da operação Compliance Zero, com continuidade das investigações sob a supervisão imediata do Supremo Tribunal Federal até o julgamento definitivo da reclamação",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-09",
+      "pagina": 23,
+      "trecho_fonte": "defiro parcialmente o pedido liminar, para suspender as investigações perante o Juízo Federal da 10ª Vara da Seção Judiciária do Distrito Federal e as demais instâncias antecedentes, e determinar sua remessa a esta Suprema Corte",
+      "condicoes": [
+        "continuidade das investigações sob a supervisão imediata do Supremo Tribunal Federal, até o julgamento definitivo da reclamação",
+        "mantidas, por ora, todas as decisões administrativas, cíveis e criminais até então proferidas em relação a todos os investigados, inclusive as constrições sobre bens e valores"
+      ]
+    },
+    {
+      "pedido": "liminar de avaliação da necessidade de manutenção da prisão do reclamante ou de substituição por medidas cautelares alternativas, e revogação das medidas cautelares diversas da prisão (doc. 68)",
+      "quem_pediu": "D.B.V. (reclamante)",
+      "resultado": "outro",
+      "decisao": "adiou a apreciação da manutenção das medidas distintas da prisão, por considerar indispensável a instrução completa do processo, com as informações da autoridade reclamada e o parecer da Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-09",
+      "pagina": 7,
+      "trecho_fonte": "adia-se a apreciação da manutenção das medidas distintas da prisão, por se considerar indispensável a instrução completa do processo, com as informações da autoridade reclamada e o parecer da Procuradoria-Geral da República.",
+      "condicoes": []
+    },
+    {
+      "pedido": "acesso aos autos, com fundamento na Súmula Vinculante nº 14 (doc. 52)",
+      "quem_pediu": "Deputado Federal João Carlos Paolilo Bacelar Filho",
+      "resultado": "deferido",
+      "decisao": "deferiu o pedido de acesso aos autos ao Deputado Federal João Carlos Paolilo Bacelar Filho, nos termos da Súmula Vinculante nº 14",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-09",
+      "pagina": 23,
+      "trecho_fonte": "Defiro o pedido de acesso dos presentes autos ao Deputado Federal João Carlos Paolilo Bacelar Filho, nos termos da súmula vinculante nº 14.",
+      "condicoes": []
+    },
+    {
+      "pedido": "expedição de ofício ao Banco Central do Brasil para fornecimento de documentação e elementos informativos sobre procedimentos administrativos em curso envolvendo as pessoas e instituições investigadas",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se oficie ao Banco Central do Brasil para que forneça a documentação e os elementos informativos relativos aos procedimentos administrativos em curso que envolvam as pessoas e as instituições investigadas",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-09",
+      "pagina": 23,
+      "trecho_fonte": "Oficie-se ao Banco Central do Brasil para que forneça a documentação e os elementos informativos relativos aos procedimentos administrativos em curso que envolvam as pessoas e as instituições investigadas que entenda necessárias para a devida apuração dos fatos.",
+      "condicoes": []
+    },
+    {
+      "pedido": "fornecimento, pela Polícia Federal, de todos os procedimentos investigatórios referentes à Operação Compliance Zero, inclusive conexas",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou à Polícia Federal que forneça todos os procedimentos investigatórios referentes à Operação Compliance Zero, inclusive conexas, de forma sigilosa",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-09",
+      "pagina": 23,
+      "trecho_fonte": "Determino à Polícia Federal que forneça todos os procedimentos investigatórios referentes à Operação “Compliance Zero”, inclusive conexas, de forma sigilosa.",
+      "condicoes": [
+        "de forma sigilosa"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão ao Diretor-Geral da Polícia Federal, ao Juízo da 10ª Vara Federal da Seção do Distrito Federal, ao Tribunal Regional Federal da 1ª Região e ao Superior Tribunal de Justiça",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação ao Diretor-Geral da Polícia Federal, ao Juízo da 10ª Vara Federal da Seção do Distrito Federal, ao Tribunal Regional da 1ª Região e ao Superior Tribunal de Justiça, observado o sigilo dos autos",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-09",
+      "pagina": 23,
+      "trecho_fonte": "Comunique-se ao Diretor-Geral da Polícia Federal, ao Juízo da 10ª Vara Federal da Seção do Distrito Federal, ao Tribunal Regional da 1ª Região e ao Superior Tribunal de Justiça, observando-se o sigilo dos autos.",
+      "condicoes": [
+        "observância do sigilo dos autos"
+      ]
+    },
+    {
+      "pedido": "cumprimento da decisão com urgência",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou o cumprimento da decisão com urgência",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-09",
+      "pagina": 23,
+      "trecho_fonte": "Cumpra-se, com urgência.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimação das partes",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou as intimações",
+      "quem_decidiu": "Ministro Dias Toffoli",
+      "data": "2025-12-09",
+      "pagina": 24,
+      "trecho_fonte": "Intimem-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "Decisão liminar; o mérito da reclamação não foi julgado. Na fundamentação (p. 23) consta que o Banco Central deve se abster de cumprir decisões judiciais sobre as instituições envolvidas que não provenham do STF, sem comando correspondente no dispositivo. A decisão relata deferimentos anteriores (habilitação de Luiz Antonio Bull; acesso à PF) sem novo dispositivo."
+}

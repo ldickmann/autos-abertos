@@ -1,0 +1,117 @@
+{
+  "itens": [
+    {
+      "pedido": "garantia do direito de não comparecer às sessões da CPI do Crime Organizado, inclusive a designada para 04 de março de 2026 (Petição nº 23612/2026, e-Docs. 434)",
+      "quem_pediu": "defesa de Daniel Bueno Vorcaro",
+      "resultado": "deferido",
+      "decisao": "deferiu o pleito para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer ou não à CPI do Crime Organizado",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 5,
+      "trecho_fonte": "defiro o pleito formulado na Petição nº 23612/2026 (e-Docs. 434), para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "condicoes": []
+    },
+    {
+      "pedido": "determinação da compulsoriedade do comparecimento do depoente Daniel Bueno Vorcaro na data designada (Petição nº 23955/2026, e-Doc. 446)",
+      "quem_pediu": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "resultado": "outro",
+      "decisao": "afastou a obrigatoriedade de comparecimento, transmudando-a em facultatividade; o documento não usa a expressão indefiro quanto a este pedido",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 5,
+      "trecho_fonte": "para afastar a obrigatoriedade de comparecimento, transmudando-a em facultatividade, deixando a cargo do peticionário a decisão de comparecer, ou não, à “CPI do Crime Organizado”.",
+      "condicoes": []
+    },
+    {
+      "pedido": "autorização para a apresentação do investigado Daniel Bueno Vorcaro para prestar depoimento perante a Comissão no dia 4 de março de 2026 (Petição nº 23955/2026, e-Doc. 446)",
+      "quem_pediu": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "resultado": "deferido",
+      "decisao": "autorizou a ida do investigado ao depoimento na hipótese de ele optar por comparecer, com os direitos constitucionais resguardados",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 6,
+      "trecho_fonte": "12. Na hipótese de referido suspeito optar por comparecer ao depoimento, fica autorizada a sua ida, tendo o investigado todos os seus direitos constitucionais resguardados, notadamente aqueles relativos ao princípio do nemo tenetur se detegere",
+      "condicoes": [
+        "opção do investigado por comparecer ao depoimento",
+        "direitos constitucionais resguardados, notadamente o direito ao silêncio e à não autoincriminação",
+        "qualquer transferência condicionada à prévia manifestação expressa do investigado, formal e inequívoca quanto à sua opção positiva pelo comparecimento"
+      ]
+    },
+    {
+      "pedido": "atribuição da custódia do convocado à Polícia Legislativa do Senado Federal durante o depoimento (Petição nº 23955/2026, e-Doc. 446)",
+      "quem_pediu": "Comissão Parlamentar de Inquérito do Crime Organizado",
+      "resultado": "deferido",
+      "decisao": "determinou que, na hipótese de comparecimento, a custódia do depoente dentro das dependências do Congresso Nacional fique a cargo da Polícia Legislativa do Senado Federal, conforme requerido",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 6,
+      "trecho_fonte": "Nessa circunstância, a custódia do depoente, dentro das dependências do Congresso Nacional, deverá ficar, conforme requerido, a cargo da Polícia Legislativa do Senado Federal.",
+      "condicoes": [
+        "opção do investigado por comparecer ao depoimento"
+      ]
+    },
+    {
+      "pedido": "fixação das condições logísticas do deslocamento do custodiado à sede do Senado Federal e do retorno ao local de custódia",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 6,
+      "trecho_fonte": "determino que a Polícia Federal fixe as condições logísticas do transporte e do retorno ao local de custódia, em aeronave da própria instituição ou comercial de carreira, com segurança e vigilância contínua policial por meio de escolta apropriada",
+      "condicoes": [
+        "transporte em aeronave da própria instituição ou comercial de carreira",
+        "segurança e vigilância contínua policial por meio de escolta apropriada",
+        "vedado o deslocamento em qualquer aeronave particular",
+        "cumprido o ato, o investigado deverá retornar imediatamente ao seu local de origem, observando-se as mesmas regras de segurança e de deslocamento"
+      ]
+    },
+    {
+      "pedido": "comunicação da decisão, com remessa de cópia integral, à Presidência da CPICRIME, às defesas constituídas e à Polícia Federal",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a comunicação, com a máxima urgência e com remessa de cópia integral da decisão, à Presidência da CPICRIME, às defesas constituídas e à Polícia Federal, para as providências necessárias ao eventual deslocamento do investigado ao Senado Federal",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 6,
+      "trecho_fonte": "14. Assim, comuniquem-se, com a máxima urgência e com remessa de cópia integral desta decisão, a Presidência da CPICRIME, as defesas constituídas, e a Polícia Federal para que sejam adotadas as providências necessárias ao eventual deslocamento do investigado ao Senado Federal",
+      "condicoes": [
+        "qualquer transferência condicionada à prévia manifestação expressa do investigado, formal e inequívoca quanto à sua opção positiva pelo comparecimento"
+      ]
+    },
+    {
+      "pedido": "ciência da decisão à Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumpridas as determinações, seja dada ciência à Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 6,
+      "trecho_fonte": "15. Cumpridas as determinações acima, dê-se ciência à Procuradoria- Geral da República.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimações e adoção das providências determinadas, em regime de absoluta urgência",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou as intimações e a adoção das providências determinadas, com a máxima brevidade, em regime de absoluta urgência",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 6,
+      "trecho_fonte": "16. Intimem-se e adotem-se, com a máxima brevidade, as providências determinadas, em regime de absoluta urgência.",
+      "condicoes": []
+    },
+    {
+      "pedido": "publicação da decisão",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a publicação da decisão",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-03-03",
+      "pagina": 7,
+      "trecho_fonte": "Publique-se.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "A decisão também menciona análise dos Ofícios 127/2026, 128/2026 e 129/2026 – CPICRIME, sem dispositivo específico sobre cada um."
+}

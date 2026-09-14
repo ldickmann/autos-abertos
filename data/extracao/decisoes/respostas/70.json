@@ -1,0 +1,82 @@
+{
+  "itens": [
+    {
+      "pedido": "inclusão de investigado e apuração de fatos novos em face do Deputado Mario Frias (e-Doc. 822)",
+      "quem_pediu": "Deputada Luciene Cavalcante",
+      "resultado": "outro",
+      "decisao": "determinou o desentranhamento da petição e anexos (e-Docs. 823 a 827) para autuação em procedimento autônomo na classe PET, vinculado ao Inquérito em razão da conexão temática, sem apreciação do pedido",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 4,
+      "trecho_fonte": "a) O desentranhamento da Petição encartada ao e-Doc. 822, com os respectivos anexos (e-Docs. 823 a 827), para autuação em procedimento autônomo, com a adoção da classe PET",
+      "condicoes": []
+    },
+    {
+      "pedido": "apuração de fatos novos e inclusão de investigado em face de Ricardo Nunes, Prefeito do Município de São Paulo à época (e-Doc. 831)",
+      "quem_pediu": "Deputada Luciene Cavalcante",
+      "resultado": "outro",
+      "decisao": "determinou o desentranhamento da petição e anexos (e-Docs. 832 a 834) para autuação em procedimento autônomo na classe PET, vinculado ao Inquérito em razão da conexão temática, sem apreciação do pedido",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 4,
+      "trecho_fonte": "b) O desentranhamento da Petição encartada ao e-Doc. 831, com os respectivos anexos (e-Docs. 832 a 834), para autuação em procedimento autônomo, com a adoção da classe PET",
+      "condicoes": []
+    },
+    {
+      "pedido": "instauração de procedimentos investigatórios e reabertura de inquéritos já arquivados, por notícia-crime (e-Doc. 837)",
+      "quem_pediu": "Senadora Eudócia Maria Holanda de Araujo Caldas",
+      "resultado": "outro",
+      "decisao": "determinou o desentranhamento da petição e anexo (e-Doc. 838) para autuação em procedimento autônomo na classe PET, vinculado ao Inquérito em razão da conexão temática, sem apreciação do pedido",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 5,
+      "trecho_fonte": "c) O desentranhamento da Petição encartada ao e-Doc. 837, com o respectivo anexo (e-Doc. 838), para autuação em procedimento autônomo, com a adoção da classe PET",
+      "condicoes": []
+    },
+    {
+      "pedido": "comunicação de irregularidades identificadas no conglomerado liderado pela Entrepay Instituição de Pagamento S.A., com conexão com a Operação Compliance Zero (e-Doc. 869)",
+      "quem_pediu": "Banco Central do Brasil",
+      "resultado": "outro",
+      "decisao": "determinou o desentranhamento da petição e anexo para autuação em procedimento autônomo na classe PET, vinculado ao Inquérito em razão da conexão temática, sem apreciação do conteúdo",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 5,
+      "trecho_fonte": "d) O desentranhamento da Petição encartada ao e-Doc. 869, com o respectivo anexo (e-Doc. 838), para autuação em procedimento autônomo, com a adoção da classe PET",
+      "condicoes": []
+    },
+    {
+      "pedido": "traslado de cópia da decisão a cada uma das novas PETs criadas",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou o traslado de cópia da decisão a cada uma das novas PETs criadas",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 5,
+      "trecho_fonte": "8. Translade-se cópia da presente decisão a cada uma das novas PETs criadas.",
+      "condicoes": []
+    },
+    {
+      "pedido": "intimação do Procurador subscrevente da informação do Banco Central (e-Doc. 869) para traslado do processo eletrônico PE nº 307103 ao novo procedimento",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou à Secretaria Judiciária a intimação do Procurador subscrevente, no bojo da nova PET autônoma, para as providências de traslado do processo eletrônico PE nº 307103",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 5,
+      "trecho_fonte": "a Secretária Judiciária deverá promover a intimação do Procurador subscrevente da informação (e-Doc. 869), no bojo da nova PET autônoma",
+      "condicoes": []
+    },
+    {
+      "pedido": "conclusão dos novos procedimentos para apreciação específica",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, cumpridas as determinações, os novos procedimentos sejam tornados conclusos para apreciação específica",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-06",
+      "pagina": 5,
+      "trecho_fonte": "10. Cumpridas as determinações acima, tornem conclusos os novos procedimentos para apreciação específica.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "Os pedidos das quatro petições não foram apreciados no mérito; a decisão determina apenas o desentranhamento e a autuação autônoma."
+}

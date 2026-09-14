@@ -88,6 +88,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section aria-labelledby="titulo-comecar">
+        <h2 id="titulo-comecar" className="text-lg">Por onde começar</h2>
+        <p className="text-sm text-neutral-700">Três perguntas que a base responde sem interpretar nada: cada resposta aponta para o documento ou o registro do portal de onde saiu.</p>
+        <div className="mt-3 grid gap-3 md:grid-cols-3">
+          <Link href={`/processo/${cab.incidente}`} className="folha block border border-neutral-300 bg-white p-4 no-underline">
+            <span className="leitura block text-lg">Do que trata o processo?</span>
+            <span className="mt-1 block text-sm text-neutral-700">O assunto cadastrado pelo STF, quem é o relator e a linha do tempo de tudo o que aconteceu nos autos.</span>
+          </Link>
+          <Link href={`/processo/${cab.incidente}#partes`} className="folha block border border-neutral-300 bg-white p-4 no-underline">
+            <span className="leitura block text-lg">Quem participa, e em que papel?</span>
+            <span className="mt-1 block text-sm text-neutral-700">As partes com o status literal do portal (investigado, requerido, interessado…) e seus advogados. Nenhum papel significa culpa.</span>
+          </Link>
+          <Link href="/decisoes" className="folha block border border-neutral-300 bg-white p-4 no-underline">
+            <span className="leitura block text-lg">O que já foi decidido?</span>
+            <span className="mt-1 block text-sm text-neutral-700">Pedido por pedido: quem pediu, o que pediu e o que o ministro ou a Turma decidiu, com o trecho do documento.</span>
+          </Link>
+        </div>
+        <p className="mt-2 text-sm text-neutral-700">Termos difíceis aparecem sublinhados; clique para ver o significado, ou consulte o <Link className="underline" href="/glossario">glossário</Link>.</p>
+      </section>
+
       <section aria-labelledby="titulo-relacionados">
         <h2 id="titulo-relacionados" className="text-lg">Apensos: processos relacionados, declarados nos próprios autos</h2>
         <p className="text-sm text-neutral-700">

@@ -11,10 +11,12 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
+from . import config
 from .grafo import construir_grafo, cruzamentos
 from .linha_tempo import ORDEM, ROTULOS, categoria_de, linha_tempo_unificada
 from .referencias import resumo_dispositivos
 from .funcoes import ROTULOS as ROTULOS_FUNCAO, funcao_de
+from .decisoes import ROTULO_RESULTADO
 
 STATUS_PROCESSUAL = {
     "requerente": "requerente", "requerido": "requerido", "advogado": "advogado", "investigado": "investigado",
@@ -35,6 +37,22 @@ def _snap(con, sid: int | None, cache: dict) -> dict | None:
     return cache[sid]
 
 
+def _decisoes(con) -> list[dict]:
+    """Itens pedido → resultado, com o documento, o processo e a data do andamento a que o documento está anexado."""
+    out = []
+    for r in con.execute(
+            "SELECT i.*, d.incidente, d.titulo, d.url, d.codigo_autenticacao, "
+            "(SELECT a.data FROM andamento_documento ad JOIN andamento a ON a.id=ad.andamento_id WHERE ad.documento_id=d.id ORDER BY a.data LIMIT 1) AS data_andamento, "
+            "(SELECT ad.andamento_id FROM andamento_documento ad WHERE ad.documento_id=d.id LIMIT 1) AS andamento_id "
+            "FROM decisao_item i JOIN documento d ON d.id=i.documento_id ORDER BY COALESCE(i.data, data_andamento) DESC, i.documento_id, i.id"):
+        out.append({"id": r["id"], "documento_id": r["documento_id"], "incidente": r["incidente"], "titulo_documento": r["titulo"], "url_documento": r["url"],
+                    "codigo_autenticacao": r["codigo_autenticacao"], "andamento_id": r["andamento_id"], "data": r["data"] or r["data_andamento"],
+                    "data_no_documento": r["data"], "pagina": r["pagina"], "pedido": r["pedido"], "quem_pediu": r["quem_pediu"], "resultado": r["resultado"],
+                    "decisao": r["decisao"], "quem_decidiu": r["quem_decidiu"], "trecho_fonte": r["trecho_fonte"], "condicoes": json.loads(r["condicoes_json"]),
+                    "modelo": r["modelo"], "prompt_version": r["prompt_version"]})
+    return out
+
+
 def _escrever(path: Path, obj) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), "utf-8")
@@ -49,6 +67,8 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
     lista_processos = []
     coletado_em: dict[str, str] = {}
     docs_exportados = 0
+
+    todas_decisoes = _decisoes(con)
 
     for p in processos:
         inc = p["incidente"]
@@ -122,9 +142,10 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
                             "snapshot": _snap(con, l["snapshot_last_seen"], cache)})
         tipos = {r["nome"]: r["explicacao_portal"] for r in con.execute(
             "SELECT DISTINCT t.nome, t.explicacao_portal FROM tipo_andamento t JOIN andamento a ON a.tipo = t.nome WHERE a.incidente=?", (inc,))}
+        decisoes_proc = [d for d in todas_decisoes if d["incidente"] == inc]
         _escrever(saida / "processo" / f"{inc}.json", {
             "cabecalho": cab, "partes": partes, "andamentos": andamentos, "peticoes": peticoes, "deslocamentos": deslocamentos,
-            "relacoes": relacoes, "sessoes": sessoes, "explicacoes_portal": tipos, "contagem_assercoes": contagem,
+            "relacoes": relacoes, "sessoes": sessoes, "explicacoes_portal": tipos, "contagem_assercoes": contagem, "decisoes": decisoes_proc,
         })
         lista_processos.append({"classe": p["classe"], "numero": p["numero"], "incidente": inc, "coletado": True,
                                 "publicidade": p["publicidade"], "relator": p["relator"], "assuntos": cab["assuntos"],
@@ -207,6 +228,8 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
         citados.append({"classe": r["classe"], "numero": r["numero"], "incidente": proc_de.get((r["classe"], r["numero"])),
                         "n_docs": r["n_docs"], "n_ocorrencias": r["n_oc"], "citado_por": json.loads(r["incidentes"])})
     _escrever(saida / "referencias.json", {"dispositivos": resumo_dispositivos(con), "processos_citados": citados})
+    _escrever(saida / "decisoes.json", {"rotulos_resultado": ROTULO_RESULTADO, "itens": todas_decisoes})
+    _escrever(saida / "glossario.json", json.loads((config.RAIZ / "stf" / "curadoria" / "glossario.json").read_text("utf-8"))["verbetes"])
     _escrever(saida / "cruzamentos.json", cruzamentos(con))
     _escrever(saida / "processos.json", lista_processos)
     coletas = [dict(r) for r in con.execute("SELECT id, incidente, ingerida_em FROM coleta ORDER BY id")]
@@ -214,7 +237,8 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
         "gerado_em": datetime.now(timezone.utc).isoformat(), "semente": semente, "coletado_em": coletado_em, "coletas": coletas,
         "contagens": {"processos": len([p for p in lista_processos if p["coletado"]]), "documentos": docs_exportados,
                       "entidades": len(ents), "assercoes": len(todas_assercoes), "busca": len(busca),
-                      "processos_citados": len(citados), "dispositivos": con.execute("SELECT COUNT(DISTINCT dispositivo) FROM documento_ref_dispositivo").fetchone()[0]},
+                      "processos_citados": len(citados), "dispositivos": con.execute("SELECT COUNT(DISTINCT dispositivo) FROM documento_ref_dispositivo").fetchone()[0],
+                      "decisoes": len(todas_decisoes)},
         "curadoria": {"grupos": "stf/curadoria/grupos.json", "categorias_andamento": "stf/curadoria/categorias_andamento.json",
                       "funcoes_documento": "stf/curadoria/funcoes_documento.json", "aliases": "stf/curadoria/aliases.json"},
         "funcoes_documento": ROTULOS_FUNCAO,

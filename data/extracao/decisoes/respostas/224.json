@@ -1,0 +1,124 @@
+{
+  "itens": [
+    {
+      "pedido": "referendo da prisão preventiva do investigado Daniel Bueno Vorcaro, decretada na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1); decisão submetida a referendo pelo relator",
+      "resultado": "referendado",
+      "decisao": "votou pelo referendo integral da medida cautelar, nos exatos termos em que prolatada, mantendo a prisão preventiva de Daniel Bueno Vorcaro",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão",
+      "condicoes": []
+    },
+    {
+      "pedido": "referendo da prisão preventiva do investigado Fabiano Campos Zettel, decretada na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1); decisão submetida a referendo pelo relator",
+      "resultado": "referendado",
+      "decisao": "votou pelo referendo integral da medida cautelar, nos exatos termos em que prolatada, mantendo a prisão preventiva de Fabiano Campos Zettel",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão",
+      "condicoes": []
+    },
+    {
+      "pedido": "referendo da prisão preventiva do investigado Luiz Phillipi Machado de Moraes Mourão, decretada na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1); decisão submetida a referendo pelo relator",
+      "resultado": "outro",
+      "decisao": "excetuou do referendo o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, porque veio a falecer, ocasionando a superveniente perda da eficácia da decisão em relação à fração que recaía sobre si",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão, porque veio a falecer, ocasionando a superveniente perda da eficácia da decisão, especificamente em relação à fração que recaía sobre si.",
+      "condicoes": []
+    },
+    {
+      "pedido": "referendo da prisão preventiva do investigado Marilson Roseno da Silva, decretada na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1); decisão submetida a referendo pelo relator",
+      "resultado": "referendado",
+      "decisao": "votou pelo referendo integral da medida cautelar, nos exatos termos em que prolatada, mantendo a prisão preventiva de Marilson Roseno da Silva",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão",
+      "condicoes": []
+    },
+    {
+      "pedido": "referendo das medidas cautelares diversas da prisão impostas ao investigado Paulo Sérgio Neves de Souza na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1); decisão submetida a referendo pelo relator",
+      "resultado": "referendado",
+      "decisao": "votou pelo referendo integral da medida cautelar, nos exatos termos em que prolatada, mantendo as medidas cautelares diversas da prisão impostas a Paulo Sérgio Neves de Souza",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão",
+      "condicoes": [
+        "proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+        "proibição de frequentar ou mesmo de acessar as dependências do Banco Central (art. 319, II, do CPP)",
+        "proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP)",
+        "suspensão do exercício de função pública exercida junto ao Banco Central (art. 319, VI, do CPP)",
+        "monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP)"
+      ]
+    },
+    {
+      "pedido": "referendo das medidas cautelares diversas da prisão impostas ao investigado Belline Santana na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1); decisão submetida a referendo pelo relator",
+      "resultado": "referendado",
+      "decisao": "votou pelo referendo integral da medida cautelar, nos exatos termos em que prolatada, mantendo as medidas cautelares diversas da prisão impostas a Belline Santana",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão",
+      "condicoes": [
+        "proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+        "proibição de frequentar ou mesmo de acessar as dependências do Banco Central (art. 319, II, do CPP)",
+        "proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP)",
+        "suspensão do exercício de função pública exercida junto ao Banco Central (art. 319, VI, do CPP)",
+        "monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP)"
+      ]
+    },
+    {
+      "pedido": "referendo das medidas cautelares diversas da prisão impostas ao investigado Leonardo Augusto Furtado Palhares na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1); decisão submetida a referendo pelo relator",
+      "resultado": "referendado",
+      "decisao": "votou pelo referendo integral da medida cautelar, nos exatos termos em que prolatada, mantendo as medidas cautelares diversas da prisão impostas a Leonardo Augusto Furtado Palhares",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão",
+      "condicoes": [
+        "proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+        "proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP)",
+        "monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP)"
+      ]
+    },
+    {
+      "pedido": "referendo das medidas cautelares diversas da prisão impostas à investigada Ana Claudia Queiroz de Paiva na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1); decisão submetida a referendo pelo relator",
+      "resultado": "referendado",
+      "decisao": "votou pelo referendo integral da medida cautelar, nos exatos termos em que prolatada, mantendo as medidas cautelares diversas da prisão impostas a Ana Claudia Queiroz de Paiva",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão",
+      "condicoes": [
+        "proibição de manter contato, por qualquer meio (inclusive telefônico ou telemático), com testemunhas ou demais investigados na Operação Compliance Zero (art. 319, III, do CPP)",
+        "proibição de ausentar-se do município de sua residência e do País, com entrega do passaporte na Polícia Federal no prazo de 48 horas, o que deve ser comprovado nos autos (art. 319, IV, e 320 do CPP)",
+        "monitoração eletrônica por meio de tornozeleira como forma de assegurar o cumprimento das medidas impostas (art. 319, IX, do CPP)"
+      ]
+    },
+    {
+      "pedido": "referendo da suspensão, por tempo indeterminado, das atividades das sociedades empresárias Varajo Consultoria Empresarial Sociedade Unipessoal Ltda, Moriah Asset Empreendimentos e Participações Ltda., Super Empreendimentos e Participações S.A., King Participações Imobiliárias Ltda. e King Motors Locação de Veículos e Participações Ltda., deferida na decisão monocrática submetida à Turma",
+      "quem_pediu": "Polícia Federal (representação, e-Doc. 1, fls. 159-160 e 163); decisão submetida a referendo pelo relator",
+      "resultado": "referendado",
+      "decisao": "votou pelo referendo integral da medida cautelar, nos exatos termos em que prolatada, mantendo a suspensão, por tempo indeterminado, das atividades das cinco sociedades empresárias listadas",
+      "quem_decidiu": "Ministro André Mendonça (Relator, em voto)",
+      "data": null,
+      "pagina": 53,
+      "trecho_fonte": "Ante o exposto, voto pelo referendo à medida cautelar, excetuado apenas o comando destinado ao investigado Luiz Phillipi Machado de Moraes Mourão",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "Voto do relator em referendo; o documento não traz data. As páginas 1 a 9 examinam os argumentos do agravo regimental de Daniel Bueno Vorcaro sem dispositivo próprio sobre o recurso; as páginas 10 a 53 reproduzem a decisão monocrática referendada. Os itens registram os comandos dessa decisão conforme o resultado do voto."
+}

@@ -1,0 +1,40 @@
+{
+  "itens": [
+    {
+      "pedido": "intimação da autoridade da Polícia Federal para informar, em 10 dias, se os dados necessários à investigação já foram extraídos dos equipamentos eletrônicos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou a intimação da autoridade da Polícia Federal para que, no prazo de 10 dias, informe se os dados necessários para a investigação já foram extraídos dos equipamentos eletrônicos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-24",
+      "pagina": 3,
+      "trecho_fonte": "intime-se a autoridade da Polícia Federal que oficia neste feito para que, no prazo de 10 dias, informe se os dados necessários para a investigação já foram extraídos dos equipamentos eletrônicos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA",
+      "condicoes": [
+        "prazo de 10 dias"
+      ]
+    },
+    {
+      "pedido": "vista ao MPF, após as informações da Polícia Federal, para parecer sobre a restituição dos aparelhos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou vista ao MPF, com a vinda das informações, para parecer sobre a restituição dos aparelhos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-24",
+      "pagina": 3,
+      "trecho_fonte": "3. Com a vinda das informações, dê-se vista ao MPF para que possa lançar seu parecer sobre este tema específico: restituição dos aparelhos de ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA.",
+      "condicoes": []
+    },
+    {
+      "pedido": "conclusão dos autos ao relator após o parecer da PGR para decidir o pedido de restituição de equipamentos eletrônicos",
+      "quem_pediu": "o próprio relator (de ofício)",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que, com a chegada do parecer da PGR, os autos voltem conclusos para decidir o pedido de restituição de equipamentos eletrônicos",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-04-24",
+      "pagina": 3,
+      "trecho_fonte": "4. Com a chegada do parecer da PGR, voltem-me conclusos para decidir sobre citado pleito de restituição de equipamentos eletrônicos.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": "O pedido de restituição dos equipamentos eletrônicos formulado por ANDRÉ FELIPE DE OLIVEIRA SEIXAS MAIA (e-Doc. 472) não foi decidido neste despacho."
+}

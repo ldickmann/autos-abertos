@@ -1,0 +1,45 @@
+{
+  "itens": [
+    {
+      "pedido": "compartilhamento de elementos informativos constantes de processos judiciais relacionados à Operação Compliance Zero, para instrução de investigações preliminares, sindicâncias patrimoniais e eventual instauração de PAR e PAD",
+      "quem_pediu": "Controladoria-Geral da União – CGU",
+      "resultado": "deferido",
+      "decisao": "deferiu o pedido formulado no Ofício nº 3848/2026/SIPRI/CGU e determinou o compartilhamento dos elementos informativos que guardem pertinência com os fatos e pessoas constantes dos processos judiciais relacionados à Operação Compliance Zero",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 5,
+      "trecho_fonte": "8. Ante o exposto, DEFIRO o pedido formulado no Ofício nº",
+      "condicoes": [
+        "observância rigorosa das disposições da Lei nº 13.709/2018, especialmente os princípios da finalidade, adequação, necessidade e segurança",
+        "utilização dos dados exclusivamente para os fins de instrução dos procedimentos administrativos indicados",
+        "cautelas do sigilo e da confidencialidade absoluta das informações",
+        "utilização restrita ao âmbito das apurações administrativas em curso",
+        "delimitação estrita quanto ao seu objeto e finalidade, vedada qualquer utilização diversa da ora autorizada",
+        "delimitação estrita quanto às pessoas físicas, jurídicas e aos fatos investigados"
+      ]
+    },
+    {
+      "pedido": "juntada do Ofício referido na decisão e adoção das providências cabíveis, inclusive quanto à forma segura de disponibilização dos dados",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou à Secretaria Judiciária a juntada do Ofício e a adoção das providências cabíveis, inclusive quanto à forma segura de disponibilização dos dados",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 6,
+      "trecho_fonte": "10. À Secretaria Judiciária para proceder a juntada do Ofício referido",
+      "condicoes": []
+    },
+    {
+      "pedido": "ciência da decisão à Procuradoria-Geral da República",
+      "quem_pediu": "o próprio relator, de ofício",
+      "resultado": "determinado_de_oficio",
+      "decisao": "determinou que se dê ciência à Procuradoria-Geral da República",
+      "quem_decidiu": "Ministro André Mendonça",
+      "data": "2026-07-24",
+      "pagina": 6,
+      "trecho_fonte": "11. Dê-se ciência à Procuradoria-Geral da República.",
+      "condicoes": []
+    }
+  ],
+  "observacoes": null
+}
