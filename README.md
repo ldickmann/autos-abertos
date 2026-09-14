@@ -17,7 +17,7 @@ com ponteiro para documento e página.
 | 1 — ingestão determinística | concluída | [FASE1-RELATORIO.md](FASE1-RELATORIO.md) |
 | 2 — grafo de processos e entidades | concluída | [FASE2-RELATORIO.md](FASE2-RELATORIO.md) |
 | 3 — documentos | concluída | [FASE3-RELATORIO.md](FASE3-RELATORIO.md) |
-| 4 — camada semântica | em execução pelo Claude Code (55/226 documentos, 1041 asserções publicadas) | [FASE4-RELATORIO.md](FASE4-RELATORIO.md) |
+| 4 — camada semântica | concluída pelo Claude Code (226/226 documentos, 2430 asserções) | [FASE4-RELATORIO.md](FASE4-RELATORIO.md) |
 | 5 — interface | concluída (export estático) | [FASE5-RELATORIO.md](FASE5-RELATORIO.md) |
 
 ## Uso
@@ -53,8 +53,8 @@ automatizado a `/processos`; a exceção adotada e seus limites estão documenta
 
 Duas branches permanentes e branches curtas por tarefa (adotado em 14/09/2026):
 
-- `main` — o que está publicado. Só recebe merge de `develop`; cada push republica o site no GitHub Pages.
-- `develop` — integração; branch padrão do repositório (PRs miram aqui).
+- `main` — branch padrão; o que está publicado. Só recebe merge de `develop`; cada push republica o site no GitHub Pages.
+- `develop` — integração: as branches de tarefa nascem e voltam para cá; PRs miram `develop`.
 - `<tipo>/<assunto-curto>` — uma por tarefa, criada a partir de `develop` e mesclada de volta com
   `--no-ff`. Tipos: `feat/` (funcionalidade), `fix/` (correção), `chore/` (dados, fila, manutenção),
   `docs/` (relatórios e documentação), `refactor/`.

@@ -10,7 +10,7 @@ Ordem de execução decidida em 14/09/2026. Cada item vira commit próprio; o si
 | 4 | Frontend: versão escura, minimalista, microinterações 3D | feito (padrão escuro, alternância, Newsreader + IBM Plex, folhas, carimbo) | revisar página inicial como "capa dos autos"; auditar contraste WCAG no tema escuro |
 | 5 | Auditoria de links após o rename | feita | URL antiga do Pages devolve 404; `github.com/ldickmann/nao-definido` redireciona |
 | 6 | Pet 15719 (profundidade 3) | coleta em andamento (`expandir --profundidade 3`) | depois: `baixar-docs --incidente 7536897`, `extrair-texto`, `preparar-extracao`, uma leva pequena |
-| 7 | Atualizar `FASE4-RELATORIO.md` ao fechar a Fase 4 | a fazer | refletir execução pelo Claude Code, contagens e estatísticas de validação (descartes por trecho) |
+| 7 | Atualizar `FASE4-RELATORIO.md` ao fechar a Fase 4 | feito (14/09/2026) | execução pelo Claude Code, números, limitações, como repetir |
 | 9 | Responsividade | feita (14/09/2026): nav em trilho até `lg`, tabelas viram folhas abaixo de `md`, grafo com canvas primeiro e ficha como folha inferior, filtros recolhidos no celular, formulários em grade | nenhuma página estoura a largura em 375/768; checar em aparelho real |
 | 10 | Versionamento | feito (14/09/2026): `develop` padrão, `main` publica, branches `feat/`, `fix/`, `chore/`, `docs/` | convenção no `README.md` |
 | 8 | Texto duplicado em PDFs com negrito simulado | corrigido em `stf/documentos.py` (`dedupe_chars`) | só o doc 25 era afetado; resposta antiga guardada em `respostas/_invalidas/` |
