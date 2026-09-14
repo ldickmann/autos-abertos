@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import type { Assercao, Decisoes, DocumentoCompleto, Entidade, Grafo, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, Verbete } from "@/lib/tipos";
+import type { Assercao, Decisoes, DocumentoCompleto, Entidade, Grafo, Integridade, LinhaTempo, Meta, Processo, ProcessoResumo, Referencias, Verbete } from "@/lib/tipos";
 
 export * from "@/lib/tipos";
 
@@ -22,6 +22,7 @@ export const getLinhaTempo = () => ler<LinhaTempo>("linha_tempo.json");
 export const getReferencias = () => ler<Referencias>("referencias.json");
 export const getDecisoes = () => ler<Decisoes>("decisoes.json");
 export const getGlossario = () => ler<Verbete[]>("glossario.json");
+export const getIntegridade = () => ler<Integridade>("integridade.json");
 
 let _indiceGlossario: Map<string, Verbete> | null = null;
 /** Verbete cujo termo ou alguma das formas coincide com o texto (sem acentos, sem caixa); null se não houver. */
