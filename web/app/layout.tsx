@@ -4,7 +4,8 @@ import Link from "next/link";
 import "./globals.css";
 import { NavPrincipal } from "@/components/NavPrincipal";
 import { TemaToggle } from "@/components/TemaToggle";
-import { getMeta, formatarDataHora } from "@/lib/data";
+import { Aviso } from "@/components/Aviso";
+import { getAvisos, getMeta, formatarDataHora } from "@/lib/data";
 
 const newsreader = Newsreader({ subsets: ["latin"], variable: "--font-newsreader", axes: ["opsz"], style: ["normal", "italic"] });
 const plex = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-plex" });
@@ -20,6 +21,7 @@ const SCRIPT_TEMA = `(function(){var t='escuro';try{var s=localStorage.getItem('
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const meta = getMeta();
+  const avisos = getAvisos();
   return (
     <html lang="pt-BR" data-tema="escuro" className={`${newsreader.variable} ${plex.variable} ${plexMono.variable}`} suppressHydrationWarning>
       <head>
@@ -39,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="order-2 lg:order-3"><TemaToggle /></div>
           </div>
         </header>
+        {avisos.map((a) => <Aviso key={a.id} aviso={a} compacto />)}
         <main id="conteudo" className="mx-auto max-w-6xl px-4 py-6">{children}</main>
         <footer className="mt-12 border-t border-neutral-300 bg-white">
           <div className="mx-auto max-w-6xl px-4 py-4 text-xs text-neutral-700">
