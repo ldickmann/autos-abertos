@@ -68,18 +68,18 @@ export function ListaDecisoes({ itens, rotulos, processos, verbetes, glossario =
   return (
     <div className="space-y-3">
       {!compacta && (
-        <form className="folha grid gap-3 border border-neutral-300 bg-white p-3 text-sm sm:grid-cols-2 lg:grid-cols-4" onSubmit={(ev) => ev.preventDefault()} aria-label="Filtros das decisões">
-          <label className="flex flex-col"><span className="font-medium">Processo</span>
-            <select className="mt-1 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={processo} onChange={(ev) => setProcesso(ev.target.value ? Number(ev.target.value) : "")}>
+        <form className="folha grid min-w-0 gap-3 border border-neutral-300 bg-white p-3 text-sm sm:grid-cols-2 lg:grid-cols-4" onSubmit={(ev) => ev.preventDefault()} aria-label="Filtros das decisões">
+          <label className="flex min-w-0 flex-col"><span className="font-medium">Processo</span>
+            <select className="mt-1 w-full min-w-0 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={processo} onChange={(ev) => setProcesso(ev.target.value ? Number(ev.target.value) : "")}>
               <option value="">todos</option>{processos.map((p) => <option key={p.incidente} value={p.incidente}>{p.rotulo}</option>)}</select></label>
-          <label className="flex flex-col"><span className="font-medium">Resultado</span>
-            <select className="mt-1 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={resultado} onChange={(ev) => setResultado(ev.target.value)}>
+          <label className="flex min-w-0 flex-col"><span className="font-medium">Resultado</span>
+            <select className="mt-1 w-full min-w-0 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={resultado} onChange={(ev) => setResultado(ev.target.value)}>
               <option value="">qualquer</option>{Object.entries(rotulos).map(([k, r]) => <option key={k} value={k}>{r}</option>)}</select></label>
-          <label className="flex flex-col"><span className="font-medium">Quem pediu</span>
-            <select className="mt-1 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={quem} onChange={(ev) => setQuem(ev.target.value)}>
-              <option value="">qualquer um</option>{quemLista.map((q) => <option key={q} value={q}>{q}</option>)}</select></label>
-          <label className="flex flex-col"><span className="font-medium">Procurar no pedido ou na decisão</span>
-            <input className="mt-1 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={busca} onChange={(ev) => setBusca(ev.target.value)} placeholder="ex.: prisão, prazo, sigilo" /></label>
+          <label className="flex min-w-0 flex-col"><span className="font-medium">Quem pediu</span>
+            <select className="mt-1 w-full min-w-0 max-w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={quem} onChange={(ev) => setQuem(ev.target.value)}>
+              <option value="">qualquer um</option>{quemLista.map((q) => <option key={q} value={q}>{q.length > 60 ? q.slice(0, 57) + "…" : q}</option>)}</select></label>
+          <label className="flex min-w-0 flex-col"><span className="font-medium">Procurar no pedido ou na decisão</span>
+            <input className="mt-1 w-full min-w-0 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={busca} onChange={(ev) => setBusca(ev.target.value)} placeholder="ex.: prisão, prazo, sigilo" /></label>
           <p role="status" className="text-neutral-700 sm:col-span-2 lg:col-span-4">
             {filtrados.length} de {itens.length} decisões
             {Object.keys(contagemResultado).length > 0 ? ": " + Object.entries(contagemResultado).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${n} ${rotulos[k] ?? k}`).join(", ") : ""}
@@ -106,9 +106,12 @@ export function ListaDecisoes({ itens, rotulos, processos, verbetes, glossario =
               })}</ul></dd></>)}
             </dl>
             <details className="mt-2 text-xs">
-              <summary className="cursor-pointer text-neutral-700">Fonte: <Link className="underline" href={`/documento/${i.documento_id}#p-${i.pagina}`}>{i.titulo_documento ?? "documento"} {i.documento_id}, p. {i.pagina}</Link></summary>
+              <summary className="cursor-pointer text-neutral-700">Fonte: {i.titulo_documento ?? "documento"} {i.documento_id}, p. {i.pagina}</summary>
               <blockquote className="leitura mt-1 border-l-2 border-neutral-400 pl-3 text-sm">“{i.trecho_fonte}”</blockquote>
-              <p className="mt-1 text-neutral-600">Trecho literal da página, conferido automaticamente. Extração {i.prompt_version}, {i.modelo}.</p>
+              <p className="mt-1 flex flex-wrap items-center gap-x-3 text-neutral-600">
+                <Link className="toque underline" href={`/documento/${i.documento_id}#p-${i.pagina}`}>Abrir o documento na página {i.pagina}</Link>
+                <span>Trecho literal, conferido automaticamente. Extração {i.prompt_version}, {i.modelo}.</span>
+              </p>
             </details>
           </li>
         ))}

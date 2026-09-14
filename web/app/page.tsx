@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { Aviso } from "@/components/Aviso";
 import { BadgeEpistemico, Carimbo, LegendaEpistemica, Publicidade } from "@/components/Badges";
-import { formatarData, getMeta, getProcesso, getProcessos } from "@/lib/data";
+import { formatarData, getAvisos, getMeta, getProcesso, getProcessos } from "@/lib/data";
 import type { TipoEpistemico } from "@/lib/tipos";
 
 /* A página inicial é a capa dos autos: o processo principal como folha de rosto, com o índice do que a base
@@ -16,6 +17,7 @@ export default function Home() {
   const relacionados = processos.filter((p) => p.incidente !== meta.semente);
   const cont = semente.contagem_assercoes ?? { fato_processual: 0, alegacao_parte: 0, fundamento_decisorio: 0 };
   const totalAssercoes = Object.values(cont).reduce((a, b) => a + b, 0);
+  const avisos = getAvisos();
 
   const indice: { rotulo: string; valor: string | number; href: string; nota?: string }[] = [
     { rotulo: "Andamentos", valor: semente.andamentos.length, href: `/processo/${cab.incidente}#lt`, nota: `${decisoes} decisões` },
@@ -28,6 +30,7 @@ export default function Home() {
 
   return (
     <div className="space-y-10">
+      {avisos.map((a) => <Aviso key={a.id} aviso={a} />)}
       <section aria-labelledby="titulo-semente" className="capa">
         <div className="capa-verso" aria-hidden />
         <div className="capa-folha folha border border-neutral-300 bg-white">

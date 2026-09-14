@@ -230,6 +230,7 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int) -> dict:
     _escrever(saida / "referencias.json", {"dispositivos": resumo_dispositivos(con), "processos_citados": citados})
     _escrever(saida / "decisoes.json", {"rotulos_resultado": ROTULO_RESULTADO, "itens": todas_decisoes})
     _escrever(saida / "glossario.json", json.loads((config.RAIZ / "stf" / "curadoria" / "glossario.json").read_text("utf-8"))["verbetes"])
+    _escrever(saida / "avisos.json", json.loads((config.RAIZ / "stf" / "curadoria" / "avisos.json").read_text("utf-8"))["avisos"])
     _escrever(saida / "cruzamentos.json", cruzamentos(con))
     _escrever(saida / "processos.json", lista_processos)
     coletas = [dict(r) for r in con.execute("SELECT id, incidente, ingerida_em FROM coleta ORDER BY id")]
