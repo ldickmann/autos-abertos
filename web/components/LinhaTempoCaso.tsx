@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CampoProcurar, Contagem, Vazio, casa } from "@/components/Filtros";
 import { useMemo, useState } from "react";
 import { Termo } from "@/components/Termo";
 import { useTelaLarga } from "@/lib/useTelaLarga";
@@ -15,10 +16,14 @@ export function LinhaTempoCaso({ dados, processos, verbetes }: { dados: LinhaTem
   const [de, setDe] = useState("");
   const [ate, setAte] = useState("");
   const [soComDoc, setSoComDoc] = useState(false);
+  const [busca, setBusca] = useState("");
+  const limpar = () => { setCategorias(new Set(["decisao", "julgamento", "recurso"])); setProcs(new Set(processos.map((p) => p.incidente))); setDe(""); setAte(""); setSoComDoc(false); setBusca(""); };
+  const filtroAtivo = !!(de || ate || soComDoc || busca) || procs.size !== processos.length || categorias.size !== 3;
 
   const eventos = useMemo(
-    () => dados.eventos.filter((e) => categorias.has(e.categoria) && procs.has(e.incidente) && (!de || e.data >= de) && (!ate || e.data <= ate) && (!soComDoc || e.documentos.length > 0)),
-    [dados, categorias, procs, de, ate, soComDoc],
+    () => dados.eventos.filter((e) => categorias.has(e.categoria) && procs.has(e.incidente) && (!de || e.data >= de) && (!ate || e.data <= ate) && (!soComDoc || e.documentos.length > 0)
+      && casa(busca, e.tipo, e.descricao)),
+    [dados, categorias, procs, de, ate, soComDoc, busca],
   );
   const porDia = useMemo(() => {
     const m = new Map<string, typeof eventos>();
@@ -67,7 +72,8 @@ export function LinhaTempoCaso({ dados, processos, verbetes }: { dados: LinhaTem
             <label className="flex flex-col"><span className="font-medium">Até</span><input type="date" className="mt-1 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={ate} onChange={(ev) => setAte(ev.target.value)} /></label>
           </div>
           <label className="flex items-center gap-2"><input type="checkbox" checked={soComDoc} onChange={(ev) => setSoComDoc(ev.target.checked)} /> só com documento</label>
-          <p role="status" className="text-neutral-700">{eventos.length} de {dados.eventos.length} andamentos, em {porDia.length} dias</p>
+          <CampoProcurar valor={busca} onChange={setBusca} rotulo="Procurar" placeholder="ex.: prisão, sigilo, agravo" />
+          <Contagem n={eventos.length} total={dados.eventos.length} rotulo="andamentos" ativo={filtroAtivo} onLimpar={limpar}>{porDia.length ? `, em ${porDia.length} dias` : ""}</Contagem>
         </form>
         </details>
       </aside>
@@ -93,7 +99,7 @@ export function LinhaTempoCaso({ dados, processos, verbetes }: { dados: LinhaTem
                       {e.documentos.map((d) => (
                         <li key={d.id}>{d.baixado ? <Link className="rounded border border-neutral-500 px-2 py-0.5 underline" href={`/documento/${d.id}`}>{d.rotulo}{d.paginas ? ` (${d.paginas} p.)` : ""}</Link> : <span className="rounded border border-neutral-400 px-2 py-0.5">{d.rotulo} (no portal)</span>}</li>
                       ))}
-                      {e.assercoes > 0 && <li className="self-center text-neutral-600">{e.assercoes} asserções extraídas</li>}
+                      {e.assercoes > 0 && <li className="self-center text-neutral-600">{e.assercoes} afirmações extraídas</li>}
                     </ul>
                   )}
                 </li>
@@ -101,7 +107,7 @@ export function LinhaTempoCaso({ dados, processos, verbetes }: { dados: LinhaTem
             </ul>
           </li>
         ))}
-        {porDia.length === 0 && <li className="text-sm">Nenhum andamento com esses filtros.</li>}
+        {porDia.length === 0 && <li><Vazio onLimpar={limpar} dica="Nenhum andamento com esses filtros." /></li>}
       </ol>
     </div>
   );

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PainelFluxos, type SituacaoAutos } from "@/components/TabelasDeFluxos";
-import { formatarData, formatarReais, getEntidades, getFluxos } from "@/lib/data";
+import { formatarData, formatarReais, getEntidades, getFluxos, nomeProprio } from "@/lib/data";
 
 /* Página de dados: o que o relatório diz sobre quem pagou quanto a quem, em tabelas com busca, filtros e ordenação.
    Primeiro o que é (e o que não é), depois os números-resumo, depois o painel de tabelas, depois como reproduzir. */
@@ -67,11 +67,11 @@ export default function PaginaRede() {
         <div className="mt-3 grid gap-3 md:grid-cols-2">
           <div className="folha border border-neutral-300 bg-white p-3 text-sm">
             <h3 className="font-semibold">Quem mais recebeu</h3>
-            <ol className="mt-1 list-decimal space-y-0.5 pl-5">{maisReceberam.map((x) => <li key={x.nome}>{x.nome} <span className="tabular-nums text-neutral-700">{formatarReais(x.valor)}</span></li>)}</ol>
+            <ol className="mt-1 list-decimal space-y-0.5 pl-5">{maisReceberam.map((x) => <li key={x.nome}><a className="underline" href={`?q=${encodeURIComponent(x.nome)}#painel`} title="Abrir o painel já filtrado por este nome">{nomeProprio(x.nome)}</a> <span className="tabular-nums text-neutral-700">{formatarReais(x.valor)}</span></li>)}</ol>
           </div>
           <div className="folha border border-neutral-300 bg-white p-3 text-sm">
             <h3 className="font-semibold">Quem mais pagou</h3>
-            <ol className="mt-1 list-decimal space-y-0.5 pl-5">{maisPagaram.map((x) => <li key={x.nome}>{x.nome} <span className="tabular-nums text-neutral-700">{formatarReais(x.valor)}</span></li>)}</ol>
+            <ol className="mt-1 list-decimal space-y-0.5 pl-5">{maisPagaram.map((x) => <li key={x.nome}><a className="underline" href={`?q=${encodeURIComponent(x.nome)}#painel`} title="Abrir o painel já filtrado por este nome">{nomeProprio(x.nome)}</a> <span className="tabular-nums text-neutral-700">{formatarReais(x.valor)}</span></li>)}</ol>
           </div>
         </div>
       </section>

@@ -38,6 +38,24 @@ const SECOES: Secao[] = [
   },
 ];
 
+/* Rodapé: as seis seções com todas as páginas, para quem chegou ao fim e quer ir a outro lugar. */
+export function MapaDoSite() {
+  return (
+    <nav aria-label="Mapa do site" className="grid gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-6">
+      {SECOES.map((s) => (
+        <div key={s.id}>
+          <Link href={s.href} className="font-semibold text-neutral-900 no-underline hover:underline">{s.rotulo}</Link>
+          {s.itens.length > 0 && (
+            <ul className="mt-1 space-y-0.5">
+              {s.itens.map((i) => <li key={i.href}><Link href={i.href} className="no-underline hover:underline">{i.rotulo}</Link></li>)}
+            </ul>
+          )}
+        </div>
+      ))}
+    </nav>
+  );
+}
+
 export function NavPrincipal() {
   const pathname = (usePathname() ?? "/").replace(/\/+$/, "") || "/";
   const ativa = SECOES.find((s) => s.casa(pathname)) ?? SECOES[0];

@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       <section aria-labelledby="titulo-legenda">
-        <h2 id="titulo-legenda" className="sr-only">Legenda dos tipos de asserção</h2>
+        <h2 id="titulo-legenda" className="sr-only">Legenda dos tipos de afirmação</h2>
         <LegendaEpistemica descricoes={meta.tipos_epistemicos} />
       </section>
     </div>

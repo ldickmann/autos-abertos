@@ -77,12 +77,12 @@ export default async function PaginaEntidade({ params }: { params: Promise<{ id:
       )}
 
       <section aria-labelledby="as">
-        <h2 id="as" className="text-lg font-bold">Quem diz o quê sobre esta entidade <span className="text-sm font-normal text-neutral-700">({assercoes.length} asserções)</span></h2>
+        <h2 id="as" className="text-lg font-bold">Quem diz o quê sobre esta entidade <span className="text-sm font-normal text-neutral-700">({assercoes.length} afirmações)</span></h2>
         <p className="mt-1 text-sm text-neutral-700">
           Separado por natureza: o que o juízo registrou como fato, o que cada parte alegou e o que cada julgador adotou como fundamento. Cada item aponta o documento, a página e o trecho literal.
           Alegação não é fato, e fundamento é a razão declarada pelo julgador; nada aqui é conclusão do site.
         </p>
-        {assercoes.length === 0 ? <p className="mt-2 text-sm text-neutral-700">Nenhuma asserção validada cita este nome.</p> : (
+        {assercoes.length === 0 ? <p className="mt-2 text-sm text-neutral-700">Nenhuma afirmação validada cita este nome.</p> : (
           <div className="mt-3 grid gap-4 lg:grid-cols-3">
             {(["fato_processual", "alegacao_parte", "fundamento_decisorio"] as const).map((tipo) => {
               const lista = assercoes.filter((a) => a.tipo_epistemico === tipo);

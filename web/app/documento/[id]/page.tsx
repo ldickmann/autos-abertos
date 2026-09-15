@@ -121,7 +121,7 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
 
       {d.assercoes.length > 0 && (
         <section aria-labelledby="ass">
-          <h2 id="ass" className="text-lg font-bold">Asserções extraídas ({d.assercoes.length})</h2>
+          <h2 id="ass" className="text-lg font-bold">Afirmações extraídas ({d.assercoes.length})</h2>
           <p className="text-sm text-neutral-700">Cada uma aponta a página e o trecho literal de onde saiu. Modelo {d.assercoes[0].modelo}, prompt {d.assercoes[0].prompt_version}.</p>
         </section>
       )}

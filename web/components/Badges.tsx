@@ -23,7 +23,7 @@ export function BadgeEpistemico({ tipo }: { tipo: TipoEpistemico }) {
 export function LegendaEpistemica({ descricoes }: { descricoes: Record<TipoEpistemico, string> }) {
   return (
     <details className="folha border border-neutral-300 bg-white p-3 text-sm">
-      <summary className="cursor-pointer font-semibold">O que significam os três tipos de asserção</summary>
+      <summary className="cursor-pointer font-semibold">O que significam os três tipos de afirmação</summary>
       <dl className="mt-2 space-y-2">
         {(Object.keys(TIPOS) as TipoEpistemico[]).map((k) => (
           <div key={k} className="flex gap-3">
@@ -35,9 +35,9 @@ export function LegendaEpistemica({ descricoes }: { descricoes: Record<TipoEpist
         ))}
       </dl>
       <p className="mt-2 text-neutral-700">
-        Toda asserção aponta para o documento e a página de onde foi extraída, com o trecho literal. O sistema nunca
+        Toda afirmação aponta para o documento e a página de onde foi extraída, com o trecho literal. O sistema nunca
         conclui nada sobre conduta, caráter ou intenção de qualquer pessoa; se o modelo não consegue classificar
-        com segurança, a asserção é descartada.
+        com segurança, a afirmação é descartada.
       </p>
     </details>
   );

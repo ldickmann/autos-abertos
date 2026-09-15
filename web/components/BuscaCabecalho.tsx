@@ -14,6 +14,18 @@ export function BuscaCabecalho() {
   const campo = useRef<HTMLInputElement>(null);
   useEffect(() => { if (aberto) campo.current?.focus(); }, [aberto]);
   useEffect(() => { setAberto(false); }, [pathname]);
+  // "/" leva ao campo de busca, como em muitos sites de leitura; não interfere quando o leitor já está digitando
+  useEffect(() => {
+    const tecla = (ev: KeyboardEvent) => {
+      const alvo = ev.target instanceof HTMLElement ? ev.target : null;
+      if (ev.key !== "/" || ev.ctrlKey || ev.metaKey || ev.altKey || alvo?.closest("input, textarea, select, [contenteditable]")) return;
+      ev.preventDefault();
+      setAberto(true);
+      campo.current?.focus();
+    };
+    window.addEventListener("keydown", tecla);
+    return () => window.removeEventListener("keydown", tecla);
+  }, []);
   if (pathname.replace(/\/+$/, "") === "/busca") return null;
   const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   return (
@@ -24,7 +36,7 @@ export function BuscaCabecalho() {
       <form id="busca-cabecalho" role="search" action={`${base}/busca/`} method="get"
         className={`${aberto ? "flex" : "hidden"} order-1 col-span-3 min-w-0 items-center gap-1 md:order-none md:col-span-1 md:flex md:justify-self-end`}>
         <label className="sr-only" htmlFor="q-cabecalho">Buscar nos autos</label>
-        <input ref={campo} id="q-cabecalho" name="q" type="search" placeholder="Buscar nos autos: nome, empresa, tema…" autoComplete="off"
+        <input ref={campo} id="q-cabecalho" name="q" type="search" placeholder="Buscar nos autos: nome, empresa, tema…" autoComplete="off" title="Atalho: tecla /"
           className="w-full min-w-0 rounded border border-neutral-400 bg-neutral-50 px-3 py-1.5 text-sm md:w-64 lg:w-72" />
         <button type="submit" className="toque shrink-0 whitespace-nowrap rounded border border-neutral-400 px-2.5 py-1.5 text-sm hover:bg-neutral-100">Buscar</button>
       </form>

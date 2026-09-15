@@ -4,7 +4,7 @@ import { LinhaDoTempo } from "@/components/LinhaDoTempo";
 import { ListaDecisoes } from "@/components/ListaDecisoes";
 import { PontosChave } from "@/components/PontosChave";
 import { Termo } from "@/components/Termo";
-import { formatarData, getDecisoes, getGlossario, getMeta, getProcesso, listarIncidentesColetados, verbeteDe, verbetesParaTipos } from "@/lib/data";
+import { formatarData, getDecisoes, getGlossario, getMeta, getProcesso, listarIncidentesColetados, nomeProprio, verbeteDe, verbetesParaTipos } from "@/lib/data";
 
 export function generateStaticParams() {
   return listarIncidentesColetados().map((i) => ({ incidente: String(i) }));
@@ -60,7 +60,7 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
         </dl>
         {p.contagem_assercoes && Object.values(p.contagem_assercoes).some((n) => n > 0) && (
           <p className="mt-3 flex flex-wrap items-center gap-2 text-sm">
-            <span className="font-semibold">Asserções extraídas dos documentos:</span>
+            <span className="font-semibold">Afirmações extraídas dos documentos:</span>
             {(["fato_processual", "alegacao_parte", "fundamento_decisorio"] as const).map((t) => (
               <span key={t} className="flex items-center gap-1"><BadgeEpistemico tipo={t} /> {p.contagem_assercoes?.[t] ?? 0}</span>
             ))}
@@ -109,9 +109,9 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
               <li key={pt.id} className={`flex flex-wrap items-center gap-2 rounded px-2 py-1 ${pt.papel === "advogado" ? "pl-6 text-neutral-800" : "bg-white"}`}>
                 <Termo verbete={verbeteDe(pt.status_processual)}><StatusProcessual status={pt.status_processual} literal={pt.papel_portal} /></Termo>
                 {pt.entidade_id && !pt.e_placeholder ? (
-                  <Link className="underline" href={`/entidade/${pt.entidade_id}`}>{pt.nome}</Link>
+                  <Link className="underline" href={`/entidade/${pt.entidade_id}`} title={`No portal: ${pt.nome}`}>{nomeProprio(pt.nome)}</Link>
                 ) : (
-                  <span>{pt.nome}</span>
+                  <span title={`No portal: ${pt.nome}`}>{nomeProprio(pt.nome)}</span>
                 )}
                 {pt.oab.length > 0 && <span className="text-xs text-neutral-600">OAB {pt.oab.join(", ")}</span>}
               </li>

@@ -5,6 +5,8 @@ import "./globals.css";
 import { NavPrincipal } from "@/components/NavPrincipal";
 import { TemaToggle } from "@/components/TemaToggle";
 import { BuscaCabecalho } from "@/components/BuscaCabecalho";
+import { VoltarAoTopo } from "@/components/VoltarAoTopo";
+import { MapaDoSite } from "@/components/NavPrincipal";
 import { Aviso } from "@/components/Aviso";
 import { getAvisos, getMeta, formatarDataHora } from "@/lib/data";
 
@@ -46,9 +48,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         {avisos.map((a) => <Aviso key={a.id} aviso={a} compacto />)}
         <main id="conteudo" className="mx-auto max-w-6xl px-4 py-6">{children}</main>
+        <VoltarAoTopo />
         <footer className="mt-12 border-t border-neutral-300 bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-4 text-xs text-neutral-700">
-            <p>
+          <div className="mx-auto max-w-6xl px-4 py-5 text-xs text-neutral-700">
+            <MapaDoSite />
+            <p className="mt-4">
               Fonte: portal público do STF (portal.stf.jus.br) e sistemas.stf.jus.br. Base gerada em {formatarDataHora(meta.gerado_em)}.
               Cada item mostra a data em que foi coletado e aponta para o documento de origem. Este site não emite opinião nem conclusão
               sobre pessoas; registra o que consta nos autos públicos, com o status processual literal do portal.
