@@ -369,3 +369,190 @@ fieldset { min-inline-size: 0; }
 body { overflow-wrap: anywhere; }
 /* Em tabelas de verdade a quebra é por palavra: as colunas se ajustam ou a tabela rola dentro do invólucro. */
 th, td { overflow-wrap: normal; }
+
+/* ---------- Conversa reconstituída (pele do WhatsApp) ----------
+   Um "aparelho" dentro da página: topo teal/grafite, papel de parede com rabiscos discretos, balões com rabinho,
+   fichas de data/página. As cores são as do aplicativo (dark: #0b141a/#202c33/#005c4b; light: #efeae2/#fff/#d9fdd3),
+   a exceção deliberada ao sistema de três cores do site — é uma citação visual, e o carimbo "reconstituição" diz isso.
+   Profundidade: o aparelho inclina para o ponteiro (--rx/--ry escritos por JS), o balão levanta ao passar o mouse
+   e o verso (a prova) desdobra como uma aba. Tudo some com prefers-reduced-motion e em tela de toque. */
+.zap {
+  --zap-fundo: #0b141a; --zap-topo: #202c33; --zap-topo-tinta: #e9edef; --zap-recebida: #202c33; --zap-enviada: #005c4b;
+  --zap-tinta: #e9edef; --zap-tinta-2: #8696a0; --zap-chip: #182229; --zap-aviso: #222e35; --zap-aviso-tinta: #ffd279;
+  --zap-verde: #00a884; --zap-rabisco: rgb(255 255 255 / 0.035); --zap-verso: #111b21; --zap-borda: #2a3942;
+  --rx: 0deg; --ry: 0deg; --mx: 50%; --my: 50%;
+  position: relative;
+  max-width: 40rem;
+  margin: 1rem auto;
+  border: 1px solid var(--zap-borda);
+  border-radius: 14px;
+  background: var(--zap-fundo);
+  color: var(--zap-tinta);
+  font-family: var(--font-sans);
+  transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease;
+  box-shadow: 0 24px 40px -28px rgb(0 0 0 / 0.7), 0 1px 0 var(--zap-borda);
+  overflow: hidden;
+}
+:root[data-tema="claro"] .zap {
+  --zap-fundo: #efeae2; --zap-topo: #008069; --zap-topo-tinta: #ffffff; --zap-recebida: #ffffff; --zap-enviada: #d9fdd3;
+  --zap-tinta: #111b21; --zap-tinta-2: #667781; --zap-chip: #ffffff; --zap-aviso: #ffeecd; --zap-aviso-tinta: #54656f;
+  --zap-verde: #008069; --zap-rabisco: rgb(0 0 0 / 0.045); --zap-verso: #f7f5f0; --zap-borda: #d1d7db;
+  box-shadow: 0 24px 40px -28px rgb(30 25 10 / 0.35), 0 1px 0 var(--zap-borda);
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .zap:hover { transform: perspective(1400px) rotateX(var(--rx)) rotateY(var(--ry)); box-shadow: 0 34px 50px -30px rgb(0 0 0 / 0.75), 0 1px 0 var(--zap-borda); }
+  /* brilho que acompanha o ponteiro, como a luz num vidro */
+  .zap::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 5; opacity: 0;
+    background: radial-gradient(28rem circle at var(--mx) var(--my), rgb(255 255 255 / 0.07), transparent 60%);
+    transition: opacity 0.35s ease;
+  }
+  .zap:hover::after { opacity: 1; }
+}
+.zap-topo {
+  display: flex; align-items: center; gap: 0.7rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--zap-topo); color: var(--zap-topo-tinta);
+}
+.zap-avatar {
+  flex: 0 0 auto; width: 2.4rem; height: 2.4rem; border-radius: 9999px;
+  display: grid; place-items: center;
+  background: var(--zap-tinta-2); color: var(--zap-fundo);
+  font-weight: 600; font-size: 0.9rem; letter-spacing: 0.02em;
+}
+.zap-topo-texto { display: flex; flex-direction: column; min-width: 0; flex: 1 1 auto; }
+.zap-topo-texto strong { font-weight: 600; font-size: 0.95rem; line-height: 1.2; }
+.zap-topo-texto span { font-size: 0.74rem; opacity: 0.85; line-height: 1.3; }
+.zap-selo, .zap-selo-pf {
+  flex: 0 0 auto; border: 1px solid currentColor; border-radius: 2px; padding: 1px 6px;
+  font-size: 0.66rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+}
+.zap-selo { color: var(--marca); }
+:root[data-tema="claro"] .zap-selo { color: #ffe9a6; }
+.zap-selo-pf { color: var(--alegacao); margin-right: 0.25rem; }
+
+.zap-tela {
+  position: relative;
+  padding: 0.75rem 0.7rem 1rem;
+  background-color: var(--zap-fundo);
+  background-image:
+    radial-gradient(var(--zap-rabisco) 1.2px, transparent 1.3px),
+    radial-gradient(var(--zap-rabisco) 1.2px, transparent 1.3px);
+  background-size: 22px 22px, 22px 22px;
+  background-position: 0 0, 11px 11px;
+  transform-style: preserve-3d;
+}
+.zap-aviso {
+  margin: 0 auto 0.75rem; max-width: 32rem; padding: 0.45rem 0.7rem; border-radius: 8px;
+  background: var(--zap-aviso); color: var(--zap-aviso-tinta);
+  font-size: 0.76rem; line-height: 1.4; text-align: center;
+}
+.zap-pagina { display: flex; flex-direction: column; gap: 0.3rem; }
+.zap-chip {
+  align-self: center; margin: 0.55rem 0 0.35rem; padding: 0.2rem 0.7rem; border-radius: 8px;
+  background: var(--zap-chip); color: var(--zap-tinta-2);
+  font-size: 0.74rem; font-weight: 500; text-decoration: none;
+  box-shadow: 0 1px 0.5px rgb(0 0 0 / 0.13);
+}
+.zap-chip-pagina { color: var(--marca); scroll-margin-top: 5rem; }
+.zap-chip-secao { max-width: 92%; text-align: center; color: var(--zap-tinta); font-weight: 600; font-size: 0.78rem; line-height: 1.35; }
+.zap-chip-pagina:hover { text-decoration: underline; }
+
+/* relato: a frase da PF, no meio, como aviso de sistema */
+.zap-relato {
+  align-self: center; width: min(100%, 34rem); margin: 0.3rem 0; padding: 0.15rem 0.7rem;
+  color: var(--zap-tinta-2);
+  font-size: 0.78rem; line-height: 1.45; text-align: left;
+  border-left: 3px solid var(--alegacao);
+}
+.zap-relato-quem { color: var(--alegacao); font-weight: 600; font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase; margin-right: 0.15rem; }
+.zap-cit { font-style: italic; color: var(--zap-tinta); quotes: "“" "”"; }
+
+/* figura: a captura que ficou no PDF */
+.zap-figura {
+  align-self: center; width: min(100%, 26rem); margin: 0.35rem 0; padding: 0.5rem 0.7rem;
+  border: 1.5px dashed var(--zap-tinta-2); border-radius: 10px; color: var(--zap-tinta-2);
+  font-size: 0.76rem; line-height: 1.4; display: flex; flex-direction: column; gap: 0.15rem;
+  background: repeating-linear-gradient(135deg, transparent 0 8px, var(--zap-rabisco) 8px 9px);
+}
+.zap-figura-rotulo { font-weight: 600; font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase; }
+.zap-figura-legenda { color: var(--zap-tinta); }
+
+/* linhas e balões */
+.zap-linha { display: flex; margin: 0.15rem 0; transform-style: preserve-3d; }
+.zap-recebida { justify-content: flex-start; padding-right: 12%; }
+.zap-enviada { justify-content: flex-end; padding-left: 12%; }
+.zap-balao {
+  position: relative; max-width: 100%;
+  border-radius: 8px;
+  background: var(--zap-recebida); color: var(--zap-tinta);
+  box-shadow: 0 1px 0.5px rgb(0 0 0 / 0.13);
+  transform-style: preserve-3d;
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.28s ease;
+}
+.zap-enviada .zap-balao { background: var(--zap-enviada); }
+.zap-recebida .zap-balao { border-top-left-radius: 0; }
+.zap-enviada .zap-balao { border-top-right-radius: 0; }
+/* rabinho */
+.zap-balao::before {
+  content: ""; position: absolute; top: 0; width: 8px; height: 13px;
+  background: inherit;
+}
+.zap-recebida .zap-balao::before { left: -8px; clip-path: polygon(100% 0, 0 0, 100% 100%); }
+.zap-enviada .zap-balao::before { right: -8px; clip-path: polygon(0 0, 100% 0, 0 100%); }
+.zap-frente {
+  display: grid; grid-template-columns: 1fr auto; column-gap: 0.6rem; align-items: end;
+  width: 100%; padding: 0.35rem 0.55rem 0.3rem; border: 0; background: none; color: inherit;
+  font: inherit; text-align: left; cursor: pointer; border-radius: inherit;
+}
+.zap-nome { grid-column: 1 / -1; font-size: 0.74rem; font-weight: 600; color: hsl(var(--matiz, 160) 55% 62%); line-height: 1.2; margin-bottom: 0.1rem; }
+.zap-enviada .zap-nome { color: var(--zap-verde); }
+:root[data-tema="claro"] .zap-nome { color: hsl(var(--matiz, 160) 60% 36%); }
+.zap-texto { font-size: 0.9rem; line-height: 1.35; white-space: pre-wrap; overflow-wrap: anywhere; }
+.zap-frag { color: var(--zap-tinta-2); margin-right: 0.1rem; }
+.zap-hora { font-size: 0.68rem; color: var(--zap-tinta-2); font-variant-numeric: tabular-nums; padding-bottom: 0.05rem; min-width: 2.2em; text-align: right; }
+.zap-hora:empty { min-width: 0; }
+/* verso: a prova, dobrando para fora do balão */
+.zap-verso {
+  border-top: 1px dashed var(--zap-borda);
+  padding: 0.4rem 0.6rem 0.5rem;
+  background: var(--zap-verso); color: var(--zap-tinta-2);
+  font-size: 0.74rem; line-height: 1.4;
+  border-radius: 0 0 8px 8px;
+  transform-origin: 50% 0;
+  animation: desdobrar 0.32s cubic-bezier(0.2, 0.8, 0.2, 1.1) both;
+}
+.zap-verso q { color: var(--zap-tinta); quotes: "“" "”"; }
+.zap-verso a { color: var(--zap-tinta); }
+@keyframes desdobrar {
+  from { transform: perspective(600px) rotateX(-70deg); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .zap-balao:hover, .zap-balao:focus-within { transform: translateZ(14px) translateY(-1px); box-shadow: 0 10px 18px -10px rgb(0 0 0 / 0.6); }
+  .zap-aberto { transform: translateZ(10px); }
+}
+
+/* chegada: as mensagens entram uma a uma na primeira vez em que o aparelho aparece na tela */
+@media (prefers-reduced-motion: no-preference) {
+  .zap:not(.zap-visto) .zap-linha, .zap:not(.zap-visto) .zap-relato, .zap:not(.zap-visto) .zap-figura { opacity: 0; }
+  .zap-visto .zap-linha, .zap-visto .zap-relato, .zap-visto .zap-figura {
+    animation: chegar 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation-delay: calc(var(--i, 0) * 45ms);
+  }
+}
+@keyframes chegar {
+  from { opacity: 0; transform: perspective(800px) translateY(10px) rotateX(-12deg) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+.zap-rodape { padding: 0.7rem 0.9rem 0.9rem; border-top: 1px solid var(--zap-borda); background: var(--zap-topo); color: var(--zap-topo-tinta); font-size: 0.78rem; line-height: 1.45; }
+:root[data-tema="claro"] .zap-rodape { background: #f0f2f5; color: var(--zap-tinta); }
+.zap-rodape summary { margin-top: 0.5rem; }
+.zap-literal article { color: var(--tinta); }
+@media (max-width: 480px) {
+  .zap { border-radius: 10px; }
+  .zap-recebida { padding-right: 6%; }
+  .zap-enviada { padding-left: 6%; }
+}

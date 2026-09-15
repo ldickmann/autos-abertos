@@ -145,7 +145,18 @@ export type DocumentoCompleto = {
   chunks: { ordem: number; pagina_inicio: number; pagina_fim: number; secao: string | null; texto: string }[];
   assercoes: Assercao[];
   referencias?: ReferenciasDocumento;
+  conversas?: ConversasDocumento;
 };
+
+/* Conversas descritas pela PF numa análise de celular (stf/conversas.py). Balão = frase com falante inequívoco e
+   citação literal; relato = frase literal da PF (com as citações e, se o falante é único, as falas atribuídas);
+   figura = legenda de uma captura que só existe no PDF. Tudo aponta página e trecho. */
+export type ConversaItem =
+  | { tipo: "mensagem"; pagina: number; de: string; para: string | null; verbo: string; texto: string; data: string | null; hora: string | null; fuso: string | null; lado: "enviada" | "recebida"; trecho: string }
+  | { tipo: "relato"; pagina: number; texto: string; citacoes: string[]; de: string | null; lado: "enviada" | "recebida" | null; falas: string[]; trecho: string }
+  | { tipo: "figura"; pagina: number; numero: number; legenda: string; conversa: boolean; trecho: string }
+  | { tipo: "secao"; pagina: number; texto: string };
+export type ConversasDocumento = { aparelho: string; fonte: string; paginas: { n: number; itens: ConversaItem[] }[] };
 
 export type Entidade = {
   id: number; nome: string; tipo: string; chave: string; natureza_provavel: string | null; origem: string; grupo?: string | null;

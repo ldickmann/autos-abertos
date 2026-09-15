@@ -1,0 +1,14 @@
+{
+ "_sobre": "Documentos em que a PF descreve conversas de um aparelho (IPJ-A). O exportador reconstitui as conversas página a página (stf/conversas.py): balão só para frase com falante inequívoco e citação literal; o resto é relato literal da PF. 'aparelho' diz de quem é o celular (mensagens dele vão para o lado direito, como no aplicativo). 'omitir' lista trechos que a regra de endereço não reconhece e devem sair do site.",
+ "documentos": [
+  {
+   "documento": 307,
+   "fonte": "IPJ-A 3298613/2026 (Polícia Federal, NADIP/DFIN/CGRC/DICOR), na Pet 16.662",
+   "aparelho": {
+    "nome": "Daniel Vorcaro",
+    "variantes": ["DANIEL BUENO VORCARO", "DANIEL VORCARO", "VORCARO"],
+    "omitir": ["Tucumã 99", "Tucumã, 99"]
+   }
+  }
+ ]
+}
