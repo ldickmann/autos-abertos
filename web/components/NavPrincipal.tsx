@@ -23,7 +23,7 @@ const SECOES: Secao[] = [
   },
   {
     id: "autos", rotulo: "Autos", href: "/busca",
-    itens: [{ href: "/busca", rotulo: "Buscar nos autos" }, { href: "/assercoes", rotulo: "Asserções" }, { href: "/referencias", rotulo: "Referências" }],
+    itens: [{ href: "/busca", rotulo: "Buscar nos autos" }, { href: "/assercoes", rotulo: "Afirmações, e quem afirma" }, { href: "/referencias", rotulo: "O que as peças citam" }],
     casa: (p) => ["/busca", "/assercoes", "/referencias", "/processo", "/documento"].some((h) => p === h || p.startsWith(h + "/")),
   },
   {
@@ -33,10 +33,28 @@ const SECOES: Secao[] = [
   },
   {
     id: "ajuda", rotulo: "Ajuda", href: "/glossario",
-    itens: [{ href: "/glossario", rotulo: "Glossário" }, { href: "/verificar", rotulo: "Verificar" }, { href: "/sobre", rotulo: "Método" }],
+    itens: [{ href: "/glossario", rotulo: "Glossário" }, { href: "/verificar", rotulo: "Conferir os dados" }, { href: "/sobre", rotulo: "Como o site é feito" }],
     casa: (p) => ["/glossario", "/verificar", "/sobre"].some((h) => p === h || p.startsWith(h + "/")),
   },
 ];
+
+/* Rodapé: as seis seções com todas as páginas, para quem chegou ao fim e quer ir a outro lugar. */
+export function MapaDoSite() {
+  return (
+    <nav aria-label="Mapa do site" className="grid gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-6">
+      {SECOES.map((s) => (
+        <div key={s.id}>
+          <Link href={s.href} className="font-semibold text-neutral-900 no-underline hover:underline">{s.rotulo}</Link>
+          {s.itens.length > 0 && (
+            <ul className="mt-1 space-y-0.5">
+              {s.itens.map((i) => <li key={i.href}><Link href={i.href} className="no-underline hover:underline">{i.rotulo}</Link></li>)}
+            </ul>
+          )}
+        </div>
+      ))}
+    </nav>
+  );
+}
 
 export function NavPrincipal() {
   const pathname = (usePathname() ?? "/").replace(/\/+$/, "") || "/";

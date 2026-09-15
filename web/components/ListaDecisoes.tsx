@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Contagem, Vazio } from "@/components/Filtros";
 import { useEffect, useMemo, useState } from "react";
 import { Termo } from "@/components/Termo";
 import type { Decisao, Verbete } from "@/lib/tipos";
@@ -80,10 +81,9 @@ export function ListaDecisoes({ itens, rotulos, processos, verbetes, glossario =
               <option value="">qualquer um</option>{quemLista.map((q) => <option key={q} value={q}>{q.length > 60 ? q.slice(0, 57) + "…" : q}</option>)}</select></label>
           <label className="flex min-w-0 flex-col"><span className="font-medium">Procurar no pedido ou na decisão</span>
             <input className="mt-1 w-full min-w-0 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={busca} onChange={(ev) => setBusca(ev.target.value)} placeholder="ex.: prisão, prazo, sigilo" /></label>
-          <p role="status" className="text-neutral-700 sm:col-span-2 lg:col-span-4">
-            {filtrados.length} de {itens.length} decisões
+          <Contagem n={filtrados.length} total={itens.length} rotulo="decisões" ativo={!!(processo || resultado || quem || busca)} onLimpar={() => { setProcesso(""); setResultado(""); setQuem(""); setBusca(""); }} className="sm:col-span-2 lg:col-span-4">
             {Object.keys(contagemResultado).length > 0 ? ": " + Object.entries(contagemResultado).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${n} ${rotulos[k] ?? k}`).join(", ") : ""}
-          </p>
+          </Contagem>
         </form>
       )}
 
@@ -122,7 +122,7 @@ export function ListaDecisoes({ itens, rotulos, processos, verbetes, glossario =
           {compacta && incidenteFixo ? <Link className="ml-3 underline" href={`/decisoes?processo=${incidenteFixo}`}>ver todas com filtros</Link> : null}
         </p>
       )}
-      {filtrados.length === 0 && <p className="text-sm text-neutral-700">{itens.length === 0 ? "Ainda não há decisões extraídas para este processo." : "Nenhuma decisão com esses filtros."}</p>}
+      {filtrados.length === 0 && (itens.length === 0 ? <p className="text-sm text-neutral-700">Ainda não há decisões extraídas para este processo.</p> : <Vazio onLimpar={() => { setProcesso(""); setResultado(""); setQuem(""); setBusca(""); }} dica="Nenhuma decisão com esses filtros." />)}
     </div>
   );
 }

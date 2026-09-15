@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CampoProcurar, Contagem, Vazio, casa } from "@/components/Filtros";
 import { useMemo, useState } from "react";
 import { BadgeEpistemico } from "@/components/Badges";
 import { Termo } from "@/components/Termo";
@@ -14,6 +15,9 @@ export function LinhaDoTempo({ andamentos, verbetes }: { andamentos: Andamento[]
   const [soComDoc, setSoComDoc] = useState(false);
   const [de, setDe] = useState("");
   const [ate, setAte] = useState("");
+  const [busca, setBusca] = useState("");
+  const limpar = () => { setTipo(""); setTipoEp(""); setSoDecisoes(false); setSoComDoc(false); setDe(""); setAte(""); setBusca(""); };
+  const filtroAtivo = !!(tipo || tipoEp || soDecisoes || soComDoc || de || ate || busca);
 
   const tipos = useMemo(() => Array.from(new Set(andamentos.map((a) => a.tipo))).sort(), [andamentos]);
   const totalAssercoes = useMemo(() => andamentos.reduce((n, a) => n + a.documentos.reduce((m, d) => m + (d.assercoes?.length ?? 0), 0), 0), [andamentos]);
@@ -26,14 +30,16 @@ export function LinhaDoTempo({ andamentos, verbetes }: { andamentos: Andamento[]
           (!soComDoc || a.documentos.length > 0) &&
           (!tipoEp || a.documentos.some((d) => (d.assercoes ?? []).some((x) => x.tipo_epistemico === tipoEp))) &&
           (!de || a.data >= de) &&
-          (!ate || a.data <= ate),
+          (!ate || a.data <= ate) &&
+          casa(busca, a.tipo, a.descricao, ...a.documentos.map((d) => d.rotulo)),
       ),
-    [andamentos, tipo, tipoEp, soDecisoes, soComDoc, de, ate],
+    [andamentos, tipo, tipoEp, soDecisoes, soComDoc, de, ate, busca],
   );
 
   return (
     <div>
       <form className="mt-3 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:items-end rounded border border-neutral-300 bg-white p-3 text-sm" onSubmit={(e) => e.preventDefault()} aria-label="Filtros da linha do tempo">
+        <CampoProcurar valor={busca} onChange={setBusca} rotulo="Procurar" placeholder="ex.: prisão, sigilo, petição" className="col-span-2 sm:min-w-56 sm:grow" />
         <label className="col-span-2 flex flex-col sm:col-span-1">
           <span className="font-medium">Tipo de andamento</span>
           <select className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={tipo} onChange={(e) => setTipo(e.target.value)}>
@@ -42,7 +48,7 @@ export function LinhaDoTempo({ andamentos, verbetes }: { andamentos: Andamento[]
           </select>
         </label>
         <label className="flex flex-col">
-          <span className="font-medium">Tipo de asserção</span>
+          <span className="font-medium">Tipo de afirmação</span>
           <select className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={tipoEp} onChange={(e) => setTipoEp(e.target.value as "" | TipoEpistemico)} disabled={totalAssercoes === 0}>
             <option value="">qualquer</option>
             <option value="fato_processual">fato processual</option>
@@ -54,7 +60,7 @@ export function LinhaDoTempo({ andamentos, verbetes }: { andamentos: Andamento[]
         <label className="flex flex-col"><span className="font-medium">Até</span><input type="date" className="mt-1 w-full min-w-0 rounded border border-neutral-400 px-2 py-1" value={ate} onChange={(e) => setAte(e.target.value)} /></label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={soDecisoes} onChange={(e) => setSoDecisoes(e.target.checked)} /> só decisões</label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={soComDoc} onChange={(e) => setSoComDoc(e.target.checked)} /> só com documento</label>
-        <p role="status" className="col-span-2 text-neutral-700">{filtrados.length} de {andamentos.length}{totalAssercoes ? ` · ${totalAssercoes} asserções` : ""}</p>
+        <Contagem n={filtrados.length} total={andamentos.length} rotulo="andamentos" ativo={filtroAtivo} onLimpar={limpar} className="col-span-2">{totalAssercoes ? `, ${totalAssercoes} afirmações extraídas` : ""}</Contagem>
       </form>
 
       <ol className="linha-tempo relative mt-4 ml-5 border-l-2 border-neutral-400 pl-5">
@@ -74,7 +80,7 @@ export function LinhaDoTempo({ andamentos, verbetes }: { andamentos: Andamento[]
                     <li key={d.id}>
                       {d.baixado ? (
                         <Link className="rounded border border-neutral-500 px-2 py-0.5 underline" href={`/documento/${d.id}`}>
-                          {d.rotulo} ({d.formato.toUpperCase()}{d.paginas ? `, ${d.paginas} p.` : ""}{d.assercoes?.length ? `, ${d.assercoes.length} asserções` : ""})
+                          {d.rotulo} ({d.formato.toUpperCase()}{d.paginas ? `, ${d.paginas} p.` : ""}{d.assercoes?.length ? `, ${d.assercoes.length} afirmações` : ""})
                         </Link>
                       ) : (
                         <a className="rounded border border-neutral-500 px-2 py-0.5 underline" href={d.url} rel="noreferrer">{d.rotulo} (no portal)</a>
@@ -86,7 +92,7 @@ export function LinhaDoTempo({ andamentos, verbetes }: { andamentos: Andamento[]
               {a.documentos.some((d) => d.assercoes?.length) && (
                 <details className="mt-2 rounded border border-neutral-200 bg-neutral-50 p-2 text-sm" open={!!tipoEp}>
                   <summary className="cursor-pointer text-xs font-semibold">
-                    Asserções extraídas dos documentos deste andamento ({a.documentos.reduce((n, d) => n + (d.assercoes?.length ?? 0), 0)})
+                    Afirmações extraídas dos documentos deste andamento ({a.documentos.reduce((n, d) => n + (d.assercoes?.length ?? 0), 0)})
                   </summary>
                   <ul className="mt-2 space-y-2">
                     {a.documentos.flatMap((d) => (d.assercoes ?? []).filter((x) => !tipoEp || x.tipo_epistemico === tipoEp).map((x) => (
@@ -110,7 +116,7 @@ export function LinhaDoTempo({ andamentos, verbetes }: { andamentos: Andamento[]
           </li>
         ))}
       </ol>
-      {filtrados.length === 0 && <p className="mt-3 text-sm">Nenhum andamento corresponde aos filtros.</p>}
+      {filtrados.length === 0 && <div className="mt-3"><Vazio onLimpar={limpar} dica="Nenhum andamento com esses filtros." /></div>}
     </div>
   );
 }

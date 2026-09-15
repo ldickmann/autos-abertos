@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { Contagem, Vazio } from "@/components/Filtros";
 import type { Materia } from "@/lib/tipos";
 import { formatarData } from "@/lib/tipos";
 
@@ -28,8 +29,9 @@ export function ListaMaterias({ materias }: { materias: Materia[] }) {
             <option value="">todos</option>{siglas.map((s) => <option key={s} value={s}>{s} — {TIPO[s] ?? s}</option>)}</select></label>
         <label className="flex min-w-0 flex-col"><span className="font-medium">Procurar na ementa ou no autor</span>
           <input className="mt-1 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={busca} onChange={(ev) => setBusca(ev.target.value)} placeholder="ex.: Banco Central, convocação, sigilo" /></label>
-        <p role="status" className="text-neutral-700 sm:col-span-3">{lista.length} de {materias.length} matérias</p>
+        <Contagem n={lista.length} total={materias.length} rotulo="matérias" ativo={!!(casa || sigla || busca)} onLimpar={() => { setCasa(""); setSigla(""); setBusca(""); }} className="sm:col-span-3" />
       </form>
+      {lista.length === 0 && <Vazio onLimpar={() => { setCasa(""); setSigla(""); setBusca(""); }} dica="Nenhuma matéria com esses filtros." />}
       <ol className="space-y-2">
         {lista.map((m) => (
           <li key={`${m.casa}-${m.codigo}`} className="folha border border-neutral-300 bg-white p-3 text-sm">

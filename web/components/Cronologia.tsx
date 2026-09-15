@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Contagem, Vazio } from "@/components/Filtros";
 import { useMemo, useState } from "react";
 import { BadgeEpistemico } from "@/components/Badges";
 import { useTelaLarga } from "@/lib/useTelaLarga";
@@ -23,6 +24,8 @@ export function Cronologia({ dados, processos, rotulosResultado }: { dados: Cron
   const [limite, setLimite] = useState(150);
   const telaLarga = useTelaLarga();
   const [filtrosAbertos, setFiltrosAbertos] = useState<boolean | null>(null);
+  const limpar = () => { setTipos(new Set(["andamento", "assercao", "decisao"])); setTipoEp(""); setProcs(new Set(processos.map((p) => p.incidente))); setDe(dados.inicio_do_caso); setAte(""); setBusca(""); setIncluirReferencias(false); };
+  const filtroAtivo = tipos.size !== 3 || !!tipoEp || procs.size !== processos.length || de !== dados.inicio_do_caso || !!ate || !!busca || incluirReferencias;
 
   const alternar = <T,>(s: Set<T>, v: T) => { const n = new Set(s); if (n.has(v)) n.delete(v); else n.add(v); return n; };
 
@@ -43,7 +46,7 @@ export function Cronologia({ dados, processos, rotulosResultado }: { dados: Cron
     <div className="grid gap-4 lg:grid-cols-[260px_minmax(0,1fr)]">
       <aside className="min-w-0 text-sm">
         <details className="folha border border-neutral-300 bg-white p-3 lg:sticky lg:top-3" open={filtrosAbertos ?? telaLarga} onToggle={(ev) => setFiltrosAbertos(ev.currentTarget.open)}>
-          <summary className="toque cursor-pointer font-semibold">Filtros <span className="font-normal text-neutral-600">· {eventos.length} de {dados.total}</span></summary>
+          <summary className="toque cursor-pointer font-semibold">Filtros <span className="font-normal text-neutral-600">({eventos.length} de {dados.total})</span></summary>
           <form className="mt-2 space-y-3" onSubmit={(ev) => ev.preventDefault()} aria-label="Filtros da cronologia">
             <fieldset>
               <legend className="font-medium">Origem</legend>
@@ -67,6 +70,7 @@ export function Cronologia({ dados, processos, rotulosResultado }: { dados: Cron
             </div>
             <label className="flex items-center gap-2"><input type="checkbox" checked={incluirReferencias} onChange={(ev) => setIncluirReferencias(ev.target.checked)} /> incluir datas de jurisprudência e leis citadas (antes de {formatarData(dados.inicio_do_caso)})</label>
             <label className="block"><span className="font-medium">Procurar</span><input className="mt-1 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={busca} onChange={(ev) => setBusca(ev.target.value)} placeholder="ex.: liquidação, prisão, sigilo" /></label>
+            <Contagem n={eventos.length} total={dados.total} rotulo="acontecimentos" ativo={filtroAtivo} onLimpar={limpar} />
           </form>
         </details>
       </aside>
@@ -105,7 +109,7 @@ export function Cronologia({ dados, processos, rotulosResultado }: { dados: Cron
             </li>
           );
         })}
-        {eventos.length === 0 && <li className="text-sm">Nada com esses filtros.</li>}
+        {eventos.length === 0 && <li><Vazio onLimpar={limpar} dica="Nenhum acontecimento com esses filtros." /></li>}
       </ol>
       {eventos.length > limite && <p className="text-sm lg:col-start-2"><button type="button" className="toque rounded border border-neutral-400 px-3 py-1 hover:bg-neutral-100" onClick={() => setLimite((l) => l + 150)}>Mostrar mais ({eventos.length - limite} restantes)</button></p>}
     </div>

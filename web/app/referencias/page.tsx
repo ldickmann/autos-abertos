@@ -21,7 +21,7 @@ export default function PaginaReferencias() {
   return (
     <div className="space-y-8">
       <header className="max-w-3xl">
-        <h1 className="text-2xl">Referências nos documentos</h1>
+        <h1 className="text-2xl">O que as peças citam</h1>
         <p className="mt-1 text-sm text-neutral-700">
           O que o texto dos documentos cita, extraído por expressão regular, com página e trecho: {r.dispositivos.length} dispositivos legais e {r.processos_citados.length} processos
           ({internos.length} deste caso, {externos.length} externos, como habeas corpus e precedentes). Serve para ver quais decisões se apoiam na mesma base legal e o que cada peça menciona.

@@ -25,7 +25,7 @@ export default function PaginaAssercoes() {
       <LegendaEpistemica descricoes={meta.tipos_epistemicos} />
       {assercoes.length === 0 ? (
         <p className="rounded border border-amber-700 bg-amber-50 p-3 text-sm">
-          A camada semântica (Fase 4) ainda não foi executada: nenhuma asserção foi extraída dos documentos. Tudo o que o site
+          A camada semântica (Fase 4) ainda não foi executada: nenhuma afirmação foi extraída dos documentos. Tudo o que o site
           mostra até aqui vem diretamente do portal, sem modelo de linguagem.
         </p>
       ) : (

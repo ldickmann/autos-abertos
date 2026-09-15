@@ -3,7 +3,7 @@ import { BadgeEpistemico } from "@/components/Badges";
 import { formatarData, formatarReais, getFluxos, getTrajetos, type Prova } from "@/lib/data";
 
 /*
-  Os caminhos do dinheiro, passo a passo. Cada passo tem "de", "para", valor, quando, como — e as provas: asserções dos
+  Os caminhos do dinheiro, passo a passo. Cada passo tem "de", "para", valor, quando, como — e as provas: afirmações dos
   autos (documento, página, quem afirma) e comunicações do RIF (página, comunicante). O exportador recusa passo sem prova.
   Método: seguir o dinheiro é uma questão de nomes; anotar de onde veio cada afirmação; fontes primárias; o outro lado
   (contrapontos) e o que falta (lacunas) aparecem em cada trajeto. Nada aqui é conclusão do site.
@@ -143,6 +143,10 @@ export default function PaginaTrajetos() {
             </div>
           )}
           {t.lacunas && <p className="mt-3 max-w-3xl text-sm text-neutral-700"><span className="font-semibold">O que falta:</span> {t.lacunas}</p>}
+          <p className="mt-3 flex flex-wrap gap-x-4 text-sm">
+            {i + 1 < trajetos.length && <a className="underline" href={`#${trajetos[i + 1].id}`}>Próximo: {trajetos[i + 1].titulo}</a>}
+            <a className="underline" href="#indice">Voltar às perguntas</a>
+          </p>
         </section>
       ))}
 

@@ -1,4 +1,5 @@
 import { PontosChave } from "@/components/PontosChave";
+import { ListaGlossario } from "@/components/ListaGlossario";
 import { getGlossario } from "@/lib/data";
 
 export default function PaginaGlossario() {
@@ -20,15 +21,7 @@ export default function PaginaGlossario() {
         <p className="mt-1 text-sm text-neutral-700">Texto editorial, curado e versionado com o código (<code>stf/curadoria/glossario.json</code>). Nas páginas, os termos sublinhados abrem a mesma explicação.</p>
       </header>
       <PontosChave titulo="O que você encontra aqui" itens={pontos} />
-      <dl className="grid gap-3 md:grid-cols-2">
-        {verbetes.map((v) => (
-          <div key={v.termo} id={v.termo.toLowerCase().replace(/[^a-z0-9]+/g, "-")} className="folha border border-neutral-300 bg-white p-3">
-            <dt className="font-semibold">{v.termo}</dt>
-            <dd className="leitura mt-1 text-sm">{v.explicacao}{v.mais ? <span className="block mt-1 text-neutral-700">{v.mais}</span> : null}</dd>
-            {v.formas.length > 0 && <dd className="mt-1 text-xs text-neutral-600">no portal e nos documentos: {v.formas.join(", ")}</dd>}
-          </div>
-        ))}
-      </dl>
+      <ListaGlossario verbetes={verbetes} />
     </div>
   );
 }

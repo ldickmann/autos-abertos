@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BadgeEpistemico, Carimbo } from "@/components/Badges";
 import { PontosChave } from "@/components/PontosChave";
 import { ConversaWhats } from "@/components/ConversaWhats";
+import { ReguaDePaginas } from "@/components/ReguaDePaginas";
 import { formatarData, formatarDataHora, getDocumento, getMeta, listarDocumentos } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -120,7 +121,7 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
 
       {d.assercoes.length > 0 && (
         <section aria-labelledby="ass">
-          <h2 id="ass" className="text-lg font-bold">Asserções extraídas ({d.assercoes.length})</h2>
+          <h2 id="ass" className="text-lg font-bold">Afirmações extraídas ({d.assercoes.length})</h2>
           <p className="text-sm text-neutral-700">Cada uma aponta a página e o trecho literal de onde saiu. Modelo {d.assercoes[0].modelo}, prompt {d.assercoes[0].prompt_version}.</p>
         </section>
       )}
@@ -154,6 +155,7 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
           </article>
         ))}
       </section>
+      <ReguaDePaginas total={d.paginas.length} />
       <p className="text-xs text-neutral-600">Base gerada com o texto extraído automaticamente do PDF; em caso de dúvida, consulte o original no portal. Extraído em {formatarDataHora(m.baixado_em)}.</p>
     </div>
   );

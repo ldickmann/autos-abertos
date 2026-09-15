@@ -7,7 +7,7 @@ export default function PaginaSobre() {
   const meta = getMeta();
   return (
     <div className="max-w-3xl space-y-6 text-sm leading-relaxed">
-      <h1 className="text-2xl font-bold">Método</h1>
+      <h1 className="text-2xl font-bold">Como o site é feito</h1>
       <PontosChave titulo="Em cinco regras" itens={[
         { texto: <>Tudo vem de fonte primária: o portal do STF, os PDFs das peças e o pacote de autos que o próprio STF publicou. Nada vem de notícias.</> },
         { texto: <>Cada afirmação carrega quem afirma (PF, Procuradoria, defesa, ministro, banco ao COAF), o documento e a página; se o trecho literal não está na página, a afirmação não entra.</> },
@@ -27,16 +27,16 @@ export default function PaginaSobre() {
         <h2 className="text-lg font-bold">Proveniência</h2>
         <p>
           Toda resposta do portal é guardada íntegra, identificada pelo seu hash SHA-256 e pela hora da coleta. O banco que alimenta
-          este site é uma projeção desses arquivos e pode ser reconstruído do zero. Cada andamento, parte, documento e asserção carrega
+          este site é uma projeção desses arquivos e pode ser reconstruído do zero. Cada andamento, parte, documento e afirmação carrega
           o identificador do snapshot de onde saiu. Documentos em PDF trazem ainda o código de autenticação que o próprio STF imprime
           no rodapé, verificável no portal do tribunal.
         </p>
       </section>
       <section>
-        <h2 className="text-lg font-bold">Tipos de asserção</h2>
+        <h2 className="text-lg font-bold">Tipos de afirmação</h2>
         <p>
-          A única etapa com modelo de linguagem é a extração de asserções dos documentos. O modelo propõe; um validador determinístico
-          descarta qualquer asserção sem página e trecho literal verificáveis. O modelo é proibido de concluir sobre conduta, caráter,
+          A única etapa com modelo de linguagem é a extração de afirmações dos documentos. O modelo propõe; um validador determinístico
+          descarta qualquer afirmação sem página e trecho literal verificáveis. O modelo é proibido de concluir sobre conduta, caráter,
           culpa ou intenção de qualquer pessoa, e o esquema de dados não tem campo para isso.
         </p>
         <LegendaEpistemica descricoes={meta.tipos_epistemicos} />
