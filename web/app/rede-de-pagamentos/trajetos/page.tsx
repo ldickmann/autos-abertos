@@ -18,11 +18,11 @@ function reais(texto: string | null): string | null {
 function QuemDiz({ p }: { p: Prova }) {
   if (p.tipo === "assercao") return <><BadgeEpistemico tipo={p.tipo_epistemico} /> <span className="font-medium">{p.atribuida_a ?? "registro dos autos"}</span></>;
   if (p.tipo === "documento") return <><span className="carimbo rounded-sm border px-1.5 py-px text-xs font-medium">peça</span> <span className="font-medium">{p.atribuida_a ?? "documento"}</span></>;
-  return <><span className="carimbo rounded-sm border px-1.5 py-px text-xs font-medium">COAF</span> <span className="font-medium">{p.comunicante ?? "comunicante"}</span></>;
+  return <><span className="carimbo rounded-sm border px-1.5 py-px text-xs font-medium">{p.secao === "relatorio" ? "PF" : "COAF"}</span> <span className="font-medium">{p.comunicante ?? "comunicante"}</span></>;
 }
 
 function LinkProva({ p }: { p: Prova }) {
-  const rotulo = p.tipo === "comunicacao" ? `RIF p. ${p.pagina}` : `${p.documento_titulo?.replace(/ - .*$/, "") ?? "documento"} p. ${p.pagina}`;
+  const rotulo = p.tipo === "comunicacao" ? `${p.secao === "relatorio" ? "IPJ-A" : "RIF"} p. ${p.pagina}` : `${p.documento_titulo?.replace(/ - .*$/, "") ?? "documento"} p. ${p.pagina}`;
   return <Link className="underline" href={`/documento/${p.documento_id}#p-${p.pagina}`}>{rotulo}</Link>;
 }
 
@@ -91,7 +91,7 @@ export default function PaginaTrajetos() {
         <details className="mt-3 text-sm">
           <summary className="cursor-pointer font-semibold">Como ler esta página</summary>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-neutral-700">
-            <li>Cada passo tem uma prova. <BadgeEpistemico tipo="alegacao_parte" /> é o que uma parte alega (Polícia Federal, Procuradoria, defesa); <BadgeEpistemico tipo="fundamento_decisorio" /> é o que um ministro afirma ao decidir; <BadgeEpistemico tipo="fato_processual" /> é um registro do processo; <span className="carimbo rounded-sm border px-1.5 py-px text-xs font-medium">COAF</span> é o que um banco, cooperativa, cartório ou concessionária comunicou — e o COAF avisa que um RIF, por si só, não é prova.</li>
+            <li>Cada passo tem uma prova. <BadgeEpistemico tipo="alegacao_parte" /> é o que uma parte alega (Polícia Federal, Procuradoria, defesa); <BadgeEpistemico tipo="fundamento_decisorio" /> é o que um ministro afirma ao decidir; <BadgeEpistemico tipo="fato_processual" /> é um registro do processo; <span className="carimbo rounded-sm border px-1.5 py-px text-xs font-medium">COAF</span> é o que um banco, cooperativa, cartório ou concessionária comunicou — e o COAF avisa que um RIF, por si só, não é prova; <span className="carimbo rounded-sm border px-1.5 py-px text-xs font-medium">PF</span> é a leitura policial de mensagens de um celular, que a própria PF chama de não exaustiva.</li>
             <li>Alegação não é condenação. Ninguém aqui foi julgado; a Constituição presume a inocência até o trânsito em julgado. Os contrapontos trazem o que as defesas e o relator dizem nos próprios autos.</li>
             <li>Onde a fonte não diz, a página não diz: cada trajeto termina com o que falta.</li>
             <li>Os nomes são os que constam nas peças; CPFs não aparecem.</li>
@@ -100,7 +100,7 @@ export default function PaginaTrajetos() {
       </header>
 
       <section aria-labelledby="indice">
-        <h2 id="indice" className="text-lg">Cinco perguntas, cinco trajetos</h2>
+        <h2 id="indice" className="text-lg">{["", "Uma pergunta, um trajeto", "Duas perguntas, dois trajetos", "Três perguntas, três trajetos", "Quatro perguntas, quatro trajetos", "Cinco perguntas, cinco trajetos", "Seis perguntas, seis trajetos", "Sete perguntas, sete trajetos"][trajetos.length] ?? `${trajetos.length} trajetos`}</h2>
         <ol className="mt-2 grid gap-3 md:grid-cols-2">
           {trajetos.map((t, i) => (
             <li key={t.id}>

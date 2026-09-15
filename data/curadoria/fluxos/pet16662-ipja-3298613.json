@@ -1,0 +1,287 @@
+{
+ "_sobre": "Fluxos descritos pela Polícia Federal na Informação de Polícia Judiciária de Análise (IPJ-A) nº 3298613/2026, de 27/08/2026, sobre o celular de Daniel Vorcaro (Pet 16.662; documento 307 desta base). Transcrição manual: cada fluxo aponta a página e um trecho literal; a carga só aceita o fluxo se o trecho estiver na página. Situação: 'efetuado' = a peça descreve o pagamento como feito (comprovante, registro); 'previsto' = valor de contrato; 'cobrado' = fatura emitida, pagamento não confirmado na peça. A própria PF ressalva que a análise, feita em 72 horas, 'não possui caráter exaustivo' (p. 217). A PGR opinou pela nulidade da ordem de investigar e pela extinção da petição; a Presidência do STF suspendeu a decisão do relator e levou o tema ao Plenário (15/09/2026). Nada aqui é conclusão: é o que a PF relata.",
+ "fonte": {
+  "tipo": "relatorio_pf",
+  "identificador": "IPJ-A 3298613/2026",
+  "orgao": "Polícia Federal (NADIP/DFIN/CGRC/DICOR)",
+  "destinatario": "min. André Mendonça (Pet 16.662)",
+  "emitido_em": "2026-08-27",
+  "documento": {
+   "endpoint": "docspublicos",
+   "id_portal": "Pet16662/00007_7ecc7fe2"
+  },
+  "incidente": 7681133
+ },
+ "comunicacoes": [
+  {
+   "secao": "relatorio",
+   "numero": "5.2",
+   "titular": "nome:BANCO MASTER",
+   "segmento": "Análise de material apreendido (celular de Daniel Vorcaro)",
+   "comunicante": "Polícia Federal — IPJ-A 3298613/2026, seção 5.2 (assinatura do primeiro contrato)",
+   "local": null,
+   "periodo_inicio": "2024-01-11",
+   "periodo_fim": "2024-01-23",
+   "valor": "3.000.000,00",
+   "informacoes": "Em 11/01/2024, o contato denominado “Vivi Moraes” envia mensagem para DANIEL BUENO VORCARO informando que, “Conforme conversamos, estou enviando minuta de contrato de prestação de serviços para sua análise”. [p. 28] O arquivo compartilhado (“MINUTA DE CONTRATO”) aponta em seus metadados como autor usuário denominado GUILHERME BENAZZI e a última modificação realizada por usuário denominado “Ministro Alexandre de Moraes” às 16:30 do dia 11/01/2024. [p. 29] VORCARO pergunta se FABIO “fechou 3 anos”. Este responde que foram 4 anos, mas “pode fazer 3”. [p. 31] VIVIANE DE MORAES envia a DANIEL VORCARO a versão final do contrato de R$ 3 milhões mensais. [p. 32] O contrato é assinado por DANIEL BUENO VORCARO em 23/01/2024, às 15:15:11, e por ANGELO ANTONIO RIBEIRO DA SILVA no mesmo dia às 15:35:38. [p. 34]",
+   "pagina_inicio": 28,
+   "pagina_fim": 34,
+   "participacoes": [
+    {
+     "nome": "BANCO MASTER",
+     "documento": "nome:BANCO MASTER",
+     "papel": "remetente",
+     "tipo": "pessoa_juridica"
+    },
+    {
+     "nome": "BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "documento": "nome:BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "papel": "beneficiario",
+     "tipo": "pessoa_juridica"
+    },
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "documento": "nome:DANIEL BUENO VORCARO",
+     "papel": "responsavel",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "ANGELO ANTONIO RIBEIRO DA SILVA",
+     "documento": "nome:ANGELO ANTONIO RIBEIRO DA SILVA",
+     "papel": "responsavel",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "VIVIANE DE MORAES",
+     "documento": "nome:VIVIANE DE MORAES",
+     "papel": "outros",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "FABIO FARIA",
+     "documento": "nome:FABIO FARIA",
+     "papel": "outros",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "LEONARDO PALHARES",
+     "documento": "nome:LEONARDO PALHARES",
+     "papel": "procurador",
+     "tipo": "pessoa_fisica"
+    }
+   ],
+   "bens": [],
+   "transacoes": [
+    {
+     "origem": "nome:BANCO MASTER",
+     "destino": "nome:BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "valor": "3.000.000,00",
+     "tipo": "outros",
+     "natureza": "agregado",
+     "situacao": "previsto",
+     "periodo_inicio": "2024-01-23",
+     "periodo_fim": null,
+     "descricao": "valor mensal do contrato de prestação de serviços, segundo a PF (“R$ 3 milhões mensais”); prazo de 3 anos segundo a troca de mensagens (p. 31). O total do contrato não consta literalmente na peça.",
+     "pagina": 32,
+     "trecho": "a versão final do contrato de R$ 3 milhões"
+    }
+   ],
+   "ocorrencias": []
+  },
+  {
+   "secao": "relatorio",
+   "numero": "5.4",
+   "titular": "nome:BANCO MASTER",
+   "segmento": "Análise de material apreendido (celular de Daniel Vorcaro)",
+   "comunicante": "Polícia Federal — IPJ-A 3298613/2026, seção 5.4 (cobranças de pagamento do primeiro contrato)",
+   "local": null,
+   "periodo_inicio": "2024-02-08",
+   "periodo_fim": "2025-10-01",
+   "valor": "10.266.804,42",
+   "informacoes": "No dia 08/02/2024, VORCARO pede a seu cunhado FABIANO ZETTEL que envie o “contrato barci moraes assinado”, e depois questiona “Quando era o primeiro pgto?”. No mesmo dia, ANGELO SILVA envia para DANIEL VORCARO comprovante de transferência do Banco Master para o Escritório BARCI DE MORAES SOCIEDADE DE ADVOCACIA, em sua conta no Banco Itaú, no valor de R$ 3.422.268,14. [p. 149–150] Em 15/03/2024, FABIO FARIA diz a DANIEL VORCARO que “O careca não pode atrasar”. [p. 150] DANIEL BUENO VORCARO diz a sua funcionária que o pagamento para o Escritório BARCI DE MORAES não pode “atrasar um dia”, pois “É op pgto mais importante que temos”. Na sequência, VORCARO complementa que “Pode pagar sempre, sem nota”, depois finaliza “Do jeito que for”. ROMY envia documento do registro de uma transferência do Banco Master para o Escritório de VIVIANE DE MORAES no valor de R$ 3.422.268,14. [p. 152] ANGELO SILVA afirma que irá “pagar antecipado e depois pegamos a NF”. [p. 153] Diálogo de 14/07/2025 registra pagamento para o Escritório de VIVIANE DE MORAES, no valor de R$ 3.422.268,14. [p. 155] Em 01/10/2025 ALBERTO FELIX informa DANIEL VORCARO que foi pago BARCI DE MORAES. Em seguida, VORCARO orienta que os valores para o Escritório não devem ser pagos por meio do instrumento de pagamento PIX. [p. 156]",
+   "pagina_inicio": 149,
+   "pagina_fim": 157,
+   "participacoes": [
+    {
+     "nome": "BANCO MASTER",
+     "documento": "nome:BANCO MASTER",
+     "papel": "remetente",
+     "tipo": "pessoa_juridica"
+    },
+    {
+     "nome": "BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "documento": "nome:BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "papel": "beneficiario",
+     "tipo": "pessoa_juridica"
+    },
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "documento": "nome:DANIEL BUENO VORCARO",
+     "papel": "responsavel",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "ANGELO ANTONIO RIBEIRO DA SILVA",
+     "documento": "nome:ANGELO ANTONIO RIBEIRO DA SILVA",
+     "papel": "outros",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "FABIANO CAMPOS ZETTEL",
+     "documento": "cpf:818816",
+     "papel": "outros"
+    },
+    {
+     "nome": "FABIO FARIA",
+     "documento": "nome:FABIO FARIA",
+     "papel": "outros",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "ALBERTO FELIX",
+     "documento": "nome:ALBERTO FELIX",
+     "papel": "outros",
+     "tipo": "pessoa_fisica"
+    }
+   ],
+   "bens": [],
+   "transacoes": [
+    {
+     "origem": "nome:BANCO MASTER",
+     "destino": "nome:BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "valor": "3.422.268,14",
+     "tipo": "transferencia",
+     "natureza": "individual",
+     "situacao": "efetuado",
+     "data": "2024-02-08",
+     "descricao": "comprovante de transferência enviado por Angelo Silva a Vorcaro; conta do escritório no Banco Itaú",
+     "pagina": 150,
+     "trecho": "em sua conta no Banco Itaú, no valor de R$ 3.422.268,14"
+    },
+    {
+     "origem": "nome:BANCO MASTER",
+     "destino": "nome:BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "valor": "3.422.268,14",
+     "tipo": "transferencia",
+     "natureza": "individual",
+     "situacao": "efetuado",
+     "data": "2024-03-15",
+     "descricao": "registro de transferência enviado por funcionária do banco a Vorcaro no dia da cobrança (“O careca não pode atrasar”); a data é a da mensagem",
+     "pagina": 152,
+     "trecho": "ROMY envia documento do registro de uma transferência do Banco Master para o Escritório de VIVIANE DE MORAES no valor de R$ 3.422.268,14"
+    },
+    {
+     "origem": "nome:BANCO MASTER",
+     "destino": "nome:BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "valor": "3.422.268,14",
+     "tipo": "transferencia",
+     "natureza": "individual",
+     "situacao": "efetuado",
+     "data": "2025-07-14",
+     "descricao": "pagamento registrado em diálogo de 14/07/2025 (Vorcaro e Alberto Felix)",
+     "pagina": 155,
+     "trecho": "Diálogo de 14/07/2025 registra pagamento para o Escritório de VIVIANE DE MORAES, no valor de R$ 3.422.268,14"
+    }
+   ],
+   "ocorrencias": []
+  },
+  {
+   "secao": "relatorio",
+   "numero": "5.5",
+   "titular": "cnpj:07875796000175",
+   "segmento": "Análise de material apreendido (celular de Daniel Vorcaro)",
+   "comunicante": "Polícia Federal — IPJ-A 3298613/2026, seção 5.5 (segundo contrato)",
+   "local": null,
+   "periodo_inicio": "2025-05-12",
+   "periodo_fim": "2025-08-22",
+   "valor": "22.815.120,95",
+   "informacoes": "O segundo contrato localizado na mídia encontra-se datado de 12/05/2025 e foi firmado entre o escritório BARCI DE MORAES e a empresa VIKINGS PARTICIPAÇÕES LTDA (CNPJ 07.875.796/0001-75). [p. 157] LEONARDO PALHARES explica a DANIEL VORCARO detalhes sobre o instrumento: fez “duas minutas para vc escolher o deal”. A primeira com entrega dos ativos e transferência de todas as quotas, ficando VORCARO com opção de recompra por R$ 1,00 caso o contrato de honorários não seja cumprido. VORCARO responde que “Opcao 1 não é o negocio”, depois acrescenta “Os ativos sao deles...ja”. [p. 159–160] Os ativos mencionados seriam dois bens vinculados às empresas F24 (FRACTION 024 ADMINISTRACAO DE BEM PROPRIO S.A.) e F53 (PT-PCT ADMINISTRACAO DE BEM PROPRIO S.A.). A F24 é possuidora da aeronave modelo Legacy 650, prefixo PP-NLR, enquanto a F53 estava em fase de aquisição do Helicóptero EC 155 B1. [p. 161–162] No dia 19/05/2025, LEONARDO PALHARES envia a DANIEL VORCARO um Termo de Acordo e Dação em Pagamento do contrato da VIKING com o Escritório de VIVIANE DE MORAES. [p. 162] Conforme consta na brochura, a cota do avião Legacy 650 custaria US$ 5.512.951,89, enquanto a cota do helicóptero EC 155 B1 custaria US$ 1.335.014,01. [p. 165] Em 16/07/2025, LEONARDO PALHARES escreve que “A gente precisa iniciar o fluxo de pagamentos do escritório Biaci”; VORCARO responde que o fluxo de pagamentos será feito “num volume maior”, depois complementa “Faz urgente”. MARCOS escreve que eles “Já usaram aviões e helicópteros” e explica que não cobrou o valor variável do contrato ainda, “devido mudança de contrato de Barci para a outra empresa deles Lux”. [p. 166–167] No dia 24/07/2025, contato salvo como “Ana Claudia Financeiro1” diz a DANIEL VORCARO que LEONARDO PALHARES “está pedindo para pagar” a fatura emitida pelo Escritório de VIVIANE DE MORAES em nome da VIKING no montante de R$ 22.815.120,95. [p. 169] Em 21/08/2025, THATIANE PRIME informa VORCARO que o avião de prefixo PP-NLR está agendado para voar para “Barci” no dia 22/08. O banqueiro responde “Nao deixe de atender barci”. [p. 171]",
+   "pagina_inicio": 157,
+   "pagina_fim": 171,
+   "participacoes": [
+    {
+     "nome": "VIKINGS PARTICIPAÇÕES LTDA",
+     "documento": "cnpj:07875796000175",
+     "papel": "remetente"
+    },
+    {
+     "nome": "BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "documento": "nome:BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "papel": "beneficiario",
+     "tipo": "pessoa_juridica"
+    },
+    {
+     "nome": "DANIEL BUENO VORCARO",
+     "documento": "nome:DANIEL BUENO VORCARO",
+     "papel": "responsavel",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "LEONARDO PALHARES",
+     "documento": "nome:LEONARDO PALHARES",
+     "papel": "procurador",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "FRACTION 024 ADMINISTRACAO DE BEM PROPRIO S.A. (F24)",
+     "documento": "cnpj:41934366000115",
+     "papel": "outros"
+    },
+    {
+     "nome": "PT-PCT ADMINISTRACAO DE BEM PROPRIO S.A. (F53)",
+     "documento": "cnpj:56392085000155",
+     "papel": "outros"
+    },
+    {
+     "nome": "PRIME YOU",
+     "documento": "nome:PRIME YOU",
+     "papel": "outros",
+     "tipo": "pessoa_juridica"
+    },
+    {
+     "nome": "MARCUS VINICIUS DA MATA",
+     "documento": "nome:MARCUS VINICIUS DA MATA",
+     "papel": "outros",
+     "tipo": "pessoa_fisica"
+    },
+    {
+     "nome": "VIVIANE DE MORAES",
+     "documento": "nome:VIVIANE DE MORAES",
+     "papel": "outros",
+     "tipo": "pessoa_fisica"
+    }
+   ],
+   "bens": [
+    {
+     "id": "legacy",
+     "tipo": "veiculo",
+     "descricao": "Cota da aeronave Legacy 650, prefixo PP-NLR (empresa F24); na brochura da Prime You, US$ 5.512.951,89 — objeto do Termo de Acordo e Dação em Pagamento",
+     "valor": null,
+     "data_negocio": "2025-05-19"
+    },
+    {
+     "id": "ec155",
+     "tipo": "veiculo",
+     "descricao": "Cota do helicóptero EC 155 B1 (empresa F53, em fase de aquisição); na brochura da Prime You, US$ 1.335.014,01 — objeto do mesmo termo de dação",
+     "valor": null,
+     "data_negocio": "2025-05-19"
+    }
+   ],
+   "transacoes": [
+    {
+     "origem": "cnpj:07875796000175",
+     "destino": "nome:BARCI DE MORAES SOCIEDADE DE ADVOCACIA",
+     "valor": "22.815.120,95",
+     "tipo": "outros",
+     "natureza": "individual",
+     "situacao": "cobrado",
+     "data": "2025-07-24",
+     "descricao": "fatura emitida pelo escritório em nome da Viking; Palhares “está pedindo para pagar”. O pagamento não é confirmado na peça.",
+     "pagina": 169,
+     "trecho": "a fatura emitida pelo Escritório de VIVIANE DE MORAES em nome da VIKING no montante de R$ 22.815.120,95"
+    }
+   ],
+   "ocorrencias": []
+  }
+ ]
+}

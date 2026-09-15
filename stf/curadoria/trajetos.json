@@ -150,6 +150,132 @@
    "lacunas": "O extrato da conta da Super no Master não está nos autos públicos; a ligação entre os R$ 650 milhões e as escrituras de 2024 é de datas e valores, não de rastreio conta a conta. O RIF 140515 cobre a conta da Super no Sicoob (junho de 2022), não a conta no Master."
   },
   {
+   "id": "master-escritorio-barci-de-moraes",
+   "titulo": "Do Banco Master ao escritório Barci de Moraes, segundo a PF",
+   "pergunta": "O que a PF diz sobre pagamentos do Master ao escritório de Viviane de Moraes?",
+   "resumo": "Na análise do celular de Daniel Vorcaro feita em 72 horas por ordem do relator (IPJ-A 3298613/2026, 27/08/2026), a Polícia Federal descreve um contrato de prestação de serviços entre o Banco Master e o escritório Barci de Moraes, assinado em 23/01/2024, de R$ 3 milhões mensais, e três transferências de R$ 3.422.268,14 (08/02/2024, 15/03/2024 e 14/07/2025), com Vorcaro dizendo que era “o pgto mais importante que temos” e que se podia pagar “sem nota”. Descreve ainda um segundo contrato, de 12/05/2025, entre a Vikings Participações e o mesmo escritório, com dação em pagamento de cotas de um jato Legacy 650 e de um helicóptero EC 155, e uma fatura de R$ 22.815.120,95 em julho de 2025. A própria PF ressalva que a análise não é exaustiva. A PGR sustenta que a ordem de investigar é nula e pediu a extinção da petição; a Presidência do STF suspendeu a decisão do relator e o Plenário decide em 15/09/2026.",
+   "quem_afirma": "Polícia Federal (IPJ-A 3298613/2026, na Pet 16.662); contrapontos da Procuradoria-Geral da República e da Presidência do STF, nos mesmos autos.",
+   "passos": [
+    {
+     "de": "Banco Master",
+     "para": "Barci de Moraes Sociedade de Advocacia",
+     "valor": "3.000.000,00",
+     "quando": "contrato assinado em 23/01/2024",
+     "como": "Minuta enviada por “Vivi Moraes” a Vorcaro em 11/01/2024; segundo a PF, os metadados da minuta registram última modificação por usuário “Ministro Alexandre de Moraes”. Versão final “de R$ 3 milhões mensais”; prazo de 3 anos, segundo mensagens com Fábio Faria; assinado por Vorcaro e Angelo Antonio Ribeiro da Silva. Valor mensal, situação: previsto.",
+     "provas": [
+      {
+       "comunicacao": [
+        "relatorio",
+        "5.2"
+       ]
+      }
+     ]
+    },
+    {
+     "de": "Banco Master",
+     "para": "Barci de Moraes Sociedade de Advocacia",
+     "valor": "10.266.804,42",
+     "quando": "08/02/2024, 15/03/2024 e 14/07/2025",
+     "como": "Três transferências de R$ 3.422.268,14 descritas pela PF (comprovante enviado a Vorcaro; registro enviado no dia da cobrança “O careca não pode atrasar”; diálogo de 14/07/2025). Em 01/10/2025 um funcionário informa que “foi pago”, sem valor. Vorcaro: “É op pgto mais importante que temos”, “Pode pagar sempre, sem nota”; depois, que os valores “não devem ser pagos por meio do instrumento de pagamento PIX”.",
+     "provas": [
+      {
+       "comunicacao": [
+        "relatorio",
+        "5.4"
+       ]
+      },
+      {
+       "documento": 307,
+       "pagina": 152,
+       "trecho": "É op pgto mais importante que temos”. Na sequência,\nVORCARO complementa que “Pode pagar sempre, sem nota”",
+       "quem": "Polícia Federal (IPJ-A)"
+      },
+      {
+       "documento": 307,
+       "pagina": 156,
+       "trecho": "não devem ser pagos por meio do instrumento de pagamento PIX",
+       "quem": "Polícia Federal (IPJ-A)"
+      }
+     ]
+    },
+    {
+     "de": "Vikings Participações Ltda",
+     "para": "Barci de Moraes Sociedade de Advocacia",
+     "valor": "22.815.120,95",
+     "quando": "contrato de 12/05/2025; fatura de 24/07/2025",
+     "como": "Segundo contrato, com dação em pagamento de cotas de um jato Legacy 650 (prefixo PP-NLR, empresa F24) e de um helicóptero EC 155 B1 (empresa F53); brochura da Prime You com US$ 5,51 milhões e US$ 1,34 milhão pelas cotas. Fatura do escritório em nome da Viking, que Palhares “está pedindo para pagar” — pagamento não confirmado na peça (situação: cobrado). Em 21/08/2025, o jato PP-NLR é agendado “para voar para Barci”.",
+     "provas": [
+      {
+       "comunicacao": [
+        "relatorio",
+        "5.5"
+       ]
+      }
+     ]
+    },
+    {
+     "de": "Polícia Federal",
+     "para": "ressalva da própria PF",
+     "valor": null,
+     "quando": "27/08/2026",
+     "como": "“Em razão do reduzido lapso temporal de 72 horas estabelecido para o atendimento da requisição judicial, a análise realizada não possui caráter exaustivo.”",
+     "provas": [
+      {
+       "documento": 307,
+       "pagina": 217,
+       "trecho": "não possui caráter exaustivo, tendo sido transcritas apenas as\nmenções nominais diretamente identificadas aos envolvidos",
+       "quem": "Polícia Federal (IPJ-A)"
+      }
+     ]
+    }
+   ],
+   "contrapontos": [
+    {
+     "quem": "Procuradoria-Geral da República (Paulo Gonet, 01/09/2026)",
+     "o_que": "“A ordem dada à autoridade policial para investigar pessoas específicas, sem pedido do Ministério Público e sem iniciativa da autoridade policial, é nula”; “sendo nula a ordem e o seu resultado, cabe ao relator reconhecê-lo e extinguir a Petição”.",
+     "provas": [
+      {
+       "documento": 315,
+       "pagina": 7,
+       "trecho": "A ordem dada à autoridade policial para investigar pessoas\nespecíficas, sem pedido do Ministério Público e sem iniciativa da\nautoridade policial, é nula",
+       "quem": "Procuradoria-Geral da República"
+      },
+      {
+       "documento": 315,
+       "pagina": 8,
+       "trecho": "Sendo nula a ordem e o seu resultado, cabe ao relator\nreconhecê-lo e extinguir a Petição",
+       "quem": "Procuradoria-Geral da República"
+      }
+     ]
+    },
+    {
+     "quem": "min. André Mendonça (relator, 08/09/2026)",
+     "o_que": "Na Pet 16.662, afastou preventivamente o diretor-geral e o diretor de inteligência da Polícia Federal e determinou apurações sobre a produção de relatórios de inteligência.",
+     "provas": [
+      {
+       "documento": 320,
+       "pagina": 32,
+       "trecho": "o afastamento preventivo dos senhores Andrei Augusto\nPassos Rodrigues e Leandro Almada da Costa dos cargos de\nDelegado e Diretor-Geral da Polícia Federal",
+       "quem": "min. André Mendonça (relator)"
+      }
+     ]
+    },
+    {
+     "quem": "Presidência do STF (min. Edson Fachin, 09/09/2026)",
+     "o_que": "Suspendeu a decisão do relator (SL 1.946) e marcou sessão plenária extraordinária para 15/09/2026 exclusivamente sobre a Pet 16.662.",
+     "provas": [
+      {
+       "documento": 328,
+       "pagina": 5,
+       "trecho": "defiro a medida liminar requerida, de modo a determinar a\nsuspensão da decisão de Id 83895668, de lavra do Ministro André\nMendonça, no âmbito da Pet 16.662",
+       "quem": "Presidência do STF"
+      }
+     ]
+    }
+   ],
+   "lacunas": "Não há nos autos públicos manifestação do min. Alexandre de Moraes ou do escritório sobre os contratos; o Ofício GMAM 11/2026 trata só do sigilo da Pet 15.645. O contrato integral e os comprovantes estão nos anexos da IPJ-A, não transcritos aqui. O que o Plenário decidir em 15/09 entra nesta página com fonte."
+  },
+  {
    "id": "super-turma-e-banco-central",
    "titulo": "Da Super para \"a Turma\" e para servidores do Banco Central, segundo a PF",
    "pergunta": "Para quem a Super pagava, segundo a investigação?",

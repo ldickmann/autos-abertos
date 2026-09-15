@@ -472,7 +472,7 @@ CREATE TABLE IF NOT EXISTS fluxo_ator (
 CREATE TABLE IF NOT EXISTS fluxo_comunicacao (
     id                INTEGER PRIMARY KEY,
     fonte_id          INTEGER NOT NULL REFERENCES fluxo_fonte(id),
-    secao             TEXT NOT NULL CHECK (secao IN ('suspeita','automatica','especie')),
+    secao             TEXT NOT NULL CHECK (secao IN ('suspeita','automatica','especie','relatorio')),   -- relatorio = seção de peça da PF/PGR
     numero            TEXT NOT NULL,          -- numeração no relatório: 1, 2.1, 3.4...
     titular_ator_id   INTEGER REFERENCES fluxo_ator(id),
     segmento          TEXT,                   -- Banco Central - Atípicas | Bens de luxo ou de alto valor | Notários e Registradores
@@ -514,7 +514,8 @@ CREATE TABLE IF NOT EXISTS fluxo_transacao (
     bem_id          INTEGER REFERENCES fluxo_bem(id),
     descricao       TEXT,
     pagina          INTEGER NOT NULL,
-    trecho_fonte    TEXT NOT NULL
+    trecho_fonte    TEXT NOT NULL,
+    situacao        TEXT NOT NULL DEFAULT 'efetuado' CHECK (situacao IN ('efetuado','previsto','cobrado','nao_informado'))
 );
 CREATE INDEX IF NOT EXISTS ix_fluxo_transacao_origem ON fluxo_transacao(origem_ator_id);
 CREATE INDEX IF NOT EXISTS ix_fluxo_transacao_destino ON fluxo_transacao(destino_ator_id);
@@ -572,7 +573,22 @@ def abrir(caminho: str | Path) -> sqlite3.Connection:
 
 def criar_schema(con: sqlite3.Connection) -> None:
     con.executescript(SCHEMA)
+    _migrar(con)
     con.commit()
+
+
+def _migrar(con: sqlite3.Connection) -> None:
+    """Colunas adicionadas depois da criação da tabela (projeção; `reconstruir` recria tudo do zero)."""
+    cols = {r[1] for r in con.execute("PRAGMA table_info(fluxo_transacao)")}
+    if cols and "situacao" not in cols:
+        con.execute("ALTER TABLE fluxo_transacao ADD COLUMN situacao TEXT NOT NULL DEFAULT 'efetuado'")
+    # o CHECK de `secao` não migra por ALTER: se a tabela é da versão antiga, as tabelas fluxo_* (projeção do dataset
+    # curado) são recriadas vazias e precisam de `ingerir-fluxos` de novo
+    sql = con.execute("SELECT sql FROM sqlite_master WHERE name='fluxo_comunicacao'").fetchone()
+    if sql and "'relatorio'" not in sql[0]:
+        for t in ("fluxo_ocorrencia", "fluxo_transacao", "fluxo_bem", "fluxo_participacao", "fluxo_comunicacao", "fluxo_ator", "fluxo_fonte"):
+            con.execute(f"DROP TABLE IF EXISTS {t}")
+        con.executescript(SCHEMA)
 
 
 def apagar_projecao(con: sqlite3.Connection) -> None:

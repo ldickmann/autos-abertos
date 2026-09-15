@@ -5,6 +5,7 @@ id,nome,tipo,documento_mascarado,atividade,papeis,entidade_id,recebeu_reais,pago
 68,HIGH YIELD DISTRESSED FUNDO DE,pessoa_juridica,25.295.530/0001-35,,vendedor,,30903911.00,0.00,1
 10,IGREJA BATISTA DA LAGOINHA BELVEDERE,pessoa_juridica,57.391.420/0001-63,ATIVIDADES DE ORGANIZACOES RELIGIOSAS,remetente;titular,,22808395.31,11779752.28,41
 76,VITOR SILVA LOURENCO,pessoa_fisica,***.259.538-**,,titular,,16990000.00,0.00,1
+88,BARCI DE MORAES SOCIEDADE DE ADVOCACIA,pessoa_juridica,,,beneficiario,,10266804.42,0.00,5
 1,SUPER EMPREENDIMENTOS E PARTICIPACOES S.A,pessoa_juridica,31.446.245/0001-70,,remetente;titular,29,9900000.00,197873521.46,21
 59,KAROLINA SANTOS TRAINOTTI,pessoa_fisica,***.640.489-**,,titular,,4347000.00,0.00,1
 18,OCP INCORP E CONSTRUTORA LTDA,pessoa_juridica,02.237.485/0001-67,INCORPORACAO DE EMPREENDIMENTOS IMOBILIARIOS,beneficiario,,2566200.00,0.00,1
@@ -35,6 +36,7 @@ id,nome,tipo,documento_mascarado,atividade,papeis,entidade_id,recebeu_reais,pago
 53,ANTONIO AUGUSTO CONTE,pessoa_fisica,***.959.918-**,,beneficiario,504,100000.00,0.00,1
 4,BPO GESTAO DE DISPONIVEL LTDA,pessoa_juridica,53.537.680/0001-43,,outros,,62636.81,0.00,1
 37,FABIANO CAMPOS ZETTEL,pessoa_fisica,***.818.816-**,ADVOGADO - ADVOGADO,remetente;procurador;outros;responsavel,6,0.00,28405000.00,6
+87,BANCO MASTER,pessoa_juridica,,,remetente,272,0.00,10266804.42,4
 47,MORIAH ASSET EMPREENDIMENTOS E PARTICIPACOES LTDA,pessoa_juridica,02.425.349/0002-81,,titular,28,0.00,4950000.00,4
 7,LAGOINHA PARTICIPACOES LTDA.,pessoa_juridica,54.305.666/0001-87,HOLDINGS DE INSTITUICOES NAO-FINANCEIRAS,remetente,,0.00,1100000.00,1
 39,LUCAS FERNANDEZ NOVAIS CABALEIRO,pessoa_fisica,***.012.906-**,VENDEDOR DE COMERCIO VAREJISTA E ATACADISTA,remetente,,0.00,843487.00,1
@@ -56,32 +58,43 @@ id,nome,tipo,documento_mascarado,atividade,papeis,entidade_id,recebeu_reais,pago
 33,JONAS SOARES DE PAIVA,pessoa_fisica,***.187.046-**,VENDEDOR - VENDEDOR DE COMERCIO VAREJISTA E ATACADISTA,remetente,,0.00,24518.20,1
 43,MAXIMO DA ROCHA OLIVEIRA JR,pessoa_fisica,***.071.096-**,,remetente,,0.00,22815.64,1
 45,LUIZ PHILLIPI MACHADO DE MORAES MOURAO,pessoa_fisica,***.166.396-**,DO LAR,remetente,10,0.00,22000.00,1
+94,ALBERTO FELIX,pessoa_fisica,,,outros,,0.00,0.00,0
 80,ALICIA BUFFONI ROQUE DA SILVA,pessoa_fisica,***.732.296-**,,outros,,0.00,0.00,0
 52,ANA CLAUDIA QUEIROZ DE PAIVA,pessoa_fisica,***.476.856-**,,responsavel;procurador,25,0.00,0.00,0
 86,ANA LUIZA DA SILVA GALETI NEHE,pessoa_fisica,***.067.707-**,,titular,,0.00,0.00,0
 31,ANA PAULA PACIFICO FLORET,pessoa_fisica,***.446.138-**,,procurador,,0.00,0.00,0
+90,ANGELO ANTONIO RIBEIRO DA SILVA,pessoa_fisica,,,responsavel;outros,85,0.00,0.00,0
 70,BRL TRUST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.,pessoa_juridica,13.486.793/0001-42,,titular,,0.00,0.00,0
 35,CARLOS MARTINS DE BARROS,pessoa_fisica,***.974.686-**,,procurador,,0.00,0.00,0
 62,CAROLINA GOMES DE OLIVEIRA ROSSI CUPPOLONI,pessoa_fisica,***.414.888-**,,titular,,0.00,0.00,0
 65,CRISTINA DE AZEVEDO BOHRER,pessoa_fisica,***.337.790-**,,titular,,0.00,0.00,0
+89,DANIEL BUENO VORCARO,pessoa_fisica,,,responsavel,2,0.00,0.00,0
 72,DANIELA ASSARITO BONIFACIO,pessoa_fisica,***.334.648-**,,procurador,,0.00,0.00,0
+92,FABIO FARIA,pessoa_fisica,,,outros,,0.00,0.00,0
 57,FIRMINO MATIAS LUCIO JUNIOR,pessoa_fisica,***.909.968-**,,procurador,,0.00,0.00,0
+96,FRACTION 024 ADMINISTRACAO DE BEM PROPRIO S.A. (F24),pessoa_juridica,41.934.366/0001-15,,outros,,0.00,0.00,0
 81,GUSTAVO CISTOLO RIBEIRO,pessoa_fisica,***.027.866-**,,titular,,0.00,0.00,0
 82,HELIO ANACLETO DE SOUZA,pessoa_fisica,***.400.516-**,,titular,,0.00,0.00,0
 60,IM2D PARTICIPACOES LTDA.,pessoa_juridica,02.684.297/0001-87,,titular,,0.00,0.00,0
 61,ISAAC DUEK,pessoa_fisica,***.617.728-**,,procurador,,0.00,0.00,0
 84,JATAHI EMPREENDIMENTOS IMOBILIARIOS E COMERCIO LTDA,pessoa_juridica,66.430.232/0001-98,,titular,,0.00,0.00,0
+93,LEONARDO PALHARES,pessoa_fisica,,,procurador,333,0.00,0.00,0
 79,LUIS ROBERTO NEVES DE SOUZA,pessoa_fisica,***.758.246-**,,titular,,0.00,0.00,0
 56,LUIZ HENRIQUE MAKSOUD,pessoa_fisica,***.362.368-**,,procurador,,0.00,0.00,0
 66,MARCEL ZANIN MAURO,pessoa_fisica,***.098.098-**,,titular,,0.00,0.00,0
 69,MARCELO ADRIANO DE ALMEIDA,pessoa_fisica,***.102.798-**,,titular,,0.00,0.00,0
+99,MARCUS VINICIUS DA MATA,pessoa_fisica,,,outros,,0.00,0.00,0
 85,MARIA LÚCIA DE SOUZA RODRIGUES,pessoa_fisica,***.364.326-**,,titular,,0.00,0.00,0
 77,NOAH EMPREENDIMENTOS E PARTICIPAÇÕES LTDA.,pessoa_juridica,46.671.515/0001-14,,titular,,0.00,0.00,0
 83,PATRICIA DE JESUS BUENO LEITE DE SOUZA,pessoa_fisica,***.834.848-**,,outros,,0.00,0.00,0
 78,PIPE PARTICIPACOES LTDA.,pessoa_juridica,31.825.443/0001-45,,titular,,0.00,0.00,0
+98,PRIME YOU,pessoa_juridica,,,outros,,0.00,0.00,0
+97,PT-PCT ADMINISTRACAO DE BEM PROPRIO S.A. (F53),pessoa_juridica,56.392.085/0001-55,,outros,,0.00,0.00,0
 74,RAFAEL DE MENEZES HAWILLA,pessoa_fisica,***.248.698-**,,procurador,,0.00,0.00,0
 64,RAFAEL FERNANDES ESTEVEZ,pessoa_fisica,***.487.410-**,,titular,,0.00,0.00,0
 63,RAFAEL ROSSI CUPPOLONI,pessoa_fisica,***.358.238-**,,titular,,0.00,0.00,0
 67,SINGULARE CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.,pessoa_juridica,62.285.390/0001-40,,procurador,,0.00,0.00,0
 71,TERRA- FUNDO DE INVESTIMENTO IMOBILIÁRIO,pessoa_juridica,13.320.290/0001-00,,titular,,0.00,0.00,0
 75,THAIS FABRILE BERLINGERI LOURENCO,pessoa_fisica,***.453.478-**,,titular,,0.00,0.00,0
+95,VIKINGS PARTICIPAÇÕES LTDA,pessoa_juridica,07.875.796/0001-75,,remetente,,0.00,0.00,1
+91,VIVIANE DE MORAES,pessoa_fisica,,,outros,,0.00,0.00,0

@@ -1,12 +1,13 @@
 # Mapa do caso (gerado)
 
-Gerado em 2026-09-14T23:43+00:00 por `python -m stf mapa`. Listagem determinística da base; sem interpretação. Use para achar lacunas: o que ainda não foi coletado, extraído ou ligado.
+Gerado em 2026-09-15T00:37+00:00 por `python -m stf mapa`. Listagem determinística da base; sem interpretação. Use para achar lacunas: o que ainda não foi coletado, extraído ou ligado.
 
 ## Processos
 
 | processo | incidente | publicidade | relator | profundidade | andamentos | partes | docs (com texto) | asserções | decisões (itens) | coletado em |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pet 15645 | 7526458 | Público | MIN. ANDRÉ MENDONÇA | None | 5 | 2 | 7 (6) | 0 | 0 | 2026-09-14 |
+| Pet 16662 | 7681133 | Público | MINISTRO PRESIDENTE AGENDA 2030 DA ONU: | None | 67 | 2 | 56 (30) | 0 | 0 | 2026-09-15 |
 | Pet 16704 | 7687920 | Público | MINISTRO PRESIDENTE | None | 155 | 5 | 45 (41) | 0 | 0 | 2026-09-14 |
 | Pet 15556 (semente) | 7514886 | Público | MIN. ANDRÉ MENDONÇA | 0 | 407 | 54 | 60 (60) | 1062 | 98 | 2026-09-14 |
 | Inq 5026 | 7473347 | Público | MIN. ANDRÉ MENDONÇA | 1 | 659 | 72 | 70 (70) | 450 | 55 | 2026-09-14 |
@@ -37,11 +38,12 @@ Gerado em 2026-09-14T23:43+00:00 por `python -m stf mapa`. Listagem determiníst
 - Pet 15556 —relacionado→ Pet 15499 (2026-02-27)
 - Pet 15556 —relacionado→ Pet 15504 (2026-02-27)
 - Pet 15645 —justifica_prevencao→ Pet 15198 (2026-03-11)
+- Pet 16662 —justifica_prevencao→ Pet 15556 (2026-08-28)
 - Rcl 88121 —autuado_a_partir→ Pet 15719 (2026-03-18)
 
 ## Grafo (uso interno)
 
-635 nós, 1953 arestas. Por tipo de aresta: afirma_em 59, cita_processo 110, citado_em 493, co_citacao 709, numero_origem 10, parte_em 318, relacao 15, relator_de 13, representa 222, votou_em 4.
+636 nós, 1957 arestas. Por tipo de aresta: afirma_em 59, cita_processo 110, citado_em 493, co_citacao 709, numero_origem 11, parte_em 318, relacao 16, relator_de 13, representa 222, votou_em 6.
 
 Entidades mais ligadas (grau, grupo curado, papéis, asserções que a citam):
 
@@ -83,6 +85,7 @@ Processos citados nos documentos e não coletados (77), por número de ligaçõe
 - Inq 5026: intimacao 30, decisao 20, despacho 10, termo 4, vista 3, certidao 3
 - Pet 15556: decisao 24, intimacao 18, vista 6, certidao 4, termo 2, despacho 2, voto 2, acordao 1, relatorio 1
 - Pet 15198: decisao 22, intimacao 19, vista 6, certidao 5, despacho 4, termo 1
+- Pet 16662: certidao 11, outro 11, decisao 9, intimacao 8, despacho 6, peticao 4, acordao 3, vista 2, voto 1, relatorio 1
 - Pet 16704: decisao 20, intimacao 14, certidao 9, vista 2
 - Pet 15504: decisao 4, termo 3, certidao 2, vista 2, intimacao 2
 - Pet 15499: decisao 3, certidao 2, intimacao 2, termo 2, vista 1
@@ -219,8 +222,9 @@ Dispositivos legais mais citados: art. 270 CPC (72 docs), art. 5 Lei 11.419/2006
 
 ## Lacunas conhecidas
 
-- 5 documento(s) sem download
-- 47 documento(s) sem extração de asserções válida
+- 28 documento(s) sem download
+- 3 documento(s) sem camada de texto (OCR pendente)
+- 77 documento(s) sem extração de asserções válida
 - 5 processo(s) sigiloso(s): o portal só devolve cabeçalho e andamentos genéricos
 - 77 processo(s) citados em documentos e não coletados (a maioria são precedentes; os que importam ao caso aparecem no topo da lista acima)
 - 53 proposta(s) de alias de entidade aguardando decisão humana (data/curadoria/aliases-propostos.json)

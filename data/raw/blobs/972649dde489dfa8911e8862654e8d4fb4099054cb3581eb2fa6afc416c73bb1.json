@@ -1,0 +1,95 @@
+[ {
+  "objetoIncidente" : {
+    "id" : 7689630,
+    "identificacao" : "Pet 16662 Ref",
+    "identificacaoCompleta" : "REFERENDO NA PETIÇÃO 16662",
+    "principal" : 7681133,
+    "pai" : 7681133,
+    "tipoObjetoIncidente" : {
+      "codigo" : "IJ",
+      "descricao" : "Incidente Julgamento"
+    },
+    "cadeia" : ""
+  },
+  "listasJulgamento" : [ {
+    "id" : 238746,
+    "nomeLista" : "546-2026",
+    "julgado" : false,
+    "admiteSustentacaoOral" : false,
+    "ministroRelator" : {
+      "codigo" : "52",
+      "descricao" : "MIN. ANDRÉ MENDONÇA"
+    },
+    "votoRelator" : {
+      "codigo" : "625101",
+      "descricao" : "Voto",
+      "link" : "https://digital.stf.jus.br/decisoes-monocraticas/api/public/votos/625101/conteudo.pdf"
+    },
+    "relatorioRelator" : {
+      "codigo" : "625100",
+      "descricao" : "Relatório",
+      "link" : "https://digital.stf.jus.br/decisoes-monocraticas/api/public/votos/625100/conteudo.pdf"
+    },
+    "complementoVotoRelator" : "",
+    "ministroDestaque" : "",
+    "ministroVista" : {
+      "codigo" : "36",
+      "descricao" : "MIN. GILMAR MENDES"
+    },
+    "ministroVistor" : "",
+    "sessao" : {
+      "numero" : 3,
+      "ano" : 2026,
+      "colegiado" : {
+        "codigo" : "2T",
+        "descricao" : "Segunda Turma"
+      },
+      "dataPrevistaInicio" : "08/09/2026",
+      "dataPrevistaFim" : "08/09/2026",
+      "dataInicio" : "08/09/2026",
+      "dataFim" : "08/09/2026",
+      "tipoJulgamentoVirtual" : "",
+      "tipoSessao" : {
+        "codigo" : "E",
+        "descricao" : "Sessão Extraordinária"
+      }
+    },
+    "textoDecisao" : "",
+    "cabecalho" : "",
+    "tipoListaJulgamento" : {
+      "codigo" : "7",
+      "descricao" : "Listas dos Relatores (Referendos)"
+    },
+    "tipoResultadoJulgamento" : "",
+    "votos" : [ {
+      "numeroOrdemVotoSessao" : 1,
+      "ministro" : {
+        "codigo" : "45",
+        "descricao" : "MIN. LUIZ FUX"
+      },
+      "dataVoto" : "08/09/2026",
+      "tipoVoto" : {
+        "codigo" : "9",
+        "descricao" : "Acompanho o relator"
+      },
+      "acompanhandoMinistro" : "",
+      "votoAntecipado" : "Sim",
+      "textos" : [ ]
+    }, {
+      "numeroOrdemVotoSessao" : 2,
+      "ministro" : {
+        "codigo" : "51",
+        "descricao" : "MIN. NUNES MARQUES"
+      },
+      "dataVoto" : "08/09/2026",
+      "tipoVoto" : {
+        "codigo" : "9",
+        "descricao" : "Acompanho o relator"
+      },
+      "acompanhandoMinistro" : "",
+      "votoAntecipado" : "Sim",
+      "textos" : [ ]
+    } ]
+  } ],
+  "sustentacoesOrais" : [ ]
+} ]

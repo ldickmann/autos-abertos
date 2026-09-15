@@ -8,19 +8,20 @@ export default function PaginaRede() {
   const dados = getFluxos();
   const fonte = dados.fontes[0];
   if (!fonte) return <p className="text-sm text-neutral-700">Nenhuma fonte de fluxos carregada ainda.</p>;
+  const fontes = dados.fontes;
 
   // situação nos autos: o status literal do portal para quem também é parte em algum processo do caso
   const entPorId = new Map(getEntidades().map((e) => [e.id, e]));
   const situacoes: Record<number, SituacaoAutos> = {};
   for (const a of dados.atores) {
     const e = a.entidade_id ? entPorId.get(a.entidade_id) : undefined;
-    if (!e) continue;
+    if (!e || !e.mencoes.length) continue;   // citada só em documentos: não é parte, não tem status
     const status = [...new Set(e.mencoes.map((m) => m.status_processual).filter(Boolean))];
     situacoes[a.id] = { entidade_id: e.id, status: status.join(" / ") || "parte", processos: [...new Set(e.mencoes.map((m) => m.processo).filter((p): p is string => !!p))] };
   }
 
   const atorPorId = new Map(dados.atores.map((a) => [a.id, a]));
-  const semResumo = dados.transacoes.filter((t) => t.natureza !== "resumo_tipo");
+  const semResumo = dados.transacoes.filter((t) => t.natureza !== "resumo_tipo" && t.situacao === "efetuado");
   const somaPor = (chave: (t: (typeof semResumo)[number]) => number | null) => {
     const m = new Map<number, number>();
     for (const t of semResumo) { const k = chave(t); if (k != null) m.set(k, (m.get(k) ?? 0) + t.valor_centavos); }
@@ -39,10 +40,13 @@ export default function PaginaRede() {
       <header className="max-w-3xl">
         <h1 className="text-2xl">Rede de pagamentos</h1>
         <p className="mt-1 text-sm text-neutral-700">
-          Tudo o que o <strong>RIF nº {fonte.identificador}</strong> do {fonte.orgao} ({fonte.emitido_em ? formatarData(fonte.emitido_em) : ""}) relata sobre quem pagou quanto a quem, em tabelas
-          com busca, filtros e ordenação. É a peça 2 da <Link className="underline" href={`/processo/${fonte.incidente}`}>{fonte.processo}</Link>, cujo sigilo foi levantado em 14/09/2026
-          (<Link className="underline" href={`/documento/${fonte.documento.id}`}>íntegra, {fonte.documento.paginas} páginas</Link>). Cada linha aponta a página e o trecho de onde saiu.
+          Quem pagou quanto a quem, segundo as peças dos autos, em tabelas com busca, filtros e ordenação. Cada linha aponta a página e o trecho de onde saiu. Fontes carregadas:
         </p>
+        <ul className="mt-1 list-disc pl-5 text-sm text-neutral-700">
+          {fontes.map((f) => (
+            <li key={f.id}><strong>{f.identificador}</strong> ({f.orgao}{f.emitido_em ? `, ${formatarData(f.emitido_em)}` : ""}) — <Link className="underline" href={`/documento/${f.documento.id}`}>{f.documento.titulo ?? "documento"}</Link>{f.documento.paginas ? `, ${f.documento.paginas} p.` : ""} na <Link className="underline" href={`/processo/${f.incidente}`}>{f.processo}</Link></li>
+          ))}
+        </ul>
         <Link href="/rede-de-pagamentos/trajetos" className="folha mt-3 block max-w-3xl border border-neutral-300 bg-white p-4 no-underline" style={{ borderLeft: "6px solid var(--marca)" }}>
           <span className="leitura block text-lg">Como esse dinheiro se liga ao Banco Master e a Daniel Vorcaro?</span>
           <span className="mt-1 block text-sm text-neutral-700">Os caminhos do dinheiro, passo a passo: do caixa do banco à Super, da Super à igreja e aos fornecedores, e a ponta que ainda está no escuro — cada passo com quem afirma e onde está escrito. →</span>
@@ -56,7 +60,7 @@ export default function PaginaRede() {
         <p className="text-xs text-neutral-600">Somas de operações datadas e agregados informados pelo comunicante (sem os resumos por tipo). Uma escritura conta pelo valor declarado.</p>
         <dl className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <div className="folha border border-neutral-300 bg-white p-3"><dt className="text-xs text-neutral-700">Valor total das {dados.resumo.comunicacoes} comunicações</dt><dd className="mt-1 text-xl tabular-nums">{formatarReais(totalComunicado)}</dd><dd className="text-xs text-neutral-600">soma do que cada comunicante declarou (há sobreposição entre elas)</dd></div>
-          <div className="folha border border-neutral-300 bg-white p-3"><dt className="text-xs text-neutral-700">Operações datadas</dt><dd className="mt-1 text-xl tabular-nums">{formatarReais(totalDatado)}</dd><dd className="text-xs text-neutral-600">{dados.resumo.individuais} transferências, escrituras e compras com data</dd></div>
+          <div className="folha border border-neutral-300 bg-white p-3"><dt className="text-xs text-neutral-700">Operações datadas</dt><dd className="mt-1 text-xl tabular-nums">{formatarReais(totalDatado)}</dd><dd className="text-xs text-neutral-600">{semResumo.filter((t) => t.natureza === "individual").length} transferências, escrituras e compras com data, efetuadas</dd></div>
           <div className="folha border border-neutral-300 bg-white p-3"><dt className="text-xs text-neutral-700">Pessoas e empresas</dt><dd className="mt-1 text-xl tabular-nums">{dados.resumo.atores}</dd><dd className="text-xs text-neutral-600">{partes} também são partes nos processos do caso</dd></div>
           <div className="folha border border-neutral-300 bg-white p-3"><dt className="text-xs text-neutral-700">Por ano</dt><dd className="mt-1 text-sm tabular-nums">{[...porAno.entries()].sort().map(([a, v]) => <span key={a} className="mr-3 inline-block">{a}: {formatarReais(v, true)}</span>)}</dd><dd className="text-xs text-neutral-600">operações datadas e agregados, pelo ano informado</dd></div>
         </dl>
@@ -77,8 +81,8 @@ export default function PaginaRede() {
         <details className="aviso-cartao mt-2 rounded border p-3 text-sm" open>
           <summary className="cursor-pointer font-semibold">O que estes dados são e não são</summary>
           <ul className="mt-2 list-disc space-y-1 pl-5">
-            <li>Não são prova: um RIF reúne o que bancos, cooperativas, cartórios e concessionárias comunicaram ao COAF por considerarem atípico ou por cruzar um limite objetivo. O próprio relatório avisa que RIFs &quot;por si sós, não constituem prova&quot; (RE 1.055.941; Rcl 61.944).</li>
-            <li>Não registram pagamentos do Banco Master nem de Daniel Vorcaro. Os fluxos giram em torno de entidades ligadas a Fabiano Campos Zettel; pessoas da família Vorcaro aparecem como remetentes para a igreja. O modelo de dados é genérico e receberá as outras peças do acervo.</li>
+            <li>Não são prova: o RIF reúne o que bancos, cooperativas, cartórios e concessionárias comunicaram ao COAF por considerarem atípico ou por cruzar um limite objetivo — o próprio relatório avisa que RIFs &quot;por si sós, não constituem prova&quot; (RE 1.055.941; Rcl 61.944); a informação da PF é a leitura policial de mensagens de um celular, feita em 72 horas e, nas palavras da própria PF, sem &quot;caráter exaustivo&quot;. A PGR opinou pela nulidade da ordem que gerou essa análise; o Plenário decide em 15/09/2026.</li>
+            <li>Cada fluxo tem uma <strong>situação</strong>: efetuado (a peça descreve o pagamento como feito), previsto (valor de contrato) ou cobrado (fatura emitida, pagamento não confirmado). Só os efetuados entram nas somas.</li>
             <li>Aparecer aqui não significa ser investigado: vendedores de imóveis, prestadores de serviço e doadores constam porque o comunicante os citou. A coluna &quot;situação nos autos&quot; mostra o status literal do portal do STF só para quem é parte em algum processo do caso.</li>
             <li>CPFs aparecem mascarados (***.###.###-**); RG, endereços e placas ficaram fora. Os nomes são os que constam no relatório.</li>
           </ul>

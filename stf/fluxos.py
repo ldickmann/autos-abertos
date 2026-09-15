@@ -47,6 +47,8 @@ def mascarar_documento(doc: str) -> str | None:
     ator citado só por nome ("nome:...") não tem documento."""
     if doc.startswith("nome:"):
         return None
+    if doc.startswith("cpf:") and len(doc) == 10:      # referência já mascarada (só os seis dígitos do meio)
+        return f"***.{doc[4:7]}.{doc[7:10]}-**"
     d = _digitos(doc)
     if len(d) == 11:
         return f"***.{d[3:6]}.{d[6:9]}-**"
@@ -61,6 +63,10 @@ def chave_ator(doc: str) -> tuple[str, str]:
     if doc.startswith("nome:"):
         from .entidades import normalizar
         return f"nome:{normalizar(doc[5:])}", "desconhecido"
+    if doc.startswith("cpf:") and doc[4:].isdigit() and len(doc) == 10:
+        return doc, "pessoa_fisica"
+    if doc.startswith("cnpj:") and doc[5:].isdigit() and len(doc) == 19:
+        return doc, "pessoa_juridica"
     d = _digitos(doc)
     if len(d) == 14:
         return f"cnpj:{d}", "pessoa_juridica"

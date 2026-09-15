@@ -11,7 +11,7 @@ import type { Prova } from "@/lib/tipos";
 export type Ponto = { texto: ReactNode; provas?: Prova[]; fonte?: { href: string; rotulo: string } };
 
 function rotuloProva(p: Prova): string {
-  if (p.tipo === "comunicacao") return `RIF p. ${p.pagina}`;
+  if (p.tipo === "comunicacao") return `${p.secao === "relatorio" ? "IPJ-A" : "RIF"} p. ${p.pagina}`;
   const t = (p.documento_titulo ?? "documento").replace(/ - .*$/, "");
   return `${t} p. ${p.pagina}`;
 }
@@ -30,7 +30,7 @@ export function PontosChave({ titulo = "Pontos-chave", itens, nota, id = "pontos
                 {p.provas.map((pr, k) => (
                   <Link key={k} className="rounded border border-neutral-300 px-1.5 py-px no-underline hover:bg-neutral-100" href={`/documento/${pr.documento_id}#p-${pr.pagina}`}
                     title={pr.tipo === "assercao" ? `${pr.atribuida_a ?? "registro dos autos"}: ${pr.texto}` : pr.tipo === "documento" ? `${pr.atribuida_a ?? "peça"}: “${pr.trecho_fonte}”` : `${pr.comunicante ?? "comunicante"} ao COAF`}>
-                    {pr.tipo === "assercao" ? <BadgeEpistemico tipo={pr.tipo_epistemico} /> : <span className="carimbo rounded-sm border px-1 text-[10px] font-medium">{pr.tipo === "documento" ? "peça" : "COAF"}</span>} {rotuloProva(pr)}
+                    {pr.tipo === "assercao" ? <BadgeEpistemico tipo={pr.tipo_epistemico} /> : <span className="carimbo rounded-sm border px-1 text-[10px] font-medium">{pr.tipo === "documento" ? "peça" : pr.secao === "relatorio" ? "PF" : "COAF"}</span>} {rotuloProva(pr)}
                   </Link>
                 ))}
               </span>

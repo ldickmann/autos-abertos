@@ -192,7 +192,7 @@ export type FluxoAtor = {
 };
 export type FluxoBem = { id: number; tipo: "veiculo" | "imovel"; descricao: string; valor_centavos: number | null; valor_referencia_centavos: number | null; data_negocio: string | null };
 export type FluxoComunicacao = {
-  id: number; fonte_id: number; secao: "suspeita" | "automatica" | "especie"; numero: string; titular_ator_id: number | null; segmento: string | null;
+  id: number; fonte_id: number; secao: "suspeita" | "automatica" | "especie" | "relatorio"; numero: string; titular_ator_id: number | null; segmento: string | null;
   comunicante: string | null; local: string | null; periodo_inicio: string | null; periodo_fim: string | null; valor_centavos: number | null;
   creditos_centavos: number | null; debitos_centavos: number | null; informacoes: string | null; consideracoes: string | null;
   pagina_inicio: number; pagina_fim: number; documento_id: number | null;
@@ -202,6 +202,7 @@ export type FluxoTransacao = {
   id: number; comunicacao_id: number; origem_ator_id: number | null; destino_ator_id: number | null; valor_centavos: number; data: string | null;
   periodo_inicio: string | null; periodo_fim: string | null; tipo: string; natureza: "individual" | "agregado" | "resumo_tipo"; quantidade: number | null;
   bem_id: number | null; descricao: string | null; pagina: number; trecho_fonte: string; documento_id: number | null; secao: FluxoComunicacao["secao"];
+  situacao: "efetuado" | "previsto" | "cobrado" | "nao_informado";
 };
 export type FluxoAresta = {
   origem: number; destino: number; dirigida: boolean; valor_centavos: number; n: number; transacoes: number[]; comunicacao_id?: number;

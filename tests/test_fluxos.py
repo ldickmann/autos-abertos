@@ -51,10 +51,12 @@ def test_ingerir_fluxos_cria_ator_por_nome_quando_nao_ha_documento(tmp_path):
     con = _banco_com_documento()
     d = _dataset()
     d["comunicacoes"][0]["participacoes"].append({"nome": "DUBEM LTDA", "documento": "nome:DUBEM LTDA", "papel": "beneficiario"})
+    d["comunicacoes"][0]["participacoes"].append({"nome": "BANCO TESTE", "documento": "nome:BANCO TESTE", "papel": "outros", "tipo": "pessoa_juridica"})
     arq = tmp_path / "rif.json"; arq.write_text(json.dumps(d, ensure_ascii=False), "utf-8")
     ingerir_fluxos(con, arq)
     a = con.execute("SELECT * FROM fluxo_ator WHERE chave='nome:DUBEM LTDA'").fetchone()
     assert a["tipo"] == "desconhecido" and a["documento_mascarado"] is None and a["nome"] == "DUBEM LTDA"
+    assert con.execute("SELECT tipo FROM fluxo_ator WHERE chave='nome:BANCO TESTE'").fetchone()[0] == "pessoa_juridica"   # tipo informado pela curadoria
 
 
 # ---------------------------------------------------------------- parsers
@@ -364,3 +366,42 @@ def test_exportar_pontos_chave_resolve_provas_e_recusa_ponto_sem_prova(tmp_path)
     assert out["inicio"][0]["provas"][0]["atribuida_a"] == "Polícia Federal" and out["inicio"][0]["texto"].startswith("Fulano")
     with pytest.raises(ValueError):
         exportar_pontos_chave(con, {"inicio": [{"texto": "sem prova", "provas": []}]})
+
+
+# ---------------------------------------------------------------- peças da PF (seção 'relatorio') e situação do fluxo
+
+def test_secao_relatorio_e_situacao_do_fluxo(tmp_path):
+    con = _banco_com_documento()
+    d = _dataset()
+    c = d["comunicacoes"][0]
+    c["secao"] = "relatorio"; c["numero"] = "5.4"
+    c["transacoes"][0]["situacao"] = "efetuado"
+    c["transacoes"].append({"origem": "027.818.816-86", "destino": "57.391.420/0001-63", "valor": "3.000.000,00", "tipo": "outros", "natureza": "agregado",
+                            "situacao": "previsto", "descricao": "valor mensal do contrato", "pagina": 3, "trecho": "Relacionados CPF/CNPJ"})
+    assert validar_dataset(d, paginas={3: PAG3}) == []
+    arq = tmp_path / "pf.json"; arq.write_text(json.dumps(d, ensure_ascii=False), "utf-8")
+    ingerir_fluxos(con, arq)
+    assert [r[0] for r in con.execute("SELECT situacao FROM fluxo_transacao ORDER BY id")] == ["efetuado", "previsto"]
+    d["comunicacoes"][0]["transacoes"][1]["situacao"] = "talvez"
+    assert any("situacao" in e for e in validar_dataset(d, paginas={3: PAG3}))
+
+
+def test_situacao_padrao_e_efetuado_e_export_so_soma_efetuados(tmp_path):
+    from stf.fluxos_export import exportar_fluxos
+    con = _banco_com_documento()
+    d = _dataset()
+    d["comunicacoes"][0]["transacoes"].append({"origem": "027.818.816-86", "destino": "57.391.420/0001-63", "valor": "1.000.000,00", "tipo": "outros", "natureza": "individual",
+                                               "situacao": "cobrado", "pagina": 3, "trecho": "Relacionados CPF/CNPJ"})
+    arq = tmp_path / "x.json"; arq.write_text(json.dumps(d, ensure_ascii=False), "utf-8")
+    ingerir_fluxos(con, arq)
+    assert con.execute("SELECT situacao FROM fluxo_transacao WHERE valor_centavos=1920500000").fetchone()[0] == "efetuado"
+    out = exportar_fluxos(con)
+    igreja = next(a for a in out["atores"] if a["chave"] == "cnpj:57391420000163")
+    assert igreja["totais"]["entradas_centavos"] == 1_920_500_000            # o cobrado não soma
+    assert next(t for t in out["transacoes"] if t["valor_centavos"] == 100_000_000)["situacao"] == "cobrado"
+
+
+def test_referencia_de_ator_ja_mascarada_e_aceita():
+    assert chave_ator("cpf:818816") == ("cpf:818816", "pessoa_fisica")
+    assert mascarar_documento("cpf:818816") == "***.818.816-**"
+    assert chave_ator("cnpj:57391420000163") == ("cnpj:57391420000163", "pessoa_juridica")
