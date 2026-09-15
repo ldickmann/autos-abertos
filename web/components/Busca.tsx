@@ -20,6 +20,15 @@ export function Busca({ processos }: { processos: { incidente: number; rotulo: s
   const [inc, setInc] = useState("");
   const [erro, setErro] = useState<string | null>(null);
 
+  // a consulta vem do cabeçalho (/busca/?q=…) ou de um link compartilhado; e volta para a URL a cada mudança
+  useEffect(() => { const q0 = new URLSearchParams(window.location.search).get("q"); if (q0) setQ(q0); }, []);
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search);
+    if (q.trim()) p.set("q", q.trim()); else p.delete("q");
+    const qs = p.toString();
+    window.history.replaceState(null, "", `${window.location.pathname}${qs ? `?${qs}` : ""}`);
+  }, [q]);
+
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/data/busca.json`)
       .then((r) => r.json())

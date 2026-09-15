@@ -176,6 +176,20 @@ export type NoGrafo = { id: string; tipo: "processo" | "entidade"; rotulo: strin
 export type ArestaGrafo = { origem: string; destino: string; tipo: string; dados: Record<string, unknown> };
 export type Grafo = { nodes: NoGrafo[]; edges: ArestaGrafo[] };
 
+/* Nomes chegam do portal e do RIF em CAIXA ALTA. Para leitura, caixa normal: partículas minúsculas (de, da, e),
+   siglas curtas e "S.A."/"S/A" como estão. O literal fica no atributo title de quem exibe. */
+const PARTICULAS = new Set(["de", "da", "do", "das", "dos", "e", "di", "du", "del", "della", "von", "van"]);
+const SIGLAS = new Set(["pgr", "stf", "stj", "mpf", "tcu", "cvm", "bcb", "fip", "spe", "cnpj", "cpf", "oab", "dpf", "coaf", "rif", "ipj", "utp", "ccb", "cri", "cdb", "epp", "eireli", "fii", "dtvm", "sa", "sgr"]);
+export function nomeProprio(nome: string | null | undefined): string {
+  if (!nome) return "";
+  return nome.trim().split(/\s+/).map((w, i) => {
+    const baixo = w.toLowerCase();
+    if (i > 0 && PARTICULAS.has(baixo)) return baixo;
+    if (w.replace(/[^A-Za-zÀ-ú]/g, "").length <= 2 || SIGLAS.has(baixo.replace(/\W/g, ""))) return w;  // BC, S.A., S/A, PGR, FIP
+    return w.split(/([-'])/).map((p) => (p.length > 1 ? p.charAt(0).toUpperCase() + p.slice(1).toLowerCase() : p)).join("");
+  }).join(" ");
+}
+
 export function formatarData(iso: string | null | undefined): string {
   if (!iso) return "—";
   const [a, m, d] = iso.slice(0, 10).split("-");

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import type { Assercao, ConversaItem, ConversasDocumento } from "@/lib/tipos";
+import { nomeProprio, type Assercao, type ConversaItem, type ConversasDocumento } from "@/lib/tipos";
 import { BadgeEpistemico } from "@/components/Badges";
 
 /*
@@ -17,10 +17,8 @@ import { BadgeEpistemico } from "@/components/Badges";
 
 type Pagina = { n: number; texto: string };
 
-const MIUDAS = new Set(["de", "da", "do", "dos", "das", "e"]);
 function nomeExibido(nome: string, aparelho: string, lado: "enviada" | "recebida" | null): string {
-  if (lado === "enviada") return aparelho;
-  return nome.split(/\s+/).map((w, i) => (i > 0 && MIUDAS.has(w.toLowerCase()) ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())).join(" ");
+  return lado === "enviada" ? aparelho : nomeProprio(nome);
 }
 function corDoNome(nome: string): number {
   let h = 0;

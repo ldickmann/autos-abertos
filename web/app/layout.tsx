@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./globals.css";
 import { NavPrincipal } from "@/components/NavPrincipal";
 import { TemaToggle } from "@/components/TemaToggle";
+import { BuscaCabecalho } from "@/components/BuscaCabecalho";
 import { Aviso } from "@/components/Aviso";
 import { getAvisos, getMeta, formatarDataHora } from "@/lib/data";
 
@@ -33,13 +34,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Pular para o conteúdo
         </a>
         <header className="border-b border-neutral-300 bg-white">
-          {/* Até lg: título e tema na primeira linha, nav como trilho rolável na segunda. Desktop: tudo numa linha. */}
-          <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto] items-center gap-x-3 gap-y-2 px-4 py-3 lg:grid-cols-[auto_1fr_auto]">
-            <Link href="/" className="font-serif text-xl tracking-tight">
-              Autos Abertos <span className="hidden font-sans text-sm text-neutral-700 sm:inline">processos públicos do STF</span>
+          {/* Linha 1: marca, busca (sempre à vista no desktop; botão no celular) e tema. Linha 2: as seções, como trilho rolável até lg. */}
+          <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto_auto] items-center gap-x-2 gap-y-2 px-4 py-2.5 md:grid-cols-[auto_1fr_auto] md:gap-x-4">
+            <Link href="/" className="font-serif text-xl tracking-tight no-underline">
+              Autos Abertos <span className="hidden font-sans text-sm text-neutral-700 lg:inline">o caso Banco Master no STF, peça por peça</span>
             </Link>
-            <div className="order-3 col-span-2 min-w-0 lg:order-2 lg:col-span-1 lg:justify-self-end"><NavPrincipal /></div>
-            <div className="order-2 lg:order-3"><TemaToggle /></div>
+            <BuscaCabecalho />
+            <div><TemaToggle /></div>
+            <div className="order-2 col-span-3 min-w-0"><NavPrincipal /></div>
           </div>
         </header>
         {avisos.map((a) => <Aviso key={a.id} aviso={a} compacto />)}

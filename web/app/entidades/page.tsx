@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { StatusProcessual } from "@/components/Badges";
 import { PontosChave } from "@/components/PontosChave";
-import { getEntidades } from "@/lib/data";
+import { getEntidades, nomeProprio } from "@/lib/data";
 
 export default function PaginaEntidades() {
   const ents = getEntidades().slice().sort((a, b) => b.mencoes.length - a.mencoes.length || a.nome.localeCompare(b.nome));
@@ -28,7 +28,7 @@ export default function PaginaEntidades() {
           <tbody>
             {ents.map((e) => (
               <tr key={e.id} className="border-b border-neutral-200 align-top">
-                <td data-rotulo="Nome" className="py-2 pr-3"><Link className="underline" href={`/entidade/${e.id}`}>{e.nome}</Link></td>
+                <td data-rotulo="Nome" className="py-2 pr-3"><Link className="underline" href={`/entidade/${e.id}`} title={`No portal: ${e.nome}`}>{nomeProprio(e.nome)}</Link></td>
                 <td data-rotulo="Tipo" className="py-2 pr-3">{e.tipo}{e.origem === "documento" ? " (terceiro mencionado)" : ""}</td>
                 <td data-rotulo="Processos e status" className="py-2 pr-3">
                   <ul className="flex flex-wrap gap-1">

@@ -11,7 +11,7 @@ export default function PaginaVerificar() {
   return (
     <div className="space-y-8">
       <header className="max-w-3xl">
-        <h1 className="text-2xl">Verificar</h1>
+        <h1 className="text-2xl">Conferir os dados</h1>
         <p className="leitura mt-1">
           Este site não pede confiança: cada documento e cada página do portal que ele usa tem uma impressão digital
           (um <em>hash</em> SHA-256) registrada no momento da cópia. Se um byte mudar, o hash muda. Aqui está como conferir,

@@ -23,7 +23,7 @@ const SECOES: Secao[] = [
   },
   {
     id: "autos", rotulo: "Autos", href: "/busca",
-    itens: [{ href: "/busca", rotulo: "Buscar nos autos" }, { href: "/assercoes", rotulo: "Asserções" }, { href: "/referencias", rotulo: "Referências" }],
+    itens: [{ href: "/busca", rotulo: "Buscar nos autos" }, { href: "/assercoes", rotulo: "Afirmações, e quem afirma" }, { href: "/referencias", rotulo: "O que as peças citam" }],
     casa: (p) => ["/busca", "/assercoes", "/referencias", "/processo", "/documento"].some((h) => p === h || p.startsWith(h + "/")),
   },
   {
@@ -33,7 +33,7 @@ const SECOES: Secao[] = [
   },
   {
     id: "ajuda", rotulo: "Ajuda", href: "/glossario",
-    itens: [{ href: "/glossario", rotulo: "Glossário" }, { href: "/verificar", rotulo: "Verificar" }, { href: "/sobre", rotulo: "Método" }],
+    itens: [{ href: "/glossario", rotulo: "Glossário" }, { href: "/verificar", rotulo: "Conferir os dados" }, { href: "/sobre", rotulo: "Como o site é feito" }],
     casa: (p) => ["/glossario", "/verificar", "/sobre"].some((h) => p === h || p.startsWith(h + "/")),
   },
 ];

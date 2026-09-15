@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { formatarData, formatarReais, type FluxoAtor, type FluxoComunicacao, type FluxosDados, type FluxoTransacao } from "@/lib/tipos";
+import { formatarData, formatarReais, nomeProprio, type FluxoAtor, type FluxoComunicacao, type FluxosDados, type FluxoTransacao } from "@/lib/tipos";
 
 /*
   Quatro tabelas sobre o mesmo dataset, todas ordenáveis por coluna e filtráveis por texto:
@@ -123,7 +123,7 @@ function ListaFluxos({ tx, atorPorId, comPorId, ponto }: { tx: FluxoTransacao[];
         return (
           <li key={t.id}>
             <span className="font-medium tabular-nums">{formatarReais(t.valor_centavos)}</span>
-            {ponto != null && <span> {saida ? "→ pagou a" : "← recebeu de"} <strong>{outroId == null ? "não informado" : atorPorId.get(outroId)?.nome}</strong></span>}
+            {ponto != null && <span> {saida ? "pagou a" : "recebeu de"} <strong>{outroId == null ? "não informado" : nomeProprio(atorPorId.get(outroId)?.nome)}</strong></span>}
             <span className="text-neutral-700"> · {ROTULO_TIPO[t.tipo] ?? t.tipo}{t.natureza === "agregado" ? `, ${t.quantidade ?? "?"} lançamentos` : t.natureza === "resumo_tipo" ? " (resumo por tipo)" : ""}{t.situacao !== "efetuado" ? ` · ${ROTULO_SITUACAO[t.situacao]}` : ""} · {quando(t)}{t.descricao ? ` · ${t.descricao}` : ""}</span>
             <span className="block text-neutral-600">{comPorId.get(t.comunicacao_id)?.comunicante ?? ""} · <LinkPagina documentoId={t.documento_id} pagina={t.pagina} /> · <q className="italic">{t.trecho_fonte}</q></span>
           </li>
@@ -181,11 +181,11 @@ export function TabelaAtores({ dados, situacoes, busca, onBuscar }: { dados: Flu
   const filtrosAtivos = movimento !== "todos" || situacao !== "todas" || tipo !== "todos";
 
   const contrapartes = (xs: LinhaAtor["deQuem"]) => xs.length ? xs.map((x, i) => (
-    <span key={x.id}>{i > 0 ? "; " : ""}<button type="button" className="underline" title={`Buscar ${x.nome}`} onClick={() => onBuscar(x.nome)}>{x.nome}</button> <span className="text-neutral-600">({formatarReais(x.valor, true)})</span></span>
+    <span key={x.id}>{i > 0 ? "; " : ""}<button type="button" className="underline" title={`Buscar ${x.nome}`} onClick={() => onBuscar(x.nome)}>{nomeProprio(x.nome)}</button> <span className="text-neutral-600">({formatarReais(x.valor, true)})</span></span>
   )) : "—";
 
   const colunas: Coluna<LinhaAtor>[] = [
-    { chave: "nome", rotulo: "Nome", valor: (r) => r.nome, celula: (r) => <><span className="font-medium">{r.nome}</span>{r.documento_mascarado && <span className="block text-xs text-neutral-600">{r.documento_mascarado}</span>}</> },
+    { chave: "nome", rotulo: "Nome", valor: (r) => r.nome, celula: (r) => <><span className="font-medium" title={`No relatório: ${r.nome}`}>{nomeProprio(r.nome)}</span>{r.documento_mascarado && <span className="block text-xs text-neutral-600">{r.documento_mascarado}</span>}</> },
     { chave: "tipo", rotulo: "Tipo", valor: (r) => ROTULO_ATOR[r.tipo] },
     { chave: "atividade", rotulo: "Atividade informada", valor: (r) => r.atividade?.toLowerCase() ?? null, classe: "max-w-[220px] text-xs" },
     { chave: "papeis", rotulo: "Papel no relatório", valor: (r) => r.papeis.join(", "), classe: "text-xs" },
@@ -251,8 +251,8 @@ export function TabelaFluxos({ dados, busca }: { dados: FluxosDados; busca: stri
   const total = filtradas.filter((t) => t.situacao === "efetuado").reduce((s, t) => s + t.valor_centavos, 0);
 
   const colunas: Coluna<FluxoTransacao>[] = [
-    { chave: "origem", rotulo: "De", valor: (t) => nome(t.origem_ator_id) || null, celula: (t) => nome(t.origem_ator_id) || <span className="text-xs text-neutral-600">não informado</span> },
-    { chave: "destino", rotulo: "Para", valor: (t) => nome(t.destino_ator_id) || null, celula: (t) => nome(t.destino_ator_id) || <span className="text-xs text-neutral-600">não informado</span> },
+    { chave: "origem", rotulo: "De", valor: (t) => nome(t.origem_ator_id) || null, celula: (t) => nomeProprio(nome(t.origem_ator_id)) || <span className="text-xs text-neutral-600">não informado</span> },
+    { chave: "destino", rotulo: "Para", valor: (t) => nome(t.destino_ator_id) || null, celula: (t) => nomeProprio(nome(t.destino_ator_id)) || <span className="text-xs text-neutral-600">não informado</span> },
     { chave: "valor", rotulo: "Valor", valor: (t) => t.valor_centavos, numerica: true, celula: (t) => formatarReais(t.valor_centavos) },
     { chave: "quando", rotulo: "Quando", valor: (t) => t.data ?? t.periodo_inicio ?? null, celula: (t) => <span className="whitespace-nowrap">{quando(t)}</span> },
     { chave: "tipo", rotulo: "Tipo", valor: (t) => ROTULO_TIPO[t.tipo] ?? t.tipo },
@@ -294,7 +294,7 @@ export function TabelaComunicacoes({ dados, busca }: { dados: FluxosDados; busca
   const linhas = useMemo(() => dados.comunicacoes.filter((c) => !q || [c.titular_ator_id ? atorPorId.get(c.titular_ator_id)?.nome : "", c.comunicante, c.local, c.informacoes, c.numero, ...c.participacoes.map((p) => atorPorId.get(p.ator_id)?.nome ?? "")].some((x) => (x ?? "").toLowerCase().includes(q))), [dados, q, atorPorId]);
   const colunas: Coluna<FluxoComunicacao>[] = [
     { chave: "secao", rotulo: "Tipo", valor: (c) => `${ROTULO_SECAO[c.secao]} ${c.numero}` },
-    { chave: "titular", rotulo: "Titular", valor: (c) => (c.titular_ator_id ? atorPorId.get(c.titular_ator_id)?.nome : null) ?? null, celula: (c) => <span className="font-medium">{c.titular_ator_id ? atorPorId.get(c.titular_ator_id)?.nome : "—"}</span> },
+    { chave: "titular", rotulo: "Titular", valor: (c) => (c.titular_ator_id ? atorPorId.get(c.titular_ator_id)?.nome : null) ?? null, celula: (c) => <span className="font-medium">{c.titular_ator_id ? nomeProprio(atorPorId.get(c.titular_ator_id)?.nome) : "—"}</span> },
     { chave: "comunicante", rotulo: "Quem comunicou", valor: (c) => c.comunicante, celula: (c) => <>{c.comunicante}{c.local && <span className="block text-xs text-neutral-600">{c.local}</span>}</> },
     { chave: "periodo", rotulo: "Período", valor: (c) => c.periodo_inicio, celula: (c) => <span className="whitespace-nowrap">{c.periodo_inicio ? formatarData(c.periodo_inicio) : "—"}{c.periodo_fim && c.periodo_fim !== c.periodo_inicio ? ` – ${formatarData(c.periodo_fim)}` : ""}</span> },
     { chave: "valor", rotulo: "Valor", valor: (c) => c.valor_centavos, numerica: true, celula: (c) => formatarReais(c.valor_centavos) },
@@ -329,7 +329,7 @@ export function TabelaBens({ dados, busca }: { dados: FluxosDados; busca: string
   const colunas: Coluna<LinhaBem>[] = [
     { chave: "tipo", rotulo: "Tipo", valor: (b) => (b.tipo === "veiculo" ? "veículo" : "imóvel") },
     { chave: "descricao", rotulo: "Descrição", valor: (b) => b.descricao, classe: "max-w-[420px]" },
-    { chave: "titular", rotulo: "Titular da comunicação", valor: (b) => b.titular },
+    { chave: "titular", rotulo: "Titular da comunicação", valor: (b) => b.titular, celula: (b) => nomeProprio(b.titular) },
     { chave: "valor", rotulo: "Valor declarado", valor: (b) => b.valor_centavos, numerica: true, celula: (b) => formatarReais(b.valor_centavos) },
     { chave: "ref", rotulo: "Valor de referência", valor: (b) => b.valor_referencia_centavos, numerica: true, celula: (b) => formatarReais(b.valor_referencia_centavos) },
     { chave: "razao", rotulo: "Declarado ÷ referência", valor: (b) => (b.valor_centavos && b.valor_referencia_centavos ? b.valor_centavos / b.valor_referencia_centavos : null), numerica: true, celula: (b) => (b.valor_centavos && b.valor_referencia_centavos ? `${(b.valor_centavos / b.valor_referencia_centavos).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}×` : "—") },

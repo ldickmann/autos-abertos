@@ -7,7 +7,7 @@ export default function PaginaSobre() {
   const meta = getMeta();
   return (
     <div className="max-w-3xl space-y-6 text-sm leading-relaxed">
-      <h1 className="text-2xl font-bold">Método</h1>
+      <h1 className="text-2xl font-bold">Como o site é feito</h1>
       <PontosChave titulo="Em cinco regras" itens={[
         { texto: <>Tudo vem de fonte primária: o portal do STF, os PDFs das peças e o pacote de autos que o próprio STF publicou. Nada vem de notícias.</> },
         { texto: <>Cada afirmação carrega quem afirma (PF, Procuradoria, defesa, ministro, banco ao COAF), o documento e a página; se o trecho literal não está na página, a afirmação não entra.</> },

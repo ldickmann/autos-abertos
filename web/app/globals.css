@@ -556,3 +556,30 @@ th, td { overflow-wrap: normal; }
   .zap-recebida { padding-right: 6%; }
   .zap-enviada { padding-left: 6%; }
 }
+
+/* ---------- Régua de páginas (documentos longos) ----------
+   Fica no rodapé da tela, à direita, e só aparece depois que o leitor passou do cabeçalho. Diz a página atual e
+   salta para a que for digitada. No celular ocupa a largura toda, acima da barra do sistema. */
+.regua {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 35;
+  display: flex; align-items: center; gap: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--fio-forte); border-radius: 6px;
+  background: var(--folha); color: var(--tinta);
+  box-shadow: var(--sombra);
+  font-size: 0.85rem;
+  opacity: 0; transform: translateY(0.5rem); pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.regua-visivel { opacity: 1; transform: none; pointer-events: auto; }
+.regua-atual { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 500; }
+.regua-campo { width: 5.5rem; }
+@media (max-width: 639px) {
+  .regua { left: 0.75rem; right: 0.75rem; bottom: max(0.75rem, env(safe-area-inset-bottom)); justify-content: space-between; }
+  .regua-campo { width: 4.5rem; }
+}
+@media (prefers-reduced-motion: reduce) { .regua { transition: none; } }
+
+/* Sumário da capa: cada pergunta é uma linha do índice; a explicação vem embaixo, menor. */
+.indice > li + li { margin-top: 0.35rem; }
+.indice-linha { padding: 0.2rem 0 0; }
