@@ -29,7 +29,8 @@ from pathlib import Path
 
 from .fluxos import PAPEIS, RE_CPF, centavos, chave_ator, mascarar_documento, mascarar_texto
 
-SECOES = {"suspeita", "automatica", "especie"}
+SECOES = {"suspeita", "automatica", "especie", "relatorio"}
+SITUACOES = {"efetuado", "previsto", "cobrado", "nao_informado"}
 TIPOS_TRANSACAO = {"transferencia", "pix", "ted", "boleto", "cdb_rdb", "cartao", "cheque", "tributo", "escritura_compra", "escritura_doacao",
                    "alienacao_fiduciaria", "compra_veiculo", "pagamento_titulo", "outros"}
 NATUREZAS = {"individual", "agregado", "resumo_tipo"}
@@ -122,6 +123,8 @@ def validar_dataset(dados: dict, *, paginas: dict[int, str]) -> list[str]:
                 erros.append(f"{ct}: origem e destino ausentes")
             for k in ("data", "periodo_inicio", "periodo_fim"):
                 data(f"{ct}.{k}", t.get(k))
+            if t.get("situacao") is not None and t["situacao"] not in SITUACOES:
+                erros.append(f"{ct}.situacao inválida: {t.get('situacao')!r}")
             if t.get("quantidade") is not None and (not isinstance(t["quantidade"], int) or t["quantidade"] < 1):
                 erros.append(f"{ct}.quantidade inválida")
             if t.get("bem") and t["bem"] not in ids_bens:
@@ -145,17 +148,22 @@ def _paginas_do_documento(con, documento_id: int) -> dict[int, str]:
     return {r[0]: r[1] for r in con.execute("SELECT pagina, texto FROM documento_pagina WHERE documento_id=?", (documento_id,))}
 
 
-def _ator_id(con, cache: dict, documento: str | None, nome: str | None = None, atividade: str | None = None) -> int | None:
-    """Cria ou reaproveita o ator; nunca grava o CPF inteiro. Liga à entidade do caso quando o nome bate."""
+def _ator_id(con, cache: dict, documento: str | None, nome: str | None = None, atividade: str | None = None, tipo_informado: str | None = None) -> int | None:
+    """Cria ou reaproveita o ator; nunca grava o CPF inteiro. Liga à entidade do caso quando o nome bate.
+    Para ator citado só por nome, a curadoria pode informar o tipo (pessoa física/jurídica)."""
     if documento is None:
         return None
     chave, tipo = chave_ator(documento)
+    if tipo == "desconhecido" and tipo_informado in ("pessoa_fisica", "pessoa_juridica"):
+        tipo = tipo_informado
     if chave.startswith("nome:"):
         chave = mascarar_texto(chave)
     if chave in cache:
         aid = cache[chave]
         if nome or atividade:
             con.execute("UPDATE fluxo_ator SET nome=COALESCE(nome, ?), atividade=COALESCE(atividade, ?) WHERE id=?", (mascarar_texto(nome), atividade, aid))
+        if tipo_informado in ("pessoa_fisica", "pessoa_juridica"):
+            con.execute("UPDATE fluxo_ator SET tipo=? WHERE id=? AND tipo='desconhecido'", (tipo_informado, aid))
         return aid
     from .entidades import chave_nome
     if documento.startswith("nome:") and not nome:
@@ -208,7 +216,7 @@ def ingerir_fluxos(con, arquivo) -> dict:
         antes = len(cache)
         for c in dados["comunicacoes"]:
             for p in c.get("participacoes") or []:
-                _ator_id(con, cache, p["documento"], p["nome"], p.get("atividade"))
+                _ator_id(con, cache, p["documento"], p["nome"], p.get("atividade"), p.get("tipo"))
             titular = _ator_id(con, cache, c.get("titular"))
             cur = con.execute(
                 "INSERT INTO fluxo_comunicacao (fonte_id, secao, numero, titular_ator_id, segmento, comunicante, local, periodo_inicio, "
@@ -235,10 +243,10 @@ def ingerir_fluxos(con, arquivo) -> dict:
             for t in c.get("transacoes") or []:
                 con.execute(
                     "INSERT INTO fluxo_transacao (comunicacao_id, origem_ator_id, destino_ator_id, valor_centavos, data, periodo_inicio, "
-                    "periodo_fim, tipo, natureza, quantidade, bem_id, descricao, pagina, trecho_fonte) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    "periodo_fim, tipo, natureza, quantidade, bem_id, descricao, pagina, trecho_fonte, situacao) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     (cid, _ator_id(con, cache, t.get("origem")), _ator_id(con, cache, t.get("destino")), centavos(t["valor"]), t.get("data"),
                      t.get("periodo_inicio"), t.get("periodo_fim"), t["tipo"], t["natureza"], t.get("quantidade"),
-                     bens_ids.get(t["bem"]) if t.get("bem") else None, mascarar_texto(t.get("descricao")), t["pagina"], t["trecho"]))
+                     bens_ids.get(t["bem"]) if t.get("bem") else None, mascarar_texto(t.get("descricao")), t["pagina"], t["trecho"], t.get("situacao") or "efetuado"))
                 res["transacoes"] += 1
             for o in c.get("ocorrencias") or []:
                 con.execute("INSERT INTO fluxo_ocorrencia (comunicacao_id, norma, codigo, descricao) VALUES (?,?,?,?)",

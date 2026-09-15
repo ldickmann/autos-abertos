@@ -44,7 +44,7 @@ export default function Home() {
         </p>
       </header>
 
-      <PontosChave titulo="O que os autos dizem, em oito pontos" itens={pontos.map((p) => ({ texto: p.texto, provas: p.provas }))}
+      <PontosChave titulo={`O que os autos dizem, em ${["", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze", "doze"][pontos.length] ?? pontos.length} pontos`} itens={pontos.map((p) => ({ texto: p.texto, provas: p.provas }))}
         nota="Cada frase é uma síntese do que está escrito nas peças; os selos levam ao documento e à página, e dizem quem afirma. Alegação não é condenação: ninguém foi julgado." />
 
       <section aria-labelledby="titulo-comecar">

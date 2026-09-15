@@ -14,7 +14,8 @@ import { formatarData, formatarReais, type FluxoAtor, type FluxoComunicacao, typ
 
 export type SituacaoAutos = { status: string; processos: string[]; entidade_id: number };
 
-const ROTULO_SECAO: Record<string, string> = { suspeita: "suspeita", automatica: "automática", especie: "em espécie" };
+const ROTULO_SECAO: Record<string, string> = { suspeita: "COAF, suspeita", automatica: "COAF, automática", especie: "COAF, em espécie", relatorio: "PF, relatório" };
+const ROTULO_SITUACAO: Record<string, string> = { efetuado: "efetuado", previsto: "previsto (contrato)", cobrado: "cobrado (fatura)", nao_informado: "não informado" };
 const ROTULO_TIPO: Record<string, string> = {
   transferencia: "transferência", pix: "PIX", ted: "TED/DOC", boleto: "boleto", cdb_rdb: "CDB/RDB", cartao: "cartão", cheque: "cheque", tributo: "tributo",
   escritura_compra: "compra de imóvel", escritura_doacao: "doação de imóvel", alienacao_fiduciaria: "alienação fiduciária", compra_veiculo: "compra de veículo",
@@ -115,7 +116,7 @@ function ListaFluxos({ tx, atorPorId, comPorId, ponto }: { tx: FluxoTransacao[];
           <li key={t.id}>
             <span className="font-medium tabular-nums">{formatarReais(t.valor_centavos)}</span>
             {ponto != null && <span> {saida ? "→ pagou a" : "← recebeu de"} <strong>{outroId == null ? "não informado" : atorPorId.get(outroId)?.nome}</strong></span>}
-            <span className="text-neutral-700"> · {ROTULO_TIPO[t.tipo] ?? t.tipo}{t.natureza === "agregado" ? `, ${t.quantidade ?? "?"} lançamentos` : t.natureza === "resumo_tipo" ? " (resumo por tipo)" : ""} · {quando(t)}{t.descricao ? ` · ${t.descricao}` : ""}</span>
+            <span className="text-neutral-700"> · {ROTULO_TIPO[t.tipo] ?? t.tipo}{t.natureza === "agregado" ? `, ${t.quantidade ?? "?"} lançamentos` : t.natureza === "resumo_tipo" ? " (resumo por tipo)" : ""}{t.situacao !== "efetuado" ? ` · ${ROTULO_SITUACAO[t.situacao]}` : ""} · {quando(t)}{t.descricao ? ` · ${t.descricao}` : ""}</span>
             <span className="block text-neutral-600">{comPorId.get(t.comunicacao_id)?.comunicante ?? ""} · <LinkPagina documentoId={t.documento_id} pagina={t.pagina} /> · <q className="italic">{t.trecho_fonte}</q></span>
           </li>
         );
@@ -139,14 +140,15 @@ export function montarLinhasAtores(dados: FluxosDados, situacoes: Record<number,
   const atorPorId = new Map(dados.atores.map((a) => [a.id, a]));
   return dados.atores.map((a) => {
     const fluxos = dados.transacoes.filter((t) => t.natureza !== "resumo_tipo" && (t.origem_ator_id === a.id || t.destino_ator_id === a.id)).sort((x, y) => y.valor_centavos - x.valor_centavos);
+    const efetuados = fluxos.filter((t) => t.situacao === "efetuado");
     const soma = (m: Map<number, number>, id: number | null, v: number) => { if (id != null && id !== a.id) m.set(id, (m.get(id) ?? 0) + v); };
     const de = new Map<number, number>(), para = new Map<number, number>();
-    for (const t of fluxos) { if (t.destino_ator_id === a.id) soma(de, t.origem_ator_id, t.valor_centavos); if (t.origem_ator_id === a.id) soma(para, t.destino_ator_id, t.valor_centavos); }
+    for (const t of efetuados) { if (t.destino_ator_id === a.id) soma(de, t.origem_ator_id, t.valor_centavos); if (t.origem_ator_id === a.id) soma(para, t.destino_ator_id, t.valor_centavos); }
     const top = (m: Map<number, number>) => [...m.entries()].sort((x, y) => y[1] - x[1]).slice(0, 3).map(([id, v]) => ({ id, nome: atorPorId.get(id)?.nome ?? String(id), valor: v }));
     return {
       ...a, fluxos,
-      recebeu: fluxos.filter((t) => t.destino_ator_id === a.id).reduce((s, t) => s + t.valor_centavos, 0),
-      pagou: fluxos.filter((t) => t.origem_ator_id === a.id).reduce((s, t) => s + t.valor_centavos, 0),
+      recebeu: efetuados.filter((t) => t.destino_ator_id === a.id).reduce((s, t) => s + t.valor_centavos, 0),
+      pagou: efetuados.filter((t) => t.origem_ator_id === a.id).reduce((s, t) => s + t.valor_centavos, 0),
       n: fluxos.length, deQuem: top(de), paraQuem: top(para), situacao: situacoes[a.id] ?? null,
       comunicacoes: dados.comunicacoes.filter((c) => c.participacoes.some((p) => p.ator_id === a.id)).length,
     };
@@ -225,6 +227,7 @@ export function TabelaFluxos({ dados, busca }: { dados: FluxosDados; busca: stri
   const [natureza, setNatureza] = useState("sem_resumo");
   const [tipo, setTipo] = useState("todos");
   const [ano, setAno] = useState("todos");
+  const [situacao, setSituacao] = useState("todas");
   const anos = useMemo(() => [...new Set(dados.transacoes.map((t) => (t.data ?? t.periodo_inicio ?? "").slice(0, 4)).filter(Boolean))].sort(), [dados]);
   const tipos = useMemo(() => [...new Set(dados.transacoes.map((t) => t.tipo))].sort(), [dados]);
   const nome = (id: number | null) => (id == null ? "" : atorPorId.get(id)?.nome ?? "");
@@ -233,10 +236,11 @@ export function TabelaFluxos({ dados, busca }: { dados: FluxosDados; busca: stri
     return dados.transacoes.filter((t) => (natureza === "todas" || (natureza === "sem_resumo" ? t.natureza !== "resumo_tipo" : t.natureza === natureza))
       && (tipo === "todos" || t.tipo === tipo)
       && (ano === "todos" || (t.data ?? t.periodo_inicio ?? "").startsWith(ano))
+      && (situacao === "todas" || t.situacao === situacao)
       && (!q || nome(t.origem_ator_id).toLowerCase().includes(q) || nome(t.destino_ator_id).toLowerCase().includes(q) || (t.descricao ?? "").toLowerCase().includes(q)));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dados, busca, natureza, tipo, ano]);
-  const total = filtradas.reduce((s, t) => s + t.valor_centavos, 0);
+  }, [dados, busca, natureza, tipo, ano, situacao]);
+  const total = filtradas.filter((t) => t.situacao === "efetuado").reduce((s, t) => s + t.valor_centavos, 0);
 
   const colunas: Coluna<FluxoTransacao>[] = [
     { chave: "origem", rotulo: "De", valor: (t) => nome(t.origem_ator_id) || null, celula: (t) => nome(t.origem_ator_id) || <span className="text-xs text-neutral-600">não informado</span> },
@@ -244,7 +248,7 @@ export function TabelaFluxos({ dados, busca }: { dados: FluxosDados; busca: stri
     { chave: "valor", rotulo: "Valor", valor: (t) => t.valor_centavos, numerica: true, celula: (t) => formatarReais(t.valor_centavos) },
     { chave: "quando", rotulo: "Quando", valor: (t) => t.data ?? t.periodo_inicio ?? null, celula: (t) => <span className="whitespace-nowrap">{quando(t)}</span> },
     { chave: "tipo", rotulo: "Tipo", valor: (t) => ROTULO_TIPO[t.tipo] ?? t.tipo },
-    { chave: "natureza", rotulo: "Natureza", valor: (t) => ROTULO_NATUREZA[t.natureza], celula: (t) => <>{ROTULO_NATUREZA[t.natureza]}{t.quantidade ? <span className="text-xs text-neutral-600"> · {t.quantidade} lanç.</span> : null}</> },
+    { chave: "natureza", rotulo: "Natureza", valor: (t) => ROTULO_NATUREZA[t.natureza], celula: (t) => <>{ROTULO_NATUREZA[t.natureza]}{t.quantidade ? <span className="text-xs text-neutral-600"> · {t.quantidade} lanç.</span> : null}{t.situacao !== "efetuado" ? <span className="block text-xs" style={{ color: "var(--alegacao)" }}>{ROTULO_SITUACAO[t.situacao]}</span> : null}</> },
     { chave: "secao", rotulo: "Comunicação", valor: (t) => `${ROTULO_SECAO[t.secao]} ${comPorId.get(t.comunicacao_id)?.numero}`, classe: "text-xs" },
     { chave: "fonte", rotulo: "Fonte", valor: (t) => t.pagina, numerica: true, celula: (t) => <details className="text-left"><summary className="cursor-pointer whitespace-nowrap"><LinkPagina documentoId={t.documento_id} pagina={t.pagina} /> ▸</summary><q className="block max-w-[320px] text-xs italic">{t.trecho_fonte}</q>{t.descricao && <span className="block max-w-[320px] text-xs text-neutral-700">{t.descricao}</span>}</details> },
   ];
@@ -263,7 +267,11 @@ export function TabelaFluxos({ dados, busca }: { dados: FluxosDados; busca: stri
           <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={ano} onChange={(ev) => setAno(ev.target.value)}>
             <option value="todos">todos</option>{anos.map((a) => <option key={a} value={a}>{a}</option>)}
           </select></label>
-        <span role="status" className="text-xs text-neutral-600">{filtradas.length} fluxos · {formatarReais(total)}</span>
+        <label className="block"><span className="block text-xs font-medium">Situação</span>
+          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={situacao} onChange={(ev) => setSituacao(ev.target.value)}>
+            <option value="todas">todas</option><option value="efetuado">efetuado</option><option value="previsto">previsto (contrato)</option><option value="cobrado">cobrado (fatura)</option>
+          </select></label>
+        <span role="status" className="text-xs text-neutral-600">{filtradas.length} fluxos · {formatarReais(total)} efetuados</span>
       </form>
       <Tabela linhas={filtradas} colunas={colunas} chave={(t) => t.id} inicial="valor" rotuloVazio="Nenhum fluxo com esses filtros." />
     </div>

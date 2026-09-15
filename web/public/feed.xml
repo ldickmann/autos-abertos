@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Autos Abertos: avisos e mudanças</title>
   <id>https://ldickmann.github.io/autos-abertos/feed.xml</id>
-  <updated>2026-09-14T23:43:41+00:00</updated>
+  <updated>2026-09-15T00:37:44+00:00</updated>
   <link href="https://ldickmann.github.io/autos-abertos/"/>
   <link rel="self" href="https://ldickmann.github.io/autos-abertos/feed.xml"/>
   <entry>
-    <id>https://ldickmann.github.io/autos-abertos/#base-2026-09-14T23:43:41+00:00</id>
-    <title>Base atualizada em 2026-09-14 23:43 UTC</title>
-    <updated>2026-09-14T23:43:41+00:00</updated>
+    <id>https://ldickmann.github.io/autos-abertos/#base-2026-09-15T00:37:44+00:00</id>
+    <title>Base atualizada em 2026-09-15 00:37 UTC</title>
+    <updated>2026-09-15T00:37:44+00:00</updated>
     <link href="https://ldickmann.github.io/autos-abertos/"/>
     <summary>Nova publicação dos dados do site.</summary>
   </entry>

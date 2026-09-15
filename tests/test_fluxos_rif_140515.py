@@ -7,7 +7,7 @@ import pytest
 from stf.fluxos import centavos
 
 ARQ = Path(__file__).parent.parent / "data" / "curadoria" / "fluxos" / "rif-140515.json"
-IGREJA, ZETTEL, SUPER, MORIAH = "57.391.420/0001-63", "027.818.816-86", "31.446.245/0001-70", "02.425.349/0002-81"
+IGREJA, ZETTEL, SUPER, MORIAH = "cnpj:57391420000163", "cpf:818816", "cnpj:31446245000170", "cnpj:02425349000281"   # chaves mascaradas, como no arquivo
 
 
 @pytest.fixture(scope="module")

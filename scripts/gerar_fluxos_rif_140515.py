@@ -20,7 +20,7 @@ sys.path.insert(0, str(RAIZ))
 
 from stf import config  # noqa: E402
 from stf.db import abrir  # noqa: E402
-from stf.fluxos import parse_principais, parse_relacionados  # noqa: E402
+from stf.fluxos import chave_ator, mascarar_texto, parse_principais, parse_relacionados  # noqa: E402
 from stf.fluxos_carga import trecho_na_pagina, validar_dataset  # noqa: E402
 
 SAIDA = RAIZ / "data" / "curadoria" / "fluxos" / "rif-140515.json"
@@ -350,6 +350,20 @@ def main() -> None:
     if erros:
         print("\n".join(erros))
         raise SystemExit(f"{len(erros)} erro(s) de validação")
+    # o arquivo publicado não leva CPF inteiro: referências de ator viram a chave mascarada e os textos literais são mascarados
+    def ref(v):
+        return chave_ator(v)[0] if isinstance(v, str) and not v.startswith("nome:") else v
+    for c in dados["comunicacoes"]:
+        c["titular"] = ref(c.get("titular"))
+        for k in ("informacoes", "consideracoes"):
+            if c.get(k):
+                c[k] = mascarar_texto(c[k])
+        for p in c.get("participacoes") or []:
+            p["documento"] = ref(p["documento"]); p["nome"] = mascarar_texto(p["nome"])
+        for t in c.get("transacoes") or []:
+            t["origem"] = ref(t.get("origem")); t["destino"] = ref(t.get("destino"))
+            if t.get("descricao"):
+                t["descricao"] = mascarar_texto(t["descricao"])
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     SAIDA.write_text(json.dumps(dados, ensure_ascii=False, indent=1), "utf-8")
     n_tx = sum(len(c["transacoes"]) for c in dados["comunicacoes"])
