@@ -1,6 +1,6 @@
 # Mapa do caso (gerado)
 
-Gerado em 2026-09-15T00:37+00:00 por `python -m stf mapa`. Listagem determinística da base; sem interpretação. Use para achar lacunas: o que ainda não foi coletado, extraído ou ligado.
+Gerado em 2026-09-15T01:40+00:00 por `python -m stf mapa`. Listagem determinística da base; sem interpretação. Use para achar lacunas: o que ainda não foi coletado, extraído ou ligado.
 
 ## Processos
 

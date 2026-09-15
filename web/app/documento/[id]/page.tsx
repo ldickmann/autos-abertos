@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BadgeEpistemico, Carimbo } from "@/components/Badges";
 import { PontosChave } from "@/components/PontosChave";
+import { ConversaWhats } from "@/components/ConversaWhats";
 import { formatarData, formatarDataHora, getDocumento, getMeta, listarDocumentos } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -26,7 +27,18 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
     ...(d.assercoes.length ? [{ texto: <><strong>{d.assercoes.length} afirmações</strong> extraídas: {porTipo("fato_processual").length} fatos, {porTipo("alegacao_parte").length} alegações{vozes("alegacao_parte").length ? ` (${vozes("alegacao_parte").join(", ")})` : ""} e {porTipo("fundamento_decisorio").length} fundamentos{vozes("fundamento_decisorio").length ? ` (${vozes("fundamento_decisorio").join(", ")})` : ""}.</> }] : [{ texto: <>Nenhuma afirmação foi extraída desta peça ainda; o texto por página está abaixo e é pesquisável.</> }]),
     ...(["alegacao_parte", "fundamento_decisorio", "fato_processual"].map(exemplo).filter(Boolean).slice(0, 2).map((a) => ({ texto: <><BadgeEpistemico tipo={a!.tipo_epistemico} /> {a!.atribuida_a ? <strong>{a!.atribuida_a}: </strong> : null}{a!.texto}</>, fonte: { href: `#p-${a!.pagina}`, rotulo: `p. ${a!.pagina}` } }))),
     ...(nProc || nDisp ? [{ texto: <>Cita {nDisp} dispositivos legais e {nProc} processos.</>, fonte: { href: "#refs", rotulo: "ver referências" } }] : []),
+    ...(d.conversas ? [{ texto: <>Em <strong>{d.conversas.paginas.length} páginas</strong> a PF descreve conversas do aparelho de {d.conversas.aparelho}; o site as reconstitui como no aplicativo, frase por frase, com a página e o trecho de cada balão.</>, fonte: { href: `#p-${d.conversas.paginas[0].n}`, rotulo: "ver a primeira" } }] : []),
   ];
+  // páginas com conversa: sequências consecutivas viram um "aparelho" (ConversaWhats) no lugar dos cartões de página
+  const conversaPorPagina = new Map((d.conversas?.paginas ?? []).map((p) => [p.n, p]));
+  const blocos: ({ tipo: "pagina"; p: (typeof d.paginas)[number] } | { tipo: "conversa"; paginas: NonNullable<typeof d.conversas>["paginas"]; textos: typeof d.paginas })[] = [];
+  for (const p of d.paginas) {
+    const c = conversaPorPagina.get(p.n);
+    const ultimo = blocos[blocos.length - 1];
+    if (c && ultimo?.tipo === "conversa" && ultimo.textos[ultimo.textos.length - 1].n === p.n - 1) { ultimo.paginas.push(c); ultimo.textos.push(p); }
+    else if (c) blocos.push({ tipo: "conversa", paginas: [c], textos: [p] });
+    else blocos.push({ tipo: "pagina", p });
+  }
 
   return (
     <div className="space-y-6">
@@ -116,12 +128,15 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
       <section aria-labelledby="texto">
         <h2 id="texto" className="text-lg font-bold">Texto por página</h2>
         {d.paginas.length === 0 && <p className="text-sm">Texto não extraído.</p>}
-        {d.paginas.map((p) => (
-          <article key={p.n} id={`p-${p.n}`} className="mt-4 scroll-mt-20 rounded border border-neutral-300 bg-white">
-            <h3 className="border-b border-neutral-200 px-4 py-2 text-sm font-semibold">Página {p.n}</h3>
-            {(porPagina.get(p.n) ?? []).length > 0 && (
-              <ul className="space-y-2 border-b border-neutral-200 bg-neutral-50 px-4 py-3 text-sm" aria-label={`Asserções da página ${p.n}`}>
-                {(porPagina.get(p.n) ?? []).map((a) => (
+        {d.conversas && <p className="text-sm text-neutral-700">Nas páginas em que a PF descreve conversas do celular, o texto aparece como no aplicativo (lado direito: o aparelho analisado). É reconstituição a partir da prosa da PF, não a captura de tela; o texto literal de cada página fica logo abaixo de cada aparelho.</p>}
+        {blocos.map((b) => b.tipo === "conversa" ? (
+          <ConversaWhats key={`c-${b.paginas[0].n}`} aparelho={d.conversas!.aparelho} fonte={d.conversas!.fonte} paginas={b.paginas} textos={b.textos} assercoes={porPagina} />
+        ) : (
+          <article key={b.p.n} id={`p-${b.p.n}`} className="mt-4 scroll-mt-20 rounded border border-neutral-300 bg-white">
+            <h3 className="border-b border-neutral-200 px-4 py-2 text-sm font-semibold">Página {b.p.n}</h3>
+            {(porPagina.get(b.p.n) ?? []).length > 0 && (
+              <ul className="space-y-2 border-b border-neutral-200 bg-neutral-50 px-4 py-3 text-sm" aria-label={`Asserções da página ${b.p.n}`}>
+                {(porPagina.get(b.p.n) ?? []).map((a) => (
                   <li key={a.id} id={`assercao-${a.id}`} className="flex gap-2">
                     <BadgeEpistemico tipo={a.tipo_epistemico} />
                     <div>
@@ -135,7 +150,7 @@ export default async function PaginaDocumento({ params }: { params: Promise<{ id
                 ))}
               </ul>
             )}
-            <pre className="overflow-x-auto whitespace-pre-wrap px-4 py-3 font-sans text-sm leading-relaxed">{p.texto}</pre>
+            <pre className="overflow-x-auto whitespace-pre-wrap px-4 py-3 font-sans text-sm leading-relaxed">{b.p.texto}</pre>
           </article>
         ))}
       </section>

@@ -81,3 +81,14 @@ python -m stf exportar                              # fluxos.json e fluxos.csv e
 ## 8. Curadoria editorial com prova (trajetos e pontos-chave)
 
 `stf/curadoria/trajetos.json` e `stf/curadoria/pontos_chave.json` são texto editorial, mas cada passo/frase precisa apontar provas: `{"assercao": id}`, `{"comunicacao": [secao, numero], "origem"/"destino": "<CNPJ/CPF>"}` ou `{"documento": id, "pagina": n, "trecho": "<literal>", "quem": "..."}`. `python -m stf exportar` resolve cada prova contra o banco (documento, página, quem afirma) e **falha** se alguma não existir ou se o trecho não estiver na página — a página não publica afirmação sem fonte.
+
+## 9. Conversas descritas pela PF (IPJ-A, Pet 16.662)
+
+A PF não transcreve as conversas do celular: descreve-as em prosa e cola as capturas como figuras, que não chegam ao texto extraído. `stf/conversas.py` reconstitui a conversa página a página a partir dessa prosa, com regra conservadora e testada (`tests/test_conversas.py`):
+
+- **balão**: só frase com estrutura `NOME verbo [a NOME] [que] “citação”` e uma única citação (nomes de contato entre aspas não contam como citação);
+- **relato com falas**: frase da PF com um único falante inequívoco (um NOME + verbo de fala, sem "…, que afirma" nem pronome) — as citações viram balões desse falante, sempre abaixo da frase literal que as contextualiza;
+- **relato**: qualquer outra frase, literal, com as citações marcadas;
+- **figura**: legenda de captura ("Figura N – …"), marcador da imagem que só existe no PDF; **seção**: título numerado.
+
+`stf/curadoria/conversas.json` diz de quem é o aparelho (mensagens dele vão para o lado direito) e lista trechos a omitir. Telefones, placas, endereços do DF e CPFs são mascarados aí e também no texto por página de todos os documentos (`mascarar_pagina`). O resultado entra em `documento/<id>.json` como `conversas`, e o site (`web/components/ConversaWhats.tsx`) mostra cada sequência de páginas como um aparelho, com o texto literal das páginas logo abaixo.

@@ -52,7 +52,15 @@ function Tabela<T>({ linhas, colunas, chave, inicial, expandir, rotuloVazio, des
   if (!linhas.length) return <p className="mt-2 text-sm text-neutral-700">{rotuloVazio}</p>;
   return (
     <div className="mt-2 overflow-x-auto">
-      <table className="w-full min-w-[720px] border-collapse text-sm">
+      {/* No celular o cabeçalho da tabela some (cada linha vira um cartão); a ordenação continua aqui. */}
+      <div className="mb-2 flex items-end gap-2 text-sm lg:hidden">
+        <label className="block min-w-0 grow"><span className="block text-xs font-medium">Ordenar por</span>
+          <select className="mt-0.5 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={ord.chave} onChange={(ev) => alternar(ev.target.value)} aria-label="Ordenar por">
+            {colunas.map((c) => <option key={c.chave} value={c.chave}>{c.rotulo}</option>)}
+          </select></label>
+        <button type="button" className="toque rounded border border-neutral-400 px-2 py-1 text-xs" onClick={() => alternar(ord.chave)} aria-label={ord.desc ? "Ordem decrescente; trocar para crescente" : "Ordem crescente; trocar para decrescente"}>{ord.desc ? "↓ desc." : "↑ cresc."}</button>
+      </div>
+      <table className="tabela-responsiva w-full min-w-[720px] border-collapse text-sm">
         <thead>
           <tr className="border-b border-neutral-400 text-left">
             {expandir && <th scope="col" className="w-6" />}
@@ -73,16 +81,16 @@ function Tabela<T>({ linhas, colunas, chave, inicial, expandir, rotuloVazio, des
               <FragmentoLinha key={k}>
                 <tr className={`border-b border-neutral-200 align-top ${abertaEsta ? "bg-neutral-100" : ""}`}>
                   {expandir && (
-                    <td className="py-1.5 pr-1">
+                    <td className="celula-expandir py-1.5 pr-1">
                       <button type="button" className="toque rounded px-1 text-neutral-700 hover:bg-neutral-100" aria-expanded={!!abertaEsta} aria-label={abertaEsta ? "Recolher" : "Expandir"} onClick={() => setAberta(abertaEsta ? null : k)}>{abertaEsta ? "▾" : "▸"}</button>
                     </td>
                   )}
                   {colunas.map((c) => (
-                    <td key={c.chave} className={`py-1.5 pr-3 ${c.numerica ? "text-right tabular-nums" : ""} ${c.classe ?? ""}`}>{c.celula ? c.celula(r) : (c.valor(r) ?? "—")}</td>
+                    <td key={c.chave} data-rotulo={c.rotulo} data-vazio={(() => { const v = c.valor(r); return v == null || v === "" || v === 0 ? "true" : undefined; })()} className={`py-1.5 pr-3 ${c.numerica ? "text-right tabular-nums" : ""} ${c.classe ?? ""}`}>{c.celula ? c.celula(r) : (c.valor(r) ?? "—")}</td>
                   ))}
                 </tr>
                 {abertaEsta && (
-                  <tr className="border-b border-neutral-200 bg-neutral-100"><td /><td colSpan={colunas.length} className="px-2 py-2">{expandir!(r)}</td></tr>
+                  <tr className="linha-detalhe border-b border-neutral-200 bg-neutral-100"><td /><td colSpan={colunas.length} className="px-2 py-2">{expandir!(r)}</td></tr>
                 )}
               </FragmentoLinha>
             );
@@ -191,22 +199,22 @@ export function TabelaAtores({ dados, situacoes, busca, onBuscar }: { dados: Flu
 
   return (
     <div>
-      <form className="mt-2 flex flex-wrap items-end gap-3 text-sm" onSubmit={(ev) => ev.preventDefault()}>
-        <label className="block"><span className="block text-xs font-medium">Movimento</span>
-          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={movimento} onChange={(ev) => setMovimento(ev.target.value)}>
+      <form className="filtros mt-2 grid grid-cols-2 gap-3 text-sm sm:flex sm:flex-wrap sm:items-end" onSubmit={(ev) => ev.preventDefault()}>
+        <label className="block min-w-0"><span className="block text-xs font-medium">Movimento</span>
+          <select className="mt-0.5 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1 sm:w-auto" value={movimento} onChange={(ev) => setMovimento(ev.target.value)}>
             <option value="todos">todos</option><option value="recebeu">recebeu dinheiro</option><option value="pagou">pagou dinheiro</option><option value="sem">só relacionado (sem fluxo identificado)</option>
           </select></label>
-        <label className="block"><span className="block text-xs font-medium">Situação nos autos</span>
-          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={situacao} onChange={(ev) => setSituacao(ev.target.value)}>
+        <label className="block min-w-0"><span className="block text-xs font-medium">Situação nos autos</span>
+          <select className="mt-0.5 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1 sm:w-auto" value={situacao} onChange={(ev) => setSituacao(ev.target.value)}>
             <option value="todas">todas</option><option value="partes">é parte em algum processo</option><option value="nao_partes">não é parte</option>
             {statusDisponiveis.map((st) => <option key={st} value={st}>{st}</option>)}
           </select></label>
-        <label className="block"><span className="block text-xs font-medium">Tipo</span>
-          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={tipo} onChange={(ev) => setTipo(ev.target.value)}>
+        <label className="block min-w-0"><span className="block text-xs font-medium">Tipo</span>
+          <select className="mt-0.5 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1 sm:w-auto" value={tipo} onChange={(ev) => setTipo(ev.target.value)}>
             <option value="todos">todos</option><option value="pessoa_fisica">pessoas físicas</option><option value="pessoa_juridica">pessoas jurídicas</option>
           </select></label>
         {filtrosAtivos && <button type="button" className="toque rounded border border-neutral-400 px-2 py-1 text-xs hover:bg-neutral-100" onClick={limpar}>limpar filtros</button>}
-        <span role="status" className="text-xs text-neutral-600">{filtradas.length} de {linhas.length} · recebeu {formatarReais(totRecebeu, true)} · pagou {formatarReais(totPagou, true)}</span>
+        <span role="status" className="col-span-2 text-xs text-neutral-600">{filtradas.length} de {linhas.length} · recebeu {formatarReais(totRecebeu, true)} · pagou {formatarReais(totPagou, true)}</span>
       </form>
       <Tabela linhas={filtradas} colunas={colunas} chave={(r) => r.id} inicial="recebeu" rotuloVazio="Nenhuma pessoa ou empresa com essa busca e esses filtros."
         expandir={(r) => (
@@ -250,28 +258,28 @@ export function TabelaFluxos({ dados, busca }: { dados: FluxosDados; busca: stri
     { chave: "tipo", rotulo: "Tipo", valor: (t) => ROTULO_TIPO[t.tipo] ?? t.tipo },
     { chave: "natureza", rotulo: "Natureza", valor: (t) => ROTULO_NATUREZA[t.natureza], celula: (t) => <>{ROTULO_NATUREZA[t.natureza]}{t.quantidade ? <span className="text-xs text-neutral-600"> · {t.quantidade} lanç.</span> : null}{t.situacao !== "efetuado" ? <span className="block text-xs" style={{ color: "var(--alegacao)" }}>{ROTULO_SITUACAO[t.situacao]}</span> : null}</> },
     { chave: "secao", rotulo: "Comunicação", valor: (t) => `${ROTULO_SECAO[t.secao]} ${comPorId.get(t.comunicacao_id)?.numero}`, classe: "text-xs" },
-    { chave: "fonte", rotulo: "Fonte", valor: (t) => t.pagina, numerica: true, celula: (t) => <details className="text-left"><summary className="cursor-pointer whitespace-nowrap"><LinkPagina documentoId={t.documento_id} pagina={t.pagina} /> ▸</summary><q className="block max-w-[320px] text-xs italic">{t.trecho_fonte}</q>{t.descricao && <span className="block max-w-[320px] text-xs text-neutral-700">{t.descricao}</span>}</details> },
+    { chave: "fonte", rotulo: "Fonte", valor: (t) => t.pagina, numerica: true, celula: (t) => <details className="text-left"><summary className="cursor-pointer whitespace-nowrap"><LinkPagina documentoId={t.documento_id} pagina={t.pagina} /> <span className="text-xs text-neutral-600">trecho</span></summary><q className="block max-w-[320px] text-xs italic">{t.trecho_fonte}</q>{t.descricao && <span className="block max-w-[320px] text-xs text-neutral-700">{t.descricao}</span>}</details> },
   ];
   return (
     <div>
-      <form className="mt-2 flex flex-wrap items-end gap-3 text-sm" onSubmit={(ev) => ev.preventDefault()}>
-        <label className="block"><span className="block text-xs font-medium">Natureza</span>
-          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={natureza} onChange={(ev) => setNatureza(ev.target.value)}>
+      <form className="filtros mt-2 grid grid-cols-2 gap-3 text-sm sm:flex sm:flex-wrap sm:items-end" onSubmit={(ev) => ev.preventDefault()}>
+        <label className="block min-w-0"><span className="block text-xs font-medium">Natureza</span>
+          <select className="mt-0.5 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1 sm:w-auto" value={natureza} onChange={(ev) => setNatureza(ev.target.value)}>
             <option value="sem_resumo">datadas e agregados</option><option value="individual">só operações datadas</option><option value="agregado">só agregados</option><option value="resumo_tipo">só resumos por tipo</option><option value="todas">todas</option>
           </select></label>
-        <label className="block"><span className="block text-xs font-medium">Tipo</span>
-          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={tipo} onChange={(ev) => setTipo(ev.target.value)}>
+        <label className="block min-w-0"><span className="block text-xs font-medium">Tipo</span>
+          <select className="mt-0.5 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1 sm:w-auto" value={tipo} onChange={(ev) => setTipo(ev.target.value)}>
             <option value="todos">todos</option>{tipos.map((t) => <option key={t} value={t}>{ROTULO_TIPO[t] ?? t}</option>)}
           </select></label>
-        <label className="block"><span className="block text-xs font-medium">Ano</span>
-          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={ano} onChange={(ev) => setAno(ev.target.value)}>
+        <label className="block min-w-0"><span className="block text-xs font-medium">Ano</span>
+          <select className="mt-0.5 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1 sm:w-auto" value={ano} onChange={(ev) => setAno(ev.target.value)}>
             <option value="todos">todos</option>{anos.map((a) => <option key={a} value={a}>{a}</option>)}
           </select></label>
-        <label className="block"><span className="block text-xs font-medium">Situação</span>
-          <select className="mt-0.5 rounded border border-neutral-400 bg-neutral-50 px-2 py-1" value={situacao} onChange={(ev) => setSituacao(ev.target.value)}>
+        <label className="block min-w-0"><span className="block text-xs font-medium">Situação</span>
+          <select className="mt-0.5 w-full rounded border border-neutral-400 bg-neutral-50 px-2 py-1 sm:w-auto" value={situacao} onChange={(ev) => setSituacao(ev.target.value)}>
             <option value="todas">todas</option><option value="efetuado">efetuado</option><option value="previsto">previsto (contrato)</option><option value="cobrado">cobrado (fatura)</option>
           </select></label>
-        <span role="status" className="text-xs text-neutral-600">{filtradas.length} fluxos · {formatarReais(total)} efetuados</span>
+        <span role="status" className="col-span-2 text-xs text-neutral-600">{filtradas.length} fluxos · {formatarReais(total)} efetuados</span>
       </form>
       <Tabela linhas={filtradas} colunas={colunas} chave={(t) => t.id} inicial="valor" rotuloVazio="Nenhum fluxo com esses filtros." />
     </div>

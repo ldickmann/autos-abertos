@@ -43,9 +43,9 @@ export function NavPrincipal() {
   const ativa = SECOES.find((s) => s.casa(pathname)) ?? SECOES[0];
   return (
     <nav aria-label="Principal" className="space-y-1">
-      <ul className="nav-trilho -mx-4 flex w-max gap-0.5 overflow-x-auto px-4 lg:mx-0 lg:w-auto lg:flex-wrap lg:overflow-visible lg:px-0">
+      <ul className="nav-trilho -mx-4 flex gap-0.5 overflow-x-auto px-4 lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0">
         {SECOES.map((s) => (
-          <li key={s.id}>
+          <li key={s.id} className="shrink-0">
             <Link href={s.href} aria-current={ativa.id === s.id ? "page" : undefined}
               className={`block whitespace-nowrap rounded px-2.5 py-1.5 text-sm font-medium hover:bg-neutral-100 ${s.id === "pagamentos" ? "font-semibold" : ""}`}>
               {s.rotulo}
@@ -54,9 +54,9 @@ export function NavPrincipal() {
         ))}
       </ul>
       {ativa.itens.length > 0 && (
-        <ul aria-label={`Páginas de ${ativa.rotulo}`} className="nav-trilho -mx-4 flex w-max gap-0.5 overflow-x-auto border-t border-neutral-200 px-4 pt-1 lg:mx-0 lg:w-auto lg:flex-wrap lg:overflow-visible lg:px-0">
+        <ul aria-label={`Páginas de ${ativa.rotulo}`} className="nav-trilho -mx-4 flex gap-0.5 overflow-x-auto border-t border-neutral-200 px-4 pt-1 lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0">
           {ativa.itens.map((i) => (
-            <li key={i.href}>
+            <li key={i.href} className="shrink-0">
               <Link href={i.href} aria-current={pathname === i.href || (pathname.startsWith(i.href + "/") && !ativa.itens.some((o) => o.href !== i.href && pathname.startsWith(o.href))) ? "page" : undefined}
                 className="block whitespace-nowrap rounded px-2.5 py-1 text-sm text-neutral-700 hover:bg-neutral-100">
                 {i.rotulo}

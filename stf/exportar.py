@@ -18,6 +18,7 @@ from .referencias import resumo_dispositivos
 from .funcoes import ROTULOS as ROTULOS_FUNCAO, funcao_de
 from .decisoes import ROTULO_RESULTADO
 from .cronologia import cronologia
+from .conversas import extrair_conversas, mascarar_pagina
 from .externas import exportar_fontes, fontes_curadas
 from .legislativo import exportar_legislativo
 from .saidas import csv_assercoes, csv_cronologia, csv_decisoes, feed_atom
@@ -171,11 +172,21 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int, curadoria_ed
             "trecho_fonte": a["trecho_fonte"], "atribuida_a": a["atribuida_a"], "entidades": json.loads(a["ents"] or "[]"),
             "modelo": a["modelo"], "prompt_version": a["prompt_version"]})
     todas_assercoes = []
+    # conversas descritas pela PF (IPJ-A): curadoria diz de quem é o aparelho; o extrator faz o resto
+    conversas_path = config.RAIZ / "stf" / "curadoria" / "conversas.json"
+    conversas_cfg = {c["documento"]: c for c in json.loads(conversas_path.read_text("utf-8"))["documentos"]} if conversas_path.exists() else {}
     for d in con.execute("SELECT * FROM documento WHERE sha256 IS NOT NULL ORDER BY id"):
-        paginas = [{"n": r["pagina"], "texto": r["texto"]} for r in con.execute(
+        omitir = tuple(conversas_cfg.get(d["id"], {}).get("aparelho", {}).get("omitir", ()))
+        paginas = [{"n": r["pagina"], "texto": mascarar_pagina(r["texto"], omitir)} for r in con.execute(
             "SELECT pagina, texto FROM documento_pagina WHERE documento_id=? ORDER BY pagina", (d["id"],))]
-        chunks = [dict(r) for r in con.execute(
+        chunks = [{**dict(r), "texto": mascarar_pagina(r["texto"], omitir)} for r in con.execute(
             "SELECT ordem, pagina_inicio, pagina_fim, secao, texto FROM documento_chunk WHERE documento_id=? ORDER BY ordem", (d["id"],))]
+        conversas = None
+        if d["id"] in conversas_cfg:
+            cfg = conversas_cfg[d["id"]]
+            conversas = extrair_conversas(paginas, cfg["aparelho"])
+            if conversas:
+                conversas["fonte"] = cfg["fonte"]
         andamentos_ref = [dict(r) for r in con.execute(
             "SELECT a.id, a.data, a.tipo, a.incidente FROM andamento_documento ad JOIN andamento a ON a.id=ad.andamento_id WHERE ad.documento_id=?", (d["id"],))]
         andamentos_ref_dec = [dict(r) for r in con.execute(
@@ -195,7 +206,8 @@ def exportar(con: sqlite3.Connection, saida: Path, *, semente: int, curadoria_ed
                     "senha_autenticacao": d["senha_autenticacao"], "baixado_em": d["baixado_em"],
                     "snapshot": _snap(con, d["snapshot_download"], cache), "andamentos": andamentos_ref}
         _escrever(saida / "documento" / f"{d['id']}.json",
-                  {"meta": meta_doc, "paginas": paginas, "chunks": chunks, "assercoes": assercoes_por_doc.get(d["id"], []), "referencias": referencias})
+                  {"meta": meta_doc, "paginas": paginas, "chunks": chunks, "assercoes": assercoes_por_doc.get(d["id"], []), "referencias": referencias,
+                   **({"conversas": conversas} if conversas else {})})
         for a in assercoes_por_doc.get(d["id"], []):
             todas_assercoes.append({**a, "documento": {k: meta_doc[k] for k in ("id", "incidente", "titulo", "url", "codigo_autenticacao")},
                                     "data_andamento": andamentos_ref[0]["data"] if andamentos_ref else None})

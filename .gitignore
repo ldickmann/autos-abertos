@@ -22,3 +22,4 @@ __pycache__/
 # Fase 4 pelo Claude Code: entradas e respostas são reproduzíveis a partir do banco e dos blobs
 data/extracao/entradas/
 data/extracao/decisoes/entradas/
+.playwright-mcp/
