@@ -280,19 +280,29 @@ details[open] > summary::before { transform: rotate(45deg) translateY(-0.15em); 
   box-shadow: inset 0 -2px 0 var(--marca);
 }
 
-/* Tabela responsiva: abaixo de md cada linha vira uma folha e cada célula mostra o rótulo
-   do cabeçalho (data-rotulo). Mesmo markup do desktop. */
-@media (max-width: 767px) {
+/* Tabela responsiva: abaixo de lg (celular e tablet em pé) cada linha vira uma folha e cada célula mostra o rótulo
+   do cabeçalho (data-rotulo). Mesmo markup do desktop; nada rola de lado. */
+@media (max-width: 1023px) {
   .tabela-responsiva, .tabela-responsiva tbody, .tabela-responsiva tr, .tabela-responsiva td { display: block; }
   .tabela-responsiva { min-width: 0 !important; }
   .tabela-responsiva thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .tabela-responsiva tr {
+    /* cada cartão é uma grade de campos: 1–2 colunas no celular, 3–4 no tablet */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    column-gap: 1rem;
+    row-gap: 0.15rem;
+    align-items: start;
     border: 1px solid var(--fio);
     border-radius: 3px;
     background: var(--folha);
     padding: 0.6rem 0.75rem;
     margin-bottom: 0.6rem;
   }
+  /* título do cartão, células longas (trechos citados, listas) e a ficha expandida ocupam a largura toda */
+  .tabela-responsiva td[data-rotulo]:first-child, .tabela-responsiva td.celula-expandir + td,
+  .tabela-responsiva td:has(details), .tabela-responsiva td:has(ul), .tabela-responsiva td.max-w-\[420px\],
+  .tabela-responsiva tr.linha-detalhe td { grid-column: 1 / -1; }
   .tabela-responsiva td {
     padding: 0.2rem 0 !important;
     border: 0 !important;
@@ -307,6 +317,20 @@ details[open] > summary::before { transform: rotate(45deg) translateY(-0.15em); 
     color: var(--tinta-3);
   }
   .tabela-responsiva td:empty { display: none; }
+  .tabela-responsiva td { text-align: left !important; }
+  /* campos sem valor ("—") não ocupam linha no cartão; a primeira coluna é o título do cartão */
+  .tabela-responsiva td[data-vazio="true"] { display: none; }
+  .tabela-responsiva td[data-rotulo]:first-child::before, .tabela-responsiva td.celula-expandir + td::before { display: none; }
+  .tabela-responsiva td[data-rotulo]:first-child, .tabela-responsiva td.celula-expandir + td { font-size: 1rem; padding-bottom: 0.4rem !important; }
+  .tabela-responsiva tr { position: relative; }
+  /* botão ▸/▾ de expandir: vai ao canto superior direito do cartão em vez de virar uma "linha" própria */
+  .tabela-responsiva td.celula-expandir { position: absolute; right: 0.4rem; top: 0.4rem; width: auto; padding: 0 !important; }
+  .tabela-responsiva td.celula-expandir + td { padding-right: 2.25rem !important; }
+  /* a linha de detalhe (ficha expandida) cola no cartão de cima */
+  .tabela-responsiva tr.linha-detalhe { margin-top: -0.6rem; border-top: 0; border-radius: 0 0 3px 3px; }
+  .tabela-responsiva tr.linha-detalhe td { padding: 0.4rem 0 !important; }
+  /* trechos citados e descrições nas células perdem o teto de largura */
+  .tabela-responsiva td q, .tabela-responsiva td .max-w-\[320px\] { max-width: none !important; }
 }
 
 /* Folha inferior (grafo no celular): a ficha do nó sobe do rodapé e rola por dentro. */

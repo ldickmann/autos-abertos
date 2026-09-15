@@ -128,10 +128,10 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
               <p><span className="font-semibold">{s.objeto_completo}</span> · lista {s.lista} · {s.colegiado} · {formatarData(s.data_inicio)} a {formatarData(s.data_fim)} · relator {s.relator}</p>
               <p className="text-neutral-700">{s.tipo_lista}{s.resultado ? ` · resultado: ${s.resultado}` : ""}{s.julgado === 0 ? " · julgado: não (registro do portal)" : ""}</p>
               {s.texto_decisao && <p className="mt-1">{s.texto_decisao}</p>}
-              <div className="overflow-x-auto"><table className="mt-2 w-full border-collapse">
+              <div className="overflow-x-auto"><table className="tabela-responsiva mt-2 w-full border-collapse">
                 <caption className="sr-only">Votos por ministro, com o tipo de voto literal publicado pelo STF</caption>
                 <thead><tr className="border-b border-neutral-300 text-left"><th scope="col" className="py-1 pr-3">Ministro</th><th scope="col" className="py-1 pr-3">Voto (literal)</th><th scope="col" className="py-1 pr-3">Data</th></tr></thead>
-                <tbody>{s.votos.map((v) => (<tr key={v.ordem} className="border-b border-neutral-100"><td className="py-1 pr-3">{v.ministro}</td><td className="py-1 pr-3">{v.tipo_voto}</td><td className="py-1 pr-3">{formatarData(v.data)}</td></tr>))}</tbody>
+                <tbody>{s.votos.map((v) => (<tr key={v.ordem} className="border-b border-neutral-100"><td data-rotulo="Ministro" className="py-1 pr-3">{v.ministro}</td><td data-rotulo="Voto (literal)" className="py-1 pr-3">{v.tipo_voto}</td><td data-rotulo="Data" className="py-1 pr-3">{formatarData(v.data)}</td></tr>))}</tbody>
               </table></div>
               <Carimbo snapshot={s.snapshot} />
             </div>
@@ -146,13 +146,13 @@ export default async function PaginaProcesso({ params }: { params: Promise<{ inc
 
       <details className="rounded border border-neutral-300 bg-white p-3 text-sm">
         <summary className="cursor-pointer font-semibold">Petições ({p.peticoes.length})</summary>
-        <div className="overflow-x-auto"><table className="mt-2 w-full border-collapse"><thead><tr className="border-b text-left"><th scope="col" className="py-1 pr-3">Número</th><th scope="col" className="py-1 pr-3">Peticionada</th><th scope="col" className="py-1 pr-3">Recebida</th><th scope="col" className="py-1 pr-3">Por</th></tr></thead>
-          <tbody>{p.peticoes.map((q) => (<tr key={q.numero} className="border-b border-neutral-100"><td className="py-1 pr-3">{q.numero}</td><td className="py-1 pr-3">{formatarData(q.data_peticionamento)}</td><td className="py-1 pr-3">{q.recebido_em?.replace("T", " ") ?? "—"}</td><td className="py-1 pr-3">{q.recebido_por}</td></tr>))}</tbody></table></div>
+        <div className="overflow-x-auto"><table className="tabela-responsiva mt-2 w-full border-collapse"><thead><tr className="border-b text-left"><th scope="col" className="py-1 pr-3">Número</th><th scope="col" className="py-1 pr-3">Peticionada</th><th scope="col" className="py-1 pr-3">Recebida</th><th scope="col" className="py-1 pr-3">Por</th></tr></thead>
+          <tbody>{p.peticoes.map((q) => (<tr key={q.numero} className="border-b border-neutral-100"><td data-rotulo="Número" className="py-1 pr-3">{q.numero}</td><td data-rotulo="Peticionada" className="py-1 pr-3">{formatarData(q.data_peticionamento)}</td><td data-rotulo="Recebida" className="py-1 pr-3">{q.recebido_em?.replace("T", " ") ?? "—"}</td><td data-rotulo="Por" className="py-1 pr-3">{q.recebido_por}</td></tr>))}</tbody></table></div>
       </details>
       <details className="rounded border border-neutral-300 bg-white p-3 text-sm">
         <summary className="cursor-pointer font-semibold">Deslocamentos ({p.deslocamentos.length})</summary>
-        <div className="overflow-x-auto"><table className="mt-2 w-full border-collapse"><thead><tr className="border-b text-left"><th scope="col" className="py-1 pr-3">Data</th><th scope="col" className="py-1 pr-3">De</th><th scope="col" className="py-1 pr-3">Para</th><th scope="col" className="py-1 pr-3">Guia</th><th scope="col" className="py-1 pr-3">Recebido</th></tr></thead>
-          <tbody>{p.deslocamentos.map((d, i) => (<tr key={i} className="border-b border-neutral-100"><td className="py-1 pr-3">{formatarData(d.data_envio)}</td><td className="py-1 pr-3">{d.enviado_por}</td><td className="py-1 pr-3">{d.destino}</td><td className="py-1 pr-3">{d.guia}</td><td className="py-1 pr-3">{formatarData(d.recebido_em)}</td></tr>))}</tbody></table></div>
+        <div className="overflow-x-auto"><table className="tabela-responsiva mt-2 w-full border-collapse"><thead><tr className="border-b text-left"><th scope="col" className="py-1 pr-3">Data</th><th scope="col" className="py-1 pr-3">De</th><th scope="col" className="py-1 pr-3">Para</th><th scope="col" className="py-1 pr-3">Guia</th><th scope="col" className="py-1 pr-3">Recebido</th></tr></thead>
+          <tbody>{p.deslocamentos.map((d, i) => (<tr key={i} className="border-b border-neutral-100"><td data-rotulo="Data" className="py-1 pr-3">{formatarData(d.data_envio)}</td><td data-rotulo="De" className="py-1 pr-3">{d.enviado_por}</td><td data-rotulo="Para" className="py-1 pr-3">{d.destino}</td><td data-rotulo="Guia" className="py-1 pr-3">{d.guia}</td><td data-rotulo="Recebido" className="py-1 pr-3">{formatarData(d.recebido_em)}</td></tr>))}</tbody></table></div>
       </details>
     </div>
   );
