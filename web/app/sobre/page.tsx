@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LegendaEpistemica } from "@/components/Badges";
+import { PontosChave } from "@/components/PontosChave";
 import { formatarDataHora, getMeta } from "@/lib/data";
 
 export default function PaginaSobre() {
@@ -7,6 +8,13 @@ export default function PaginaSobre() {
   return (
     <div className="max-w-3xl space-y-6 text-sm leading-relaxed">
       <h1 className="text-2xl font-bold">Método</h1>
+      <PontosChave titulo="Em cinco regras" itens={[
+        { texto: <>Tudo vem de fonte primária: o portal do STF, os PDFs das peças e o pacote de autos que o próprio STF publicou. Nada vem de notícias.</> },
+        { texto: <>Cada afirmação carrega quem afirma (PF, Procuradoria, defesa, ministro, banco ao COAF), o documento e a página; se o trecho literal não está na página, a afirmação não entra.</> },
+        { texto: <>O site não conclui: separa fato processual, alegação e fundamento de decisão, e traz o outro lado quando ele está nos autos. Ninguém é chamado de suspeito ou culpado.</> },
+        { texto: <>Dados pessoais ficam fora: CPFs mascarados, sem RG, endereço ou placa. Os nomes são os que constam nas peças.</> },
+        { texto: <>Qualquer pessoa confere: cada documento tem hash e código de autenticação do STF; a base pode ser refeita do zero com o código publicado.</>, fonte: { href: "/verificar", rotulo: "como verificar" } },
+      ]} />
       <section>
         <h2 className="text-lg font-bold">O que este site é</h2>
         <p>

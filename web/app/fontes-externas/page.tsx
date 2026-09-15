@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PontosChave } from "@/components/PontosChave";
 import { getFontesExternas } from "@/lib/data";
 import { formatarDataHora } from "@/lib/tipos";
 
@@ -8,6 +9,15 @@ export default function PaginaFontesExternas() {
   const porOrgao = new Map<string, typeof fontes>();
   const ordem = ["Judiciário", "Executivo (Polícia Federal)", "Executivo (Ministério da Justiça)", "Executivo (autarquia)", "Legislativo", "Legislativo (DF)", "Controle externo (DF)", "Terceiros"];
   for (const f of [...fontes].sort((a, b) => ordem.indexOf(a.poder ?? "Outros") - ordem.indexOf(b.poder ?? "Outros"))) porOrgao.set(f.poder ?? "Outros", [...(porOrgao.get(f.poder ?? "Outros") ?? []), f]);
+  const comCopia = fontes.filter((f) => f.ultima?.sha256).length;
+  const mudaram = fontes.filter((f) => f.mudou).length;
+  const orgaos = [...new Set(fontes.map((f) => f.orgao))];
+  const ultimaCaptura = fontes.map((f) => f.ultima?.fetched_at).filter(Boolean).sort().at(-1);
+  const pontos = [
+    { texto: <><strong>{fontes.length} fontes oficiais</strong> de {orgaos.length} órgãos ({orgaos.slice(0, 7).join(", ")}{orgaos.length > 7 ? "…" : ""}), {comCopia} com cópia e impressão digital guardadas.</> },
+    { texto: <>{mudaram === 0 ? "Nenhuma delas mudou entre uma cópia e outra até agora." : `${mudaram} mudaram de conteúdo entre uma cópia e outra — o histórico de cada uma está abaixo.`}{ultimaCaptura ? ` Última captura: ${formatarDataHora(ultimaCaptura)}.` : ""}</> },
+    { texto: <>Por que importa: a liquidação do Master pelo Banco Central, as fases da operação da PF e os atos do Congresso são fatos oficiais fora dos autos do STF; aqui cada um tem endereço, data e cópia.</> },
+  ];
   return (
     <div className="space-y-6">
       <header className="max-w-3xl">
@@ -19,6 +29,7 @@ export default function PaginaFontesExternas() {
           entre uma cópia e outra. Páginas de terceiros aparecem só como referência, sem cópia.
         </p>
       </header>
+      <PontosChave itens={pontos} />
       {[...porOrgao.entries()].map(([orgao, lista]) => (
         <section key={orgao} aria-labelledby={`o-${orgao.replace(/\W+/g, "-")}`}>
           <h2 id={`o-${orgao.replace(/\W+/g, "-")}`} className="text-lg">{orgao}</h2>

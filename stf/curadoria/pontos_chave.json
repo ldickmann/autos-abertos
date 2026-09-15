@@ -1,0 +1,22 @@
+{
+  "_sobre": "Pontos-chave da capa: cada frase é uma síntese jornalística do que os autos dizem, com pelo menos uma prova (asserção, comunicação do RIF ou documento + trecho). O exportador recusa ponto sem prova. Nada é conclusão do site; quem afirma aparece na prova.",
+  "inicio": [
+    {"texto": "A Polícia Federal e a Procuradoria investigam gestão fraudulenta do Banco Master, desvio de valores e lavagem de dinheiro. A Operação Compliance Zero teve ao menos três fases ostensivas; a Pet 15.556, processo principal deste site, é a representação da PF que abriu a terceira.",
+     "provas": [{"assercao": 1682}, {"assercao": 1685}, {"documento": 243, "pagina": 5, "trecho": "a PET nº 15.556 corresponde apenas à representação policial que ensejou a deflagração da 3ª fase ostensiva da Operação Compliance Zero", "quem": "min. André Mendonça (relator)"}]},
+    {"texto": "O ministro André Mendonça decretou a prisão preventiva de Daniel Vorcaro, Fabiano Zettel, Luiz Phillipi Mourão e Marilson Roseno, ao ver indícios robustos de organização criminosa armada, e suspendeu as atividades de cinco empresas ligadas a eles; a Turma referendou.",
+     "provas": [{"assercao": 667}, {"assercao": 233}, {"assercao": 707}, {"assercao": 2292}]},
+    {"texto": "O Banco Master está em liquidação extrajudicial decretada pelo Banco Central, com interventor nomeado.",
+     "provas": [{"assercao": 1876}]},
+    {"texto": "Dois chefes da supervisão bancária do Banco Central são acusados pela PF de receber vantagens mensais por uma estrutura de lavagem; o BC os afastou das funções de confiança.",
+     "provas": [{"assercao": 669}, {"assercao": 670}, {"assercao": 674}]},
+    {"texto": "O único elo documentado nos autos entre o caixa do Master e a rede de pagamentos: segundo a Procuradoria, R$ 650 milhões saíram do fundo ASTRALO 95 para o FIP Termópilas em 21/05/2024 e deste para a Super Empreendimentos, empresa de Zettel, em conta no próprio Master.",
+     "provas": [{"assercao": 1694}, {"assercao": 1695}]},
+    {"texto": "As defesas contestam. A de Vorcaro diz desconhecer o grupo \"a Turma\", chama de ilação a tese de grupo armado e afirma não haver fato novo que justifique a prisão.",
+     "provas": [{"assercao": 2116}, {"assercao": 2117}, {"assercao": 2114}]},
+    {"texto": "Em 10/09/2026, a pedido do presidente Edson Fachin, Mendonça levantou o sigilo da Pet 15.556 e de 14 procedimentos relacionados; em 14/09, a pedido do min. Alexandre de Moraes e com aval da PGR, a Presidência pediu o levantamento da Pet 15.645, que contém o relatório do COAF sobre a rede de pagamentos.",
+     "provas": [{"documento": 251, "pagina": 1, "trecho": "promovo o levantamento do sigilo dos autos da PET nº 15.556 e dos procedimentos contidos ou relacionados", "quem": "min. André Mendonça (relator)"},
+                {"documento": 228, "pagina": 1, "trecho": "para solicitar que o e. Ministro André Mendonça promova o levantamento do sigilo da Pet 15.645", "quem": "Presidência do STF (min. Edson Fachin)"}]},
+    {"texto": "Próximo capítulo: sessão plenária extraordinária em 15/09/2026, reservada à Pet 16.662, formada a partir da Pet 15.556.",
+     "provas": [{"documento": 236, "pagina": 3, "trecho": "mantendo-se a Sessão Plenária Extraordinária designada exclusivamente para apreciação da Pet 16.662", "quem": "Presidência do STF (min. Edson Fachin)"}]}
+  ]
+}

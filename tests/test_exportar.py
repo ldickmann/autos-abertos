@@ -23,7 +23,7 @@ def test_exporta_arquivos_com_proveniencia(tmp_path):
     expandir(con, 7514886, profundidade=0, cliente=cliente, blobs=tmp_path / "blobs", coletas=tmp_path / "coletas", log=lambda s: None)
     construir_entidades(con)
     saida = tmp_path / "web"
-    r = exportar(con, saida, semente=7514886)
+    r = exportar(con, saida, semente=7514886, curadoria_editorial=False)
     assert r["processos"] == 1 and (saida / "meta.json").exists()
     meta = json.loads((saida / "meta.json").read_text("utf-8"))
     assert meta["semente"] == 7514886 and meta["coletado_em"]["7514886"]
@@ -45,6 +45,7 @@ def test_exporta_arquivos_com_proveniencia(tmp_path):
     assert fluxos["fontes"] == [] and fluxos["grafo"] == {"nos": [], "arestas": []}
     assert (saida / "fluxos.csv").read_text("utf-8").startswith("fonte,comunicacao,secao")
     assert (saida / "fluxos_atores.csv").exists() and (saida / "fluxos_comunicacoes.csv").exists() and (saida / "fluxos_bens.csv").exists()
+    assert json.loads((saida / "trajetos.json").read_text("utf-8")) == {"trajetos": [], "cruzamentos": []}   # sem fluxos, sem trajetos
 
 
 def test_processo_exportado_traz_assercoes_dentro_de_cada_documento(tmp_path):
@@ -61,7 +62,7 @@ def test_processo_exportado_traz_assercoes_dentro_de_cada_documento(tmp_path):
     con.execute("insert into assercao (documento_id, extracao_id, pagina, tipo_epistemico, texto, trecho_fonte, entidades_json, modelo, prompt_version, criado_em) "
                 "values (?,?,1,'fato_processual','Foi aberta vista.','Abra-se vista.','[]','m','v1','2026-09-14')", (doc, eid))
     con.commit()
-    exportar(con, tmp_path / "web", semente=7514886)
+    exportar(con, tmp_path / "web", semente=7514886, curadoria_editorial=False)
     proc = json.loads((tmp_path / "web" / "processo" / "7514886.json").read_text("utf-8"))
     andamento = next(a for a in proc["andamentos"] if any(d["id"] == doc for d in a["documentos"]))
     d = next(d for d in andamento["documentos"] if d["id"] == doc)

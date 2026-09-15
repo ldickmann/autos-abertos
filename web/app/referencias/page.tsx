@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PontosChave } from "@/components/PontosChave";
 import { getProcessos, getReferencias } from "@/lib/data";
 
 export default function PaginaReferencias() {
@@ -9,6 +10,13 @@ export default function PaginaReferencias() {
   const diplomas = [...porDiploma.entries()].sort((a, b) => b[1].reduce((n, x) => n + x.documentos.length, 0) - a[1].reduce((n, x) => n + x.documentos.length, 0));
   const internos = r.processos_citados.filter((p) => p.incidente);
   const externos = r.processos_citados.filter((p) => !p.incidente);
+  const topDiplomas = diplomas.slice(0, 4).map(([d, lista]) => `${d} (${lista.reduce((n, x) => n + x.documentos.length, 0)})`);
+  const topDisp = [...r.dispositivos].sort((a, b) => b.documentos.length - a.documentos.length).slice(0, 3).map((d) => `${d.dispositivo} (${d.documentos.length})`);
+  const pontos = [
+    { texto: <><strong>{r.dispositivos.length} dispositivos legais</strong> citados; as leis mais invocadas: {topDiplomas.join(", ")}.</> },
+    { texto: <>Artigos mais citados: {topDisp.join(", ")} — é a base legal em que as decisões se apoiam (prisão preventiva, medidas cautelares, competência).</> },
+    { texto: <><strong>{r.processos_citados.length} processos citados</strong> no texto: {internos.length} são deste caso e {externos.length} são precedentes e habeas corpus de fora dele, ainda não coletados.</> },
+  ];
 
   return (
     <div className="space-y-8">
@@ -19,6 +27,7 @@ export default function PaginaReferencias() {
           ({internos.length} deste caso, {externos.length} externos, como habeas corpus e precedentes). Serve para ver quais decisões se apoiam na mesma base legal e o que cada peça menciona.
         </p>
       </header>
+      <PontosChave itens={pontos} />
 
       <section aria-labelledby="disp">
         <h2 id="disp" className="text-lg">Dispositivos legais citados</h2>

@@ -77,3 +77,7 @@ python -m stf exportar                              # fluxos.json e fluxos.csv e
 ```
 
 `reconstruir` reingere o registro `*-documentos-acervo-7526458.jsonl` como qualquer coleta; depois basta repetir `ingerir-fluxos`. A carga falha se algum `trecho` do dataset não estiver na página indicada ou se um trecho de transação contiver CPF.
+
+## 8. Curadoria editorial com prova (trajetos e pontos-chave)
+
+`stf/curadoria/trajetos.json` e `stf/curadoria/pontos_chave.json` são texto editorial, mas cada passo/frase precisa apontar provas: `{"assercao": id}`, `{"comunicacao": [secao, numero], "origem"/"destino": "<CNPJ/CPF>"}` ou `{"documento": id, "pagina": n, "trecho": "<literal>", "quem": "..."}`. `python -m stf exportar` resolve cada prova contra o banco (documento, página, quem afirma) e **falha** se alguma não existir ou se o trecho não estiver na página — a página não publica afirmação sem fonte.

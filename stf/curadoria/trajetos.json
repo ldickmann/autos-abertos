@@ -1,0 +1,626 @@
+{
+ "_sobre": "Trajetos do dinheiro no caso Master, montados só com o que está nos autos (asserções extraídas dos documentos, com página e quem afirma) e no RIF 140515 (comunicações ao COAF, com página). Cada passo precisa de pelo menos uma prova; o exportador recusa passo sem prova ou com prova inexistente. Nenhum passo é conclusão: é o que a fonte diz. Valores em texto no formato brasileiro.",
+ "trajetos": [
+  {
+   "id": "caixa-do-master-a-super",
+   "titulo": "Do caixa do Banco Master à Super Empreendimentos",
+   "pergunta": "Onde o dinheiro do Master entra na rede de pagamentos?",
+   "resumo": "A Procuradoria da República em São Paulo, com base numa representação do Banco Central, descreve um circuito em abril e maio de 2024: o Master desembolsa R$ 1,45 bilhão, o dinheiro volta como CDBs comprados por dois fundos, os CDBs são resgatados e, em 21/05/2024, R$ 650 milhões saem do fundo ASTRALO 95 para o FIP Termópilas, que os transfere à Super Empreendimentos — a holding de Fabiano Zettel e Ana Claudia Paiva — numa conta no próprio Master. É a única ponte documentada nos autos entre o caixa do banco e uma empresa da rede de pagamentos do RIF.",
+   "quem_afirma": "Procuradoria da República em São Paulo e Banco Central (representação), transcritos na decisão do min. Dias Toffoli na Pet 15.198; Polícia Federal e min. André Mendonça na Pet 15.556; cartórios e cooperativa, via COAF, no RIF 140515.",
+   "passos": [
+    {
+     "de": "Banco Master",
+     "para": "Fundos ASTRALO 95 e REAG GROWTH 95",
+     "valor": "1.450.000.000,00",
+     "quando": "24/04 a 17/05/2024",
+     "como": "Desembolso do banco por CCBs e CRIs; R$ 1,38 bilhão retornam como compra de CDBs pelos dois fundos, resgatados nos dias seguintes. A Procuradoria vê participação coordenada do Master e da REAG DTVM para desviar recursos do conglomerado.",
+     "provas": [
+      {
+       "assercao": 1692
+      },
+      {
+       "assercao": 1696
+      },
+      {
+       "assercao": 1693
+      },
+      {
+       "assercao": 1697
+      }
+     ]
+    },
+    {
+     "de": "ASTRALO 95",
+     "para": "FIP TERMÓPILAS",
+     "valor": "650.000.000,00",
+     "quando": "21/05/2024",
+     "como": "O fundo resgata cerca de R$ 800 milhões em CDBs e transfere R$ 650 milhões ao FIP. Segundo a Procuradoria, os beneficiários finais declarados do ASTRALO 95 são pessoas da família de João Carlos Falbo Mansur, controlador da REAG; e, a partir de dezembro de 2024, cerca de 80% das cotas do GALO FORTE FIP (antes 100% do ASTRALO 95) passam a Daniel Vorcaro.",
+     "provas": [
+      {
+       "assercao": 1694
+      },
+      {
+       "assercao": 1698
+      },
+      {
+       "assercao": 1700
+      },
+      {
+       "assercao": 1701
+      }
+     ]
+    },
+    {
+     "de": "FIP TERMÓPILAS",
+     "para": "SUPER EMPREENDIMENTOS E PARTICIPAÇÕES",
+     "valor": "650.000.000,00",
+     "quando": "2024",
+     "como": "\"Esse mesmo valor\" é transferido à Super, em conta mantida no Banco Master. A peça grafa a empresa como Ltda.; no RIF e nos autos ela aparece como S.A. (CNPJ 31.446.245/0001-70).",
+     "provas": [
+      {
+       "assercao": 1695
+      }
+     ]
+    },
+    {
+     "de": "SUPER EMPREENDIMENTOS",
+     "para": "quem é a Super",
+     "valor": null,
+     "quando": "2022–2026",
+     "como": "Holding constituída em 07/06/2022, capital de R$ 1 milhão, sem faturamento cadastrado; administradores: Fabiano Campos Zettel e Ana Claudia Queiroz de Paiva (cooperativa Sicoob Credifor ao COAF). A PF chama Zettel de \"operador financeiro e cunhado\" de Daniel Vorcaro. O relator afirma que Varajo, Moriah, Super e King eram administradas pelos integrantes da estrutura investigada, que Paiva participava dela como sócia da Super, e suspendeu as atividades das empresas (decisão referendada pela Turma).",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "3.1"
+       ],
+       "destino": "31.446.245/0001-70"
+      },
+      {
+       "assercao": 637
+      },
+      {
+       "assercao": 622
+      },
+      {
+       "assercao": 620
+      },
+      {
+       "assercao": 707
+      },
+      {
+       "assercao": 2292
+      }
+     ]
+    },
+    {
+     "de": "SUPER EMPREENDIMENTOS",
+     "para": "imóveis em São Paulo",
+     "valor": "181.818.509,79",
+     "quando": "março a maio de 2024",
+     "como": "Cinco escrituras comunicadas por cartórios ao COAF: BRL Trust/Terra FII R$ 43,71 mi (08/03), Grip Negócios Imobiliários R$ 48 mi (escritura de 27/03; R$ 5 mi pagos antes, sem especificar), Vitor e Thais Lourenço R$ 16,99 mi (28/03; R$ 11 mi antes, sem especificar), Luzom SPE R$ 23,12 mi (30/04; mais R$ 13,8 mi de dívida garantida em 6 parcelas a partir de 29/05) e Alexandre Café Birman R$ 50 mi (10/05). Valores de referência (avaliação fiscal) muito abaixo do declarado: é o critério que dispara a comunicação automática.",
+     "provas": [
+      {
+       "comunicacao": [
+        "automatica",
+        "1.7"
+       ]
+      },
+      {
+       "comunicacao": [
+        "automatica",
+        "1.8"
+       ]
+      },
+      {
+       "comunicacao": [
+        "automatica",
+        "1.9"
+       ]
+      },
+      {
+       "comunicacao": [
+        "suspeita",
+        "3.2"
+       ]
+      },
+      {
+       "comunicacao": [
+        "suspeita",
+        "3.3"
+       ]
+      }
+     ]
+    }
+   ],
+   "contrapontos": [
+    {
+     "quem": "defesa de Daniel Bueno Vorcaro",
+     "o_que": "Contesta os \"supostos fluxos financeiros e pagamentos\" como elemento da prisão e sustenta que não há fato novo ou contemporâneo que a justifique.",
+     "provas": [
+      {
+       "assercao": 2112
+      },
+      {
+       "assercao": 2114
+      }
+     ]
+    }
+   ],
+   "lacunas": "O extrato da conta da Super no Master não está nos autos públicos; a ligação entre os R$ 650 milhões e as escrituras de 2024 é de datas e valores, não de rastreio conta a conta. O RIF 140515 cobre a conta da Super no Sicoob (junho de 2022), não a conta no Master."
+  },
+  {
+   "id": "super-turma-e-banco-central",
+   "titulo": "Da Super para \"a Turma\" e para servidores do Banco Central, segundo a PF",
+   "pergunta": "Para quem a Super pagava, segundo a investigação?",
+   "resumo": "A Polícia Federal sustenta que Zettel e Ana Claudia Paiva faziam pagamentos \"a mando de Daniel Vorcaro, principalmente pela empresa Super\": vantagens mensais a dois chefes da supervisão bancária do Banco Central, por uma estrutura de lavagem com Leonardo Palhares (Varajo Consultoria), e valores para \"a Turma\" — Felipe Mourão e Marilson Roseno — via empresas de Mourão, como a King Participações. O relator viu indícios robustos e decretou prisões e suspensão das empresas. A defesa de Vorcaro nega conhecer \"a Turma\" e chama de ilação a existência de grupo armado. Nenhum desses pagamentos aparece no RIF 140515: Varajo e King não constam dele; Mourão aparece só como remetente de R$ 22 mil à igreja.",
+   "quem_afirma": "Polícia Federal (representação transcrita na decisão de 3ª fase, Pet 15.556) e min. André Mendonça; contraponto da defesa de Daniel Vorcaro.",
+   "passos": [
+    {
+     "de": "Daniel Vorcaro (a mando de, segundo a PF)",
+     "para": "Fabiano Zettel e Ana Claudia Paiva, pela Super",
+     "valor": null,
+     "quando": "—",
+     "como": "\"Os pagamentos eram efetuados por FABIANO CAMPOS ZETTEL e ANA CLAUDIA QUEIROZ DE PAIVA, a mando de DANIEL VORCARO, principalmente pela empresa SUPER\".",
+     "provas": [
+      {
+       "assercao": 671
+      }
+     ]
+    },
+    {
+     "de": "SUPER (via Varajo Consultoria, de Leonardo Palhares)",
+     "para": "Paulo Sérgio Neves de Souza e Belline Santana (Banco Central)",
+     "valor": null,
+     "quando": "mensal, segundo a PF",
+     "como": "Indícios de recebimento mensal de vantagens indevidas pelo chefe adjunto e pelo chefe do Departamento de Supervisão Bancária do BC, por estrutura de lavagem com auxílio de Palhares. O Banco Central afastou os servidores das funções de confiança.",
+     "provas": [
+      {
+       "assercao": 669
+      },
+      {
+       "assercao": 670
+      },
+      {
+       "assercao": 674
+      }
+     ]
+    },
+    {
+     "de": "SUPER",
+     "para": "empresas de Felipe Mourão (King Participações Imobiliárias)",
+     "valor": null,
+     "quando": "—",
+     "como": "\"Os valores para a 'Turma' seguem da SUPER PARTICIPAÇÕES para empresas de FELIPE MOURÃO, como a KING PARTICIPAÇÕES IMOBILIÁRIAS LTDA.\" Integrantes conhecidos da \"Turma\", segundo a PF: Mourão e Marilson Roseno da Silva.",
+     "provas": [
+      {
+       "assercao": 672
+      },
+      {
+       "assercao": 638
+      }
+     ]
+    },
+    {
+     "de": "Luiz Phillipi Machado de Moraes Mourão",
+     "para": "Igreja Batista da Lagoinha Belvedere",
+     "valor": "22.000,00",
+     "quando": "24/12/2024 a 08/12/2025",
+     "como": "O único fluxo de Mourão no RIF 140515: 11 lançamentos à conta da igreja, informados pelo Banco do Brasil. Mourão é investigado na Pet 15.556.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "1"
+       ],
+       "origem": "046.166.396-12"
+      }
+     ]
+    }
+   ],
+   "contrapontos": [
+    {
+     "quem": "defesa de Daniel Bueno Vorcaro",
+     "o_que": "Diz desconhecer \"por completo\" a existência de grupo chamado \"A Turma\" e que a existência de grupo armado é \"mera ilação\", sem referência a armas.",
+     "provas": [
+      {
+       "assercao": 2116
+      },
+      {
+       "assercao": 2117
+      }
+     ]
+    },
+    {
+     "quem": "min. André Mendonça (relator)",
+     "o_que": "Afirma que as investigações demonstram indícios robustos de participação de Vorcaro, Zettel, Mourão e Marilson em organização criminosa armada.",
+     "provas": [
+      {
+       "assercao": 233
+      }
+     ]
+    }
+   ],
+   "lacunas": "Valores e datas dos pagamentos a servidores do BC e à \"Turma\" não estão nas asserções públicas; estão nas peças sigilosas de quebra bancária que o relator excluiu do levantamento de sigilo (despacho de 11/09/2026 na Pet 16.704)."
+  },
+  {
+   "id": "zettel-igreja-fornecedores",
+   "titulo": "De Zettel à Igreja Batista da Lagoinha Belvedere e aos fornecedores",
+   "pergunta": "Quem mandou dinheiro para a igreja e para onde ele foi?",
+   "resumo": "A conta da igreja no Banco do Brasil movimentou R$ 57,1 milhões em um ano (24/12/2024 a 08/12/2025) com faturamento anual presumido de R$ 950 mil. Entraram R$ 28,49 milhões: R$ 19,2 milhões vieram de Fabiano Zettel em 26 lançamentos; R$ 1,1 milhão da Lagoinha Participações; R$ 700 mil da HV Empreendimentos; R$ 120 mil de Henrique Moura Vorcaro; R$ 101,6 mil de Fabíola de Almeida Macedo Vorcaro; e milhares de PIX pequenos, \"possivelmente doações de fiéis\". Saíram R$ 28,62 milhões, principalmente para empresas de construção civil, som e luz. O banco não identifica a origem do dinheiro de Zettel; os autos não ligam a igreja ao Master.",
+   "quem_afirma": "Banco do Brasil, ao COAF (RIF 140515, p. 3–5); Polícia Federal e defesa de Vorcaro (Pet 15.556) sobre as pessoas.",
+   "passos": [
+    {
+     "de": "Fabiano Campos Zettel",
+     "para": "Igreja Batista da Lagoinha Belvedere",
+     "valor": "19.205.000,00",
+     "quando": "24/12/2024 a 08/12/2025",
+     "como": "26 lançamentos. Zettel tem procuração na conta da igreja. O banco comunicou por movimentação incompatível com o patrimônio e o faturamento e por operações que configurariam \"artifício para burla da identificação da origem, do destino\". Nos autos, a PF o chama de operador financeiro e cunhado de Vorcaro; ele está preso preventivamente.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "1"
+       ],
+       "origem": "027.818.816-86"
+      },
+      {
+       "assercao": 637
+      },
+      {
+       "assercao": 667
+      }
+     ]
+    },
+    {
+     "de": "Henrique Moura Vorcaro e Fabíola de Almeida Macedo Vorcaro",
+     "para": "Igreja Batista da Lagoinha Belvedere",
+     "valor": "221.600,00",
+     "quando": "24/12/2024 a 08/12/2025",
+     "como": "R$ 120 mil em 4 lançamentos (Henrique, empresário) e R$ 101,6 mil em 7 (Fabíola, advogada). Henrique é interessado na Pet 15.198; a defesa de Daniel Vorcaro menciona bloqueio de R$ 2,245 bilhões em conta de Henrique Vorcaro vinculada à REAG, em 14/01/2026.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "1"
+       ],
+       "origem": "427.654.986-87"
+      },
+      {
+       "comunicacao": [
+        "suspeita",
+        "1"
+       ],
+       "origem": "029.061.616-67"
+      },
+      {
+       "assercao": 2113
+      }
+     ]
+    },
+    {
+     "de": "Lagoinha Participações e HV Empreendimentos",
+     "para": "Igreja Batista da Lagoinha Belvedere",
+     "valor": "1.800.000,00",
+     "quando": "24/12/2024 a 08/12/2025",
+     "como": "Duas holdings: R$ 1,1 milhão em 3 lançamentos e R$ 700 mil em 3.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "1"
+       ],
+       "origem": "54.305.666/0001-87"
+      },
+      {
+       "comunicacao": [
+        "suspeita",
+        "1"
+       ],
+       "origem": "34.370.281/0001-96"
+      }
+     ]
+    },
+    {
+     "de": "Igreja Batista da Lagoinha Belvedere",
+     "para": "20 fornecedores (construção civil, estruturas, som e luz)",
+     "valor": "11.538.581,65",
+     "quando": "24/12/2024 a 08/12/2025",
+     "como": "Jorlan Incorporadora R$ 2,57 mi; Muzzi Misk Construtora R$ 2,30 mi; AFEB Estruturas Metálicas R$ 1,01 mi; FDS Construções R$ 780 mil; VW Som R$ 646 mil; DS Som e Luz R$ 579 mil; e outros 14. Além disso, R$ 8,27 milhões em 1.277 pagamentos de títulos e R$ 4,33 milhões aplicados em CDB.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "1"
+       ],
+       "origem": "57.391.420/0001-63"
+      }
+     ]
+    }
+   ],
+   "contrapontos": [
+    {
+     "quem": "o próprio banco comunicante",
+     "o_que": "Registra que a igreja \"recebeu, também, via milhares de pix de baixo valor de terceiros diversos, possivelmente doações de fiéis\" e que os valores \"são repassados principalmente a empresas relacionadas à construção civil\".",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "1"
+       ],
+       "origem": "57.391.420/0001-63",
+       "destino": "52.604.742/0001-20"
+      }
+     ]
+    }
+   ],
+   "lacunas": "A versão da igreja (publicada pela imprensa em 11/09/2026: valores captados por Zettel para obras, não dízimos) não consta dos autos. A origem dos R$ 19,2 milhões de Zettel não é analisada pelo banco nem aparece em asserção pública."
+  },
+  {
+   "id": "zettel-super-moriah-bens",
+   "titulo": "De Zettel à Super e à Moriah: dinheiro que virou imóveis e carros",
+   "pergunta": "O que as empresas de Zettel compraram, com que dinheiro?",
+   "resumo": "Em junho de 2022, no mês de abertura da conta da Super no Sicoob Credifor, entraram R$ 9,9 milhões — R$ 9,18 milhões em quatro TEDs de Zettel e R$ 700 mil de Isaac Sidney M. Ferreira — e saíram R$ 9,79 milhões, R$ 7,19 milhões deles em boletos sem beneficiário informado. A cooperativa comunicou por \"faturamento zerado\": todo valor seria incompatível. Em dezembro de 2024 a Super doou um imóvel de R$ 4,35 milhões a uma pessoa física \"sem vínculo familiar aparente\". Em 2025, a Moriah Asset, controlada por Zettel, comprou quatro carros de luxo por R$ 4,95 milhões — meses antes de o STF suspender as atividades da Moriah e da Super.",
+   "quem_afirma": "Sicoob Credifor, cartórios de São Paulo e concessionárias, ao COAF (RIF 140515); min. André Mendonça (suspensão das empresas).",
+   "passos": [
+    {
+     "de": "Fabiano Campos Zettel",
+     "para": "SUPER EMPREENDIMENTOS (conta no Sicoob Credifor, Formiga-MG)",
+     "valor": "9.180.000,00",
+     "quando": "07 a 22/06/2022",
+     "como": "Quatro TEDs (R$ 3,52 mi em 09/06, R$ 660 mil em 10/06, R$ 4,95 mi em 15/06, R$ 50 mil em 22/06) e um PIX de R$ 20 mil, vindos de conta de Zettel no Bradesco; mais R$ 700 mil de Isaac Sidney M. Ferreira em 08/06.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "3.1"
+       ],
+       "destino": "31.446.245/0001-70"
+      }
+     ]
+    },
+    {
+     "de": "SUPER EMPREENDIMENTOS",
+     "para": "boletos e seis TEDs",
+     "valor": "9.714.100,67",
+     "quando": "09 a 23/06/2022",
+     "como": "R$ 7,19 milhões em cinco pagamentos de títulos sem beneficiário informado; TEDs de R$ 1,6 mi (N.Q.H.S.P.E. Empreendimentos), R$ 330 mil (VL Kawamura), R$ 330 mil (Flávia M. C. Semini ME, em duas), R$ 165 mil (Private Investimentos Imobiliários) e R$ 100 mil (Antônio Augusto Conte, interessado na Pet 15.556).",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "3.1"
+       ],
+       "origem": "31.446.245/0001-70"
+      }
+     ]
+    },
+    {
+     "de": "SUPER EMPREENDIMENTOS",
+     "para": "Karolina Santos Trainotti",
+     "valor": "4.347.000,00",
+     "quando": "escritura de 16/12/2024",
+     "como": "Doação de imóvel de pessoa jurídica a pessoa física, pelo valor fiscal atribuído (referência: R$ 1,32 milhão); o cartório comunicou por doação a terceiro \"sem vínculo familiar aparente\" e pela diferença de valores. Procuradora da Super no ato: Ana Claudia Queiroz de Paiva.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "3.4"
+       ]
+      },
+      {
+       "comunicacao": [
+        "suspeita",
+        "3.5"
+       ]
+      }
+     ]
+    },
+    {
+     "de": "MORIAH ASSET (controlador: Zettel)",
+     "para": "concessionárias de veículos",
+     "valor": "4.950.000,00",
+     "quando": "28/04 a 04/12/2025",
+     "como": "Range Rover R$ 1,53 mi (28/04, paga com usado de R$ 1,23 mi cuja origem o comunicante não apurou), outra Range Rover R$ 1,17 mi (06/06, com troco de R$ 176 mil), Audi RS6 R$ 650 mil (02/12) e Cadillac Escalade R$ 1,6 mi (04/12). O STF suspendeu as atividades da Moriah e da Super.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "2.1"
+       ]
+      },
+      {
+       "comunicacao": [
+        "suspeita",
+        "2.2"
+       ]
+      },
+      {
+       "comunicacao": [
+        "suspeita",
+        "2.3"
+       ]
+      },
+      {
+       "assercao": 2324
+      }
+     ]
+    }
+   ],
+   "contrapontos": [
+    {
+     "quem": "Fabiano Campos Zettel (nos autos)",
+     "o_que": "As manifestações públicas de Zettel na Pet 15.556 tratam das condições de custódia (pedidos indeferidos em 23/07/2026); não há, nas asserções públicas, resposta dele sobre os fluxos do RIF.",
+     "provas": [
+      {
+       "assercao": 41
+      },
+      {
+       "assercao": 59
+      }
+     ]
+    }
+   ],
+   "lacunas": "Os beneficiários dos R$ 7,19 milhões em boletos não constam. O RIF não diz de onde Zettel tirou os R$ 9,18 milhões de 2022."
+  },
+  {
+   "id": "ponta-no-escuro",
+   "titulo": "A ponta que continua no escuro",
+   "pergunta": "O que ainda não foi liberado?",
+   "resumo": "O COAF reteve parte das comunicações porque citam pessoa com possível foro por prerrogativa de função no STJ ou no STF — entre elas, uma transferência de R$ 1 milhão da Super para a Dubem Business Marketing, em Natal, entre julho e setembro de 2024. Em 10/03/2026 a PF pediu ao ministro André Mendonça a íntegra do relatório e as comunicações desde 2020, dizendo que a retenção \"gera uma lacuna no rastreamento financeiro\". O pedido está concluso ao relator desde 11/03/2026, sem decisão. As planilhas com os 823 relacionados do RIF também não estão nos autos públicos.",
+   "quem_afirma": "COAF (relato do RIF, p. 1–2) e Polícia Federal (petição inicial da Pet 15.645).",
+   "passos": [
+    {
+     "de": "SUPER EMPREENDIMENTOS",
+     "para": "Dubem Business Marketing Eventos e Produções Artísticas Ltda (Banco Safra, Natal)",
+     "valor": "1.000.000,00",
+     "quando": "15/07 a 03/09/2024",
+     "como": "Comunicação de operação suspeita que o COAF não entregou à PF, porque nela consta pessoa \"sobre a qual há indicativo\" de foro por prerrogativa de função.",
+     "provas": [
+      {
+       "comunicacao": [
+        "suspeita",
+        "relato-3"
+       ]
+      }
+     ]
+    },
+    {
+     "de": "Polícia Federal",
+     "para": "min. André Mendonça (Pet 15.645)",
+     "valor": null,
+     "quando": "10/03/2026",
+     "como": "Pede autorização para receber a íntegra do RIF 140515 e as comunicações omitidas desde 2020: \"as informações financeiras completas dos investigados encontram-se temporariamente retidas\".",
+     "provas": [
+      {
+       "documento": 273,
+       "pagina": 2,
+       "trecho": "as informações financeiras completas dos investigados encontram-\nse temporariamente retidas, aguardando manifestação expressa e autorizativa deste\nJuízo",
+       "quem": "Polícia Federal"
+      },
+      {
+       "documento": 273,
+       "pagina": 2,
+       "trecho": "gera uma lacuna no rastreamento financeiro",
+       "quem": "Polícia Federal"
+      }
+     ]
+    }
+   ],
+   "contrapontos": [
+    {
+     "quem": "min. André Mendonça (Pet 16.704, 11/09/2026)",
+     "o_que": "Ao explicar por que não levantou o sigilo de tudo, citou a necessidade de preservar dados pessoais contidos em \"procedimentos exclusivamente destinados à quebra e consequente recepção de dados bancários e fiscais\" de inúmeras pessoas; o sigilo da Pet 15.645 acabou levantado em 14/09/2026, a pedido do min. Alexandre de Moraes, com aval da PGR e da Presidência.",
+     "provas": [
+      {
+       "documento": 243,
+       "pagina": 5,
+       "quem": "min. André Mendonça (relator)",
+       "trecho": "a necessidade de zelar pela preservação de dados pessoais das pessoas\ninvestigadas —tais como aqueles contidos em procedimentos exclusivamente\ndestinados à quebra e consequente recepção de dados bancários e fiscais de mais\nde uma inúmeras pessoas físicas e jurídicas—, jamais se poderia publicizar"
+      }
+     ]
+    }
+   ],
+   "lacunas": "A identidade da pessoa com foro citada na comunicação retida não consta de nenhuma peça pública."
+  }
+ ],
+ "cruzamentos": [
+  {
+   "id": "abril-maio-2024",
+   "titulo": "Março a maio de 2024, lado a lado",
+   "explicacao": "À esquerda, o que a Procuradoria e o Banco Central descrevem sobre o caixa do Master; à direita, o que os cartórios comunicaram sobre compras da Super no mesmo período. As datas são as das peças. A página não afirma que uma coluna causou a outra: mostra a coincidência de período para que cada pessoa julgue.",
+   "eventos": [
+    {
+     "data": "2024-03-08",
+     "lado": "cartorios",
+     "texto": "Escritura Super ↔ BRL Trust / Terra FII, R$ 43,71 mi (direção não informada).",
+     "comunicacao": [
+      "automatica",
+      "1.7"
+     ]
+    },
+    {
+     "data": "2024-03-27",
+     "lado": "cartorios",
+     "texto": "Grip Negócios Imobiliários vende imóvel à Super por R$ 48 mi; R$ 5 mi pagos antes da escritura, sem especificar.",
+     "comunicacao": [
+      "automatica",
+      "1.8"
+     ]
+    },
+    {
+     "data": "2024-03-28",
+     "lado": "cartorios",
+     "texto": "Vitor e Thais Lourenço vendem imóvel à Super por R$ 16,99 mi; R$ 11 mi pagos antes, sem especificar o meio.",
+     "comunicacao": [
+      "automatica",
+      "1.9"
+     ]
+    },
+    {
+     "data": "2024-04-24",
+     "lado": "autos",
+     "texto": "Começa o ciclo de desembolsos do Master por CCBs e CRIs (R$ 1,45 bi até 17/05), com retorno de R$ 1,38 bi em CDBs comprados pelo ASTRALO 95 e pelo REAG GROWTH 95.",
+     "assercao": 1696
+    },
+    {
+     "data": "2024-04-30",
+     "lado": "cartorios",
+     "texto": "Luzom SPE vende imóvel à Super por R$ 23,12 mi; a Super aliena o imóvel em garantia de dívida de R$ 13,8 mi.",
+     "comunicacao": [
+      "suspeita",
+      "3.2"
+     ]
+    },
+    {
+     "data": "2024-05-10",
+     "lado": "cartorios",
+     "texto": "Alexandre Café Birman vende imóvel à Super por R$ 50 mi.",
+     "comunicacao": [
+      "suspeita",
+      "3.3"
+     ]
+    },
+    {
+     "data": "2024-05-21",
+     "lado": "autos",
+     "texto": "ASTRALO 95 resgata ~R$ 800 mi em CDBs e transfere R$ 650 mi ao FIP Termópilas, que os repassa à Super em conta no Banco Master.",
+     "assercao": 1694
+    },
+    {
+     "data": "2024-05-21",
+     "lado": "cartorios",
+     "texto": "A escritura da Luzom é comunicada ao COAF pelo 23º Tabelião.",
+     "comunicacao": [
+      "suspeita",
+      "3.2"
+     ]
+    },
+    {
+     "data": "2024-07-15",
+     "lado": "autos",
+     "texto": "Entre 15/07 e 03/09, a Super envia R$ 1 mi à Dubem Business Marketing (comunicação retida pelo COAF).",
+     "comunicacao": [
+      "suspeita",
+      "relato-3"
+     ]
+    },
+    {
+     "data": "2024-12-01",
+     "lado": "autos",
+     "texto": "A partir de dezembro, cerca de 80% das cotas do GALO FORTE FIP (antes 100% do ASTRALO 95) passam a Daniel Vorcaro.",
+     "assercao": 1701
+    },
+    {
+     "data": "2024-12-16",
+     "lado": "cartorios",
+     "texto": "A Super doa imóvel de R$ 4,35 mi a Karolina Santos Trainotti.",
+     "comunicacao": [
+      "suspeita",
+      "3.4"
+     ]
+    }
+   ]
+  }
+ ]
+}
